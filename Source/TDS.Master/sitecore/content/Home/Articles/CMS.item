@@ -1,0 +1,133 @@
+----item----
+version: 1
+id: {87C68E62-B4E0-4BE8-99FC-339F3BC4575D}
+database: master
+path: /sitecore/content/Home/Articles/CMS
+parent: {8705CD12-DEED-451F-8A57-C7F02CB9222B}
+name: CMS
+master: {00000000-0000-0000-0000-000000000000}
+template: {1B6A3702-5694-4FC4-8366-989ECDCD7F1B}
+templatekey: Product
+
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 0
+
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 976e6a6a-684d-4dbf-97ff-0eeeb2126c8f
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 18
+
+Content Management
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 146
+
+<p>The core of your web presence - namely your content. Learn how it's structured, created, approved, published, re-used, displayed, etc. etc.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 1909
+
+<p>Content Management is defined as a set of processes and technologies that support the collection, managing, re-use and publishing of information.</p>
+<p>Sitecore in particular provides a number of tools and frameworks for making both the development and publishing processes easier, including;</p>
+<ul>
+  <li>The Sitecore repository. We have a unified repository structure for content, assets - and even your Sitecore settings themselves. This means consistency in creating and editing content, system settings, whatever - as well as API consistency. Once you know one interface or API, you can use it in any context.
+  </li>
+  <li>Seperation of Content and Presentation. Not only does this make adding new presentation layers (such as mobile, print, etc.) it also means content is easily re-used and syndicated.
+  </li>
+  <li>Workflow. The ability to define workflow unique to requirements (i.e. multiple reviews, etc.) as well as an easy API interface for external tasks makes it easy to adapt to any business process. 
+  </li>
+  <li>Pure .Net (or XSL) renderings. Sitecore has very few proprietary components  - you just use the standard set, but access Sitecore data through the API. This makes it very easy to incorporate existing .Net, HTML or XSL code. The repository of data is accessible in the way that makes sense for the language. Items are content objects in .Net, or accessible via XPATH in XSL - treating the repository effectively as one big XML document.
+  </li>
+  <li>Large ecosystem - built on the same platform. Once you've mastered Content Management - adding the <a href="~/link.aspx?_id=28EDE2395290437B9877DC9A59FD8B9C&amp;_z=z">Digital Marketing System </a>(DMS) is very easy - and uses all the same tools you are familiar with. Similarly, there are a number of accelerators and code available on the Shared Source repository - all built on the same Sitecore foundation.</li>
+</ul>
+----field----
+field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
+name: Image
+key: image
+content-length: 162
+
+<image mediaid="{909D828B-F57E-485D-A407-A4D4CE5C1C17}" mediapath="/Images/Site Images/large_webcontent" src="~/media/Images/Site Images/large_webcontent.ashx" />
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 18
+
+Content Management
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111214T222200
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\chc
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+976e6a6a-684d-4dbf-97ff-0eeeb2126c8f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121210T185531:634907625313015922
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

@@ -1,0 +1,194 @@
+----item----
+version: 1
+id: {536C475E-0B93-4ED3-A8FC-149DB0D809A0}
+database: master
+path: /sitecore/system/Workflows/Regular Workflow/Awaiting Approval/Approve/Validation Action
+parent: {2FF60E86-DD86-40E9-AA06-EA531B73FAEE}
+name: Validation Action
+master: {00000000-0000-0000-0000-000000000000}
+template: {419F8FFB-2713-4CEC-86A7-7585A727FE25}
+templatekey: Validation Action
+
+----field----
+field: {322164DC-27AC-404E-B7DC-B74C13CDBA1E}
+name: Type
+key: type
+content-length: 59
+
+Sitecore.Workflows.Simple.ValidatorsAction, Sitecore.Kernel
+----field----
+field: {95FD25AA-742D-41D2-8D04-6406BBA8C60D}
+name: Max Result
+key: max result
+content-length: 7
+
+Warning
+----field----
+field: {281AB75C-DB54-4471-9675-C01FB380FB62}
+name: Error
+key: error
+content-length: 50
+
+You cannot approve an item with validation errors.
+----field----
+field: {202F2A2C-6274-467F-A9C8-3EC4585A3060}
+name: Critical Error
+key: critical error
+content-length: 50
+
+You cannot approve an item with validation errors.
+----field----
+field: {A50D7933-F230-4434-9538-29C802F0CE23}
+name: Fatal Error
+key: fatal error
+content-length: 50
+
+You cannot approve an item with validation errors.
+----version----
+language: de-DE
+version: 1
+revision: ef7c747e-e193-4678-959f-df657fa48591
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 18
+
+Validierungsaktion
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20120706T122244:634771741645802157
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ef7c747e-e193-4678-959f-df657fa48591
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20120706T122244:634771741645802157
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: e900ca14-2235-44ea-b465-1b95dcaf6343
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20071113T152154
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e900ca14-2235-44ea-b465-1b95dcaf6343
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 15
+
+20071116T120454
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 4957b9a7-818a-4b05-a8e3-9b9b19a3ccfd
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 6
+
+監査チェック
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20120706T123607:634771749670656509
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4957b9a7-818a-4b05-a8e3-9b9b19a3ccfd
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20120706T123607:634771749670656509
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

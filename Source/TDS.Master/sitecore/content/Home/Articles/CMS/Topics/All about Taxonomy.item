@@ -1,0 +1,453 @@
+----item----
+version: 1
+id: {01A4232F-5E26-4F52-B057-8E75E5FB5A7C}
+database: master
+path: /sitecore/content/Home/Articles/CMS/Topics/All about Taxonomy
+parent: {A9A2F7FA-B1BB-4F15-B694-241340D7D997}
+name: All about Taxonomy
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 423
+
+<tracking>
+  <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function" presets="connie the content manager|75||devon the developer|25||">
+    <key name="Analytics" value="1" />
+    <key name="Copywriting" value="4" />
+    <key name="Personalization and Testing" value="2.75" />
+    <key name="Technology" value="1.25" />
+    <key name="Workflow and Publishing" value="1.5" />
+  </profile>
+</tracking>
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 7bf31237-397c-4b86-9646-65b9eeb39872
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 18
+
+All about Taxonomy
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 769
+
+<p>Obviously one of the keys to properly managing and maintaining your content for a large website is proper metadata and taxonomy use.</p>
+<p>Sitecore is unique in that in many cases, taxonomy structure can be based off the content structure - meaning you don't need to maintain a seperate taxonomy tree for certain metadata attributes. Obviously, for some controlled vocabulary&nbsp;elements (i.e. lists of countries, Dublin Core classifications, etc.) you&nbsp;need to do this, but for metadata elements such as product lists, corporate structures, etc. these can come from&nbsp;your content itself, automatically.</p>
+<p>Similarly, metadata can be used to automatically add content or relationships to pages, and make searchability or semantic tagging easier.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 9048
+
+<p>For this example, we'll assume you've built the "<a href="~/link.aspx?_id=91F6955A9C5E4672A164C5C5B54FA07E&amp;_z=z">Simple Site</a>" and you have a small website with a list of products. We are going to create a 'News' section of the website, and have Press Release pages&nbsp;with the usual information (Title, Date, Description) as well as automatically&nbsp;linking to any products they mention.</p>
+<p>In turn, our product pages will have a new component which will automatically link to any new Press Releases that mention them, based off the metadata. As soon as you add a Press Release, it will appear as a link on the Product page.</p>
+<p>As for our Press Release, in addition to the usual fields,&nbsp;it will have two metadata fields:</p>
+<ul>
+    <li>Products. The source for this will come from the Sitecore tree itself. As soon as you add a product, it automatically becomes a metadata element. </li>
+    <li>Audience. This will be a controlled vocabulary. </li>
+</ul>
+<p>Of course, folks familiar to Dublin Core will ask where the old familiar elements are (Title, Creator, Date, Type, Language, etc.) - but these are automatically captured by the CMS, so we don't need to ask these twice.</p>
+<h4>Step 1. Create Data Templates</h4>
+<p>Because the "Simple Site" has a very simple information architecture, we'll need to extend that slightly by creating a new Section item. This will allow us to create the News section and add the press releases there.</p>
+<p>If you took the approach of making a "Base Content Item" and inheriting that, you can simply make a new "Section" template and inherit from the Base Content Item which will give you the Title and Description fields already build. Otherwise, create those.</p>
+<p>Second, make a Press Release item. As before, inherit the Base Content Item if possible. Next, we'll add our metadata.</p>
+<ul>
+    <li>For the Related Products field, create a Multilist or Checklist&nbsp;field and use the following XPATH as the source field: query:/sitecore/content/Home/*[@@templatename='Product'] </li>
+    <li>For the Audience field, create a Multilist or Checklist&nbsp;field and use teh following repository path as the source: /sitecore/content/globals/metadata/audience </li>
+</ul>
+<p>Note, we still need to create the items in audience - so don't go testing this yet, or it will return an error. </p>
+<p>Lastly, we'll create a "Standard Text" item with a single&nbsp;text field.</p>
+<h4>Step 2. Create Information Architecture and set insert options.</h4>
+<p>Insert Options:</p>
+<ul>
+    <li>On Home, add "Section". This will allow you to create the News section item. </li>
+    <li>On "News", add Press Releases. This will allow you to create an example Press Release. </li>
+</ul>
+<p>Metadata controlled vocabulary:</p>
+<ul>
+    <li>Create globals, metadata and audience. Set the insert options to allow inserting Standard Text items. </li>
+    <li>Create a few example metadata items </li>
+</ul>
+<p>Your content tree should look pretty much as below:</p>
+<p><img width="216" height="343" alt="Content Tree structure" src="~/media/F6B56E4D45D44F50B05780E77AE1FA82.ashx"></p>
+<h4>Step 3. Tagging</h4>
+<p>In your example Press Release, you will see a list of your metadata with your products and audiences listed. Select "Product 1" and "Customers".</p>
+<h4>Step 4. Presentation</h4>
+<p>We will create three components;</p>
+<ul>
+    <li>Dublin Core HTML metadata output. This will grab the title, date, language from the existing item metadata, as well as adding audience. </li>
+    <li>Related Products. This will simply make a link from the press release, to the products from the metadata tagging </li>
+    <li>Related News. This will appear on the product pages. If an author creates a News release and tags it with a product, the product page will automatically link to the press release. </li>
+</ul>
+<p>&nbsp;</p>
+<h5>Dublin Core HTML output.</h5>
+<p>In Developer Center (or Sitecore Rocks), create a new XSL file. Add the following code into your XSL template.</p>
+<p>
+</p>
+<p>&lt;link rel="schema.DC" href="<a href="http://purl.org/dc/elements/1.1/">http://purl.org/dc/elements/1.1/</a>" /&gt;<br>
+&lt;link rel="schema.DCTERMS" href="<a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>" /&gt;</p>
+<p>&lt;meta name="DC.Title" xml:lang="{$lang}" content="{sc:fld('Title',.)}" /&gt;<br>
+&lt;meta name="DC.Creator" content="{sc:fld('__created by',.)}" /&gt;<br>
+&lt;meta name="DC.Date" scheme="ISO8601" content="{sc:formatdate(sc:fld('__created',.),'o')}" /&gt;<br>
+&lt;meta name="DC.Language" scheme="dcterms:RFC1766" content="{$lang}" /&gt;</p>
+<p>&lt;xsl:for-each select="sc:Split('audience',$sc_currentitem)"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xsl:for-each select="sc:item(text(),$sc_currentitem)"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="DC.Audience" content="{sc:fld('text',.)}" /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xsl:for-each&gt;<br>
+&lt;/xsl:for-each&gt;</p>
+<p>Language is automatically pulled from the page context. Created by and Created [Date] are system fields you can access. The 'o' in the date output is the date format - one of the few where W3C RFC and .net standard outputs line up exactly (so you don't need to make a custom date parser) - if you want to see the other date output possibilities, visit <a href="http://msdn.microsoft.com/en-us/library/97x6twsz.aspx" target="_self">Date and Time Format Strings at MSDN</a>.</p>
+<p>DC.Audience is the only relatively tricky one - all the audiences are stored as items in a delimited list, so we iterate through those and make a seperate DC.Audience item for each audience selected (Dublin Core dictates using seperate tags, rather than one tag with comma seperated values as content).</p>
+<p>This component can now be added as a static file reference to any page layout/sublayout and it will automatically add that information to the page source.</p>
+<p>&nbsp;</p>
+<h5>Related News articles</h5>
+<p>This code is inserted within the xsl:template nodes created by Sitecore when you make a new XSL file. The code iterates through all items in /sitecore/content/Home/News and finds those with references to the current item. So, by placing this component on product pages, it acts to automatically find any news item that is referencing it.</p>
+<p>(Please note, this is quick and dirty code which is easy to understand and works well for small sites, but once you get into the hundreds of news items, you will want to come up with a more optimised query)</p>
+<p>&lt;xsl:variable name="news_root" select="sc:item('/sitecore/content/Home/News',.)" /&gt;</p>
+<p>News for &lt;sc:text field="title" /&gt;<br>
+&lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xsl:for-each select="$news_root//item[@template='press release']"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xsl:if test="contains(sc:fld('related products',.), <a href="mailto:$sc_item/@id">$sc_item/@id</a>)"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;sc:link select="."&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;sc:text field="title" select="." /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/sc:link&gt;&lt;br/&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xsl:if&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xsl:for-each&gt;<br>
+&lt;/p&gt;</p>
+<p>&nbsp;</p>
+<h5>Related Items</h5>
+<p>This code is inserted within the xsl:template nodes created by Sitecore when you make a new XSL file. Within Sitecore, Multilist or Checklist fields store multiple values in the same field. You use sc:split to seperate out the references. This component would go on News pages and automatically turn those metadata references into links on the page.</p>
+<p>&lt;xsl:for-each select="sc:Split('Related Product',.) "&gt;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xsl:for-each select="sc:item(text(),.)"&gt;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;sc:link select="."&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;sc:text field="Title" select="." /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/sc:link&gt;&lt;br/&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:for-each&gt; <br>
+&lt;/xsl:for-each&gt;</p>
+<p>&nbsp;</p>
+<h4>Conclusion</h4>
+<p>As you can see,&nbsp;adding metadata taxonomies is actually a pretty easy thing to do with lots of benefits for making your content interrelationships more relevant. For a few lines of code, you can save your content editors from constantly having to place those links manually on multiple pages. The same principle of re-use and easy lookups applies to much of the Dublin Core data, and using the repository itself&nbsp;for metadata sources.&nbsp;</p>
+<p>If the information exists already in Sitecore,&nbsp;it&nbsp;very easy to use that information in multiple ways automatically saving your content authors and information architects a great deal of time.</p>
+----field----
+field: {24DDFF9E-D4D8-46C8-99A6-6B01F5251B8F}
+name: Use case solution statement
+key: use case solution statement
+content-length: 60
+
+"How can I categorize and re-use content based on metadata?"
+----field----
+field: {98A14AED-B794-4B64-8C76-2D11BFF917D0}
+name: Categories
+key: categories
+content-length: 38
+
+{DA01F21A-90BE-4515-882B-DC7031B1358B}
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{15DD3569-2798-420D-87DA-4FA39281FB7E}
+----field----
+field: {048861EF-4F76-46DC-AA49-48D9F173D1B7}
+name: External References
+key: external references
+content-length: 38
+
+{1BA7468D-F708-4198-BC13-A8AA3AD747C5}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 18
+
+All about Taxonomy
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111028T105000
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\mde
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7bf31237-397c-4b86-9646-65b9eeb39872
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121004T121440:634849496806391886
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
+----version----
+language: en
+version: 2
+revision: 620f7d93-f1a9-4739-8a0a-290cf443450f
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 18
+
+All about Taxonomy
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 754
+
+ 
+<P>Obviously one of the keys to properly managing and maintaining your content for a large website is proper metadata and taxonomy use.</P>
+<P>Sitecore is unique in that in many cases, taxonomy structure can be based off the content structure - meaning you don't need to maintain a seperate taxonomy tree for certain metadata attributes. Obviously, for some controlled vocabulary elements (i.e. lists of countries, Dublin Core classifications, etc.) you need to do this, but for metadata elements such as product lists, corporate structures, etc. these can come from your content itself, automatically.</P>
+<P>Similarly, metadata can be used to automatically add content or relationships to pages, and make searchability or semantic tagging easier.</P>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 19508
+
+<p>For this example, we'll assume you've built the "<a href="~/link.aspx?_id=91F6955A9C5E4672A164C5C5B54FA07E&amp;_z=z">Simple Site</a>" and you have a small website with a list of products. We are going to create a 'News' section of the website, and have Press Release pages with the usual information (Title, Date, Description) as well as automatically linking to any products they mention.</p>
+<p>In turn, our product pages will have a new component which will automatically link to any new Press Releases that mention them, based off the metadata. As soon as you add a Press Release, it will appear as a link on the Product page.</p>
+<p>As for our Press Release, in addition to the usual fields, it will have two metadata fields:</p>
+<ul>
+ <li>Products. The source for this will come from the Sitecore tree itself. As soon as you add a product, it automatically becomes a metadata element. </li>
+ <li>Audience. This will be a controlled vocabulary. </li>
+</ul>
+<p>Of course, folks familiar to Dublin Core will ask where the old familiar elements are (Title, Creator, Date, Type, Language, etc.) - but these are automatically captured by the CMS, so we don't need to ask these twice.</p>
+<h4>Step 1. Create Data Templates</h4>
+<p>Because the "Simple Site" has a very simple information architecture, we'll need to extend that slightly by creating a new Section item. This will allow us to create the News section and add the press releases there.</p>
+<p>If you took the approach of making a "Base Content Item" and inheriting that, you can simply make a new "Section" template and inherit from the Base Content Item which will give you the Title and Description fields already build. Otherwise, create those.</p>
+<p>Second, make a Press Release item. As before, inherit the Base Content Item if possible. Next, we'll add our metadata.</p>
+<ul>
+ <li>For the Related Products field, create a Multilist or Checklist field and use the following XPATH as the source field: query:/sitecore/content/Home/*[@@templatename='Product'] </li>
+ <li>For the Audience field, create a Multilist or Checklist field and use teh following repository path as the source: /sitecore/content/globals/metadata/audience </li>
+</ul>
+<p>Note, we still need to create the items in audience - so don't go testing this yet, or it will return an error. </p>
+<p>Lastly, we'll create a "Standard Text" item with a single text field.</p>
+<h4>Step 2. Create Information Architecture and set insert options.</h4>
+<p>Insert Options:</p>
+<ul>
+ <li>On Home, add "Section". This will allow you to create the News section item. </li>
+ <li>On "News", add Press Releases. This will allow you to create an example Press Release. </li>
+</ul>
+<p>Metadata controlled vocabulary:</p>
+<ul>
+ <li>Create globals, metadata and audience. Set the insert options to allow inserting Standard Text items. </li>
+ <li>Create a few example metadata items </li>
+</ul>
+<p>Your content tree should look pretty much as below:</p>
+<p><img alt="Content Tree structure" src="~/media/F6B56E4D45D44F50B05780E77AE1FA82.ashx" width="216" height="343" /></p>
+<h4>Step 3. Tagging</h4>
+<p>In your example Press Release, you will see a list of your metadata with your products and audiences listed. Select "Product 1" and "Customers".</p>
+<h4>Step 4. Presentation</h4>
+<p>We will create three components;</p>
+<ul>
+ <li>Dublin Core HTML metadata output. This will grab the title, date, language from the existing item metadata, as well as adding audience. </li>
+ <li>Related Products. This will simply make a link from the press release, to the products from the metadata tagging. </li>
+ <li>Related News. This will appear on the product pages. If an author creates a News release and tags it with a product, the product page will automatically link to the press release. </li>
+</ul>
+<p> </p>
+<h5>Dublin Core HTML output.</h5>
+<p>In Developer Center (or Sitecore Rocks), create a new XSL file. Add the following code into your XSL template.</p>
+<div class="code">
+<div style="background-color: #dddddd; overflow: auto; background-position: initial initial; background-repeat: initial initial;">
+<ol style="padding: 0px 0px 0px 5px; margin: 0px 0px 0px 2.5em; background-color: #ffffff; background-position: initial initial; background-repeat: initial initial;">
+ <li><span style="color: #0000ff;">&lt;</span><span style="color: #a31515;">link</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">rel</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">schema.DC</span>"<span style="color: #0000ff;"> </span><span style="color: #ff0000;">href</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">http://purl.org/dc/elements/1.1/</span>"<span style="color: #0000ff;"> /&gt;</span> </li>
+ <li style="background-color: #f3f3f3; background-position: initial initial; background-repeat: initial initial;"><span style="color: #0000ff;">&lt;</span><span style="color: #a31515;">link</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">rel</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">schema.DCTERMS</span>"<span style="color: #0000ff;"> </span><span style="color: #ff0000;">href</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">http://purl.org/dc/terms/</span>"<span style="color: #0000ff;"> /&gt;</span> </li>
+ <li> </li>
+ <li style="background-color: #f3f3f3; background-position: initial initial; background-repeat: initial initial;"><span style="color: #0000ff;">&lt;</span><span style="color: #a31515;">meta</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">name</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">DC.Title</span>"<span style="color: #0000ff;"> </span><span style="color: #ff0000;">xml:lang</span><span style="color: #0000ff;">=</span>"{<span style="color: #0000ff;">$lang}</span>"<span style="color: #0000ff;"> </span><span style="color: #ff0000;">content</span><span style="color: #0000ff;">=</span>"{<span style="color: #0000ff;">sc:fld('Title',.)}</span>"<span style="color: #0000ff;"> /&gt;</span> </li>
+ <li><span style="color: #0000ff;">&lt;</span><span style="color: #a31515;">meta</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">name</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">DC.Creator</span>"<span style="color: #0000ff;"> </span><span style="color: #ff0000;">content</span><span style="color: #0000ff;">=</span>"{<span style="color: #0000ff;">sc:fld('__created by',.)}</span>"<span style="color: #0000ff;"> /&gt;</span> </li>
+ <li style="background-color: #f3f3f3; background-position: initial initial; background-repeat: initial initial;"><span style="color: #0000ff;">&lt;</span><span style="color: #a31515;">meta</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">name</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">DC.Date</span>"<span style="color: #0000ff;"> </span><span style="color: #ff0000;">scheme</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">ISO8601</span>"<span style="color: #0000ff;"> </span><span style="color: #ff0000;">content</span><span style="color: #0000ff;">=</span>"{<span style="color: #0000ff;">sc:formatdate(sc:fld('__created',.),'o')}</span>"<span style="color: #0000ff;"> /&gt;</span> </li>
+ <li><span style="color: #0000ff;">&lt;</span><span style="color: #a31515;">meta</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">name</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">DC.Language</span>"<span style="color: #0000ff;"> </span><span style="color: #ff0000;">scheme</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">dcterms:RFC1766</span>"<span style="color: #0000ff;"> </span><span style="color: #ff0000;">content</span><span style="color: #0000ff;">=</span>"{<span style="color: #0000ff;">$lang}</span>"<span style="color: #0000ff;"> /&gt;</span> </li>
+ <li style="background-color: #f3f3f3; background-position: initial initial; background-repeat: initial initial;"> </li>
+ <li><span style="color: #0000ff;">&lt;</span><span style="color: #2b91af;">xsl:for-each</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">select</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">sc:Split('audience',$sc_currentitem)</span>"<span style="color: #0000ff;">&gt;</span> </li>
+ <li style="background-color: #f3f3f3; background-position: initial initial; background-repeat: initial initial;"> <span style="color: #0000ff;">&lt;</span><span style="color: #2b91af;">xsl:for-each</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">select</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">sc:item(text(),$sc_currentitem)</span>"<span style="color: #0000ff;">&gt;</span> </li>
+ <li>  <span style="color: #0000ff;">&lt;</span><span style="color: #a31515;">meta</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">name</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">DC.Audience</span>"<span style="color: #0000ff;"> </span><span style="color: #ff0000;">content</span><span style="color: #0000ff;">=</span>"{<span style="color: #0000ff;">sc:fld('text',.)}</span>"<span style="color: #0000ff;"> /&gt;</span> </li>
+ <li style="background-color: #f3f3f3; background-position: initial initial; background-repeat: initial initial;"> <span style="color: #0000ff;">&lt;/</span><span style="color: #2b91af;">xsl:for-each</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li><span style="color: #0000ff;">&lt;/</span><span style="color: #2b91af;">xsl:for-each</span><span style="color: #0000ff;">&gt;</span> </li>
+</ol>
+</div>
+</div>
+<p>Language is automatically pulled from the page context. Created by and Created [Date] are system fields you can access. The 'o' in the date output is the date format - one of the few where W3C RFC and .net standard outputs line up exactly (so you don't need to make a custom date parser) - if you want to see the other date output possibilities, visit <a href="http://msdn.microsoft.com/en-us/library/97x6twsz.aspx" target="_self">Date and Time Format Strings at MSDN</a>.</p>
+<p>DC.Audience is the only relatively tricky one - all the audiences are stored as items in a delimited list, so we iterate through those and make a seperate DC.Audience item for each audience selected (Dublin Core dictates using seperate tags, rather than one tag with comma seperated values as content).</p>
+<p>This component can now be added as a static file reference to any page layout/sublayout and it will automatically add that information to the page source.</p>
+<p> </p>
+<h5>Related News articles</h5>
+<p>This code is inserted within the xsl:template nodes created by Sitecore when you make a new XSL file. The code iterates through all items in /sitecore/content/Home/News and finds those with references to the current item. So, by placing this component on product pages, it acts to automatically find any news item that is referencing it.</p>
+<p>(Please note, this is quick and dirty code which is easy to understand and works well for small sites, but once you get into the hundreds of news items, you will want to come up with a more optimised query)</p>
+<div class="code">
+<div style="background-color: #dddddd; overflow: auto; background-position: initial initial; background-repeat: initial initial;">
+<ol style="padding: 0px 0px 0px 5px; margin: 0px 0px 0px 2.5em; background-color: #ffffff; background-position: initial initial; background-repeat: initial initial;">
+ <li><span style="color: #0000ff;">&lt;</span><span style="color: #2b91af;">xsl:variable</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">name</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">news_root</span>"<span style="color: #0000ff;"> </span><span style="color: #ff0000;">select</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">sc:item('/sitecore/content/Home/News',.)</span>"<span style="color: #0000ff;"> /&gt;</span> </li>
+ <li style="background-color: #f3f3f3; background-position: initial initial; background-repeat: initial initial;"> </li>
+ <li>News for <span style="color: #0000ff;">&lt;</span><span style="color: #a31515;">sc:text</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">field</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">title</span>"<span style="color: #0000ff;"> /&gt;</span> </li>
+ <li style="background-color: #f3f3f3; background-position: initial initial; background-repeat: initial initial;"><span style="color: #0000ff;">&lt;</span><span style="color: #a31515;">p</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li> <span style="color: #0000ff;">&lt;</span><span style="color: #2b91af;">xsl:for-each</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">select</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">$news_root//item[@template='press release']</span>"<span style="color: #0000ff;">&gt;</span> </li>
+ <li style="background-color: #f3f3f3; background-position: initial initial; background-repeat: initial initial;">  <span style="color: #0000ff;">&lt;</span><span style="color: #2b91af;">xsl:if</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">test</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">contains(sc:fld('related products',.), $sc_item/@id)</span>"<span style="color: #0000ff;">&gt;</span> </li>
+ <li>   <span style="color: #0000ff;">&lt;</span><span style="color: #a31515;">sc:link</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">select</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">.</span>"<span style="color: #0000ff;">&gt;</span> </li>
+ <li style="background-color: #f3f3f3; background-position: initial initial; background-repeat: initial initial;">    <span style="color: #0000ff;">&lt;</span><span style="color: #a31515;">sc:text</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">field</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">title</span>"<span style="color: #0000ff;"> </span><span style="color: #ff0000;">select</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">.</span>"<span style="color: #0000ff;"> /&gt;</span> </li>
+ <li>   <span style="color: #0000ff;">&lt;/</span><span style="color: #a31515;">sc:link</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li style="background-color: #f3f3f3; background-position: initial initial; background-repeat: initial initial;">   <span style="color: #0000ff;">&lt;</span><span style="color: #a31515;">br</span><span style="color: #0000ff;">/&gt;</span> </li>
+ <li>  <span style="color: #0000ff;">&lt;/</span><span style="color: #2b91af;">xsl:if</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li style="background-color: #f3f3f3; background-position: initial initial; background-repeat: initial initial;"> <span style="color: #0000ff;">&lt;/</span><span style="color: #2b91af;">xsl:for-each</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li><span style="color: #0000ff;">&lt;/</span><span style="color: #a31515;">p</span><span style="color: #0000ff;">&gt;</span> </li>
+</ol>
+</div>
+</div>
+<p> </p>
+<h5>Related Items</h5>
+<p>This code is inserted within the xsl:template nodes created by Sitecore when you make a new XSL file. Within Sitecore, Multilist or Checklist fields store multiple values in the same field. You use sc:split to seperate out the references. This component would go on News pages and automatically turn those metadata references into links on the page.</p>
+<div class="code">
+<div style="background-color: #dddddd; overflow: auto; background-position: initial initial; background-repeat: initial initial;">
+<ol style="padding: 0px 0px 0px 5px; margin: 0px 0px 0px 2em; background-color: #ffffff; background-position: initial initial; background-repeat: initial initial;">
+ <li><span style="color: #0000ff;">&lt;</span><span style="color: #2b91af;">xsl:for-each</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">select</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">sc:Split('Related Product',.) </span>"<span style="color: #0000ff;">&gt;</span></li>
+ <li style="background-color: #f3f3f3; background-position: initial initial; background-repeat: initial initial;"> <span style="color: #0000ff;">&lt;</span><span style="color: #2b91af;">xsl:for-each</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">select</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">sc:item(text(),.)</span>"<span style="color: #0000ff;">&gt;</span></li>
+ <li>  <span style="color: #0000ff;">&lt;</span><span style="color: #a31515;">sc:link</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">select</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">.</span>"<span style="color: #0000ff;">&gt;</span></li>
+ <li style="background-color: #f3f3f3; background-position: initial initial; background-repeat: initial initial;">   <span style="color: #0000ff;">&lt;</span><span style="color: #a31515;">sc:text</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">field</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">Title</span>"<span style="color: #0000ff;"> </span><span style="color: #ff0000;">select</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">.</span>"<span style="color: #0000ff;"> /&gt;</span></li>
+ <li>  <span style="color: #0000ff;">&lt;/</span><span style="color: #a31515;">sc:link</span><span style="color: #0000ff;">&gt;</span></li>
+ <li style="background-color: #f3f3f3; background-position: initial initial; background-repeat: initial initial;">  <span style="color: #0000ff;">&lt;</span><span style="color: #a31515;">br</span><span style="color: #0000ff;">/&gt;</span></li>
+ <li> <span style="color: #0000ff;">&lt;/</span><span style="color: #2b91af;">xsl:for-each</span><span style="color: #0000ff;">&gt;</span></li>
+ <li style="background-color: #f3f3f3; background-position: initial initial; background-repeat: initial initial;"><span style="color: #0000ff;">&lt;/</span><span style="color: #2b91af;">xsl:for-each</span><span style="color: #0000ff;">&gt;</span></li>
+</ol>
+</div>
+</div>
+<p> </p>
+<h4>Conclusion</h4>
+<p>As you can see, adding metadata taxonomies is actually a pretty easy thing to do with lots of benefits for making your content interrelationships more relevant. For a few lines of code, you can save your content editors from constantly having to place those links manually on multiple pages. The same principle of re-use and easy lookups applies to much of the Dublin Core data, and using the repository itself for metadata sources. </p>
+<p>If the information exists already in Sitecore, it very easy to use that information in multiple ways automatically saving your content authors and information architects a great deal of time. Additionally, you don't need to create metadata fields for things such as Author, Created (datetime), etc. since these are already stored as part of the item automatically by Sitecore as system fields.</p>
+----field----
+field: {24DDFF9E-D4D8-46C8-99A6-6B01F5251B8F}
+name: Use case solution statement
+key: use case solution statement
+content-length: 60
+
+"How can I categorize and re-use content based on metadata?"
+----field----
+field: {98A14AED-B794-4B64-8C76-2D11BFF917D0}
+name: Categories
+key: categories
+content-length: 38
+
+{DA01F21A-90BE-4515-882B-DC7031B1358B}
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{15DD3569-2798-420D-87DA-4FA39281FB7E}
+----field----
+field: {048861EF-4F76-46DC-AA49-48D9F173D1B7}
+name: External References
+key: external references
+content-length: 38
+
+{1BA7468D-F708-4198-BC13-A8AA3AD747C5}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 18
+
+All about Taxonomy
+----field----
+field: {C8F93AFE-BFD4-4E8F-9C61-152559854661}
+name: __Valid from
+key: __valid from
+content-length: 15
+
+20120117T112700
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120117T112700
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\mde
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+620f7d93-f1a9-4739-8a0a-290cf443450f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121210T185748:634907626680505922
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

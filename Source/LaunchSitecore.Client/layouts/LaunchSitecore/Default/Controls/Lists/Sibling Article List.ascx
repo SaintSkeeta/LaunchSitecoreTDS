@@ -1,0 +1,3 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Sibling_Article_List.ascx.cs" Inherits="LaunchSitecore.layouts.LaunchSitecore.Default.Controls.Lists.Sibling_Article_List" %>
+<%@ Register TagPrefix="sc" Namespace="Sitecore.Web.UI.WebControls" Assembly="Sitecore.Kernel" %>
+<sc:Sublayout id="siblinglist" runat="server" path="/layouts/LaunchSitecore/Default/Controls/Lists/Article List.ascx" />

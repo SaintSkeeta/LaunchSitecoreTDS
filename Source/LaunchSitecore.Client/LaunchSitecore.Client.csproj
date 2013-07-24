@@ -1,0 +1,787 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug-Sean|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\LaunchSitecore.Client.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Dev|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\LaunchSitecore.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'QA|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\LaunchSitecore.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Prod|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\LaunchSitecore.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug-SeanSVN|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\LaunchSitecore.Client.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug-Adrian|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\LaunchSitecore.Client.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A483A9BB-2D40-4FE0-890B-D66B4B366174}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LaunchSitecore</RootNamespace>
+    <AssemblyName>LaunchSitecore</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\..\Installers\Glass\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Sitecore.Mapper">
+      <HintPath>..\..\Installers\Glass\Glass.Sitecore.Mapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net, Version=2.3.1.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\Installers\Lucene\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics">
+      <HintPath>..\..\Installers\Sitecore\Sitecore.Analytics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Automation.MarketingAutomation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+      <HintPath>..\..\Installers\Sitecore\Sitecore.Automation.MarketingAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Client">
+      <HintPath>..\..\Installers\Sitecore\Sitecore.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\..\Installers\Sitecore\Sitecore.Kernel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Sharedsource.Web.UI.Sublayouts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Installers\Sitecore\Sitecore.Sharedsource.Web.UI.Sublayouts.dll</HintPath>
+    </Reference>
+    <Reference Include="SpellChecker, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Installers\Misc\SpellChecker.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\Analytics\EnrollInAutomationState.cs" />
+    <Compile Include="Configuration\Analytics\Helper.cs" />
+    <Compile Include="Configuration\Handlers\ItemNameHyphenHandler.cs" />
+    <Compile Include="Configuration\HtmlRemoval.cs" />
+    <Compile Include="Configuration\Install\LaunchSitecorePostPackageStep.cs" />
+    <Compile Include="Configuration\ItemSorterByTitle.cs" />
+    <Compile Include="Configuration\LuceneSearch\SearchCommonText.cs" />
+    <Compile Include="Configuration\PageEditor\Base\FieldEditorButtonForSingleField.cs" />
+    <Compile Include="Configuration\PageEditor\Base\FieldEditorButtonForTemplate.cs" />
+    <Compile Include="Configuration\PageEditor\FieldEditorButton.cs" />
+    <Compile Include="Configuration\PageEditor\FieldEditorButtonForAbstractField.cs" />
+    <Compile Include="Configuration\PageEditor\FieldEditorButtonForArticleTemplate.cs" />
+    <Compile Include="Configuration\PageEditor\FieldEditorButtonForContributorTemplate.cs" />
+    <Compile Include="Configuration\Presentation\RecursiveRepeaterTemplate.cs" />
+    <Compile Include="Configuration\Processors\RemoveNonBreakingSpacesSaveProcessor.cs" />
+    <Compile Include="Configuration\Security\ResetUser.cs" />
+    <Compile Include="Configuration\Security\ResetSecurityAccounts.cs" />
+    <Compile Include="Configuration\SiteConfiguration.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Analytics\Current Session Info.ascx.cs">
+      <DependentUpon>Current Session Info.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Analytics\Current Session Info.ascx.designer.cs">
+      <DependentUpon>Current Session Info.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Analytics\Job Function Grid.ascx.cs">
+      <DependentUpon>Job Function Grid.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Analytics\Job Function Grid.ascx.designer.cs">
+      <DependentUpon>Job Function Grid.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Contributor Banner.ascx.cs">
+      <DependentUpon>Contributor Banner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Contributor Banner.ascx.designer.cs">
+      <DependentUpon>Contributor Banner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Page Banner with Abstract.ascx.cs">
+      <DependentUpon>Page Banner with Abstract.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Page Banner with Abstract.ascx.designer.cs">
+      <DependentUpon>Page Banner with Abstract.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Page Banner.ascx.cs">
+      <DependentUpon>Page Banner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Page Banner.ascx.designer.cs">
+      <DependentUpon>Page Banner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Alternate Page Banner.ascx.cs">
+      <DependentUpon>Alternate Page Banner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Alternate Page Banner.ascx.designer.cs">
+      <DependentUpon>Alternate Page Banner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Term Banner.ascx.cs">
+      <DependentUpon>Term Banner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Term Banner.ascx.designer.cs">
+      <DependentUpon>Term Banner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Abstract Spot.ascx.cs">
+      <DependentUpon>Abstract Spot.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Abstract Spot.ascx.designer.cs">
+      <DependentUpon>Abstract Spot.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Biography.ascx.cs">
+      <DependentUpon>Biography.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Biography.ascx.designer.cs">
+      <DependentUpon>Biography.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Body Content.ascx.cs">
+      <DependentUpon>Body Content.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Body Content.ascx.designer.cs">
+      <DependentUpon>Body Content.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Content with Image.ascx.cs">
+      <DependentUpon>Content with Image.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Content with Image.ascx.designer.cs">
+      <DependentUpon>Content with Image.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Promo Spot with Large Image.ascx.cs">
+      <DependentUpon>Promo Spot with Large Image.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Promo Spot with Large Image.ascx.designer.cs">
+      <DependentUpon>Promo Spot with Large Image.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Promo Spot with Thumbnail.ascx.cs">
+      <DependentUpon>Promo Spot with Thumbnail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Promo Spot with Thumbnail.ascx.designer.cs">
+      <DependentUpon>Promo Spot with Thumbnail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Term Details.ascx.cs">
+      <DependentUpon>Term Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Term Details.ascx.designer.cs">
+      <DependentUpon>Term Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Version Information.ascx.cs">
+      <DependentUpon>Version Information.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Version Information.ascx.designer.cs">
+      <DependentUpon>Version Information.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Abstract List.ascx.cs">
+      <DependentUpon>Abstract List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Abstract List.ascx.designer.cs">
+      <DependentUpon>Abstract List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Article List.ascx.cs">
+      <DependentUpon>Article List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Article List.ascx.designer.cs">
+      <DependentUpon>Article List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Featured Articles.ascx.cs">
+      <DependentUpon>Featured Articles.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Featured Articles.ascx.designer.cs">
+      <DependentUpon>Featured Articles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Evaluator Quick Links.ascx.cs">
+      <DependentUpon>Evaluator Quick Links.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Evaluator Quick Links.ascx.designer.cs">
+      <DependentUpon>Evaluator Quick Links.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Queried List.ascx.cs">
+      <DependentUpon>Queried List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Queried List.ascx.designer.cs">
+      <DependentUpon>Queried List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Glossary List.ascx.cs">
+      <DependentUpon>Glossary List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Glossary List.ascx.designer.cs">
+      <DependentUpon>Glossary List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Related Articles List.ascx.cs">
+      <DependentUpon>Related Articles List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Related Articles List.ascx.designer.cs">
+      <DependentUpon>Related Articles List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Sibling Article List.ascx.cs">
+      <DependentUpon>Sibling Article List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Sibling Article List.ascx.designer.cs">
+      <DependentUpon>Sibling Article List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Meta\CssTheme.ascx.cs">
+      <DependentUpon>CssTheme.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Meta\CssTheme.ascx.designer.cs">
+      <DependentUpon>CssTheme.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Meta\Metadata.ascx.cs">
+      <DependentUpon>Metadata.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Meta\Metadata.ascx.designer.cs">
+      <DependentUpon>Metadata.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Meta\Title.ascx.cs">
+      <DependentUpon>Title.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Meta\Title.ascx.designer.cs">
+      <DependentUpon>Title.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Breadcrumbs.ascx.cs">
+      <DependentUpon>Breadcrumbs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Breadcrumbs.ascx.designer.cs">
+      <DependentUpon>Breadcrumbs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Footer Navigation.ascx.cs">
+      <DependentUpon>Footer Navigation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Footer Navigation.ascx.designer.cs">
+      <DependentUpon>Footer Navigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Main Navigation.ascx.cs">
+      <DependentUpon>Main Navigation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Main Navigation.ascx.designer.cs">
+      <DependentUpon>Main Navigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Mobile Menu.ascx.cs">
+      <DependentUpon>Mobile Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Mobile Menu.ascx.designer.cs">
+      <DependentUpon>Mobile Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Site Selector.ascx.cs">
+      <DependentUpon>Site Selector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Site Selector.ascx.designer.cs">
+      <DependentUpon>Site Selector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Tree Menu.ascx.cs">
+      <DependentUpon>Tree Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Tree Menu.ascx.designer.cs">
+      <DependentUpon>Tree Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Add To Favorites.ascx.cs">
+      <DependentUpon>Add To Favorites.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Add To Favorites.ascx.designer.cs">
+      <DependentUpon>Add To Favorites.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Favorites.ascx.cs">
+      <DependentUpon>Favorites.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Favorites.ascx.designer.cs">
+      <DependentUpon>Favorites.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Login.ascx.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Login.ascx.designer.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Register.ascx.cs">
+      <DependentUpon>Register.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Register.ascx.designer.cs">
+      <DependentUpon>Register.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Security Buttons.ascx.cs">
+      <DependentUpon>Security Buttons.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Security Buttons.ascx.designer.cs">
+      <DependentUpon>Security Buttons.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Mobile.aspx.cs">
+      <DependentUpon>Mobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Mobile.aspx.designer.cs">
+      <DependentUpon>Mobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Left Sidebar with Title and Content.ascx.cs">
+      <DependentUpon>Full Left Sidebar with Title and Content.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Left Sidebar with Title and Content.ascx.designer.cs">
+      <DependentUpon>Full Left Sidebar with Title and Content.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Right Sidebar with Title and Content.ascx.cs">
+      <DependentUpon>Full Right Sidebar with Title and Content.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Right Sidebar with Title and Content.ascx.designer.cs">
+      <DependentUpon>Full Right Sidebar with Title and Content.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Title with Left Sidebar and Content.ascx.cs">
+      <DependentUpon>Full Title with Left Sidebar and Content.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Title with Left Sidebar and Content.ascx.designer.cs">
+      <DependentUpon>Full Title with Left Sidebar and Content.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Title with Right Sidebar and Content.ascx.cs">
+      <DependentUpon>Full Title with Right Sidebar and Content.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Title with Right Sidebar and Content.ascx.designer.cs">
+      <DependentUpon>Full Title with Right Sidebar and Content.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Title with Single Column.ascx.cs">
+      <DependentUpon>Full Title with Single Column.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Title with Single Column.ascx.designer.cs">
+      <DependentUpon>Full Title with Single Column.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Partial\Three Column.ascx.cs">
+      <DependentUpon>Three Column.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Partial\Three Column.ascx.designer.cs">
+      <DependentUpon>Three Column.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Partial\Two Columns.ascx.cs">
+      <DependentUpon>Two Columns.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Partial\Two Columns.ascx.designer.cs">
+      <DependentUpon>Two Columns.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LuceneSearch\Controls\Class\SearchManager.cs" />
+    <Compile Include="layouts\LuceneSearch\Controls\LuceneSearchBox.ascx.cs">
+      <DependentUpon>LuceneSearchBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LuceneSearch\Controls\LuceneSearchBox.ascx.designer.cs">
+      <DependentUpon>LuceneSearchBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LuceneSearch\Controls\LuceneSearchResults.ascx.cs">
+      <DependentUpon>LuceneSearchResults.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LuceneSearch\Controls\LuceneSearchResults.ascx.designer.cs">
+      <DependentUpon>LuceneSearchResults.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LuceneSearch\Controls\MobileSearchBox.ascx.cs">
+      <DependentUpon>MobileSearchBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LuceneSearch\Controls\MobileSearchBox.ascx.designer.cs">
+      <DependentUpon>MobileSearchBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\MyFirstSite\Default\Controls\Generic Display.ascx.cs">
+      <DependentUpon>Generic Display.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\MyFirstSite\Default\Controls\Generic Display.ascx.designer.cs">
+      <DependentUpon>Generic Display.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\MyFirstSite\Default\Controls\Product Display.ascx.cs">
+      <DependentUpon>Product Display.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\MyFirstSite\Default\Controls\Product Display.ascx.designer.cs">
+      <DependentUpon>Product Display.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\MyFirstSite\Default\Controls\Side Menu.ascx.cs">
+      <DependentUpon>Side Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\MyFirstSite\Default\Controls\Side Menu.ascx.designer.cs">
+      <DependentUpon>Side Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\MyFirstSite\Default\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\MyFirstSite\Default\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Analytics\Current Session Info.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Analytics\Job Function Grid.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Banners\Contributor Banner.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Banners\Page Banner with Abstract.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Banners\Page Banner.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Banners\Alternate Page Banner.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Banners\Term Banner.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Abstract Spot.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Biography.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Body Content.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Content with Image.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Promo Spot with Large Image.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Promo Spot with Thumbnail.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Term Details.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Version Information.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Abstract List.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Article List.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Featured Articles.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Evaluator Quick Links.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Queried List.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Glossary List.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Related Articles List.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Sibling Article List.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Meta\CssTheme.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Meta\Metadata.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Meta\Title.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Navigation\Breadcrumbs.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Navigation\Footer Navigation.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Navigation\Main Navigation.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Navigation\Mobile Menu.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Navigation\Site Selector.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Navigation\Tree Menu.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Secure\Add To Favorites.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Secure\Favorites.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Secure\Login.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Secure\Register.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Secure\Security Buttons.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Main.aspx" />
+    <Content Include="layouts\LaunchSitecore\Default\Mobile.aspx" />
+    <Content Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Left Sidebar with Title and Content.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Right Sidebar with Title and Content.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Title with Left Sidebar and Content.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Title with Right Sidebar and Content.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Title with Single Column.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Sublayouts\Partial\Three Column.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Sublayouts\Partial\Two Columns.ascx" />
+    <Content Include="layouts\LuceneSearch\Controls\LuceneSearchBox.ascx" />
+    <Content Include="layouts\LuceneSearch\Controls\LuceneSearchResults.ascx" />
+    <Content Include="layouts\LuceneSearch\Controls\MobileSearchBox.ascx" />
+    <Content Include="layouts\MyFirstSite\Default\Controls\Generic Display.ascx" />
+    <Content Include="layouts\MyFirstSite\Default\Controls\Product Display.ascx" />
+    <Content Include="layouts\MyFirstSite\Default\Controls\Side Menu.ascx" />
+    <Content Include="layouts\MyFirstSite\Default\Main.aspx" />
+    <Content Include="xsl\LaunchSitecore\Default\Footer.xslt" />
+    <Content Include="_css\colorbox.css" />
+    <Content Include="_css\mobile_gray.css" />
+    <Content Include="_css\mobile_red.css" />
+    <Content Include="_css\main_gray.css" />
+    <Content Include="_css\main.css" />
+    <Content Include="_css\mobile.css" />
+    <Content Include="_css\myfirstsite.css" />
+    <Content Include="_css\main_red.css" />
+    <Content Include="_js\ColorBox\jquery.colorbox-min.js" />
+    <Content Include="_js\ColorBox\jquery.colorbox.js" />
+    <Content Include="_js\jquery-1.7.1.min.js" />
+    <Content Include="_js\jquery-ui.min.js" />
+    <Content Include="_js\jquery.dcmegamenu.1.3.3.js" />
+    <Content Include="_js\jquery.dcmegamenu.1.3.3.min.js" />
+    <Content Include="_js\jquery.hoverIntent.minified.js" />
+    <Content Include="_js\jqueryslidemenu.js" />
+    <Content Include="_js\mobile.js" />
+    <Content Include="_js\PeelingEdge\turn.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\LaunchSitecore.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\ConnectionStrings.config">
+      <TransformOnBuild>true</TransformOnBuild>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.Debug-Sean.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Config\ConnectionStrings.Debug-Adrian.config">
+      <DependentUpon>ConnectionStrings.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Config\ConnectionStrings.Debug-Sean.config">
+      <DependentUpon>ConnectionStrings.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Config\ConnectionStrings.Debug-SeanSVN.config">
+      <DependentUpon>ConnectionStrings.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\ConnectionStrings.Debug.config">
+      <DependentUpon>ConnectionStrings.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\ConnectionStrings.Dev.config">
+      <DependentUpon>ConnectionStrings.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\ConnectionStrings.Prod.config">
+      <DependentUpon>ConnectionStrings.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\ConnectionStrings.QA.config">
+      <DependentUpon>ConnectionStrings.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\ConnectionStrings.Release.config">
+      <DependentUpon>ConnectionStrings.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <Content Include="Web.Dev.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.QA.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Prod.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Debug-SeanSVN.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Debug-Adrian.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LaunchContent\LaunchContent.csproj">
+      <Project>{AB40808F-AAA0-491C-A220-C1C0C8905BDE}</Project>
+      <Name>LaunchContent</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SlowCheetahTargets Condition=" '$(SlowCheetahTargets)'=='' ">$(LOCALAPPDATA)\Microsoft\MSBuild\SlowCheetah\v1\SlowCheetah.Transforms.targets</SlowCheetahTargets>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62304</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SlowCheetahTargets)" Condition="Exists('$(SlowCheetahTargets)')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

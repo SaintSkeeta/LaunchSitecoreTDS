@@ -1,0 +1,93 @@
+----item----
+version: 1
+id: {E4684940-196D-4314-8E53-12C0B05BD311}
+database: master
+path: /sitecore/content/Global/Promo Spots/DMS
+parent: {0C3A6A6B-A450-480B-9A35-7486A4E0C836}
+name: DMS
+master: {00000000-0000-0000-0000-000000000000}
+template: {2DED4D56-04FD-4D55-84F5-59D4ECA70E83}
+templatekey: Promo Spot
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: a064b675-84bb-4e2b-a43c-e739b5786c1d
+
+----field----
+field: {BE8278A4-8653-4F35-8A25-6E089D8E3462}
+name: Title
+key: title
+content-length: 24
+
+Digital Marketing System
+----field----
+field: {E96DFA10-FA94-4B0F-9612-27FC15439797}
+name: Abstract
+key: abstract
+content-length: 187
+
+<p>Understand campaign and site performance and gain the insight you need to improve conversion rates and generate more qualified leads through web, email, mobile and social channels.</p>
+----field----
+field: {E51F0A11-F315-4020-AC5B-1AC24AAF7169}
+name: Image
+key: image
+content-length: 136
+
+<image mediaid="{01221315-D332-48A1-AFFB-13972E9DD921}" mediapath="/Images/Icons/Marketing" src="~/media/Images/Icons/Marketing.ashx" />
+----field----
+field: {A6A98102-526C-4960-B5E2-204760190E05}
+name: Link To
+key: link to
+content-length: 38
+
+{28EDE239-5290-437B-9877-DC9A59FD8B9C}
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120308T183400
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a064b675-84bb-4e2b-a43c-e739b5786c1d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20120921T155610:634838397701630581
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

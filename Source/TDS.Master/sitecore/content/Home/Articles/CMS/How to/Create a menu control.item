@@ -1,0 +1,185 @@
+----item----
+version: 1
+id: {473C5B07-2496-4519-A824-FB78EEECA47C}
+database: master
+path: /sitecore/content/Home/Articles/CMS/How to/Create a menu control
+parent: {44EEE557-704F-4F3D-87B4-187D128C2BAE}
+name: Create a menu control
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 385
+
+<tracking>
+  <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function" presets="devon the developer|100||">
+    <key name="Analytics" value="1" />
+    <key name="Copywriting" value="1" />
+    <key name="Personalization and Testing" value="2" />
+    <key name="Technology" value="5" />
+    <key name="Workflow and Publishing" value="3" />
+  </profile>
+</tracking>
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+200
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 61d74c9e-752b-44d5-a66a-627c4706b7ba
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 21
+
+Create a menu control
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 254
+
+<p>Sitecore makes building dynamic menus based on your content easy. You can easily query the content repository to determine the items to include. This along with a base data template for the menu fields can help you quickly complete these controls.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 7406
+
+<p>When you create a site in Sitecore, it is very common to use the content tree to derive the menu. This usually makes sense as we want our navigation to match our Information Architecture. If you want to use an alternate menu structure you can also use Sitecore, but this article will focus on using the content tree. </p>
+<p>Another question that is often asked is how many levels can the menu be or can I have a menu that looks like some example? You can model any menu you desire by just having a sublayout create the markup for you. The menu for this site uses a jQuery based menu that is rendered as lists. It supports infinite levels of depth as it uses recursive repeater controls.</p>
+<p>Below is an example of the menu from this site.</p>
+<p><img src="~/media/D23FCCC949994D049452407C77C3EB94.ashx" alt="Menu" style="width: 640px; height: 299px;"></p>
+<p>First we need to look at the data template which we called Menu Item. All items that can are rendered as pages in this site are based on a template that inherits the Menu Item template. This provides the fields Menu Text as well as options to hide this item or its children from the menu. To see how these look on an item, you can use the Content Editor or the Menu button in the ribbon of the Page Editor.</p>
+<p>Now we need to take a look at the markup. You see it is simply a repeater with a placeholder. If your menu is a fixed depth, there is no reason to use recursion.</p>
+<div class="code">
+<div style="overflow: auto; background-color: #dddddd;">
+<ol style="padding: 0px 0px 0px 5px; background-color: #ffffff; margin: 0px 0px 0px 2.5em;">
+  <li><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">asp</span><span style="color: #0000ff;">:</span><span style="color: #800000;">Repeater</span> <span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="rptMenu"</span> <span style="color: #ff0000;">runat</span><span style="color: #0000ff;">="server"</span> <span style="color: #ff0000;">OnItemDataBound</span><span style="color: #0000ff;">="rptMenu_ItemDataBound"&gt;</span></li>
+  <li style="background-color: #f3f3f3;"> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">HeaderTemplate</span><span style="color: #0000ff;">&gt;&lt;</span><span style="color: #800000;">ul</span><span style="color: #0000ff;">&gt;&lt;/</span><span style="color: #800000;">HeaderTemplate</span><span style="color: #0000ff;">&gt;</span></li>
+  <li> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">ItemTemplate</span><span style="color: #0000ff;">&gt;</span></li>
+  <li style="background-color: #f3f3f3;"> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">li</span> <span style="color: #ff0000;">runat</span><span style="color: #0000ff;">="server"</span> <span style="color: #ff0000;">id</span><span style="color: #0000ff;">="liwrapper"&gt;</span></li>
+  <li> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">asp</span><span style="color: #0000ff;">:</span><span style="color: #800000;">HyperLink</span> <span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="MenuLink"</span> <span style="color: #ff0000;">runat</span><span style="color: #0000ff;">="server"&gt;</span></li>
+  <li style="background-color: #f3f3f3;">  <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">sc</span><span style="color: #0000ff;">:</span><span style="color: #800000;">fieldrenderer</span> <span style="color: #ff0000;">id</span><span style="color: #0000ff;">="MenuThumbnail"</span> <span style="color: #ff0000;">runat</span><span style="color: #0000ff;">="server"</span> <span style="color: #ff0000;">fieldname</span><span style="color: #0000ff;">="Menu Thumbnail"</span> <span style="color: #0000ff;">/&gt;</span></li>
+  <li>  <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">asp</span><span style="color: #0000ff;">:</span><span style="color: #800000;">Literal</span> <span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="MenuText"</span> <span style="color: #ff0000;">runat</span><span style="color: #0000ff;">="server"</span> <span style="color: #0000ff;">/&gt;</span></li>
+  <li style="background-color: #f3f3f3;"> <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">asp</span><span style="color: #0000ff;">:</span><span style="color: #800000;">HyperLink</span><span style="color: #0000ff;">&gt;</span></li>
+  <li> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">asp</span><span style="color: #0000ff;">:</span><span style="color: #800000;">PlaceHolder</span> <span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="phSubMenu"</span> <span style="color: #ff0000;">runat</span><span style="color: #0000ff;">="server"</span> <span style="color: #0000ff;">/&gt;</span></li>
+  <li style="background-color: #f3f3f3;"> <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">li</span><span style="color: #0000ff;">&gt;</span></li>
+  <li> <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">ItemTemplate</span><span style="color: #0000ff;">&gt;</span></li>
+  <li style="background-color: #f3f3f3;"> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">FooterTemplate</span><span style="color: #0000ff;">&gt;&lt;/</span><span style="color: #800000;">ul</span><span style="color: #0000ff;">&gt;&lt;/</span><span style="color: #800000;">FooterTemplate</span><span style="color: #0000ff;">&gt;</span></li>
+  <li><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">asp</span><span style="color: #0000ff;">:</span><span style="color: #800000;">Repeater</span><span style="color: #0000ff;">&gt;</span></li>
+</ol>
+</div>
+</div>
+<p>This is pretty standard code for a .Net site. The Sitecore code comes more into play when you see how we bind the repeater to the content. The codebehind file takes care of this.</p>
+<div class="code">
+<div style="overflow: auto; background-color: #dddddd;">
+<ol style="padding: 0px 0px 0px 5px; background-color: #ffffff; margin: 0px 0px 0px 2.5em;">
+  <li><span style="color: #2b91af;">Item</span> HomeItem = <span style="color: #2b91af;">SiteConfiguration</span>.GetHomeItem();</li>
+  <li style="background-color: #f3f3f3;"><span style="color: #2b91af;">List</span>&lt;<span style="color: #2b91af;">Item</span>&gt; nodes = <span style="color: #0000ff;">new</span> <span style="color: #2b91af;">List</span>&lt;<span style="color: #2b91af;">Item</span>&gt;();</li>
+  <li>nodes.Add(HomeItem);</li>
+  <li style="background-color: #f3f3f3;"><span style="color: #0000ff;">foreach</span> (<span style="color: #2b91af;">Item</span> i <span style="color: #0000ff;">in</span> HomeItem.Axes.SelectItems(<span style="color: #a31515;">"./*[@Hide Item from Menu != '1']"</span>))</li>
+  <li>{</li>
+  <li style="background-color: #f3f3f3;"> nodes.Add(i);</li>
+  <li>}     </li>
+  <li style="background-color: #f3f3f3;">rptMenu.DataSource = nodes;</li>
+  <li>rptMenu.DataBind();</li>
+</ol>
+</div>
+</div>
+<p>This code uses the Axes.SelectItems method to get the child items of the home item and then binds the results to the repeater. It then uses the ItemDataBound event to load the child items.</p>
+<p>This high level overview along with the code examples included with Launch Sitecore should provide a nice start for your site navigation.</p>
+----field----
+field: {24DDFF9E-D4D8-46C8-99A6-6B01F5251B8F}
+name: Use case solution statement
+key: use case solution statement
+content-length: 61
+
+"I want to see how the menu system for this site was created"
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{EF5350C8-21BF-43A3-BCEF-71F29D91AEF0}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 21
+
+Create a menu control
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111027T105300
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\mic
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+61d74c9e-752b-44d5-a66a-627c4706b7ba
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121211T010017:634907844179607214
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

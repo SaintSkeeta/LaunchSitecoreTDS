@@ -1,0 +1,10 @@
+﻿a { color: #5c5c5c; }
+.header { background: url("/images/graytheme/header_bg.png") top left repeat-x #d8d8d8;  }
+.header .buttons .button .left { background: url("/images/graytheme/header_btn_left.jpg") right center no-repeat; }
+.header .buttons .button .right { background: url("/images/graytheme/header_btn_right.jpg") left center no-repeat; }
+.header .buttons .button .inn { background: url("/images/graytheme/header_btn_inn.jpg") left center repeat-x; }
+.dropdowns .button { background: url("/images/graytheme/header_btn_inn.jpg") left center repeat-x; }
+.dropdowns h4 a { background: url("/images/graytheme/icon_close.jpg") right center no-repeat; }
+.mobilemenu ul li a:hover, .mobilemenu ul li a:active { background: url("/images/graytheme/header_bg.png") top left repeat-x #535355; }
+.content .menu_section .site_menu ul li a { color: #5c5c5c; }
+.content .menu_section .site_menu ul li.selected ul li a { color: #5c5c5c; }

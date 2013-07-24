@@ -1,0 +1,114 @@
+----item----
+version: 1
+id: {431DD81B-22CD-4994-B622-0E2773818AC1}
+database: master
+path: /sitecore/content/Home/Glossary/Layout
+parent: {2D75C97D-5981-4482-8631-208B2DEB1F54}
+name: Layout
+master: {00000000-0000-0000-0000-000000000000}
+template: {C6DD3CEF-22AF-4468-B3B0-82ABFCDE0F24}
+templatekey: Term
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: b3c8262b-a5a1-475e-970a-8099b75ba55a
+
+----field----
+field: {FBADE872-82BD-45AD-A2EC-DADC723249DA}
+name: Title
+key: title
+content-length: 6
+
+Layout
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 139
+
+<image mediaid="{65EBF460-6082-4C6B-8283-8BEB3C871A84}" mediapath="/Images/Icons/windows" src="~/media/Images/Icons/windows.ashx" ></image>
+----field----
+field: {B636170C-2681-469A-A642-A6549C12D1E6}
+name: Definition
+key: definition
+content-length: 163
+
+<p>Defines the overall appearance of a page and consists of a layout definition item stored in the Content Tree and a .NET ASPX file stored under the web root.</p>
+----field----
+field: {AA7CE48D-746C-42C7-BD64-9A51F7F10B7C}
+name: Usage
+key: usage
+content-length: 507
+
+<p>All items which have presentation associated, must have a layout defined. Generally, a Layout is a template that is used as the base for many pages. For example, in this Launch Sitecore example, the Main template has the navigation statically bound (in that every page has it - not that the menu is static) and placeholders to allow flexibility for banners, side menus, 2 or 3 column <a href="%7E/link.aspx?_id=3FD0E7AD3B814875A77FA0F67BE47035&amp;_z=z">sublayouts</a>, component renderings, etc.<br></p>
+----field----
+field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
+name: Image
+key: image
+content-length: 146
+
+<image mediaid="{CC5959D4-75C9-49FA-B6F8-C90AAF5FF243}" mediapath="/Images/Glossary/Layout" src="~/media/CC5959D475C949FAB6F8C90AAF5FF243.ashx" />
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 6
+
+Layout
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111214T230900
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\chc
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b3c8262b-a5a1-475e-970a-8099b75ba55a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121210T185828:634907627080975922
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

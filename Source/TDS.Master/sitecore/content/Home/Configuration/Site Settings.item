@@ -1,0 +1,172 @@
+----item----
+version: 1
+id: {7428E9A9-053E-4806-B114-9A3CDE554BDA}
+database: master
+path: /sitecore/content/Home/Configuration/Site Settings
+parent: {7EB259B1-1847-41DF-B04A-991102EFEAF1}
+name: Site Settings
+master: {00000000-0000-0000-0000-000000000000}
+template: {41E5285E-F5B2-4075-95CE-D3A993881C81}
+templatekey: Site Settings
+
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 28
+
+Applications/16x16/gears.png
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+100
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 0
+
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----field----
+field: {CA9B9F52-4FB0-4F87-A79F-24DEA62CDA65}
+name: __Default workflow
+key: __default workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: d74f6c7c-1c85-4e89-a5d7-97e0986787a6
+
+----field----
+field: {1FE0B6C9-F642-4416-809F-EBB754241A6D}
+name: Page Size
+key: page size
+content-length: 1
+
+6
+----field----
+field: {509971D4-6F57-4887-B96B-0CFA567FB466}
+name: Search Index
+key: search index
+content-length: 6
+
+system
+----field----
+field: {AEDA6E3F-DC98-4E05-8D5F-6E54911419DE}
+name: Comments
+key: comments
+content-length: 404
+
+The name of the index used for searching.  Do not change unless you are sure that you know what you are doing.  
+
+The search feature uses the system index associated with the master database because the starter kit sites run in "Live Mode".  If you change the site to support a separate web database, you must create an associated web database index and specify its name above in order to support search.
+----field----
+field: {47D2853F-9423-4157-8E6C-833CA9708F1B}
+name: Profile Path
+key: profile path
+content-length: 38
+
+{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}
+----field----
+field: {B7066F9F-DA7E-4EC4-95F4-D2B1E87C0CAA}
+name: Copyright
+key: copyright
+content-length: 30
+
+Copyright © 1999-2012 Sitecore
+----field----
+field: {B72E07BB-BBCE-4B1D-9A87-70988513E234}
+name: Allow Online Registration
+key: allow online registration
+content-length: 1
+
+1
+----field----
+field: {6A887010-7322-44B4-B05C-31697928B303}
+name: Page Title for Home and Site Sections
+key: page title for home and site sections
+content-length: 21
+
+{0} | Launch Sitecore
+----field----
+field: {436B14EE-7226-4831-AE7B-06FF5C8FF0D2}
+name: Page Title for Lower Pages
+key: page title for lower pages
+content-length: 27
+
+{0} - {1} | Launch Sitecore
+----field----
+field: {E31D4BCB-AC93-4376-AD09-1BEA045C85A8}
+name: Title Comments
+key: title comments
+content-length: 415
+
+You can use whatever string you want.  The page title control will replace {0} with the name of the current item and the {1} with the name of the site section.  If you would like to store page titles as a field, just edit the meta\title control to pull that field.  The first string is used for the home page and the site sections pages.  The second string is for lower pages such as articles and team member pages.
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 12
+
+sitecore\mic
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111018T054600
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\mic
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d74f6c7c-1c85-4e89-a5d7-97e0986787a6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20120926T171616:634842765762531124
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

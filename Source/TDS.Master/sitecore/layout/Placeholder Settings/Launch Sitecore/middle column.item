@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {ABD6DE25-0BC7-4732-9126-92BFB9D90CE5}
+database: master
+path: /sitecore/layout/Placeholder Settings/Launch Sitecore/middle column
+parent: {6A849DE5-4132-4079-BDF6-F4254F5E08CD}
+name: middle column
+master: {00000000-0000-0000-0000-000000000000}
+template: {5C547D4E-7111-4995-95B0-6B561751BF2E}
+templatekey: Placeholder
+
+----field----
+field: {7256BDAB-1FD2-49DD-B205-CB4873D2917C}
+name: Placeholder Key
+key: placeholder key
+content-length: 13
+
+middle-column
+----field----
+field: {E391B526-D0C5-439D-803E-17512EAE6222}
+name: Allowed Controls
+key: allowed controls
+content-length: 233
+
+{FD667F8A-AD16-40C7-B8EE-4B41AAB5C618}|{61418B3C-3F3F-46F1-A6B1-E567BA43DB32}|{D11D45AC-7399-40F2-A2AE-A1FB8A5DEC03}|{08C8EC47-1038-4E56-ADF9-678623347EC6}|{B3383D08-52AD-4770-A8E9-7D11305A0B3E}|{9F210FCC-B048-4C60-BD08-04FD36AA1F25}
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 4
+
+1300
+----version----
+language: en
+version: 1
+revision: 210d22b4-ae4e-45c5-b2da-2da44c7991e8
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120307T230000
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+210d22b4-ae4e-45c5-b2da-2da44c7991e8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20120925T080034:634841568341449352
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

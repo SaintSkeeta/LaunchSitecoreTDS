@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {9C9A2C6C-6DFB-447F-87E4-2C24C299B07B}
+database: master
+path: /sitecore/content/Global/Tagging/References/Client Configuration Cookbook
+parent: {B6C17796-543E-4E10-B859-6281EF4D1C52}
+name: Client Configuration Cookbook
+master: {00000000-0000-0000-0000-000000000000}
+template: {B072D639-3F62-493D-9816-28520A0965D7}
+templatekey: Reference
+
+----version----
+language: en
+version: 1
+revision: 8c2ebedc-34bc-4d65-88ea-55ea12552d28
+
+----field----
+field: {F3040F85-DE72-443B-A18D-70A972CBF5AE}
+name: Document Title
+key: document title
+content-length: 29
+
+Client Configuration Cookbook
+----field----
+field: {9DF6D0FF-7743-42BA-86CA-D8A52E5FF81E}
+name: Link
+key: link
+content-length: 216
+
+<link text="Client Configuration Cookbook" linktype="external" url="http://sdn.sitecore.net/upload/sitecore6/64/client_configuration_cookbook-usletter.pdf" anchor="" title="Client Configuration Cookbook" target="" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20110713T091000
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+8c2ebedc-34bc-4d65-88ea-55ea12552d28
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20110713T091147:634461451074629068
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

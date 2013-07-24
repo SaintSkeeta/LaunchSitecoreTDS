@@ -1,0 +1,31 @@
+﻿a:visited, a:link { color: #e32c1f; }
+a:active, a:hover { color: #bc2f25; }
+a { color: #c73318; }
+.eval_border .tab h3 { color: #C83219 !important; }
+
+.searchwrapper input.invisible { background: url(/images/redtheme/button_search_header.gif) 100% 0 no-repeat; }
+#content_top h1.pagetitle { background: url(/images/redtheme/landing_bg_wide.jpg) 0 0 no-repeat; }
+#contentwide h1.pagetitle { background: url(/images/redtheme/landing_bg_wide.jpg) 0 0 no-repeat; }
+#content h1.pagetitle { background: url(/images/redtheme/landing_bg.jpg) 0 0 no-repeat; }
+#content_left h1.pagetitle { background: url(/images/redtheme/landing_bg.jpg) 0 0 no-repeat; }
+.related_articles ul { list-style-image: url(/images/redtheme/round_marker_wwa.jpg); }
+.demo_block .links a span { background: url(/images/redtheme/hero_btn.png) top left no-repeat; }
+.addtofavorites .add { background:url(/images/redtheme/plus.gif) no-repeat left center; }
+.addtofavorites .remove { background:url(/images/redtheme/minus.gif) no-repeat left center; }
+.abstract_item .readmore { background: transparent url(/images/redtheme/readmore_arrow.jpg) no-repeat right center; }
+
+.jqueryslidemenu { background: #BF3417 url(/images/redtheme/main_nav.gif) repeat-x; }
+.jqueryslidemenu ul li a { border-right: 1px solid #a11f03; }
+.jqueryslidemenu ul li a:hover{ background: maroon; /*tab link background during hover state*/ }
+
+#secnav li a { color: #c73318; background: transparent url(/images/redtheme/secnav_arrow_closed.jpg) no-repeat right center; }
+#secnav li.selected a, #secnav li a:hover { color: #c73318; }
+#secnav li.selected a { background: url(/images/redtheme/secnav_arrow_selected.jpg) right center no-repeat; }
+#secnav li.selected span { background: url(/images/redtheme/secnav_arrow_selected.jpg) right center no-repeat; }
+
+#mega-menu-1 { background: #BF3417 url(/images/redtheme/main_nav.gif) repeat-x; }
+#mega-menu-1 li a { border-right: 1px solid #a11f03; }
+#mega-menu-1 li a:hover {background: maroon;color: #fff;}
+#mega-menu-1 li .sub li.mega-hdr a.mega-hdr-a:hover {color: #BF3417;} 
+#mega-menu-1 .sub li.mega-hdr li a:hover {color: #BF3417; }
+#mega-menu-1 li .sub-container.non-mega li a:hover {color: #BF3417; }

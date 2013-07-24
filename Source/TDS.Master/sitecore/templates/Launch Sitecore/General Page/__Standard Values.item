@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {FF28AB26-0CB5-4A6A-BFA5-1E6759F912CE}
+database: master
+path: /sitecore/templates/Launch Sitecore/General Page/__Standard Values
+parent: {E6964C3E-D415-40C8-91D9-2BF90F6566E9}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {E6964C3E-D415-40C8-91D9-2BF90F6566E9}
+templatekey: General Page
+
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 77
+
+{826DC4A0-BEB8-4774-8FA7-791F1EC584B4}|{D9019E30-F954-46CC-AA70-3E928C40B5D0}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 831
+
+<r  xmlns:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{DEAB823F-8E62-48FF-8732-093FF05B17CC}"><r id="{9EFB498C-BFED-4B8D-9A56-87D2AB5FB05C}" ph="main-content" uid="{FE0F88B6-A873-4319-B66E-7875B92732A8}" /><r id="{E991D020-25BC-417F-943B-01A053A1BD03}" ph="/main-content/content-top" uid="{1267433D-8AD3-4456-82C4-63D3D775AAAB}" /><r id="{F07B72BD-6F9A-443B-A647-54BF545F9BAD}" ph="/main-content/content" uid="{CEBAC2AD-8DED-4DDE-ACCA-D0E7F7277150}" /></d><d id="{34DAEDE6-46A9-47FF-98EA-7EBA4B81A8C3}" l="{F5A53ADD-6A3A-4397-AE36-1D8BDDBEC803}"><r id="{D691D976-6B47-402B-AC20-528893A6B150}" ph="mobile-content-top" uid="{4A277DA2-7488-43DC-8C50-F05348E908CF}" /><r id="{F07B72BD-6F9A-443B-A647-54BF545F9BAD}" ph="mobile-content" uid="{C8BDD4A0-DFB2-41FF-A9F3-39140F1D9AD9}" /></d></r>
+----field----
+field: {CA9B9F52-4FB0-4F87-A79F-24DEA62CDA65}
+name: __Default workflow
+key: __default workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: f9beeabf-a183-4358-8dc5-f3538fce8c2c
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111213T134900
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f9beeabf-a183-4358-8dc5-f3538fce8c2c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121004T150242:634849597629413650
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

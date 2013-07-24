@@ -1,0 +1,113 @@
+----item----
+version: 1
+id: {4DB94631-6B68-4768-8DB1-6A3E1593E8CE}
+database: master
+path: /sitecore/system/Marketing Center/Engagement Plans/User Evaluation/Has Visited a Job Function Page/Added an article to their favorites list
+parent: {50B1DAAC-43A6-4B85-9233-E8AA6FE34D55}
+name: Added an article to their favorites list
+master: {00000000-0000-0000-0000-000000000000}
+template: {0A43A0FE-7E0E-49EF-95D4-E3DE34F4F175}
+templatekey: Engagement Plan Condition
+
+----field----
+field: {E13DCD09-D9BB-43C9-8D7D-438C79D714CA}
+name: Evaluate
+key: evaluate
+content-length: 38
+
+{733DCB4D-6477-44DB-87F1-8798B14DB804}
+----field----
+field: {21F3482B-BB14-4555-BA5D-AF20D400D5B9}
+name: Rule
+key: rule
+content-length: 258
+
+<ruleset>
+ <rule uid="{9451179A-2700-4623-8DE2-E37AE9D29A3E}">
+ <conditions>
+  <condition id="{78CD5498-8723-4645-B88B-12C9388ED92F}" uid="8D7847F74380458487EAEB852BBFD4B8" GoalId="{8D8C357B-909D-47F6-BFE9-20C2CD89853B}" />
+ </conditions>
+ </rule>
+</ruleset>
+----field----
+field: {D2368879-C784-4031-9B79-6A3BF3CB444E}
+name: Next state
+key: next state
+content-length: 36
+
+406e299f-06b6-486f-8e8b-9dc38e5c43eb
+----field----
+field: {3F72BC07-DE92-483E-A724-D430769D9BA4}
+name: Designer ID
+key: designer id
+content-length: 36
+
+5bb148a8-4fc5-4256-8665-c068a77ba1df
+----field----
+field: {7642ED71-348B-4B88-8634-CC7B28949472}
+name: Origin ID
+key: origin id
+content-length: 36
+
+00000000-0000-0000-0000-000000000000
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 1
+
+0
+----version----
+language: en
+version: 1
+revision: af17aff6-cf79-4693-9157-b144c9631dc7
+
+----field----
+field: {06F2D72A-1924-4B9A-BA1E-186CE4E57EFD}
+name: Description
+key: description
+content-length: 0
+
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 41
+
+Added an article to their favorites list?
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20121218T085800
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+af17aff6-cf79-4693-9157-b144c9631dc7
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121219T182905:634915385452829106
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

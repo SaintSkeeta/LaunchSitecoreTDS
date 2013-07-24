@@ -1,0 +1,132 @@
+----item----
+version: 1
+id: {A9A2F7FA-B1BB-4F15-B694-241340D7D997}
+database: master
+path: /sitecore/content/Home/Articles/CMS/Topics
+parent: {87C68E62-B4E0-4BE8-99FC-339F3BC4575D}
+name: Topics
+master: {00000000-0000-0000-0000-000000000000}
+template: {826DC4A0-BEB8-4774-8FA7-791F1EC584B4}
+templatekey: Article Folder
+
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 0
+
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+500
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 8b4578c1-68f6-4f9a-afb9-4278ac0d96ef
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 6
+
+Topics
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 165
+
+<p>The Topics folder is a place to put answers to frequently asked questions, more advanced concepts and tips and tricks that Sitecore developers can pass along.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 1760
+
+<p>In addition to the <a href="~/link.aspx?_id=DEA5F3A4695E4E1CB4FD9BC4F1424FFD&amp;_z=z">Fundamental Articles</a>, which introduce Sitecore basic concepts, and the <a href="~/link.aspx?_id=44EEE557704F4F3D87B4187D128C2BAE&amp;_z=z">How To</a> section which provides some concrete building exercises for advanced topics, this section is used for discussing advanced topics and concepts, with less emphasis on actual hands-on work.</p>
+<p>The topics are designed to be focused on more real-world scenarios and include common implementation practices and strategies such as:</p>
+<ul>
+  <li><a href="~/link.aspx?_id=01A4232F5E264F52B0578E75E5FB5A7C&amp;_z=z">Taxonomy-based content linking and display</a> </li>
+  <li><a href="~/link.aspx?_id=54916DC5A2A94FE2923396D21879F50A&amp;_z=z">Extending Lucene</a> for use in external search or indexing other sources </li>
+  <li><a href="~/link.aspx?_id=AB5CA3C32D2247D6A4142C9120547C26&amp;_z=z">Minimising downtime</a> </li>
+  <li><a href="~/link.aspx?_id=3153A0D2EBBC48538AF291B9CC9470F0&amp;_z=z">Workflow</a> </li>
+  <li>The <a href="~/link.aspx?_id=214F6F87593C45F38DA0F731145239B1&amp;_z=z">Sitecore API</a> and <a href="~/link.aspx?_id=C78D1633F5774A1B8C72FED3D44D080C&amp;_z=z">Security implications</a> </li>
+  <li><a href="~/link.aspx?_id=31ADDF4FF2AA436AA459A3E1A7808471&amp;_z=z">Large site localization strategies</a></li>
+</ul>
+<p>For further reading, you can visit the Sitecore.net blogs, which represent a wide variety of <a href="http://www.sitecore.net/Community/Technical-Blogs.aspx" target="_blank">technical</a> and <a href="http://www.sitecore.net/Community/Best-Practice-Blogs.aspx" target="_blank">best practice</a> topics written by Sitecore employees, partners and MVP developers.</p>
+<p> </p>
+----field----
+field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
+name: Image
+key: image
+content-length: 0
+
+
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 6
+
+Topics
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111220T131200
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\chc
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+8b4578c1-68f6-4f9a-afb9-4278ac0d96ef
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121210T193124:634907646845953907
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

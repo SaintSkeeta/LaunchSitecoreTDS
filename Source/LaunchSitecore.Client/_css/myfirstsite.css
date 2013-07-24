@@ -1,0 +1,18 @@
+﻿body, html { margin:0; padding:0; color:#424242; background:#ECECEC; font-family:Arial, Serif; }
+h1 { margin:0 0; padding: 7px 0px; }
+#container { width:750px; margin:0 auto; background: white; }
+#header { background:#ECECEC; }
+#header h3 {margin:0px; }
+#header h3#logo a { background: transparent url(/images/common/my_first_site_logo.gif) no-repeat scroll 0 0; display: block; height: 54px; text-indent: -9999px; width: 317px; }
+div#hr { border-top: 2px solid #e43127; margin: 0px 0 5px 0; clear: left; }
+#main { float:right; width:500px; padding:10px; min-height:320px; }
+#sidebar { float:left; width:200px; padding:10px; }
+#footer { clear:both; padding:5px 10px; background:#ECECEC; }
+#footer p { margin:0; font-size:0.75em; }
+.menu{ width: 190px; }
+.menu .headerbar { font: bold 13px Arial; color: white; background: #606060; margin-bottom: 0; text-transform: uppercase; text-align:center; padding: 7px 0px; }
+.menu ul { list-style-type: none; margin: 0; padding: 0; margin-bottom: 0; }
+.menu ul li { padding-bottom: 2px; }
+.menu ul li a { font: normal 12px Arial; color: black; background: #E9E9E9; display: block; padding: 5px 0; line-height: 17px; padding-left: 8px; text-decoration: none; }
+.menu ul li a:visited { color: black; }
+.menu ul li a:hover { color: white; background: black; }

@@ -1,0 +1,153 @@
+----item----
+version: 1
+id: {2D766141-8D12-43B8-9F08-A67A1E32F923}
+database: master
+path: /sitecore/content/Home/Articles/DMS/How to/Add Personalization to a Page
+parent: {2F0E63A1-04AD-4AD3-96A5-86A48A43F889}
+name: Add Personalization to a Page
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 419
+
+<tracking>
+  <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function" presets="connie the content manager|40||mark the marketer|60||">
+    <key name="Analytics" value="3.4" />
+    <key name="Copywriting" value="3.2" />
+    <key name="Personalization and Testing" value="4.2" />
+    <key name="Technology" value="0" />
+    <key name="Workflow and Publishing" value="1" />
+  </profile>
+</tracking>
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+100
+----version----
+language: en
+version: 1
+revision: 3626e25c-f6ba-4808-97e4-711cab718f42
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 22
+
+Inline Personalization
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 214
+
+<p>This article describes in step-by-step detail how to add personalization features to a page in Sitecore from a marketer's perspective. Information on developing custom personalization rules is also provided.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 5072
+
+<p>Inline personalization allows for targeted content to both implicit and explicit site visitors. Obtaining a visitor&rsquo;s value through goals, campaigns, profile patterns, and engagement plans can be useful in identifying which users you most want to target. With a user friendly UI, a marketing team can implement rules that show or hide content to site visitors based on their browsing behavior and their accumulated profile values. Rules can also be based on Geo IP, device detection, security, and/or workflow, and can be applied using the Page Editor or Content Editor. Sitecore also allows developers to build custom rules.</p>
+<p style="margin: 0in 0in 10pt;"><b>Personalization using the Page Editor</b> </p>
+<p style="margin: 0in 0in 10pt;">The Page Editor contains inline personalization functionality that allows you to specify the rules and conditions that must be met before personalized content is displayed. It also lets you test this functionality before you publish it on your website.</p>
+<p style="margin: 0in 0in 10pt;">To apply a personalization rule to a control using the Page Editor:</p>
+<p>1. Login to the Page Editor and enable designing mode</p>
+<p><img width="441" height="98" alt="Design" src="~/media/88457AA9F56F468BADB7489889587A51.ashx" /></p>
+<p> </p>
+<p>2. Hover over the control you want to add a rule to and click once. Select the <i>Personalize the Component </i>button:</p>
+<p><img width="338" height="108" alt="Personalize Component" src="~/media/2BDE6885C0EF4DCAA7AE15BC2D518182.ashx" /></p>
+<p> </p>
+<p>3. Click <i>New Condition</i> and specify a name for this personalization rule. Select which content will show when this rule condition is met in the <i>Personalize Content </i>box. You could also choose to hide the component if the rule is met, or switch in another control/rendering by checking the <i>Enable personalization of component design </i>checkbox.</p>
+<p><img width="563" height="449" alt="New Component" src="~/media/9169FB6CF5C44BBDA775DA938DDFF350.ashx" /></p>
+<p> </p>
+<p>4. Click the <i>Edit </i>button to open the <i>Rule Set Editor</i></p>
+<p><img width="561" height="447" alt="Rule set" src="~/media/AF9EB3F4E66A4635A6E2E678D347BC23.ashx" /></p>
+<p> </p>
+<p>5. Here you can define a set of rules to trigger the change in content for this component. Click a rule to add it to the rule description. Once a rule is added to the description, click an underlined value to edit it.</p>
+<p style="margin: 0in 0in 10pt;"><img width="496" height="552" alt="Create Rule" src="~/media/56F8E5CDFC684DD79D69083D9BD86A7D.ashx" /></p>
+<p>6. Click ok and add more conditions if necessary. When you are finished, you are able to switch between the personalization conditions created by selecting the drop down on the control itself:</p>
+<p><img width="278" height="265" alt="Condition" src="~/media/2E5216785AAB4DC4A86693E5B77AEDCA.ashx" /></p>
+<p> </p>
+<p style="margin: 0in 0in 10pt;"><b>Personalization using the Content Editor</b></p>
+<p style="margin: 0in 0in 10pt;">Personalization rules can be viewed using the <i>Presentation Layout Details</i> in the Content Editor. Any control with a number on the icon has some personalization rule conditions:</p>
+<p style="margin: 0in 0in 10pt;"> </p>
+<p style="margin: 0in 0in 10pt;"><img width="496" height="413" alt="Layout Details" src="~/media/DF6B14B7066145B28F5A13CCF5A6A67E.ashx" /> </p>
+<p style="margin: 0in 0in 10pt;"> </p>
+<p style="margin: 0in 0in 10pt;">The <i>Personalize Component </i>dialogue can be found in the device editor by selecting the control and clicking <i>Personalize</i>. This will bring up the same rules and conditions we saw in the page editor.</p>
+<p style="margin: 0in 0in 10pt;"><img width="496" height="437" alt="Personalize in Content Editor" src="~/media/EC263BB1711F4E2E83B9E13B3D44BCB4.ashx" /></p>
+<p style="margin: 0in 0in 10pt;"> </p>
+<p style="margin: 0in 0in 10pt;"> </p>
+<p style="margin: 0in 0in 10pt;"><b>Rule Customization</b></p>
+<p style="margin: 0in 0in 10pt;">Conditions can be found under /sitecore/system/Settings/Rules/Common/Conditions</p>
+<p style="background: white;">To customize this dialog you can (for example):</p>
+<ul style="list-style-type: disc;">
+  <li style="margin: 0in 0in 10pt; background: white;">Create your own macro class, which implements Sitecore.Rules.RuleMacros.IRuleMacro interface from Sitecore.Kernel.dll (you can browse some standard macros via Reflector, e.g. Sitecore.Rules.RuleMacros.TreeMacro) </li>
+  <li style="margin: 0in 0in 10pt; background: white;">Create an appropriate macro item for this under /Sitecore/System/Settings/Rules/Common/Macros item. </li>
+  <li style="margin: 0in 0in 10pt; background: white;">Modify the Text value of the '/sitecore/system/Settings/Rules/Common/Conditions/Security/User Role' item to something like this: <i><span style="text-decoration: underline;">where the current user is a member of the [value,<b>{new-maco-item-name}</b>,,specific] role</span></i> </li>
+</ul>
+<p style="margin: 0in 0in 10pt;"> </p>
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{33879340-14B2-4BF2-93A2-FCC54C820BAD}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 22
+
+Inline Personalization
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111220T132100
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\chc
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3626e25c-f6ba-4808-97e4-711cab718f42
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121210T185809:634907626898645922
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

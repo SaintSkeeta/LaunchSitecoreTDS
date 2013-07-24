@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Glass.Sitecore.Mapper</id>
+    <version>2.0.11.0</version>
+    <title>Glass.Sitecore.Mapper</title>
+    <authors>Michael Edwards</authors>
+    <owners>Michael Edwards</owners>
+    <licenseUrl>https://github.com/Glass-lu/Glass.Sitecore.Mapper/blob/master/License.txt</licenseUrl>
+    <projectUrl>http://www.glass.lu/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Glass Sitecore Mapper is an object mapping framework for mapping Sitecore items directly onto an object model allowing you to model your entire Sitecore solution as a data model. The framework handles converting data to and from fields and pulling data from related items.</description>
+    <releaseNotes>(Pull 31) Fix to how fields are discovered when using the FieldId.
+(Pull 35) Fix to the SitecoreQueryHandler to stop it throwing an exception if there is a null results set.
+(Issue 36) Additional Editable method with parameters added to GlassUserControl.
+(Issue 37) Issue with null item when using the SitecoreFieldLinkHandler and linking to media items.
+Changes the methods of GlassHtml to be virtual so they can be overridden in the Glass.Sitecore.Mapper.Razor.</releaseNotes>
+    <copyright>Copyright 2011 Michael Edwards</copyright>
+    <language>en-GB</language>
+    <tags>sitecore glass mapper object</tags>
+    <dependencies>
+      <dependency id="Castle.Core" version="3.1.0" />
+    </dependencies>
+    <references>
+      <reference file="Glass.Sitecore.Mapper.dll" />
+    </references>
+  </metadata>
+</package>

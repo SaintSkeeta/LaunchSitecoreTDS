@@ -1,0 +1,255 @@
+----item----
+version: 1
+id: {B9BFD801-8E18-4DBB-A125-0F6C8F37B630}
+database: master
+path: /sitecore/content/Home/Articles/CMS/Build My First Site/Create Side Menu Sublayout
+parent: {33E64068-DFB7-42BA-A262-272103A007B2}
+name: Create Side Menu Sublayout
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+530
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 3112d7c2-2f41-4bb7-b70c-c5252070b2ed
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 26
+
+Create Side Menu Sublayout
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 95
+
+<p>"How-to" demo of creating a simple Navigation menu for the Build My First Site exercise.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 16477
+
+<h3>Discussion</h3>
+<p>In this section we will be creating the Side Menu Sublayout. The Side Menu Sublayout will serve as a navigation control for our Simple Site by providing links to our products as well as a link back to our home page. </p>
+<h3>Activity - Create Side Menu Sublayout</h3>
+<p>From within Visual Studio, navigate to the Layouts/MyFirstSite/Default/Sublayouts folder and add a new User Control. Call the user control Side Menu.ascx. </p>
+<p>We are going to add our code in two stages. First, we will make a link to the home page. Instead of making a static link, we will use Sitecore.Context to determine what our home page actually is. This is important, because Sitecore can have multiple sites within the same Sitecore instance, and we use Sitecore.Context to determine our "current" site. </p>
+<p>In the Designer Source view, add an &lt;asp:hyperlink&gt; as below:</p>
+<div class="code">
+<div style="background: #ddd; overflow: auto;">
+<ol style="padding-bottom: 0px; margin: 0px 0px 0px 2em; padding-left: 5px; padding-right: 0px; background: #ffffff; padding-top: 0px;">
+ <li><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">asp</span><span style="color: #0000ff;">:</span><span style="color: #800000;">HyperLink</span> <span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="homeLink"</span> <span style="color: #ff0000;">runat</span><span style="color: #0000ff;">="server"</span> <span style="color: #0000ff;">/&gt;</span></li>
+</ol>
+</div>
+</div>
+<p>Open the CodeBehind file and add the following:</p>
+<div class="code">
+<div style="background: #ddd; overflow: auto;">
+<ol style="padding-bottom: 0px; margin: 0px 0px 0px 2em; padding-left: 5px; padding-right: 0px; background: #ffffff; padding-top: 0px;">
+ <li>Sitecore.Sites.<span style="color: #2b91af;">SiteContext</span> site = Sitecore.<span style="color: #2b91af;">Context</span>.Site;</li>
+ <li style="background: #f3f3f3;"> Sitecore.Data.Items.<span style="color: #2b91af;">Item</span> home = Sitecore.<span style="color: #2b91af;">Context</span>.Database.GetItem(site.StartPath);</li>
+</ol>
+</div>
+</div>
+<p>This gets the "root" of the current site as the Sitecore Item "home." </p>
+<div class="code">
+<div style="background: #ddd; overflow: auto;">
+<ol style="padding-bottom: 0px; margin: 0px 0px 0px 2em; padding-left: 5px; padding-right: 0px; background: #ffffff; padding-top: 0px;">
+ <li>homeLink.Text = home[<span style="color: #a31515;">"Title"</span>];</li>
+ <li style="background: #f3f3f3;"> homeLink.NavigateUrl = Sitecore.Links.<span style="color: #2b91af;">LinkManager</span>.GetItemUrl(home);</li>
+</ol>
+</div>
+</div>
+<p>We then pass the contents of the Title field to the text property, and use the Sitecore Link Manager to get the "friendly" URL to pass to the NavigateUrl property in the hyperlink.</p>
+<p>Next we will use an &lt;asp:repeater&gt; in Designer Source view to iterate through the child items off the root "Home" item. The "stub" code is below, but we'll be adding onto this significantly.</p>
+<div class="code">
+<div style="background: #ddd; overflow: auto;">
+<ol style="padding-bottom: 0px; margin: 0px 0px 0px 2em; padding-left: 5px; padding-right: 0px; background: #ffffff; padding-top: 0px;">
+ <li><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">asp</span><span style="color: #0000ff;">:</span><span style="color: #800000;">Repeater</span> <span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="Repeater1"</span> <span style="color: #ff0000;">runat</span><span style="color: #0000ff;">="server"&gt;</span> </li>
+ <li style="background: #f3f3f3;"><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">ItemTemplate</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">asp</span><span style="color: #0000ff;">:</span><span style="color: #800000;">HyperLink</span> <span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="subLink"</span> <span style="color: #ff0000;">runat</span><span style="color: #0000ff;">="server"</span> <span style="color: #0000ff;">/&gt;&lt;</span><span style="color: #800000;">br</span> <span style="color: #0000ff;">/&gt;</span> </li>
+ <li style="background: #f3f3f3;"><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">ItemTemplate</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">asp</span><span style="color: #0000ff;">:</span><span style="color: #800000;">Repeater</span><span style="color: #0000ff;">&gt;</span></li>
+</ol>
+</div>
+</div>
+<p>Back in the CodeBehind, since all our navigation is off the "root" we'll use that same home item to get the child links.</p>
+<div class="code">
+<div style="background: #ddd; overflow: auto;">
+<ol style="padding-bottom: 0px; margin: 0px 0px 0px 2em; padding-left: 5px; padding-right: 0px; background: #ffffff; padding-top: 0px;">
+ <li>Repeater1.DataSource = home.Children;</li>
+ <li style="background: #f3f3f3;">Repeater1.DataBind();</li>
+</ol>
+</div>
+</div>
+<p>You could easily pass the child title right to the &lt;asp:hyperlink&gt; in the repeater, however since we need to use another function to get the friendly URL, we'll use an ItemDataBound event on the repeater to do this. Click on the repeater properties and the events button. Add a new ItemDataBound value called <strong>Repeater1_ItemDataBound</strong>. </p>
+<img alt="" width="376" height="335" src="~/media/40A0F3BB87A64B81B937DABB098985AE.ashx" />
+<p>Within the newly created event handler, add the following code: </p>
+<div class="code">
+<div style="background: #ddd; overflow: auto;">
+<ol style="padding-bottom: 0px; margin: 0px 0px 0px 2em; padding-left: 5px; padding-right: 0px; background: #ffffff; padding-top: 0px;">
+ <li><span style="color: #0000ff;">if</span> (e.Item.ItemType == <span style="color: #2b91af;">ListItemType</span>.Item || e.Item.ItemType == <span style="color: #2b91af;">ListItemType</span>.AlternatingItem)</li>
+ <li style="background: #f3f3f3;"> {</li> <li> <span style="color: #2b91af;">HyperLink</span> subLink = (<span style="color: #2b91af;">HyperLink</span>)e.Item.FindControl(<span style="color: #a31515;">"subLink"</span>);</li>
+ <li style="background: #f3f3f3;"> subLink.NavigateUrl = Sitecore.Links.<span style="color: #2b91af;">LinkManager</span>.GetItemUrl((<span style="color: #2b91af;">Item</span>)e.Item.DataItem);</li> <li> subLink.Text = ((<span style="color: #2b91af;">Item</span>)e.Item.DataItem).Fields[<span style="color: #a31515;">"Title"</span>].Value;</li>
+ <li style="background: #f3f3f3;"> }</li>
+</ol>
+</div>
+</div>
+<p>This will use the Sitecore link manager API in order to get a friendly URL for that item. In this case, both the URL and text (from the title field) are being passed to the hyperlink within the repeater. </p>
+<p>The code should compile, but we'll go back and add a few tweaks. First, we'll add to the repeater to format it using a list item. Second, we'll use Sitecore.Context.Item - this time to make the link bold if we are on the current product - basically adding an if statement to compare the ID of the child with the current context ID. If we are on "Product 2" make the Product 2 link bold (highlighted in blue, below). </p>
+<p>The complete code is as follows:</p>
+<div class="code">
+<div style="background: #ddd; overflow: auto;">
+<ol style="padding-bottom: 0px; margin: 0px 0px 0px 2.5em; padding-left: 5px; padding-right: 0px; background: #ffffff; padding-top: 0px;">
+ <li> <span style="background: #ffff00;">&lt;%</span><span style="color: #0000ff;">@</span> <span style="color: #800000;">Control</span> <span style="color: #ff0000;">Language</span><span style="color: #0000ff;">="c#"</span> <span style="color: #ff0000;">AutoEventWireup</span><span style="color: #0000ff;">="true"</span> <span style="color: #ff0000;">TargetSchema</span><span style="color: #0000ff;">="http://schemas.microsoft.com/intellisense/ie5"</span><span style="color: #ff0000;">Inherits</span><span style="color: #0000ff;">="Layouts.Side_menu.Side_menuSublayout"</span> <span style="color: #ff0000;">Codebehind</span><span style="color: #0000ff;">="~/layouts/sublayouts/Side Menu.ascx.cs"</span> <span style="background: #ffff00;">%&gt;</span></li>
+ <li style="background: #f3f3f3;"> </li>
+ <li><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">asp</span><span style="color: #0000ff;">:</span><span style="color: #800000;">HyperLink</span> <span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="homeLink"</span> <span style="color: #ff0000;">runat</span><span style="color: #0000ff;">="server"</span> <span style="color: #0000ff;">/&gt;</span> </li>
+ <li style="background: #f3f3f3;"><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">asp</span><span style="color: #0000ff;">:</span><span style="color: #800000;">Repeater</span> <span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="Repeater1"</span> <span style="color: #ff0000;">runat</span><span style="color: #0000ff;">="server"</span> <span style="color: #ff0000;">OnItemDataBound</span><span style="color: #0000ff;">="Repeater1_ItemDataBound"&gt;</span> </li>
+ <li><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">HeaderTemplate</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li style="background: #f3f3f3;"> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">ul</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">HeaderTemplate</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li style="background: #f3f3f3;"><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">ItemTemplate</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">li</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li style="background: #f3f3f3;"> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">asp</span><span style="color: #0000ff;">:</span><span style="color: #800000;">HyperLink</span> <span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="subLink"</span> <span style="color: #ff0000;">runat</span><span style="color: #0000ff;">="server"</span> <span style="color: #0000ff;">/&gt;</span> </li>
+ <li> <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">li</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li style="background: #f3f3f3;"><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">ItemTemplate</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">FooterTemplate</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li style="background: #f3f3f3;"> <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">ul</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">FooterTemplate</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li style="background: #f3f3f3;"><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">asp</span><span style="color: #0000ff;">:</span><span style="color: #800000;">Repeater</span><span style="color: #0000ff;">&gt;</span></li>
+</ol>
+</div>
+</div>
+<p>And CodeBehind: </p>
+<div class="code">
+<div style="background: #ddd; overflow: auto;">
+<ol style="padding-bottom: 0px; margin: 0px 0px 0px 2.5em; padding-left: 5px; padding-right: 0px; background: #ffffff; padding-top: 0px;">
+ <li><span style="color: #0000ff;">using</span> System;</li>
+ <li style="background: #f3f3f3;"><span style="color: #0000ff;">using</span> System.Collections.Generic;</li>
+ <li><span style="color: #0000ff;">using</span> System.Web;</li>
+ <li style="background: #f3f3f3;"><span style="color: #0000ff;">using</span> System.Web.UI;</li>
+ <li><span style="color: #0000ff;">using</span> System.Web.UI.WebControls;</li>
+ <li style="background: #f3f3f3;"><span style="color: #0000ff;">using</span> Sitecore.Data.Items;</li>
+ <li><span style="color: #0000ff;">using</span> Sitecore.Links;</li>
+ <li style="background: #f3f3f3;"> </li>
+ <li><span style="color: #0000ff;">namespace</span> Layouts.Side_menu {</li>
+ <li style="background: #f3f3f3;"> </li>
+ <li> <span style="color: #808080;">///</span><span style="color: #008000;"> </span><span style="color: #808080;">&lt;summary&gt;</span></li>
+ <li style="background: #f3f3f3;"> <span style="color: #808080;">///</span><span style="color: #008000;"> Summary description for Side_menuSublayout</span></li>
+ <li> <span style="color: #808080;">///</span><span style="color: #008000;"> </span><span style="color: #808080;">&lt;/summary&gt;</span></li>
+ <li style="background: #f3f3f3;"> <span style="color: #0000ff;">public</span> <span style="color: #0000ff;">partial</span> <span style="color: #0000ff;">class</span> <span style="color: #2b91af;">Side_menuSublayout</span> : System.Web.UI.<span style="color: #2b91af;">UserControl</span> </li>
+ <li> {</li>
+ <li style="background: #f3f3f3;"> <span style="color: #0000ff;">private</span> <span style="color: #0000ff;">void</span> Page_Load(<span style="color: #0000ff;">object</span> sender, <span style="color: #2b91af;">EventArgs</span> e) </li>
+ <li> {</li>
+ <li style="background: #f3f3f3;"> <span style="color: #008000;">// This is the standard code for finding the home item for your current site. This is useful as Sitecore can have multiple sites in the content tree. </span></li>
+ <li> Sitecore.Sites.<span style="color: #2b91af;">SiteContext</span> site = Sitecore.<span style="color: #2b91af;">Context</span>.Site;</li>
+ <li style="background: #f3f3f3;"> Sitecore.Data.Items.<span style="color: #2b91af;">Item</span> home = Sitecore.<span style="color: #2b91af;">Context</span>.Database.GetItem(site.StartPath);</li>
+ <li> homeLink.Text = home[<span style="color: #a31515;">"Title"</span>];</li>
+ <li style="background: #f3f3f3;"> homeLink.NavigateUrl = Sitecore.Links.<span style="color: #2b91af;">LinkManager</span>.GetItemUrl(home);</li>
+ <li> Repeater1.DataSource = home.Children;</li>
+ <li style="background: #f3f3f3;"> Repeater1.DataBind(); </li>
+ <li> }</li>
+ <li style="background: #f3f3f3;"> </li>
+ <li> <span style="color: #0000ff;">protected</span> <span style="color: #0000ff;">void</span> Repeater1_ItemDataBound(<span style="color: #0000ff;">object</span> sender, System.Web.UI.WebControls.<span style="color: #2b91af;">RepeaterItemEventArgs</span> e)</li>
+ <li style="background: #f3f3f3;"> {</li>
+ <li> <span style="color: #0000ff;">if</span> (e.Item.ItemType == <span style="color: #2b91af;">ListItemType</span>.Item || e.Item.ItemType == <span style="color: #2b91af;">ListItemType</span>.AlternatingItem) </li>
+ <li style="background: #f3f3f3;"> { </li>
+ <li> <span style="color: #2b91af;">HyperLink</span> subLink = (<span style="color: #2b91af;">HyperLink</span>)e.Item.FindControl(<span style="color: #a31515;">"subLink"</span>); </li>
+ <li style="background: #f3f3f3;"> subLink.NavigateUrl = Sitecore.Links.<span style="color: #2b91af;">LinkManager</span>.GetItemUrl((<span style="color: #2b91af;">Item</span>)e.Item.DataItem); </li>
+ <li> <span style="color: #0000ff;">if</span> (((<span style="color: #2b91af;">Item</span>)e.Item.DataItem).ID == Sitecore.<span style="color: #2b91af;">Context</span>.Item.ID) </li>
+ <li style="background: #f3f3f3;"> { </li>
+ <li> subLink.Text = <span style="color: #2b91af;">String</span>.Format(<span style="color: #a31515;">"&lt;b&gt;{0}&lt;/b&gt;"</span>, ((<span style="color: #2b91af;">Item</span>)e.Item.DataItem).Fields[<span style="color: #a31515;">"Title"</span>].Value);</li>
+ <li style="background: #f3f3f3;"> } </li>
+ <li> <span style="color: #0000ff;">else</span> </li>
+ <li style="background: #f3f3f3;"> { </li>
+ <li> subLink.Text = ((<span style="color: #2b91af;">Item</span>)e.Item.DataItem).Fields[<span style="color: #a31515;">"Title"</span>].Value; </li>
+ <li style="background: #f3f3f3;"> } </li>
+ <li> }</li>
+ <li style="background: #f3f3f3;"> }</li>
+ <li> }</li>
+ <li style="background: #f3f3f3;">}</li>
+</ol>
+</div>
+</div>
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{19903DBE-14B7-455C-AB56-6FD2EC3D3C8E}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 26
+
+Create Side Menu Sublayout
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120129T205800
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\brr
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3112d7c2-2f41-4bb7-b70c-c5252070b2ed
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121210T185733:634907626539405922
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

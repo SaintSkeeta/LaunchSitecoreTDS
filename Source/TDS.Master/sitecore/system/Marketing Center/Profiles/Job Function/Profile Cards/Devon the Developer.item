@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {9534F325-3F13-4713-9D09-C30DCC89FB9D}
+database: master
+path: /sitecore/system/Marketing Center/Profiles/Job Function/Profile Cards/Devon the Developer
+parent: {B5D8B589-92B0-4784-B08C-E96D7393AD55}
+name: Devon the Developer
+master: {00000000-0000-0000-0000-000000000000}
+template: {448C4D57-F0F1-4278-8AB8-93DB46C94F1B}
+templatekey: Profile Card - Persona
+
+----field----
+field: {709B879B-7264-49C7-8864-E254D9129302}
+name: Image
+key: image
+content-length: 172
+
+<image mediaid="{859384F6-925D-4FE9-A8DB-DDE9B6C6F661}" mediapath="/Images/People/General Images/Man with Headphones" src="~/media/859384F6925D4FE9A8DBDDE9B6C6F661.ashx" />
+----field----
+field: {85970AB7-22EA-4206-BE86-C0167178860B}
+name: Profile Card Value
+key: profile card value
+content-length: 337
+
+<tracking>
+ <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function">
+  <key name="Analytics" value="0" />
+  <key name="Copywriting" value="2" />
+  <key name="Personalization and Testing" value="2" />
+  <key name="Technology" value="5" />
+  <key name="Workflow and Publishing" value="1" />
+ </profile>
+</tracking>
+----version----
+language: en
+version: 1
+revision: c605459f-01ae-40f3-a269-ffa2b99bea21
+
+----field----
+field: {A26FC256-1DB0-44AA-BA3D-1C830BF882A2}
+name: Name
+key: name
+content-length: 19
+
+Devon the Developer
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120116T213100
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c605459f-01ae-40f3-a269-ffa2b99bea21
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121207T091544:634904685441121427
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
