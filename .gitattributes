@@ -1,0 +1,7 @@
+#############
+## Hedgehog Development's Team Development for Sitecore
+#############
+IconCache/
+T4RenderCache/
+BuiltFiles_*.txt
+*.item -text
