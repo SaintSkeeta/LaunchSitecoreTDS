@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {65C15949-3F16-453D-90F5-1C800FE1423F}
+database: master
+path: /sitecore/layout/Renderings/LaunchSitecore/Default/Footer
+parent: {C8350F38-0DE6-4149-8944-200F6CECC318}
+name: Footer
+master: {00000000-0000-0000-0000-000000000000}
+template: {F1F1D639-4F54-40C2-8BE0-81266B392CEB}
+templatekey: Xsl Rendering
+
+----field----
+field: {78783F79-1411-4B91-958D-AD81F81E2485}
+name: Path
+key: path
+content-length: 39
+
+/xsl/LaunchSitecore/Default/Footer.xslt
+----version----
+language: en
+version: 1
+revision: 542c7048-a8b4-4aa0-9838-8b4420bfc178
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120223T223437
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+542c7048-a8b4-4aa0-9838-8b4420bfc178
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20120223T223437:634656332771328223
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -1,0 +1,169 @@
+----item----
+version: 1
+id: {68DAE74D-1B6D-4411-967B-CD80321355D3}
+database: master
+path: /sitecore/content/Home/Articles/CMS/Fundamental Articles/Binding Content and Presentation
+parent: {DEA5F3A4-695E-4E1C-B4FD-9BC4F1424FFD}
+name: Binding Content and Presentation
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 385
+
+<tracking>
+  <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function" presets="devon the developer|100||">
+    <key name="Analytics" value="1" />
+    <key name="Copywriting" value="1" />
+    <key name="Personalization and Testing" value="2" />
+    <key name="Technology" value="5" />
+    <key name="Workflow and Publishing" value="3" />
+  </profile>
+</tracking>
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+200
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 55e31799-ebb7-42d1-a94c-5c7467a79350
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 32
+
+Binding Content and Presentation
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 172
+
+<p>In order to return a response, Sitecore must bind the requested content with the appropriate presentation. This is all handled by Sitecore in the response pipeline. </p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 5282
+
+<p>With an understanding of both content and presentation, the remaining topic is how they are bound together. At a high-level, there are two types of binding; static and dynamic.</p>
+<p><strong>Static binding</strong> is the placement of a component in a layout or sublayout that is "hard-coded" so to speak. This is usually done for things such as navigation, footers, copyright statements, etc. Now, just because the component is statically bound, it doesn't mean that the component itself can't be driven by dynamic content. Navigation or breadcrumbs are the best example - these are statically bound on every page, but the navigation or breadcrumb dynamically changes as you add new content or navigate to a different page.</p>
+<p><strong>Dynamic Binding</strong> is the placement of components via placeholders. This allows flexability in the design, while still maintaining control of the overall look and feel.</p>
+<p>Placeholder settings determine which components can go into which placeholders. You don't want something designed for the left-hand column to appear in your center column, so you can restrict that.</p>
+<p>However, just because a component is dynamically bound through placeholders - it doesn't mean that a user needs to add it manually on every page. You can place a component into a placeholder in a template Standard Values to ensure that it appears on every page using that data template. The end result being that a component acts like it is statically bound (i.e. newly created pages automatically have that component) but you (and your users) have the ability to remove/modify the component after the fact.</p>
+<h3>Managing different presentation layers for each device</h3>
+<p>When a request comes into Sitecore, the item requested is identified. This item has settings called presentation details which specify how to render the page. These presentation details are set for each logical device type the site supports. This is one way that Sitecore offers content reuse by allowing the same content to be used for the standard site as well as a mobile site.</p>
+<p>Each device maintains its own layout and component list (see below). In the case of our current page, you can see we haven't applied layout settings to the print view yet, and that the </p>
+<h3>Managing Presentation Details</h3>
+<p>Presentation details can be set on either the standard values for the data template or on individual content items. It is a best practice to set these settings to the data template's standard values. This means that all existing or newly created content items based on a template will have the same presentation. These settings can then be overridden on an as needed basis. Similarly, if you update the standard values on that template, all your pages are updated automatically.</p>
+<p><img width="516" height="667" alt="Presentation Details" src="~/media/2E45F94E1CD54FF382157C46E7B0B189.ashx" /> </p>
+<p>As you can see, there are a number of tools, including <strong>Edit</strong> and <strong>Copy To</strong>. <strong>Copy To</strong> is quite useful, in that is allows you to set a presentation using the Page Editor, and then copy all the work you did visually to a template Standard Values - or to another device type entirely. For example, if your Android and your iPhone view share many characteristics, you can copy one the Layout Details from one device view to the next, and then tweak it as nessesary.</p>
+<p>Often, the process for building the look and feel of a site is somewhat iterative. Generally I start with the following;</p>
+<ul>
+ <li>Setting the <strong>main</strong> layout and some of the high-level placeholders and components (such as <strong>Full Title with Left Sidebar and Content</strong>) on standard values on the Article item template.</li>
+ <li>Go to the Page Editor, and drop a few components (such as <strong>Related Articles List</strong> and <strong>Sibling Articles List</strong>) and see how it looks. You'll note that due to placeholder settings, some of these can move around on the page. If I like the way something is laid out, and want it as a default, I'll copy it back to the standard values.</li>
+ <li>Expand out to other items or devices. For the article view, it may work for article folders - so unless one template is inheriting the layout settings from another, I'll have to copy that over. Similarly, for my print view, I may decide to reuse some components such as the <strong>Red Page Banner</strong>. I'll copy this from the Default view on the current page, to the Print view on the standard values. I'll then go to the layout details to set a new layout that doesn't have navigation (since a printout wouldn't need that on the printed page).</li>
+ <li>Repeat the process as needed. You may want to add/remove new components on the print view - and similarly expand out to mobile and other views using the same process and tools.</li>
+</ul>
+<p>Of course, if you're the type that plans out everything in advance, you can simply work in the Standard Values Layout Details directly - dropping components into placeholders by name, without using the Page Editor - and having one big "reveal". I just personally find it more satistying to work this way to see things being built as you go along.</p>
+----field----
+field: {EFC4A071-5574-404A-8206-FB502FCA909B}
+name: Prerequisite Articles
+key: prerequisite articles
+content-length: 77
+
+{07DAF0C2-1992-4C0A-BB7F-92A700E97FF4}|{5EA97F1D-0685-4637-9D3D-D4F289BA7950}
+----field----
+field: {F5E7C3A8-3D0B-4F2D-956E-6E494431596B}
+name: Level
+key: level
+content-length: 0
+
+
+----field----
+field: {98A14AED-B794-4B64-8C76-2D11BFF917D0}
+name: Categories
+key: categories
+content-length: 0
+
+
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 77
+
+{EF5350C8-21BF-43A3-BCEF-71F29D91AEF0}|{15DD3569-2798-420D-87DA-4FA39281FB7E}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 32
+
+Binding Content and Presentation
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111026T114900
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\chc
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+55e31799-ebb7-42d1-a94c-5c7467a79350
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121210T185725:634907626451485922
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

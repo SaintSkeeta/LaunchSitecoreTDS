@@ -1,0 +1,126 @@
+----item----
+version: 1
+id: {69FB866F-596C-4323-8B13-C5BD3EF8E9EB}
+database: master
+path: /sitecore/content/Home/Articles/CMS/Building Launch Sitecore
+parent: {87C68E62-B4E0-4BE8-99FC-339F3BC4575D}
+name: Building Launch Sitecore
+master: {00000000-0000-0000-0000-000000000000}
+template: {826DC4A0-BEB8-4774-8FA7-791F1EC584B4}
+templatekey: Article Folder
+
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 0
+
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+250
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 8cd73457-7ab7-491f-87ba-8496d1126c5d
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 15
+
+Launch Sitecore
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 132
+
+<p>Welcome to Launch Sitecore - the place where you can learn and build a site with Sitecore in the most efficient way possible.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 1435
+
+<p>Launch Sitecore was built to provide evaluators a sample site that was built with Sitecore best practices. Evaluators will be able to take the code provided and accelerate their understanding on the technical aspects of Sitecore. In addition, this site provides everything needed in order for technical evaluators to be able to re-create this very site so that you gain the experience on how to build a site with Sitecore.</p>
+<p>When thinking about how to build Launch Sitecore, there were a couple of guiding principles that were followed in order to provide the best evaluation experience possible: </p>
+<ol>
+ <li>Launch Sitecore would be built with Sitecore development <strong>Best Practices</strong>. This means everything from clean and well-formed HTML/CSS, to the use of Source Control, to the structure of the Visual Studio solution.</li>
+ <li>All functionality developed would be using Sitecore <strong>Out-of-the-Box</strong> features where possible. With Sitecore, there is usually the opportunity to customize and enhance existing functionality. This is one of the great things about Sitecore as it allows you to add whatever features you like. However, with Launch Sitecore, the goal was to show how Sitecore operates without customization as much as possible. There are a few things that were added that can be deemed customizations in order to highlight Sitecore hooks but we are clear where that happens</li>
+</ol>
+----field----
+field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
+name: Image
+key: image
+content-length: 0
+
+
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 15
+
+Launch Sitecore
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111214T222400
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\chc
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+8cd73457-7ab7-491f-87ba-8496d1126c5d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121210T185516:634907625163875922
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

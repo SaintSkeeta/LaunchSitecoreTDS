@@ -1,0 +1,124 @@
+----item----
+version: 1
+id: {EF5350C8-21BF-43A3-BCEF-71F29D91AEF0}
+database: master
+path: /sitecore/content/Home/Team/Chris Castle
+parent: {8DABE12D-4D1B-40B5-BF62-7D2424253A15}
+name: Chris Castle
+master: {00000000-0000-0000-0000-000000000000}
+template: {97963D48-BD06-46CA-8279-CD2BA3C7AA36}
+templatekey: Contributor
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 0c66332e-2699-43d9-aade-bef386f19bc6
+
+----field----
+field: {D2E90283-29F2-4EAF-895E-E8DE8DAEEC69}
+name: Full Name
+key: full name
+content-length: 12
+
+Chris Castle
+----field----
+field: {1A34B8CA-D07E-4410-ACAC-571F3E345C80}
+name: Title
+key: title
+content-length: 18
+
+Solution Architect
+----field----
+field: {F9B6FFEF-1DC9-4C0E-A815-C62822E1CBDB}
+name: Location
+key: location
+content-length: 14
+
+Houston, Texas
+----field----
+field: {9B61332B-B628-40CF-B812-2A6E7615EEC6}
+name: Specialties
+key: specialties
+content-length: 0
+
+
+----field----
+field: {37E97FE9-608D-47DA-B4F3-FAA116A9F258}
+name: Bio
+key: bio
+content-length: 890
+
+<p>As a Solution Architect, Chris is constantly working with clients to help them deliver great sites.  His experience includes content management, custom software development, and integration with third party systems.</p>
+<p>His career began on the delivery side with ten years of consulting.  During this time, he worked mainly with the Microsoft technologies and developed solutions across multiple industries.  The constant in all of this was a focus on web based technologies.</p>
+<p>Following this he spent seven years with a non-profit organization.  During this time, he integrated Sitecore with a CRM and implemented multiple other custom projects.  Over this period, every system was replaced with Sitecore and the CRM as the foundation.</p>
+<p>Chris has written multiple Shared Source modules and is passionate about maximizing the user experience in every Sitecore solution.</p>
+----field----
+field: {AD724ADB-4729-4C32-BF40-676579D587CF}
+name: Image
+key: image
+content-length: 156
+
+<image mediaid="{78AF4416-38F9-4066-BB53-779DE548014B}" mediapath="/Images/Contributors/Chris Castle" src="~/media/Images/Contributors/Chris Castle.ashx" />
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 12
+
+Chris Castle
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111018T054800
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0c66332e-2699-43d9-aade-bef386f19bc6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121210T185820:634907627004135922
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

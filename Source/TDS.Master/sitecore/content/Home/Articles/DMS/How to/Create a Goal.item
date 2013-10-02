@@ -1,0 +1,146 @@
+----item----
+version: 1
+id: {2296E3F1-5790-43A2-A14B-8AD9704DBE02}
+database: master
+path: /sitecore/content/Home/Articles/DMS/How to/Create a Goal
+parent: {2F0E63A1-04AD-4AD3-96A5-86A48A43F889}
+name: Create a Goal
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 383
+
+<tracking>
+  <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function" presets="mark the marketer|100||">
+    <key name="Analytics" value="5" />
+    <key name="Copywriting" value="2" />
+    <key name="Personalization and Testing" value="5" />
+    <key name="Technology" value="0" />
+    <key name="Workflow and Publishing" value="1" />
+  </profile>
+</tracking>
+----version----
+language: en
+version: 1
+revision: 60bafa7b-6b81-48ab-aef7-173f9b3db620
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 13
+
+Create a Goal
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 122
+
+<p>This article will briefly explain Goals in Sitecore and show you how you can assign a Goal to a Page or Page Event.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 5187
+
+<p style="margin: 0in 0in 10pt;">This article will briefly cover the topic of Goals in Sitecore and it will also introduce the concept of Engagement Value. A goal in Sitecore, like everything in Sitecore, starts with an Item. Below is a goal you&rsquo;ll be able to find in your Sitecore site at /sitecore/system/Marketing Center/Goals/Newsletter Signup: </p>
+<p style="margin: 0in 0in 10pt;"><img width="620" height="486" alt="Sample Goal" src="~/media/C1213AB10DAB495D98658C485E2E8CB7.ashx" /></p>
+<p style="margin: 0in 0in 10pt;"> </p>
+<p style="margin: 0in 0in 10pt;">A goal is a simple item in Sitecore as you can see, defining fields for Name, Points, Category and Description. Points ties into a core concept of the Digital Marketing System&mdash;Engagement Value. By assigning Points to a Goal, you are defining a relative scale for the conversions within your Web site. While a Newsletter Signup currently has 0 points assigned (though you might decide this goal is more valuable), other goals like Instant Demo or a purchase on your site, might carry a higher Points value. It is beyond the scope of this article to discuss the strategy in determining goals for your site, but assigning a point score to your goals will automatically be reflected in the Analytics reports available from Sitecore. This strategy will let you center in on optimizing your site for the most valuable activity it allows for. <br />
+There are several ways to assign a goal to an event in Sitecore. This article will briefly describe the following: </p>
+<p style="margin: 0in 0in 10pt;">
+<ol>
+ <li>A visitor visits a page for which a Goal has been assigned</li>
+ <li>Prebuilt modules (Web Forms for Marketers) assigning a Save Action for a Goal achievement</li>
+ <li>Using the API to define that a Goal has been achieved</li>
+</ol>
+</p>
+<p>1). The simplest way to define a Goal has been achieved is to assign it to a page in Sitecore. Since any item that has presentation details defined can be a reachable page in Sitecore, this becomes simply setting a value of a field of an item. This field can be edited in either the Content Editor or Page Editor interface (assuming the Attributes Chunk of the Analyze menu is available to the current user). For instance, in the Content Editor, navigate to an article in Launch Sitecore (i.e., /sitecore/content/Home/Articles/CMS/Fundamental Articles/The Launch Sitecore Site). In the top menu, on the Analyze menu, in the Attributes Chunk, there is a Goals Button. Clicking on the Goals button will bring up a checklist that shows all currently defined Goals from the Marketing Center.</p>
+<p> <br />
+<img width="597" height="715" alt="Goals checklist" src="~/media/C909511B355A40A1A09B77E574B4B29D.ashx" /></p>
+<p>You could assign any of these Goals to the currently selected article. In a real-world scenario, this could be a &ldquo;Thank You&rdquo; page where a visitor is sent to after completing some transaction, or this could be a landing page that I&rsquo;m hoping to attract visitors to, or it could even be a custom 404 error page (a Goal could even be what would otherwise be described as a failure&hellip;.while there are Page Events to model this, I just wanted to drive home the point that Goals are for you to define).</p>
+<div></div>
+<p> <br />
+2) Sitecore (and from our Shared Source offering, developers from the community) builds a number of modules that are closely tied to the Digital Marketing System. One of the most robust of these modules is the Web Forms for Marketers module, available at: http://sdn.sitecore.net/Products/Web%20Forms%20for%20Marketers.aspx. The goal of this module is to introduce significant form building capability into the content authoring user interfaces. While the module won&rsquo;t be fully described here, it is easy to install and try in your test environment. The WFFM module contains within in a number of prebuilt &ldquo;Save Actions&rdquo; (what happens when a Form is submitted). It also allows you to easily create a goal that can be achieved when the form is submitted (or refer to an already created goal from the Marketing Center). A screenshot of one of the Wizard steps from WFFM is below: </p>
+<p><img width="524" height="558" alt="WFFM" src="~/media/EA58974935CA4438ACD660750CEF1662.ashx" /></p>
+<div></div>
+<p> </p>
+<p>3) The Engagement Analytics API Reference Guide available at: http://sdn.sitecore.net/upload/sitecore6/65/engagement_analytics_api_reference_guide_sc65-usletter.pdf has descriptions of the available classes in the Sitecore.Analytics assembly. Take some time to understand the Analytics database schema (which includes Visitors, Visits, Pages, Page Events, etc). The system allows you to programmatically register page events (including Goals) as well as tag individual sessions with additional information for Analytics reports. The following couple lines of code will get you started thinking about how you might register some of these page events programmatically: </p>
+<div class="code">Sitecore.Analytics.Data.PageEventData ped = new Sitecore.Analytics.Data.PageEventData("Newsletter Signup"); <br />
+Tracker.CurrentPage.Register(ped);</div>
+----field----
+field: {24DDFF9E-D4D8-46C8-99A6-6B01F5251B8F}
+name: Use case solution statement
+key: use case solution statement
+content-length: 90
+
+"What are goals, engagement plans and page events in Sitecore's Digital Marketing System?"
+----field----
+field: {EFC4A071-5574-404A-8206-FB502FCA909B}
+name: Prerequisite Articles
+key: prerequisite articles
+content-length: 38
+
+{15E69004-78E8-4284-B524-D4FA27498B57}
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{A410F42C-903A-4D73-AF5C-F13313EA1BF2}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 13
+
+Create a Goal
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120223T173400
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\chc
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+60bafa7b-6b81-48ab-aef7-173f9b3db620
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121210T185811:634907626912075922
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

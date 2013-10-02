@@ -1,0 +1,80 @@
+----item----
+version: 1
+id: {9527E915-509E-4274-AF89-64D3B21D3A2B}
+database: master
+path: /sitecore/system/Marketing Center/Profiles/Job Function/Pattern Cards/Looks Like Ivan the IT Pro
+parent: {DBA1D1E5-C01F-48E6-A1E1-A5EC3A2D17C1}
+name: Looks Like Ivan the IT Pro
+master: {00000000-0000-0000-0000-000000000000}
+template: {4A6A7E36-2481-438F-A9BA-0453ECC638FA}
+templatekey: Pattern Card
+
+----field----
+field: {FE732790-2DDB-4657-A882-C2FCE1FBF0C9}
+name: Name
+key: name
+content-length: 26
+
+Looks Like Ivan the IT Pro
+----field----
+field: {98535F26-6C9D-4FD7-A7E2-392C7CB82D65}
+name: Image
+key: image
+content-length: 165
+
+<image mediaid="{91833BC5-A4AB-4FE5-A3D7-D645D2684323}" mediapath="/Images/People/General Images/Man in Green" src="~/media/91833BC5A4AB4FE5A3D7D645D2684323.ashx" />
+----field----
+field: {6DA71AD3-5849-4482-9317-D21390E5A348}
+name: Pattern
+key: pattern
+content-length: 337
+
+<tracking>
+ <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function">
+  <key name="Analytics" value="3" />
+  <key name="Copywriting" value="0" />
+  <key name="Personalization and Testing" value="0" />
+  <key name="Technology" value="4" />
+  <key name="Workflow and Publishing" value="3" />
+ </profile>
+</tracking>
+----version----
+language: en
+version: 1
+revision: fcb39191-2c7e-4b08-8b09-a7a69194de60
+
+----field----
+field: {03DB5C50-D4BF-4E87-9AB4-0E5B4BF4E1A9}
+name: Description
+key: description
+content-length: 113
+
+<p>Ivan is our Network Administrator and in charge of supporting the servers and the rest of our environment.</p>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120116T213300
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fcb39191-2c7e-4b08-8b09-a7a69194de60
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121207T091746:634904686666056365
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -1,0 +1,232 @@
+----item----
+version: 1
+id: {C9D9890A-415E-4EDA-84B7-C47B09A78414}
+database: master
+path: /sitecore/content/Home/Articles/DMS/How to/Create an AB Test
+parent: {2F0E63A1-04AD-4AD3-96A5-86A48A43F889}
+name: Create an AB Test
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 419
+
+<tracking>
+  <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function" presets="mark the marketer|70||connie the content manager|30||">
+    <key name="Analytics" value="3.8" />
+    <key name="Copywriting" value="2.9" />
+    <key name="Personalization and Testing" value="4.4" />
+    <key name="Technology" value="0" />
+    <key name="Workflow and Publishing" value="1" />
+  </profile>
+</tracking>
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
+----version----
+language: en
+version: 1
+revision: 80563db5-a975-4d62-87de-261161f31531
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 20
+
+Multivariate Testing
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 179
+
+<p>Sitecore DMS allows you to dynamically test the content of your website to find out which components or combination of components are the most effective with site visitors.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 8170
+
+<p>Sitecore DMS allows you to dynamically test the content of your website to find out which components or combination of components are the most effective. Multivariate tests can be used to see which variations of content work best with site visitors. You can track the results by pairing M/V tests with goals or campaigns to quantify a site visitor&rsquo;s value resulting from a multivariate test. </p>
+<p>The Page Editor is the most useful tool in setting up M/V testing. When you use the Page Editor to create a multivariate test, you have the following options:</p>
+<ul>
+  <li><b>Test existing content</b> &mdash; prepare several test variations as content items and make them available in the content tree. </li>
+  <li><b>Clone a content item</b> &mdash; duplicate items to test variations in content fields </li>
+  <li><b>Create new content</b> &mdash; create new content to use in your test. </li>
+  <li><b>Change a component in the test</b> &mdash;allows you to choose a different rendering or sublayout for the test. </li>
+  <li><b>Hide a component in the test</b> &mdash; allows for a variation of the test to hide the component entirely </li>
+  <li><b>Create a combination test</b> &mdash; select multiple pieces of content on the same page to run a combination test. </li>
+</ul>
+<p> </p>
+<p><b>Creating an MV Test in the Page Editor</b></p>
+<p>To create a multivariate test in the Page Editor:</p>
+<p>1. Open the Page Editor and select a component on your website to test.</p>
+<p>2. Click the <b>Test the component</b> button on the floating toolbar to open the testing dialog.</p>
+<p><img width="286" height="202" alt="Test Button" src="~/media/7D7E9063A2B94F2EA9FA5655F72DD70B.ashx" /></p>
+<p> </p>
+<p>3. In the Test the Component dialog box, click <b>New Variation</b> to create a new test variation variable.</p>
+<p><img width="512" height="235" alt="Variation" src="~/media/516999F90D184322800795C296FD94A9.ashx" /></p>
+<p> </p>
+<p>4. Content options for this variation include:</p>
+<ul>
+  <li>Browse for content in the content tree by clicking the <strong>... </strong>button in the <strong>Test Content Item </strong>box </li>
+  <li>Change the component itself by selecting the <i>Enable variation of component design </i>checkbox </li>
+  <li>Hide the component by selecting the <em>Hide Component</em> checkbox </li>
+</ul>
+<p><img width="456" height="456" style="width: 374px; height: 366px;" alt="MV Test Content" src="~/media/ABAA113D417342C790BB6B86F3D2EDDC.ashx" /></p>
+<p> </p>
+<p>5. Click OK in the Test the Component dialog box once you have added all your test variable variations.</p>
+<p> </p>
+<p><b>Running an MV Test in the Page Editor</b></p>
+<p>To run a multivariate test in the Page Editor:</p>
+<p>1. Select the <b>Testing</b> tab in the ribbon and click <b>Start Test</b>.</p>
+<p><img width="754" height="98" style="width: 629px; height: 78px;" alt="Start Test" src="~/media/E6F701E6A86440958DBB9DCF59FCBF6D.ashx" /> </p>
+<p><i>Note: After you click start test, you will not be able to make any modifications to the test. If components in your test contain personalization, this will be paused while the test is running.</i></p>
+<p><em></em></p>
+<p>2. Enter a name for the test and click <b>Start the Test</b></p>
+<p><img width="446" height="146" alt="Test Name" src="~/media/F6C4B96CD7F94B87B452DDE52DB5A985.ashx" /></p>
+<p> </p>
+<p>3. To preview the variations, use the arrows on the component itself:</p>
+<p><img width="296" height="202" alt="Available Variations" src="~/media/008E8007B2FF4DEE8D24BD96E6E12B9F.ashx" /></p>
+<p> </p>
+<p>Or use the gallery on the ribbon to select variations and get a page overview of your test:</p>
+<p><img width="346" height="168" alt="Gallery" src="~/media/17F8B859C2CE486D9CD086A095FAA57A.ashx" /></p>
+<p><i>Note: You can add more than one component to a multivariate test so that you can decide which combination of controls works best on a page.</i></p>
+<p><em></em></p>
+<p>4. Click <b>Stop Test</b> in the ribbon to stop the test and view your results. Using DMS, Goals enable site visitors to accumulate value. You can decide which variation of test variables is the most successful by the value it has accumulated during the test. The variation with the highest engagement value is typically the winner.</p>
+<p> </p>
+<p><img width="274" height="226" alt="Test Results" src="~/media/7F00A30756884A759232EA1C6823981C.ashx" /></p>
+<p> </p>
+<p>You can use the marketing center to manage all of your tests as well as configure settings such as <i>Test Strategy:</i></p>
+<p><em></em><img width="587" height="266" alt="Test Strategy" src="~/media/3A17B0DD348D4AB7984BBF2D1BECF533.ashx" /></p>
+<p> </p>
+<p> </p>
+<p><strong>Further Development</strong></p>
+<p><em><strong>Test Strategy</strong></em></p>
+<p>You can customize tests by creating a new <em>Test Strategy.</em> For example, you could favor a test value by a certain percentage:</p>
+<p>1. Create a class similar to the following:</p>
+<p> </p>
+<div class="code">
+<div style="background-color: rgb(221,221,221); overflow: auto;">
+<ol style="padding-bottom: 0px; background-color: rgb(255,255,255); margin: 0px 0px 0px 2.5em; padding-left: 5px; padding-right: 0px; padding-top: 0px;">
+  <li>using Sitecore.Analytics.Testing; </li>
+  <li style="background: rgb(243,243,243);">public class PercentageMultiVariateTestStrategy : MultiVariateTestStrategyBase, IMultiVariateTestStrategy </li>
+  <li>{ </li>
+  <li style="background: rgb(243,243,243);">public TestCombination GetTestCombination(TestSet testset) </li>
+  <li>{ </li>
+  <li style="background: rgb(243,243,243);">Random rnd = new Random(); </li>
+  <li>byte[] combination = new byte[testset.Variables.Count]; </li>
+  <li style="background: rgb(243,243,243);">for (int i = 0; i &lt; combination.Length; i++) </li>
+  <li>{ </li>
+  <li style="background: rgb(243,243,243);">combination[i] = (byte)rnd.Next(testset.Variables[i].Values.Count); </li>
+  <li>// implement logic to select a test value </li>
+  <li style="background: rgb(243,243,243);">} </li>
+  <li>return new TestCombination(combination, testset); </li>
+  <li style="background: rgb(243,243,243);">} </li>
+  <li>} </li>
+</ol>
+</div>
+</div>
+<p> </p>
+<p>2. Create a new test strategy item underneath <strong>/sitecore/system/Settings/Analytics/Multivariate Test Strategies</strong></p>
+<p>3. The type field of the created test strategy item should be:</p>
+<p>YOUR_NAMESPACE.PercentageMultiVariateTestStrategy,YOUR_ASSEMBLY_NAME</p>
+<p> </p>
+<p><em><strong>Get test data from API</strong></em></p>
+<p>You can also retreive multivariate test data directly from the DMS API:</p>
+<p>The following is an example of how to get statistics from a single MV Test Set. The item path should be the path to your MV test in the content tree:</p>
+<div class="code">
+<div style="background-color: rgb(221,221,221); overflow: auto;">
+<ol style="padding-bottom: 0px; background-color: rgb(255,255,255); margin: 0px 0px 0px 2.5em; padding-left: 5px; padding-right: 0px; padding-top: 0px;">
+  <li>protected void Page_Load(object sender, EventArgs e) </li>
+  <li style="background: rgb(243,243,243);">{ </li>
+  <li>var testDef = new TestDefinitionItem(Tracker.DefinitionDatabase.GetItem("/sitecore/system/Marketing Center/Test Lab/doMultiVariate")); </li>
+  <li style="background: rgb(243,243,243);">var stats = TestManager.LoadTestStatistics(testDef); </li>
+  <li></li>
+  <li style="background: rgb(243,243,243);">Response.Write("Runs: " + stats.TestRuns + "&lt;br/&gt;"); </li>
+  <li>foreach (var variable in stats.Testset.Variables) </li>
+  <li style="background: rgb(243,243,243);">{ </li>
+  <li>Response.Write("Label: " + variable.Label + "&lt;br/&gt;"); </li>
+  <li style="background: rgb(243,243,243);">var varStats = stats.GetVariableStatistics(variable.Id); </li>
+  <li>foreach (var value in varStats.Statistics) </li>
+  <li style="background: rgb(243,243,243);">{ </li>
+  <li>Response.Write("value: " + value.TestValue.Label + ", ValuePerVisit: " + value.ValuePerVisit + "&lt;br/&gt;"); </li>
+  <li style="background: rgb(243,243,243);">} </li>
+  <li>} </li>
+  <li style="background: rgb(243,243,243);">} </li>
+</ol>
+</div>
+</div>
+<p> </p>
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{33879340-14B2-4BF2-93A2-FCC54C820BAD}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 20
+
+Multivariate Testing
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111220T132100
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\chc
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+80563db5-a975-4d62-87de-261161f31531
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121211T171746:634908430664356144
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

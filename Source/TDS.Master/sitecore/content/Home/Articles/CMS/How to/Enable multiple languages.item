@@ -1,0 +1,180 @@
+----item----
+version: 1
+id: {5EB8EF2A-66C0-4A9D-915D-F616098E96A5}
+database: master
+path: /sitecore/content/Home/Articles/CMS/How to/Enable multiple languages
+parent: {44EEE557-704F-4F3D-87B4-187D128C2BAE}
+name: Enable multiple languages
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 465
+
+<tracking>
+  <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function" presets="connie the content manager|20||ivan the it pro|70||devon the developer|10||">
+    <key name="Analytics" value="2.39999986" />
+    <key name="Copywriting" value="1.80000007" />
+    <key name="Personalization and Testing" value="1.5" />
+    <key name="Technology" value="3.3" />
+    <key name="Workflow and Publishing" value="1.9000001" />
+  </profile>
+</tracking>
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 881a9431-06c4-4f57-822d-8aa2b6fb737f
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 25
+
+Enable multiple languages
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 89
+
+This article explains how to add additional languages to the Sitecore content repository.
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 6710
+
+<p>In Sitecore, there are a number of tools and architectural features for dealing with language and locale content. Sitecore is fairly unique, in that language versions are stored at the same location in the repository, making it easy from a usability (side-by-side viewing, etc.) and workflow perspective.</p>
+<h3>Adding a new language</h3>
+<p>You can manually create a language variation for an item in a language that is registered to be easily used, however best practices dictate that if you are using a language, chances are it is for more than a single instance and therefore you should indicate it use to make it easier for authors to use that language, as well as ensure the correct locale/language pairs are being used. To register a language, follow these steps:</p>
+<p><strong>1. Click Sitecore, and then click Control Panel.</strong></p>
+<p><strong>2. Click Globalization in the Control Panel.</strong></p>
+<p><strong>3. Add a New Language in the Globalization Control Panel.</strong></p>
+The Add Language wizard appears. If you have not already disabled wizard welcome pages, a welcome page appears; click Next. The Language Codes page appears as shown below.
+<p><strong>4. Select the appropriate language and region.</strong></p>
+<p><img width="575" height="638" alt="Language Selection Wizard Screenshot" src="~/media/8F11AAD699784CD0BF8E792AFE3F9A49.ashx" /> </p>
+<p>In the drop-down list at the top, select the appropriate language and region, and then click Next.Note that Sitecore comes with a list of common locale/language pairings. If you do not see the one you need, see "Creating Custom Locale/Language pairings". The Code page and Encoding page appears - for existing pairings you can accept the defaults.</p>
+<p><strong>5. Click Next. The Checker Dictionary page appears.</strong></p>
+<p><strong></strong></p>
+<p><strong>6. Enter the name of a spellchecker dictionary file for the language</strong></p>
+<p>For the Spellchecker file path, enter the name of a spellchecker dictionary file for the language from the /sitecore/shell/Controls/Rich Text Editor/Dictionaries subdirectory of the document root. If no file corresponding to the new language exists, leave this field blank. Then click Next. The completion page appears. </p>
+<p><strong>7. Click Finish. The Add Language Wizard closes. </strong></p>
+You can now apply security or update other properties of the new language definition item under the /sitecore/system/Languages item in the Content Editor. You can use the "Language Read" and "Language Write" permission properties to restrict reading and editing content in a specific language for certain roles/users.
+<p> </p>
+<h3>Creating custom Locale/Language pairings</h3>
+<p>Often you run into situations where you wish to have a different regional locale, even if the language already exists. For example, Singapore uses UK English for all spelling - however if you are serving this market, you likely don't want to use the exact same copy for both, as there is likely local pricing and copy for that region. In this case, the easist method is to simply select an existing language/region pairing that closely matches your requirements (i.e. Singapore Chinese) and change the language code to "en".</p>
+<p><img width="516" height="638" alt="Language Ribbon" src="~/media/964BE0C4499246DFA8A60DC5BD85CC98.ashx" /></p>
+<p>The new language is now visible on the Content editing tab (as well as other places in the User Interface). As you can see, it reflects both the language and locale (localized for each language as appropriate)</p>
+<p><img width="400" height="273" alt="Custom Language/Locale Pairing" src="~/media/AD9EC0E5EDC045D196E7B93AEFB9DB09.ashx" /></p>
+<p>Incidentally, if you do still want to do a one-off language version for an item without registering the language first, this dialog is where you can select "More Languages" and add this manually.</p>
+<p> </p>
+<h3>API commands for not showing/linking to content if it does not exist in a language.</h3>
+<p>In some sites supporting multiple languages, CMS users do not translate every item before publishing. When working with multiple languages, it is important that your code ensure that a version of an item actually exists in that language before you link to it.</p>
+<p>XSL: Use the system field '__created' as a predicate. For example:</p>
+<div class="code">
+<div style="background-color: rgb(221,221,221); overflow: auto;">
+<ol style="padding-bottom: 0px; background-color: rgb(255,255,255); margin: 0px 0px 0px 2.5em; padding-left: 5px; padding-right: 0px; padding-top: 0px;">
+  <li><span style="font-size: 13px;"><span style="color: #0000ff;">&lt;</span><span style="color: #a31515;">xsl:for-each</span><span style="color: #0000ff;"> </span><span style="color: #ff0000;">select</span><span style="color: #0000ff;">=</span>"<span style="color: #0000ff;">$sc_currentitem/item[sc:fld('__created',.)]</span>"<span style="color: #0000ff;">&gt; </span></span></li>
+</ol>
+</div>
+</div>
+<p>C#: You can use Sitecore.Data.Items.Item.Versions.Count to determine if a version exists in the current language context. For example:</p>
+<div class="code">
+<div style="background-color: rgb(221,221,221); overflow: auto;">
+<ol style="padding-bottom: 0px; background-color: rgb(255,255,255); margin: 0px 0px 0px 2.5em; padding-left: 5px; padding-right: 0px; padding-top: 0px;">
+  <li><span style="font-size: 13px;"><span style="color: #0000ff;">foreach</span> (Sitecore.Data.Items.<span style="color: #2b91af;">Item</span> child <span style="color: #0000ff;">in</span> contextItem.Children) </span></li>
+  <li style="background-color: rgb(243,243,243);">{ </li>
+  <li><span style="font-size: 13px;"><span style="color: #0000ff;">if</span> (child.Versions.Count &gt; 0 ) </span></li>
+  <li style="background-color: rgb(243,243,243);">{ </li>
+  <li><span style="color: #a31515; font-size: 13px;">' Do something</span> </li>
+  <li style="background-color: rgb(243,243,243);">} </li>
+  <li>}</li>
+</ol>
+</div>
+</div>
+<p>Section 5.2 in the <a href="http://sdn.sitecore.net/Reference/Sitecore%206/Presentation%20Component%20API%20Cookbook.aspx" target="_blank">Presentation API Cookbook on SDN </a>contains much more example code for dealing with languages. </p>
+<p> </p>
+<h3>Complex language configuration</h3>
+<p>Sometimes you site requirements may extend well beyond having simple language versions of the same item, to where you have multiple sites sharing content. There is another article on Launch Sitecore for dealing with <a href="~/link.aspx?_id=31ADDF4FF2AA436AA459A3E1A7808471&amp;_z=z">Large Multi-National Sites</a>. Another common example is that of "Language Fallback", which the article covers as well.</p>
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{15DD3569-2798-420D-87DA-4FA39281FB7E}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 25
+
+Enable multiple languages
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120326T081900
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\mde
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+881a9431-06c4-4f57-822d-8aa2b6fb737f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121211T171542:634908429422651986
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

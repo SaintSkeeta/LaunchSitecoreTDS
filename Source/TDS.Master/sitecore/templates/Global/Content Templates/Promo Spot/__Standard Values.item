@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {A295720D-9DEB-4E5C-87A6-B301F57AF5C2}
+database: master
+path: /sitecore/templates/Global/Content Templates/Promo Spot/__Standard Values
+parent: {2DED4D56-04FD-4D55-84F5-59D4ECA70E83}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {2DED4D56-04FD-4D55-84F5-59D4ECA70E83}
+templatekey: Promo Spot
+
+----field----
+field: {CA9B9F52-4FB0-4F87-A79F-24DEA62CDA65}
+name: __Default workflow
+key: __default workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 72a8af82-752b-4355-a7c9-04e257412c91
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120304T183100
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+72a8af82-752b-4355-a7c9-04e257412c91
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20120921T154816:634838392969817447
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

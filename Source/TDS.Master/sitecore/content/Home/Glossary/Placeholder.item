@@ -1,0 +1,120 @@
+----item----
+version: 1
+id: {02ACB78C-65EF-4BC5-B338-B08E8BB2CDC4}
+database: master
+path: /sitecore/content/Home/Glossary/Placeholder
+parent: {2D75C97D-5981-4482-8631-208B2DEB1F54}
+name: Placeholder
+master: {00000000-0000-0000-0000-000000000000}
+template: {C6DD3CEF-22AF-4468-B3B0-82ABFCDE0F24}
+templatekey: Term
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 47dcad0f-348f-4dc0-a4de-598a03cfc74f
+
+----field----
+field: {FBADE872-82BD-45AD-A2EC-DADC723249DA}
+name: Title
+key: title
+content-length: 11
+
+Placeholder
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 167
+
+<image mediaid="{F396E729-901B-42C5-ACE7-8CA8D9096A92}" mediapath="/Images/Icons/table_selection_block" src="~/media/Images/Icons/table_selection_block.ashx" ></image>
+----field----
+field: {B636170C-2681-469A-A642-A6549C12D1E6}
+name: Definition
+key: definition
+content-length: 300
+
+<p>A placeholder is a Sitecore-specific tag within a <a href="%7E/link.aspx?_id=431DD81B22CD4994B6220E2773818AC1&amp;_z=z">Layout </a>(.aspx) or <a href="%7E/link.aspx?_id=3FD0E7AD3B814875A77FA0F67BE47035&amp;_z=z">Sublayout </a>(.ascx) which allows the dynamic placement of components within it.</p>
+----field----
+field: {AA7CE48D-746C-42C7-BD64-9A51F7F10B7C}
+name: Usage
+key: usage
+content-length: 1726
+
+<p>The main purpose of placeholders is to allow end users to have design flexibility, and minimizing the number of layouts you need. For example, rather than having a two or three column layout, you just have one layout with a placeholder and then drop a two-column or three-column <a href="%7E/link.aspx?_id=3FD0E7AD3B814875A77FA0F67BE47035&amp;_z=z">sublayout</a> into a content placeholder on a page. This has a number of advantages:</p>
+<ol>
+  <li>Minimize layouts - generally speaking you can get down to having one layout for each site design and device. (Of course, microsites, etc. may require the creation of more - but Launch Sitecore is only built on one layout, despite the various page designs that are built in this layout through the use of placeholders)</li>
+  <li>Placeholders can have settings designating which components can be added to each. </li>
+  <li>Sublayouts/Renderings can be designated as "compatible" meaning you can have a button to automatically swap one out for the other. Sitecore also remembers placeholder settings - so if you have various right-hand components in a three-column sublayout, and choose a two-column sublayout (making the right-hand disappear), Sitecore will remember the settings and placement in case you do wish to switch it back one day. </li>
+</ol>
+<p>Note: Even if you use placeholders, it doesn't mean that users have to manually select components and sublayouts for each newly created page. You can use <a href="%7E/link.aspx?_id=2BF103381CFF4F9F890EE9F3078473F9&amp;_z=z">Standard Values</a> to build a presentation automatically on an item, complete with components in placeholders, but then your users (if you give them permission) can override these defaults.</p>
+----field----
+field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
+name: Image
+key: image
+content-length: 198
+
+<image mediaid="{4BB3516F-CECD-40A0-8A47-9AFF23C457D9}" mediapath="/Images/Glossary/placeholder" src="~/media/Images/Glossary/placeholder.ashx" alt="" height="204" width="620" hspace="" vspace="" />
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 11
+
+Placeholder
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120402T085900
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\mde
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+47dcad0f-348f-4dc0-a4de-598a03cfc74f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121210T185829:634907627099755922
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

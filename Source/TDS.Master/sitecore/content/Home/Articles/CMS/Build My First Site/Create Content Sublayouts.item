@@ -1,0 +1,148 @@
+----item----
+version: 1
+id: {C7D05460-E325-45DE-B6D5-536790C6BA63}
+database: master
+path: /sitecore/content/Home/Articles/CMS/Build My First Site/Create Content Sublayouts
+parent: {33E64068-DFB7-42BA-A262-272103A007B2}
+name: Create Content Sublayouts
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+520
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: a4699f10-72ef-4553-b6b6-033fcdee539c
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 25
+
+Create Content Sublayouts
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 161
+
+<p>Overview on creating Sublayouts for the Build My First Site Exercise. We'll create two sublayouts one for generic content and one for our product content.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 6044
+
+<h3>Discussion</h3>
+<p>Now that we have the Main Layout created for our site, our next task is to start creating the content Sublayouts. </p>
+<p>In this section, we will create the Generic Display and the Product Display Sublayouts that will be placed into the Content area of our Main Layout. The Generic Display Sublayout will be used to display the contents of our Home Page and the Product Display Sublayout will render information about a product on the product pages. </p>
+<h3>Activity - Create Generic Display Sulayout</h3>
+<ol>
+ <li>To create the Generic Display Sublayout, add a new User Control called Generic Display.ascx to the folder Layouts/MyFirstSite/Default/Sublayouts in your Visual Studio project. </li>
+ <li>Add the following code: </li>
+</ol>
+<div class="code" style="background: #ddd; overflow: auto;">
+<ol style="padding-bottom: 0px; margin: 0px 0px 0px 2em; padding-left: 5px; padding-right: 0px; background: #ffffff; padding-top: 0px;">
+ <li><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">h1</span><span style="color: #0000ff;">&gt;&lt;</span><span style="color: #800000;">sc</span><span style="color: #0000ff;">:</span><span style="color: #800000;">FieldRenderer</span> <span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="FieldRenderer1"</span> <span style="color: #ff0000;">runat</span><span style="color: #0000ff;">="server"</span> <span style="color: #ff0000;">FieldName</span><span style="color: #0000ff;">="Title"</span> <span style="color: #0000ff;">/&gt;&lt;/</span><span style="color: #800000;">h1</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li style="background: #f3f3f3;"><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">br</span> <span style="color: #0000ff;">/&gt;</span> </li>
+ <li><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">sc</span><span style="color: #0000ff;">:</span><span style="color: #800000;">FieldRenderer</span> <span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="FieldRenderer2"</span> <span style="color: #ff0000;">runat</span><span style="color: #0000ff;">="server"</span> <span style="color: #ff0000;">FieldName</span><span style="color: #0000ff;">="Description"</span> <span style="color: #0000ff;">/&gt;</span></li>
+</ol>
+</div>
+<p>The &lt;sc:FieldRenderer&gt; tag is a Sitecore Web Control that is 'generic' in that it can take most types of fields (image, text, datetime, etc.) and properly handle both the output and the user editing controls. In this particular case, the FieldRenderer will display the values of the Title and Description fields defined on our Home Page in the content tree. </p>
+<h3>Using Sitecore Rocks</h3>
+<p>Now that we have added the Generic Content Sublayout to our Visual Studio project, we need to let Sitecore know that we have a new Sublayout for our site. We will do this using the Sitecore Rocks Add-in for Visual Studio. </p>
+<ol>
+ <li>In Sitecore Rocks, navigate to Sitecore/Layout/Layouts/My First Site/Default/Sublayouts, right click, and select <strong>Add &gt; New Item </strong>to add a new Sublayout. </li>
+ <li>In the pop-up window, choose Sublayout as the template and enter "Generic Display" in the name field. Click OK and in the editor window that follows, add "/layouts/MyFirstSite/Default/Sublayouts/Generic Display.ascx" to the Path field. This is the file system path to the Generic Display.aspx web form that we just created in Visual Studio. </li>
+</ol>
+<h3>Create the Product Display Sublayout</h3>
+<p>For the Product Display Sublayout, repeat the process as above, but create the "Product Display" Sublayout with the following code: </p>
+<div class="code">
+<div style="background: #ddd; overflow: auto;">
+<ol style="padding-bottom: 0px; margin: 0px 0px 0px 2em; padding-left: 5px; padding-right: 0px; background: #ffffff; padding-top: 0px;">
+ <li><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">h1</span><span style="color: #0000ff;">&gt;&lt;</span><span style="color: #800000;">sc</span><span style="color: #0000ff;">:</span><span style="color: #800000;">FieldRenderer</span> <span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="FieldRenderer1"</span> <span style="color: #ff0000;">runat</span><span style="color: #0000ff;">="server"</span> <span style="color: #ff0000;">FieldName</span><span style="color: #0000ff;">="Title"</span> <span style="color: #0000ff;">/&gt;&lt;/</span><span style="color: #800000;">h1</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li style="background: #f3f3f3;"><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">br</span> <span style="color: #0000ff;">/&gt;</span> </li>
+ <li><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">p</span><span style="color: #0000ff;">&gt;&lt;</span><span style="color: #800000;">sc</span><span style="color: #0000ff;">:</span><span style="color: #800000;">FieldRenderer</span> <span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="FieldRenderer2"</span> <span style="color: #ff0000;">runat</span><span style="color: #0000ff;">="server"</span> <span style="color: #ff0000;">FieldName</span><span style="color: #0000ff;">="Description"</span> <span style="color: #0000ff;">/&gt;&lt;/</span><span style="color: #800000;">p</span><span style="color: #0000ff;">&gt;</span> </li>
+ <li style="background: #f3f3f3;">Price: <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">sc</span><span style="color: #0000ff;">:</span><span style="color: #800000;">FieldRenderer</span> <span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="FieldRenderer3"</span> <span style="color: #ff0000;">runat</span><span style="color: #0000ff;">="server"</span> <span style="color: #ff0000;">FieldName</span><span style="color: #0000ff;">="Price"</span> <span style="color: #0000ff;">/&gt;</span></li>
+</ol>
+</div>
+</div>
+<p>This adds the Price field that we defined on our Product Data Template.</p>
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{19903DBE-14B7-455C-AB56-6FD2EC3D3C8E}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 25
+
+Create Content Sublayouts
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120129T205800
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\brr
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a4699f10-72ef-4553-b6b6-033fcdee539c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121210T185732:634907626528085922
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

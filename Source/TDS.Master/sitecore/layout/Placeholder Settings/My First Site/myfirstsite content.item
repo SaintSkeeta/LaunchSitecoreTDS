@@ -1,0 +1,58 @@
+----item----
+version: 1
+id: {CD9F3509-A9C7-4539-B58F-FFDCF7875C6D}
+database: master
+path: /sitecore/layout/Placeholder Settings/My First Site/myfirstsite content
+parent: {48ABE643-ADDC-45FC-A4FC-276C1EE3F3B5}
+name: myfirstsite content
+master: {00000000-0000-0000-0000-000000000000}
+template: {5C547D4E-7111-4995-95B0-6B561751BF2E}
+templatekey: Placeholder
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 4
+
+1800
+----version----
+language: en
+version: 1
+revision: 3a6a2c16-2ad1-4daf-8c35-370540d6a4ac
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120604T095439
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\pwa
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3a6a2c16-2ad1-4daf-8c35-370540d6a4ac
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20120807T144044:634799472443458614
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

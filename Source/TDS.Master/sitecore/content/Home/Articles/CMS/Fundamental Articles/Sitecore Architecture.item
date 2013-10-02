@@ -1,0 +1,170 @@
+----item----
+version: 1
+id: {98205BE9-FBD0-42BC-8034-B428B53D6CBD}
+database: master
+path: /sitecore/content/Home/Articles/CMS/Fundamental Articles/Sitecore Architecture
+parent: {DEA5F3A4-695E-4E1C-B4FD-9BC4F1424FFD}
+name: Sitecore Architecture
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 381
+
+<tracking>
+  <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function" presets="ivan the it pro|100||">
+    <key name="Analytics" value="3" />
+    <key name="Copywriting" value="1" />
+    <key name="Personalization and Testing" value="1" />
+    <key name="Technology" value="4" />
+    <key name="Workflow and Publishing" value="2" />
+  </profile>
+</tracking>
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: d27b3ca7-6065-4df9-8958-db122ca2abbe
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 21
+
+Sitecore Architecture
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 67
+
+<p>This is the physical architecture including the 3 databases.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 3580
+
+<p>Sitecore is structured to use, at a minimum, 3 databases. However, implementations can be as large and varied as required. The typical databases are as follows:</p>
+<h4>Master</h4>
+<p>The Master database is the authoring database - it contains all versions of any content or assets. </p>
+<h4>Core</h4>
+<p>The Core database is all Sitecore settings, as well as the tables containing the .Net membership provider (i.e. users/roles contained in the Sitecore repository)</p>
+<h4>Web</h4>
+<p>The Web database is only the latest published version, and the content that is driving the live web site. Therefore it is a subset of the master database, optimised for size and speed. When content is published, or goes through the publishing task of a workflow, the latest content version is copied from the master to web database.</p>
+<p>Of course, in an Enterprise deployment, you may have multiple Sitecore instances, which may share DBs (or not) </p>
+<h3>Simple multi-instance architecture example</h3>
+<p>In this example, the Content Management (CM) instance is behind the firewall. Since the site is fairly simple (no user logins), only the Web database is published to the Content Deliver (CD) live site server.</p>
+<p><img width="640" height="466" alt="Simple Architecture Diagram" src="~/media/F6DF8A4DE565497DAE816189BE79AF63.ashx?h=466&amp;w=640" /> </p>
+<h3>Complex multi-instance Architecture example</h3>
+<p>In this example, the clustered (or failover) Content Management (CM) instances are behind the firewall. Since the site does have a login, the Core database is required, along with the Web database is published to the Content Deliver (CD) live site server.</p>
+<p> </p>
+<p><img style="width: 640px; height: 467px;" alt="Sitecore Complex Architecture" src="~/media/7D553CE7B4C04FCC82E4EF924313CFE7.ashx" /> </p>
+<h3>DMS</h3>
+<p>Adding DMS functionality requires the <a href="http://sdn.sitecore.net/Products/Sitecore%20V5/Sitecore%20CMS%206/Installation/Installation/SQL.aspx" title="Analytics DB" target="_blank">addition of one more database - the Analytics DB</a>.</p>
+<h3>Documentation</h3>
+<p>There are a number of documents on SDN specific to architectural setup and optimization.</p>
+<ul>
+ <li><a href="http://sdn.sitecore.net/Products/Sitecore%20V5/Sitecore%20CMS%206/Installation.aspx" title="Sitecore CMS 6.5 Installation Guide" target="_blank">Sitecore CMS 6.5 Installation Guide</a> </li>
+ <li>Installation Guide for DMS
+ <ul>
+  <li><a href="http://sdn.sitecore.net/Products/Sitecore%20V5/Sitecore%20CMS%206/Installation/Installation/SQL.aspx" title="SQL Server" target="_blank">SQL Server</a></li>
+  <li><a href="http://sdn.sitecore.net/Products/Sitecore%20V5/Sitecore%20CMS%206/Installation/Installation/Oracle.aspx" title="Oracle" target="_blank">Oracle</a> </li>
+ </ul>
+ </li>
+ <li><a href="http://sdn.sitecore.net/Reference/Sitecore%206/Scaling%20Guide.aspx" title="Scaling Guide" target="_blank">Scaling Guide</a></li>
+ <li><a href="http://sdn.sitecore.net/Reference/Sitecore%206/Recommended%20Practices.aspx" title="Recommended Practices" target="_blank">Recommended Practices</a> </li>
+</ul>
+<p>Advanced material</p>
+<ul>
+ <li><a href="http://sdn.sitecore.net/Reference/Sitecore%206/CMS%20Performance%20Tuning%20Guide.aspx" title="CMS Performance Tuning Guide" target="_blank">CMS Performance Tuning Guide</a> </li>
+ <li><a href="http://sdn.sitecore.net/Reference/Sitecore%206/DMS%20Performance%20Tuning%20Guide.aspx" title="DMS Performance Tuning Guide" target="_blank">DMS Performance Tuning Guide</a> </li>
+</ul>
+----field----
+field: {98A14AED-B794-4B64-8C76-2D11BFF917D0}
+name: Categories
+key: categories
+content-length: 38
+
+{DA01F21A-90BE-4515-882B-DC7031B1358B}
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{15DD3569-2798-420D-87DA-4FA39281FB7E}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 21
+
+Sitecore Architecture
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111220T124700
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\chc
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d27b3ca7-6065-4df9-8958-db122ca2abbe
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121210T185725:634907626456875922
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

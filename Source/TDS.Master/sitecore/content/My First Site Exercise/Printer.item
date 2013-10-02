@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {10678D5E-A08D-45C3-9912-9BE17BD9793A}
+database: master
+path: /sitecore/content/My First Site Exercise/Printer
+parent: {91F6955A-9C5E-4672-A164-C5C5B54FA07E}
+name: Printer
+master: {00000000-0000-0000-0000-000000000000}
+template: {AB3EF8C9-07AD-4160-BC02-B7B6017D87B7}
+templatekey: Product
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
+----version----
+language: en
+version: 1
+revision: 0481f6db-19a2-4b68-a861-9bda9b9c3a36
+
+----field----
+field: {74F5A75E-2CD8-4FE9-A0F1-C90AD0BC563C}
+name: Title
+key: title
+content-length: 7
+
+Printer
+----field----
+field: {E5715A80-A450-46E5-B075-DAA878DEE50A}
+name: Description
+key: description
+content-length: 30
+
+<p>Description for Printer</p>
+----field----
+field: {FA48F4CD-55C4-4A17-977C-31F9C29FD638}
+name: Price
+key: price
+content-length: 2
+
+$3
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120409T094518
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0481f6db-19a2-4b68-a861-9bda9b9c3a36
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20120806T151954:634798631941643504
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

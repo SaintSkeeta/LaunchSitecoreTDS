@@ -1,0 +1,138 @@
+----item----
+version: 1
+id: {214F6F87-593C-45F3-8DA0-F731145239B1}
+database: master
+path: /sitecore/content/Home/Articles/CMS/Topics/The Sitecore API
+parent: {A9A2F7FA-B1BB-4F15-B694-241340D7D997}
+name: The Sitecore API
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 385
+
+<tracking>
+  <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function" presets="devon the developer|100||">
+    <key name="Analytics" value="1" />
+    <key name="Copywriting" value="1" />
+    <key name="Personalization and Testing" value="2" />
+    <key name="Technology" value="5" />
+    <key name="Workflow and Publishing" value="3" />
+  </profile>
+</tracking>
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+700
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 727f95d7-ea02-44e3-aad5-1f4a81c87e80
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 16
+
+The Sitecore API
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 168
+
+<p>Sitecore provides an extremely rich set of API with over 90 .NET based namespaces, empowering Sitecore developers with the tools to build powerful web solutions.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 2179
+
+
+		<p>Sitecore provides an extremely rich set of API with over 90 .NET based namespaces, empowering Sitecore developers with the tools to build powerful web solutions. Rather than covering each aspect of Sitecore's API, we'll break them down into 5 major sections, providing further documentation for each.</p>
+<h3>Content API</h3>
+<p>Manage data in Sitecore databases, including field values, dynamic links between items, and troubleshooting information</p>
+<p><a href="http://sdn.sitecore.net/upload/sitecore6/64/content_api_cookbook-usletter.pdf">http://sdn.sitecore.net/upload/sitecore6/64/content_api_cookbook-usletter.pdf</a></p>
+<h3>Data Definition API</h3>
+<p>Access and manipulate data template and branch template definitions</p>
+<p><a href="http://sdn.sitecore.net/upload/sitecore6/sc61keywords/data_definition_api_cookbook-usletter.pdf">http://sdn.sitecore.net/upload/sitecore6/sc61keywords/data_definition_api_cookbook-usletter.pdf</a></p>
+<h3>Presentation Component API</h3>
+<p>Build presentation components including layouts, sublayouts, web controls, and pipeline processors</p>
+<p><a href="http://sdn.sitecore.net/upload/sitecore6/64/presentation_component_api_cookbook_sc64_usletter.pdf">http://sdn.sitecore.net/upload/sitecore6/64/presentation_component_api_cookbook_sc64_usletter.pdf</a></p>
+<h3>Security API</h3>
+<p>Sample code to introduce Sitecore APIs that support common security requirements, such as user management, authentication, authorization, and user profile management</p>
+<p><a href="http://sdn.sitecore.net/upload/sitecore6/62/security_api_cookbook_sc60-62-usletter.pdf">http://sdn.sitecore.net/upload/sitecore6/62/security_api_cookbook_sc60-62-usletter.pdf</a></p>
+<h3>Engagement Analytics API</h3>
+<p>Overview of Engagement Analytics architecture, features and terminology, examples of common Engagement.Analytics Application Programming Interfaces, such as working with Visitor Data, Geo IP information, Goals and Campaigns</p>
+<p><a href="http://sdn.sitecore.net/upload/sitecore6/65/engagement_analytics_api_cookbook_sc65-usletter.pdf">http://sdn.sitecore.net/upload/sitecore6/65/engagement_analytics_api_cookbook_sc65-usletter.pdf</a></p>
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 16
+
+The Sitecore API
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111220T125000
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\chc
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+727f95d7-ea02-44e3-aad5-1f4a81c87e80
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121210T185753:634907626733865922
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {25A18C17-874A-49B9-89FB-A0773FD5ECE2}
+database: master
+path: /sitecore/templates/Launch Sitecore/Site Sections/Job Function Section/__Standard Values
+parent: {86CD0756-7B65-4CD5-865B-036F9F84498F}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {86CD0756-7B65-4CD5-865B-036F9F84498F}
+templatekey: Job Function Section
+
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{B65CCE04-BCCB-4A58-B988-753D523C99A7}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 1471
+
+<r  xmlns:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{DEAB823F-8E62-48FF-8732-093FF05B17CC}"><p uid="{36168B71-13C5-4AA0-B9CF-728706E4B0F6}" key="content-top" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Evaluator Section/content top-evaluator section" /><p uid="{1C5C37EB-D99D-4917-9DD8-CB7060BF1420}" key="content" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Evaluator Section/content-evaluator section" /><p uid="{3CC56068-2118-4BEE-9BAE-9822F2206952}" key="main-content" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Evaluator Section/main content-evaluator section" /><r id="{69A8AA67-C93C-444B-8BEA-43FDFD41A3A3}" ph="main-content" uid="{6CB5DE65-9212-440F-8346-80EEE7E7879E}" /><r id="{E991D020-25BC-417F-943B-01A053A1BD03}" ph="/main-content/content-top" uid="{8F1C7FC0-045F-4980-90AE-2E944A7295FA}" /><r id="{F07B72BD-6F9A-443B-A647-54BF545F9BAD}" ph="/main-content/content" uid="{5FAA3B2C-DDBF-4594-BAA4-7A7EFBF2B6B4}" /><r id="{16860FC7-25C3-45DD-AAA2-9855720F1AEF}" ph="/main-content/content" uid="{3BCCB48D-FEB8-4BDF-8795-E147E44C212B}" /></d><d id="{34DAEDE6-46A9-47FF-98EA-7EBA4B81A8C3}" l="{F5A53ADD-6A3A-4397-AE36-1D8BDDBEC803}"><r id="{D691D976-6B47-402B-AC20-528893A6B150}" ph="mobile-content-top" uid="{E68FC332-384B-42BD-9F09-1931B1C5187B}" /><r id="{F07B72BD-6F9A-443B-A647-54BF545F9BAD}" ph="mobile-content" uid="{25CA5F84-D400-428B-AB81-9B071141A8D3}" /></d></r>
+----version----
+language: en
+version: 1
+revision: d149bfa8-baeb-4032-9a4c-5b3c557c1e5f
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111214T234400
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d149bfa8-baeb-4032-9a4c-5b3c557c1e5f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121210T185708:634907626289265922
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

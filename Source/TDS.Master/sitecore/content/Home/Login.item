@@ -1,0 +1,135 @@
+----item----
+version: 1
+id: {EDDF6E49-28C4-4699-9E12-4E69B5A64D1A}
+database: master
+path: /sitecore/content/Home/Login
+parent: {110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
+name: Login
+master: {00000000-0000-0000-0000-000000000000}
+template: {D804DA09-73F3-4BDE-B9F7-86181AA7EFA8}
+templatekey: Security Page
+
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 22
+
+Network/16x16/key1.png
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 845
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{FE0F88B6-A873-4319-B66E-7875B92732A8}"><p:d /></r><r uid="{5CD923BE-0B33-4E8D-BBBE-E2AE6E7BB442}" p:before="r[@uid='{890984E5-06EA-476D-907E-9D6415194337}']" s:id="{001947CA-7948-4DCA-B542-2DD5A3D82F3D}" s:ph="/main-content/content/right-column" /><r uid="{890984E5-06EA-476D-907E-9D6415194337}" p:before="r[@uid='{ACE50A47-113B-4E99-A20F-7111EAC64F96}']" s:id="{2B621B7B-1413-477F-958C-E10FAA0B9B65}" s:ph="/main-content/content/left-column" /><r uid="{ACE50A47-113B-4E99-A20F-7111EAC64F96}" p:before="r[@uid='{1267433D-8AD3-4456-82C4-63D3D775AAAB}']" s:id="{69A8AA67-C93C-444B-8BEA-43FDFD41A3A3}" s:ph="main-content" /><r uid="{A3CFAE04-5F78-4CD6-A2E4-C7D1C20DB643}" s:id="{9490D1AE-4A44-4A82-B1A0-88D2E0F36A8B}" s:ph="/main-content/content" /></d></r>
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 77
+
+ar|sitecore\Author|pd|+item:read|+item:write|!*|pe|+item:read|+item:write|!*|
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: b3972675-d99d-47f2-af97-7f0a3b5cd446
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 24
+
+Login &amp; Registration
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 117
+
+<p>Launch Sitecore utilizes a login to demostrate how to secure content as well as other analytics functionality.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 29
+
+<p>Login and Registraiton</p>
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 22
+
+Login and Registration
+----field----
+field: {7E003143-26F2-4A28-B70A-08548286F6BA}
+name: Hide Item From Menu
+key: hide item from menu
+content-length: 1
+
+1
+----field----
+field: {FD6DAC05-FEF8-4581-A329-6CEA310E839B}
+name: Hide Item From Secondary Menu
+key: hide item from secondary menu
+content-length: 1
+
+1
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120725T092200
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b3972675-d99d-47f2-af97-7f0a3b5cd446
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20120926T171832:634842767122239513
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

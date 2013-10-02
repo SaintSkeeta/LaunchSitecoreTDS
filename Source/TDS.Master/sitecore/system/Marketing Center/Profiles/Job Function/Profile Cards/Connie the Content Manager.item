@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {8BD2E0E6-97BD-47C5-A56A-0150667A5DF8}
+database: master
+path: /sitecore/system/Marketing Center/Profiles/Job Function/Profile Cards/Connie the Content Manager
+parent: {B5D8B589-92B0-4784-B08C-E96D7393AD55}
+name: Connie the Content Manager
+master: {00000000-0000-0000-0000-000000000000}
+template: {448C4D57-F0F1-4278-8AB8-93DB46C94F1B}
+templatekey: Profile Card - Persona
+
+----field----
+field: {709B879B-7264-49C7-8864-E254D9129302}
+name: Image
+key: image
+content-length: 166
+
+<image mediaid="{8630194C-ECE3-4D6B-A3A6-4649D840D6B4}" mediapath="/Images/People/General Images/Woman in Blue" src="~/media/8630194CECE34D6BA3A64649D840D6B4.ashx" />
+----field----
+field: {85970AB7-22EA-4206-BE86-C0167178860B}
+name: Profile Card Value
+key: profile card value
+content-length: 337
+
+<tracking>
+ <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function">
+  <key name="Analytics" value="1" />
+  <key name="Copywriting" value="5" />
+  <key name="Personalization and Testing" value="3" />
+  <key name="Technology" value="0" />
+  <key name="Workflow and Publishing" value="1" />
+ </profile>
+</tracking>
+----version----
+language: en
+version: 1
+revision: 34413e8a-3e61-4556-be4f-a54e0efbb592
+
+----field----
+field: {A26FC256-1DB0-44AA-BA3D-1C830BF882A2}
+name: Name
+key: name
+content-length: 26
+
+Connie the Content Manager
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120116T213200
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+34413e8a-3e61-4556-be4f-a54e0efbb592
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121207T091522:634904685223167845
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

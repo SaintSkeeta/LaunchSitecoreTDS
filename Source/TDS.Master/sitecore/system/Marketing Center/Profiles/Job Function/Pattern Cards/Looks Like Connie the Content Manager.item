@@ -1,0 +1,80 @@
+----item----
+version: 1
+id: {5B560D35-CBA4-409A-93C6-462507393DFA}
+database: master
+path: /sitecore/system/Marketing Center/Profiles/Job Function/Pattern Cards/Looks Like Connie the Content Manager
+parent: {DBA1D1E5-C01F-48E6-A1E1-A5EC3A2D17C1}
+name: Looks Like Connie the Content Manager
+master: {00000000-0000-0000-0000-000000000000}
+template: {4A6A7E36-2481-438F-A9BA-0453ECC638FA}
+templatekey: Pattern Card
+
+----field----
+field: {FE732790-2DDB-4657-A882-C2FCE1FBF0C9}
+name: Name
+key: name
+content-length: 37
+
+Looks Like Connie the Content Manager
+----field----
+field: {98535F26-6C9D-4FD7-A7E2-392C7CB82D65}
+name: Image
+key: image
+content-length: 166
+
+<image mediaid="{8630194C-ECE3-4D6B-A3A6-4649D840D6B4}" mediapath="/Images/People/General Images/Woman in Blue" src="~/media/8630194CECE34D6BA3A64649D840D6B4.ashx" />
+----field----
+field: {6DA71AD3-5849-4482-9317-D21390E5A348}
+name: Pattern
+key: pattern
+content-length: 337
+
+<tracking>
+ <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function">
+  <key name="Analytics" value="1" />
+  <key name="Copywriting" value="5" />
+  <key name="Personalization and Testing" value="3" />
+  <key name="Technology" value="0" />
+  <key name="Workflow and Publishing" value="3" />
+ </profile>
+</tracking>
+----version----
+language: en
+version: 1
+revision: 579c5f15-8650-4d14-8345-29d93e7ee714
+
+----field----
+field: {03DB5C50-D4BF-4E87-9AB4-0E5B4BF4E1A9}
+name: Description
+key: description
+content-length: 165
+
+<p>Connie is a content author and approver.  She is in charge of the site content and quality.  She also runs simple tests and sets up some site personalization.</p>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120116T213300
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+579c5f15-8650-4d14-8345-29d93e7ee714
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121207T091708:634904686284300029
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

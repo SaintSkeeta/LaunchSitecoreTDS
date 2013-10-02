@@ -1,0 +1,207 @@
+----item----
+version: 1
+id: {AF857D1B-C76B-43BA-A092-9B33744D8AC0}
+database: master
+path: /sitecore/content/Home/Articles/DMS/Fundamental Articles/Display Current Visitor Information
+parent: {2CDD4A71-4FF1-4F4D-9D5C-947E52CD8AD1}
+name: Display Current Visitor Information
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 385
+
+<tracking>
+  <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function" presets="devon the developer|100||">
+    <key name="Analytics" value="1" />
+    <key name="Copywriting" value="1" />
+    <key name="Personalization and Testing" value="2" />
+    <key name="Technology" value="5" />
+    <key name="Workflow and Publishing" value="3" />
+  </profile>
+</tracking>
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
+----version----
+language: en
+version: 1
+revision: 922407e5-a4d6-4700-af17-7ad78cadf9d0
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 35
+
+Display Current Visitor Information
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 113
+
+<p>This article shows how to use the Analytics API to display information about the current web site visitor </p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 9170
+
+<p>In order to access Visitor data in the Engagement Analytics API, you primarily use the following classes:</p>
+<ul>
+  <li>Sitecore.Analytics.Tracker </li>
+  <li>Sitecore.Analytics.TrackerDataContext </li>
+</ul>
+<p>The following namespace <em>using</em> directives will be helpful when accessing this data.</p>
+<ul>
+  <li style="list-style-type: none;"><em>using Sitecore.Analytics;</em> </li>
+  <li style="list-style-type: none;"><em>using Sitecore.Analytics.DataAccess;</em> </li>
+  <li style="list-style-type: none;"><em>using Sitecore.Analytics.DataAccess.DataSets;</em> </li>
+</ul>
+<h3>How to Access GeoIP Data</h3>
+<p>The <em>Sitecore.Analytics.Tracker</em> is a static class that is used to track each visitor. It provides access to the Analytics context, exposing the visitors IP address, country, city, zip code, latitude, longitude and more. The follow example demonstrates how to access the current visitors IP address.</p>
+<div class="code">
+<div style="background: rgb(221,221,221); overflow: auto;">
+<ol style="padding-bottom: 0px; margin: 0px 0px 0px 2.5em; padding-left: 5px; padding-right: 0px; background: rgb(255,255,255); padding-top: 0px;">
+  <li><span style="color: #0000ff;">using</span> Sitecore.Analytics; </li>
+  <li style="background: rgb(243,243,243);"><span style="color: #0000ff;">using</span> Sitecore.Analytics.DataAccess; </li>
+  <li><span style="color: #0000ff;">using</span> Sitecore.Analytics.DataAccess.DataSets; </li>
+  <li style="background: rgb(243,243,243);"></li>
+  <li><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">class</span> <span style="color: #2b91af;">GeoIPTracker</span> : Sitecore.Web.UI.<span style="color: #2b91af;">WebControl</span> </li>
+  <li style="background: rgb(243,243,243);">{ </li>
+  <li><span style="color: #0000ff;">protected</span> <span style="color: #0000ff;">override</span> <span style="color: #0000ff;">void</span> DoRender(System.Web.UI.<span style="color: #2b91af;">HtmlTextWriter</span> output) </li>
+  <li style="background: rgb(243,243,243);">{ </li>
+  <li><span style="color: #0000ff;">string</span> ip = <span style="color: #0000ff;">new</span> IPAddress(<span style="color: #2b91af;">Tracker</span>.CurrentVisit.Ip).ToString(); </li>
+  <li style="background: rgb(243,243,243);"><span style="color: #0000ff;">if</span> (<span style="color: #2b91af;">Tracker</span>.CurrentVisit == <span style="color: #0000ff;">null</span>) </li>
+  <li><span style="color: #0000ff;">return</span>; </li>
+  <li style="background: rgb(243,243,243);"><span style="color: #0000ff;">if</span> (!<span style="color: #2b91af;">Tracker</span>.CurrentVisit.UpdateGeoIpData()) </li>
+  <li>output.Write(<span style="color: #a31515;">"GeoIP information not "</span> + <span style="color: #a31515;">"available within prescribed time.&lt;br/&gt;"</span>); </li>
+  <li style="background: rgb(243,243,243);"><span style="color: #0000ff;">else</span> <span style="color: #0000ff;">if</span> (<span style="color: #2b91af;">Tracker</span>.CurrentVisit.BusinessName == <span style="color: #a31515;">"IP_NOT_FOUND"</span> || <span style="color: #2b91af;">Tracker</span>.CurrentVisit.BusinessName == <span style="color: #a31515;">"N/A"</span>) </li>
+  <li>output.Write(<span style="color: #a31515;">"GeoIP information not avaialble for "</span> + ip + <span style="color: #a31515;">".&lt;br/&gt;"</span>); </li>
+  <li style="background: rgb(243,243,243);"><span style="color: #0000ff;">else</span> <span style="color: #0000ff;">if</span> (String.IsNullOrEmpty(<span style="color: #2b91af;">Tracker</span>.CurrentVisit.BusinessName)) </li>
+  <li>output.Write(<span style="color: #a31515;">"No business name in GeoIP data for "</span> + ip + <span style="color: #a31515;">" (error contacting provider).&lt;br/&gt;"</span>); </li>
+  <li style="background: rgb(243,243,243);"><span style="color: #0000ff;">else</span> </li>
+  <li>output.Write(<span style="color: #a31515;">"Business name from GeoIP record: "</span> + <span style="color: #2b91af;">Tracker</span>.CurrentVisit.BusinessName + <span style="color: #a31515;">".&lt;br/&gt;"</span>); </li>
+  <li style="background: rgb(243,243,243);">} </li>
+  <li>} </li>
+</ol>
+</div>
+</div>
+<br />
+<h3>How to Access Session Data</h3>
+<p>Beyond Geo IP data, Sitecore stores valuable session data that is accessible via the Analytics API. The following code demonstrates how to access information about any search engine keywords that are assicaiated with the Visitor's current session or previous 10 sessions, if any:</p>
+<div class="code">
+<div style="background: rgb(221,221,221); overflow: auto;">
+<ol style="padding-bottom: 0px; margin: 0px 0px 0px 2.5em; padding-left: 5px; padding-right: 0px; background: rgb(255,255,255); padding-top: 0px;">
+  <li><span style="color: #0000ff;">using</span> Sitecore.Analytics; </li>
+  <li style="background: rgb(243,243,243);"><span style="color: #0000ff;">using</span> Sitecore.Analytics.Data.DataAccess; </li>
+  <li><span style="color: #0000ff;">using</span> Sitecore.Analytics.Data.DataAccess.DataSets; </li>
+  <li style="background: rgb(243,243,243);"></li>
+  <li><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">class</span> <span style="color: #2b91af;">ExampleTracker</span> : Sitecore.Web.UI.<span style="color: #2b91af;">WebControl</span> </li>
+  <li style="background: rgb(243,243,243);">{ </li>
+  <li><span style="color: #0000ff;">protected</span> <span style="color: #0000ff;">override</span> <span style="color: #0000ff;">void</span> DoRender(System.Web.UI.<span style="color: #2b91af;">HtmlTextWriter</span> output) </li>
+  <li style="background: rgb(243,243,243);">{ </li>
+  <li><span style="color: #0000ff;">if</span> (<span style="color: #2b91af;">Tracker</span>.CurrentVisit == <span style="color: #0000ff;">null</span>) </li>
+  <li style="background: rgb(243,243,243);"><span style="color: #0000ff;">return</span>; </li>
+  <li><span style="color: #0000ff;">if</span> (<span style="color: #2b91af;">Tracker</span>.CurrentVisit.Keywords != <span style="color: #0000ff;">null</span> </li>
+  <li style="background: rgb(243,243,243);">&amp;&amp; !String.IsNullOrEmpty(<span style="color: #2b91af;">Tracker</span>.CurrentVisit.Keywords.Text)) </li>
+  <li>{ </li>
+  <li style="background: rgb(243,243,243);">output.WriteLine(<span style="color: #a31515;">"Search keywords for current visit: "</span> + </li>
+  <li><span style="color: #2b91af;">Tracker</span>.CurrentVisit.Keywords.Text + <span style="color: #a31515;">".&lt;br/&gt;"</span>); </li>
+  <li style="background: rgb(243,243,243);"><span style="color: #0000ff;">return</span>; </li>
+  <li>} </li>
+  <li style="background: rgb(243,243,243);"><span style="color: #0000ff;">const</span> <span style="color: #0000ff;">int</span> checkVisits = 10; </li>
+  <li>Sitecore.Analytics.Data.DataAccess.<span style="color: #2b91af;">VisitorLoadOptions</span> vOptions = </li>
+  <li style="background: rgb(243,243,243);"><span style="color: #0000ff;">new</span> Sitecore.Analytics.Data.DataAccess.<span style="color: #2b91af;">VisitorLoadOptions</span> </li>
+  <li>{ </li>
+  <li style="background: rgb(243,243,243);">Start = <span style="color: #2b91af;">Tracker</span>.CurrentVisit.VisitorVisitIndex - 1, </li>
+  <li>Count = <span style="color: #2b91af;">Tracker</span>.CurrentVisit.VisitorVisitIndex - checkVisits, </li>
+  <li style="background: rgb(243,243,243);">VisitLoadOptions = <span style="color: #2b91af;">VisitLoadOptions</span>.Visits </li>
+  <li>}; </li>
+  <li style="background: rgb(243,243,243);"><span style="color: #0000ff;">foreach</span> (<span style="color: #2b91af;">VisitorDataSet</span>.<span style="color: #2b91af;">VisitsRow</span> visit <span style="color: #0000ff;">in</span> </li>
+  <li><span style="color: #2b91af;">Tracker</span>.Visitor.GetVisits(vOptions).Where( </li>
+  <li style="background: rgb(243,243,243);">visit =&gt; visit.VisitId != </li>
+  <li><span style="color: #2b91af;">Tracker</span>.CurrentVisit.VisitId).OrderByDescending( </li>
+  <li style="background: rgb(243,243,243);">visit =&gt; visit.VisitorVisitIndex)) </li>
+  <li>{ </li>
+  <li style="background: rgb(243,243,243);"><span style="color: #0000ff;">if</span> (visit.Keywords != <span style="color: #0000ff;">null</span> &amp;&amp; </li>
+  <li>!String.IsNullOrEmpty(visit.Keywords.Text)) </li>
+  <li style="background: rgb(243,243,243);">{ </li>
+  <li>output.WriteLine(<span style="color: #a31515;">"Last search keywords from "</span> + </li>
+  <li style="background: rgb(243,243,243);">visit.StartDateTime + <span style="color: #a31515;">" visit: "</span> + </li>
+  <li>visit.Keywords.Text + <span style="color: #a31515;">"&lt;br/&gt;"</span>); </li>
+  <li style="background: rgb(243,243,243);"><span style="color: #0000ff;">return</span>; </li>
+  <li>} </li>
+  <li style="background: rgb(243,243,243);">} </li>
+  <li>output.WriteLine(<span style="color: #a31515;">"No search keywords for current or last "</span> + </li>
+  <li style="background: rgb(243,243,243);">checkVisits + <span style="color: #a31515;">" visits.&lt;br/&gt;"</span>); </li>
+  <li>} </li>
+  <li style="background: rgb(243,243,243);">} </li>
+</ol>
+</div>
+</div>
+----field----
+field: {24DDFF9E-D4D8-46C8-99A6-6B01F5251B8F}
+name: Use case solution statement
+key: use case solution statement
+content-length: 100
+
+"I want to understand the GeoIP data available for a web site visitor and manage it programatically"
+----field----
+field: {98A14AED-B794-4B64-8C76-2D11BFF917D0}
+name: Categories
+key: categories
+content-length: 38
+
+{F0EE0619-25E1-482C-ABCE-3B28DDA88755}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 35
+
+Display Current Visitor Information
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20110713T085500
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+922407e5-a4d6-4700-af17-7ad78cadf9d0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121211T165954:634908419946274443
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

@@ -1,0 +1,136 @@
+----item----
+version: 1
+id: {B14825A3-C7E6-407A-BA96-22E3997B81B0}
+database: master
+path: /sitecore/content/Home/Glossary/Sitecore Desktop
+parent: {2D75C97D-5981-4482-8631-208B2DEB1F54}
+name: Sitecore Desktop
+master: {00000000-0000-0000-0000-000000000000}
+template: {C6DD3CEF-22AF-4468-B3B0-82ABFCDE0F24}
+templatekey: Term
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 6588ce73-83ad-4b21-bccd-e870588af35d
+
+----field----
+field: {FBADE872-82BD-45AD-A2EC-DADC723249DA}
+name: Title
+key: title
+content-length: 16
+
+Sitecore Desktop
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 139
+
+<image mediaid="{8C0951A1-5976-4EB8-AB07-9AED145EFB6F}" mediapath="/Images/Icons/monitor" src="~/media/Images/Icons/monitor.ashx" ></image>
+----field----
+field: {B636170C-2681-469A-A642-A6549C12D1E6}
+name: Definition
+key: definition
+content-length: 215
+
+<p>The Sitecore desktop is an administrative interface which provides access to all Sitecore functionality, including the Page Editor and Content Editor, as well as all other tools (as appropriate via security).</p>
+----field----
+field: {AA7CE48D-746C-42C7-BD64-9A51F7F10B7C}
+name: Usage
+key: usage
+content-length: 1481
+
+<p>The Sitecore Desktop is an administrative interface which provides access to all aspects of Sitecore. In addition to accessing the other interfaces (<a href="%7E/link.aspx?_id=6FEA8C36369E41A583501E59535FDD70&amp;_z=z">Content Editor</a>, <a href="%7E/link.aspx?_id=28A1998207F44A6C8D4A8BCCDFC48C74&amp;_z=z">Page Editor</a>), the Desktop provides a number of other tools, including:
+</p><ul>
+    <li>Marketing Center (enabled with <a href="%7E/link.aspx?_id=28EDE2395290437B9877DC9A59FD8B9C&amp;_z=z">DMS</a>) - creating goals, campaigns, Engagement Plans, etc.</li>
+    <li><a href="%7E/link.aspx?_id=0F1DB744F9A344CAA4C9EAA037FD7CAF&amp;_z=z">Media Library</a> - manage digital assets</li>
+    <li>Engagement Analytics (enabled with DMS) - reporting on sessions, campaigns, converstions, etc.</li>
+    <li><a href="%7E/link.aspx?_id=DFDC62FBFEA3463C93450E42419B8E5D&amp;_z=z">Executive Dashboard</a> (enabled with DMS) - high-level reporting on overall marketing performance.</li>
+    <li>Security Editor - applying security permissions</li>
+    <li><a href="%7E/link.aspx?_id=E3C0C693CB774EE29B22F121CA7E4B99&amp;_z=z">Template Manager</a> - creating item templates</li>
+    <li>Control Panel
+    <ul>
+        <li>Item export/import for translation</li>
+        <li>Adding languages</li>
+    </ul>
+    </li>
+    <li>Development Tools
+    <ul>
+        <li>Developer Center</li>
+        <li>Package Designer</li>
+    </ul>
+    </li>
+    <li>Reporting Tools </li>
+</ul>
+<p></p>
+----field----
+field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
+name: Image
+key: image
+content-length: 208
+
+<image mediaid="{4E237733-2E37-4EC3-B063-24F89685C96A}" mediapath="/Images/Glossary/sitecore_desktop" src="~/media/Images/Glossary/sitecore_desktop.ashx" alt="" height="505" width="620" hspace="" vspace="" />
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 16
+
+Sitecore Desktop
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111220T124456
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\chc
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6588ce73-83ad-4b21-bccd-e870588af35d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121210T185831:634907627118855922
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

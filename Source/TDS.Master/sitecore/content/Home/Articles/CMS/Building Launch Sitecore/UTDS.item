@@ -1,0 +1,93 @@
+----item----
+version: 1
+id: {22ED8C9C-C16F-4DF2-A233-DB1A4F397CBF}
+database: master
+path: /sitecore/content/Home/Articles/CMS/Building Launch Sitecore/Using TDS
+parent: {69FB866F-596C-4323-8B13-C5BD3EF8E9EB}
+name: Using TDS
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: f306e604-e70f-4fa6-8595-80bbd8ec5a54
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 9
+
+Using TDS
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 54
+
+Here is how you can use TDS with Sitecore development.
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 19
+
+<p>Coming soon.</p>
+----field----
+field: {98A14AED-B794-4B64-8C76-2D11BFF917D0}
+name: Categories
+key: categories
+content-length: 38
+
+{DA01F21A-90BE-4515-882B-DC7031B1358B}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 9
+
+Using TDS
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130223T144216
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f306e604-e70f-4fa6-8595-80bbd8ec5a54
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130223T144310:634972273902582665
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{A84A3674-4317-49B7-847F-B3AF8506D04B}
