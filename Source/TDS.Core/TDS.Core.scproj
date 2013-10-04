@@ -30,9 +30,10 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>.\Debug\</OutputPath>
+    <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <SitecoreDeployFolder>D:\Projects\TDS Demo\Local\Website</SitecoreDeployFolder>
+    <SitecoreDeployFolder>
+    </SitecoreDeployFolder>
     <SitecoreWebUrl>http://launch.local</SitecoreWebUrl>
     <SitecoreAccessGuid>900c37ae-5fe5-48c2-bccd-2eab2dafea31</SitecoreAccessGuid>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>

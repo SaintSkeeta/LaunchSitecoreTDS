@@ -32,10 +32,11 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>.\Debug\</OutputPath>
+    <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <SitecoreDeployFolder>D:\SVN\LaunchSitecore\Website</SitecoreDeployFolder>
-    <SitecoreWebUrl>http://launch.dev</SitecoreWebUrl>
+    <SitecoreDeployFolder>
+    </SitecoreDeployFolder>
+    <SitecoreWebUrl>http://launch.local</SitecoreWebUrl>
     <SitecoreAccessGuid>900c37ae-5fe5-48c2-bccd-2eab2dafea31</SitecoreAccessGuid>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
   </PropertyGroup>
@@ -4444,54 +4445,6 @@
     </Replacement>
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)' == 'Release' ">
-    <Replacement Include="..\..\Website\favicon.ico">
-      <TargetPath>.\favicon.ico</TargetPath>
-      <IsFolder>False</IsFolder>
-      <IsRelative>True</IsRelative>
-    </Replacement>
-    <Replacement Include="..\..\Website\images\">
-      <TargetPath>.\images\</TargetPath>
-      <IsFolder>True</IsFolder>
-      <IsRelative>True</IsRelative>
-    </Replacement>
-  </ItemGroup>
-  <ItemGroup Condition=" '$(Configuration)' == 'Debug-Sean' ">
-    <Replacement Include="..\..\Website\favicon.ico">
-      <TargetPath>.\favicon.ico</TargetPath>
-      <IsFolder>False</IsFolder>
-      <IsRelative>True</IsRelative>
-    </Replacement>
-    <Replacement Include="..\..\Website\images\">
-      <TargetPath>.\images\</TargetPath>
-      <IsFolder>True</IsFolder>
-      <IsRelative>True</IsRelative>
-    </Replacement>
-  </ItemGroup>
-  <ItemGroup Condition=" '$(Configuration)' == 'Dev' ">
-    <Replacement Include="..\..\Website\favicon.ico">
-      <TargetPath>.\favicon.ico</TargetPath>
-      <IsFolder>False</IsFolder>
-      <IsRelative>True</IsRelative>
-    </Replacement>
-    <Replacement Include="..\..\Website\images\">
-      <TargetPath>.\images\</TargetPath>
-      <IsFolder>True</IsFolder>
-      <IsRelative>True</IsRelative>
-    </Replacement>
-  </ItemGroup>
-  <ItemGroup Condition=" '$(Configuration)' == 'QA' ">
-    <Replacement Include="..\..\Website\favicon.ico">
-      <TargetPath>.\favicon.ico</TargetPath>
-      <IsFolder>False</IsFolder>
-      <IsRelative>True</IsRelative>
-    </Replacement>
-    <Replacement Include="..\..\Website\images\">
-      <TargetPath>.\images\</TargetPath>
-      <IsFolder>True</IsFolder>
-      <IsRelative>True</IsRelative>
-    </Replacement>
-  </ItemGroup>
-  <ItemGroup Condition=" '$(Configuration)' == 'Prod' ">
     <Replacement Include="..\..\Website\favicon.ico">
       <TargetPath>.\favicon.ico</TargetPath>
       <IsFolder>False</IsFolder>
