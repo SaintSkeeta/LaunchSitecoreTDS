@@ -44,67 +44,6 @@
     <OutputPath>.\Release\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug-Sean' ">
-    <SitecoreDeployFolder>D:\SVN\LaunchSitecore\Website</SitecoreDeployFolder>
-    <SitecoreWebUrl>http://launch.local</SitecoreWebUrl>
-    <OutputPath>.\Debug-Sean\</OutputPath>
-    <SitecoreAccessGuid>900c37ae-5fe5-48c2-bccd-2eab2dafea31</SitecoreAccessGuid>
-    <InstallSitecoreConnector>True</InstallSitecoreConnector>
-    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Dev' ">
-    <SitecoreDeployFolder>D:\Projects\TDS Demo\Dev\Website</SitecoreDeployFolder>
-    <SitecoreWebUrl>http://launch.dev</SitecoreWebUrl>
-    <OutputPath>.\Dev\</OutputPath>
-    <SitecoreAccessGuid>
-    </SitecoreAccessGuid>
-    <InstallSitecoreConnector>False</InstallSitecoreConnector>
-    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'QA' ">
-    <SitecoreDeployFolder>D:\Projects\TDS Demo\QA\Website</SitecoreDeployFolder>
-    <SitecoreWebUrl>http://launch.qa</SitecoreWebUrl>
-    <SitecoreAccessGuid>
-    </SitecoreAccessGuid>
-    <InstallSitecoreConnector>False</InstallSitecoreConnector>
-    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <OutputPath>.\QA\</OutputPath>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Prod' ">
-    <SitecoreDeployFolder>
-    </SitecoreDeployFolder>
-    <SitecoreWebUrl>
-    </SitecoreWebUrl>
-    <SitecoreAccessGuid>
-    </SitecoreAccessGuid>
-    <InstallSitecoreConnector>False</InstallSitecoreConnector>
-    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <OutputPath>.\Prod\</OutputPath>
-    <PackageAuthor>Sean Holmesby</PackageAuthor>
-    <PackagePublisher>Igloo Digital</PackagePublisher>
-    <PackageVersion>1.0</PackageVersion>
-    <PackageReadme>Update package for build version 1.0.</PackageReadme>
-    <SitecoreAssemblyPath>..\..\Installers\Sitecore\</SitecoreAssemblyPath>
-    <GeneratePackage>True</GeneratePackage>
-    <SeperateFilesAndItems>True</SeperateFilesAndItems>
-    <AddDateTimeToPackageName>True</AddDateTimeToPackageName>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug-SeanSVN' ">
-    <SitecoreDeployFolder>D:\Projects\TDS Demo\LaunchSitecoreTDS\Website</SitecoreDeployFolder>
-    <SitecoreWebUrl>http://launchsvn.local</SitecoreWebUrl>
-    <SitecoreAccessGuid>900c37ae-5fe5-48c2-bccd-2eab2dafea31</SitecoreAccessGuid>
-    <InstallSitecoreConnector>True</InstallSitecoreConnector>
-    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <OutputPath>.\Debug-SeanSVN\</OutputPath>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug-Adrian' ">
-    <SitecoreDeployFolder>D:\Projects\SitecoreExamples\LaunchSitecoreTDS\Website</SitecoreDeployFolder>
-    <SitecoreWebUrl>http://launch.local</SitecoreWebUrl>
-    <SitecoreAccessGuid>900c37ae-5fe5-48c2-bccd-2eab2dafea31</SitecoreAccessGuid>
-    <InstallSitecoreConnector>True</InstallSitecoreConnector>
-    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <OutputPath>.\Debug-Adrian\</OutputPath>
-  </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
       <Value>$(AssemblyFileVersion)</Value>
