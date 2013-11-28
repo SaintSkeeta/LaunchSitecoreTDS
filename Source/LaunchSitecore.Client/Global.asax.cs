@@ -4,7 +4,6 @@ using System.Web.Security;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
-using Glass.Sitecore.Mapper;
 
 namespace LaunchSitecore
 {
@@ -12,10 +11,6 @@ namespace LaunchSitecore
     {
         protected void Application_Start(object sender, EventArgs e)
         {
-            var loader = new Glass.Sitecore.Mapper.Configuration.Attributes.AttributeConfigurationLoader(
-                    "LaunchContent, LaunchContent");
-
-            Glass.Sitecore.Mapper.Context context = new Context(loader);
         }
 
         protected void Application_Error(object sender, EventArgs e)

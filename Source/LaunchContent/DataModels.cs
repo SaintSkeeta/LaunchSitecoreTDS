@@ -1,4 +1,4 @@
-﻿
+
 
 
 
@@ -19,9 +19,9 @@ using System;
 using System.Collections.Generic;   
 using System.Linq;
 using System.Text;
-using Glass.Sitecore.Mapper.Configuration.Attributes;
-using Glass.Sitecore.Mapper.Configuration;
-using Glass.Sitecore.Mapper.FieldTypes;
+using Glass.Mapper.Sc.Configuration.Attributes;
+using Glass.Mapper.Sc.Configuration;
+using Glass.Mapper.Sc.Fields;
 using Sitecore.Globalization;
 
 
@@ -79,7 +79,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Configuration Folder</para>	
 	/// <para>ID: 045377D9-C7B7-4C51-A1F8-722502885239</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="045377d9-c7b7-4c51-a1f8-722502885239")]
+	[SitecoreType(TemplateId="045377d9-c7b7-4c51-a1f8-722502885239")]
 	public partial class Configuration_Folder  : GlassBase, IConfiguration_Folder 
 	{
 	
@@ -143,7 +143,7 @@ namespace LaunchContent.LaunchSitecore
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Home</para>	
 	/// <para>ID: 0ACD30D8-863E-4B1D-8612-719EEFC1DA4F</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="0acd30d8-863e-4b1d-8612-719eefc1da4f")]
+	[SitecoreType(TemplateId="0acd30d8-863e-4b1d-8612-719eefc1da4f")]
 	public partial class Home  : GlassBase, IHome 
 	{
         /// <summary>
@@ -219,7 +219,7 @@ namespace LaunchContent.LaunchSitecore
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Product</para>	
 	/// <para>ID: 1B6A3702-5694-4FC4-8366-989ECDCD7F1B</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="1b6a3702-5694-4fc4-8366-989ecdcd7f1b")]
+	[SitecoreType(TemplateId="1b6a3702-5694-4fc4-8366-989ecdcd7f1b")]
 	public partial class Product  : GlassBase, IProduct 
 	{
         /// <summary>
@@ -286,7 +286,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Footer Links Section</para>	
 	/// <para>ID: 21E0102F-DDBC-4DA9-B9E6-32B78DD4B7A5</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="21e0102f-ddbc-4da9-b9e6-32b78dd4b7a5")]
+	[SitecoreType(TemplateId="21e0102f-ddbc-4da9-b9e6-32b78dd4b7a5")]
 	public partial class Footer_Links_Section  : GlassBase, IFooter_Links_Section 
 	{
         /// <summary>
@@ -342,7 +342,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/Title Abstract and Text</para>	
 	/// <para>ID: 2BDC8AF6-C00E-44A9-A644-4946A252A02E</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="2bdc8af6-c00e-44a9-a644-4946a252a02e")]
+	[SitecoreType(TemplateId="2bdc8af6-c00e-44a9-a644-4946a252a02e")]
 	public partial class Title_Abstract_And_Text  : GlassBase, ITitle_Abstract_And_Text 
 	{
         /// <summary>
@@ -442,7 +442,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Site Settings</para>	
 	/// <para>ID: 41E5285E-F5B2-4075-95CE-D3A993881C81</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="41e5285e-f5b2-4075-95ce-d3a993881c81")]
+	[SitecoreType(TemplateId="41e5285e-f5b2-4075-95ce-d3a993881c81")]
 	public partial class Site_Settings  : GlassBase, ISite_Settings 
 	{
         /// <summary>
@@ -539,7 +539,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Articles Section</para>	
 	/// <para>ID: 53303AA5-8E78-4263-A476-C1E7ED791FDE</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="53303aa5-8e78-4263-a476-c1e7ed791fde")]
+	[SitecoreType(TemplateId="53303aa5-8e78-4263-a476-c1e7ed791fde")]
 	public partial class Articles_Section  : GlassBase, IArticles_Section 
 	{
         /// <summary>
@@ -626,7 +626,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/Tagging</para>	
 	/// <para>ID: 65C05C6F-9660-4D29-87A0-37A7795F53DD</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="65c05c6f-9660-4d29-87a0-37a7795f53dd")]
+	[SitecoreType(TemplateId="65c05c6f-9660-4d29-87a0-37a7795f53dd")]
 	public partial class Tagging  : GlassBase, ITagging 
 	{
         /// <summary>
@@ -695,7 +695,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Team Section</para>	
 	/// <para>ID: 6E005E97-5435-4806-98E5-CA454B8218D1</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="6e005e97-5435-4806-98e5-ca454b8218d1")]
+	[SitecoreType(TemplateId="6e005e97-5435-4806-98e5-ca454b8218d1")]
 	public partial class Team_Section  : GlassBase, ITeam_Section 
 	{
         /// <summary>
@@ -767,7 +767,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Featured Articles Title</para>	
 	/// <para>ID: 788871F5-3EBE-4EDF-8528-D98BCCC5A0CD</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="788871f5-3ebe-4edf-8528-d98bccc5a0cd")]
+	[SitecoreType(TemplateId="788871f5-3ebe-4edf-8528-d98bccc5a0cd")]
 	public partial class Featured_Articles_Title  : GlassBase, IFeatured_Articles_Title 
 	{
         /// <summary>
@@ -815,7 +815,7 @@ namespace LaunchContent.LaunchSitecore
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Article Folder</para>	
 	/// <para>ID: 826DC4A0-BEB8-4774-8FA7-791F1EC584B4</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="826dc4a0-beb8-4774-8fa7-791f1ec584b4")]
+	[SitecoreType(TemplateId="826dc4a0-beb8-4774-8fa7-791f1ec584b4")]
 	public partial class Article_Folder  : GlassBase, IArticle_Folder 
 	{
         /// <summary>
@@ -877,7 +877,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Job Function Section</para>	
 	/// <para>ID: 86CD0756-7B65-4CD5-865B-036F9F84498F</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="86cd0756-7b65-4cd5-865b-036f9f84498f")]
+	[SitecoreType(TemplateId="86cd0756-7b65-4cd5-865b-036f9f84498f")]
 	public partial class Job_Function_Section  : GlassBase, IJob_Function_Section 
 	{
         /// <summary>
@@ -959,7 +959,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Version Information</para>	
 	/// <para>ID: 8901041F-21F5-4A5B-BE87-ABBEF0DBE41C</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="8901041f-21f5-4a5b-be87-abbef0dbe41c")]
+	[SitecoreType(TemplateId="8901041f-21f5-4a5b-be87-abbef0dbe41c")]
 	public partial class Version_Information  : GlassBase, IVersion_Information 
 	{
         /// <summary>
@@ -1056,7 +1056,7 @@ namespace LaunchContent.LaunchSitecore
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Contributor</para>	
 	/// <para>ID: 97963D48-BD06-46CA-8279-CD2BA3C7AA36</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="97963d48-bd06-46ca-8279-cd2ba3c7aa36")]
+	[SitecoreType(TemplateId="97963d48-bd06-46ca-8279-cd2ba3c7aa36")]
 	public partial class Contributor  : GlassBase, IContributor 
 	{
         /// <summary>
@@ -1149,7 +1149,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Reference</para>	
 	/// <para>ID: B072D639-3F62-493D-9816-28520A0965D7</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="b072d639-3f62-493d-9816-28520a0965d7")]
+	[SitecoreType(TemplateId="b072d639-3f62-493d-9816-28520a0965d7")]
 	public partial class Reference  : GlassBase, IReference 
 	{
         /// <summary>
@@ -1222,7 +1222,7 @@ namespace LaunchContent.LaunchSitecore
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Job Function</para>	
 	/// <para>ID: B65CCE04-BCCB-4A58-B988-753D523C99A7</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="b65cce04-bccb-4a58-b988-753d523c99a7")]
+	[SitecoreType(TemplateId="b65cce04-bccb-4a58-b988-753d523c99a7")]
 	public partial class Job_Function  : GlassBase, IJob_Function 
 	{
         /// <summary>
@@ -1337,7 +1337,7 @@ namespace LaunchContent.LaunchSitecore
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Term</para>	
 	/// <para>ID: C6DD3CEF-22AF-4468-B3B0-82ABFCDE0F24</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="c6dd3cef-22af-4468-b3b0-82abfcde0f24")]
+	[SitecoreType(TemplateId="c6dd3cef-22af-4468-b3b0-82abfcde0f24")]
 	public partial class Term  : GlassBase, ITerm 
 	{
         /// <summary>
@@ -1431,7 +1431,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Presentation Settings</para>	
 	/// <para>ID: C7294FF3-D0A5-4FD8-BD46-CD3A99EF6ED6</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="c7294ff3-d0a5-4fd8-bd46-cd3a99ef6ed6")]
+	[SitecoreType(TemplateId="c7294ff3-d0a5-4fd8-bd46-cd3a99ef6ed6")]
 	public partial class Presentation_Settings  : GlassBase, IPresentation_Settings 
 	{
         /// <summary>
@@ -1505,7 +1505,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/Site Section</para>	
 	/// <para>ID: D24C6488-4A2B-4DE4-B033-EF3072AEA6F3</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="d24c6488-4a2b-4de4-b033-ef3072aea6f3")]
+	[SitecoreType(TemplateId="d24c6488-4a2b-4de4-b033-ef3072aea6f3")]
 	public partial class Site_Section  : GlassBase, ISite_Section 
 	{
         /// <summary>
@@ -1567,7 +1567,7 @@ namespace LaunchContent.LaunchSitecore
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Security Page</para>	
 	/// <para>ID: D804DA09-73F3-4BDE-B9F7-86181AA7EFA8</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="d804da09-73f3-4bde-b9f7-86181aa7efa8")]
+	[SitecoreType(TemplateId="d804da09-73f3-4bde-b9f7-86181aa7efa8")]
 	public partial class Security_Page  : GlassBase, ISecurity_Page 
 	{
         /// <summary>
@@ -1632,7 +1632,7 @@ namespace LaunchContent.LaunchSitecore
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Article</para>	
 	/// <para>ID: D9019E30-F954-46CC-AA70-3E928C40B5D0</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="d9019e30-f954-46cc-aa70-3e928c40b5d0")]
+	[SitecoreType(TemplateId="d9019e30-f954-46cc-aa70-3e928c40b5d0")]
 	public partial class Article  : GlassBase, IArticle 
 	{
         /// <summary>
@@ -1764,7 +1764,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/Tag</para>	
 	/// <para>ID: E08ECE10-E1BE-4F12-961F-169CE490C868</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="e08ece10-e1be-4f12-961f-169ce490c868")]
+	[SitecoreType(TemplateId="e08ece10-e1be-4f12-961f-169ce490c868")]
 	public partial class Tag  : GlassBase, ITag 
 	{
 	
@@ -1798,7 +1798,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Glossary Section</para>	
 	/// <para>ID: E35C9D40-8D28-4944-AB30-18E2789E6BA7</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="e35c9d40-8d28-4944-ab30-18e2789e6ba7")]
+	[SitecoreType(TemplateId="e35c9d40-8d28-4944-ab30-18e2789e6ba7")]
 	public partial class Glossary_Section  : GlassBase, IGlossary_Section 
 	{
         /// <summary>
@@ -1860,7 +1860,7 @@ namespace LaunchContent.LaunchSitecore
 	/// <para>Path: /sitecore/templates/Launch Sitecore/General Page</para>	
 	/// <para>ID: E6964C3E-D415-40C8-91D9-2BF90F6566E9</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="e6964c3e-d415-40c8-91d9-2bf90f6566e9")]
+	[SitecoreType(TemplateId="e6964c3e-d415-40c8-91d9-2bf90f6566e9")]
 	public partial class General_Page  : GlassBase, IGeneral_Page 
 	{
         /// <summary>
@@ -1935,7 +1935,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
 	/// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/References and Attachments</para>	
 	/// <para>ID: EEC72D27-6CA2-4806-8F05-DACF5BF6B435</para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="eec72d27-6ca2-4806-8f05-dacf5bf6b435")]
+	[SitecoreType(TemplateId="eec72d27-6ca2-4806-8f05-dacf5bf6b435")]
 	public partial class References_And_Attachments  : GlassBase, IReferences_And_Attachments 
 	{
         /// <summary>

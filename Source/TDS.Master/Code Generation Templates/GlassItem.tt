@@ -95,7 +95,7 @@ if (!template.Name.IsInterfaceWord()){ #>
 	/// <para>Path: <#= template.Path #></para>	
 	/// <para>ID: <#= template.ID.ToString().ToUpper() #></para>	
 	/// </summary>
-	[SitecoreClass(TemplateId="<#=template.ID#>")]
+	[SitecoreType(TemplateId="<#=template.ID#>")]
 	public partial class <#= template.Name.AsClassName() #>  : GlassBase, <#=template.Name.AsInterfaceName()#> 
 	{
 <#foreach(SitecoreField field in GetFieldsForTemplate(template, true)){#>

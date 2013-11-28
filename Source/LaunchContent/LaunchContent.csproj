@@ -36,10 +36,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Castle.Core">
-      <HintPath>..\..\Installers\Glass\Castle.Core.dll</HintPath>
+      <HintPath>..\packages\Castle.Core.3.2.1\lib\net40-client\Castle.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Glass.Sitecore.Mapper">
-      <HintPath>..\..\Installers\Glass\Glass.Sitecore.Mapper.dll</HintPath>
+    <Reference Include="Glass.Mapper">
+      <HintPath>..\packages\Glass.Mapper.3.0.5.17\lib\net40\Glass.Mapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper.Sc">
+      <HintPath>..\packages\Glass.Mapper.Sc.3.1.0.16\lib\net40\Glass.Mapper.Sc.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\..\Installers\Sitecore\Sitecore.Kernel.dll</HintPath>
@@ -55,6 +58,9 @@
   <ItemGroup>
     <Compile Include="DataModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
