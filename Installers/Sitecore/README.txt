@@ -9,3 +9,4 @@ Sitecore.Automation.MarketingAutomation
 Sitecore.Logging
 Sitecore.Update
 Sitecore.Zip
+Lucene.Net

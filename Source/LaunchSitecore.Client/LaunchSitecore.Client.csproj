@@ -55,7 +55,8 @@
       <HintPath>..\..\Installers\Glass\Glass.Sitecore.Mapper.dll</HintPath>
     </Reference>
     <Reference Include="Lucene.Net, Version=2.3.1.3, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\Installers\Lucene\Lucene.Net.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Installers\Sitecore\Lucene.Net.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Analytics">
       <HintPath>..\..\Installers\Sitecore\Sitecore.Analytics.dll</HintPath>
