@@ -31,71 +31,71 @@ namespace LaunchSitecore.layouts.LuceneSearch.Controls
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            lastUpdatedText = SiteConfiguration.GetDictionaryText("Last Updated");
-            cmdPrev.Text = SiteConfiguration.GetDictionaryText("Previous Button");
-            cmdNext.Text = SiteConfiguration.GetDictionaryText("Next Button");
+            //lastUpdatedText = SiteConfiguration.GetDictionaryText("Last Updated");
+            //cmdPrev.Text = SiteConfiguration.GetDictionaryText("Previous Button");
+            //cmdNext.Text = SiteConfiguration.GetDictionaryText("Next Button");
 
-            // Decode the search string query string.  Will be empty string if no search string was provided.
-            string searchStr = Server.UrlDecode(WebUtil.GetQueryString("searchStr"));       
+            //// Decode the search string query string.  Will be empty string if no search string was provided.
+            //string searchStr = Server.UrlDecode(WebUtil.GetQueryString("searchStr"));       
                        
-            // If the visitor provided no criteria, don't bother searching
-            if (searchStr == string.Empty)
-                lblSearchString.Text = SiteConfiguration.GetDictionaryText("Search Criteria") + SiteConfiguration.GetDictionaryText("No Criteria");
-            else
-            {
-                string indexName = StringUtil.GetString(IndexName, SiteConfiguration.GetSiteSettingsItem()["Search Index"]);
-                searchMgr = new SearchManager(indexName);
+            //// If the visitor provided no criteria, don't bother searching
+            //if (searchStr == string.Empty)
+            //    lblSearchString.Text = SiteConfiguration.GetDictionaryText("Search Criteria") + SiteConfiguration.GetDictionaryText("No Criteria");
+            //else
+            //{
+            //    string indexName = StringUtil.GetString(IndexName, SiteConfiguration.GetSiteSettingsItem()["Search Index"]);
+            //    searchMgr = new SearchManager(indexName);
 
-                // Remind the visitor what they provided as search criteria
-                lblSearchString.Text = SiteConfiguration.GetDictionaryText("Search Criteria") + searchStr;
+            //    // Remind the visitor what they provided as search criteria
+            //    lblSearchString.Text = SiteConfiguration.GetDictionaryText("Search Criteria") + searchStr;
 
-                // Perform the actual search
-                searchMgr.Search(searchStr);
+            //    // Perform the actual search
+            //    searchMgr.Search(searchStr);
                 
-                // Display the search results
-                results = searchMgr.SearchResults;
+            //    // Display the search results
+            //    results = searchMgr.SearchResults;
 
-                // Now iterate over the number of results 
-                foreach (var result in results)
-                {
-                    Item hit = result.GetObject<Item>();
-                    if (hit != null)
-                    {
-                        ResultsList.Add(hit);
-                    }
-                }
+            //    // Now iterate over the number of results 
+            //    foreach (var result in results)
+            //    {
+            //        Item hit = result.GetObject<Item>();
+            //        if (hit != null)
+            //        {
+            //            ResultsList.Add(hit);
+            //        }
+            //    }
 
-                // no results were found so we need to show message and suggestions
-                if (searchMgr.SearchResults.Count == 0)
-                {                   
-                    Sitecore.Search.Index index = Sitecore.Search.SearchManager.GetIndex("system");                    
-                    SpellChecker.Net.Search.Spell.SpellChecker spellchecker = new SpellChecker.Net.Search.Spell.SpellChecker(index.Directory);
-                    spellchecker.IndexDictionary(new LuceneDictionary(IndexReader.Open(index.Directory), "_content"));
-                    String[] suggestions = spellchecker.SuggestSimilar(searchStr, 5);
+            //    // no results were found so we need to show message and suggestions
+            //    if (searchMgr.SearchResults.Count == 0)
+            //    {                   
+            //        Sitecore.Search.Index index = Sitecore.Search.SearchManager.GetIndex("system");                    
+            //        SpellChecker.Net.Search.Spell.SpellChecker spellchecker = new SpellChecker.Net.Search.Spell.SpellChecker(index.Directory);
+            //        spellchecker.IndexDictionary(new LuceneDictionary(IndexReader.Open(index.Directory, true), "_content"));
+            //        String[] suggestions = spellchecker.SuggestSimilar(searchStr, 5);
 
-                    if (suggestions.Length > 0)
-                    {
-                        lblSearchString.Text += "<p>";
-                        lblSearchString.Text += SiteConfiguration.GetDictionaryText("Did You Mean");
-                        foreach (string s in suggestions)
-                        {
-                            lblSearchString.Text += String.Format("&nbsp;<a href=\"{0}?searchStr={1}\">{2}</a>&nbsp;", LinkManager.GetItemUrl(Sitecore.Context.Item), s, s);
-                        }
-                        lblSearchString.Text += "</p>";
-                    }
-                    else
-                    {
-                        string noResultsMsg = SiteConfiguration.GetDictionaryText("No Results");
-                        LiteralControl noResults = new LiteralControl(string.Format("<p>{0}</p>", noResultsMsg));
-                        pnResultsPanel.Controls.Add(noResults);
-                    }
-                }
-                else
-                {
-                    if (!Page.IsPostBack)
-                        DisplayResults();
-                }
-            }
+            //        if (suggestions.Length > 0)
+            //        {
+            //            lblSearchString.Text += "<p>";
+            //            lblSearchString.Text += SiteConfiguration.GetDictionaryText("Did You Mean");
+            //            foreach (string s in suggestions)
+            //            {
+            //                lblSearchString.Text += String.Format("&nbsp;<a href=\"{0}?searchStr={1}\">{2}</a>&nbsp;", LinkManager.GetItemUrl(Sitecore.Context.Item), s, s);
+            //            }
+            //            lblSearchString.Text += "</p>";
+            //        }
+            //        else
+            //        {
+            //            string noResultsMsg = SiteConfiguration.GetDictionaryText("No Results");
+            //            LiteralControl noResults = new LiteralControl(string.Format("<p>{0}</p>", noResultsMsg));
+            //            pnResultsPanel.Controls.Add(noResults);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        if (!Page.IsPostBack)
+            //            DisplayResults();
+            //    }
+            //}
         }
 
         public string IndexName { get; set; }
