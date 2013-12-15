@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project>
   <PropertyGroup>
-    <Site Server="sc71rev130926.local" UserName="sitecore\admin" IsRemoteSitecore="True" />
+    <Site Server="launch.local" UserName="sitecore\admin" IsRemoteSitecore="True" />
   </PropertyGroup>
   <ItemGroup />
 </Project>
