@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LaunchSitecore.layouts.LuceneSearch.Controls {
+namespace LaunchSitecore.layouts.LaunchSitecore.Default.Controls.Search {
     
     
-    public partial class LuceneSearchBox {
+    public partial class SearchBox {
         
         /// <summary>
         /// SearchPanel control.

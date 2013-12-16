@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LaunchSitecore.layouts.LaunchSitecore
+namespace LaunchSitecore.layouts.LaunchSitecore.Default.Controls.Content
 {
 
 
-    public partial class Sublayout1
+    public partial class Evaluator_Spot
     {
     }
 }

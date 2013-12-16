@@ -1,5 +1,5 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="LuceneSearchBox.ascx.cs"
- Inherits="LaunchSitecore.layouts.LuceneSearch.Controls.LuceneSearchBox" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SearchBox.ascx.cs"
+ Inherits="LaunchSitecore.layouts.LaunchSitecore.Default.Controls.Search.SearchBox" %>
 <%@ Register TagPrefix="sc" Namespace="Sitecore.Web.UI.WebControls" Assembly="Sitecore.Kernel" %>
 <script type="text/javascript">
  function doClear(inputField) {

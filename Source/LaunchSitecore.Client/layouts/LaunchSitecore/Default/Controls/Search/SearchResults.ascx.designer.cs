@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LaunchSitecore.layouts.LuceneSearch.Controls {
+namespace LaunchSitecore.layouts.LaunchSitecore.Default.Controls.Search {
     
     
-    public partial class LuceneSearchResults {
+    public partial class SearchResults {
         
         /// <summary>
         /// lblSearchString control.
@@ -31,13 +31,13 @@ namespace LaunchSitecore.layouts.LuceneSearch.Controls {
         protected global::System.Web.UI.WebControls.Panel pnResultsPanel;
         
         /// <summary>
-        /// SearchResults control.
+        /// rptSearchResults control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater SearchResults;
+        protected global::System.Web.UI.WebControls.Repeater rptSearchResults;
         
         /// <summary>
         /// lblCurrentPage control.

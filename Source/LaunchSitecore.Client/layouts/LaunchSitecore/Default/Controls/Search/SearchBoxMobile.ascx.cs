@@ -4,26 +4,30 @@ using Sitecore.Configuration;
 using Sitecore.Links;
 using System.Drawing;
 
-namespace LaunchSitecore.layouts.LuceneSearch.Controls
+namespace LaunchSitecore.layouts.LaunchSitecore.Default.Controls.Search
 {
-    public partial class MobileSearchBox : System.Web.UI.UserControl
-    {
-        private Database db = null;
-
+    public partial class SearchBoxMobile : System.Web.UI.UserControl
+    {        
         protected void Page_Load(object sender, EventArgs e)
         {
-            db = Sitecore.Context.ContentDatabase;            
+            
         }
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
             if (txtCriteria.Text != String.Empty)
-                performSearch();
+                openSearchPage();
         }
 
-        private void performSearch()
+        protected void txtCriteria_TextChanged(object sender, EventArgs e)
         {
-            Database database = Factory.GetDatabase("master");
+          if (txtCriteria.Text != String.Empty)
+            openSearchPage();
+        }
+
+        private void openSearchPage()
+        {
+            Database database = Sitecore.Context.Database;
             var home = database.GetItem(Sitecore.Context.Site.StartPath);
 
             if (home != null)

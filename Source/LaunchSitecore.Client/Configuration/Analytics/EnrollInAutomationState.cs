@@ -9,7 +9,8 @@ using Sitecore.Analytics.Automation;
 
 namespace LaunchSitecore.Configuration.Analytics
 {
-    // Sitecore Item: "/sitecore/system/Settings/Rules/Common/Actions/EnrollInAutomationState"
+    // Created Sitecore Item "/sitecore/system/Settings/Rules/Common/Actions/EnrollInAutomationState" when creating EnrollInAutomationState class. Fix Title field.
+
     public class EnrollInAutomationState<T> : RuleAction<T> where T : RuleContext
     {
         public string StateId { get; set; }        
@@ -25,5 +26,3 @@ namespace LaunchSitecore.Configuration.Analytics
         }
     }
 }
-
-

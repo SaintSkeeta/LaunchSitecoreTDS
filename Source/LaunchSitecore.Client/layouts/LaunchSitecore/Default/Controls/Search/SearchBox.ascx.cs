@@ -19,15 +19,12 @@ using Sitecore.Links;
 using Sitecore.Xml.XPath;
 using LaunchSitecore.Configuration;
 
-namespace LaunchSitecore.layouts.LuceneSearch.Controls
+namespace LaunchSitecore.layouts.LaunchSitecore.Default.Controls.Search
 {   
-    public partial class LuceneSearchBox : System.Web.UI.UserControl
-    {
-        private Database db = null;
-
+    public partial class SearchBox : System.Web.UI.UserControl
+    {        
         protected void Page_Load(object sender, EventArgs e)
-        {
-            db = Sitecore.Context.ContentDatabase;
+        {            
             if (!IsPostBack)
                 txtCriteria.Text = SiteConfiguration.GetDictionaryText("Search");
         }
@@ -35,18 +32,18 @@ namespace LaunchSitecore.layouts.LuceneSearch.Controls
         protected void btnSearch_Click(object sender, EventArgs e)
         {
             if (txtCriteria.Text != SiteConfiguration.GetDictionaryText("Search"))
-                performSearch();
+              openSearchPage();
         }
 
         protected void txtCriteria_TextChanged(object sender, EventArgs e)
         {
             if (txtCriteria.Text != SiteConfiguration.GetDictionaryText("Search"))
-                performSearch();
+              openSearchPage();
         }
 
-        private void performSearch()
+        private void openSearchPage()
         {
-            Database database = Factory.GetDatabase("master");
+            Database database = Sitecore.Context.Database;
             var home = database.GetItem(Sitecore.Context.Site.StartPath);
 
             if (home != null)

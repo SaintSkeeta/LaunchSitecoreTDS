@@ -372,3 +372,10 @@ div.thickhrlessmargin { border-top: 2px solid #d8d8d8; margin: 6px 0; clear: lef
 #mega-menu-1 li .sub li.mega-hdr a.mega-hdr-a:hover {text-decoration:none; } 
 #mega-menu-1 .sub li.mega-hdr li a:hover { background: transparent;text-decoration:underline;}
 #mega-menu-1 li .sub-container.non-mega li a:hover { background: transparent;text-decoration:underline;}
+
+/* Child Article List */
+#childarticlelist ul { list-style-position: outside; margin-bottom: 20px; padding-left: 20px; }
+#childarticlelist ul { list-style-type:square; }
+#childarticlelist ul li { margin-left: 10px; }
+#childarticlelist p { margin-top: 0px; }
+#childarticlelist a { font-weight:bold; }

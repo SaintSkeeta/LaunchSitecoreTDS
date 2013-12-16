@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<title><sc:Sublayout id="title" runat="server" path="/layouts/LaunchSitecore/Default/Controls/Meta/Title.ascx" /></title>
+ <title><sc:Sublayout id="title" runat="server" path="/layouts/LaunchSitecore/Default/Controls/Meta/Title.ascx" /></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<sc:Sublayout id="meta" runat="server" path="/layouts/LaunchSitecore/Default/Controls/Meta/Metadata.ascx" /> 
 	<link href="/default.css" rel="stylesheet" type='text/css' />
@@ -30,7 +30,7 @@
 				<sc:Sublayout id="siteselector" runat="server" path="/layouts/LaunchSitecore/Default/Controls/Navigation/Site Selector.ascx" />
 				<div id="globalnav">     
 					<sc:Sublayout id="loginbuttons" runat="server" path="/layouts/LaunchSitecore/Default/Controls/Secure/Security Buttons.ascx" />					
-					<sc:Sublayout id="searchbox" runat="server" path="/layouts/LuceneSearch/Controls/LuceneSearchBox.ascx" /> 
+					<sc:Sublayout id="searchbox" runat="server" path="/layouts/LaunchSitecore/Default/Controls/Search/SearchBox.ascx" /> 
 				</div>    
 			</div>
 			<div class="floatClear"></div>

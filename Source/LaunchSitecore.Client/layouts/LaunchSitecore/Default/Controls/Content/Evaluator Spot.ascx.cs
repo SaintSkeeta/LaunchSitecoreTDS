@@ -1,8 +1,8 @@
-﻿namespace LaunchSitecore.layouts.LaunchSitecore
+﻿namespace LaunchSitecore.layouts.LaunchSitecore.Default.Controls.Content
 {
     using System;
 
-    public partial class Sublayout1 : System.Web.UI.UserControl
+    public partial class Evaluator_Spot : System.Web.UI.UserControl
     {
         private void Page_Load(object sender, EventArgs e)
         {
