@@ -2,9 +2,9 @@
 version: 1
 id: {3537441E-69E4-4BFD-96C1-C53C38BFB6D7}
 database: master
-path: /sitecore/layout/Sublayouts/LuceneSearch/Controls
-parent: {3D2039B5-9A77-465D-AFB3-9C986CD5FC8C}
-name: Controls
+path: /sitecore/layout/Sublayouts/LaunchSitecore/Default/Controls/Search
+parent: {6A81D27D-F105-4741-9AB3-693B6AA3AFDA}
+name: Search
 master: {00000000-0000-0000-0000-000000000000}
 template: {239F9CF4-E5A0-44E0-B342-0F32CD4C6D8B}
 templatekey: Node
@@ -12,7 +12,7 @@ templatekey: Node
 ----version----
 language: en
 version: 1
-revision: e6e69163-9d4e-4d1b-9b48-4ec741aa35d6
+revision: 7e1f60ff-f1fd-465d-a9ce-1f38b4c5461c
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -27,14 +27,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e6e69163-9d4e-4d1b-9b48-4ec741aa35d6
+7e1f60ff-f1fd-465d-a9ce-1f38b4c5461c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20120214T140027:634648248271267419
+20130731T190518:635108943189282784
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

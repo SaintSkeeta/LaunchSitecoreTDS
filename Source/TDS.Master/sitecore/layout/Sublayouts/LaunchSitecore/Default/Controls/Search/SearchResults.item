@@ -1,33 +1,40 @@
 ----item----
 version: 1
-id: {3D2039B5-9A77-465D-AFB3-9C986CD5FC8C}
+id: {AF60917F-52C7-4DD4-B727-4118305EEAAE}
 database: master
-path: /sitecore/layout/Sublayouts/LuceneSearch
-parent: {EB443C0B-F923-409E-85F3-E7893C8C30C2}
-name: LuceneSearch
+path: /sitecore/layout/Sublayouts/LaunchSitecore/Default/Controls/Search/SearchResults
+parent: {3537441E-69E4-4BFD-96C1-C53C38BFB6D7}
+name: SearchResults
 master: {00000000-0000-0000-0000-000000000000}
-template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
-templatekey: Folder
+template: {0A98E368-CDB9-4E1E-927C-8E0C24A003FB}
+templatekey: Sublayout
 
+----field----
+field: {E42081B6-8A95-4A11-89CE-DF70ED502F57}
+name: Path
+key: path
+content-length: 66
+
+/layouts/LaunchSitecore/Default/Controls/Search/SearchResults.ascx
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 27
+
+Applications/16x16/find.png
 ----version----
 language: en
 version: 1
-revision: c4760d57-4419-478c-976c-722f3a1f872d
+revision: 5ab7f6c2-c69f-4dff-81e0-128a35500d35
 
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 15
 
-20090119T112823
+20120214T140042
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c4760d57-4419-478c-976c-722f3a1f872d
+5ab7f6c2-c69f-4dff-81e0-128a35500d35
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20090119T112829:633679613099116393
+20130731T191651:635108950118097979
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -56,10 +63,3 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />

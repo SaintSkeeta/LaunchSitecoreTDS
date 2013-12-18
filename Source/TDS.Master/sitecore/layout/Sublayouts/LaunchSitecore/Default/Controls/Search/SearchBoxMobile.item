@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {45DBED1F-02F8-47AB-B77B-E92B09070555}
+id: {CFB12CE8-F4F2-4DC1-82B2-A705F3DF732F}
 database: master
-path: /sitecore/layout/Sublayouts/LuceneSearch/Controls/LuceneSearchBox
+path: /sitecore/layout/Sublayouts/LaunchSitecore/Default/Controls/Search/SearchBoxMobile
 parent: {3537441E-69E4-4BFD-96C1-C53C38BFB6D7}
-name: LuceneSearchBox
+name: SearchBoxMobile
 master: {00000000-0000-0000-0000-000000000000}
 template: {0A98E368-CDB9-4E1E-927C-8E0C24A003FB}
 templatekey: Sublayout
@@ -13,9 +13,9 @@ templatekey: Sublayout
 field: {E42081B6-8A95-4A11-89CE-DF70ED502F57}
 name: Path
 key: path
-content-length: 51
+content-length: 55
 
-/layouts/LuceneSearch/Controls/LuceneSearchBox.ascx
+/layouts/LaunchSitecore/Default/Controls/SearchBox.ascx
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
@@ -26,7 +26,7 @@ Applications/16x16/find.png
 ----version----
 language: en
 version: 1
-revision: 73320738-ad51-4189-9052-9c3d62c5f71a
+revision: cd97ee5e-315e-42fb-a145-b79f354e324d
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-73320738-ad51-4189-9052-9c3d62c5f71a
+cd97ee5e-315e-42fb-a145-b79f354e324d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121017T110548:634860687488932228
+20130731T190714:635108944346212719
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

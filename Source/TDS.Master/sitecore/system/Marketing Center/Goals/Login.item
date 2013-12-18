@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {8FFB183B-DA1A-4C74-8F3A-9729E9FCFF6A}
+id: {66722F52-2D13-4DCC-90FC-EA7117CF2298}
 database: master
-path: /sitecore/system/Marketing Center/Goals/Register
+path: /sitecore/system/Marketing Center/Goals/Login
 parent: {0CB97A9F-CAFB-42A0-8BE1-89AB9AE32BD9}
-name: Register
+name: Login
 master: {00000000-0000-0000-0000-000000000000}
 template: {059CFBDF-49FC-4F14-A4E5-B63E1E1AFB1E}
 templatekey: Page Event
@@ -13,30 +13,26 @@ templatekey: Page Event
 field: {AC6BA888-4213-43BD-B787-D8DA2B6B881F}
 name: Name
 key: name
-content-length: 8
+content-length: 5
 
-Register
+Login
 ----field----
 field: {33AE0E84-74A0-437F-AB2B-859DFA96F6C9}
 name: Points
 key: points
 content-length: 1
 
-2
+3
 ----field----
 field: {71EBDEBD-9560-48C6-A66F-E17FC018232C}
 name: Rule
 key: rule
-content-length: 392
+content-length: 118
 
 <ruleset>
- <rule uid="{B098ACA9-365E-43EE-948F-2840F3EA7BC6}">
- <actions>
-  <action id="{5D21C994-E1F2-4A64-BD48-5A7357A7075C}" uid="0A594856667B40118BF709FF2E5F1B4E" stateid="{132CABD9-9F98-4F2D-8A0E-3799D88FCE21}" />
- </actions>
- <conditions>
-  <condition id="{EA0642FA-500B-4B2F-B264-765E771C516F}" uid="E45F19551E7541469D4741864AD88680" except="true" />
- </conditions>
+ <rule uid="{DFAD14B2-CB32-43BA-ADC7-CD7D8D661807}">
+  <actions />
+  <conditions />
  </rule>
 </ruleset>
 ----field----
@@ -57,9 +53,9 @@ content-length: 1
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 31
+content-length: 22
 
-Business/16x16/address_book.png
+Network/16x16/key1.png
 ----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
@@ -70,15 +66,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 209de880-7ed0-406c-8125-5c6cf7baffae
+revision: 3ad8ddda-1117-43e1-a60d-357c04972cab
 
 ----field----
 field: {797466F5-763B-4299-B6AD-E4192BF21222}
 name: Description
 key: description
-content-length: 19
+content-length: 18
 
-User has registered
+User has logged on
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -106,14 +102,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-209de880-7ed0-406c-8125-5c6cf7baffae
+3ad8ddda-1117-43e1-a60d-357c04972cab
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121219T142505:634915239057013977
+20121218T224555:634914675550433452
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

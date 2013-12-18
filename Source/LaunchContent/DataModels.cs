@@ -425,11 +425,6 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
         int Page_Size  {get; set;}
 
         /// <summary>
-        /// <para>Field Type: Single-Line Text</para>		
-        /// </summary>
-        string Search_Index  {get; set;}
-
-        /// <summary>
         /// <para>Field Type: Checkbox</para>		
         /// </summary>
         bool Allow_Online_Registration  {get; set;}
@@ -493,13 +488,6 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
         [SitecoreField("Page Size")] 
         public virtual int Page_Size  {get; set;}
-			
-        /// <summary>
-        /// <para>Field Type: Single-Line Text</para>		
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-        [SitecoreField("Search Index")] 
-        public virtual string Search_Index  {get; set;}
 			
         /// <summary>
         /// <para>Field Type: Checkbox</para>		

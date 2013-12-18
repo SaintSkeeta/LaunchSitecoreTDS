@@ -10,13 +10,6 @@ template: {B6F7EEB4-E8D7-476F-8936-5ACE6A76F20B}
 templatekey: Device
 
 ----field----
-field: {160B90C2-4011-4E89-9C5E-C617DDFBC8C7}
-name: Fallback device
-key: fallback device
-content-length: 38
-
-{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}
-----field----
 field: {E2E60CB8-AFAE-4465-8443-40D3A95EEF0F}
 name: Agent
 key: agent
@@ -31,16 +24,30 @@ content-length: 8
 
 d=mobile
 ----field----
+field: {160B90C2-4011-4E89-9C5E-C617DDFBC8C7}
+name: Fallback device
+key: fallback device
+content-length: 38
+
+{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}
+----field----
+field: {45C2550C-E38E-48FA-A1D7-484F390F126C}
+name: Default Simulator
+key: default simulator
+content-length: 38
+
+{88CA41B4-1661-4C75-8C98-1D952F56D815}
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
-content-length: 3
+content-length: 2
 
--20
+20
 ----version----
 language: en
 version: 1
-revision: d5872eff-8cb6-4f0f-b984-e50ddeb67c3a
+revision: 4f6c5591-6615-48df-b976-1338195935cc
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -69,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d5872eff-8cb6-4f0f-b984-e50ddeb67c3a
+4f6c5591-6615-48df-b976-1338195935cc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20120726T101545:634788945450026237
+20130731T202321:635108990017188071
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
