@@ -601,7 +601,7 @@
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Home\Configuration\Site Settings.item">
-      <Icon>/temp/IconCache/Applications/16x16/gears.png</Icon>
+      <Icon>/~/icon/Applications/16x16/gears.png.aspx</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>

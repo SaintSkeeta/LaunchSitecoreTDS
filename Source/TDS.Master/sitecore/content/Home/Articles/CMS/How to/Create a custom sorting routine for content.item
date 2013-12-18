@@ -48,7 +48,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 18e5ee4c-116e-4c87-b1a4-7d07d8a1d27c
+revision: 140c3181-01d3-4c6e-a6a7-70725712b512
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -61,9 +61,9 @@ Create a custom sorting routine for content
 field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
 name: Abstract
 key: abstract
-content-length: 83
+content-length: 90
 
-Learn how to create a custom sorting routine for child items in the Content Editor.
+<p>Learn how to create a custom sorting routine for child items in the Content Editor.</p>
 ----field----
 field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
 name: Body
@@ -166,14 +166,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-18e5ee4c-116e-4c87-b1a4-7d07d8a1d27c
+140c3181-01d3-4c6e-a6a7-70725712b512
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121211T170540:634908423406330414
+20130731T181232:635108911527192540
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
