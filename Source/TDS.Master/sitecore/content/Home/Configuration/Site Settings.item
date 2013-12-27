@@ -57,13 +57,6 @@ content-length: 1
 
 6
 ----field----
-field: {509971D4-6F57-4887-B96B-0CFA567FB466}
-name: Search Index
-key: search index
-content-length: 6
-
-system
-----field----
 field: {AEDA6E3F-DC98-4E05-8D5F-6E54911419DE}
 name: Comments
 key: comments
