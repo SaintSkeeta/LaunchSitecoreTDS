@@ -34,7 +34,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 6599979c-c042-489c-afb3-591dd097ced3
+revision: 39d4f45f-268d-43ab-b10c-edd8c707671f
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -47,10 +47,9 @@ Extending Lucene, the built-in search engine
 field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
 name: Abstract
 key: abstract
-content-length: 677
+content-length: 574
 
 <p>Called by some "<a target="_blank" title="CMSWire Article on Lucene" href="http://www.cmswire.com/cms/information-management/lucene-with-solr-now-the-de-facto-cms-search-engine-006348.php">the de facto CMS search engine</a>", Lucene is used as the internal search mechanism within Sitecore. Additionally, many clients use Lucene for their publicly facing site as well. Sitecore provides a great deal of documentation and example source code for this task, as well as adding additional functionality (such as faceted search, crawling file and external databases, etc.)</p>
-<p>This article will provide a link to various references and many common extension possibilities.</p>
 ----field----
 field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
 name: Body
@@ -145,14 +144,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6599979c-c042-489c-afb3-591dd097ced3
+39d4f45f-268d-43ab-b10c-edd8c707671f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121210T185749:634907626697455922
+20130731T180840:635108909200183593
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
