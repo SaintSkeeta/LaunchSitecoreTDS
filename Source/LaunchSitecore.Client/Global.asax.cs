@@ -44,26 +44,26 @@ namespace LaunchSitecore
 
         }
 		
-		public void FormsAuthentication_OnAuthenticate(object sender, FormsAuthenticationEventArgs args)
-  {
-    string frameworkVersion = this.GetFrameworkVersion();
-    if (!string.IsNullOrEmpty(frameworkVersion) && frameworkVersion.StartsWith("v4.", StringComparison.InvariantCultureIgnoreCase))
-    {
-      args.User = Sitecore.Context.User;
-    }
-  }
+        public void FormsAuthentication_OnAuthenticate(object sender, FormsAuthenticationEventArgs args)
+        {
+            string frameworkVersion = this.GetFrameworkVersion();
+            if (!string.IsNullOrEmpty(frameworkVersion) && frameworkVersion.StartsWith("v4.", StringComparison.InvariantCultureIgnoreCase))
+            {
+                args.User = Sitecore.Context.User;
+            }
+        }
 
-  string GetFrameworkVersion()
-  {
-    try
-    {
-      return System.Runtime.InteropServices.RuntimeEnvironment.GetSystemVersion();
-    }
-    catch(Exception ex)
-    {
-      Sitecore.Diagnostics.Log.Error("Cannot get framework version", ex, this);
-      return string.Empty;
-    }
-  }
+        string GetFrameworkVersion()
+        {
+            try
+            {
+                return System.Runtime.InteropServices.RuntimeEnvironment.GetSystemVersion();
+            }
+            catch(Exception ex)
+            {
+                Sitecore.Diagnostics.Log.Error("Cannot get framework version", ex, this);
+                return string.Empty;
+            }
+        }
     }
 }
