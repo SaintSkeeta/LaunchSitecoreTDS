@@ -47,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: d74f6c7c-1c85-4e89-a5d7-97e0986787a6
+revision: b2ddb456-7f35-4134-9884-9a9e9fbff394
 
 ----field----
 field: {1FE0B6C9-F642-4416-809F-EBB754241A6D}
@@ -55,16 +55,14 @@ name: Page Size
 key: page size
 content-length: 1
 
-6
+7
 ----field----
 field: {AEDA6E3F-DC98-4E05-8D5F-6E54911419DE}
 name: Comments
 key: comments
-content-length: 404
+content-length: 61
 
-The name of the index used for searching.  Do not change unless you are sure that you know what you are doing.  
-
-The search feature uses the system index associated with the master database because the starter kit sites run in "Live Mode".  If you change the site to support a separate web database, you must create an associated web database index and specify its name above in order to support search.
+Our search supports paging, so you supply the items per page.
 ----field----
 field: {47D2853F-9423-4157-8E6C-833CA9708F1B}
 name: Profile Path
@@ -104,9 +102,9 @@ content-length: 27
 field: {E31D4BCB-AC93-4376-AD09-1BEA045C85A8}
 name: Title Comments
 key: title comments
-content-length: 415
+content-length: 411
 
-You can use whatever string you want.  The page title control will replace {0} with the name of the current item and the {1} with the name of the site section.  If you would like to store page titles as a field, just edit the meta\title control to pull that field.  The first string is used for the home page and the site sections pages.  The second string is for lower pages such as articles and team member pages.
+You can use whatever string you want. The page title control will replace {0} with the name of the current item and the {1} with the name of the site section. If you would like to store page titles as a field, just edit the meta\title control to pull that field. The first string is used for the home page and the site sections pages. The second string is for lower pages such as articles and team member pages.
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -134,14 +132,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d74f6c7c-1c85-4e89-a5d7-97e0986787a6
+b2ddb456-7f35-4134-9884-9a9e9fbff394
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20120926T171616:634842765762531124
+20130731T144904:635108789444841176
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
