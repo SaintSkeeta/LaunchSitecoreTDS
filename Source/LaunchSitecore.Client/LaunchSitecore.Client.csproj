@@ -610,7 +610,7 @@
     <Content Include="_js\PeelingEdge\turn.js" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\LaunchSitecore.config">
+    <Content Include="App_Config\Include\www.LaunchSitecore.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
