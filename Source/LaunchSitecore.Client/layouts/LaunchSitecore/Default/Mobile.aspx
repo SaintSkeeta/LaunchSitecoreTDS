@@ -23,7 +23,7 @@
   <div class="buttons">
    <a class="button search" href="#" id="search_btn" onclick="TopMenuToggle('search'); return false;">
     <span class="left"></span>
-    <span class="inn"><img src="/images/mobile/search.png" /></span>
+    <span class="inn"><img src="/images/mobile/search.png" alt="search" /></span>
     <span class="right"></span>
    </a>&nbsp;
    <a class="button" href="#" id="menu_btn" onclick="TopMenuToggle('menu'); return false;">
@@ -47,7 +47,7 @@
  </div>
  <div class="dropdowns">
   <div class="search" name="search" id="search">
-   <div class="form"><sc:sublayout id="searchbox" runat="server" path="/layouts/LuceneSearch/Controls/MobileSearchBox.ascx" /></div>
+   <div class="form"><sc:sublayout id="searchbox" runat="server" path="/layouts/LaunchSitecore/Default/Controls/Search/SearchBoxMobile.ascx" /></div>
   </div>
  </div>
  <!-- the body content and secondary navigation -->

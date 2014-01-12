@@ -34,7 +34,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: cf8c9586-321d-4fae-ba3f-01356d3897ad
+revision: c85f6f35-6bff-4dcf-aa9d-7353be28909f
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -47,9 +47,9 @@ Workflow
 field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
 name: Abstract
 key: abstract
-content-length: 121
+content-length: 128
 
-An introduction to the Sitecore workflow engine. This article walks through the Sample Workflow that ships with Sitecore.
+<p>An introduction to the Sitecore workflow engine. This article walks through the Sample Workflow that ships with Sitecore.</p>
 ----field----
 field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
 name: Body
@@ -137,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cf8c9586-321d-4fae-ba3f-01356d3897ad
+c85f6f35-6bff-4dcf-aa9d-7353be28909f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121210T185751:634907626718815922
+20130731T180944:635108909846038264
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

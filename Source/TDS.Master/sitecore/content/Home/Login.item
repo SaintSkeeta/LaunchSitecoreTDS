@@ -40,15 +40,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: b3972675-d99d-47f2-af97-7f0a3b5cd446
+revision: c31a70d6-bbd8-4401-a963-9aa3d420f23d
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
 name: Title
 key: title
-content-length: 24
+content-length: 22
 
-Login &amp; Registration
+Login and Registration
 ----field----
 field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
 name: Abstract
@@ -62,7 +62,7 @@ name: Body
 key: body
 content-length: 29
 
-<p>Login and Registraiton</p>
+<p>Login and Registration</p>
 ----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
@@ -104,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b3972675-d99d-47f2-af97-7f0a3b5cd446
+c31a70d6-bbd8-4401-a963-9aa3d420f23d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20120926T171832:634842767122239513
+20130802T001849:635109995297353693
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

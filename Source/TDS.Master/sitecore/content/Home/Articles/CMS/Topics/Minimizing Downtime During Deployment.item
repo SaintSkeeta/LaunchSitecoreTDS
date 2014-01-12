@@ -34,7 +34,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: ef7f773b-7d30-4901-84ca-4aabf529f6ea
+revision: 564d3657-1bb4-43f8-8a45-dd36c06f3c87
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -47,9 +47,9 @@ Minimizing Downtime During Deployment
 field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
 name: Abstract
 key: abstract
-content-length: 377
+content-length: 385
 
-The architecture of Sitecore allows you to tackle major deployments with minimal downtime. The separation of authoring and delivery instances allow us to perfom these migrations in steps. It is important to remember that publishing content changes in Sitecore is easy and 100% a content manager task. This article covers large code changes to the site not just content changes.
+<p>The architecture of Sitecore allows you to tackle major deployments with minimal downtime. The separation of authoring and delivery instances allow us to perform these migrations in steps. It is important to remember that publishing content changes in Sitecore is easy and 100% a content manager task. This article covers large code changes to the site not just content changes.</p>
 ----field----
 field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
 name: Body
@@ -138,14 +138,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ef7f773b-7d30-4901-84ca-4aabf529f6ea
+564d3657-1bb4-43f8-8a45-dd36c06f3c87
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121210T185751:634907626712045922
+20130731T180944:635108909845678140
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

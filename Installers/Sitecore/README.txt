@@ -4,9 +4,10 @@ DLLs are as follows:-
 
 Sitecore.Analytics
 Sitecore.Client
+Sitecore.ContentSearch
+Sitecore.ContentSearch.Linq
 Sitecore.Kernel
 Sitecore.Automation.MarketingAutomation
 Sitecore.Logging
 Sitecore.Update
 Sitecore.Zip
-Lucene.Net

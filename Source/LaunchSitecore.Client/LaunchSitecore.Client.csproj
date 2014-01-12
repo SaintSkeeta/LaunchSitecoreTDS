@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LaunchSitecore</RootNamespace>
     <AssemblyName>LaunchSitecore</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
@@ -38,6 +38,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -46,14 +47,16 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Castle.Core.3.2.1\lib\net40-client\Castle.Core.dll</HintPath>
+      <HintPath>..\packages\Castle.Core.3.2.1\lib\net45\Castle.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Castle.Windsor">
-      <HintPath>..\packages\Castle.Windsor.3.2.1\lib\net40\Castle.Windsor.dll</HintPath>
+    <Reference Include="Castle.Windsor, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Castle.Windsor.3.2.1\lib\net45\Castle.Windsor.dll</HintPath>
     </Reference>
     <Reference Include="Glass.Mapper">
       <HintPath>..\packages\Glass.Mapper.3.0.5.17\lib\net40\Glass.Mapper.dll</HintPath>
@@ -63,10 +66,6 @@
     </Reference>
     <Reference Include="Glass.Mapper.Sc.CastleWindsor">
       <HintPath>..\packages\Glass.Mapper.Sc.CastleWindsor.3.1.0.9\lib\net40\Glass.Mapper.Sc.CastleWindsor.dll</HintPath>
-    </Reference>
-    <Reference Include="Lucene.Net, Version=2.3.1.3, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Installers\Sitecore\Lucene.Net.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -85,6 +84,12 @@
       <HintPath>..\..\Installers\Sitecore\Sitecore.Client.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.ContentSearch">
+      <HintPath>..\..\Installers\Sitecore\Sitecore.ContentSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq">
+      <HintPath>..\..\Installers\Sitecore\Sitecore.ContentSearch.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\..\Installers\Sitecore\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
@@ -92,10 +97,6 @@
     <Reference Include="Sitecore.Sharedsource.Web.UI.Sublayouts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Installers\Sitecore\Sitecore.Sharedsource.Web.UI.Sublayouts.dll</HintPath>
-    </Reference>
-    <Reference Include="SpellChecker, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Installers\Misc\SpellChecker.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -125,7 +126,7 @@
     <Compile Include="Configuration\HtmlRemoval.cs" />
     <Compile Include="Configuration\Install\LaunchSitecorePostPackageStep.cs" />
     <Compile Include="Configuration\ItemSorterByTitle.cs" />
-    <Compile Include="Configuration\LuceneSearch\SearchCommonText.cs" />
+    <Compile Include="Configuration\Models\SitecoreItem.cs" />
     <Compile Include="Configuration\PageEditor\Base\FieldEditorButtonForSingleField.cs" />
     <Compile Include="Configuration\PageEditor\Base\FieldEditorButtonForTemplate.cs" />
     <Compile Include="Configuration\PageEditor\FieldEditorButton.cs" />
@@ -134,6 +135,7 @@
     <Compile Include="Configuration\PageEditor\FieldEditorButtonForContributorTemplate.cs" />
     <Compile Include="Configuration\Presentation\RecursiveRepeaterTemplate.cs" />
     <Compile Include="Configuration\Processors\RemoveNonBreakingSpacesSaveProcessor.cs" />
+    <Compile Include="Configuration\Search\HasPresentationComputedField.cs" />
     <Compile Include="Configuration\Security\ResetUser.cs" />
     <Compile Include="Configuration\Security\ResetSecurityAccounts.cs" />
     <Compile Include="Configuration\SiteConfiguration.cs" />
@@ -217,6 +219,13 @@
     <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Content with Image.ascx.designer.cs">
       <DependentUpon>Content with Image.ascx</DependentUpon>
     </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Evaluator Spot.ascx.cs">
+      <DependentUpon>Evaluator Spot.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Evaluator Spot.ascx.designer.cs">
+      <DependentUpon>Evaluator Spot.ascx</DependentUpon>
+    </Compile>
     <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Promo Spot with Large Image.ascx.cs">
       <DependentUpon>Promo Spot with Large Image.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -258,6 +267,13 @@
     </Compile>
     <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Article List.ascx.designer.cs">
       <DependentUpon>Article List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Child List.ascx.cs">
+      <DependentUpon>Child List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Child List.ascx.designer.cs">
+      <DependentUpon>Child List.ascx</DependentUpon>
     </Compile>
     <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Featured Articles.ascx.cs">
       <DependentUpon>Featured Articles.ascx</DependentUpon>
@@ -364,6 +380,27 @@
     <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Tree Menu.ascx.designer.cs">
       <DependentUpon>Tree Menu.ascx</DependentUpon>
     </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Search\SearchBox.ascx.cs">
+      <DependentUpon>SearchBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Search\SearchBox.ascx.designer.cs">
+      <DependentUpon>SearchBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Search\SearchBoxMobile.ascx.cs">
+      <DependentUpon>SearchBoxMobile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Search\SearchBoxMobile.ascx.designer.cs">
+      <DependentUpon>SearchBoxMobile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Search\SearchResults.ascx.cs">
+      <DependentUpon>SearchResults.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Default\Controls\Search\SearchResults.ascx.designer.cs">
+      <DependentUpon>SearchResults.ascx</DependentUpon>
+    </Compile>
     <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Add To Favorites.ascx.cs">
       <DependentUpon>Add To Favorites.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -462,28 +499,6 @@
     <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Partial\Two Columns.ascx.designer.cs">
       <DependentUpon>Two Columns.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LuceneSearch\Controls\Class\SearchManager.cs" />
-    <Compile Include="layouts\LuceneSearch\Controls\LuceneSearchBox.ascx.cs">
-      <DependentUpon>LuceneSearchBox.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LuceneSearch\Controls\LuceneSearchBox.ascx.designer.cs">
-      <DependentUpon>LuceneSearchBox.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\LuceneSearch\Controls\LuceneSearchResults.ascx.cs">
-      <DependentUpon>LuceneSearchResults.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LuceneSearch\Controls\LuceneSearchResults.ascx.designer.cs">
-      <DependentUpon>LuceneSearchResults.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\LuceneSearch\Controls\MobileSearchBox.ascx.cs">
-      <DependentUpon>MobileSearchBox.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LuceneSearch\Controls\MobileSearchBox.ascx.designer.cs">
-      <DependentUpon>MobileSearchBox.ascx</DependentUpon>
-    </Compile>
     <Compile Include="layouts\MyFirstSite\Default\Controls\Generic Display.ascx.cs">
       <DependentUpon>Generic Display.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -527,14 +542,17 @@
     <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Biography.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Body Content.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Content with Image.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Evaluator Spot.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Promo Spot with Large Image.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Promo Spot with Thumbnail.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Term Details.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Version Information.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Abstract List.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Article List.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Child List.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Featured Articles.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Evaluator Quick Links.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Featured Items List.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Queried List.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Glossary List.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Related Articles List.ascx" />
@@ -548,6 +566,11 @@
     <Content Include="layouts\LaunchSitecore\Default\Controls\Navigation\Mobile Menu.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Controls\Navigation\Site Selector.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Controls\Navigation\Tree Menu.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\SearchBox.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\SearchResults.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Search\SearchBox.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Search\SearchBoxMobile.ascx" />
+    <Content Include="layouts\LaunchSitecore\Default\Controls\Search\SearchResults.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Controls\Secure\Add To Favorites.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Controls\Secure\Favorites.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Controls\Secure\Login.ascx" />
@@ -562,9 +585,6 @@
     <Content Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Title with Single Column.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Sublayouts\Partial\Three Column.ascx" />
     <Content Include="layouts\LaunchSitecore\Default\Sublayouts\Partial\Two Columns.ascx" />
-    <Content Include="layouts\LuceneSearch\Controls\LuceneSearchBox.ascx" />
-    <Content Include="layouts\LuceneSearch\Controls\LuceneSearchResults.ascx" />
-    <Content Include="layouts\LuceneSearch\Controls\MobileSearchBox.ascx" />
     <Content Include="layouts\MyFirstSite\Default\Controls\Generic Display.ascx" />
     <Content Include="layouts\MyFirstSite\Default\Controls\Product Display.ascx" />
     <Content Include="layouts\MyFirstSite\Default\Controls\Side Menu.ascx" />
@@ -590,7 +610,7 @@
     <Content Include="_js\PeelingEdge\turn.js" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\LaunchSitecore.config">
+    <Content Include="App_Config\Include\www.LaunchSitecore.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
@@ -612,7 +632,9 @@
     <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

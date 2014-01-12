@@ -13,15 +13,15 @@ templatekey: Article
 field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
 name: __Tracking
 key: __tracking
-content-length: 436
+content-length: 430
 
 <tracking>
   <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function" presets="connie the content manager|70||devon the developer|30||">
-    <key name="Analytics" value="1" />
-    <key name="Copywriting" value="3.8" />
+    <key name="Analytics" value="0.7" />
+    <key name="Copywriting" value="4.1" />
     <key name="Personalization and Testing" value="2.69999981" />
     <key name="Technology" value="1.5" />
-    <key name="Workflow and Publishing" value="1.5999999" />
+    <key name="Workflow and Publishing" value="1" />
   </profile>
 </tracking>
 ----field----
@@ -48,7 +48,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: e01b3099-5628-4dc4-8059-3833d3cc91ab
+revision: 11fe6864-c72d-4b1b-89d6-c26704cbb37b
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -151,14 +151,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e01b3099-5628-4dc4-8059-3833d3cc91ab
+11fe6864-c72d-4b1b-89d6-c26704cbb37b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121211T005646:634907842067195994
+20130731T200207:635108977277820615
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
