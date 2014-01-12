@@ -226,7 +226,7 @@ content-length: 5
 ----version----
 language: en
 version: 2
-revision: 620f7d93-f1a9-4739-8a0a-290cf443450f
+revision: 57f51f4f-5a41-45c6-94df-8f6f7a904d67
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -239,12 +239,9 @@ All about Taxonomy
 field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
 name: Abstract
 key: abstract
-content-length: 754
+content-length: 336
 
- 
-<P>Obviously one of the keys to properly managing and maintaining your content for a large website is proper metadata and taxonomy use.</P>
-<P>Sitecore is unique in that in many cases, taxonomy structure can be based off the content structure - meaning you don't need to maintain a seperate taxonomy tree for certain metadata attributes. Obviously, for some controlled vocabulary elements (i.e. lists of countries, Dublin Core classifications, etc.) you need to do this, but for metadata elements such as product lists, corporate structures, etc. these can come from your content itself, automatically.</P>
-<P>Similarly, metadata can be used to automatically add content or relationships to pages, and make searchability or semantic tagging easier.</P>
+<p>Obviously one of the keys to properly managing and maintaining your content for a large website is proper metadata and taxonomy use.  Sitecore is unique in that in many cases, taxonomy structure can be based off the content structure - meaning you don't need to maintain a separate taxonomy tree for certain metadata attributes. </p>
 ----field----
 field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
 name: Body
@@ -422,14 +419,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-620f7d93-f1a9-4739-8a0a-290cf443450f
+57f51f4f-5a41-45c6-94df-8f6f7a904d67
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121210T185748:634907626680505922
+20130731T181120:635108910807886441
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

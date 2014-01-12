@@ -41,7 +41,7 @@ content-length: 37
 ----version----
 language: en
 version: 1
-revision: 0a4cbb10-3521-42ed-9bc7-2ad1aec17635
+revision: 2211906b-46be-491c-addb-e6a3a2488c22
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -54,9 +54,9 @@ Tag Content for Each Profile
 field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
 name: Abstract
 key: abstract
-content-length: 439
+content-length: 446
 
-By assigning content profile values to items that make up your site you are able to gain a better understanding of the behavior, actions, and interests of your website visitors. The values you assign to each page accumulate as a visitor navigates through the site. This allows you to build a profile for an individual site visitor, which can then be used along with other DMS tools such as campaigns, personalization, and engagement plans.
+<p>By assigning content profile values to items that make up your site you are able to gain a better understanding of the behavior, actions, and interests of your website visitors. The values you assign to each page accumulate as a visitor navigates through the site. This allows you to build a profile for an individual site visitor, which can then be used along with other DMS tools such as campaigns, personalization, and engagement plans.</p>
 ----field----
 field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
 name: Body
@@ -150,14 +150,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0a4cbb10-3521-42ed-9bc7-2ad1aec17635
+2211906b-46be-491c-addb-e6a3a2488c22
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121211T010444:634907846844173644
+20130731T181528:635108913283848337
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

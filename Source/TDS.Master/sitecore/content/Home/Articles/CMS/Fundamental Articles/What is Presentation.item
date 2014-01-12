@@ -48,7 +48,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 25752a81-9321-46a1-929d-2ad33abfc2b4
+revision: d37e71f6-d92a-456d-abc7-088df58617fd
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -61,45 +61,45 @@ What is Presentation?
 field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
 name: Abstract
 key: abstract
-content-length: 217
+content-length: 214
 
-<p>With a better understanding of content, presentation is much easier to explain. It is simply taking the content and showing in a meaningful way. It doesn't add to the content, but instead simply presents it....</p>
+<p>With a better understanding of content, presentation is much easier to explain. It is simply taking the content and showing in a meaningful way. It doesn't add to the content, but instead simply presents it.</p>
 ----field----
 field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
 name: Body
 key: body
-content-length: 3702
+content-length: 3681
 
 <p>Sitecore is built 100% on the .NET framework so anything you can do it .NET you can do in Sitecore. This includes custom .NET security providers or .NET data providers. You can also reuse ASP.NET controls from your existing solution or other code. </p>
 <p>Sitecore handles the content, workflow, languages, device views, URL building, personalization, etc. - but you have full control of the presentation layer.</p>
 <p>To understand how presentation works, a few definitions will help.</p>
 <ul>
-  <li>Device: A method within Sitecore for categorizing HTTP requests to the site (e.g. a web, print or mobile view) and displaying the correct layout and components for that device. </li>
-  <li>Layout: Defines the overall appearance of a page (written as a .aspx file) </li>
-  <li>Component: A generic term for a display component using either .Net or XSLT to display content.
-  <ul>
-    <li>Sublayout: Defines the appearance of an area of a page (written as an .ascx web control) </li>
-    <li>XSLT Renderings: Transforms content to presentation using XSL Templates (.xslt file) </li>
-  </ul>
-  </li>
-  <li>Placeholder: A named location on a layout or sublayout. Placeholders are used to associate controls to a given location for a given item. This allows controls to be bound dynamically. </li>
+ <li>Device: A method within Sitecore for categorizing HTTP requests to the site (e.g. a web, print or mobile view) and displaying the correct layout and components for that device. </li>
+ <li>Layout: Defines the overall appearance of a page (written as a .aspx file) </li>
+ <li>Component: A generic term for a display component using either .Net or XSLT to display content.
+ <ul>
+ <li>Sublayout: Defines the appearance of an area of a page (written as an .ascx web control) </li>
+ <li>XSLT Renderings: Transforms content to presentation using XSL Templates (.xslt file) </li>
+ </ul>
+ </li>
+ <li>Placeholder: A named location on a layout or sublayout. Placeholders are used to associate controls to a given location for a given item. This allows controls to be bound dynamically. </li>
 </ul>
 <p>If we use this article as an example, it contains the following (simplified) presentation details:</p>
 <h3><strong>Layout</strong>:</h3>
 <p><strong>Main </strong>(main.aspx)</p>
 <ul>
-  <li>Has the CSS and JS needed to drive the style and menus </li>
-  <li>Calls the sublayout Main Navigation.ascx (which dynamically builds the menus) </li>
-  <li>Has a searchbox </li>
-  <li>Contains one placeholder called <em>main-content</em> </li>
+ <li>Has the CSS and JS needed to drive the style and menus </li>
+ <li>Calls the sublayout Main Navigation.ascx (which dynamically builds the menus) </li>
+ <li>Has a searchbox </li>
+ <li>Contains one placeholder called <em>main-content</em> </li>
 </ul>
 <p><img src="~/media/D7E60BCDE3A6491FAAAB8A1C74FD7546.ashx" alt="Main Layout" style="width: 640px; height: 168px;"></p>
 <p> </p>
 <h3>Components</h3>
 <p><strong>Full Title with Left Sidebar and Content</strong> (Full Title with Left Sidebar and Content.ascx) - this is placed in the main-content placeholder</p>
 <ul>
-  <li>Displays the Page Title </li>
-  <li>Contains two placeholders, <em>sidebar</em> and <em>content</em> </li>
+ <li>Displays the Page Title </li>
+ <li>Contains two placeholders, <em>sidebar</em> and <em>content</em> </li>
 </ul>
 <p><img src="~/media/FE7748827E1E46A387451D41F749491E.ashx" alt="Full Title and Left Component" style="width: 640px; height: 230px;"> </p>
 <p><strong>Sibling Article List</strong> - placed into the <em>sidebar</em> placeholder. The purpose of this component is to find siblings in the content tree.</p>
@@ -107,8 +107,8 @@ content-length: 3702
 <p><strong>Content with Promo</strong> - placed into the <em>content-main</em> placeholder. The purpose of this is simply to display the body contents of the current item.</p>
 <p>When loading a URL, Sitecore will determine the item associated with that URL, look at the presentation details (layouts and components placed into placeholders) to present the correct content with the presentation applied. The purpose of placeholders is twofold: </p>
 <ul>
-  <li>Minimize code duplication (i.e. you don't need to make a 2 column layout and a 3 column layout - you can just make one layout and drop a 2 or 3 column sublayout into that). </li>
-  <li>Give page authors and editors the flexability to add or move components between various placeholders. In this case, I used my discretion to use a 2 column sublayout and move the right-hand components (Related Articles, etc.) to the left in order to give me room to show larger images.</li>
+ <li>Minimize code duplication (i.e. you don't need to make a 2 column layout and a 3 column layout - you can just make one layout and drop a 2 or 3 column sublayout into that). </li>
+ <li>Give page authors and editors the flexability to add or move components between various placeholders. In this case, I used my discretion to use a 2 column sublayout and move the right-hand components (Related Articles, etc.) to the left in order to give me room to show larger images.</li>
 </ul>
 ----field----
 field: {24DDFF9E-D4D8-46C8-99A6-6B01F5251B8F}
@@ -172,14 +172,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-25752a81-9321-46a1-929d-2ad33abfc2b4
+d37e71f6-d92a-456d-abc7-088df58617fd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121211T005515:634907841154784762
+20130731T211110:635109018700937739
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

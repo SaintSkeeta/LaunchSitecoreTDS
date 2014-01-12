@@ -41,7 +41,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 163cb34d-287b-489f-82f8-ab9cbf292710
+revision: b17940f0-b023-47dc-b0af-02327128c852
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -54,9 +54,9 @@ Getting Started
 field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
 name: Abstract
 key: abstract
-content-length: 90
+content-length: 97
 
-This article describes the development environment that was used to build Launch Sitecore.
+<p>This article describes the development environment that was used to build Launch Sitecore.</p>
 ----field----
 field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
 name: Body
@@ -104,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-163cb34d-287b-489f-82f8-ab9cbf292710
+b17940f0-b023-47dc-b0af-02327128c852
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121210T185741:634907626610715922
+20130731T181708:635108914286388578
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

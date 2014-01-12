@@ -174,6 +174,19 @@ namespace LaunchSitecore.Configuration
         {
             Item config = SiteConfiguration.GetSiteSettingsItem();
             return Sitecore.Context.Database.GetItem(config["Profile Path"]);
-        }       
+        }
+
+        public static List<Item> GetChildrenForCurrentLanguage(this Item current)
+        {
+          List<Item> items = new List<Item>();
+          foreach (Item i in current.Children)
+          {
+            if (i.Versions.Count > 0)
+            {
+              items.Add(i);
+            }
+          }
+          return items;
+        }
     }
 }
