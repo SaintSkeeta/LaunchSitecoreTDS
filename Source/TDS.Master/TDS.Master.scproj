@@ -4426,8 +4426,8 @@
       <IsFolder>False</IsFolder>
       <IsRelative>True</IsRelative>
     </Replacement>
-    <Replacement Include="..\..\Website\images\">
-      <TargetPath>.\images\</TargetPath>
+    <Replacement Include="..\..\Website\img\">
+      <TargetPath>.\assets\img\</TargetPath>
       <IsFolder>True</IsFolder>
       <IsRelative>True</IsRelative>
     </Replacement>
@@ -4438,8 +4438,8 @@
       <IsFolder>False</IsFolder>
       <IsRelative>True</IsRelative>
     </Replacement>
-    <Replacement Include="..\..\Website\images\">
-      <TargetPath>.\images\</TargetPath>
+    <Replacement Include="..\..\Website\img\">
+      <TargetPath>.\assets\img\</TargetPath>
       <IsFolder>True</IsFolder>
       <IsRelative>True</IsRelative>
     </Replacement>
