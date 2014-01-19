@@ -120,494 +120,438 @@
   <ItemGroup>
     <Compile Include="App_Start\GlassMapperSc.cs" />
     <Compile Include="App_Start\GlassMapperScCustom.cs" />
-    <Compile Include="Configuration\Analytics\EnrollInAutomationState.cs" />
-    <Compile Include="Configuration\Analytics\Helper.cs" />
-    <Compile Include="Configuration\Handlers\ItemNameHyphenHandler.cs" />
-    <Compile Include="Configuration\HtmlRemoval.cs" />
-    <Compile Include="Configuration\Install\LaunchSitecorePostPackageStep.cs" />
-    <Compile Include="Configuration\ItemSorterByTitle.cs" />
-    <Compile Include="Configuration\Models\SitecoreItem.cs" />
-    <Compile Include="Configuration\PageEditor\Base\FieldEditorButtonForSingleField.cs" />
-    <Compile Include="Configuration\PageEditor\Base\FieldEditorButtonForTemplate.cs" />
-    <Compile Include="Configuration\PageEditor\FieldEditorButton.cs" />
-    <Compile Include="Configuration\PageEditor\FieldEditorButtonForAbstractField.cs" />
-    <Compile Include="Configuration\PageEditor\FieldEditorButtonForArticleTemplate.cs" />
-    <Compile Include="Configuration\PageEditor\FieldEditorButtonForContributorTemplate.cs" />
-    <Compile Include="Configuration\Presentation\RecursiveRepeaterTemplate.cs" />
-    <Compile Include="Configuration\Processors\RemoveNonBreakingSpacesSaveProcessor.cs" />
-    <Compile Include="Configuration\Search\HasPresentationComputedField.cs" />
-    <Compile Include="Configuration\Security\ResetUser.cs" />
-    <Compile Include="Configuration\Security\ResetSecurityAccounts.cs" />
+    <Compile Include="Configuration\Administration\Install\LaunchSitecorePostPackageStep.cs" />
+    <Compile Include="Configuration\Administration\Security\CreateSecurityAccounts.cs" />
+    <Compile Include="Configuration\AuthoringExperience\ContentEditor\NoVersionInCurrentLanguageGutter.cs" />
+    <Compile Include="Configuration\AuthoringExperience\General\MustIncludePTags.cs" />
+    <Compile Include="Configuration\AuthoringExperience\ItemNaming\ContentEditorItemNamingNotification.cs" />
+    <Compile Include="Configuration\AuthoringExperience\ItemNaming\ItemNameHyphenHandler.cs" />
+    <Compile Include="Configuration\AuthoringExperience\ItemNaming\ItemNameUniqueHandler.cs" />
+    <Compile Include="Configuration\AuthoringExperience\ItemNaming\ItemNamingHelper.cs" />
+    <Compile Include="Configuration\AuthoringExperience\ItemNaming\UpdateItemNamesCommand.cs" />
+    <Compile Include="Configuration\AuthoringExperience\PageEditor\AlertDictionary.cs" />
+    <Compile Include="Configuration\AuthoringExperience\PageEditor\Base\FieldEditorButtonForSingleField.cs" />
+    <Compile Include="Configuration\AuthoringExperience\PageEditor\Base\FieldEditorButtonForTemplate.cs" />
+    <Compile Include="Configuration\AuthoringExperience\PageEditor\FieldEditorButton.cs" />
+    <Compile Include="Configuration\AuthoringExperience\PageEditor\FieldEditorButtonForAbstractField.cs" />
+    <Compile Include="Configuration\AuthoringExperience\PageEditor\FieldEditorButtonForArticleTemplate.cs" />
+    <Compile Include="Configuration\AuthoringExperience\PageEditor\FieldEditorButtonForPresentationSettings.cs" />
+    <Compile Include="Configuration\AuthoringExperience\PageEditor\FieldEditorButtonForSiteSettings.cs" />
+    <Compile Include="Configuration\AuthoringExperience\Processors\RemoveNonBreakingSpacesSaveProcessor.cs" />
     <Compile Include="Configuration\SiteConfiguration.cs" />
+    <Compile Include="Configuration\SiteUI\Analytics\AnalyticsHelper.cs" />
+    <Compile Include="Configuration\SiteUI\Analytics\EnrollInAutomationState.cs" />
+    <Compile Include="Configuration\SiteUI\Base\SitecorePageLayoutBase.cs" />
+    <Compile Include="Configuration\SiteUI\Base\SitecoreSingleItemUserControl.cs" />
+    <Compile Include="Configuration\SiteUI\Base\SitecoreUserControlBase.cs" />
+    <Compile Include="Configuration\SiteUI\Presentation\ItemSorterByTitle.cs" />
+    <Compile Include="Configuration\SiteUI\Presentation\TopBarRecursiveRepeaterTemplate.cs" />
+    <Compile Include="Configuration\SiteUI\Search\ComputedFields\HasPresentationComputedField.cs" />
+    <Compile Include="Configuration\SiteUI\Search\ComputedFields\ProfileCardComputedField.cs" />
+    <Compile Include="Configuration\SiteUI\Search\Helper\ItemIDComparer.cs" />
+    <Compile Include="Configuration\SiteUI\Search\HtmlRemoval.cs" />
+    <Compile Include="Configuration\SiteUI\Search\Models\SitecoreItem.cs" />
+    <Compile Include="Configuration\SiteUI\Translation\Language.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Analytics\Current Session Info.ascx.cs">
-      <DependentUpon>Current Session Info.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Controls\Analytics\Current Pattern.ascx.cs">
+      <DependentUpon>Current Pattern.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Analytics\Current Session Info.ascx.designer.cs">
-      <DependentUpon>Current Session Info.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Controls\Analytics\Current Pattern.ascx.designer.cs">
+      <DependentUpon>Current Pattern.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Analytics\Job Function Grid.ascx.cs">
-      <DependentUpon>Job Function Grid.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Controls\Analytics\Current Visit Info.ascx.cs">
+      <DependentUpon>Current Visit Info.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Analytics\Job Function Grid.ascx.designer.cs">
-      <DependentUpon>Job Function Grid.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Controls\Analytics\Current Visit Info.ascx.designer.cs">
+      <DependentUpon>Current Visit Info.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Contributor Banner.ascx.cs">
-      <DependentUpon>Contributor Banner.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Controls\Carousel\Alternate Base Carousel.ascx.cs">
+      <DependentUpon>Alternate Base Carousel.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Contributor Banner.ascx.designer.cs">
-      <DependentUpon>Contributor Banner.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Controls\Carousel\Alternate Base Carousel.ascx.designer.cs">
+      <DependentUpon>Alternate Base Carousel.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Page Banner with Abstract.ascx.cs">
-      <DependentUpon>Page Banner with Abstract.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Controls\Carousel\Base Carousel.ascx.cs">
+      <DependentUpon>Base Carousel.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Page Banner with Abstract.ascx.designer.cs">
-      <DependentUpon>Page Banner with Abstract.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Controls\Carousel\Base Carousel.ascx.designer.cs">
+      <DependentUpon>Base Carousel.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Page Banner.ascx.cs">
-      <DependentUpon>Page Banner.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Controls\Carousel\Enhanced Carousel.ascx.cs">
+      <DependentUpon>Enhanced Carousel.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Page Banner.ascx.designer.cs">
-      <DependentUpon>Page Banner.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Controls\Carousel\Enhanced Carousel.ascx.designer.cs">
+      <DependentUpon>Enhanced Carousel.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Alternate Page Banner.ascx.cs">
-      <DependentUpon>Alternate Page Banner.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Controls\Lists\Articles by Contributor.ascx.cs">
+      <DependentUpon>Articles by Contributor.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Alternate Page Banner.ascx.designer.cs">
-      <DependentUpon>Alternate Page Banner.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Controls\Lists\Articles by Contributor.ascx.designer.cs">
+      <DependentUpon>Articles by Contributor.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Term Banner.ascx.cs">
-      <DependentUpon>Term Banner.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Controls\Lists\Datasource List.ascx.cs">
+      <DependentUpon>Datasource List.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Banners\Term Banner.ascx.designer.cs">
-      <DependentUpon>Term Banner.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Controls\Lists\Datasource List.ascx.designer.cs">
+      <DependentUpon>Datasource List.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Abstract Spot.ascx.cs">
-      <DependentUpon>Abstract Spot.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Controls\Lists\Icon and Title List for Query.ascx.cs">
+      <DependentUpon>Icon and Title List for Query.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Abstract Spot.ascx.designer.cs">
-      <DependentUpon>Abstract Spot.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Controls\Lists\Icon and Title List for Query.ascx.designer.cs">
+      <DependentUpon>Icon and Title List for Query.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Biography.ascx.cs">
-      <DependentUpon>Biography.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Controls\Lists\Icon and Title List.ascx.cs">
+      <DependentUpon>Icon and Title List.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Biography.ascx.designer.cs">
-      <DependentUpon>Biography.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Controls\Lists\Icon and Title List.ascx.designer.cs">
+      <DependentUpon>Icon and Title List.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Body Content.ascx.cs">
-      <DependentUpon>Body Content.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Body Content.ascx.designer.cs">
-      <DependentUpon>Body Content.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Content with Image.ascx.cs">
-      <DependentUpon>Content with Image.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Content with Image.ascx.designer.cs">
-      <DependentUpon>Content with Image.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Evaluator Spot.ascx.cs">
-      <DependentUpon>Evaluator Spot.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Evaluator Spot.ascx.designer.cs">
-      <DependentUpon>Evaluator Spot.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Promo Spot with Large Image.ascx.cs">
-      <DependentUpon>Promo Spot with Large Image.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Promo Spot with Large Image.ascx.designer.cs">
-      <DependentUpon>Promo Spot with Large Image.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Promo Spot with Thumbnail.ascx.cs">
-      <DependentUpon>Promo Spot with Thumbnail.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Promo Spot with Thumbnail.ascx.designer.cs">
-      <DependentUpon>Promo Spot with Thumbnail.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Term Details.ascx.cs">
-      <DependentUpon>Term Details.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Term Details.ascx.designer.cs">
-      <DependentUpon>Term Details.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Version Information.ascx.cs">
-      <DependentUpon>Version Information.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Content\Version Information.ascx.designer.cs">
-      <DependentUpon>Version Information.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Abstract List.ascx.cs">
-      <DependentUpon>Abstract List.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Abstract List.ascx.designer.cs">
-      <DependentUpon>Abstract List.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Article List.ascx.cs">
-      <DependentUpon>Article List.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Article List.ascx.designer.cs">
-      <DependentUpon>Article List.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Child List.ascx.cs">
-      <DependentUpon>Child List.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Child List.ascx.designer.cs">
-      <DependentUpon>Child List.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Featured Articles.ascx.cs">
-      <DependentUpon>Featured Articles.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Featured Articles.ascx.designer.cs">
-      <DependentUpon>Featured Articles.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Evaluator Quick Links.ascx.cs">
-      <DependentUpon>Evaluator Quick Links.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Evaluator Quick Links.ascx.designer.cs">
-      <DependentUpon>Evaluator Quick Links.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Queried List.ascx.cs">
-      <DependentUpon>Queried List.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Queried List.ascx.designer.cs">
+    <Compile Include="layouts\LaunchSitecore\Controls\Lists\Queried List.ascx.cs">
       <DependentUpon>Queried List.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Glossary List.ascx.cs">
-      <DependentUpon>Glossary List.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Controls\Lists\Queried List.ascx.designer.cs">
+      <DependentUpon>Queried List.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Glossary List.ascx.designer.cs">
-      <DependentUpon>Glossary List.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Controls\Lists\Related Articles.ascx.cs">
+      <DependentUpon>Related Articles.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Related Articles List.ascx.cs">
-      <DependentUpon>Related Articles List.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Controls\Lists\Related Articles.ascx.designer.cs">
+      <DependentUpon>Related Articles.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Related Articles List.ascx.designer.cs">
-      <DependentUpon>Related Articles List.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Controls\Lists\Tags.ascx.cs">
+      <DependentUpon>Tags.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Sibling Article List.ascx.cs">
-      <DependentUpon>Sibling Article List.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Controls\Lists\Tags.ascx.designer.cs">
+      <DependentUpon>Tags.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Lists\Sibling Article List.ascx.designer.cs">
-      <DependentUpon>Sibling Article List.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Controls\Lists\Team List.ascx.cs">
+      <DependentUpon>Team List.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Meta\CssTheme.ascx.cs">
-      <DependentUpon>CssTheme.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Controls\Lists\Team List.ascx.designer.cs">
+      <DependentUpon>Team List.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Meta\CssTheme.ascx.designer.cs">
+    <Compile Include="layouts\LaunchSitecore\Controls\Meta\CssTheme.ascx.cs">
       <DependentUpon>CssTheme.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Meta\Metadata.ascx.cs">
+    <Compile Include="layouts\LaunchSitecore\Controls\Meta\CssTheme.ascx.designer.cs">
+      <DependentUpon>CssTheme.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Meta\Metadata.ascx.cs">
       <DependentUpon>Metadata.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Meta\Metadata.ascx.designer.cs">
+    <Compile Include="layouts\LaunchSitecore\Controls\Meta\Metadata.ascx.designer.cs">
       <DependentUpon>Metadata.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Meta\Title.ascx.cs">
-      <DependentUpon>Title.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Meta\Title.ascx.designer.cs">
+    <Compile Include="layouts\LaunchSitecore\Controls\Meta\Title.ascx.cs">
       <DependentUpon>Title.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Breadcrumbs.ascx.cs">
+    <Compile Include="layouts\LaunchSitecore\Controls\Meta\Title.ascx.designer.cs">
+      <DependentUpon>Title.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Navigation\Breadcrumbs.ascx.cs">
       <DependentUpon>Breadcrumbs.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Breadcrumbs.ascx.designer.cs">
+    <Compile Include="layouts\LaunchSitecore\Controls\Navigation\Breadcrumbs.ascx.designer.cs">
       <DependentUpon>Breadcrumbs.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Footer Navigation.ascx.cs">
-      <DependentUpon>Footer Navigation.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Footer Navigation.ascx.designer.cs">
+    <Compile Include="layouts\LaunchSitecore\Controls\Navigation\Footer Navigation.ascx.cs">
       <DependentUpon>Footer Navigation.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Main Navigation.ascx.cs">
-      <DependentUpon>Main Navigation.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Controls\Navigation\Footer Navigation.ascx.designer.cs">
+      <DependentUpon>Footer Navigation.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Main Navigation.ascx.designer.cs">
-      <DependentUpon>Main Navigation.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Controls\Navigation\Main Nav.ascx.cs">
+      <DependentUpon>Main Nav.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Mobile Menu.ascx.cs">
-      <DependentUpon>Mobile Menu.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Controls\Navigation\Main Nav.ascx.designer.cs">
+      <DependentUpon>Main Nav.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Mobile Menu.ascx.designer.cs">
-      <DependentUpon>Mobile Menu.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Controls\Navigation\Secondary Nav.ascx.cs">
+      <DependentUpon>Secondary Nav.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Site Selector.ascx.cs">
-      <DependentUpon>Site Selector.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Controls\Navigation\Secondary Nav.ascx.designer.cs">
+      <DependentUpon>Secondary Nav.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Site Selector.ascx.designer.cs">
-      <DependentUpon>Site Selector.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Controls\Navigation\Tertiary Nav.ascx.cs">
+      <DependentUpon>Tertiary Nav.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Tree Menu.ascx.cs">
-      <DependentUpon>Tree Menu.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Controls\Navigation\Tertiary Nav.ascx.designer.cs">
+      <DependentUpon>Tertiary Nav.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Navigation\Tree Menu.ascx.designer.cs">
-      <DependentUpon>Tree Menu.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Controls\Search\Quick Search.ascx.cs">
+      <DependentUpon>Quick Search.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Search\SearchBox.ascx.cs">
-      <DependentUpon>SearchBox.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Controls\Search\Quick Search.ascx.designer.cs">
+      <DependentUpon>Quick Search.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Search\SearchBox.ascx.designer.cs">
-      <DependentUpon>SearchBox.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Search\SearchBoxMobile.ascx.cs">
-      <DependentUpon>SearchBoxMobile.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Search\SearchBoxMobile.ascx.designer.cs">
-      <DependentUpon>SearchBoxMobile.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Search\SearchResults.ascx.cs">
-      <DependentUpon>SearchResults.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Search\SearchResults.ascx.designer.cs">
-      <DependentUpon>SearchResults.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Add To Favorites.ascx.cs">
-      <DependentUpon>Add To Favorites.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Add To Favorites.ascx.designer.cs">
-      <DependentUpon>Add To Favorites.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Favorites.ascx.cs">
-      <DependentUpon>Favorites.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Favorites.ascx.designer.cs">
-      <DependentUpon>Favorites.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Login.ascx.cs">
-      <DependentUpon>Login.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Login.ascx.designer.cs">
+    <Compile Include="layouts\LaunchSitecore\Controls\Secure\Login.ascx.cs">
       <DependentUpon>Login.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Register.ascx.cs">
+    <Compile Include="layouts\LaunchSitecore\Controls\Secure\Login.ascx.designer.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Secure\Register.ascx.cs">
       <DependentUpon>Register.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Register.ascx.designer.cs">
+    <Compile Include="layouts\LaunchSitecore\Controls\Secure\Register.ascx.designer.cs">
       <DependentUpon>Register.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Security Buttons.ascx.cs">
-      <DependentUpon>Security Buttons.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Abstract Box.ascx.cs">
+      <DependentUpon>Abstract Box.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Controls\Secure\Security Buttons.ascx.designer.cs">
-      <DependentUpon>Security Buttons.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Abstract Box.ascx.designer.cs">
+      <DependentUpon>Abstract Box.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Main.aspx.cs">
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Abstract Spot.ascx.cs">
+      <DependentUpon>Abstract Spot.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Abstract Spot.ascx.designer.cs">
+      <DependentUpon>Abstract Spot.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Article Title and Body.ascx.cs">
+      <DependentUpon>Article Title and Body.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Article Title and Body.ascx.designer.cs">
+      <DependentUpon>Article Title and Body.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Article Title Image and Body.ascx.cs">
+      <DependentUpon>Article Title Image and Body.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Article Title Image and Body.ascx.designer.cs">
+      <DependentUpon>Article Title Image and Body.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Biography.ascx.cs">
+      <DependentUpon>Biography.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Biography.ascx.designer.cs">
+      <DependentUpon>Biography.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Error Details.ascx.cs">
+      <DependentUpon>Error Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Error Details.ascx.designer.cs">
+      <DependentUpon>Error Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\FeaturedQuotation.ascx.cs">
+      <DependentUpon>FeaturedQuotation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\FeaturedQuotation.ascx.designer.cs">
+      <DependentUpon>FeaturedQuotation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Jumbotron.ascx.cs">
+      <DependentUpon>Jumbotron.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Jumbotron.ascx.designer.cs">
+      <DependentUpon>Jumbotron.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Promo with Image.ascx.cs">
+      <DependentUpon>Promo with Image.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Promo with Image.ascx.designer.cs">
+      <DependentUpon>Promo with Image.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Promo with No Image.ascx.cs">
+      <DependentUpon>Promo with No Image.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Promo with No Image.ascx.designer.cs">
+      <DependentUpon>Promo with No Image.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Promo with Thumbnail.ascx.cs">
+      <DependentUpon>Promo with Thumbnail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Promo with Thumbnail.ascx.designer.cs">
+      <DependentUpon>Promo with Thumbnail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\SmallStickyNote.ascx.cs">
+      <DependentUpon>SmallStickyNote.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\SmallStickyNote.ascx.designer.cs">
+      <DependentUpon>SmallStickyNote.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\StickyNote.ascx.cs">
+      <DependentUpon>StickyNote.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\StickyNote.ascx.designer.cs">
+      <DependentUpon>StickyNote.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Term Details.ascx.cs">
+      <DependentUpon>Term Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Term Details.ascx.designer.cs">
+      <DependentUpon>Term Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Text Widget.ascx.cs">
+      <DependentUpon>Text Widget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Text Widget.ascx.designer.cs">
+      <DependentUpon>Text Widget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Title and Body for Footer.ascx.cs">
+      <DependentUpon>Title and Body for Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Title and Body for Footer.ascx.designer.cs">
+      <DependentUpon>Title and Body for Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Title and Body.ascx.cs">
+      <DependentUpon>Title and Body.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Controls\Single Item\Title and Body.ascx.designer.cs">
+      <DependentUpon>Title and Body.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\LaunchSitecore\Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Main.aspx.designer.cs">
+    <Compile Include="layouts\LaunchSitecore\Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Mobile.aspx.cs">
-      <DependentUpon>Mobile.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Views\Content with Sidebar\Both Sidebars.ascx.cs">
+      <DependentUpon>Both Sidebars.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Mobile.aspx.designer.cs">
-      <DependentUpon>Mobile.aspx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Views\Content with Sidebar\Both Sidebars.ascx.designer.cs">
+      <DependentUpon>Both Sidebars.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Left Sidebar with Title and Content.ascx.cs">
-      <DependentUpon>Full Left Sidebar with Title and Content.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Views\Content with Sidebar\Left Sidebar.ascx.cs">
+      <DependentUpon>Left Sidebar.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Left Sidebar with Title and Content.ascx.designer.cs">
-      <DependentUpon>Full Left Sidebar with Title and Content.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Views\Content with Sidebar\Left Sidebar.ascx.designer.cs">
+      <DependentUpon>Left Sidebar.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Right Sidebar with Title and Content.ascx.cs">
-      <DependentUpon>Full Right Sidebar with Title and Content.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Views\Content with Sidebar\Right Sidebar.ascx.cs">
+      <DependentUpon>Right Sidebar.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Right Sidebar with Title and Content.ascx.designer.cs">
-      <DependentUpon>Full Right Sidebar with Title and Content.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Views\Content with Sidebar\Right Sidebar.ascx.designer.cs">
+      <DependentUpon>Right Sidebar.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Title with Left Sidebar and Content.ascx.cs">
-      <DependentUpon>Full Title with Left Sidebar and Content.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Views\Full Width\One Four Three.ascx.cs">
+      <DependentUpon>One Four Three.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Title with Left Sidebar and Content.ascx.designer.cs">
-      <DependentUpon>Full Title with Left Sidebar and Content.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Views\Full Width\One Four Three.ascx.designer.cs">
+      <DependentUpon>One Four Three.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Title with Right Sidebar and Content.ascx.cs">
-      <DependentUpon>Full Title with Right Sidebar and Content.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Views\Full Width\One Four Two.ascx.cs">
+      <DependentUpon>One Four Two.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Title with Right Sidebar and Content.ascx.designer.cs">
-      <DependentUpon>Full Title with Right Sidebar and Content.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Views\Full Width\One Four Two.ascx.designer.cs">
+      <DependentUpon>One Four Two.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Title with Single Column.ascx.cs">
-      <DependentUpon>Full Title with Single Column.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Views\Full Width\One Three Four.ascx.cs">
+      <DependentUpon>One Three Four.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Title with Single Column.ascx.designer.cs">
-      <DependentUpon>Full Title with Single Column.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Views\Full Width\One Three Four.ascx.designer.cs">
+      <DependentUpon>One Three Four.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Partial\Three Column.ascx.cs">
-      <DependentUpon>Three Column.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Views\Full Width\One Three One.ascx.cs">
+      <DependentUpon>One Three One.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Partial\Three Column.ascx.designer.cs">
-      <DependentUpon>Three Column.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Views\Full Width\One Three One.ascx.designer.cs">
+      <DependentUpon>One Three One.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Partial\Two Columns.ascx.cs">
-      <DependentUpon>Two Columns.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Views\Full Width\One Three Three.ascx.cs">
+      <DependentUpon>One Three Three.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\LaunchSitecore\Default\Sublayouts\Partial\Two Columns.ascx.designer.cs">
-      <DependentUpon>Two Columns.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Views\Full Width\One Three Three.ascx.designer.cs">
+      <DependentUpon>One Three Three.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\MyFirstSite\Default\Controls\Generic Display.ascx.cs">
-      <DependentUpon>Generic Display.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Views\Full Width\One Two Four One.ascx.cs">
+      <DependentUpon>One Two Four One.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\MyFirstSite\Default\Controls\Generic Display.ascx.designer.cs">
-      <DependentUpon>Generic Display.ascx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Views\Full Width\One Two Four One.ascx.designer.cs">
+      <DependentUpon>One Two Four One.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\MyFirstSite\Default\Controls\Product Display.ascx.cs">
-      <DependentUpon>Product Display.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="layouts\LaunchSitecore\Views\Full Width\One Two Four.ascx.cs">
+      <DependentUpon>One Two Four.ascx</DependentUpon>
     </Compile>
-    <Compile Include="layouts\MyFirstSite\Default\Controls\Product Display.ascx.designer.cs">
-      <DependentUpon>Product Display.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\MyFirstSite\Default\Controls\Side Menu.ascx.cs">
-      <DependentUpon>Side Menu.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\MyFirstSite\Default\Controls\Side Menu.ascx.designer.cs">
-      <DependentUpon>Side Menu.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="layouts\MyFirstSite\Default\Main.aspx.cs">
-      <DependentUpon>Main.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\MyFirstSite\Default\Main.aspx.designer.cs">
-      <DependentUpon>Main.aspx</DependentUpon>
+    <Compile Include="layouts\LaunchSitecore\Views\Full Width\One Two Four.ascx.designer.cs">
+      <DependentUpon>One Two Four.ascx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\colors\color_scheme.css" />
+    <Content Include="assets\css\colors\color_scheme_blue.css" />
+    <Content Include="assets\css\colors\color_scheme_burgandy.css" />
+    <Content Include="assets\css\colors\color_scheme_mustard.css" />
+    <Content Include="assets\css\colors\color_scheme_ocean.css" />
+    <Content Include="assets\css\colors\color_scheme_orange.css" />
+    <Content Include="assets\css\colors\color_scheme_pink.css" />
+    <Content Include="assets\css\colors\color_scheme_purple.css" />
+    <Content Include="assets\css\colors\color_scheme_red.css" />
+    <Content Include="assets\css\colors\color_scheme_sitecore.css" />
+    <Content Include="assets\css\colors\color_scheme_teal.css" />
+    <Content Include="assets\css\custom_base.css" />
+    <Content Include="assets\css\custom_delete.css" />
+    <Content Include="assets\css\custom_modules.css" />
+    <Content Include="assets\css\custom_nav.css" />
+    <Content Include="assets\css\font-awesome-ie7.css" />
+    <Content Include="assets\css\font-awesome.css" />
+    <Content Include="assets\css\IE-fix.css" />
+    <Content Include="assets\css\richtexteditor.css" />
+    <Content Include="assets\font\fontawesome-webfont.svg" />
+    <Content Include="assets\js\bootstrap.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\jquery-1.7.2.min.js" />
+    <Content Include="assets\js\jquery-ui.min.js" />
+    <Content Include="assets\js\jquery.cookie.js" />
     <Content Include="Global.asax" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Analytics\Current Session Info.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Analytics\Job Function Grid.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Banners\Contributor Banner.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Banners\Page Banner with Abstract.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Banners\Page Banner.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Banners\Alternate Page Banner.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Banners\Term Banner.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Abstract Spot.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Biography.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Body Content.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Content with Image.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Evaluator Spot.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Promo Spot with Large Image.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Promo Spot with Thumbnail.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Term Details.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Content\Version Information.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Abstract List.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Article List.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Child List.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Featured Articles.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Evaluator Quick Links.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Featured Items List.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Queried List.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Glossary List.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Related Articles List.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Lists\Sibling Article List.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Meta\CssTheme.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Meta\Metadata.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Meta\Title.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Navigation\Breadcrumbs.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Navigation\Footer Navigation.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Navigation\Main Navigation.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Navigation\Mobile Menu.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Navigation\Site Selector.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Navigation\Tree Menu.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\SearchBox.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\SearchResults.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Search\SearchBox.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Search\SearchBoxMobile.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Search\SearchResults.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Secure\Add To Favorites.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Secure\Favorites.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Secure\Login.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Secure\Register.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Controls\Secure\Security Buttons.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Main.aspx" />
-    <Content Include="layouts\LaunchSitecore\Default\Mobile.aspx" />
-    <Content Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Left Sidebar with Title and Content.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Right Sidebar with Title and Content.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Title with Left Sidebar and Content.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Title with Right Sidebar and Content.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Sublayouts\Main\Full Title with Single Column.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Sublayouts\Partial\Three Column.ascx" />
-    <Content Include="layouts\LaunchSitecore\Default\Sublayouts\Partial\Two Columns.ascx" />
-    <Content Include="layouts\MyFirstSite\Default\Controls\Generic Display.ascx" />
-    <Content Include="layouts\MyFirstSite\Default\Controls\Product Display.ascx" />
-    <Content Include="layouts\MyFirstSite\Default\Controls\Side Menu.ascx" />
-    <Content Include="layouts\MyFirstSite\Default\Main.aspx" />
-    <Content Include="xsl\LaunchSitecore\Default\Footer.xslt" />
-    <Content Include="_css\colorbox.css" />
-    <Content Include="_css\mobile_gray.css" />
-    <Content Include="_css\mobile_red.css" />
-    <Content Include="_css\main_gray.css" />
-    <Content Include="_css\main.css" />
-    <Content Include="_css\mobile.css" />
-    <Content Include="_css\myfirstsite.css" />
-    <Content Include="_css\main_red.css" />
-    <Content Include="_js\ColorBox\jquery.colorbox-min.js" />
-    <Content Include="_js\ColorBox\jquery.colorbox.js" />
-    <Content Include="_js\jquery-1.7.1.min.js" />
-    <Content Include="_js\jquery-ui.min.js" />
-    <Content Include="_js\jquery.dcmegamenu.1.3.3.js" />
-    <Content Include="_js\jquery.dcmegamenu.1.3.3.min.js" />
-    <Content Include="_js\jquery.hoverIntent.minified.js" />
-    <Content Include="_js\jqueryslidemenu.js" />
-    <Content Include="_js\mobile.js" />
-    <Content Include="_js\PeelingEdge\turn.js" />
+    <Content Include="layouts\LaunchSitecore\Controls\Analytics\Current Pattern.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Analytics\Current Visit Info.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Carousel\Alternate Base Carousel.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Carousel\Base Carousel.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Carousel\Enhanced Carousel.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Lists\Articles by Contributor.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Lists\Datasource List.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Lists\Icon and Title List for Query.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Lists\Icon and Title List.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Lists\Queried List.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Lists\Related Articles.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Lists\Tags.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Lists\Team List.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Meta\CssTheme.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Meta\Metadata.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Meta\Title.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Navigation\Breadcrumbs.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Navigation\Footer Navigation.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Navigation\Main Nav.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Navigation\Secondary Nav.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Navigation\Tertiary Nav.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Search\Quick Search.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Search\Search Results.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Secure\Login.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Secure\Register.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Single Item\Abstract Box.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Single Item\Abstract Spot.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Single Item\Article Title and Body.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Single Item\Article Title Image and Body.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Single Item\Biography.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Single Item\Error Details.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Single Item\FeaturedQuotation.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Single Item\Jumbotron.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Single Item\Promo with Image.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Single Item\Promo with No Image.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Single Item\Promo with Thumbnail.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Single Item\SmallStickyNote.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Single Item\StickyNote.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Single Item\Term Details.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Single Item\Text Widget.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Single Item\Title and Body for Footer.ascx" />
+    <Content Include="layouts\LaunchSitecore\Controls\Single Item\Title and Body.ascx" />
+    <Content Include="layouts\LaunchSitecore\Main.aspx" />
+    <Content Include="layouts\LaunchSitecore\Views\Content with Sidebar\Both Sidebars.ascx" />
+    <Content Include="layouts\LaunchSitecore\Views\Content with Sidebar\Left Sidebar.ascx" />
+    <Content Include="layouts\LaunchSitecore\Views\Content with Sidebar\Right Sidebar.ascx" />
+    <Content Include="layouts\LaunchSitecore\Views\Full Width\One Four Three.ascx" />
+    <Content Include="layouts\LaunchSitecore\Views\Full Width\One Four Two.ascx" />
+    <Content Include="layouts\LaunchSitecore\Views\Full Width\One Three Four.ascx" />
+    <Content Include="layouts\LaunchSitecore\Views\Full Width\One Three One.ascx" />
+    <Content Include="layouts\LaunchSitecore\Views\Full Width\One Three Three.ascx" />
+    <Content Include="layouts\LaunchSitecore\Views\Full Width\One Two Four One.ascx" />
+    <Content Include="layouts\LaunchSitecore\Views\Full Width\One Two Four.ascx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\www.LaunchSitecore.config">
@@ -635,6 +579,11 @@
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\font\fontawesome-webfont.eot" />
+    <Content Include="assets\font\fontawesome-webfont.ttf" />
+    <Content Include="assets\font\fontawesome-webfont.woff" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
