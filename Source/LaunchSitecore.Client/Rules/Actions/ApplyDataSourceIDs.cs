@@ -4,9 +4,8 @@
 
     using SC = Sitecore;
 
-    public class ApplyDataSourceIDs<T> :
-      SC.Rules.Actions.RuleAction<T>
-      where T : SC.Rules.RuleContext
+    public class ApplyDataSourceIDs<T> : SC.Rules.Actions.RuleAction<T>
+                                            where T : SC.Rules.RuleContext
     {
         public override void Apply(T ruleContext)
         {
