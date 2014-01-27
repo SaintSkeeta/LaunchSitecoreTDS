@@ -119,6 +119,7 @@
   <ItemGroup>
     <Compile Include="App_Start\GlassMapperSc.cs" />
     <Compile Include="App_Start\GlassMapperScCustom.cs" />
+    <Compile Include="Commands\ConvertDataSourcePathToGuid.cs" />
     <Compile Include="Configuration\Analytics\EnrollInAutomationState.cs" />
     <Compile Include="Configuration\Analytics\Helper.cs" />
     <Compile Include="Configuration\Handlers\ItemNameHyphenHandler.cs" />
