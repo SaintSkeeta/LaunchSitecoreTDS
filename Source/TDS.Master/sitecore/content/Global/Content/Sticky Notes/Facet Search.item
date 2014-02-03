@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {41DF60B9-1F59-4C80-8F95-051755C181AD}
+database: master
+path: /sitecore/content/Global/Content/Sticky Notes/Facet Search
+parent: {7D26D341-3406-4A86-9A51-D31126CBC0FC}
+name: Facet Search
+master: {00000000-0000-0000-0000-000000000000}
+template: {0F824FA6-6E1A-431D-90D2-5DC7A607001E}
+templatekey: Sticky Note
+
+----field----
+field: {FBDB294E-D5B3-479E-A922-B3D54E1F8053}
+name: Note Type
+key: note type
+content-length: 4
+
+info
+----version----
+language: en
+version: 1
+revision: 3d03aeaf-f707-4c05-acfd-f12b4ca2065c
+
+----field----
+field: {6EF91885-9825-44ED-ACF4-CB8885F7A214}
+name: Title
+key: title
+content-length: 17
+
+Faceted Searching
+----field----
+field: {6AE2D82D-0CF4-47B7-B71C-BC50BFD9E199}
+name: Message
+key: message
+content-length: 60
+
+Sitecore 7 makes it easy to build faceted search interfaces.
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130821T183046
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3d03aeaf-f707-4c05-acfd-f12b4ca2065c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T130427:635229686673434072
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

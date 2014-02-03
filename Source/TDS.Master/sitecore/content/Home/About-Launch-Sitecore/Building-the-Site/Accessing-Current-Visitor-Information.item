@@ -1,0 +1,159 @@
+----item----
+version: 1
+id: {AF857D1B-C76B-43BA-A092-9B33744D8AC0}
+database: master
+path: /sitecore/content/Home/About-Launch-Sitecore/Building-the-Site/Accessing-Current-Visitor-Information
+parent: {EC38EBB3-F2E8-493D-B0E6-B8C68C9AFB85}
+name: Accessing-Current-Visitor-Information
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 328
+
+<tracking>
+  <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment" presets="developer|100||">
+    <key name="Analytics" value="1" />
+    <key name="Campaigns and Targeting" value="1" />
+    <key name="Content Management" value="4" />
+    <key name="Technology" value="5" />
+  </profile>
+</tracking>
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{1B6A3702-5694-4FC4-8366-989ECDCD7F1B}
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: c0cf8f80-8f0f-48b2-92f4-7573628cee92
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 37
+
+Accessing Current Visitor Information
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 111
+
+<p>The Sitecore Analytics API gives you full access to the information about the current web site visitor. </p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 4475
+
+<p>In order to access Visitor data in the Engagement Analytics API, you primarily use the following classes:</p>
+<ul>
+    <li>Sitecore.Analytics.Tracker </li>
+    <li>Sitecore.Analytics.TrackerDataContext </li>
+</ul>
+<p>The following namespace <em>using</em> directives will be helpful when accessing this data.</p>
+<ul>
+    <li style="list-style-type: none;"><em>using Sitecore.Analytics;</em> </li>
+    <li style="list-style-type: none;"><em>using Sitecore.Analytics.DataAccess;</em> </li>
+    <li style="list-style-type: none;"><em>using Sitecore.Analytics.DataAccess.DataSets;</em> </li>
+</ul>
+<h3>How to Access GeoIP Data</h3>
+<p>The <em>Sitecore.Analytics.Tracker</em> is a static class that is used to track each visitor. It provides access to the Analytics context, exposing the visitors IP address, country, city, zip code, latitude, longitude and more. The follow example demonstrates how to access the current visitors IP address.</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li>using Sitecore.Analytics;</li><li>using Sitecore.Analytics.DataAccess;</li><li>using Sitecore.Analytics.DataAccess.DataSets;</li><li></li><li>public class GeoIPTracker : Sitecore.Web.UI.WebControl</li><li>{</li><li> protected override void DoRender(System.Web.UI.HtmlTextWriter output)</li><li> {</li><li>  string ip = new IPAddress(Tracker.CurrentVisit.Ip).ToString();</li><li>  if (Tracker.CurrentVisit == null)</li><li>   return;</li><li></li><li>  if (!Tracker.CurrentVisit.UpdateGeoIpData())</li><li>   output.Write("GeoIP information not " + "available within prescribed time.&lt;br/&gt;");</li><li>  else if (Tracker.CurrentVisit.BusinessName == "IP_NOT_FOUND" || Tracker.CurrentVisit.BusinessName == "N/A")</li><li>   output.Write("GeoIP information not avaialble for " + ip + ".&lt;br/&gt;");</li><li>  else if (String.IsNullOrEmpty(Tracker.CurrentVisit.BusinessName))</li><li>   output.Write("No business name in GeoIP data for " + ip + " (error contacting provider).&lt;br/&gt;");</li><li>  else</li><li>   output.Write("Business name from GeoIP record: " + Tracker.CurrentVisit.BusinessName + ".&lt;br/&gt;");</li><li> }</li><li>}</li></ol></pre>
+<h3>How to Access Session Data</h3>
+<p>Beyond Geo IP data, Sitecore stores valuable session data that is accessible via the Analytics API. The following code demonstrates how to access information about any search engine keywords that are associated with the Visitor's current session or previous 10 sessions, if any:</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li>using Sitecore.Analytics;</li><li>using Sitecore.Analytics.Data.DataAccess;</li><li>using Sitecore.Analytics.Data.DataAccess.DataSets;</li><li></li><li>public class ExampleTracker : Sitecore.Web.UI.WebControl</li><li>{</li><li> protected override void DoRender(System.Web.UI.HtmlTextWriter output)</li><li> {</li><li>  if (Tracker.CurrentVisit == null)</li><li>   return;</li><li>  if (Tracker.CurrentVisit.Keywords != null &amp;&amp; !String.IsNullOrEmpty(Tracker.CurrentVisit.Keywords.Text))</li><li>  {</li><li>   output.WriteLine("Search keywords for current visit: " + Tracker.CurrentVisit.Keywords.Text + ".&lt;br/&gt;");</li><li>   return;</li><li>  }</li><li></li><li>  const int checkVisits = 10;</li><li>  Sitecore.Analytics.Data.DataAccess.VisitorLoadOptions vOptions = new Sitecore.Analytics.Data.DataAccess.VisitorLoadOptions</li><li>  {</li><li>   Start = Tracker.CurrentVisit.VisitorVisitIndex - 1,</li><li>   Count = Tracker.CurrentVisit.VisitorVisitIndex - checkVisits,</li><li>   VisitLoadOptions = VisitLoadOptions.Visits</li><li>  };</li><li></li><li>  foreach (VisitorDataSet.VisitsRow visit in Tracker.Visitor.GetVisits(vOptions)</li><li>   .Where(visit =&gt; visit.VisitId != Tracker.CurrentVisit.VisitId).OrderByDescending(visit =&gt; visit.VisitorVisitIndex))</li><li>  {</li><li>   if (visit.Keywords != null &amp;&amp; !String.IsNullOrEmpty(visit.Keywords.Text))</li><li>   {</li><li>    output.WriteLine("Last search keywords from " + visit.StartDateTime + " visit: " + visit.Keywords.Text + "&lt;br/&gt;");</li><li>    return;</li><li>   }</li><li>  }</li><li>  output.WriteLine("No search keywords for current or last " + checkVisits + " visits.&lt;br/&gt;");</li><li> }</li><li>}</li></ol></pre>
+<p><br />
+</p>
+<div class="code">
+<div style="background-color: #dddddd; overflow: auto;">
+<ol style="padding: 0px 0px 0px 5px; margin: 0px 0px 0px 2.5em; background-color: #ffffff;">
+</ol>
+</div>
+</div>
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 181
+
+<image mediaid="{27F2AB1B-0C2D-4E1E-9AA4-70CCE0B76454}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/c-f/contract" src="~/media/27f2ab1b0c2d4e1e9aa470cce0b76454.ashx" />
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{EF5350C8-21BF-43A3-BCEF-71F29D91AEF0}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 37
+
+Accessing Current Visitor Information
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 37
+
+Accessing Current Visitor Information
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20110713T085500
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c0cf8f80-8f0f-48b2-92f4-7573628cee92
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T152055:635229768553692565
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

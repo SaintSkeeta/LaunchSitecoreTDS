@@ -1,0 +1,160 @@
+----item----
+version: 1
+id: {7C8E56DF-A561-4667-BE21-EFDC42EDAE23}
+database: master
+path: /sitecore/content/Home/Glossary/Insert-Options
+parent: {2D75C97D-5981-4482-8631-208B2DEB1F54}
+name: Insert-Options
+master: {00000000-0000-0000-0000-000000000000}
+template: {C6DD3CEF-22AF-4468-B3B0-82ABFCDE0F24}
+templatekey: Term
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 528
+
+<tracking>
+  <profile id="{478859DC-EBE0-40A7-BD24-75D588FD3E09}" name="Information Type" presets="detailed|100||">
+    <key name="Detailed" value="1" />
+    <key name="High Level" value="0" />
+  </profile>
+  <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment" presets="developer|100||">
+    <key name="Analytics" value="1" />
+    <key name="Campaigns and Targeting" value="1" />
+    <key name="Content Management" value="4" />
+    <key name="Technology" value="5" />
+  </profile>
+</tracking>
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{C6DD3CEF-22AF-4468-B3B0-82ABFCDE0F24}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 374120b2-52ef-4d42-9b32-2beb5746c6c2
+
+----field----
+field: {FBADE872-82BD-45AD-A2EC-DADC723249DA}
+name: Title
+key: title
+content-length: 14
+
+Insert Options
+----field----
+field: {B636170C-2681-469A-A642-A6549C12D1E6}
+name: Definition
+key: definition
+content-length: 181
+
+<p>Insert Options are settings applied to items or item templates which dictate what items can go where in the repository, and define the information architecture for your site.</p>
+----field----
+field: {AA7CE48D-746C-42C7-BD64-9A51F7F10B7C}
+name: Usage
+key: usage
+content-length: 181
+
+<p>This is a screenshot of the parent Glossary item and its Insert Options. As you can see, it is setup to allow only new glossary Terms to be added in this section of the site.</p>
+----field----
+field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
+name: Image
+key: image
+content-length: 175
+
+<image mediaid="{7F0F7C2A-C5CF-47C9-AAFE-6F364044F8AD}" mediapath="/Launch Sitecore/Site Images/Glossary/Insert Options" src="~/media/7f0f7c2ac5cf47c9aafe6f364044f8ad.ashx" />
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 151
+
+<image mediaid="{A812EA8B-61D3-4FCC-975D-5EDAC66D7637}" mediapath="/Images/Icons/document_edit" src="~/media/Images/Icons/document_edit.ashx" ></image>
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 14
+
+Insert Options
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 14
+
+Insert Options
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120402T112821
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\mde
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+374120b2-52ef-4d42-9b32-2beb5746c6c2
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T145952:635229755928460373
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
+name: __Semantics
+key: __semantics
+content-length: 77
+
+{96D23E84-12CF-4A1C-B8BB-A33D7E7FA16D}|{E0EDA7F7-4313-4596-99C4-07185950E19E}
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

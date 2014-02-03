@@ -1,0 +1,196 @@
+----item----
+version: 1
+id: {055D77DF-1ADE-4091-989F-87C1DC4BC981}
+database: master
+path: /sitecore/content/Home/About-Launch-Sitecore/Building-the-Site/Create-a-custom-sorting-routine-for-content
+parent: {EC38EBB3-F2E8-493D-B0E6-B8C68C9AFB85}
+name: Create-a-custom-sorting-routine-for-content
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 528
+
+<tracking>
+  <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment" presets="developer|100||">
+    <key name="Analytics" value="1" />
+    <key name="Campaigns and Targeting" value="1" />
+    <key name="Content Management" value="4" />
+    <key name="Technology" value="5" />
+  </profile>
+  <profile id="{478859DC-EBE0-40A7-BD24-75D588FD3E09}" name="Information Type" presets="detailed|100||">
+    <key name="Detailed" value="1" />
+    <key name="High Level" value="0" />
+  </profile>
+</tracking>
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{1B6A3702-5694-4FC4-8366-989ECDCD7F1B}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 039dfd44-cc27-4060-8b47-04c82e6e5565
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 43
+
+Create a custom sorting routine for content
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 90
+
+<p>Learn how to create a custom sorting routine for child items in the Content Editor.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 3183
+
+<h3>How to Implement a Custom Child Sorting Rule</h3>
+<p>Sitecore provides a number of out-of-the-box sorting rules that can be implemented throughout your solution. Some of these include:</p>
+<ul>
+    <li>Created By </li>
+    <li>Display Name </li>
+    <li>Logical </li>
+    <li>Reverse </li>
+    <li>Updated </li>
+</ul>
+<p>If you need to apply your own custom logic to child items, Sitecore enables developers to quickly build custom sorting rules.</p>
+<ol>
+    <li>Create a custom comparer source code file using Sitecore Rocks
+    <ol>
+        <li>New Item... &gt;&gt; Sitecore &gt; UI &gt; Subitems Sorting Comparer </li>
+        <li>Modify to meet your sorting requirements </li>
+    </ol>
+    </li>
+    <li>Examples code below sorts based on common "Title" field<br>
+    <pre class="prettyprint linenums"><ol class="linenums"><li>namespace Sitecore.Starterkit</li><li>{</li><li> using Sitecore.Data.Comparers;</li><li> using Sitecore.Data.Items;</li><li> public class TitleComparer : Comparer</li><li> {</li><li>  protected override int DoCompare(Item item1, Item item2)</li><li>  {</li><li>   string title1 = item1["Title"];</li><li>   string title2 = item2["Title"];</li><li>   if ((title1.Length &gt; 0) &amp;&amp; (title2.Length &gt; 0))</li><li>   {</li><li>    if ((title1[0] == '_') &amp;&amp; (title2[0] != '_'))</li><li>    {</li><li>     return 1;</li><li>    }</li><li>    if ((title2[0] == '_') &amp;&amp; (title1[0] != '_'))</li><li>    {</li><li>     return -1;</li><li>    }</li><li>   }</li><li>   return title1.CompareTo(title2);</li><li>  }</li><li> }</li><li>}</li></ol></pre>
+    </li>
+    <li>In the <strong>Content Editor</strong>, select the <em>/Sitecore/System/Settings/Subitems Sorting</em> item </li>
+    <li>In the <strong>Content Editor</strong>, insert a child sorting rule definition item using the <em>/System/Child Sorting</em> data template. For the name of the item, use the name of the custom item comparer class or the name of the property by which the custom item comparer sorts </li>
+    <li>In the <strong>Content Editor</strong>, select the newly created child sorting rule definition item </li>
+    <li>In the <strong>Content Editor</strong>, in the new child sorting rule definition item, in the <strong>Data</strong> section, in the <strong>Type</strong> field, enter the signature of the custom item comparer class. See example below from a project called Starterkit. <br>
+    <img width="439" height="45" alt="setting" src="~/media/C52B6B9ADE01420EBDCC856744A2F61F.ashx"> </li>
+    <li>Save your changes and you'll be ready to test and use your new Sorting Rule </li>
+    <li>To implement, select and item of which child items you want to sort using your sorting rule. If you haven't done so already, show <strong>Standard Fields </strong>(View tab &gt;&gt; Standard Fields). Go to the <strong>Appearance</strong> field section and select your custom sorting rule in the <strong>Child Sorting</strong> rule field.
+    <p>NOTE: Keep in mind that the <strong>Sortorder</strong> field (In Appearance field section) is going to overrule any child sorting rules. Set values to null for child sorting to take effect.</p>
+    </li>
+</ol>
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 180
+
+<image mediaid="{D07C56C8-8886-4BFD-910C-0BCE14B3105A}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/p-s/shuffle" src="~/media/d07c56c888864bfd910c0bce14b3105a.ashx" />
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{EF5350C8-21BF-43A3-BCEF-71F29D91AEF0}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 43
+
+Create a custom sorting routine for content
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 43
+
+Create a custom sorting routine for content
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111027T105400
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\mic
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+039dfd44-cc27-4060-8b47-04c82e6e5565
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T150800:635229760808528788
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
+name: __Semantics
+key: __semantics
+content-length: 0
+
+
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

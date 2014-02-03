@@ -1,0 +1,303 @@
+----item----
+version: 1
+id: {110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
+database: master
+path: /sitecore/content/Home
+parent: {0DE95AE4-41AB-4D01-9EB0-67441B7C2450}
+name: Home
+master: {00000000-0000-0000-0000-000000000000}
+template: {0ACD30D8-863E-4B1D-8612-719EEFC1DA4F}
+templatekey: Home
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 0
+
+
+----field----
+field: {A0CB3965-8884-4C7A-8815-B6B2E5CED162}
+name: __Editors
+key: __editors
+content-length: 0
+
+
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 22
+
+Network/16x16/home.png
+----field----
+field: {9C6106EA-7A5A-48E2-8CAD-F0F693B1E2D4}
+name: __Read Only
+key: __read only
+content-length: 0
+
+
+----field----
+field: {0C894AAB-962B-4A84-B923-CB24B05E60D2}
+name: __Ribbon
+key: __ribbon
+content-length: 0
+
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 2
+
+-1
+----field----
+field: {A791F095-2521-4B4D-BEF9-21DDA221F608}
+name: __Style
+key: __style
+content-length: 0
+
+
+----field----
+field: {6FD695E7-7F6D-4CA5-8B49-A829E5950AE9}
+name: __Subitems Sorting
+key: __subitems sorting
+content-length: 0
+
+
+----field----
+field: {83798D75-DF25-4C28-9327-E8BAC2B75292}
+name: __Insert Rules
+key: __insert rules
+content-length: 0
+
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 5317
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{31F7CB8F-2DD0-4239-ABD7-4A683D715768}" p:before="r[@uid='{C90B8FBE-F517-49BA-A4DF-AA21301AE2EC}']" s:ds="{9D181561-8B71-4577-BDFF-29CC95967FA5}" s:id="{6EDFF7B6-8582-4ECD-94D1-37CEADB999E9}" s:ph="footer-left" /><r uid="{BFFDD648-4331-4BDB-B046-06F7848D269A}" s:ds="{C722BA3C-060F-462B-A501-42ABEA6975AB}" /><r uid="{3EC360C9-708D-4E58-9DED-5D8FD4620ED5}"><rls><ruleset><rule uid="{CE1B45D1-2819-42CA-A64B-433DA52EF116}" s:name="Network Architect"><conditions><condition uid="E6A516DDB5A5454CB2E267B0BFD48C86" s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" s:ProfileName="Job Function" s:PatternName="Network Architect" /></conditions><actions><action uid="3EAD124989124CFB88E9C303EDCF523E" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{15D0FCF2-7C81-4218-A5A0-7605084D1CBC}" /></actions></rule><rule uid="{5BA3A134-ECC9-48ED-BCF2-34F806D62742}" s:name="Developer"><conditions><condition uid="380B38A33A51498CB6FFA1B374D87DA6" s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" s:ProfileName="Job Function" s:PatternName="Developer" /></conditions><actions><action uid="439D755DB699429BB9FC6C2C8BFAC0E5" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{EC38EBB3-F2E8-493D-B0E6-B8C68C9AFB85}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="8A766F40749E4FF8908CC92C73682F58" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{EE02BE24-30DE-4BB7-A52A-46693A78EF4F}"><rls><ruleset><rule uid="{39FCDAEC-8D32-4297-B8C1-0FA451415E36}" s:name="Marketers and Content Owners"><conditions><or uid="98A2590657DD47819639DF7AFE9038BD"><condition uid="4D7D580B34AD404A845C4AB1760C0C2F" s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" s:ProfileName="Job Function" s:PatternName="Digital Marketer" /><condition uid="0D9B760B6BEF4DD99B8EF4373B673B23" s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" s:ProfileName="Job Function" s:PatternName="Content Owner" /></or></conditions><actions><action uid="2E65A4835357411A8AC6BC2D242BD836" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{A5CDBC19-FFEA-4801-81A6-2B87F318B275}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="F5D9E0F7AEE840D3ADC156D74F400431" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{3829E486-2259-42FF-9385-33F26CF71A94}"><rls><ruleset><rule uid="{5E93ED2E-AEC7-4B66-9E08-61FF8C306099}" s:name="Content Owner"><conditions><condition uid="BFEAC1AA3A6E4ED7B774E82C59A60FC9" s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" s:ProfileName="Job Function" s:PatternName="Content Owner" /></conditions><actions><action uid="726CE250F02042EBA9C3E034D8266013" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{15D0FCF2-7C81-4218-A5A0-7605084D1CBC}" /></actions></rule><rule uid="{7E0E4C3D-BEF9-4424-8645-2D8B4194ED86}" s:name="Marketer"><conditions><condition uid="6C0BA78BA13E41B3B46777FE47DF41C1" s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" s:ProfileName="Job Function" s:PatternName="Digital Marketer" /></conditions><actions><action uid="370869CBE37648CDB929257F0E862CA2" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{05B47C0F-7B67-47AD-9946-C02CBA12A195}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="C7CB6039D37145498D88A15B20E742A8" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{8D4C2576-5760-433B-8AAE-6CCE62FF33AD}"><rls><ruleset><rule uid="{134B5DB9-8D39-4DE0-9FF4-0ED5364352ED}" s:name="In Evaluation Stage"><actions><action uid="4A3F03FAD64F46AC81C1AC7E3E12629F" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{4129BD83-68FE-4F49-9201-97643E59306D}" /></actions><conditions><condition uid="D7CA6850AFF24D3681A9D49109C216EF" s:id="{78168526-2783-4700-AD73-E78B9A056027}" s:automationstateid="{D6141475-5D29-4C7C-86D2-2EB5EA5E7B9C}" /></conditions></rule><rule uid="{E4F37C30-77B6-4DDA-9CFF-5DBCDCCC9263}" s:name="A Qualified User"><actions><action uid="CA5905C9C3FE4487A6B8E9F152364675" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{C01755E1-6263-490B-B8E3-EDEA18941141}" /></actions><conditions><condition uid="10E04F05F32F4581814BD15264ED7C39" s:id="{78168526-2783-4700-AD73-E78B9A056027}" s:automationstateid="{9D41094F-ABFD-4807-B42C-036C10BE6606}" /></conditions></rule><rule uid="{73271883-4F2E-4400-A47E-A4CBB7F40BC7}" s:name="Enrolled in Plan"><actions><action uid="9555142B5FC14EDFAE60978FE199E02A" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{0015FB05-D226-4BAC-BE34-C3AA1EA4E161}" /></actions><conditions><condition uid="3D0B0E7561774D8FB04287B1C950B9E2" s:id="{78168526-2783-4700-AD73-E78B9A056027}" s:automationstateid="{C734DC56-D426-4AB9-8847-52D12DA463BA}" /></conditions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="7C3B5C27F8024266B158941CCA8E559B" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{BECFC1B6-32A7-4641-9D1B-6AD53C2519A6}"><p:d /></r></d></r>
+----field----
+field: {86FE4F77-4D9A-4EC3-9ED9-263D03BD1965}
+name: __Publish
+key: __publish
+content-length: 0
+
+
+----field----
+field: {74484BDF-7C86-463C-B49F-7B73B9AFC965}
+name: __Publishing groups
+key: __publishing groups
+content-length: 0
+
+
+----field----
+field: {9135200A-5626-4DD8-AB9D-D665B8C11748}
+name: __Never publish
+key: __never publish
+content-length: 0
+
+
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 152
+
+ar|sitecore\Designer|pd|+item:write|pe|+item:write|ar|sitecore\Author|pd|+item:delete|+item:create|+item:rename|+item:write|pe|+item:create|+item:write|
+----field----
+field: {56C15C6D-FD5A-40CA-BB37-64CEEC6A9BD5}
+name: __Archive date
+key: __archive date
+content-length: 0
+
+
+----field----
+field: {C2F5B2B5-71C1-431E-BF7F-DBDC1E5A2F83}
+name: __Quick Action Bar Validation Rules
+key: __quick action bar validation rules
+content-length: 0
+
+
+----field----
+field: {B7E5B151-B145-4CED-85C5-FBDB566DFA4D}
+name: __Validator Bar Validation Rules
+key: __validator bar validation rules
+content-length: 0
+
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----field----
+field: {CA9B9F52-4FB0-4F87-A79F-24DEA62CDA65}
+name: __Default workflow
+key: __default workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 0aafb392-d3df-4c69-9a93-a68e3a6c670e
+
+----field----
+field: {AAEAC7F2-E33E-4B34-9023-AB6F59D3A427}
+name: Title
+key: title
+content-length: 29
+
+Getting Started with Sitecore
+----field----
+field: {2FB9AEBD-D6E1-4EA5-8A04-7B6AD0EC3132}
+name: Subtitle
+key: subtitle
+content-length: 26
+
+Clean, modern & responsive
+----field----
+field: {764646D1-347E-419D-8B86-67457C73D905}
+name: Body
+key: body
+content-length: 635
+
+<p>Welcome to Launch Sitecore. This site is dedicated to your successful evaluation of the Sitecore Customer Engagement Platform.  This site will help you investigate a simple yet powerful implementation of Sitecore, giving content owners, developers, marketers and network professionals a great starting point towards understanding the breadth of features this platform offers.  From authoring content to workflow and publishing to creating personalized experiences, testing and analytics, this site will allow you to understand the building blocks that will power your content-driven digital marketing strategy into the future.  </p>
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 4
+
+Home
+----field----
+field: {7E003143-26F2-4A28-B70A-08548286F6BA}
+name: Show Item In Menu
+key: show item in menu
+content-length: 1
+
+1
+----field----
+field: {D48AF62C-9C56-4E4C-BA29-94C3DABAD82E}
+name: Show Children In Menu
+key: show children in menu
+content-length: 1
+
+1
+----field----
+field: {71DFEE6E-6AC9-4F83-9A15-748D42C4646E}
+name: Site Name
+key: site name
+content-length: 15
+
+Launch Sitecore
+----field----
+field: {299EFAE9-69FF-48CA-B408-65A8BF05A92F}
+name: Show in Sites Menu
+key: show in sites menu
+content-length: 1
+
+1
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 4
+
+Home
+----field----
+field: {577F1689-7DE4-4AD2-A15F-7FDC1759285F}
+name: __Long description
+key: __long description
+content-length: 58
+
+The Home item is the default starting point for a website.
+----field----
+field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
+name: __Short description
+key: __short description
+content-length: 20
+
+Welcome to Sitecore.
+----field----
+field: {C8F93AFE-BFD4-4E8F-9C61-152559854661}
+name: __Valid from
+key: __valid from
+content-length: 0
+
+
+----field----
+field: {4C346442-E859-4EFD-89B2-44AEDF467D21}
+name: __Valid to
+key: __valid to
+content-length: 0
+
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20080407T135900
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0aafb392-d3df-4c69-9a93-a68e3a6c670e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T231046:635230050461844167
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
+name: __Semantics
+key: __semantics
+content-length: 77
+
+{96D23E84-12CF-4A1C-B8BB-A33D7E7FA16D}|{7F207663-6A32-4173-92DA-A15394B33776}
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

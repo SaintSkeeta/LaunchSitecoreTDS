@@ -1,0 +1,193 @@
+----item----
+version: 1
+id: {21E1EADE-0E0B-418F-A020-981EB6CBDD8C}
+database: master
+path: /sitecore/content/Home/About-Launch-Sitecore/Building-the-Site/Creating-a-List-Control
+parent: {EC38EBB3-F2E8-493D-B0E6-B8C68C9AFB85}
+name: Creating-a-List-Control
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 528
+
+<tracking>
+  <profile id="{478859DC-EBE0-40A7-BD24-75D588FD3E09}" name="Information Type" presets="detailed|100||">
+    <key name="Detailed" value="1" />
+    <key name="High Level" value="0" />
+  </profile>
+  <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment" presets="developer|100||">
+    <key name="Analytics" value="1" />
+    <key name="Campaigns and Targeting" value="1" />
+    <key name="Content Management" value="4" />
+    <key name="Technology" value="5" />
+  </profile>
+</tracking>
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{1B6A3702-5694-4FC4-8366-989ECDCD7F1B}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: a7f985f8-329b-4fa0-b77e-0c5ff90906fe
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 23
+
+Creating a List Control
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 165
+
+<p>This article will describe how to create a list control that can be used on this site to display a set of articles or other content based on various criteria.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 2782
+
+<p>There are a few things to consider when creating a control to display a list of items. The code you see in the following example can be found in the list controls of this site. </p>
+<h2>Define the items that will be in the list</h2>
+<p>First, we need to determine which items will be displayed in the list.  These items can come from various data sources.</p>
+<h4>Children of the Current Item</h4>
+<p> The About Launch Sitecore page shows the article sections in a list that is generated from the child items.  The glossary page also shows an example of this technique.</p>
+<h4>Children of a Selected Item</h4>
+<p>The Datasource List control in this site can take a datasource item.  It will then display the children of the selected item.  A similar technique is used on the footer navigation and the sites drop down.</p>
+<h4>Items From a Field on the Current Item</h4>
+<p>On each article page, there is a list of related articles.  The background articles are shown from prerequisites articles field on each article.  The tags for each article shown in the footer also uses this approach.</p>
+<h4>The Results of a Query</h4>
+<p>The job function pages include lists of articles based on the results of a search query.  The carousel on the home page and the article list on each contributor also show this technique.</p>
+<h2>Example from Launch Sitecore</h2>
+<p>The Datasource List control from this site provides a good example to show the details of creating a list control.</p>
+<p><img height="205" alt="Datasource List" width="220" src="~/media/b184b9f72365439aa2bfbb4907141999.ashx" /></p>
+<h2>Creating the Markup</h2>
+<p>The markup of this control is simply a repeater to show each item in the list.</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li>&lt;asp:Repeater ID="rptList" runat="server" OnItemDataBound="rptList_ItemDataBound"&gt;</li><li> &lt;HeaderTemplate&gt;</li><li>  &lt;div class="side-nav sidebar-block"&gt;</li><li>  &lt;h2&gt;&lt;asp:Literal ID="SectionTitle" runat="server" /&gt;&lt;/h2&gt;&lt;ul&gt;</li><li> &lt;/HeaderTemplate&gt;</li><li> &lt;ItemTemplate&gt;</li><li>  &lt;li&gt;&lt;asp:Hyperlink ID="LinkTo" runat="server"&gt;&lt;sc:FieldRenderer ID="Title" runat="server" FieldName="Title" /&gt;&lt;/asp:Hyperlink&gt;&lt;/li&gt;</li><li> &lt;/ItemTemplate&gt;</li><li> &lt;FooterTemplate&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/FooterTemplate&gt;</li><li>&lt;/asp:Repeater&gt;</li></ol></pre>
+<h2>Supplying the Data</h2>
+<p>With the markup complete, we need to bind the child items to the repeater.  We can also use the Item.Children property or one of the properties in our base class to retrieve the items.</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li>rptList.DataSource = items;</li><li>rptList.DataBind();</li></ol></pre>
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 177
+
+<image mediaid="{71487535-8BA7-482D-88DF-B3D4BB0C0B04}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/g-o/list" src="~/media/714875358ba7482d88dfb3d4bb0c0b04.ashx" />
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{EF5350C8-21BF-43A3-BCEF-71F29D91AEF0}
+----field----
+field: {EFC4A071-5574-404A-8206-FB502FCA909B}
+name: Prerequisite Articles
+key: prerequisite articles
+content-length: 0
+
+
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 23
+
+Creating a List Control
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 23
+
+Creating a List Control
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20110713T082800
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a7f985f8-329b-4fa0-b77e-0c5ff90906fe
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T171407:635229836477098173
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
+name: __Semantics
+key: __semantics
+content-length: 116
+
+{96D23E84-12CF-4A1C-B8BB-A33D7E7FA16D}|{E0EDA7F7-4313-4596-99C4-07185950E19E}|{459DBF7C-1A25-4EDF-86DA-32020B0AFC4B}
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

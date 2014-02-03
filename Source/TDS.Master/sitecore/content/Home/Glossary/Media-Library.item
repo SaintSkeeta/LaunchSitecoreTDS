@@ -1,0 +1,156 @@
+----item----
+version: 1
+id: {0F1DB744-F9A3-44CA-A4C9-EAA037FD7CAF}
+database: master
+path: /sitecore/content/Home/Glossary/Media-Library
+parent: {2D75C97D-5981-4482-8631-208B2DEB1F54}
+name: Media-Library
+master: {00000000-0000-0000-0000-000000000000}
+template: {C6DD3CEF-22AF-4468-B3B0-82ABFCDE0F24}
+templatekey: Term
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 332
+
+<tracking>
+  <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment" presets="content owner|100||">
+    <key name="Analytics" value="1" />
+    <key name="Campaigns and Targeting" value="3" />
+    <key name="Content Management" value="5" />
+    <key name="Technology" value="0" />
+  </profile>
+</tracking>
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{C6DD3CEF-22AF-4468-B3B0-82ABFCDE0F24}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 33c9db97-7167-4ec0-b9e9-2faea0e5b809
+
+----field----
+field: {FBADE872-82BD-45AD-A2EC-DADC723249DA}
+name: Title
+key: title
+content-length: 13
+
+Media Library
+----field----
+field: {B636170C-2681-469A-A642-A6549C12D1E6}
+name: Definition
+key: definition
+content-length: 93
+
+<p>The Media Library is a location within the content tree for storing assets and images.</p>
+----field----
+field: {AA7CE48D-746C-42C7-BD64-9A51F7F10B7C}
+name: Usage
+key: usage
+content-length: 234
+
+<p>All site assets (images, PDFs, etc.) are stored in the Media Library. Like other Sitecore items, media items can have permissions, versions, and are based on templates (which can be extended - for adding metadata, for example) </p>
+----field----
+field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
+name: Image
+key: image
+content-length: 226
+
+<image mediaid="{F95A2C85-61FC-4DC2-80FD-7C20FAA6FAC7}" mediapath="/Launch Sitecore/Site Images/Glossary/Media Library" src="~/media/f95a2c8561fc4dc280fd7c20faa6fac7.ashx" alt="" height="633" width="620" hspace="" vspace="" />
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 151
+
+<image mediaid="{9B84295D-99A3-44FB-BE99-6AA52C5E8295}" mediapath="/Images/Icons/photo_scenery" src="~/media/Images/Icons/photo_scenery.ashx" ></image>
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 13
+
+Media Library
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 13
+
+Media Library
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111220T124516
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\chc
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+33c9db97-7167-4ec0-b9e9-2faea0e5b809
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T171407:635229836474307172
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
+name: __Semantics
+key: __semantics
+content-length: 38
+
+{96D23E84-12CF-4A1C-B8BB-A33D7E7FA16D}
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

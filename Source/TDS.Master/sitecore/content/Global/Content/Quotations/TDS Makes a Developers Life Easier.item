@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {D451E1BE-229E-4AA9-B143-D521BE1B8043}
+database: master
+path: /sitecore/content/Global/Content/Quotations/TDS Makes a Developers Life Easier
+parent: {E439B4E9-620E-4E1C-963F-B122A892B6ED}
+name: TDS Makes a Developers Life Easier
+master: {00000000-0000-0000-0000-000000000000}
+template: {BB5F90B5-6EFC-4FF0-BA65-35D0C325AFAE}
+templatekey: Quotation
+
+----version----
+language: en
+version: 1
+revision: 7d804de2-0de7-4075-aaeb-9d3383194731
+
+----field----
+field: {60B57A34-140A-4E04-B576-E390D08E3231}
+name: Quotation
+key: quotation
+content-length: 41
+
+Using TFS makes a developers life easier.
+----field----
+field: {07EDEBCF-EE2C-4F64-A5FD-1DF221DF0014}
+name: Author
+key: author
+content-length: 10
+
+Howard Kim
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20130817T102601:635123319618319721
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7d804de2-0de7-4075-aaeb-9d3383194731
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130904T160439:635139074792239156
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

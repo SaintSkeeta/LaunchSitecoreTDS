@@ -1,0 +1,144 @@
+----item----
+version: 1
+id: {EF5350C8-21BF-43A3-BCEF-71F29D91AEF0}
+database: master
+path: /sitecore/content/Home/Team/Chris-Castle
+parent: {8DABE12D-4D1B-40B5-BF62-7D2424253A15}
+name: Chris-Castle
+master: {00000000-0000-0000-0000-000000000000}
+template: {97963D48-BD06-46CA-8279-CD2BA3C7AA36}
+templatekey: Team Member
+
+----field----
+field: {AD724ADB-4729-4C32-BF40-676579D587CF}
+name: Image
+key: image
+content-length: 156
+
+<image mediaid="{78AF4416-38F9-4066-BB53-779DE548014B}" mediapath="/Images/Contributors/Chris Castle" src="~/media/Images/Contributors/Chris Castle.ashx" />
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{97963D48-BD06-46CA-8279-CD2BA3C7AA36}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 325
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{19B71B9E-FDA5-48C9-94E2-1C4090D47ADC}"><p:d /></r><r uid="{17819B9E-E039-46BD-B1EA-8D2F6FEEBB32}" p:before="r[@uid='{B8E2C5E1-92C4-46A4-A175-7B64807ECC42}']" s:id="{69D9E158-6562-4612-8F62-D244B08A38C1}" s:ph="main-content" /></d></r>
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 6bba646d-2ddc-4ad1-8a25-de68c9039a12
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 12
+
+Chris Castle
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 223
+
+<p>As Enterprise Sales Engineering Director, Chris works with clients to help them deliver great sites. His experience includes content management, custom software development, and integration with third party systems.</p>
+
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 722
+
+<p>Chris began his career on the delivery side with ten years of consulting. During this time, he worked primarily with the Microsoft technologies and developed solutions across multiple industries. The constant in all of this was a focus on web based technologies and solutions.  Following this he spent seven years with a non-profit organization. During this time, he integrated Sitecore with a CRM and implemented multiple other custom projects replacing every existing system with Sitecore and the CRM as the foundation.</p>
+<p>In addition to leading the Launch Sitecore initiative, Chris has written multiple Shared Source modules and is passionate about maximizing the user experience in every Sitecore solution.</p>
+----field----
+field: {F9B6FFEF-1DC9-4C0E-A815-C62822E1CBDB}
+name: Quote
+key: quote
+content-length: 61
+
+If we are to undertake a task, we must do it with excellence.
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 179
+
+<image mediaid="{8A48C884-E903-4C0E-BA4E-5282934404BE}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/t-z/user-4" src="~/media/8a48c884e9034c0eba4e5282934404be.ashx" />
+----field----
+field: {D2E90283-29F2-4EAF-895E-E8DE8DAEEC69}
+name: Job Title
+key: job title
+content-length: 37
+
+Enterprise Sales Engineering Director
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 12
+
+Chris Castle
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 12
+
+Chris Castle
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111018T054800
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6bba646d-2ddc-4ad1-8a25-de68c9039a12
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140103T112814:635243452945751249
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

@@ -1,0 +1,193 @@
+----item----
+version: 1
+id: {AB5CA3C3-2D22-47D6-A414-2C9120547C26}
+database: master
+path: /sitecore/content/Home/About-Launch-Sitecore/Our-Strategy/Minimizing-Downtime-During-Deployment
+parent: {15D0FCF2-7C81-4218-A5A0-7605084D1CBC}
+name: Minimizing-Downtime-During-Deployment
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 538
+
+<tracking>
+  <profile id="{478859DC-EBE0-40A7-BD24-75D588FD3E09}" name="Information Type" presets="high level|100||">
+    <key name="Detailed" value="0" />
+    <key name="High Level" value="1" />
+  </profile>
+  <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment" presets="network architect|100||">
+    <key name="Analytics" value="4" />
+    <key name="Campaigns and Targeting" value="0" />
+    <key name="Content Management" value="0" />
+    <key name="Technology" value="5" />
+  </profile>
+</tracking>
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+500
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{1B6A3702-5694-4FC4-8366-989ECDCD7F1B}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 7c33d54b-bc5e-402f-9322-3a9ef4328e6a
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 37
+
+Minimizing Downtime During Deployment
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 385
+
+<p>The architecture of Sitecore allows you to tackle major deployments with minimal downtime. The separation of authoring and delivery instances allow us to perform these migrations in steps. It is important to remember that publishing content changes in Sitecore is easy and 100% a content manager task. This article covers large code changes to the site not just content changes.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 2064
+
+<p>At some point in the life of a site, you may need to make large sweeping changes. This may include significant changes to the look and feel, presentation elements, and even to the content itself. You may be adding new fields or totally new content types. Whatever the change is the challenge is the same. How do we deploy the files and Sitecore changes without the site being unavailable?</p>
+<h3>Our environment</h3>
+<p>For this example, we have the following servers:</p>
+<ul>
+ <li>CM - Content Management Server</li>
+ <li>CD1 - Content Delivery Server 1</li>
+ <li>CD2 - Content Delivery Server 2</li>
+</ul>
+<p>We have the 3 standard Sitecore Databases and an extra web database called the Live Web database. Both web databases are set as publishing targets. The two web databases allow us to publish to one without the other to see how the published site will perform.</p>
+<p>We also need to remember that a CM server can view the master database in preview mode or the web database when you access it directly.</p>
+<h3>The process</h3>
+<ol>
+ <li>Perform your standard backups.</li>
+ <li>Connect to the database and set the live web database to read only. This allows our two CD servers to continue to serve the existing site.</li>
+ <li>Install your packages and files to apply all of the changes to the CM server.</li>
+ <li>Publish the changes to the web publishing target.</li>
+ <li>Verify the changes by navigating the site using the CM server.</li>
+ <li>Remove CD1 from the web farm and update the connection string to use the web database.</li>
+ <li>Push all of the new files to CD1 and verify the site.</li>
+ <li>Add CD1 back to the web farm and remove CD2.</li>
+ <li>Undo step 2 so that we can publish to the Live Web target. </li>
+ <li>Apply all of the file changes to CD2.</li>
+ <li>Add CD2 back to the cluster.</li>
+ <li>Update CD1 to once again read from the Live Web database.</li>
+</ol>
+<h3>Conclusion</h3>
+<p>Due to Sitecore's database and server recommendations, you can use strategies like this to minimize downtime during major upgrades.</p>
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 178
+
+<image mediaid="{84C1EAF8-44C1-4FDF-A730-F7A3C7CB1590}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/c-f/clock" src="~/media/84c1eaf844c14fdfa730f7a3c7cb1590.ashx" />
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{EF5350C8-21BF-43A3-BCEF-71F29D91AEF0}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 37
+
+Minimizing Downtime During Deployment
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 37
+
+Minimizing Downtime During Deployment
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111028T185400
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\chc
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7c33d54b-bc5e-402f-9322-3a9ef4328e6a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T150551:635229759519109375
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
+name: __Semantics
+key: __semantics
+content-length: 77
+
+{96D23E84-12CF-4A1C-B8BB-A33D7E7FA16D}|{E0EDA7F7-4313-4596-99C4-07185950E19E}
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
