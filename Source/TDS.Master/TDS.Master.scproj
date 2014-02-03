@@ -70,25 +70,610 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Devices\Mobile.item">
+      <Icon>/temp/IconCache/People/16x16/pda.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Layouts.item">
       <Icon>/temp/IconCache/Applications/16x16/windows.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Layouts\LaunchSitecore.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Layouts\LaunchSitecore\Default.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Layouts\LaunchSitecore\Default\Mobile.item">
+      <Icon>/~/icon/people/32x32/pda2.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Layouts\LaunchSitecore\Main.item">
+      <Icon>/temp/IconCache/People/32x32/monitor2.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Placeholder Settings.item">
       <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings.item">
-      <Icon>/temp/IconCache/Software/16x16/elements1.png</Icon>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Content.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Content\content-primary.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Content\content-secondary.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Content\content-tertiary.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row1.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row2a.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row2b.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row2c.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row2d.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row3.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row3a.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row3b.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row3c.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row3d.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row4.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Main.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Main\footer-center.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Main\footer-left.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Main\footer-right.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Main\main-content.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Main\visit-details.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Microsite.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Microsite\microsite-content-tertiary.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Microsite\microsite-footer-center.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Microsite\microsite-footer-left.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Microsite\microsite-footer-right.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Article Folder.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Article Folder\article-folder-content-primary.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Article Group.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Article Group\article-group-content-primary.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Articles Section.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Articles Section\articles-section-content-primary.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Contributor.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Contributor\contributor-content-primary.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Contributor\contributor-content-secondary.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Contributor\contributor-content-tertiary.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Glossary Section.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Glossary Section\glossary-section-content-primary.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Home.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Home\home-main-content.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Job Function Section.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Job Function Section\job-function-content-primary.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Team Section.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Team Section\team-section-content-primary.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Term.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Term\term-content-primary.item">
+      <Icon>/temp/IconCache/Business/16x16/table_selection_block.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Sublayouts.item">
       <Icon>/temp/IconCache/Software/16x16/elements_selection.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Analytics.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Analytics\Current Pattern.item">
+      <Icon>/temp/IconCache/Business/32x32/column-chart.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Analytics\Current Visit Info.item">
+      <Icon>/temp/IconCache/business/32x32/column-chart.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Carousel.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Carousel\Alternate Base Carousel.item">
+      <Icon>/~/icon/Multimedia/32x32/film_clip.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Carousel\Base Carousel.item">
+      <Icon>/temp/IconCache/multimedia/32x32/film_clip.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Carousel\Enhanced Carousel.item">
+      <Icon>/temp/IconCache/multimedia/32x32/film_clip.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Lists.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Lists\Articles by Contributor.item">
+      <Icon>/~/icon/wordprocessing/32x32/bullets.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Lists\Datasource List.item">
+      <Icon>/~/icon/wordprocessing/32x32/bullets.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Lists\Icon and Title List for Query.item">
+      <Icon>/~/icon/wordprocessing/32x32/bullets.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Lists\Icon and Title List.item">
+      <Icon>/~/icon/WordProcessing/32x32/bullets.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Lists\Queried List.item">
+      <Icon>/~/icon/WordProcessing/32x32/bullets.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Lists\Related Articles.item">
+      <Icon>/~/icon/wordprocessing/32x32/bullets.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Lists\Tags.item">
+      <Icon>/~/icon/applications/32x32/bookmark.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Lists\Team List.item">
+      <Icon>/~/icon/wordprocessing/32x32/bullets.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Meta.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Meta\CssTheme.item">
+      <Icon>/~/icon/People/32x32/palette_text.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Meta\Metadata.item">
+      <Icon>/~/icon/software/32x32/text_code_line.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Meta\Title.item">
+      <Icon>/~/icon/software/32x32/text_code_line.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Navigation.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Navigation\Breadcrumbs.item">
+      <Icon>/~/icon/Software/32x32/step.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Navigation\Footer Navigation.item">
+      <Icon>/~/icon/Software/32x32/step_stop.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Navigation\Main Nav.item">
+      <Icon>/~/icon/software/32x32/step.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Navigation\SecondaryNav.item">
+      <Icon>/~/icon/software/32x32/step.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Navigation\Tertiary Nav.item">
+      <Icon>/~/icon/software/32x32/step.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Search.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Search\Quick Search.item">
+      <Icon>/~/icon/Applications/32x32/view.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Secure.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Secure\Login.item">
+      <Icon>/~/icon/network/32x32/key1.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Secure\Register.item">
+      <Icon>/~/icon/network/32x32/key1.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Single Item.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Single Item\Abstract Box.item">
+      <Icon>/~/icon/Software/32x32/breakpoint.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Single Item\Abstract Spot.item">
+      <Icon>/~/icon/Software/32x32/breakpoint.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Single Item\Article Title and Body.item">
+      <Icon>/~/icon/applications/32x32/text_rich_marked.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Single Item\Article Title Image and Body.item">
+      <Icon>/~/icon/applications/32x32/text_rich_marked.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Single Item\Biography.item">
+      <Icon>/~/icon/applications/32x32/text_rich_marked.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Single Item\Error Details.item">
+      <Icon>/~/icon/applications/32x32/forbidden.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Single Item\Featured Quotation.item">
+      <Icon>/~/icon/Business/32x32/thought.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Single Item\Jumbotron.item">
+      <Icon>/~/icon/applications/32x32/text_rich_marked.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Single Item\Promo with Image.item">
+      <Icon>/~/icon/business/32x32/phone_redirect.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Single Item\Promo with No Image.item">
+      <Icon>/~/icon/business/32x32/phone_redirect.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Single Item\Promo with Thumbnail.item">
+      <Icon>/~/icon/Business/32x32/phone_redirect.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Single Item\SmallStickyNote.item">
+      <Icon>/~/icon/Business/16x16/note.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Single Item\StickyNote.item">
+      <Icon>/~/icon/Business/16x16/note.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Single Item\Term Details.item">
+      <Icon>/~/icon/Applications/32x32/text_rich_marked.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Single Item\Text Widget.item">
+      <Icon>/~/icon/Applications/32x32/text_align_left.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Single Item\Title and Body for Footer.item">
+      <Icon>/~/icon/Applications/32x32/text.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Controls\Single Item\Title and Body.item">
+      <Icon>/~/icon/applications/32x32/text_rich_marked.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Views.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Views\Content with Sidebar.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Views\Content with Sidebar\Both Sidebars.item">
+      <Icon>/~/icon/Software/32x32/layout_vertical.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Views\Content with Sidebar\Left Sidebar.item">
+      <Icon>/~/icon/software/32x32/layout_vertical.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Views\Content with Sidebar\Right Sidebar.item">
+      <Icon>/~/icon/software/32x32/layout_vertical.png.aspx</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Views\Full Width.item">
+      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Views\Full Width\One Four Three.item">
+      <Icon>/temp/IconCache/Software/32x32/layout_horizontal.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Views\Full Width\One Four Two.item">
+      <Icon>/temp/IconCache/software/32x32/layout_horizontal.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Views\Full Width\One Three Four.item">
+      <Icon>/temp/IconCache/software/32x32/layout_horizontal.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Views\Full Width\One Three One.item">
+      <Icon>/temp/IconCache/Software/32x32/layout_horizontal.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Views\Full Width\One Three Three.item">
+      <Icon>/temp/IconCache/software/32x32/layout_horizontal.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Views\Full Width\One Two Four One.item">
+      <Icon>/temp/IconCache/Software/32x32/layout_horizontal.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore\Views\Full Width\One Two Four.item">
+      <Icon>/temp/IconCache/software/32x32/layout_horizontal.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\media library.item">
       <Icon>/temp/IconCache/Applications/16x16/photo_scenery.png</Icon>

@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {F419291D-8760-494B-BF16-EFC205117469}
+database: master
+path: /sitecore/layout/Sublayouts/LaunchSitecore/Controls/Lists/Team List
+parent: {AFA8A68B-9144-456E-AFE5-B9CC3044E95C}
+name: Team List
+master: {00000000-0000-0000-0000-000000000000}
+template: {0A98E368-CDB9-4E1E-927C-8E0C24A003FB}
+templatekey: Sublayout
+
+----field----
+field: {E42081B6-8A95-4A11-89CE-DF70ED502F57}
+name: Path
+key: path
+content-length: 53
+
+/layouts/LaunchSitecore/Controls/Lists/Team List.ascx
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 32
+
+wordprocessing/32x32/bullets.png
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 187
+
+<image mediapath="/Launch Sitecore/Page Editor Thumbnails/Controls/Lists/Team List" mediaid="{439BBEC1-878A-430D-8AA3-028228FA3A52}" src="~/media/439bbec1878a430d8aa3028228fa3a52.ashx" />
+----version----
+language: en
+version: 1
+revision: 2e68494d-e581-437e-a8a3-15ab167a5404
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130823T090430
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2e68494d-e581-437e-a8a3-15ab167a5404
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131009T180341:635169386218816071
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
