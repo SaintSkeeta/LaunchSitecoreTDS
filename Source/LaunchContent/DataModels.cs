@@ -4,17 +4,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 #pragma warning disable 1591
 #pragma warning disable 0108
 //------------------------------------------------------------------------------
@@ -34,7 +23,6 @@ using Glass.Mapper.Sc.Configuration.Attributes;
 using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.Fields;
 using Sitecore.Globalization;
-
 
 
 namespace LaunchContent

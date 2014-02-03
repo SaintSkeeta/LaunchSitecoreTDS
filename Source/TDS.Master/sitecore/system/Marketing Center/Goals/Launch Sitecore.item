@@ -1,0 +1,44 @@
+----item----
+version: 1
+id: {FB3A8E92-270D-46AA-8DD6-A4188F903ADD}
+database: master
+path: /sitecore/system/Marketing Center/Goals/Launch Sitecore
+parent: {0CB97A9F-CAFB-42A0-8BE1-89AB9AE32BD9}
+name: Launch Sitecore
+master: {00000000-0000-0000-0000-000000000000}
+template: {DB6E13B8-786C-4DD6-ACF2-3E5E6A959905}
+templatekey: Goal Category
+
+----version----
+language: en
+version: 1
+revision: dd974841-88a4-4146-8408-03306999346f
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131119T120753
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+dd974841-88a4-4146-8408-03306999346f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131119T120753:635204596732375126
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
