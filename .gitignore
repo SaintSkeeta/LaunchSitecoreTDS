@@ -20,6 +20,7 @@ BuiltFiles_*.txt
 
 # Launch Sitecore specific
 Data/license.xml
+Installers/Sitecore/Sitecore.Buckets.dll
 Installers/Sitecore/Sitecore.Client.dll
 Installers/Sitecore/Sitecore.ContentSearch.dll
 Installers/Sitecore/Sitecore.ContentSearch.Linq.dll
