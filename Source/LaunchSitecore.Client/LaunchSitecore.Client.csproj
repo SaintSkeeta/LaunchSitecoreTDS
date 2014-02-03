@@ -162,9 +162,6 @@
     <Compile Include="Configuration\SiteUI\Search\HtmlRemoval.cs" />
     <Compile Include="Configuration\SiteUI\Search\Models\SitecoreItem.cs" />
     <Compile Include="Configuration\SiteUI\Translation\Language.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
     <Compile Include="layouts\LaunchSitecore\Controls\Analytics\Current Pattern.ascx.cs">
       <DependentUpon>Current Pattern.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -560,7 +557,6 @@
     <Content Include="assets\js\jquery-1.7.2.min.js" />
     <Content Include="assets\js\jquery-ui.min.js" />
     <Content Include="assets\js\jquery.cookie.js" />
-    <Content Include="Global.asax" />
     <Content Include="layouts\LaunchSitecore\Controls\Analytics\Current Pattern.ascx" />
     <Content Include="layouts\LaunchSitecore\Controls\Analytics\Current Visit Info.ascx" />
     <Content Include="layouts\LaunchSitecore\Controls\Carousel\Alternate Base Carousel.ascx" />
