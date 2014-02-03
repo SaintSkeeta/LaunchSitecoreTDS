@@ -1,0 +1,150 @@
+----item----
+version: 1
+id: {8DB8017E-2F41-43A5-B64D-55E481053EFA}
+database: master
+path: /sitecore/media library/Launch Sitecore/Site Images/Icons/Color/elements selection
+parent: {56CB9EF1-BBAB-4DFA-8A0F-592845144AE6}
+name: elements selection
+master: {00000000-0000-0000-0000-000000000000}
+template: {F1828A2C-7E5D-4BBD-98CA-320474871548}
+templatekey: Image
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 2290
+
+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
+HwFf2JS8qsdSAAAAAElFTkSuQmCC
+----field----
+field: {22EAC599-F13B-4607-A89D-C091763A467D}
+name: Width
+key: width
+content-length: 2
+
+32
+----field----
+field: {DE2CA9E4-C117-4C8A-A139-1FF4B199D15A}
+name: Height
+key: height
+content-length: 2
+
+32
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 3
+
+png
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 9
+
+image/png
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 4
+
+1674
+----field----
+field: {CB09946F-3218-4823-87D2-D5007C199A96}
+name: Dimensions
+key: dimensions
+content-length: 7
+
+32 x 32
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+~/media/8DB8017E2F4143A5B64D55E481053EFA.ashx?h=16&thn=1&w=16
+----version----
+language: en
+version: 1
+revision: bea775f4-8d7a-4b19-88b9-527cf0df36f0
+
+----field----
+field: {65885C44-8FCD-4A7F-94F1-EE63703FE193}
+name: Alt
+key: alt
+content-length: 10
+
+Sublayouts
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 12
+
+sitecore\mde
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120404T143304
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\mde
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+bea775f4-8d7a-4b19-88b9-527cf0df36f0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20120412T091521:634698189216065155
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 12
+
+sitecore\chc
