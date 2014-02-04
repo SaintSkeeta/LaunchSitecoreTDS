@@ -34,4 +34,14 @@ This repository is that package converted to a Visual Studio solution with items
 - Right click on TDS.Core and select Deploy.
 - Right click on TDS.Master and select Deploy.
 
-Your site should now be completely setup.
+### Rebuild Search Indexes ###
+When using a Sitecore 7 version, you will need to rebuild the indexes for the site to work correctly. (Noticeable with the carousel on the homepage in the new mode).<br />
+To rebuild the indexes:-
+
+ - Open the Sitecore Client, and login to *Desktop* mode.
+ - From the Sitecore Start menu, Open the *Control Panel*.
+ - Click on *Indexing*.
+ - Click on *Indexing Manager*
+ - Follow the Wizard, selecting all of the local instances and clicking on the *Rebuild* button.
+
+Once indexing is complete, your site should now be completely setup.
