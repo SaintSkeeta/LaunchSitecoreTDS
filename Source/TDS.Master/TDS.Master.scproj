@@ -5884,6 +5884,8 @@
       <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <CodeGenTemplate>GlassItem.tt</CodeGenTemplate>
+      <CodeGenNamespace>LaunchSitecore</CodeGenNamespace>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Launch Sitecore\Article Folder.item">
       <Icon>/temp/IconCache/Applications/32x32/folder_document.png</Icon>
