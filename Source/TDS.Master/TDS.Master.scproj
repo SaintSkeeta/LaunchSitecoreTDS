@@ -6484,12 +6484,4 @@
     </Replacement>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
-  <Target Name="BeforeFileReplacements">
-    <!-- restore certain Sitecore.* DLLs that TDS does not copy -->
-    <!-- BeforeFileReplacements will be called after TDS has deleted Sitecore.* from its Output, but before it deploys -->
-    <ItemGroup>
-      <DeploySitecoreBinaries Include="$(SourceWebPhysicalPath)\Bin\Sitecore.Sharedsource.Web.UI.Sublayouts.dll;" />
-    </ItemGroup>
-    <Copy SourceFiles="@(DeploySitecoreBinaries)" DestinationFiles="@(DeploySitecoreBinaries->'$(_OutputPath)bin\%(RecursiveDir)%(FileName)%(Extension)')" />
-  </Target>
 </Project>

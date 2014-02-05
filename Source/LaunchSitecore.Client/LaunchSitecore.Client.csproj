@@ -97,10 +97,6 @@
       <HintPath>..\..\Installers\Sitecore\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Sharedsource.Web.UI.Sublayouts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Installers\Sitecore\Sitecore.Sharedsource.Web.UI.Sublayouts.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
