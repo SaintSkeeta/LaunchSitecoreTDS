@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {52C1814B-14AB-44CB-AA21-F7A0FFA011BD}
+database: master
+path: /sitecore/system/Settings/Rules/Page Events/Tags/LaunchSitecore
+parent: {B1505363-D2A6-4398-9640-481358F91BEF}
+name: LaunchSitecore
+master: {00000000-0000-0000-0000-000000000000}
+template: {854BA861-63EA-4A0C-8C7B-541E9A7EC4C1}
+templatekey: Tags Definition
+
+----field----
+field: {42F77151-098F-496A-94CF-590B7EDEEABE}
+name: Tags
+key: tags
+content-length: 38
+
+{21A8C81E-2CAB-42B6-8A55-4D11682702CA}
+----version----
+language: en
+version: 1
+revision: a937a144-135a-49c9-8651-a4570a6440cf
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140205T101104
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a937a144-135a-49c9-8651-a4570a6440cf
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140205T101109:635271918695224280
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
