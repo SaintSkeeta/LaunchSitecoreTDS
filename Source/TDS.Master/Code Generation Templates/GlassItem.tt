@@ -70,9 +70,9 @@ namespace <#= GetNamespace(DefaultNamespace, template)#>
         /// <summary>
 <# string fieldShortDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Short description"), true);
 if (!string.IsNullOrEmpty(fieldShortDescription)){ #><#= fieldShortDescription #><# } 
-#> <# string fieldLongDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Long description"), true);
+#><# string fieldLongDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Long description"), true);
 if (!string.IsNullOrEmpty(fieldLongDescription)){ #><#= fieldLongDescription #><# } 
-#>       /// <para>Field Type: <#=field.Type#></para>		
+#>        /// <para>Field Type: <#=field.Type#></para>		
         /// </summary>
         <#=GetGlassFieldType(field)#> <#= GetPropertyName(field) #>  {get; set;}
 <#}#><#}#> 	}
@@ -95,9 +95,9 @@ if (!template.Name.IsInterfaceWord()){ #>
         /// <summary>
 <# string fieldShortDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Short description"), true);
 if (!string.IsNullOrEmpty(fieldShortDescription)) {#><#= fieldShortDescription #><# }
-#> <#string fieldLongDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Long description"), true);
+#><#string fieldLongDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Long description"), true);
 if (!string.IsNullOrEmpty(fieldLongDescription)){#><#= fieldLongDescription #><# }
-#>       /// <para>Field Type: <#=field.Type#></para>		
+#>        /// <para>Field Type: <#=field.Type#></para>		
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("<#=Tool#>", "<#=ToolVersion#>")]
 <# string glassFieldName = GetPropertyName(field);
@@ -106,8 +106,8 @@ if (String.Compare(glassFieldName, field.Name) == 0)
 else
 { #>        [SitecoreField("<#=field.Name#>")] <# } #>
         public virtual <#=GetGlassFieldType(field)#> <#= GetPropertyName(field) #>  {get; set;}
-<#}
-#><#}#>	}<#}#>
+<#}#><#}#>	}
+<#}#>
 }
 
 <#+

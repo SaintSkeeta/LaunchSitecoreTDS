@@ -112,6 +112,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 	public partial class Configuration_Folder  : GlassBase, IConfiguration_Folder 
 	{
 	}
+
 }
 
 
@@ -222,6 +223,7 @@ namespace LaunchContent.LaunchSitecore
         [SitecoreField] 
         public virtual string Title  {get; set;}
 	}
+
 }
 
 
@@ -307,6 +309,7 @@ namespace LaunchContent.LaunchSitecore
         [SitecoreField] 
         public virtual Image Icon  {get; set;}
 	}
+
 }
 
 
@@ -369,6 +372,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
         [SitecoreField("Top Level Item")] 
         public virtual Guid Top_Level_Item  {get; set;}
 	}
+
 }
 
 
@@ -431,6 +435,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
         [SitecoreField] 
         public virtual Image Icon  {get; set;}
 	}
+
 }
 
 
@@ -517,6 +522,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
         [SitecoreField] 
         public virtual string Title  {get; set;}
 	}
+
 }
 
 
@@ -723,6 +729,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
         [SitecoreField("Allow Online Registration")] 
         public virtual bool Allow_Online_Registration  {get; set;}
 	}
+
 }
 
 
@@ -808,6 +815,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
         [SitecoreField] 
         public virtual Image Icon  {get; set;}
 	}
+
 }
 
 
@@ -893,6 +901,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
         [SitecoreField] 
         public virtual Image Icon  {get; set;}
 	}
+
 }
 
 
@@ -978,6 +987,7 @@ namespace LaunchContent.LaunchSitecore
         [SitecoreField] 
         public virtual string Title  {get; set;}
 	}
+
 }
 
 
@@ -1063,6 +1073,7 @@ namespace LaunchContent.LaunchSitecore
         [SitecoreField] 
         public virtual Image Icon  {get; set;}
 	}
+
 }
 
 
@@ -1148,6 +1159,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
         [SitecoreField] 
         public virtual Image Icon  {get; set;}
 	}
+
 }
 
 
@@ -1246,6 +1258,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
         [SitecoreField("Version Title")] 
         public virtual string Version_Title  {get; set;}
 	}
+
 }
 
 
@@ -1360,6 +1373,7 @@ namespace LaunchContent.LaunchSitecore
         [SitecoreField] 
         public virtual Image Icon  {get; set;}
 	}
+
 }
 
 
@@ -1438,6 +1452,7 @@ namespace LaunchContent.LaunchSitecore
         [SitecoreField] 
         public virtual Image Icon  {get; set;}
 	}
+
 }
 
 
@@ -1543,6 +1558,7 @@ namespace LaunchContent.LaunchSitecore
         [SitecoreField] 
         public virtual Image Icon  {get; set;}
 	}
+
 }
 
 
@@ -1689,6 +1705,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
         [SitecoreField("Show Top Line")] 
         public virtual bool Show_Top_Line  {get; set;}
 	}
+
 }
 
 
@@ -1779,6 +1796,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
         [SitecoreField] 
         public virtual Image Icon  {get; set;}
 	}
+
 }
 
 
@@ -1857,6 +1875,7 @@ namespace LaunchContent.LaunchSitecore
         [SitecoreField] 
         public virtual Image Icon  {get; set;}
 	}
+
 }
 
 
@@ -1959,6 +1978,7 @@ namespace LaunchContent.LaunchSitecore
         [SitecoreField] 
         public virtual Image Icon  {get; set;}
 	}
+
 }
 
 
@@ -2044,6 +2064,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
         [SitecoreField] 
         public virtual Image Icon  {get; set;}
 	}
+
 }
 
 
@@ -2115,6 +2136,7 @@ namespace LaunchContent.LaunchSitecore
         [SitecoreField] 
         public virtual string Title  {get; set;}
 	}
+
 }
 
 
@@ -2193,5 +2215,6 @@ namespace LaunchContent.LaunchSitecore
         [SitecoreField] 
         public virtual Image Icon  {get; set;}
 	}
+
 }
 
