@@ -51,20 +51,21 @@ string Tool = "Team Development for Sitecore - GlassItem.tt";
 string ToolVersion = "1.0";
 #>
 
+<# string templateShortDescription = GetDescriptionAsComment(template.SitecoreFields.GetValue("__Short description"), false); #>
+<# string templateLongDescription = GetDescriptionAsComment(template.SitecoreFields.GetValue("__Long description"), false); #>
+
 namespace <#= GetNamespace(DefaultNamespace, template)#>
 {
  	/// <summary>
 	/// <#= template.Name.AsInterfaceName() #> Interface
-<# string templateShortDescription = GetDescriptionAsComment(template.SitecoreFields.GetValue("__Short description"), false);
-if (!string.IsNullOrEmpty(templateShortDescription)){ #><#= templateShortDescription #><# } 
-#> <# string templateLongDescription = GetDescriptionAsComment(template.SitecoreFields.GetValue("__Long description"), false);
-if (!string.IsNullOrEmpty(templateLongDescription)){ #><#= templateLongDescription #><# } 
-#>   /// <para>Path: <#= template.Path #></para>	
+<# if (!string.IsNullOrEmpty(templateShortDescription)){ #><#= templateShortDescription #><# } 
+#><# if (!string.IsNullOrEmpty(templateLongDescription)){ #><#= templateLongDescription #><# } 
+#>    /// <para>Path: <#= template.Path #></para>	
     /// <para>ID: <#= template.ID.ToString().ToUpper() #></para>	
     /// </summary>
     public interface <#= template.Name.AsInterfaceName() #> : IGlassBase <#=GetObjectInheritanceDefinition(DefaultNamespace, template, true, (string s) => s.AsInterfaceName())#>
     {
-<#foreach(SitecoreField field in GetFieldsForTemplate(template, false)){
+<# foreach(SitecoreField field in GetFieldsForTemplate(template, false)){
 #> <# if (IsCodeGenSupportedField(field)) { #>
         /// <summary>
 <# string fieldShortDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Short description"), true);
@@ -81,22 +82,22 @@ if (!string.IsNullOrEmpty(fieldLongDescription)){ #><#= fieldLongDescription #><
 if (!template.Name.IsInterfaceWord()){ #>	
 	/// <summary>
 	/// <#= template.Name.AsClassName() #>
-<#if (!string.IsNullOrEmpty(templateShortDescription)){#><#= templateShortDescription #> <#}
-#><#if (!string.IsNullOrEmpty(templateLongDescription)){#><#= templateLongDescription #> <#}
+<# if (!string.IsNullOrEmpty(templateShortDescription)){#><#= templateShortDescription #><# }
+#><# if (!string.IsNullOrEmpty(templateLongDescription)){#><#= templateLongDescription #><# }
 #>    /// <para>Path: <#= template.Path #></para>	
 	/// <para>ID: <#= template.ID.ToString().ToUpper() #></para>	
 	/// </summary>
 	[SitecoreType(TemplateId="<#=template.ID#>")]
 	public partial class <#= template.Name.AsClassName() #>  : GlassBase, <#=template.Name.AsInterfaceName()#> 
 	{
-<#foreach(SitecoreField field in GetFieldsForTemplate(template, true)){
-#> <#if (IsCodeGenSupportedField(field)) {#>
+<# foreach(SitecoreField field in GetFieldsForTemplate(template, true)){
+#> <# if (IsCodeGenSupportedField(field)) { #>
         /// <summary>
-<#string fieldShortDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Short description"), true);
-if (!string.IsNullOrEmpty(fieldShortDescription)) {#><#= fieldShortDescription #><#}
-#><#string fieldLongDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Long description"), true);
-if (!string.IsNullOrEmpty(fieldLongDescription)){#><#= fieldLongDescription #><#}
-#>        /// <para>Field Type: <#=field.Type#></para>		
+<# string fieldShortDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Short description"), true);
+if (!string.IsNullOrEmpty(fieldShortDescription)) {#><#= fieldShortDescription #><# }
+#> <#string fieldLongDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Long description"), true);
+if (!string.IsNullOrEmpty(fieldLongDescription)){#><#= fieldLongDescription #><# }
+#>       /// <para>Field Type: <#=field.Type#></para>		
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("<#=Tool#>", "<#=ToolVersion#>")]
 <# string glassFieldName = GetPropertyName(field);

@@ -88,6 +88,9 @@ namespace LaunchContent
 
 
 
+
+
+
 namespace LaunchContent.LaunchSitecore.Settings_Templates
 {
  	/// <summary>
@@ -110,6 +113,9 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 	{
 	}
 }
+
+
+
 
 
 
@@ -242,6 +248,9 @@ namespace LaunchContent.LaunchSitecore
 
 
 
+
+
+
 namespace LaunchContent.LaunchSitecore
 {
  	/// <summary>
@@ -299,6 +308,9 @@ namespace LaunchContent.LaunchSitecore
         public virtual Image Icon  {get; set;}
 	}
 }
+
+
+
 
 
 
@@ -383,6 +395,9 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 
 
 
+
+
+
 namespace LaunchContent.LaunchSitecore.Base_Templates
 {
  	/// <summary>
@@ -417,6 +432,9 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
         public virtual Image Icon  {get; set;}
 	}
 }
+
+
+
 
 
 
@@ -500,6 +518,9 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
         public virtual string Title  {get; set;}
 	}
 }
+
+
+
 
 
 
@@ -728,6 +749,9 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 
 
 
+
+
+
 namespace LaunchContent.LaunchSitecore.Site_Sections
 {
  	/// <summary>
@@ -785,6 +809,9 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
         public virtual Image Icon  {get; set;}
 	}
 }
+
+
+
 
 
 
@@ -892,6 +919,9 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 
 
 
+
+
+
 namespace LaunchContent.LaunchSitecore
 {
  	/// <summary>
@@ -949,6 +979,9 @@ namespace LaunchContent.LaunchSitecore
         public virtual string Title  {get; set;}
 	}
 }
+
+
+
 
 
 
@@ -1056,6 +1089,9 @@ namespace LaunchContent.LaunchSitecore
 
 
 
+
+
+
 namespace LaunchContent.LaunchSitecore.Site_Sections
 {
  	/// <summary>
@@ -1113,6 +1149,9 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
         public virtual Image Icon  {get; set;}
 	}
 }
+
+
+
 
 
 
@@ -1208,6 +1247,9 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
         public virtual string Version_Title  {get; set;}
 	}
 }
+
+
+
 
 
 
@@ -1344,6 +1386,9 @@ namespace LaunchContent.LaunchSitecore
 
 
 
+
+
+
 namespace LaunchContent.LaunchSitecore
 {
  	/// <summary>
@@ -1394,6 +1439,9 @@ namespace LaunchContent.LaunchSitecore
         public virtual Image Icon  {get; set;}
 	}
 }
+
+
+
 
 
 
@@ -1496,6 +1544,9 @@ namespace LaunchContent.LaunchSitecore
         public virtual Image Icon  {get; set;}
 	}
 }
+
+
+
 
 
 
@@ -1664,6 +1715,9 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 
 
 
+
+
+
 namespace LaunchContent.LaunchSitecore.Base_Templates
 {
  	/// <summary>
@@ -1751,6 +1805,9 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
 
 
 
+
+
+
 namespace LaunchContent.LaunchSitecore
 {
  	/// <summary>
@@ -1801,6 +1858,9 @@ namespace LaunchContent.LaunchSitecore
         public virtual Image Icon  {get; set;}
 	}
 }
+
+
+
 
 
 
@@ -1925,6 +1985,9 @@ namespace LaunchContent.LaunchSitecore
 
 
 
+
+
+
 namespace LaunchContent.LaunchSitecore.Site_Sections
 {
  	/// <summary>
@@ -2007,6 +2070,9 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 
 
 
+
+
+
 namespace LaunchContent.LaunchSitecore
 {
  	/// <summary>
@@ -2050,6 +2116,9 @@ namespace LaunchContent.LaunchSitecore
         public virtual string Title  {get; set;}
 	}
 }
+
+
+
 
 
 
