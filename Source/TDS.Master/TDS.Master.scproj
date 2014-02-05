@@ -5330,24 +5330,19 @@
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Obsolete.item">
-      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements.item">
+      <Icon>/~/icon/Applications/32x32/folder_green.png.aspx</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Obsolete\Common.item">
-      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Custom.item">
+      <Icon>/temp/IconCache/core2/32x32/flow_chart.png</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Obsolete\Common\Actions.item">
-      <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Custom\Enroll In Automation State.item">
+      <Icon>/temp/IconCache/Software/32x32/shape_rectangle.png</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Obsolete\Common\Actions\Enroll In Automation State.item">
-      <Icon>/~/icon/Software/32x32/shape_rectangle.png.aspx</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Validation Rules.item">

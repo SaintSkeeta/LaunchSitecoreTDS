@@ -2,8 +2,8 @@
 version: 1
 id: {5D21C994-E1F2-4A64-BD48-5A7357A7075C}
 database: master
-path: /sitecore/system/Settings/Rules/Definitions/Obsolete/Common/Actions/Enroll In Automation State
-parent: {5495ED07-AB27-4864-9ADF-5B1A831A7FB3}
+path: /sitecore/system/Settings/Rules/Definitions/Elements/Custom/Enroll In Automation State
+parent: {79DFCC52-A071-4411-AF49-C0BD6DCAAE77}
 name: Enroll In Automation State
 master: {00000000-0000-0000-0000-000000000000}
 template: {F90052A5-B4E6-4E6D-9812-1E1B88A6FCEA}
@@ -19,7 +19,7 @@ LaunchSitecore.Configuration.SiteUI.Analytics.EnrollInAutomationState,LaunchSite
 ----version----
 language: en
 version: 1
-revision: 59dadc57-afee-4bf4-a465-859999208972
+revision: 4425a33d-4b3b-4506-bf29-007e0dfb33b4
 
 ----field----
 field: {EEB36A3B-40D9-4AF5-862A-DE257B84DCA3}
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-59dadc57-afee-4bf4-a465-859999208972
+4425a33d-4b3b-4506-bf29-007e0dfb33b4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20131113T221857:635199779378247787
+20140205T091901:635271887415677596
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

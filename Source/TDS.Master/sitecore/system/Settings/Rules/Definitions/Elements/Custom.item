@@ -1,26 +1,33 @@
 ----item----
 version: 1
-id: {5495ED07-AB27-4864-9ADF-5B1A831A7FB3}
+id: {79DFCC52-A071-4411-AF49-C0BD6DCAAE77}
 database: master
-path: /sitecore/system/Settings/Rules/Definitions/Obsolete/Common/Actions
-parent: {07674D37-902B-4FE5-90AB-A586075A0FAD}
-name: Actions
-master: {00000000-0000-0000-0000-000000000000}
-template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
-templatekey: Folder
+path: /sitecore/system/Settings/Rules/Definitions/Elements/Custom
+parent: {E7CBEFE8-9112-4B95-A978-4E470D94C54A}
+name: Custom
+master: {9A72C539-DBF8-4DAD-96D3-A298FC04ADD6}
+template: {54DAE7CD-BFD8-4E69-9679-75F2AE9F9034}
+templatekey: Element Folder
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
 
 ----version----
 language: da
 version: 1
-revision: 99c9d835-f32d-4ba9-9558-83e91e3231dd
+revision: 14cb5bf7-699e-42ef-9b3d-51d5071326a9
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
 key: __display name
-content-length: 10
+content-length: 15
 
-Handlinger
+Brugerdefineret
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -34,7 +41,7 @@ name: __Created
 key: __created
 content-length: 34
 
-20140130T164415:635266970550775880
+20130926T185107:635158182671786546
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-99c9d835-f32d-4ba9-9558-83e91e3231dd
+14cb5bf7-699e-42ef-9b3d-51d5071326a9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140130T164415:635266970550775880
+20130926T185107:635158182671786546
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -66,15 +73,15 @@ sitecore\admin
 ----version----
 language: de-DE
 version: 1
-revision: 40d7fc32-7e2c-4d5f-b85f-a353a176d33c
+revision: ece80d64-1a68-44dc-83fe-d1bfff386beb
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
 key: __display name
-content-length: 8
+content-length: 16
 
-Aktionen
+Kundenspezifisch
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -88,7 +95,7 @@ name: __Created
 key: __created
 content-length: 34
 
-20140130T170757:635266984772283500
+20130926T191411:635158196514912471
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -102,14 +109,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-40d7fc32-7e2c-4d5f-b85f-a353a176d33c
+ece80d64-1a68-44dc-83fe-d1bfff386beb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140130T170757:635266984772283500
+20130926T191411:635158196514912471
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -120,7 +127,7 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: a5f9a42a-a5d3-45bf-904e-14e6f6ce3112
+revision: 210470ee-6143-49f0-9228-8ff24edda7b8
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -135,7 +142,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20080925T121458
+20130409T164200
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -149,14 +156,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a5f9a42a-a5d3-45bf-904e-14e6f6ce3112
+210470ee-6143-49f0-9228-8ff24edda7b8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20080925T121501:633579417015476000
+20130409T164300:635011225807740022
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -167,15 +174,15 @@ sitecore\admin
 ----version----
 language: ja-JP
 version: 1
-revision: f9134a28-065a-4236-94d4-becf42150383
+revision: 4d169bc8-c4a6-4410-b02a-587681a5462d
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
 key: __display name
-content-length: 5
+content-length: 4
 
-アクション
+カスタム
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -189,7 +196,7 @@ name: __Created
 key: __created
 content-length: 34
 
-20140130T172743:635266996639583570
+20130926T193421:635158208611136195
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -203,14 +210,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f9134a28-065a-4236-94d4-becf42150383
+4d169bc8-c4a6-4410-b02a-587681a5462d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140130T172743:635266996639583570
+20130926T193421:635158208611136195
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
