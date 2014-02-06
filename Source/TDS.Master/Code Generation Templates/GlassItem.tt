@@ -68,27 +68,29 @@ namespace <#= GetNamespace(DefaultNamespace, template)#>
 	[SitecoreType(TemplateId=<#= template.Name.AsInterfaceName() #>Constants.TemplateIdString)]
 	public partial interface <#= template.Name.AsInterfaceName() #> : IGlassBase <#=GetObjectInheritanceDefinition(DefaultNamespace, template, true, (string s) => s.AsInterfaceName())#>
 	{
-			<#foreach(SitecoreField field in GetFieldsForTemplate(template, false)){#>
-					/// <summary>
+<#			foreach(SitecoreField field in GetFieldsForTemplate(template, false)){
+#>					/// <summary>
 					/// The <#=field.Name#> field.
-<# string fieldShortDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Short description"), true);
-if (!string.IsNullOrEmpty(fieldShortDescription)){ #><#= fieldShortDescription #><# } 
-#><# string fieldLongDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Long description"), true);
-if (!string.IsNullOrEmpty(fieldLongDescription)){ #><#= fieldLongDescription #><# } 
-#>        /// <para>Field Type: <#=field.Type#></para>		
+<#		string fieldShortDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Short description"), true);
+					if (!string.IsNullOrEmpty(fieldShortDescription)){ 
+#>			<#= fieldShortDescription #><# } 
+#><#	string fieldLongDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Long description"), true);
+					if (!string.IsNullOrEmpty(fieldLongDescription)){ 
+#>			<#= fieldLongDescription #><# } 
+#>					/// <para>Field Type: <#=field.Type#></para>		
 					/// <para>Field ID: <#=field.ID.ToString()#></para>
 					/// <para>Custom Data: <#=field.Data#></para>
 					/// </summary>
 <# string glassFieldName = GetPropertyName(field);
 if (String.Compare(glassFieldName, field.Name) == 0)
-{ #>				[SitecoreField] 
+{#>					[SitecoreField] 
 <# }
 else
-{ #>				[SitecoreField("<#=field.Name#>")]
+{#>					[SitecoreField("<#=field.Name#>")]
 <# } 
-  #>				<#=GetGlassFieldType(field)#> <#= GetPropertyName(field) #>  {get; set;}
+ #>					<#=GetGlassFieldType(field)#> <#= GetPropertyName(field) #>  {get; set;}
 			
-			<#}#>
+<#			}#>
 	}
 
 
@@ -120,14 +122,15 @@ if (!template.Name.IsInterfaceWord()){ #>
 	[SitecoreType(TemplateId=<#= template.Name.AsInterfaceName() #>Constants.TemplateIdString)]
 	public partial class <#= template.Name.AsClassName() #>  : GlassBase, <#=template.Name.AsInterfaceName()#> 
 	{
-	   
-		<#foreach(SitecoreField field in GetFieldsForTemplate(template, true)){#>
-				/// <summary>
+<#			foreach(SitecoreField field in GetFieldsForTemplate(template, true)){
+#>				/// <summary>
 				/// The <#=field.Name#> field.
-<# string fieldShortDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Short description"), true);
-if (!string.IsNullOrEmpty(fieldShortDescription)) {#><#= fieldShortDescription #><# }
-#><#string fieldLongDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Long description"), true);
-if (!string.IsNullOrEmpty(fieldLongDescription)){#><#= fieldLongDescription #><# }
+<#		string fieldShortDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Short description"), true);
+				if (!string.IsNullOrEmpty(fieldShortDescription)) {
+#>		<#= fieldShortDescription #><# }
+#><#	string fieldLongDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Long description"), true);
+				if (!string.IsNullOrEmpty(fieldLongDescription)){
+#>		<#= fieldLongDescription #><# }
 #>				/// <para>Field Type: <#=field.Type#></para>		
 				/// <para>Field ID: <#=field.ID.ToString()#></para>
 				/// <para>Custom Data: <#=field.Data#></para>
@@ -135,15 +138,15 @@ if (!string.IsNullOrEmpty(fieldLongDescription)){#><#= fieldLongDescription #><#
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("<#=Tool#>", "<#=ToolVersion#>")]
 <# string glassFieldName = GetPropertyName(field);
 if (String.Compare(glassFieldName, field.Name) == 0)
-{ #>				[SitecoreField] 
+{#>				[SitecoreField] 
 <# }
 else
-{ #>				[SitecoreField("<#=field.Name#>")]
+{#>				[SitecoreField("<#=field.Name#>")]
 <# } #>
 				public virtual <#=GetGlassFieldType(field)#> <#= glassFieldName #>  {get; set;}
 
 					
-		<#}#>	
+<#		}#>	
 	}
 <#}#>
 }
