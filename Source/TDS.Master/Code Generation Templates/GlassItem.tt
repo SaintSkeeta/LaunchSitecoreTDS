@@ -51,19 +51,23 @@ string Tool = "Team Development for Sitecore - GlassItem.tt";
 string ToolVersion = "1.0";
 #>
 
-<# string templateShortDescription = GetDescriptionAsComment(template.SitecoreFields.GetValue("__Short description"), false); #>
-<# string templateLongDescription = GetDescriptionAsComment(template.SitecoreFields.GetValue("__Long description"), false); #>
+<# string templateShortDescription = template.SitecoreFields.GetValue("__Short description"); #>
+<# string templateLongDescription = template.SitecoreFields.GetValue("__Long description"); #>
 
 namespace <#= GetNamespace(DefaultNamespace, template)#>
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// <#= template.Name.AsInterfaceName() #> Interface
-<# if (!string.IsNullOrEmpty(templateShortDescription)){ #><#= templateShortDescription #><# } 
-#><# if (!string.IsNullOrEmpty(templateLongDescription)){ #><#= templateLongDescription #><# } 
-#>    /// <para>Path: <#= template.Path #></para>	
-    /// <para>ID: <#= template.ID.ToString().ToUpper() #></para>	
+<# if (!string.IsNullOrEmpty(templateShortDescription)){ 
+#>	/// <para><#= templateShortDescription #></para>
+<# } 
+#><# if (!string.IsNullOrEmpty(templateLongDescription)){ 
+#>	/// <para><#= templateLongDescription #></para>
+<# } 
+#>	/// <para>Path: <#= template.Path #></para>	
+	/// <para>ID: <#= template.ID.ToString().ToUpper() #></para>	
 	/// </summary>
 	[SitecoreType(TemplateId=<#= template.Name.AsInterfaceName() #>Constants.TemplateIdString)]
 	public partial interface <#= template.Name.AsInterfaceName() #> : IGlassBase <#=GetObjectInheritanceDefinition(DefaultNamespace, template, true, (string s) => s.AsInterfaceName())#>
@@ -71,12 +75,14 @@ namespace <#= GetNamespace(DefaultNamespace, template)#>
 <#			foreach(SitecoreField field in GetFieldsForTemplate(template, false)){
 #>					/// <summary>
 					/// The <#=field.Name#> field.
-<#		string fieldShortDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Short description"), true);
+<#				string fieldShortDescription = field.SitecoreFields.GetValue("__Short description");
 					if (!string.IsNullOrEmpty(fieldShortDescription)){ 
-#>			<#= fieldShortDescription #><# } 
-#><#	string fieldLongDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Long description"), true);
+#>					/// <para><#= fieldShortDescription #></para>
+<# } 
+#><#			string fieldLongDescription = field.SitecoreFields.GetValue("__Long description");
 					if (!string.IsNullOrEmpty(fieldLongDescription)){ 
-#>			<#= fieldLongDescription #><# } 
+#>					/// <para><#= fieldLongDescription #></para>
+<#					} 
 #>					/// <para>Field Type: <#=field.Type#></para>		
 					/// <para>Field ID: <#=field.ID.ToString()#></para>
 					/// <para>Custom Data: <#=field.Data#></para>
@@ -114,9 +120,13 @@ else
 if (!template.Name.IsInterfaceWord()){ #>	
 	/// <summary>
 	/// <#= template.Name.AsClassName() #>
-<# if (!string.IsNullOrEmpty(templateShortDescription)){#><#= templateShortDescription #><# }
-#><# if (!string.IsNullOrEmpty(templateLongDescription)){#><#= templateLongDescription #><# }
-#>    /// <para>Path: <#= template.Path #></para>
+<# if (!string.IsNullOrEmpty(templateShortDescription)){
+#>	/// <para><#= templateShortDescription #></para>
+<# }
+#><# if (!string.IsNullOrEmpty(templateLongDescription)){
+#>	/// <para><#= templateLongDescription #></para>
+<# }
+#>	/// <para>Path: <#= template.Path #></para>
 	/// <para>ID: <#= template.ID.ToString().ToUpper() #></para>	
 	/// </summary>
 	[SitecoreType(TemplateId=<#= template.Name.AsInterfaceName() #>Constants.TemplateIdString)]
@@ -125,12 +135,14 @@ if (!template.Name.IsInterfaceWord()){ #>
 <#			foreach(SitecoreField field in GetFieldsForTemplate(template, true)){
 #>				/// <summary>
 				/// The <#=field.Name#> field.
-<#		string fieldShortDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Short description"), true);
+<#				string fieldShortDescription = field.SitecoreFields.GetValue("__Short description");
 				if (!string.IsNullOrEmpty(fieldShortDescription)) {
-#>		<#= fieldShortDescription #><# }
-#><#	string fieldLongDescription = GetDescriptionAsComment(field.SitecoreFields.GetValue("__Long description"), true);
+#>				/// <para><#= fieldShortDescription #></para>
+<# }
+#><#			string fieldLongDescription = field.SitecoreFields.GetValue("__Long description");
 				if (!string.IsNullOrEmpty(fieldLongDescription)){
-#>		<#= fieldLongDescription #><# }
+#>				/// <para><#= fieldLongDescription #></para>
+<# }
 #>				/// <para>Field Type: <#=field.Type#></para>		
 				/// <para>Field ID: <#=field.ID.ToString()#></para>
 				/// <para>Custom Data: <#=field.Data#></para>

@@ -44,7 +44,7 @@ string fullNamespace = JoinNamespaces(DefaultNamespace, Model.BaseNamespace);
 namespace <#=fullNamespace #>
 {
 
-	public interface IGlassBase{
+	public partial interface IGlassBase{
 		
 		[SitecoreId]
 		Guid Id{ get; }
@@ -57,7 +57,7 @@ namespace <#=fullNamespace #>
 
 	}
 
-	public abstract class GlassBase : IGlassBase{
+	public abstract partial class GlassBase : IGlassBase{
 		
 		[SitecoreId]
 		public virtual Guid Id{ get; private set;}

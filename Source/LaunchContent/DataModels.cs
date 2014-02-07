@@ -41,7 +41,7 @@ using Sitecore.Data;
 namespace LaunchContent
 {
 
-	public interface IGlassBase{
+	public partial interface IGlassBase{
 		
 		[SitecoreId]
 		Guid Id{ get; }
@@ -54,7 +54,7 @@ namespace LaunchContent
 
 	}
 
-	public abstract class GlassBase : IGlassBase{
+	public abstract partial class GlassBase : IGlassBase{
 		
 		[SitecoreId]
 		public virtual Guid Id{ get; private set;}
@@ -80,10 +80,10 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// IConfiguration_Folder Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Configuration Folder</para>	
-    /// <para>ID: 045377D9-C7B7-4C51-A1F8-722502885239</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Configuration Folder</para>	
+	/// <para>ID: 045377D9-C7B7-4C51-A1F8-722502885239</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IConfiguration_FolderConstants.TemplateIdString)]
 	public partial interface IConfiguration_Folder : IGlassBase 
@@ -104,7 +104,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 	
 	/// <summary>
 	/// Configuration_Folder
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Configuration Folder</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Configuration Folder</para>
 	/// <para>ID: 045377D9-C7B7-4C51-A1F8-722502885239</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IConfiguration_FolderConstants.TemplateIdString)]
@@ -129,10 +129,10 @@ namespace LaunchContent.LaunchSitecore
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// IHome Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Home</para>	
-    /// <para>ID: 0ACD30D8-863E-4B1D-8612-719EEFC1DA4F</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Home</para>	
+	/// <para>ID: 0ACD30D8-863E-4B1D-8612-719EEFC1DA4F</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IHomeConstants.TemplateIdString)]
 	public partial interface IHome : IGlassBase 
@@ -218,7 +218,7 @@ namespace LaunchContent.LaunchSitecore
 	
 	/// <summary>
 	/// Home
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Home</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Home</para>
 	/// <para>ID: 0ACD30D8-863E-4B1D-8612-719EEFC1DA4F</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IHomeConstants.TemplateIdString)]
@@ -298,10 +298,10 @@ namespace LaunchContent.LaunchSitecore
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// IArticle_Group Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Article Group</para>	
-    /// <para>ID: 1B6A3702-5694-4FC4-8366-989ECDCD7F1B</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Article Group</para>	
+	/// <para>ID: 1B6A3702-5694-4FC4-8366-989ECDCD7F1B</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IArticle_GroupConstants.TemplateIdString)]
 	public partial interface IArticle_Group : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ISite_Section
@@ -342,7 +342,7 @@ namespace LaunchContent.LaunchSitecore
 	
 	/// <summary>
 	/// Article_Group
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Article Group</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Article Group</para>
 	/// <para>ID: 1B6A3702-5694-4FC4-8366-989ECDCD7F1B</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IArticle_GroupConstants.TemplateIdString)]
@@ -422,10 +422,10 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// IFooter_Links_Section Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Footer Links Section</para>	
-    /// <para>ID: 21E0102F-DDBC-4DA9-B9E6-32B78DD4B7A5</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Footer Links Section</para>	
+	/// <para>ID: 21E0102F-DDBC-4DA9-B9E6-32B78DD4B7A5</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IFooter_Links_SectionConstants.TemplateIdString)]
 	public partial interface IFooter_Links_Section : IGlassBase 
@@ -459,7 +459,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 	
 	/// <summary>
 	/// Footer_Links_Section
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Footer Links Section</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Footer Links Section</para>
 	/// <para>ID: 21E0102F-DDBC-4DA9-B9E6-32B78DD4B7A5</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IFooter_Links_SectionConstants.TemplateIdString)]
@@ -495,10 +495,10 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// IGeneral_Fields Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/General Fields</para>	
-    /// <para>ID: 2BC9E276-D594-4D97-9CF3-B229C52A6D1F</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/General Fields</para>	
+	/// <para>ID: 2BC9E276-D594-4D97-9CF3-B229C52A6D1F</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IGeneral_FieldsConstants.TemplateIdString)]
 	public partial interface IGeneral_Fields : IGlassBase 
@@ -532,7 +532,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
 	
 	/// <summary>
 	/// General_Fields
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/General Fields</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/General Fields</para>
 	/// <para>ID: 2BC9E276-D594-4D97-9CF3-B229C52A6D1F</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IGeneral_FieldsConstants.TemplateIdString)]
@@ -568,10 +568,10 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// ITitle_Abstract_And_Text Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/Title Abstract and Text</para>	
-    /// <para>ID: 2BDC8AF6-C00E-44A9-A644-4946A252A02E</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/Title Abstract and Text</para>	
+	/// <para>ID: 2BDC8AF6-C00E-44A9-A644-4946A252A02E</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=ITitle_Abstract_And_TextConstants.TemplateIdString)]
 	public partial interface ITitle_Abstract_And_Text : IGlassBase 
@@ -631,7 +631,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
 	
 	/// <summary>
 	/// Title_Abstract_And_Text
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/Title Abstract and Text</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/Title Abstract and Text</para>
 	/// <para>ID: 2BDC8AF6-C00E-44A9-A644-4946A252A02E</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=ITitle_Abstract_And_TextConstants.TemplateIdString)]
@@ -689,10 +689,10 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// ISite_Settings Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Site Settings</para>	
-    /// <para>ID: 41E5285E-F5B2-4075-95CE-D3A993881C81</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Site Settings</para>	
+	/// <para>ID: 41E5285E-F5B2-4075-95CE-D3A993881C81</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=ISite_SettingsConstants.TemplateIdString)]
 	public partial interface ISite_Settings : IGlassBase 
@@ -882,7 +882,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 	
 	/// <summary>
 	/// Site_Settings
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Site Settings</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Site Settings</para>
 	/// <para>ID: 41E5285E-F5B2-4075-95CE-D3A993881C81</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=ISite_SettingsConstants.TemplateIdString)]
@@ -1050,10 +1050,10 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// IArticles_Section Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Articles Section</para>	
-    /// <para>ID: 53303AA5-8E78-4263-A476-C1E7ED791FDE</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Articles Section</para>	
+	/// <para>ID: 53303AA5-8E78-4263-A476-C1E7ED791FDE</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IArticles_SectionConstants.TemplateIdString)]
 	public partial interface IArticles_Section : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ISite_Section
@@ -1094,7 +1094,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 	
 	/// <summary>
 	/// Articles_Section
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Articles Section</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Articles Section</para>
 	/// <para>ID: 53303AA5-8E78-4263-A476-C1E7ED791FDE</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IArticles_SectionConstants.TemplateIdString)]
@@ -1174,10 +1174,10 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// ITeam_Section Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Team Section</para>	
-    /// <para>ID: 6E005E97-5435-4806-98E5-CA454B8218D1</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Team Section</para>	
+	/// <para>ID: 6E005E97-5435-4806-98E5-CA454B8218D1</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=ITeam_SectionConstants.TemplateIdString)]
 	public partial interface ITeam_Section : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ISite_Section
@@ -1218,7 +1218,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 	
 	/// <summary>
 	/// Team_Section
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Team Section</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Team Section</para>
 	/// <para>ID: 6E005E97-5435-4806-98E5-CA454B8218D1</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=ITeam_SectionConstants.TemplateIdString)]
@@ -1298,10 +1298,10 @@ namespace LaunchContent.LaunchSitecore
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// IMicrosite_Home Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Microsite Home</para>	
-    /// <para>ID: 7139A8B6-68D9-471F-96E4-B87ED703C185</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Microsite Home</para>	
+	/// <para>ID: 7139A8B6-68D9-471F-96E4-B87ED703C185</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IMicrosite_HomeConstants.TemplateIdString)]
 	public partial interface IMicrosite_Home : IGlassBase , global::LaunchContent.LaunchSitecore.IHome
@@ -1342,7 +1342,7 @@ namespace LaunchContent.LaunchSitecore
 	
 	/// <summary>
 	/// Microsite_Home
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Microsite Home</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Microsite Home</para>
 	/// <para>ID: 7139A8B6-68D9-471F-96E4-B87ED703C185</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IMicrosite_HomeConstants.TemplateIdString)]
@@ -1422,10 +1422,10 @@ namespace LaunchContent.LaunchSitecore
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// IArticle_Folder Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Article Folder</para>	
-    /// <para>ID: 826DC4A0-BEB8-4774-8FA7-791F1EC584B4</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Article Folder</para>	
+	/// <para>ID: 826DC4A0-BEB8-4774-8FA7-791F1EC584B4</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IArticle_FolderConstants.TemplateIdString)]
 	public partial interface IArticle_Folder : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ISite_Section
@@ -1466,7 +1466,7 @@ namespace LaunchContent.LaunchSitecore
 	
 	/// <summary>
 	/// Article_Folder
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Article Folder</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Article Folder</para>
 	/// <para>ID: 826DC4A0-BEB8-4774-8FA7-791F1EC584B4</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IArticle_FolderConstants.TemplateIdString)]
@@ -1546,10 +1546,10 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// IJob_Function_Section Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Job Function Section</para>	
-    /// <para>ID: 86CD0756-7B65-4CD5-865B-036F9F84498F</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Job Function Section</para>	
+	/// <para>ID: 86CD0756-7B65-4CD5-865B-036F9F84498F</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IJob_Function_SectionConstants.TemplateIdString)]
 	public partial interface IJob_Function_Section : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ISite_Section
@@ -1590,7 +1590,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 	
 	/// <summary>
 	/// Job_Function_Section
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Job Function Section</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Job Function Section</para>
 	/// <para>ID: 86CD0756-7B65-4CD5-865B-036F9F84498F</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IJob_Function_SectionConstants.TemplateIdString)]
@@ -1670,10 +1670,10 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// IVersion_Information Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Version Information</para>	
-    /// <para>ID: 8901041F-21F5-4A5B-BE87-ABBEF0DBE41C</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Version Information</para>	
+	/// <para>ID: 8901041F-21F5-4A5B-BE87-ABBEF0DBE41C</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IVersion_InformationConstants.TemplateIdString)]
 	public partial interface IVersion_Information : IGlassBase 
@@ -1746,7 +1746,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 	
 	/// <summary>
 	/// Version_Information
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Version Information</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Version Information</para>
 	/// <para>ID: 8901041F-21F5-4A5B-BE87-ABBEF0DBE41C</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IVersion_InformationConstants.TemplateIdString)]
@@ -1815,10 +1815,10 @@ namespace LaunchContent.LaunchSitecore
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// ITeam_Member Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Team Member</para>	
-    /// <para>ID: 97963D48-BD06-46CA-8279-CD2BA3C7AA36</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Team Member</para>	
+	/// <para>ID: 97963D48-BD06-46CA-8279-CD2BA3C7AA36</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=ITeam_MemberConstants.TemplateIdString)]
 	public partial interface ITeam_Member : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ITitle_Abstract_And_Text, global::LaunchContent.LaunchSitecore.Base_Templates.IGeneral_Fields
@@ -1894,7 +1894,7 @@ namespace LaunchContent.LaunchSitecore
 	
 	/// <summary>
 	/// Team_Member
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Team Member</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Team Member</para>
 	/// <para>ID: 97963D48-BD06-46CA-8279-CD2BA3C7AA36</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=ITeam_MemberConstants.TemplateIdString)]
@@ -1996,10 +1996,10 @@ namespace LaunchContent.LaunchSitecore
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// IJob_Function Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Job Function</para>	
-    /// <para>ID: B65CCE04-BCCB-4A58-B988-753D523C99A7</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Job Function</para>	
+	/// <para>ID: B65CCE04-BCCB-4A58-B988-753D523C99A7</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IJob_FunctionConstants.TemplateIdString)]
 	public partial interface IJob_Function : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ITitle_Abstract_And_Text, global::LaunchContent.LaunchSitecore.Base_Templates.IGeneral_Fields
@@ -2036,7 +2036,7 @@ namespace LaunchContent.LaunchSitecore
 	
 	/// <summary>
 	/// Job_Function
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Job Function</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Job Function</para>
 	/// <para>ID: B65CCE04-BCCB-4A58-B988-753D523C99A7</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IJob_FunctionConstants.TemplateIdString)]
@@ -2105,10 +2105,10 @@ namespace LaunchContent.LaunchSitecore
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// ITerm Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Term</para>	
-    /// <para>ID: C6DD3CEF-22AF-4468-B3B0-82ABFCDE0F24</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Term</para>	
+	/// <para>ID: C6DD3CEF-22AF-4468-B3B0-82ABFCDE0F24</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=ITermConstants.TemplateIdString)]
 	public partial interface ITerm : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.IGeneral_Fields
@@ -2185,7 +2185,7 @@ namespace LaunchContent.LaunchSitecore
 	
 	/// <summary>
 	/// Term
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Term</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Term</para>
 	/// <para>ID: C6DD3CEF-22AF-4468-B3B0-82ABFCDE0F24</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=ITermConstants.TemplateIdString)]
@@ -2265,10 +2265,10 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// IPresentation_Settings Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Presentation Settings</para>	
-    /// <para>ID: C7294FF3-D0A5-4FD8-BD46-CD3A99EF6ED6</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Presentation Settings</para>	
+	/// <para>ID: C7294FF3-D0A5-4FD8-BD46-CD3A99EF6ED6</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IPresentation_SettingsConstants.TemplateIdString)]
 	public partial interface IPresentation_Settings : IGlassBase 
@@ -2393,7 +2393,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 	
 	/// <summary>
 	/// Presentation_Settings
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Presentation Settings</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Presentation Settings</para>
 	/// <para>ID: C7294FF3-D0A5-4FD8-BD46-CD3A99EF6ED6</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IPresentation_SettingsConstants.TemplateIdString)]
@@ -2506,10 +2506,10 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// ISite_Section Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/Site Section</para>	
-    /// <para>ID: D24C6488-4A2B-4DE4-B033-EF3072AEA6F3</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/Site Section</para>	
+	/// <para>ID: D24C6488-4A2B-4DE4-B033-EF3072AEA6F3</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=ISite_SectionConstants.TemplateIdString)]
 	public partial interface ISite_Section : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ITitle_Abstract_And_Text, global::LaunchContent.LaunchSitecore.Base_Templates.IGeneral_Fields
@@ -2559,7 +2559,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
 	
 	/// <summary>
 	/// Site_Section
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/Site Section</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/Site Section</para>
 	/// <para>ID: D24C6488-4A2B-4DE4-B033-EF3072AEA6F3</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=ISite_SectionConstants.TemplateIdString)]
@@ -2639,10 +2639,10 @@ namespace LaunchContent.LaunchSitecore
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// ISecurity_Page Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Security Page</para>	
-    /// <para>ID: D804DA09-73F3-4BDE-B9F7-86181AA7EFA8</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Security Page</para>	
+	/// <para>ID: D804DA09-73F3-4BDE-B9F7-86181AA7EFA8</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=ISecurity_PageConstants.TemplateIdString)]
 	public partial interface ISecurity_Page : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ITitle_Abstract_And_Text, global::LaunchContent.LaunchSitecore.Base_Templates.IGeneral_Fields
@@ -2679,7 +2679,7 @@ namespace LaunchContent.LaunchSitecore
 	
 	/// <summary>
 	/// Security_Page
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Security Page</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Security Page</para>
 	/// <para>ID: D804DA09-73F3-4BDE-B9F7-86181AA7EFA8</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=ISecurity_PageConstants.TemplateIdString)]
@@ -2748,10 +2748,10 @@ namespace LaunchContent.LaunchSitecore
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// IArticle Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Article</para>	
-    /// <para>ID: D9019E30-F954-46CC-AA70-3E928C40B5D0</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Article</para>	
+	/// <para>ID: D9019E30-F954-46CC-AA70-3E928C40B5D0</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IArticleConstants.TemplateIdString)]
 	public partial interface IArticle : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ITitle_Abstract_And_Text, global::LaunchContent.LaunchSitecore.Base_Templates.IGeneral_Fields
@@ -2814,7 +2814,7 @@ namespace LaunchContent.LaunchSitecore
 	
 	/// <summary>
 	/// Article
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Article</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Article</para>
 	/// <para>ID: D9019E30-F954-46CC-AA70-3E928C40B5D0</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IArticleConstants.TemplateIdString)]
@@ -2905,10 +2905,10 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// IGlossary_Section Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Glossary Section</para>	
-    /// <para>ID: E35C9D40-8D28-4944-AB30-18E2789E6BA7</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Glossary Section</para>	
+	/// <para>ID: E35C9D40-8D28-4944-AB30-18E2789E6BA7</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IGlossary_SectionConstants.TemplateIdString)]
 	public partial interface IGlossary_Section : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ISite_Section
@@ -2949,7 +2949,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 	
 	/// <summary>
 	/// Glossary_Section
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Glossary Section</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Glossary Section</para>
 	/// <para>ID: E35C9D40-8D28-4944-AB30-18E2789E6BA7</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IGlossary_SectionConstants.TemplateIdString)]
@@ -3029,10 +3029,10 @@ namespace LaunchContent.LaunchSitecore
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// IGeneral_Page Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/General Page</para>	
-    /// <para>ID: E6964C3E-D415-40C8-91D9-2BF90F6566E9</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/General Page</para>	
+	/// <para>ID: E6964C3E-D415-40C8-91D9-2BF90F6566E9</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IGeneral_PageConstants.TemplateIdString)]
 	public partial interface IGeneral_Page : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ITitle_Abstract_And_Text
@@ -3065,7 +3065,7 @@ namespace LaunchContent.LaunchSitecore
 	
 	/// <summary>
 	/// General_Page
-    /// <para>Path: /sitecore/templates/Launch Sitecore/General Page</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/General Page</para>
 	/// <para>ID: E6964C3E-D415-40C8-91D9-2BF90F6566E9</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IGeneral_PageConstants.TemplateIdString)]
@@ -3123,10 +3123,10 @@ namespace LaunchContent.LaunchSitecore
 {
 
 
- 	/// <summary>
+	/// <summary>
 	/// IMicrosite_Subpage Interface
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Microsite Subpage</para>	
-    /// <para>ID: F52F00E0-3F65-4C1A-9BF6-AF03CE94E599</para>	
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Microsite Subpage</para>	
+	/// <para>ID: F52F00E0-3F65-4C1A-9BF6-AF03CE94E599</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IMicrosite_SubpageConstants.TemplateIdString)]
 	public partial interface IMicrosite_Subpage : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ITitle_Abstract_And_Text, global::LaunchContent.LaunchSitecore.Base_Templates.IGeneral_Fields
@@ -3163,7 +3163,7 @@ namespace LaunchContent.LaunchSitecore
 	
 	/// <summary>
 	/// Microsite_Subpage
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Microsite Subpage</para>
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Microsite Subpage</para>
 	/// <para>ID: F52F00E0-3F65-4C1A-9BF6-AF03CE94E599</para>	
 	/// </summary>
 	[SitecoreType(TemplateId=IMicrosite_SubpageConstants.TemplateIdString)]

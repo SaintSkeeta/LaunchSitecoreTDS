@@ -9,35 +9,7 @@
 /// <param name="template">The template.</param>
 public static string GetFullyQualifiedName(string defaultNamespace, SitecoreItem item)
 {
-	return GetFullyQualifiedName(defaultNamespace, item, (string s) => s);
-}
-
-/// <summary>
-/// Takes the description and replaces the newline values as '/// <para>' so that the description can
-///	span multiple lines in the comment for a field.
-/// <param name="description">The raw text value of one of the description strings.</param>
-/// <param name="isFieldDescription">Determines the indentation on the comment. 4 spaces if false, 8 if true (to allow for class property indentation.)</param>
-public static string GetDescriptionAsComment(string description, bool isFieldDescription)
-{
-    if (String.IsNullOrEmpty(description))
-        return string.Empty;
-
-    string leadingWhitespace = "    ";
-    if (isFieldDescription)
-    {
-        leadingWhitespace += "    ";
-    }
-
-	string output = "";
-	var sentences = description.AsSentences();
-	foreach (string line in sentences)
-	{
-		if (!String.IsNullOrWhiteSpace(line))
-		{
-			output += leadingWhitespace + "/// <para>" + line + "</para>" + System.Environment.NewLine;
-		}
-	}
-	return output;
+	return GetFullyQualifiedName(defaultNamespace, item, HedgehogDevelopment.CodeGeneration.Extensions.StringExtensions.AsClassName);
 }
 
 /// <summary>
