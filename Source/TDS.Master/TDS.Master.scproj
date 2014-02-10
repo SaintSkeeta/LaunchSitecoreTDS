@@ -6460,24 +6460,24 @@
     <CodeGenTemplate Include="Code Generation Templates\ItemPaths.tt" />
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <Replacement Include="..\..\Website\favicon.ico">
+    <Replacement Include="..\..\Assets\favicon.ico">
       <TargetPath>.\favicon.ico</TargetPath>
       <IsFolder>False</IsFolder>
       <IsRelative>True</IsRelative>
     </Replacement>
-    <Replacement Include="..\..\Website\img\">
+    <Replacement Include="..\..\Assets\img\">
       <TargetPath>.\assets\img\</TargetPath>
       <IsFolder>True</IsFolder>
       <IsRelative>True</IsRelative>
     </Replacement>
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)' == 'Release' ">
-    <Replacement Include="..\..\Website\favicon.ico">
+    <Replacement Include="..\..\Assets\favicon.ico">
       <TargetPath>.\favicon.ico</TargetPath>
       <IsFolder>False</IsFolder>
       <IsRelative>True</IsRelative>
     </Replacement>
-    <Replacement Include="..\..\Website\img\">
+    <Replacement Include="..\..\Assets\img\">
       <TargetPath>.\assets\img\</TargetPath>
       <IsFolder>True</IsFolder>
       <IsRelative>True</IsRelative>
