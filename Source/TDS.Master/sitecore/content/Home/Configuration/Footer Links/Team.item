@@ -9,11 +9,6 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {21E0102F-DDBC-4DA9-B9E6-32B78DD4B7A5}
 templatekey: Footer Links Section
 
-----version----
-language: en
-version: 1
-revision: b00263c7-9957-4102-9f77-b0d1a62fef47
-
 ----field----
 field: {700B30D3-0809-4BA2-9532-A1D9637C2E24}
 name: Top Level Item
@@ -21,6 +16,18 @@ key: top level item
 content-length: 38
 
 {8DABE12D-4D1B-40B5-BF62-7D2424253A15}
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
+----version----
+language: en
+version: 1
+revision: c520c832-6efa-4178-8505-57eaf6448307
+
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b00263c7-9957-4102-9f77-b0d1a62fef47
+c520c832-6efa-4178-8505-57eaf6448307
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121001T214349:634847246292802337
+20130627T101559:635079249592704872
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

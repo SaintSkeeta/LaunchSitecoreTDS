@@ -1,0 +1,70 @@
+----item----
+version: 1
+id: {567F69F6-226B-4FB3-9273-9C35631ACA21}
+database: master
+path: /sitecore/system/Marketing Center/Profiles/Information Type/Pattern Cards/Detailed
+parent: {F662040D-5281-440A-8C99-48AF986681C2}
+name: Detailed
+master: {00000000-0000-0000-0000-000000000000}
+template: {4A6A7E36-2481-438F-A9BA-0453ECC638FA}
+templatekey: Pattern Card
+
+----field----
+field: {FE732790-2DDB-4657-A882-C2FCE1FBF0C9}
+name: Name
+key: name
+content-length: 8
+
+Detailed
+----field----
+field: {98535F26-6C9D-4FD7-A7E2-392C7CB82D65}
+name: Image
+key: image
+content-length: 179
+
+<image mediaid="{7475299D-3F41-40CC-8BDD-98747E3E8A81}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/p-s/search" src="~/media/7475299d3f4140cc8bdd98747e3e8a81.ashx" />
+----field----
+field: {6DA71AD3-5849-4482-9317-D21390E5A348}
+name: Pattern
+key: pattern
+content-length: 198
+
+<tracking>
+  <profile id="{478859DC-EBE0-40A7-BD24-75D588FD3E09}" name="Information Type">
+    <key name="Detailed" value="1" />
+    <key name="High Level" value="0" />
+  </profile>
+</tracking>
+----version----
+language: en
+version: 1
+revision: b89ca6a3-de07-4fdc-9a5c-b255a551a430
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131003T132006
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b89ca6a3-de07-4fdc-9a5c-b255a551a430
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131113T051545:635199165455419437
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

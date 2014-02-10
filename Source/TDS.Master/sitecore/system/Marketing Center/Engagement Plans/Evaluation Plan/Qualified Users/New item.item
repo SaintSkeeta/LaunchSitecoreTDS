@@ -1,0 +1,116 @@
+----item----
+version: 1
+id: {946337F1-C397-497D-87C3-F43F6DB886BE}
+database: master
+path: /sitecore/system/Marketing Center/Engagement Plans/Evaluation Plan/Qualified Users/New item
+parent: {9D41094F-ABFD-4807-B42C-036C10BE6606}
+name: New item
+master: {00000000-0000-0000-0000-000000000000}
+template: {0A43A0FE-7E0E-49EF-95D4-E3DE34F4F175}
+templatekey: Engagement Plan Condition
+
+----field----
+field: {E13DCD09-D9BB-43C9-8D7D-438C79D714CA}
+name: Evaluate
+key: evaluate
+content-length: 38
+
+{B81C1F4C-8B83-44D9-902F-448463DBCCBC}
+----field----
+field: {21F3482B-BB14-4555-BA5D-AF20D400D5B9}
+name: Rule
+key: rule
+content-length: 511
+
+<ruleset>
+  <rule uid="{E9DF2224-7BBA-45A9-BD6D-E5FF986A179E}">
+    <conditions>
+      <or uid="C4632027B90A47CBBF5E7E418ADC29A4">
+        <condition id="{78CD5498-8723-4645-B88B-12C9388ED92F}" uid="75EA599399B74E4092791ACC9C68ED1D" GoalId="{8D8C357B-909D-47F6-BFE9-20C2CD89853B}" />
+        <condition id="{4640D86A-9B01-4B04-9BEB-03E06E5AC722}" uid="477383D683174611BBC21CAB2F3F530A" operatorid="{814EF7D0-1639-44FD-AEEF-735B5AC14425}" value="30" />
+      </or>
+    </conditions>
+  </rule>
+</ruleset>
+----field----
+field: {D2368879-C784-4031-9B79-6A3BF3CB444E}
+name: Next state
+key: next state
+content-length: 36
+
+8da87d38-e83d-4d63-80da-f6e83f1e9810
+----field----
+field: {3F72BC07-DE92-483E-A724-D430769D9BA4}
+name: Designer ID
+key: designer id
+content-length: 36
+
+16adca47-991b-4c91-a96c-f43dab5fea29
+----field----
+field: {7642ED71-348B-4B88-8634-CC7B28949472}
+name: Origin ID
+key: origin id
+content-length: 36
+
+00000000-0000-0000-0000-000000000000
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 1
+
+0
+----version----
+language: en
+version: 1
+revision: 11791140-ab1d-461b-9dc9-45a505dd3ecc
+
+----field----
+field: {06F2D72A-1924-4B9A-BA1E-186CE4E57EFD}
+name: Description
+key: description
+content-length: 0
+
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 16
+
+Is User Engaged?
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20131003T143243:635164075639673099
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+11791140-ab1d-461b-9dc9-45a505dd3ecc
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131120T235514:635205885142712093
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

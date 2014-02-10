@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {26F2851C-0EB8-45B3-A349-929F19764E46}
+database: master
+path: /sitecore/layout/Sublayouts/LaunchSitecore/Controls/Single Item/Abstract Box
+parent: {2800D086-BA68-4335-B2CF-654DA7E94C49}
+name: Abstract Box
+master: {00000000-0000-0000-0000-000000000000}
+template: {0A98E368-CDB9-4E1E-927C-8E0C24A003FB}
+templatekey: Sublayout
+
+----field----
+field: {E42081B6-8A95-4A11-89CE-DF70ED502F57}
+name: Path
+key: path
+content-length: 62
+
+/layouts/LaunchSitecore/Controls/Single Item/Abstract Box.ascx
+----field----
+field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
+name: Datasource Location
+key: datasource location
+content-length: 17
+
+/sitecore/content
+----field----
+field: {E441ABE7-2CA3-4640-AE26-3789967925D7}
+name: Compatible Renderings
+key: compatible renderings
+content-length: 38
+
+{5974CB55-FC9E-437C-BF0C-03BC5756C62E}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 29
+
+Software/32x32/breakpoint.png
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 196
+
+<image mediapath="/Launch Sitecore/Page Editor Thumbnails/Controls/Single Item/Abstract Box" mediaid="{846F4A5E-A716-4D38-9DF4-4EE0D932C17A}" src="~/media/846f4a5ea7164d389df44ee0d932c17a.ashx" />
+----version----
+language: en
+version: 1
+revision: 9b566d13-5561-4cac-bb05-532be533be99
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130814T151924
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9b566d13-5561-4cac-bb05-532be533be99
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131118T073547:635203569474034838
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

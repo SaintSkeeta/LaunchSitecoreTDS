@@ -1,0 +1,177 @@
+----item----
+version: 1
+id: {473C5B07-2496-4519-A824-FB78EEECA47C}
+database: master
+path: /sitecore/content/Home/About-Launch-Sitecore/Building-the-Site/Creating-the-Site-Menu
+parent: {EC38EBB3-F2E8-493D-B0E6-B8C68C9AFB85}
+name: Creating-the-Site-Menu
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 528
+
+<tracking>
+  <profile id="{478859DC-EBE0-40A7-BD24-75D588FD3E09}" name="Information Type" presets="detailed|100||">
+    <key name="Detailed" value="1" />
+    <key name="High Level" value="0" />
+  </profile>
+  <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment" presets="developer|100||">
+    <key name="Analytics" value="1" />
+    <key name="Campaigns and Targeting" value="1" />
+    <key name="Content Management" value="4" />
+    <key name="Technology" value="5" />
+  </profile>
+</tracking>
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+200
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{1B6A3702-5694-4FC4-8366-989ECDCD7F1B}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: ca25b7f0-772f-488b-9011-9048339b8d42
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 22
+
+Creating the Site Menu
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 254
+
+<p>Sitecore makes building dynamic menus based on your content easy. You can easily query the content repository to determine the items to include. This along with a base data template for the menu fields can help you quickly complete these controls.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 2853
+
+<p>When you create a site in Sitecore, it is very common to use the content tree to derive the menu. This is the way Launch Sitecore is designed which results in our navigation matching our Information Architecture. If you want to use an alternate menu structure you can also use Sitecore. In fact, Launch Sitecore shows that approach in the footer menu. </p>
+<p>The top navigation uses the lists to render a standard menu. Below is an example of the menu from this site.</p>
+<p>
+<img alt="" src="~/media/d23fccc949994d049452407c77c3eb94.ashx" class="img-polaroid" style="width: 517px; height: 123px;" /></p>
+<p>First we need to look at the data template which we called Menu Item. All items that can are rendered as pages in this site are based on a template that inherits the Menu Item template. This provides the fields Menu Text as well as options to show this item and its children in the menu. To see how these look on an item, you can use the Content Editor or the Menu button in the ribbon of the Page Editor.</p>
+<p>Now we need to take a look at the markup. You see it is simply a repeater. We are using a placeholder to make this a two level menu.</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li>&lt;ul class="nav"&gt;</li><li> &lt;asp:Repeater ID="rptDropDownMenu" runat="server" OnItemDataBound="rptDropDownMenu_ItemDataBound"&gt;</li><li> &lt;ItemTemplate&gt;</li><li> &lt;li id="MenuLi" runat="server"&gt;</li><li> &lt;asp:HyperLink ID="MenuLink" runat="server"&gt;</li><li> &lt;asp:Literal ID="MenuText" runat="server" /&gt;</li><li> &lt;/asp:HyperLink&gt;</li><li> &lt;asp:PlaceHolder ID="phSubMenu" runat="server" /&gt;</li><li> &lt;/li&gt;</li><li> &lt;/ItemTemplate&gt;</li><li> &lt;/asp:Repeater&gt;</li><li>&lt;/ul&gt;</li></ol></pre>
+<p>This is pretty standard code for a .Net site. The Sitecore code comes more into play when you see how we bind the repeater to the content. The codebehind file takes care of this.</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li>HomeItem = SiteConfiguration.GetHomeItem();</li><li>List&lt;item&gt; nodes = new List&lt;item&gt;();</li><li>if (HomeItem["Show Item In Menu"] == "1") nodes.Add(HomeItem);</li><li>foreach (Item i in HomeItem.Children)</li><li>{</li><li> if (SiteConfiguration.DoesItemExistInCurrentLanguage(i) &amp;&amp; i["Show Item In Menu"] == "1")</li><li> {</li><li> nodes.Add(i);</li><li> }</li><li>}</li><li></li><li>rptDropDownMenu.DataSource = nodes;</li><li>rptDropDownMenu.DataBind();</li></ol></pre>
+<p>This code uses the Children of the home node to get the child items of the home item and then binds the results to the repeater. It then uses the ItemDataBound event to load the child items.</p>
+<p>This high level overview along with the code examples included with Launch Sitecore should provide a nice start for your site navigation.</p>
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 187
+
+<image mediaid="{C33E433F-84F8-4654-9FA9-7AA84372FB59}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/g-o/menu-pull-down" src="~/media/c33e433f84f846549fa97aa84372fb59.ashx" />
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{EF5350C8-21BF-43A3-BCEF-71F29D91AEF0}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 22
+
+Creating the Site Menu
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 22
+
+Creating the Site Menu
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111027T105300
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\mic
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ca25b7f0-772f-488b-9011-9048339b8d42
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T150736:635229760564652818
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
+name: __Semantics
+key: __semantics
+content-length: 0
+
+
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

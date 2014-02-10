@@ -1,0 +1,182 @@
+----item----
+version: 1
+id: {0C3C2615-23EF-4E27-8D56-3D9521F6FFCA}
+database: master
+path: /sitecore/content/Home/About-Launch-Sitecore/Building-the-Site/Create-a-Custom-Validator
+parent: {EC38EBB3-F2E8-493D-B0E6-B8C68C9AFB85}
+name: Create-a-Custom-Validator
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 328
+
+<tracking>
+  <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment" presets="developer|100||">
+    <key name="Analytics" value="1" />
+    <key name="Campaigns and Targeting" value="1" />
+    <key name="Content Management" value="4" />
+    <key name="Technology" value="5" />
+  </profile>
+</tracking>
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{1B6A3702-5694-4FC4-8366-989ECDCD7F1B}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: b55aa8bd-5681-42b2-ad01-291cefb9c162
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 25
+
+Create a custom validator
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 307
+
+<p>This use case walks through the creation of your own validation routine. Sitecore is able to validate at the field level, the item level (XHTML of the page rendered for an item for instance), and the field type level (making sure all images across the site have ALT tags assigned before publishing). </p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 5003
+
+<p>This use case creates a new field validator to show you the mechanics of hooking the validator up. As you'll see, the routine itself on the .NET side is very simple in this example, but you will be able to incorporate any logic you need in your .NET class, allowing Sitecore to do the work of enforcing the validation routine at the appropriate time (you can decide if this is during workflow, before publication, at save time for the item, etc.).</p>
+<p>Sitecore includes a rich list of "validators" by default. These validators fit into 3 categories:</p>
+<ol>
+    <li><strong>Field Level. </strong>These validators are applied at the individual field level. An example might be a required field validator. Look for these in the content tree at: /sitecore/system/Settings/Validation Rules/Field Rules </li>
+    <li><strong>Item Level.</strong> These validators will apply to the entire item (as presented in its presentation details). Look for these in the content tree at: /sitecore/system/Settings/Validation Rules/Item Rules </li>
+    <li><strong>Field Type Level. </strong>These validators will apply to every field of a certain Sitecore field type (i.e., Image fields). Look for these in the content tree at: /sitecore/system/Settings/Validation Rules/Field Types </li>
+</ol>
+<p>For this article and example, we'll talk about the steps involved in creating a Field Level validator. As with many things in Sitecore, this exercise will start with an Item. Take some time to familiarize yourself with the items in the areas noted above--you'll see the types of validators described above and specific validation routines in each category. Take a look at the example Required field validator at: /sitecore/system/Settings/Validation Rules/Field Rules/Required. If you look at the fields that make up this item, you'll notice that the validator gives you the opportunity to call out the name of the assembly and class that is called for this validator.</p>
+<p>The screenshot below shows the Required validator and the field that calls out the class (Sitecore.Data.Validators.FieldValidators.RequiredFieldValidator) and Assembly (Sitecore.Kernel).</p>
+<p><img alt="" class="img-polaroid" src="~/media/996E740EFB20468A9BDC765A1FF79FF0.ashx" width="600" height="469" /></p>
+<p> </p>
+<p>Using Reflector, we can see the method that does the work for this validator. The class itself inherits from the StandardValidator class and includes an Evaluate method:</p>
+<pre class="prettyprint linenums"><ol class="linenums">
+<li>protected override ValidatorResult Evaluate()
+</li><li>{
+</li><li>if (!string.IsNullOrEmpty(base.ControlValidationValue))
+</li><li>{
+</li><li>return ValidatorResult.Valid;
+</li><li>}
+</li><li>base.Text = base.GetText("Field \"{0}\" must contain a value.", new string[] { base.GetFieldDisplayName() });
+</li><li>return base.GetFailedResult(ValidatorResult.CriticalError);
+</li><li>}
+</li></ol>
+</pre>
+<p>We now have the mechanics we need to create our own routine:</p>
+<ol>
+    <li>Create an item to represent the validator (as the Required validator does) </li>
+    <li>Inherit from the StandardValidator class and override the Evaluate method </li>
+</ol>
+<p>You'll notice that the ValidatorResult enum provides the ability to raise different levels of validation errors, and these will map to user interface behavior for the content author (prevent them from saving an item, simply showing them a yellow warning in the UI, etc.).</p>
+<p>An easy way get started is to copy an existing validator item and change the Class, Assembly signature to match a class in your project. However, an even more powerful way to create this class is to use Sitecore Rocks. From the Add New Item menu, choose Sitecore--&gt;UI--&gt;Validator. This will create the entire class, set up the stub to override the Evaluate method. Note that you will still need to create the Sitecore item that calls this class.</p>
+<p>Lastly, you have the ability to assign your new validator to a content field. Since this is a field level validator, it makes sense that you would decide that all fields of a certain data template would adhere to this new validation routine. As an example, you could decide that, for the Article data template in this project, for the Use case solution statement field, you're going to apply your new validator. If you expand the content tree to find that item, then expand the Article section to show the fields available in that section, you can click on the Use case solution statement field. Scroll down on the right until you see the validation options (ignore the validation text field as this is a legacy field). Your options will appear as the fields shown below:</p>
+<p><img class="img-polaroid" alt="validationlist" src="~/media/9DA433C526E74BA6A1CA9492F34E10D8.ashx" width="278" height="869" /></p>
+<p>These choices represent the various places in the UI where this validation will become apparent to a content author. In general, you should choose all of these options.</p>
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 177
+
+<image mediaid="{0F3939BE-1C00-4D8B-9D09-4A0588403D80}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/c-f/flag" src="~/media/0f3939be1c004d8b9d094a0588403d80.ashx" />
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{A410F42C-903A-4D73-AF5C-F13313EA1BF2}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 25
+
+Create a custom validator
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 25
+
+Create a Custom Validator
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20110713T085500
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b55aa8bd-5681-42b2-ad01-291cefb9c162
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T152113:635229768731370618
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
+name: __Semantics
+key: __semantics
+content-length: 0
+
+
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

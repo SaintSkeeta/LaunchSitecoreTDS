@@ -1,0 +1,142 @@
+----item----
+version: 1
+id: {6FD8C855-7AA9-43CD-A06A-F06870E53D7C}
+database: master
+path: /sitecore/content/Home/Team/Brandon-Royal
+parent: {8DABE12D-4D1B-40B5-BF62-7D2424253A15}
+name: Brandon-Royal
+master: {00000000-0000-0000-0000-000000000000}
+template: {97963D48-BD06-46CA-8279-CD2BA3C7AA36}
+templatekey: Team Member
+
+----field----
+field: {AD724ADB-4729-4C32-BF40-676579D587CF}
+name: Image
+key: image
+content-length: 178
+
+<image src="~/media/bc4f60c0c25740d9ac6a21ceed7030c0.ashx" mediaid="{BC4F60C0-C257-40D9-AC6A-21CEED7030C0}" mediapath="/Launch Sitecore/Site Images/Contributors/Brandon Royal" />
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{97963D48-BD06-46CA-8279-CD2BA3C7AA36}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 325
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{19B71B9E-FDA5-48C9-94E2-1C4090D47ADC}"><p:d /></r><r uid="{1EC6190F-15E5-4869-8898-175025B06163}" p:before="r[@uid='{B8E2C5E1-92C4-46A4-A175-7B64807ECC42}']" s:id="{69D9E158-6562-4612-8F62-D244B08A38C1}" s:ph="main-content" /></d></r>
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 3a292479-57a6-4094-b5b3-cf21a2be5fc3
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 13
+
+Brandon Royal
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 193
+
+<p>As a Solution Architect, Brandon strives to demonstrate how Sitecore technology can meet complex organizational needs around content management, digital marketing and system integration.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 133
+
+<p>Brandon's background includes .NET development, infrastructure architecture design and deployment and technical marketing.<br></p>
+----field----
+field: {F9B6FFEF-1DC9-4C0E-A815-C62822E1CBDB}
+name: Quote
+key: quote
+content-length: 85
+
+Develop to empower. Create to drive new, relevant experiences. Engage your customers.
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 179
+
+<image mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/t-z/user-4" mediaid="{8A48C884-E903-4C0E-BA4E-5282934404BE}" src="~/media/8a48c884e9034c0eba4e5282934404be.ashx" />
+----field----
+field: {D2E90283-29F2-4EAF-895E-E8DE8DAEEC69}
+name: Job Title
+key: job title
+content-length: 18
+
+Solution Architect
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 13
+
+Brandon Royal
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 13
+
+Brandon Royal
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111018T054800
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3a292479-57a6-4094-b5b3-cf21a2be5fc3
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131127T072809:635211340894140341
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

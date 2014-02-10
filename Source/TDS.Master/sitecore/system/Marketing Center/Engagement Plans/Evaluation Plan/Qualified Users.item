@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {9D41094F-ABFD-4807-B42C-036C10BE6606}
+database: master
+path: /sitecore/system/Marketing Center/Engagement Plans/Evaluation Plan/Qualified Users
+parent: {F46741E9-E9F6-4044-AE29-B762EF9A306B}
+name: Qualified Users
+master: {00000000-0000-0000-0000-000000000000}
+template: {8CE2707A-3742-4A89-933B-065E5BE02BC9}
+templatekey: Engagement Plan State
+
+----field----
+field: {575A25C8-5C6F-4530-A48F-F38E23E9DBD5}
+name: Page Event Subscription
+key: page event subscription
+content-length: 272
+
+{66722F52-2D13-4DCC-90FC-EA7117CF2298}|{8FFB183B-DA1A-4C74-8F3A-9729E9FCFF6A}|{8D8C357B-909D-47F6-BFE9-20C2CD89853B}|{E5815F1A-9114-46C8-8468-730AAB657634}|{9EC471A7-8CD9-40D0-A0FC-AAF0AE325344}|{0876D1BF-EDB8-40C6-9677-C4FCFA0BFFA2}|{7DAF6F40-87EA-4594-B977-4994E5B439D3}
+----field----
+field: {07CE07CB-078C-415E-8F92-96690BABD6C7}
+name: Time interval
+key: time interval
+content-length: 1
+
+0
+----field----
+field: {3F72BC07-DE92-483E-A724-D430769D9BA4}
+name: Designer ID
+key: designer id
+content-length: 36
+
+25ffb86b-b275-4e72-854c-705f99dc101b
+----field----
+field: {7642ED71-348B-4B88-8634-CC7B28949472}
+name: Origin ID
+key: origin id
+content-length: 36
+
+00000000-0000-0000-0000-000000000000
+----version----
+language: en
+version: 1
+revision: 930f2e57-ae3a-407a-bbc5-cc3ce511ce29
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 15
+
+Qualified Users
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20131003T143243:635164075638872817
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+930f2e57-ae3a-407a-bbc5-cc3ce511ce29
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131126T214333:635210990134984793
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

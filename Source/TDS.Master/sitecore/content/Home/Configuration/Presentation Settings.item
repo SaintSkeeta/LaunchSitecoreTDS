@@ -10,6 +10,20 @@ template: {C7294FF3-D0A5-4FD8-BD46-CD3A99EF6ED6}
 templatekey: Presentation Settings
 
 ----field----
+field: {80361058-AE78-4F98-859B-7C57196E9D6C}
+name: Logo Location
+key: logo location
+content-length: 14
+
+Navigation Bar
+----field----
+field: {0A16E874-57FE-42AA-A36F-898A3599C247}
+name: Show Top Line
+key: show top line
+content-length: 0
+
+
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -40,43 +54,50 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 7c409cc4-7c5b-4c8f-947e-6a9fbaae7a3a
+revision: 4b9e4cb9-6bf5-4267-a55e-80f0c12b959d
 
 ----field----
 field: {D5230C73-CECF-484A-8C04-CEAD0E9FB005}
-name: CSS Theme
-key: css theme
-content-length: 4
+name: Site Color
+key: site color
+content-length: 8
 
-Gray
+Sitecore
 ----field----
-field: {FE0FA952-C3ED-4966-9531-12F87CD023B6}
-name: Site Logo
-key: site logo
-content-length: 218
+field: {D7F0E179-3BC4-4EB3-B74E-8D4B5ADBDECA}
+name: Layout Style
+key: layout style
+content-length: 14
 
-<image src="~/media/34EB8E1A5002471385F8F33674826DC3.ashx" hspace="" mediapath="/Images/Logos/Monochrome Logo Gray Background" width="" vspace="" alt="Home" mediaid="{34EB8E1A-5002-4713-85F8-F33674826DC3}" height="" />
-----field----
-field: {FBA044E2-8845-4517-AD8C-CCFB98531CF0}
-name: Peel Back Image
-key: peel back image
-content-length: 152
-
-<image mediaid="{9D9BCF0D-B23B-40E3-90CA-5364E6521BDF}" mediapath="/Images/Logos/Monochrome Logo" src="~/media/9D9BCF0DB23B40E390CA5364E6521BDF.ashx" />
-----field----
-field: {12F1E9BC-E234-437D-A621-708799688FE5}
-name: Mobile Logo
-key: mobile logo
-content-length: 160
-
-<image mediaid="{609F1A6D-28F4-4EBF-B9D3-D67EE0465CC0}" mediapath="/Images/Logos/Monochrome Inverse Logo" src="~/media/609F1A6D28F44EBFB9D3D67EE0465CC0.ashx" />
+Boxed Attached
 ----field----
 field: {9A6B866C-6414-441D-9265-19FA6C4FCEAD}
 name: Main Menu Type
 key: main menu type
 content-length: 8
 
-Mega Nav
+Standard
+----field----
+field: {FE0FA952-C3ED-4966-9531-12F87CD023B6}
+name: Site Logo
+key: site logo
+content-length: 240
+
+<image mediapath="/Launch Sitecore/Site Images/Logos/Logo with Transparent Background" src="~/media/3b8400df486848039a1f1fbf9560b68a.ashx" height="" mediaid="{3B8400DF-4868-4803-9A1F-1FBF9560B68A}" hspace="" width="" alt="Home" vspace="" />
+----field----
+field: {51D36071-6CBD-49D9-BFCB-1193B4B8BE7F}
+name: Background Color
+key: background color
+content-length: 7
+
+#ececec
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 21
+
+Presentation Settings
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -104,302 +125,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7c409cc4-7c5b-4c8f-947e-6a9fbaae7a3a
+4b9e4cb9-6bf5-4267-a55e-80f0c12b959d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121130T143927:634898831678254317
-----field----
-field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
-name: __Updated by
-key: __updated by
-content-length: 14
-
-sitecore\admin
-----field----
-field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
-name: __Workflow state
-key: __workflow state
-content-length: 38
-
-{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
-----version----
-language: en
-version: 2
-revision: 7c409cc4-7c5b-4c8f-947e-6a9fbaae7a3a
-
-----field----
-field: {D5230C73-CECF-484A-8C04-CEAD0E9FB005}
-name: CSS Theme
-key: css theme
-content-length: 4
-
-Gray
-----field----
-field: {FE0FA952-C3ED-4966-9531-12F87CD023B6}
-name: Site Logo
-key: site logo
-content-length: 218
-
-<image src="~/media/34EB8E1A5002471385F8F33674826DC3.ashx" hspace="" mediapath="/Images/Logos/Monochrome Logo Gray Background" width="" vspace="" alt="Home" mediaid="{34EB8E1A-5002-4713-85F8-F33674826DC3}" height="" />
-----field----
-field: {FBA044E2-8845-4517-AD8C-CCFB98531CF0}
-name: Peel Back Image
-key: peel back image
-content-length: 152
-
-<image mediaid="{9D9BCF0D-B23B-40E3-90CA-5364E6521BDF}" mediapath="/Images/Logos/Monochrome Logo" src="~/media/9D9BCF0DB23B40E390CA5364E6521BDF.ashx" />
-----field----
-field: {12F1E9BC-E234-437D-A621-708799688FE5}
-name: Mobile Logo
-key: mobile logo
-content-length: 160
-
-<image mediaid="{609F1A6D-28F4-4EBF-B9D3-D67EE0465CC0}" mediapath="/Images/Logos/Monochrome Inverse Logo" src="~/media/609F1A6D28F44EBFB9D3D67EE0465CC0.ashx" />
-----field----
-field: {9A6B866C-6414-441D-9265-19FA6C4FCEAD}
-name: Main Menu Type
-key: main menu type
-content-length: 8
-
-Mega Nav
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
-----field----
-field: {25BED78C-4957-4165-998A-CA1B52F67497}
-name: __Created
-key: __created
-content-length: 15
-
-20120919T103500
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
-----field----
-field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
-name: __Revision
-key: __revision
-content-length: 36
-
-7c409cc4-7c5b-4c8f-947e-6a9fbaae7a3a
-----field----
-field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
-name: __Updated
-key: __updated
-content-length: 34
-
-20121130T143927:634898831678254317
-----field----
-field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
-name: __Updated by
-key: __updated by
-content-length: 14
-
-sitecore\admin
-----field----
-field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
-name: __Workflow state
-key: __workflow state
-content-length: 38
-
-{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
-----version----
-language: en
-version: 3
-revision: 7c409cc4-7c5b-4c8f-947e-6a9fbaae7a3a
-
-----field----
-field: {D5230C73-CECF-484A-8C04-CEAD0E9FB005}
-name: CSS Theme
-key: css theme
-content-length: 4
-
-Gray
-----field----
-field: {FE0FA952-C3ED-4966-9531-12F87CD023B6}
-name: Site Logo
-key: site logo
-content-length: 218
-
-<image src="~/media/34EB8E1A5002471385F8F33674826DC3.ashx" hspace="" mediapath="/Images/Logos/Monochrome Logo Gray Background" width="" vspace="" alt="Home" mediaid="{34EB8E1A-5002-4713-85F8-F33674826DC3}" height="" />
-----field----
-field: {FBA044E2-8845-4517-AD8C-CCFB98531CF0}
-name: Peel Back Image
-key: peel back image
-content-length: 152
-
-<image mediaid="{9D9BCF0D-B23B-40E3-90CA-5364E6521BDF}" mediapath="/Images/Logos/Monochrome Logo" src="~/media/9D9BCF0DB23B40E390CA5364E6521BDF.ashx" />
-----field----
-field: {12F1E9BC-E234-437D-A621-708799688FE5}
-name: Mobile Logo
-key: mobile logo
-content-length: 160
-
-<image mediaid="{609F1A6D-28F4-4EBF-B9D3-D67EE0465CC0}" mediapath="/Images/Logos/Monochrome Inverse Logo" src="~/media/609F1A6D28F44EBFB9D3D67EE0465CC0.ashx" />
-----field----
-field: {9A6B866C-6414-441D-9265-19FA6C4FCEAD}
-name: Main Menu Type
-key: main menu type
-content-length: 8
-
-Mega Nav
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
-----field----
-field: {25BED78C-4957-4165-998A-CA1B52F67497}
-name: __Created
-key: __created
-content-length: 15
-
-20120919T103500
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
-----field----
-field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
-name: __Revision
-key: __revision
-content-length: 36
-
-7c409cc4-7c5b-4c8f-947e-6a9fbaae7a3a
-----field----
-field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
-name: __Updated
-key: __updated
-content-length: 34
-
-20121130T143927:634898831678254317
-----field----
-field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
-name: __Updated by
-key: __updated by
-content-length: 14
-
-sitecore\admin
-----field----
-field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
-name: __Workflow state
-key: __workflow state
-content-length: 38
-
-{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
-----version----
-language: en
-version: 4
-revision: 7c409cc4-7c5b-4c8f-947e-6a9fbaae7a3a
-
-----field----
-field: {D5230C73-CECF-484A-8C04-CEAD0E9FB005}
-name: CSS Theme
-key: css theme
-content-length: 4
-
-Gray
-----field----
-field: {FE0FA952-C3ED-4966-9531-12F87CD023B6}
-name: Site Logo
-key: site logo
-content-length: 218
-
-<image src="~/media/34EB8E1A5002471385F8F33674826DC3.ashx" hspace="" mediapath="/Images/Logos/Monochrome Logo Gray Background" width="" vspace="" alt="Home" mediaid="{34EB8E1A-5002-4713-85F8-F33674826DC3}" height="" />
-----field----
-field: {FBA044E2-8845-4517-AD8C-CCFB98531CF0}
-name: Peel Back Image
-key: peel back image
-content-length: 152
-
-<image mediaid="{9D9BCF0D-B23B-40E3-90CA-5364E6521BDF}" mediapath="/Images/Logos/Monochrome Logo" src="~/media/9D9BCF0DB23B40E390CA5364E6521BDF.ashx" />
-----field----
-field: {12F1E9BC-E234-437D-A621-708799688FE5}
-name: Mobile Logo
-key: mobile logo
-content-length: 160
-
-<image mediaid="{609F1A6D-28F4-4EBF-B9D3-D67EE0465CC0}" mediapath="/Images/Logos/Monochrome Inverse Logo" src="~/media/609F1A6D28F44EBFB9D3D67EE0465CC0.ashx" />
-----field----
-field: {9A6B866C-6414-441D-9265-19FA6C4FCEAD}
-name: Main Menu Type
-key: main menu type
-content-length: 8
-
-Mega Nav
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
-----field----
-field: {25BED78C-4957-4165-998A-CA1B52F67497}
-name: __Created
-key: __created
-content-length: 15
-
-20120919T103500
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
-----field----
-field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
-name: __Revision
-key: __revision
-content-length: 36
-
-7c409cc4-7c5b-4c8f-947e-6a9fbaae7a3a
-----field----
-field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
-name: __Updated
-key: __updated
-content-length: 34
-
-20121130T143927:634898831678254317
+20131119T165325:635204768050057950
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

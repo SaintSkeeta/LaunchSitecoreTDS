@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {CEE47EBD-FA89-499B-B5ED-C5148FF0D6BE}
+database: master
+path: /sitecore/layout/Placeholder Settings/Launch Sitecore/Template Overrides/Home/home-main-content
+parent: {85E0B34E-3DBD-4991-882A-FAC8445712F3}
+name: home-main-content
+master: {00000000-0000-0000-0000-000000000000}
+template: {5C547D4E-7111-4995-95B0-6B561751BF2E}
+templatekey: Placeholder
+
+----field----
+field: {E391B526-D0C5-439D-803E-17512EAE6222}
+name: Allowed Controls
+key: allowed controls
+content-length: 272
+
+{04738244-28CA-49FF-A4D0-F52684DBE5A4}|{D159E2D7-176F-49B8-A737-33B655B18DC8}|{246D89E1-0699-41DD-949F-10478A184B99}|{01466E9C-6C50-4E5F-B3C2-F865AB582997}|{7AAA4D91-528B-4F1D-B9B3-40FA3D9E9D9A}|{9380FA1A-630F-4743-A5F3-35A2A7C47DB3}|{A4695E30-764E-484F-8726-B10E18C7E672}
+----version----
+language: en
+version: 1
+revision: 4fef50a9-616c-4167-b153-cfc66ddd54d2
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130903T164346
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4fef50a9-616c-4167-b153-cfc66ddd54d2
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131113T152905:635199533456829627
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

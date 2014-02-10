@@ -13,16 +13,34 @@ templatekey: Term
 field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
 name: __Tracking
 key: __tracking
-content-length: 243
+content-length: 528
 
 <tracking>
-  <profile name="Evaluator Type">
-    <key name="Content Manager" value="0" />
-    <key name="Developer" value="0" />
-    <key name="IT Professional" value="0" />
-    <key name="Marketer" value="0" />
+  <profile id="{478859DC-EBE0-40A7-BD24-75D588FD3E09}" name="Information Type" presets="detailed|100||">
+    <key name="Detailed" value="1" />
+    <key name="High Level" value="0" />
+  </profile>
+  <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment" presets="developer|100||">
+    <key name="Analytics" value="1" />
+    <key name="Campaigns and Targeting" value="1" />
+    <key name="Content Management" value="4" />
+    <key name="Technology" value="5" />
   </profile>
 </tracking>
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{C6DD3CEF-22AF-4468-B3B0-82ABFCDE0F24}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
 ----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
@@ -33,7 +51,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 6b7cd05b-d609-4331-8a09-c6518610d7d6
+revision: 50fdf63f-093a-4c0d-b017-96ae6c01bbbb
 
 ----field----
 field: {FBADE872-82BD-45AD-A2EC-DADC723249DA}
@@ -43,6 +61,28 @@ content-length: 6
 
 Device
 ----field----
+field: {B636170C-2681-469A-A642-A6549C12D1E6}
+name: Definition
+key: definition
+content-length: 215
+
+<p>A definition item to map requests to layouts and components on an item. A typical device is something like an mobile device (done via user-agent matching) or a print device (done through querystring matching)</p>
+----field----
+field: {AA7CE48D-746C-42C7-BD64-9A51F7F10B7C}
+name: Usage
+key: usage
+content-length: 907
+
+<p>Sitecore uses devices to properly route requests. The actual presentation layer loaded depends on the item and template standard values, which use devices as starting points for applying presentation details (<a href="~/link.aspx?_id=431DD81B22CD4994B6220E2773818AC1&amp;_z=z">layouts</a>, <a href="~/link.aspx?_id=3FD0E7AD3B814875A77FA0F67BE47035&amp;_z=z">sublayouts</a>, renderings).</p>
+<p>Although Sitecore typically uses user-agent "contains" matching (i.e. "iPhone"), or querystring parameters (i.e. "print=true" to load the correct presentation layer, you can also install the <a title="Mobile Device Detector - Shared Source page" href="http://trac.sitecore.net/MobileDeviceDetector" target="_blank">Mobile Device Detector</a> Shared Source module to allow WURFL capabilities-based matching.</p><p>Since Launch Sitecore uses responsive web design techniques, we do need an additional device.</p>
+----field----
+field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
+name: Image
+key: image
+content-length: 168
+
+<image mediaid="{945BEFCA-862E-471E-A6FE-3C68EBB99935}" mediapath="/Launch Sitecore/Site Images/Glossary/Devices" src="~/media/945befca862e471ea6fe3c68ebb99935.ashx" />
+----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
 key: icon
@@ -50,31 +90,16 @@ content-length: 131
 
 <image mediaid="{416DD175-5A26-4EE8-9362-75098DC71A2B}" mediapath="/Images/Icons/pda" src="~/media/Images/Icons/pda.ashx" ></image>
 ----field----
-field: {B636170C-2681-469A-A642-A6549C12D1E6}
-name: Definition
-key: definition
-content-length: 215
-
-<p>A definition item to map requests to layouts and components on an item. A typical device is something like an iPhone device (done via user-agent matching) or a print device (done through querystring matching)</p>
-----field----
-field: {AA7CE48D-746C-42C7-BD64-9A51F7F10B7C}
-name: Usage
-key: usage
-content-length: 807
-
-<p>Sitecore uses devices to properly route requests. The actual presentation layer loaded depends on the item and template standard values, which use Devices as starting points for applying presentation details (<a href="~/link.aspx?_id=431DD81B22CD4994B6220E2773818AC1&amp;_z=z">layouts</a>, <a href="~/link.aspx?_id=3FD0E7AD3B814875A77FA0F67BE47035&amp;_z=z">sublayouts</a>, renderings).</p>
-<p>Although Sitecore typically uses user-agent "contains" matching (i.e. "iPhone"), or querystring parameters (i.e. "print=true" to load the correct presentation layer, you can also install the <a title="Mobile Device Detector - Shared Source page" href="http://trac.sitecore.net/MobileDeviceDetector" target="_blank">Mobile Device Detector</a> Shared Source module to allow WURFL capabilities-based matching.</p>
-----field----
-field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
-name: Image
-key: image
-content-length: 138
-
-<image mediaid="{945BEFCA-862E-471E-A6FE-3C68EBB99935}" mediapath="/Images/Glossary/devices" src="~/media/Images/Glossary/devices.ashx" />
-----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
+content-length: 6
+
+Device
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
 content-length: 6
 
 Device
@@ -98,14 +123,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6b7cd05b-d609-4331-8a09-c6518610d7d6
+50fdf63f-093a-4c0d-b017-96ae6c01bbbb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121210T185826:634907627062915922
+20131218T145936:635229755760368696
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -113,6 +138,13 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
+name: __Semantics
+key: __semantics
+content-length: 38
+
+{96D23E84-12CF-4A1C-B8BB-A33D7E7FA16D}
 ----field----
 field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
 name: __Workflow state

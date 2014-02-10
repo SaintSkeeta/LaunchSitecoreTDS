@@ -1,0 +1,187 @@
+----item----
+version: 1
+id: {5EA97F1D-0685-4637-9D3D-D4F289BA7950}
+database: master
+path: /sitecore/content/Home/About-Launch-Sitecore/Building-the-Site/What-is-Presentation
+parent: {EC38EBB3-F2E8-493D-B0E6-B8C68C9AFB85}
+name: What-is-Presentation
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 551
+
+<tracking>
+  <profile id="{478859DC-EBE0-40A7-BD24-75D588FD3E09}" name="Information Type" presets="high level|100||">
+    <key name="Detailed" value="0" />
+    <key name="High Level" value="1" />
+  </profile>
+  <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment" presets="developer|50||content owner|50||">
+    <key name="Analytics" value="1" />
+    <key name="Campaigns and Targeting" value="2" />
+    <key name="Content Management" value="4.5" />
+    <key name="Technology" value="2.5" />
+  </profile>
+</tracking>
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+100
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{1B6A3702-5694-4FC4-8366-989ECDCD7F1B}
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 886cdb9a-2780-4376-b157-6b9bf2030801
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 21
+
+What is Presentation?
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 214
+
+<p>With a better understanding of content, presentation is much easier to explain. It is simply taking the content and showing in a meaningful way. It doesn't add to the content, but instead simply presents it.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 2240
+
+<p>Sitecore is built 100% on the .NET framework so anything you can do it .NET you can do in Sitecore. This includes custom .NET security providers or .NET data providers. You can also reuse ASP.NET controls from your existing solution or other code. </p>
+<p>Sitecore handles the content, workflow, languages, device views, URL building, personalization, etc. - but you have full control of the presentation layer.</p>
+<p>To understand how presentation works, a few definitions will help.</p>
+<ul>
+    <li>Device: A method within Sitecore for categorizing HTTP requests to the site (e.g. a web, print or mobile view) and displaying the correct layout and components for that device. </li>
+    <li>Layout: Defines the overall appearance of a page (written as a .aspx file) </li>
+    <li>Component: A generic term for a display component using either .Net or XSLT to display content.
+    <ul>
+        <li>Sublayout: Defines the appearance of an area of a page (written as an .ascx web control) </li>
+        <li>MVC Rendering:  We support View and Controller Renderings in MVC solutions.</li>
+        <li>XSLT Renderings: Transforms content to presentation using XSL Templates (.xslt file) </li>
+    </ul>
+    </li>
+    <li>Placeholder: A named location on a layout, sublayout, or view rendering. Placeholders are used to associate controls to a given location for a given item. This allows controls to be bound dynamically. </li>
+</ul>
+<h3>Dynamic Binding of Components</h3>
+<p>When loading a URL, Sitecore will determine the item associated with that URL, look at the presentation details (layouts and components placed into placeholders) to present the correct content with the presentation applied. The purpose of placeholders is twofold:</p>
+<ul>
+    <li>Minimize code duplication (i.e. you don't need to make a 2 column layout and a 3 column layout - you can just make one layout and drop a 2 or 3 column sublayout into that). </li>
+    <li>Give page authors and editors the flexibility to add or move components between various placeholders. In this case, I used my discretion to use a 2 column sublayout and move the right-hand components (Related Articles, etc.) to the left in order to give me room to show larger images.</li>
+</ul>
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 182
+
+<image mediaid="{F4ED2EED-CA67-4161-9F80-22FB4D1162D7}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/a-b/browser-2" src="~/media/f4ed2eedca6741619f8022fb4d1162d7.ashx" />
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{EF5350C8-21BF-43A3-BCEF-71F29D91AEF0}
+----field----
+field: {EFC4A071-5574-404A-8206-FB502FCA909B}
+name: Prerequisite Articles
+key: prerequisite articles
+content-length: 77
+
+{07DAF0C2-1992-4C0A-BB7F-92A700E97FF4}|{C4E0EF5C-1DDF-4684-8CAD-EED50971237F}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 21
+
+What is Presentation?
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 20
+
+What is Presentation
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111026T114900
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\chc
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+886cdb9a-2780-4376-b157-6b9bf2030801
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T150656:635229760162187003
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
+name: __Semantics
+key: __semantics
+content-length: 0
+
+
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

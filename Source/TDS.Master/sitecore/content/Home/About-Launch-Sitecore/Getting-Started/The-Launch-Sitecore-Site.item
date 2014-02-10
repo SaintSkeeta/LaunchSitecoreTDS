@@ -1,0 +1,142 @@
+----item----
+version: 1
+id: {46E75848-9D92-47E9-A5AA-40A64B689E4D}
+database: master
+path: /sitecore/content/Home/About-Launch-Sitecore/Getting-Started/The-Launch-Sitecore-Site
+parent: {A5CDBC19-FFEA-4801-81A6-2B87F318B275}
+name: The-Launch-Sitecore-Site
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 2
+
+50
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{1B6A3702-5694-4FC4-8366-989ECDCD7F1B}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 329
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{AE08C6E1-4172-49A5-A870-E0AE1B839A8F}" p:before="r[@uid='{10F779BE-924F-4CDD-8510-C69D92D0A8E7}']" s:ds="{63ABEE8A-4E38-4159-9193-D5F0A33AD666}" s:id="{7AD663B9-9FE3-4BAB-8787-022C66C62F87}" s:ph="/main-content/content-primary" /></d></r>
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 8054c602-b118-43d0-8482-76e5f4ebaf8f
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 24
+
+The Launch Sitecore Site
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 109
+
+<p>Launch Sitecore is a reference site to be used in order to accelerate learning on how to use Sitecore.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 536
+
+<p>Welcome to the Launch Sitecore site. It is designed to help you evaluate Sitecore and understand the key concepts about the Sitecore architecture.  Sitecore is a platform to deliver business-specific content management solutions. The Sitecore platform enables customers to implement solutions that meet their needs without compromise.  Launch Sitecore is a site to help understand what those building blocks are and how to use them. It can also be used as an accelerator for proof of concepts or as a test bed for add on modules.</p>
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 177
+
+<image mediaid="{76DFC588-5949-4933-BCC7-6C26CF83BEF9}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/g-o/home" src="~/media/76dfc58859494933bcc76c26cf83bef9.ashx" />
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 24
+
+The Launch Sitecore Site
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 24
+
+The Launch Sitecore Site
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111220T124200
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\chc
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+8054c602-b118-43d0-8482-76e5f4ebaf8f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131127T072902:635211341421107260
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
+name: __Semantics
+key: __semantics
+content-length: 0
+
+
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

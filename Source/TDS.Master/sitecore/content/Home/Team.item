@@ -10,6 +10,13 @@ template: {6E005E97-5435-4806-98E5-CA454B8218D1}
 templatekey: Team Section
 
 ----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 99
+
+<tracking><event id="{0876D1BF-EDB8-40C6-9677-C4FCFA0BFFA2}" name="Visited Team Page" /></tracking>
+----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
@@ -22,7 +29,21 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-400
+300
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 0
+
+
 ----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
@@ -40,7 +61,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: ee5d198d-ea66-4d5a-84f7-8fd18e10f03d
+revision: 2d60e7af-3219-485d-b835-7eb1ca2c9755
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -60,9 +81,16 @@ content-length: 45
 field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
 name: Body
 key: body
-content-length: 427
+content-length: 431
 
-<p>The Sitecore North America Sales Engineering team is currently comprised of seven solution architects with a array of technical and real world Sitecore experience. Understanding the needs around evaluating a CMS solution, this team has built Launch Sitecore to help you better understand how Sitecore technology can meet the content management and digital marketing needs of your organization, today and into the future.</p>
+<p>The Sitecore North America Sales Engineering team is comprised of sales engineers and solution architects with a array of technical and real world Sitecore experience. Understanding the needs around evaluating a CMS solution, this team has built Launch Sitecore to help you better understand how Sitecore technology can meet the content management and digital marketing needs of your organization, today and into the future.</p>
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 178
+
+<image mediaid="{6C6F6E3F-7DCA-4764-8F8A-014A961F3F57}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/t-z/users" src="~/media/6c6f6e3f7dca47648f8a014a961f3f57.ashx" />
 ----field----
 field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
 name: Image
@@ -74,6 +102,20 @@ content-length: 157
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
+content-length: 4
+
+Team
+----field----
+field: {D48AF62C-9C56-4E4C-BA29-94C3DABAD82E}
+name: Show Children In Menu
+key: show children in menu
+content-length: 0
+
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
 content-length: 4
 
 Team
@@ -104,14 +146,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ee5d198d-ea66-4d5a-84f7-8fd18e10f03d
+2d60e7af-3219-485d-b835-7eb1ca2c9755
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121210T185819:634907626993655922
+20131127T072817:635211340972340380
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

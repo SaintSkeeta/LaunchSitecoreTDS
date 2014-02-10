@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {0876D1BF-EDB8-40C6-9677-C4FCFA0BFFA2}
+database: master
+path: /sitecore/system/Marketing Center/Goals/Launch Sitecore/Visited Team Page
+parent: {FB3A8E92-270D-46AA-8DD6-A4188F903ADD}
+name: Visited Team Page
+master: {00000000-0000-0000-0000-000000000000}
+template: {475E9026-333F-432D-A4DC-52E03B75CB6B}
+templatekey: Goal
+
+----field----
+field: {AC6BA888-4213-43BD-B787-D8DA2B6B881F}
+name: Name
+key: name
+content-length: 17
+
+Visited Team Page
+----field----
+field: {33AE0E84-74A0-437F-AB2B-859DFA96F6C9}
+name: Points
+key: points
+content-length: 1
+
+2
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 23
+
+people/32x32/users2.png
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{689E2994-4656-4C58-9112-7826CB46EE69}
+----version----
+language: en
+version: 1
+revision: 6b3390d5-b5e7-4295-a5e5-8ea8505c25d8
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131119T120534
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6b3390d5-b5e7-4295-a5e5-8ea8505c25d8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131120T091013:635205354139995347
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{EDCBB550-BED3-490F-82B8-7B2F14CCD26E}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

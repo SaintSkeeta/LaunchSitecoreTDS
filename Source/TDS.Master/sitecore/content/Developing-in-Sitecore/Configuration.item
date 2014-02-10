@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {B6AC9CA4-762C-41F8-A4C4-B3C1C2EC942A}
+database: master
+path: /sitecore/content/Developing-in-Sitecore/Configuration
+parent: {C7E1C014-93C9-42D5-B4C8-A307AC30E929}
+name: Configuration
+master: {00000000-0000-0000-0000-000000000000}
+template: {045377D9-C7B7-4C51-A1F8-722502885239}
+templatekey: Configuration Folder
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+900
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 296b0cfa-d3c6-4208-b87c-accca9db690a
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131115T221541
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+296b0cfa-d3c6-4208-b87c-accca9db690a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131115T222523:635201511233146555
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

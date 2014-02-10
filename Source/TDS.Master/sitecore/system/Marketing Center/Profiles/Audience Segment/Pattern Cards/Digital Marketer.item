@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {9ADC88FB-A839-4275-82FF-CB64B6EBEB58}
+database: master
+path: /sitecore/system/Marketing Center/Profiles/Audience Segment/Pattern Cards/Digital Marketer
+parent: {E2A4D08F-861B-489D-816D-4F633873EF93}
+name: Digital Marketer
+master: {00000000-0000-0000-0000-000000000000}
+template: {4A6A7E36-2481-438F-A9BA-0453ECC638FA}
+templatekey: Pattern Card
+
+----field----
+field: {FE732790-2DDB-4657-A882-C2FCE1FBF0C9}
+name: Name
+key: name
+content-length: 16
+
+Digital Marketer
+----field----
+field: {98535F26-6C9D-4FD7-A7E2-392C7CB82D65}
+name: Image
+key: image
+content-length: 214
+
+<image mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/p-s/speech-bubble-right-4" mediaid="{0007E10C-B870-4605-80D8-3BE0A3E6C1EC}" src="~/media/0007e10cb870460580d83be0a3e6c1ec.ashx?20131218T1423282020" />
+----field----
+field: {6DA71AD3-5849-4482-9317-D21390E5A348}
+name: Pattern
+key: pattern
+content-length: 302
+
+<tracking>
+  <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment">
+    <key name="Analytics" value="5" />
+    <key name="Campaigns and Targeting" value="5" />
+    <key name="Content Management" value="2" />
+    <key name="Technology" value="0" />
+  </profile>
+</tracking>
+----version----
+language: en
+version: 1
+revision: 4f916af4-7ba3-4703-a7f0-f62599f25d17
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131218T142318
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4f916af4-7ba3-4703-a7f0-f62599f25d17
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T142356:635229734366260543
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

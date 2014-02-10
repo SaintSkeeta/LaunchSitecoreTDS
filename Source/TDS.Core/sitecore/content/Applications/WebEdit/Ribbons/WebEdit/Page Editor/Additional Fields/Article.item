@@ -20,9 +20,9 @@ applications/32x32/form_green.png
 field: {DBBF9EE3-C30E-4456-A81F-ED8C2E8DF91B}
 name: Click
 key: click
-content-length: 138
+content-length: 80
 
-launchsitecore:articlefieldeditorbutton(flds=Abstract|Use case solution statement|Prerequisite Articles|Specialties|Contributors|Keywords)
+launchsitecore:articlefieldeditorbutton(flds=Prerequisite Articles|Contributors)
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
@@ -169,7 +169,7 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: 25fae495-92b5-48f9-a94a-d771843c841a
+revision: cdc97ad5-1aff-4a64-ab5b-8adf683ea13b
 
 ----field----
 field: {4DF6DA21-E745-444C-956E-1D4A96AB8821}
@@ -212,14 +212,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-25fae495-92b5-48f9-a94a-d771843c841a
+cdc97ad5-1aff-4a64-ab5b-8adf683ea13b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20120207T213414:634642472544546984
+20131119T104536:635204547361047060
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

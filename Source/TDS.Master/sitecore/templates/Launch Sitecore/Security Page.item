@@ -13,9 +13,9 @@ templatekey: Template
 field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
 name: __Base template
 key: __base template
-content-length: 116
+content-length: 155
 
-{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{2BDC8AF6-C00E-44A9-A644-4946A252A02E}|{8C888E27-49AF-43DF-A028-629A2E06D0A9}
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{2BDC8AF6-C00E-44A9-A644-4946A252A02E}|{8C888E27-49AF-43DF-A028-629A2E06D0A9}|{2BC9E276-D594-4D97-9CF3-B229C52A6D1F}
 ----field----
 field: {F7D48A55-2158-4F02-9356-756654404F73}
 name: __Standard values
@@ -37,17 +37,10 @@ key: __sortorder
 content-length: 3
 
 100
-----field----
-field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
-name: __Renderings
-key: __renderings
-content-length: 701
-
-<r><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{DEAB823F-8E62-48FF-8732-093FF05B17CC}"><r uid="{07F394FD-BED2-434E-B0F6-F3D1A8D1A307}" id="{EF869026-16B7-4A67-A9A9-CD757D5CF7B2}" ph="/main-content/sidebar" /><r uid="{4BE3B71B-EAC9-4C60-85B0-E60324221691}" id="{80C37615-2F5E-418D-8B78-596248E3280E}" ph="/main-content/sidebar" /><r uid="{CEBAC2AD-8DED-4DDE-ACCA-D0E7F7277150}" id="{F07B72BD-6F9A-443B-A647-54BF545F9BAD}" ph="/main-content/content" /><r uid="{1267433D-8AD3-4456-82C4-63D3D775AAAB}" id="{E991D020-25BC-417F-943B-01A053A1BD03}" ph="/main-content/content-top" /><r uid="{9608E573-3DF5-4EC7-A276-5A35594D2059}" id="{25D2D2EF-8407-4CA4-8FFC-96C55B746B92}" ph="main-content" /></d></r>
 ----version----
 language: en
 version: 1
-revision: a9f5466a-7afb-4e15-b122-be8fba245e60
+revision: c5b96c3c-9635-435e-8cdb-d840cc222fc9
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -76,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a9f5466a-7afb-4e15-b122-be8fba245e60
+c5b96c3c-9635-435e-8cdb-d840cc222fc9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20120919T205820:634836851008260174
+20130822T145331:635127800111541591
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

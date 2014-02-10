@@ -17,6 +17,13 @@ content-length: 5
 
 Image
 ----field----
+field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
+name: Source
+key: source
+content-length: 51
+
+/sitecore/media library/Launch Sitecore/Site Images
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -26,7 +33,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 6b2077a6-f15d-4810-a2af-e246c7331be5
+revision: 9050af26-1ce3-4b5f-99ae-90b21c9023de
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6b2077a6-f15d-4810-a2af-e246c7331be5
+9050af26-1ce3-4b5f-99ae-90b21c9023de
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20120315T111813:634674070939967938
+20131119T102740:635204536607467320
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

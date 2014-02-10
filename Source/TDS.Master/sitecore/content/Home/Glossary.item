@@ -22,7 +22,14 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-450
+400
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
 ----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
@@ -40,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 438fdf78-d62d-47f8-ac2d-6f33fdae22ee
+revision: 227ebdd2-1373-49c7-befa-03ae651a0b5c
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -53,16 +60,23 @@ Glossary
 field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
 name: Abstract
 key: abstract
-content-length: 151
+content-length: 121
 
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<p>In working with Sitecore, there are new terms to learn.  Our glossary will quickly help you learn our terminology.</p>
 ----field----
 field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
 name: Body
 key: body
-content-length: 1169
+content-length: 170
 
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+<p>In working with a new platform, there are always new terms to learn.  Sitecore is no different in this, but our glossary will help you master these topics quickly.</p>
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 185
+
+<image mediaid="{FEED231A-CA95-4030-B771-1D3E98B82C62}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/a-b/book-lines-2" src="~/media/feed231aca954030b7711d3e98b82c62.ashx" />
 ----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
@@ -72,11 +86,18 @@ content-length: 8
 Glossary
 ----field----
 field: {D48AF62C-9C56-4E4C-BA29-94C3DABAD82E}
-name: Hide Children From Menu
-key: hide children from menu
-content-length: 1
+name: Show Children In Menu
+key: show children in menu
+content-length: 0
 
-1
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 8
+
+Glossary
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -97,14 +118,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-438fdf78-d62d-47f8-ac2d-6f33fdae22ee
+227ebdd2-1373-49c7-befa-03ae651a0b5c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121210T185824:634907627040005922
+20131127T072812:635211340927904565
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -112,6 +133,13 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
+name: __Semantics
+key: __semantics
+content-length: 38
+
+{459DBF7C-1A25-4EDF-86DA-32020B0AFC4B}
 ----field----
 field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
 name: __Workflow state

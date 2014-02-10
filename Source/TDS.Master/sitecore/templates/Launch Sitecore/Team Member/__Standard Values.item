@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {BB6263BF-7741-484A-B8B1-6399BFD6F3CA}
+database: master
+path: /sitecore/templates/Launch Sitecore/Team Member/__Standard Values
+parent: {97963D48-BD06-46CA-8279-CD2BA3C7AA36}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {97963D48-BD06-46CA-8279-CD2BA3C7AA36}
+templatekey: Team Member
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 1751
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{DEAB823F-8E62-48FF-8732-093FF05B17CC}"><p uid="{3AEE14FC-2304-4296-87E2-BB558FDE88F6}" key="content-primary" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Template Overrides/Contributor/contributor-content-primary" /><p uid="{299D9F0B-EED7-402D-84E6-8351699A8A54}" key="content-secondary" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Template Overrides/Contributor/contributor-content-secondary" /><p uid="{FDC31D55-9D72-4DC3-96D7-22CE081490AE}" key="content-tertiary" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Template Overrides/Contributor/contributor-content-tertiary" /><r id="{01998BAB-2A0D-4213-B7EB-5BCCDB47974B}" ph="main-content" uid="{19B71B9E-FDA5-48C9-94E2-1C4090D47ADC}" /><r id="{584F830F-AB95-4073-9971-626E305F3865}" ph="/main-content/content-primary" uid="{B8E2C5E1-92C4-46A4-A175-7B64807ECC42}" /><r ds="" id="{988796D9-5A35-4140-A05D-C94B3717C176}" par="" ph="/main-content/content-secondary" uid="{377674D0-615F-4B8A-A8F5-AEE38E82BF36}" /><r ds="" id="{11E37347-3343-476F-8F74-95B3B61D7022}" par="" ph="/main-content/content-tertiary" uid="{C3F40D17-DC2B-4098-85E4-AF4CC3920C64}" /><r ds="{9D181561-8B71-4577-BDFF-29CC95967FA5}" id="{6EDFF7B6-8582-4ECD-94D1-37CEADB999E9}" par="" ph="footer-left" uid="{A702B533-6CDD-429C-AB56-6D6BF7C0AB3A}" /><r id="{3350E555-010D-4BB4-976A-29442F461B00}" ph="footer-center" uid="{905C28E5-19AF-4B09-9BB0-C5695071E4E4}" /><r id="{EA4F1428-DF65-43D0-A8D6-E83BB540B80E}" ph="footer-right" uid="{760C6D63-B752-44AB-8ED4-2C88B18F8A66}" /><r id="{654459D1-D541-42B3-899C-A5470C656335}" ph="visit-details" uid="{0F9D3EF8-D50E-4658-A0AA-23E40F0CA7BB}" /></d></r>
+----field----
+field: {CA9B9F52-4FB0-4F87-A79F-24DEA62CDA65}
+name: __Default workflow
+key: __default workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: a7b6a388-6a4b-4233-ba9b-832722ebf56a
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 5
+
+$name
+----field----
+field: {D2E90283-29F2-4EAF-895E-E8DE8DAEEC69}
+name: Job Title
+key: job title
+content-length: 0
+
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 12
+
+sitecore\mic
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20110824T065111
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\mic
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a7b6a388-6a4b-4233-ba9b-832722ebf56a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T161559:635229801596161912
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

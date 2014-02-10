@@ -27,17 +27,17 @@ content-length: 1
 field: {71EBDEBD-9560-48C6-A66F-E17FC018232C}
 name: Rule
 key: rule
-content-length: 392
+content-length: 423
 
 <ruleset>
- <rule uid="{B098ACA9-365E-43EE-948F-2840F3EA7BC6}">
- <actions>
-  <action id="{5D21C994-E1F2-4A64-BD48-5A7357A7075C}" uid="0A594856667B40118BF709FF2E5F1B4E" stateid="{132CABD9-9F98-4F2D-8A0E-3799D88FCE21}" />
- </actions>
- <conditions>
-  <condition id="{EA0642FA-500B-4B2F-B264-765E771C516F}" uid="E45F19551E7541469D4741864AD88680" except="true" />
- </conditions>
- </rule>
+  <rule uid="{B098ACA9-365E-43EE-948F-2840F3EA7BC6}">
+    <actions>
+      <action id="{5D21C994-E1F2-4A64-BD48-5A7357A7075C}" uid="0A594856667B40118BF709FF2E5F1B4E" stateid="{C734DC56-D426-4AB9-8847-52D12DA463BA}" />
+    </actions>
+    <conditions>
+      <condition id="{EA0642FA-500B-4B2F-B264-765E771C516F}" uid="E45F19551E7541469D4741864AD88680" except="true" />
+    </conditions>
+  </rule>
 </ruleset>
 ----field----
 field: {89776A46-3319-43F2-9D80-4FEB8A8E069E}
@@ -70,7 +70,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 209de880-7ed0-406c-8125-5c6cf7baffae
+revision: c6579097-bdf9-43dc-8180-f3a3a321d540
 
 ----field----
 field: {797466F5-763B-4299-B6AD-E4192BF21222}
@@ -106,14 +106,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-209de880-7ed0-406c-8125-5c6cf7baffae
+c6579097-bdf9-43dc-8180-f3a3a321d540
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121219T142505:634915239057013977
+20131119T121118:635204598780921625
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

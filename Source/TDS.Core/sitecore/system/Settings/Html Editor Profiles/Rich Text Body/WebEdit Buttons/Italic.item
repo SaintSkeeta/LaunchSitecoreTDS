@@ -1,0 +1,262 @@
+----item----
+version: 1
+id: {7EC13367-3624-401E-A82D-4E3AB7960A88}
+database: core
+path: /sitecore/system/Settings/Html Editor Profiles/Rich Text Body/WebEdit Buttons/Italic
+parent: {3DD0AE21-06F4-4ED2-97E9-D58469B0056F}
+name: Italic
+master: {00000000-0000-0000-0000-000000000000}
+template: {02404208-46D4-49BF-988B-EB363A52A1C9}
+templatekey: WebEdit Button
+
+----field----
+field: {E8CC41C7-C304-4282-B782-E21CA32D324C}
+name: Icon
+key: icon
+content-length: 37
+
+ApplicationsV2/16x16/text_italics.png
+----field----
+field: {1BB289D6-44D7-4FCC-AF15-DB32B841F957}
+name: Click
+key: click
+content-length: 72
+
+chrome:field:execute({command:"Italic", userInterface:true, value:true})
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 37
+
+ApplicationsV2/16x16/text_italics.png
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 69
+
+ar|sitecore\Sitecore Minimal Page Editor|pd|-item:read|pe|-item:read|
+----version----
+language: da
+version: 1
+revision: 5e13b74f-1e58-4986-a366-e558e787763c
+
+----field----
+field: {371E0D96-4F00-4B80-AD14-6284E00493BA}
+name: Tooltip
+key: tooltip
+content-length: 6
+
+Kursiv
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20130810T201035:635117622356154435
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5e13b74f-1e58-4986-a366-e558e787763c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130810T201035:635117622356154435
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: 5d720fe1-1945-485f-8150-b4cd29062fab
+
+----field----
+field: {371E0D96-4F00-4B80-AD14-6284E00493BA}
+name: Tooltip
+key: tooltip
+content-length: 6
+
+Kursiv
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20130810T202430:635117630705527117
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5d720fe1-1945-485f-8150-b4cd29062fab
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130810T202430:635117630705527117
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: 1bbe8b93-6b9b-41a3-b713-3952db459edf
+
+----field----
+field: {371E0D96-4F00-4B80-AD14-6284E00493BA}
+name: Tooltip
+key: tooltip
+content-length: 6
+
+Italic
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20080121T152643
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1bbe8b93-6b9b-41a3-b713-3952db459edf
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20100330T115152:634055467124083781
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 8f3893db-7b68-4374-99cc-8717257ebb3d
+
+----field----
+field: {C523ABA8-D1A1-4DCB-AEEE-52635A4AB2AE}
+name: Header
+key: header
+content-length: 2
+
+斜体
+----field----
+field: {371E0D96-4F00-4B80-AD14-6284E00493BA}
+name: Tooltip
+key: tooltip
+content-length: 2
+
+斜体
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20130810T203841:635117639212866447
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+8f3893db-7b68-4374-99cc-8717257ebb3d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130810T203841:635117639213178873
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

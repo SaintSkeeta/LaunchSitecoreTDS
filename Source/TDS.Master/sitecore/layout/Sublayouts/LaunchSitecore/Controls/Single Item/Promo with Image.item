@@ -1,0 +1,100 @@
+----item----
+version: 1
+id: {2D741594-14AA-401C-8AA3-383E4369110F}
+database: master
+path: /sitecore/layout/Sublayouts/LaunchSitecore/Controls/Single Item/Promo with Image
+parent: {2800D086-BA68-4335-B2CF-654DA7E94C49}
+name: Promo with Image
+master: {00000000-0000-0000-0000-000000000000}
+template: {0A98E368-CDB9-4E1E-927C-8E0C24A003FB}
+templatekey: Sublayout
+
+----field----
+field: {E42081B6-8A95-4A11-89CE-DF70ED502F57}
+name: Path
+key: path
+content-length: 66
+
+/layouts/LaunchSitecore/Controls/Single Item/Promo with Image.ascx
+----field----
+field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
+name: Datasource Location
+key: datasource location
+content-length: 44
+
+/sitecore/content/Global/Content/Promo Spots
+----field----
+field: {1A7C85E5-DC0B-490D-9187-BB1DBCB4C72F}
+name: Datasource Template
+key: datasource template
+content-length: 55
+
+/sitecore/templates/Global/Content Templates/Promo Spot
+----field----
+field: {E441ABE7-2CA3-4640-AE26-3789967925D7}
+name: Compatible Renderings
+key: compatible renderings
+content-length: 38
+
+{9BB5310D-9A25-436C-989C-E530A13E2907}
+----field----
+field: {A2F5D9DF-8CBA-4A1D-99EB-51ACB94CB057}
+name: Page Editor Buttons
+key: page editor buttons
+content-length: 38
+
+{0F41D30E-1AE5-439A-BA4B-B9027F19EAA0}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 33
+
+business/32x32/phone_redirect.png
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 205
+
+<image mediapath="/Launch Sitecore/Page Editor Thumbnails/Controls/Single Item/Promo Spot with Image" mediaid="{8DAEB24F-0B7D-4559-9809-DC244CF903C4}" src="~/media/8daeb24f0b7d45599809dc244cf903c4.ashx" />
+----version----
+language: en
+version: 1
+revision: 59e435d1-1f35-473d-8326-567bb5077d5a
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130826T161316
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+59e435d1-1f35-473d-8326-567bb5077d5a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131009T181005:635169390056733680
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

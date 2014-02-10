@@ -13,13 +13,13 @@ templatekey: Site Section
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 237
+content-length: 145
 
-<?xml version="1.0" encoding="utf-16"?><r xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{DEAB823F-8E62-48FF-8732-093FF05B17CC}" /></r>
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{DEAB823F-8E62-48FF-8732-093FF05B17CC}" /></r>
 ----version----
 language: en
 version: 1
-revision: a9e1b23b-c4da-42d7-89c1-dc7d9d7566fc
+revision: 79b1fe8d-61fa-43b3-81a7-03bc07c2ede6
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a9e1b23b-c4da-42d7-89c1-dc7d9d7566fc
+79b1fe8d-61fa-43b3-81a7-03bc07c2ede6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20120919T210009:634836852096518085
+20130722T130828:635100953087881768
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,0 +1,113 @@
+----item----
+version: 1
+id: {47729EC5-14AA-4B1B-8BA9-EC0A3AEF2953}
+database: master
+path: /sitecore/system/Modules/Launch Sitecore/Settings/Item Naming
+parent: {D181069C-B7C1-4DD1-9D73-A4BB59A57FB8}
+name: Item Naming
+master: {00000000-0000-0000-0000-000000000000}
+template: {EDF11066-8052-4E4C-AFAD-AE3AB857F167}
+templatekey: Item Naming
+
+----field----
+field: {F7D48A55-2158-4F02-9356-756654404F73}
+name: __Standard values
+key: __standard values
+content-length: 38
+
+{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 38
+
+{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
+----field----
+field: {9DAFCA1D-D618-4616-86B8-A8ACD6B28A63}
+name: __Bucket Parent Reference
+key: __bucket parent reference
+content-length: 38
+
+{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
+----version----
+language: en
+version: 1
+revision: f3d364db-9ea3-439a-a273-9ef00e14e1f3
+
+----field----
+field: {1A7628B2-5B9A-4439-9B73-8E9922D90337}
+name: Replace Spaces with Dashes in Item Names
+key: replace spaces with dashes in item names
+content-length: 1
+
+1
+----field----
+field: {0D1122CD-8C3B-460C-AAB4-EEA9491ADA48}
+name: Store Pretty Name in Display Name
+key: store pretty name in display name
+content-length: 1
+
+1
+----field----
+field: {7B778DE0-112F-4414-8E7B-AB3DAE8A8E1D}
+name: Show Content Editor Warnings
+key: show content editor warnings
+content-length: 0
+
+
+----field----
+field: {3704BEF6-F3A4-4BCB-B803-44C27D73FDE8}
+name: Comments
+key: comments
+content-length: 804
+
+Out of the box, Sitecore allows spaces in item names. Since item names (or display names) are used to generate URLs you might want to not allow spaces or simply replace them with dashes in item names. These settings allow you to specify how this server will treat content items. These rules are only enforced on items with presentation settings. There is a full article in the Building Launch Sitecore section on this topic.
+
+To have dashes automatically added to the item name check the first box. 
+
+You can use the Display name to show the item name without dashes. This is up to you, however, if you use display name for the link manager to allow for translated urls do not check this option.
+
+If you change these check boxes, and save this page the site will be updated. This may take a moment.
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130912T135858
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f3d364db-9ea3-439a-a273-9ef00e14e1f3
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T155345:635229788257136484
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -19,7 +19,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 52607dc8-9bb2-4c3f-b358-2bf7c1f10c20
+revision: ae2658c5-b20b-45b6-8ea7-c8a060f62814
 
 ----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
@@ -28,6 +28,34 @@ key: menu title
 content-length: 5
 
 $name
+----field----
+field: {7E003143-26F2-4A28-B70A-08548286F6BA}
+name: Show Item In Menu
+key: show item in menu
+content-length: 1
+
+1
+----field----
+field: {D48AF62C-9C56-4E4C-BA29-94C3DABAD82E}
+name: Show Children In Menu
+key: show children in menu
+content-length: 1
+
+1
+----field----
+field: {FD6DAC05-FEF8-4581-A329-6CEA310E839B}
+name: Show Item In Secondary Menu
+key: show item in secondary menu
+content-length: 1
+
+1
+----field----
+field: {CE1BEB41-17E4-4934-9AE9-0C3C8D2B72FA}
+name: Show In Search Results
+key: show in search results
+content-length: 1
+
+1
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -55,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-52607dc8-9bb2-4c3f-b358-2bf7c1f10c20
+ae2658c5-b20b-45b6-8ea7-c8a060f62814
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20120713T193638:634778049981999266
+20131007T192823:635167709038144843
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

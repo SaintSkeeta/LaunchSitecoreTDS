@@ -17,6 +17,13 @@ content-length: 5
 
 Image
 ----field----
+field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
+name: Source
+key: source
+content-length: 60
+
+/sitecore/media library/Launch Sitecore/Site Images/Glossary
+----field----
 field: {337E20E1-999A-4EEA-85AD-B58A03AE75CC}
 name: Quick Action Bar
 key: quick action bar
@@ -54,7 +61,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 944fda9c-0699-4f0d-9a54-ae2b56b2bb41
+revision: 5cf99ac6-1104-48f2-8fad-29647f0a3123
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -83,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-944fda9c-0699-4f0d-9a54-ae2b56b2bb41
+5cf99ac6-1104-48f2-8fad-29647f0a3123
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20111217T005730:634596802509403193
+20131121T115112:635206314724270510
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -9,46 +9,53 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {C7294FF3-D0A5-4FD8-BD46-CD3A99EF6ED6}
 templatekey: Presentation Settings
 
+----field----
+field: {80361058-AE78-4F98-859B-7C57196E9D6C}
+name: Logo Location
+key: logo location
+content-length: 6
+
+Header
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
 ----version----
 language: en
 version: 1
-revision: 05701687-a283-4df3-bf7e-0ac2b27e1415
+revision: 1d4d5f5e-8a91-4fdd-8c2e-e1ac3946ff76
 
 ----field----
 field: {D5230C73-CECF-484A-8C04-CEAD0E9FB005}
-name: CSS Theme
-key: css theme
+name: Site Color
+key: site color
 content-length: 3
 
 Red
 ----field----
-field: {FE0FA952-C3ED-4966-9531-12F87CD023B6}
-name: Site Logo
-key: site logo
-content-length: 162
+field: {D7F0E179-3BC4-4EB3-B74E-8D4B5ADBDECA}
+name: Layout Style
+key: layout style
+content-length: 10
 
-<image mediaid="{6D82BDBF-DC2C-4481-8FAE-682939DF7E64}" mediapath="/Images/Logos/Logo with Gray Background" src="~/media/6D82BDBFDC2C44818FAE682939DF7E64.ashx" />
-----field----
-field: {FBA044E2-8845-4517-AD8C-CCFB98531CF0}
-name: Peel Back Image
-key: peel back image
-content-length: 152
-
-<image mediaid="{9D9BCF0D-B23B-40E3-90CA-5364E6521BDF}" mediapath="/Images/Logos/Monochrome Logo" src="~/media/9D9BCF0DB23B40E390CA5364E6521BDF.ashx" />
-----field----
-field: {12F1E9BC-E234-437D-A621-708799688FE5}
-name: Mobile Logo
-key: mobile logo
-content-length: 149
-
-<image mediaid="{51665B59-BBE7-48E0-AF75-CE5BCC716178}" mediapath="/Images/Logos/Inverse Logo" src="~/media/51665B59BBE748E0AF75CE5BCC716178.ashx" />
+Full Width
 ----field----
 field: {9A6B866C-6414-441D-9265-19FA6C4FCEAD}
 name: Main Menu Type
 key: main menu type
-content-length: 9
+content-length: 8
 
-Drop Down
+Standard
+----field----
+field: {FE0FA952-C3ED-4966-9531-12F87CD023B6}
+name: Site Logo
+key: site logo
+content-length: 190
+
+<image src="~/media/3b8400df486848039a1f1fbf9560b68a.ashx" mediaid="{3B8400DF-4868-4803-9A1F-1FBF9560B68A}" mediapath="/Launch Sitecore/Site Images/Logos/Logo with Transparent Background" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -76,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-05701687-a283-4df3-bf7e-0ac2b27e1415
+1d4d5f5e-8a91-4fdd-8c2e-e1ac3946ff76
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121017T155307:634860859871579527
+20131113T100841:635199341218471980
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

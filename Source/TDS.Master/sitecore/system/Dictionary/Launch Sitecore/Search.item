@@ -1,0 +1,44 @@
+----item----
+version: 1
+id: {B8D5D1E5-D04A-416B-B41A-02E83475F152}
+database: master
+path: /sitecore/system/Dictionary/Launch Sitecore/Search
+parent: {E20E8336-EAE3-45B8-860B-9F3AE05D4F5B}
+name: Search
+master: {00000000-0000-0000-0000-000000000000}
+template: {267D9AC7-5D85-4E9D-AF89-99AB296CC218}
+templatekey: Dictionary folder
+
+----version----
+language: en
+version: 1
+revision: 00a8e48f-a797-4a21-83f4-5f3f57925f93
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120705T144332
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+00a8e48f-a797-4a21-83f4-5f3f57925f93
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130822T182101:635127924616034557
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

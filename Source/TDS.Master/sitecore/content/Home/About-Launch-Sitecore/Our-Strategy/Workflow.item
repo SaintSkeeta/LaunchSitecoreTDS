@@ -1,0 +1,213 @@
+----item----
+version: 1
+id: {3153A0D2-EBBC-4853-8AF2-91B9CC9470F0}
+database: master
+path: /sitecore/content/Home/About-Launch-Sitecore/Our-Strategy/Workflow
+parent: {15D0FCF2-7C81-4218-A5A0-7605084D1CBC}
+name: Workflow
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 403
+
+<tracking>
+  <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment" presets="content owner|33.33333||developer|33.33333||network architect|33.33333||">
+    <key name="Analytics" value="2" />
+    <key name="Campaigns and Targeting" value="1.33333337" />
+    <key name="Content Management" value="3" />
+    <key name="Technology" value="3.33333325" />
+  </profile>
+</tracking>
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+250
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{1B6A3702-5694-4FC4-8366-989ECDCD7F1B}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 31003877-fe4c-4cc0-8f93-94c64c4687af
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 8
+
+Workflow
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 128
+
+<p>An introduction to the Sitecore workflow engine. This article walks through the Sample Workflow that ships with Sitecore.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 5986
+
+<p>One of the most important aspects to a proper CMS implementation is workflow. Too loose, and you have content chaos - too restrictive and you have publishing bottlenecks.  Fortunately Sitecore workflow is easy, flexible and powerful. It is easy to create/update workflows in the Sitecore content tree</p>
+<p>At its heart workflow is a series of states, tasks and (optionally) actions. </p>
+<p>There are really two parts to workflow;</p>
+<ul>
+    <li>Creating the series of states and tasks, as well as applying roles to those </li>
+    <li>Applying workflow to content items or item template defaults (i.e. all new items have this workflow applied automatically). </li>
+</ul>
+<p>Users receive notifications via the <a href="~/link.aspx?_id=DB697CD1AEEF4BDE94B0DAA648F5489A&amp;_z=z">Workbox</a> - which can notify within Sitecore, or users can grab RSS feeds to be notified externally.</p>
+<h3>Workflow States and Tasks</h3>
+<p>Let's take a look at the Sample Workflow in Sitecore</p>
+<p><img width="190" height="213" alt="Workflow Screenshot" src="~/media/F20F3F127DC8402BADC20A73C831A6C5.ashx"> </p>
+<p>The Sample Workflow consists of three states; Draft, Awaiting Approval and Approved.</p>
+<h4>Draft</h4>
+<p>The Draft state is the Initial State which is invoked when a user begins to edit some content. This happens in conjunction with locking the file.</p>
+<p>As you can see, there are two tasks off this draft state, Submit and __OnSave</p>
+<p>Submit is a Command, which simply moves the workflow to the next State.</p>
+<p>__OnSave is a System Command, which has some additional parameters before then initiating the Command Auto Submit action. In this case, you can look at the properties of Auto Submit Action and determine that this is enabled for the Sitecore Role <strong>sitecore\Sitecore Minimal Page Editor</strong>. </p>
+<p>So, in effect, all users get a workflow button for Submitting their work when they are done, <em>except</em> for those in the role sitecore\Sitecore Minimal Page Editor who have workflow kick off the moment they hit save. In both cases, the workflow moves to the next State which is Awaiting Approval. Note that if you select the drop-down for choosing the next state, you can actually select different workflows. Sitecore has the ability to jump from workflow to workflow - making it very easy to add, say, a Legal Approval step and not have to create a whole new set of workflows to optionally add this step - you can just call it from your existing ones.</p>
+<h4>Awaiting Approval</h4>
+<p>The Awaiting Approval state is pretty straightforward, users can see this task in their workbox and approve or reject the content. You will note that Approve has a Validation Action applied - it simply uses the validation rules already enabled on the item.</p>
+<p>Approve (assuming a successful validation) moves the content to the Approved state, Reject sends it back to Edit. If the item fails validation, a pop-up will inform the approver as to what failed.</p>
+<h4>Approved</h4>
+<p>When the item moves to the Approved State, it automatically calls the Auto Publish task. The Auto Publish task calls some external code with a parameter "deep=1" which tells the publish task to not only publish the item, but also any child items as well.</p>
+<p>This is useful because it means that you can configure workflow to only require approval on major items - not necessarily child items which may not be as important. For example, if you have a product item with child items such as accessories, you don't need to workflow each and every accessory - just the main item. This has the overall effect of reducing the approval load on your editorial staff.</p>
+<h3>Implementing workflow in Launch Sitecore.</h3>
+<p>Since most developers are evaluating Launch Sitecore as individuals, we use a simple workflow, however, you can add additional steps. If you are evaluating Sitecore by implementing this site on a shared environment and want to make the workflow more robust, you should go through the following steps, determining the following:</p>
+<ul>
+    <li>Which content to apply this workflow to. </li>
+    <li>Which users should action each step. </li>
+</ul>
+<h5>Applying workflow to content</h5>
+<p>This is done in the same way as many other Sitecore configuration - either applied to the item itself, or on the Standard Values of the templates that items are based on. Let's assume we want to enable workflow for just the Articles. Go to the template /sitecore/templates/Launch Sitecore/Article/ and look at the __Standard Values. Go to the workflow section of the Standard Values item (if you can't see it, you may have to enable View &gt; Standard Fields as this is a 'system field' and sometimes this view is hidden from users). Under Default Workflow, select Sample Workflow.</p>
+<h5>Applying Users to steps.</h5>
+<p>Obviously most workflow is structured such that a different set of users is approving the content.</p>
+<p>For each item under the Awaiting Approval state - modify the security permissions (also a 'system field') to assign a user/role different than sitecore\client authoring to action these states and tasks. </p>
+<p> </p>
+<h3>Advanced Topics</h3>
+<h5>Using Sitecore Rocks to create Custom Workflow actions</h5>
+<p>Sitecore makes it extremely easy to develop tasks with external functionality. If you have downloaded Sitecore Rocks, there is even a pre-built stub template for building an external workflow step.</p>
+<p>To include your compiled code in a Sitecore workflow, simply create a new action and reference the assembly and namespace/class of your code (i.e. LaunchSitecore.WorkflowAction1,LaunchSitecore - if you accepted all the defaults for your LaunchSitecore solution)</p>
+<h5>Additional Workflow customization on the Sitecore Shared Source network.</h5>
+<p>There are a number of workflow customizations such as escalations or using Velocity templates for email notifications available on the marketplace.</p>
+<ul>
+</ul>
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 181
+
+<image mediaid="{3D8E51B8-ACDD-4952-8060-EB1663C74BC4}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/t-z/transfer" src="~/media/3d8e51b8acdd49528060eb1663c74bc4.ashx" />
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{EF5350C8-21BF-43A3-BCEF-71F29D91AEF0}
+----field----
+field: {EFC4A071-5574-404A-8206-FB502FCA909B}
+name: Prerequisite Articles
+key: prerequisite articles
+content-length: 38
+
+{07DAF0C2-1992-4C0A-BB7F-92A700E97FF4}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 8
+
+Workflow
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 8
+
+Workflow
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120322T075900
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\mde
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+31003877-fe4c-4cc0-8f93-94c64c4687af
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T202408:635229950485767103
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
+name: __Semantics
+key: __semantics
+content-length: 38
+
+{96D23E84-12CF-4A1C-B8BB-A33D7E7FA16D}
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
