@@ -19,7 +19,7 @@ network/32x32/home.png
 ----version----
 language: en
 version: 1
-revision: 6990c84b-cc7a-4922-935e-6d5740228d64
+revision: 99ea6015-6a4d-4a2e-87d6-ca8400109056
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -48,18 +48,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6990c84b-cc7a-4922-935e-6d5740228d64
+99ea6015-6a4d-4a2e-87d6-ca8400109056
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20110824T065540:634497657408232497
+20130928T014042:635159292421230365
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 12
+content-length: 14
 
-sitecore\mic
+sitecore\admin

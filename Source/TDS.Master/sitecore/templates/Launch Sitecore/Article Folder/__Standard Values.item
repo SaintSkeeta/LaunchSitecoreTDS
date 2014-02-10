@@ -20,9 +20,9 @@ content-length: 77
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 1421
+content-length: 1344
 
-<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{DEAB823F-8E62-48FF-8732-093FF05B17CC}"><p uid="{47BE71C2-CAE2-4541-9E8A-00B9342727F9}" key="sidebar" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Article Folder/sidebar-article folder" /><p uid="{C5EC77BA-FF52-4274-B0FB-3AD23016EEB3}" key="content" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Article Folder/content-article folder" /><r id="{9EFB498C-BFED-4B8D-9A56-87D2AB5FB05C}" ph="main-content" uid="{B621797C-0732-4588-B352-45CDEB3462C7}" /><r id="{E991D020-25BC-417F-943B-01A053A1BD03}" ph="/main-content/content-top" uid="{F0AFB57F-3039-4569-9978-1B35457CF195}" /><r ds="" id="{F07B72BD-6F9A-443B-A647-54BF545F9BAD}" par="" ph="/main-content/content" uid="{CEBAC2AD-8DED-4DDE-ACCA-D0E7F7277150}" /><r id="{55758582-C6E1-409C-8473-E6D51370F3A7}" ph="/main-content/sidebar" uid="{07F394FD-BED2-434E-B0F6-F3D1A8D1A307}" /><r ds="" id="{3A04271E-995B-4BBC-A49F-BDAC4F3B3D6B}" par="" ph="/main-content/content" uid="{852564AE-77AE-4A22-887D-6CFAEFC474AD}" /></d><d id="{34DAEDE6-46A9-47FF-98EA-7EBA4B81A8C3}" l="{F5A53ADD-6A3A-4397-AE36-1D8BDDBEC803}"><r id="{D691D976-6B47-402B-AC20-528893A6B150}" ph="mobile-content-top" uid="{4B974F32-95D4-4A52-9C4A-5C351E881843}" /><r id="{F07B72BD-6F9A-443B-A647-54BF545F9BAD}" ph="mobile-content" uid="{910FB0C9-2051-440B-91EE-80EB74B25D74}" /></d></r>
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{DEAB823F-8E62-48FF-8732-093FF05B17CC}"><p uid="{C3802F84-E5A9-4063-8E2C-1D41F9DE193F}" key="content-primary" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Template Overrides/Article Folder/article-folder-content-primary" /><r id="{01998BAB-2A0D-4213-B7EB-5BCCDB47974B}" ph="main-content" uid="{3CFB635D-AE87-45FE-9665-502EEC040FDF}" /><r id="{988796D9-5A35-4140-A05D-C94B3717C176}" ph="/main-content/content-secondary" uid="{377674D0-615F-4B8A-A8F5-AEE38E82BF36}" /><r id="{D5E313F3-4203-49D7-B954-DB03B8E52392}" ph="/main-content/content-primary" uid="{B8E2C5E1-92C4-46A4-A175-7B64807ECC42}" /><r id="{7AD663B9-9FE3-4BAB-8787-022C66C62F87}" ph="/main-content/content-primary" uid="{1A3CBFAC-43ED-431D-AD4F-64CBC7A6E693}" /><r ds="{9D181561-8B71-4577-BDFF-29CC95967FA5}" id="{6EDFF7B6-8582-4ECD-94D1-37CEADB999E9}" par="" ph="footer-left" uid="{29414DA0-5BCA-41AD-A524-0FA71686E42D}" /><r id="{3350E555-010D-4BB4-976A-29442F461B00}" ph="footer-center" uid="{19C91C16-F65B-46A3-B38A-001CD5E45A3F}" /><r id="{EA4F1428-DF65-43D0-A8D6-E83BB540B80E}" ph="footer-right" uid="{760C6D63-B752-44AB-8ED4-2C88B18F8A66}" /><r id="{654459D1-D541-42B3-899C-A5470C656335}" ph="visit-details" uid="{C032DB3C-9519-4560-B2D8-8E6DA317C44F}" /></d></r>
 ----field----
 field: {CA9B9F52-4FB0-4F87-A79F-24DEA62CDA65}
 name: __Default workflow
@@ -33,7 +33,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 01cdf656-8b4a-4bb5-8783-a7b80112a3fe
+revision: e1009381-2540-4a72-b744-fc324030518e
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-01cdf656-8b4a-4bb5-8783-a7b80112a3fe
+e1009381-2540-4a72-b744-fc324030518e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130731T175653:635108902137148618
+20131218T165122:635229822823285313
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

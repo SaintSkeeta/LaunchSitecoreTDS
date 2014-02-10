@@ -1,0 +1,93 @@
+----item----
+version: 1
+id: {EA431273-3D4F-4E3A-97E2-08E958D5B8F9}
+database: master
+path: /sitecore/templates/Launch Sitecore/Microsite Home/__Standard Values
+parent: {7139A8B6-68D9-471F-96E4-B87ED703C185}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {7139A8B6-68D9-471F-96E4-B87ED703C185}
+templatekey: Microsite Home
+
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{F52F00E0-3F65-4C1A-9BF6-AF03CE94E599}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 1174
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{DEAB823F-8E62-48FF-8732-093FF05B17CC}"><p uid="{806E131A-BE95-4058-8843-67D6130796C4}" key="main-content" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Template Overrides/Home/home-main-content" /><p uid="{59B8A387-762A-45BD-8F70-E9A5C02B7C46}" key="footer-left" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Microsite/microsite-footer-left" /><p uid="{B1085973-7C66-4797-88B5-C9DE8CEB0F15}" key="footer-center" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Microsite/microsite-footer-center" /><p uid="{92985A41-BB42-449A-9E09-D88AF92073EF}" key="footer-right" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Microsite/microsite-footer-right" /><r ds="" id="{01466E9C-6C50-4E5F-B3C2-F865AB582997}" par="" ph="main-content" uid="{7E94C7AF-EF8B-4D61-B09B-A947BB7C44C3}" /><r ds="" id="{EC0DAD75-1378-48CB-B52D-69C0D735BD93}" par="" ph="/main-content/full-row1" uid="{52D796F3-ABC1-48CA-B1F6-CE901C71888B}" /><r id="{654459D1-D541-42B3-899C-A5470C656335}" ph="visit-details" uid="{9954C820-CE50-4954-A06D-DD8ADEB99F31}" /></d></r>
+----version----
+language: en
+version: 1
+revision: a00b8580-751c-45e1-9863-47b933f33c21
+
+----field----
+field: {AAEAC7F2-E33E-4B34-9023-AB6F59D3A427}
+name: Title
+key: title
+content-length: 5
+
+$name
+----field----
+field: {764646D1-347E-419D-8B86-67457C73D905}
+name: Body
+key: body
+content-length: 25
+
+<p>Enter Content Here</p>
+----field----
+field: {918A64F3-3CE1-46FE-AFE0-7BDEAE9F6299}
+name: Call to Action Link
+key: call to action link
+content-length: 38
+
+{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 4
+
+Home
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131113T114745
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a00b8580-751c-45e1-9863-47b933f33c21
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131115T222027:635201508275819899
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

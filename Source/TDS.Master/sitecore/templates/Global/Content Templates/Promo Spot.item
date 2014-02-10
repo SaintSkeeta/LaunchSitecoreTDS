@@ -13,9 +13,9 @@ templatekey: Template
 field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
 name: __Base template
 key: __base template
-content-length: 38
+content-length: 77
 
-{1930BBEB-7805-471A-A3BE-4858AC7CF696}
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{2BC9E276-D594-4D97-9CF3-B229C52A6D1F}
 ----field----
 field: {F7D48A55-2158-4F02-9356-756654404F73}
 name: __Standard values
@@ -30,10 +30,17 @@ key: __icon
 content-length: 34
 
 Applications/16x16/star_yellow.png
+----field----
+field: {C9283D9E-7C29-4419-9C28-5A5C8FF53E84}
+name: __Bucketable
+key: __bucketable
+content-length: 0
+
+
 ----version----
 language: en
 version: 1
-revision: 9b508835-d029-4503-b11e-933c55a40d40
+revision: 8f84a3dc-9ad2-4dd3-af5d-5eea1672baef
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -62,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9b508835-d029-4503-b11e-933c55a40d40
+8f84a3dc-9ad2-4dd3-af5d-5eea1672baef
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20120919T210437:634836854772678790
+20130826T172618:635131347787882569
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

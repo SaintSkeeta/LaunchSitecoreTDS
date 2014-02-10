@@ -10,6 +10,34 @@ template: {C6DD3CEF-22AF-4468-B3B0-82ABFCDE0F24}
 templatekey: Term
 
 ----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 328
+
+<tracking>
+  <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment" presets="developer|100||">
+    <key name="Analytics" value="1" />
+    <key name="Campaigns and Targeting" value="1" />
+    <key name="Content Management" value="4" />
+    <key name="Technology" value="5" />
+  </profile>
+</tracking>
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{C6DD3CEF-22AF-4468-B3B0-82ABFCDE0F24}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
+----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
 key: __workflow
@@ -19,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: b815d61e-494e-4a3b-86ec-8f624b5125ce
+revision: 3be0dc04-edbb-49f1-ad5a-3365278dd899
 
 ----field----
 field: {FBADE872-82BD-45AD-A2EC-DADC723249DA}
@@ -29,6 +57,27 @@ content-length: 9
 
 Sublayout
 ----field----
+field: {B636170C-2681-469A-A642-A6549C12D1E6}
+name: Definition
+key: definition
+content-length: 169
+
+<p>Defines the appearance of an area of a page and consists of a sublayout definition item stored in the Content Tree and a .NET ascx file stored under the web root.</p>
+----field----
+field: {AA7CE48D-746C-42C7-BD64-9A51F7F10B7C}
+name: Usage
+key: usage
+content-length: 182
+
+<p>Generally a sublayout is referring to an ascx file that is used for presentation. You will also see the term used in the generic case to mean control, sublayout, or component.</p>
+----field----
+field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
+name: Image
+key: image
+content-length: 170
+
+<image mediaid="{CF7A4926-8337-45CA-9802-464C75D709B1}" mediapath="/Launch Sitecore/Site Images/Glossary/Sublayout" src="~/media/cf7a4926833745ca9802464c75d709b1.ashx" />
+----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
 key: icon
@@ -36,30 +85,16 @@ content-length: 161
 
 <image mediaid="{8DB8017E-2F41-43A5-B64D-55E481053EFA}" mediapath="/Images/Icons/elements_selection" src="~/media/Images/Icons/elements_selection.ashx" ></image>
 ----field----
-field: {B636170C-2681-469A-A642-A6549C12D1E6}
-name: Definition
-key: definition
-content-length: 169
-
-<p>Defines the appearance of an area of a page and consists of a Sublayout definition item stored in the Content Tree and a .NET ASCX file stored under the web root.</p>
-----field----
-field: {AA7CE48D-746C-42C7-BD64-9A51F7F10B7C}
-name: Usage
-key: usage
-content-length: 175
-
-Generally a sublayout is referring to an ascx file that is used for presentation. You will also see the term used in the generic case to mean control, sublayout, or component.
-----field----
-field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
-name: Image
-key: image
-content-length: 149
-
-<image mediaid="{CF7A4926-8337-45CA-9802-464C75D709B1}" mediapath="/Images/Glossary/Sublayout" src="~/media/CF7A4926833745CA9802464C75D709B1.ashx" />
-----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
+content-length: 9
+
+Sublayout
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
 content-length: 9
 
 Sublayout
@@ -83,14 +118,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b815d61e-494e-4a3b-86ec-8f624b5125ce
+3be0dc04-edbb-49f1-ad5a-3365278dd899
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121210T185834:634907627141555922
+20131218T150248:635229757684434405
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

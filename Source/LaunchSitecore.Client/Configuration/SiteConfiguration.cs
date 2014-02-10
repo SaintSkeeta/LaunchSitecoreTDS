@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using Sitecore.Data.Items;
 using Sitecore.Data;
+using Sitecore.Globalization;
+using LaunchSitecore.Configuration.SiteUI.Search;
 
 namespace LaunchSitecore.Configuration
 {
@@ -13,17 +15,6 @@ namespace LaunchSitecore.Configuration
     /// </summary>
     public static class SiteConfiguration
     {
-        /// <summary>
-        /// Wraps the standard sitecore dictionary call.  In order to have all site labels and standard text managed within the CMS, we use the distionary.
-        /// These items simply hold the value for each label.    
-        /// </summary>
-        /// <param name="key">The dictionary key you are requesting.</param>
-        /// <returns>The phrase value for the requested key.</returns>
-        public static string GetDictionaryText(string key)
-        {
-            return Sitecore.Globalization.Translate.Text(key);
-        }
-
         /// <summary>
         /// Launch Sitecore stores the prerquisite articles for each article.  In order to get a list of items that 
         /// you have fulfilled the prerequisites for, we need to run a query.  This method returns the query to use.        
@@ -66,6 +57,24 @@ namespace LaunchSitecore.Configuration
         }
 
         /// <summary>
+        /// All of the site settings items are stored beneath the Configuration item for the current site.        
+        /// </summary>       
+        /// <returns>The root configuration item.</returns>
+        public static Item GetSiteSettingsItem(Item temp)
+        {
+          return Sitecore.Context.Database.GetItem(String.Format("{0}/Configuration/Site Settings", GetHomeItem(temp).Paths.FullPath));
+        }
+
+        /// <summary>
+        /// All of the site settings items are stored beneath the Configuration item for the current site.        
+        /// </summary>       
+        /// <returns>The root configuration item.</returns>
+        public static Item GetSearchItem()
+        {
+          return Sitecore.Context.Database.GetItem(String.Format("{0}/Search", GetHomeItem().Paths.FullPath));
+        }
+
+        /// <summary>
         /// All of the site settings items are stored beneath the Configuration item for the current site. This gets the presentation item below it.
         /// </summary>       
         /// <returns>The root configuration item.</returns>
@@ -73,7 +82,7 @@ namespace LaunchSitecore.Configuration
         {
             return Sitecore.Context.Database.GetItem(String.Format("{0}/Configuration/Presentation Settings", GetHomeItem().Paths.FullPath));
         }
-
+      
         /// <summary>
         /// All of the site settings items are stored beneath the Configuration item for the current site.  This get the version info item beneath it.
         /// </summary>       
@@ -98,7 +107,7 @@ namespace LaunchSitecore.Configuration
         /// <returns>The root configuration item.</returns>
         public static Item GetExternalSitesItem()
         {
-            return Sitecore.Context.Database.GetItem("/sitecore/content/Global/External Sites");
+            return Sitecore.Context.Database.GetItem("/sitecore/content/Global/settings/External Sites");
         }
 
         /// <summary>
@@ -139,54 +148,66 @@ namespace LaunchSitecore.Configuration
         }
 
         /// <summary>
-        /// Quick access to the articles node for the site.  Much of the content 
-        /// is beneath this item, so it makes sense to have a quick way to access it.
+        /// Quick access to the home node for the site.        
         /// </summary>       
-        /// <returns>The articles item.</returns>
-        public static Item GetArticlesRootItem()
+        /// <returns>The home item.</returns>
+        public static Item GetHomeItem(Item temp)
         {
-            return Sitecore.Context.Database.GetItem("/sitecore/content/home/articles");
-        }
-
-        /// <summary>
-        /// Quick access to the glossary node for the site.
-        /// </summary>       
-        /// <returns>The glossary item.</returns>
-        public static Item GetGlossaryItem()
-        {
-            return Sitecore.Context.Database.GetItem("/sitecore/content/home/glossary");
-        }
-                      
-        /// <summary>
-        /// Quick access to the job function node for the site.
-        /// </summary>       
-        /// <returns>The glossary item.</returns>
-        public static Item GetJobFunctionItem()
-        {
-            return Sitecore.Context.Database.GetItem("/sitecore/content/home/job function");
-        }
-
-        /// <summary>
-        /// Quick access to the peelback profile node for the site.
-        /// </summary>       
-        /// <returns>The glossary item.</returns>
-        public static Item GetPeelBackProfilePathItem()
-        {
-            Item config = SiteConfiguration.GetSiteSettingsItem();
-            return Sitecore.Context.Database.GetItem(config["Profile Path"]);
-        }
-
-        public static List<Item> GetChildrenForCurrentLanguage(this Item current)
-        {
-          List<Item> items = new List<Item>();
-          foreach (Item i in current.Children)
+          // Since we want to support multi-site for evaluation purposes and do not create site nodes in the site section of 
+          // the web.config, we will just go up the tree until we get to the content node.          
+          Item contentNode = Sitecore.Context.Database.GetItem("/sitecore/content");
+          while (temp.Parent != null && temp.ParentID != contentNode.ID)
           {
-            if (i.Versions.Count > 0)
-            {
-              items.Add(i);
-            }
+            temp = temp.Parent;
           }
-          return items;
+          return temp;          
         }
+
+        /// <summary>
+        /// Quick access to the team node for the site.
+        /// </summary>       
+        /// <returns>The Team item.</returns>
+        public static Item GetTeamItem()
+        {
+          return Sitecore.Context.Database.GetItem("/sitecore/content/home/team");
+        }
+       
+       
+        public static string GetPageDescripton(Item item)
+        {
+          string description = item["Body"];
+          // Most items have an abstract
+          if (item["Abstract"] != String.Empty) description = item["Abstract"];
+          // Terms do not have an abstract, so just use the Definition
+          if (item["Definition"] != String.Empty) description = item["Definition"];
+
+          description = HtmlRemoval.StripTagsCharArray(description);
+          if (description.Length > 160) description = String.Format("{0}...", description.Substring(0, 160));
+
+          return description.Replace("\"", "'");
+        }
+
+      public static Item GetPageEditorAlertsRootItem()
+      {
+        return
+          Sitecore.Context.Database.GetItem(
+            "/sitecore/system/Modules/Launch Sitecore/Page Editor Alerts");
+      }
+
+      public static bool DoesItemExistInCurrentLanguage(Item i)
+      {
+        // standard way of checking
+        if (i.Versions.Count != 0) return true;
+
+        return false;
+      }
+            
+      public static bool IsMicrosite()
+      {
+        Item home = GetHomeItem();
+        if (home != null && home.Template.Key == "microsite home") return true;
+
+        return false;
+      }
     }
 }

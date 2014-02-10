@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {92CAA379-5781-4852-A8F7-3C6755ED750C}
+database: master
+path: /sitecore/content/Global/Settings/Carousel Queries/All Carousel Items
+parent: {000F6597-8F01-4110-A981-C6F5059BD8D0}
+name: All Carousel Items
+master: {00000000-0000-0000-0000-000000000000}
+template: {54B73064-57C5-4B33-B17A-7B8A407122EA}
+templatekey: Query
+
+----field----
+field: {0EF83F9E-7381-482E-B31F-722763FE1982}
+name: Query
+key: query
+content-length: 98
+
++location:{FC74C6B9-0FC6-46F8-B426-2A967E823259};+template:{5365f694-c2ab-41af-8a79-28fc6a35e384};
+----field----
+field: {CD2B232F-A692-43D6-B9D6-C018E4E4A3B5}
+name: Comment
+key: comment
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 4ff86244-2d18-4654-a038-db0516ae5972
+
+----field----
+field: {5D7E80C6-B718-4B68-99B0-2A9E0524E6F7}
+name: Title
+key: title
+content-length: 18
+
+All Carousel Items
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131007T210029
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4ff86244-2d18-4654-a038-db0516ae5972
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131024T211700:635182462201484542
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

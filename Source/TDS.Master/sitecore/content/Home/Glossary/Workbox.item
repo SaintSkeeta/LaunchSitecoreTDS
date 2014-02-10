@@ -13,16 +13,34 @@ templatekey: Term
 field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
 name: __Tracking
 key: __tracking
-content-length: 286
+content-length: 534
 
 <tracking>
-  <profile name="Evaluator Type" presets="connie the content manager|100||">
-    <key name="Content Manager" value="5" />
-    <key name="Developer" value="0" />
-    <key name="IT Professional" value="0" />
-    <key name="Marketer" value="2" />
+  <profile id="{478859DC-EBE0-40A7-BD24-75D588FD3E09}" name="Information Type" presets="high level|100||">
+    <key name="Detailed" value="0" />
+    <key name="High Level" value="1" />
+  </profile>
+  <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment" presets="content owner|100||">
+    <key name="Analytics" value="1" />
+    <key name="Campaigns and Targeting" value="3" />
+    <key name="Content Management" value="5" />
+    <key name="Technology" value="0" />
   </profile>
 </tracking>
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{C6DD3CEF-22AF-4468-B3B0-82ABFCDE0F24}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
 ----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
@@ -33,7 +51,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: ea36e9fc-b1b4-4072-9ce7-50afaa2adb9d
+revision: 9e42182f-ea1a-4a7d-ba78-7f7d536df758
 
 ----field----
 field: {FBADE872-82BD-45AD-A2EC-DADC723249DA}
@@ -43,6 +61,27 @@ content-length: 7
 
 Workbox
 ----field----
+field: {B636170C-2681-469A-A642-A6549C12D1E6}
+name: Definition
+key: definition
+content-length: 126
+
+<p>The workbox is a tool within Sitecore for easily viewing the status of items within workflows which you have access to.</p>
+----field----
+field: {AA7CE48D-746C-42C7-BD64-9A51F7F10B7C}
+name: Usage
+key: usage
+content-length: 392
+
+<p>The Workbox is the default notification mechanism for workflow within Sitecore. It allows the easy sorting and actioning of tasks assigned to each user.  In the screenshot, the view is filtered to only show the Sample Workflow. The user has the ability to view the work, note changes and move items (or all items) to subsequent steps.  Also, each view has the ability to output to RSS.</p>
+----field----
+field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
+name: Image
+key: image
+content-length: 220
+
+<image mediaid="{4AF5ADF2-F0EF-4F39-9EAF-AADADED0025B}" mediapath="/Launch Sitecore/Site Images/Glossary/Workbox" src="~/media/4af5adf2f0ef4f399eafaadaded0025b.ashx" alt="" height="464" width="620" hspace="" vspace="" />
+----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
 key: icon
@@ -50,32 +89,16 @@ content-length: 137
 
 <image mediaid="{94902090-39D6-4AFB-BB5C-67982CCDE354}" mediapath="/Images/Icons/outbox" src="~/media/Images/Icons/outbox.ashx" ></image>
 ----field----
-field: {B636170C-2681-469A-A642-A6549C12D1E6}
-name: Definition
-key: definition
-content-length: 157
-
-<p>The workbox is a tool within the Content Editor and Sitecore Desktop for easily viewing the status of items within Workflows which you have access to.</p>
-----field----
-field: {AA7CE48D-746C-42C7-BD64-9A51F7F10B7C}
-name: Usage
-key: usage
-content-length: 447
-
-<p>The Workbox is the default notification mechanism for workflow within Sitecore. It allows the easy sorting and actioning of tasks assigned to each user.</p>
-<p> In the screenshot above, the view is filtered to only show the Sample Workflow. Each task has the ability to view the work, note changes and move items (or all items) to subsequent steps.</p>
-<p>Also, each view has the ability to output to RSS as well (right side of the screen).</p>
-----field----
-field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
-name: Image
-key: image
-content-length: 190
-
-<image mediaid="{4AF5ADF2-F0EF-4F39-9EAF-AADADED0025B}" mediapath="/Images/Glossary/Workbox" src="~/media/Images/Glossary/Workbox.ashx" alt="" height="464" width="620" hspace="" vspace="" />
-----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
+content-length: 7
+
+Workbox
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
 content-length: 7
 
 Workbox
@@ -99,14 +122,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ea36e9fc-b1b4-4072-9ce7-50afaa2adb9d
+9e42182f-ea1a-4a7d-ba78-7f7d536df758
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121210T185835:634907627153235922
+20131218T150329:635229758099438311
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -114,6 +137,13 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
+name: __Semantics
+key: __semantics
+content-length: 77
+
+{96D23E84-12CF-4A1C-B8BB-A33D7E7FA16D}|{459DBF7C-1A25-4EDF-86DA-32020B0AFC4B}
 ----field----
 field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
 name: __Workflow state

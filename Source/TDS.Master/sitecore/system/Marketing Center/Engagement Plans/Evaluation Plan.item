@@ -1,0 +1,91 @@
+----item----
+version: 1
+id: {F46741E9-E9F6-4044-AE29-B762EF9A306B}
+database: master
+path: /sitecore/system/Marketing Center/Engagement Plans/Evaluation Plan
+parent: {4497A9BE-0A00-4EE4-9AE0-50D6CBB4FAB2}
+name: Evaluation Plan
+master: {00000000-0000-0000-0000-000000000000}
+template: {6E5B63D6-2401-4A52-8B4D-CFEF5E4E9752}
+templatekey: Engagement Plan
+
+----field----
+field: {C36D22D2-94FC-46AC-91DB-2CF322C66895}
+name: Flow designer items
+key: flow designer items
+content-length: 7356
+
+<flowDesignerItems>
+  <connectors>
+    <connector itemId="f3aa7546-0d4b-45a9-87a3-ca55b9ab0bb1" originId="00000000-0000-0000-0000-000000000000" designerId="0a562bab-2032-42c3-8432-6e6a1f8c7e51" name="New item" description="Description" startItemId="0fa22bfe-5a55-4efa-b845-f033ce25111d" endItemId="6e71938c-205a-4a7d-8d2d-3d9ef859b2c1" points="8,9 8,12" />
+    <connector itemId="e81dd568-9e76-4b7c-8a4e-a4c41769822a" originId="00000000-0000-0000-0000-000000000000" designerId="05c271d0-1b96-483e-8ecd-d6ffc486a11d" name="New item" description="Description" startItemId="6e71938c-205a-4a7d-8d2d-3d9ef859b2c1" endItemId="25ffb86b-b275-4e72-854c-705f99dc101b" points="13,15 17,6" />
+    <connector itemId="105f61a9-74a2-414e-afc3-b09d6eee7956" originId="00000000-0000-0000-0000-000000000000" designerId="7cf41f3f-6147-47be-b8a9-0dc5718e9dda" name="New item" description="Description" startItemId="25ffb86b-b275-4e72-854c-705f99dc101b" endItemId="16adca47-991b-4c91-a96c-f43dab5fea29" points="23,9 23,12" />
+    <connector itemId="51d7162e-71f3-4fbe-8a34-9bfc630d7ddc" originId="00000000-0000-0000-0000-000000000000" designerId="723bdc01-1fbd-432a-a67e-de45caafb6e8" name="New item" description="Description" startItemId="16adca47-991b-4c91-a96c-f43dab5fea29" endItemId="8da87d38-e83d-4d63-80da-f6e83f1e9810" points="28,15 32,6" />
+  </connectors>
+  <disconnectedItems />
+  <flowRenderedItemsValues>
+    <flowRenderedItemValues itemId="8da87d38-e83d-4d63-80da-f6e83f1e9810" x="32" y="3" width="12" height="6" zIndex="20" backgroundColor="#FFC56B1B" foregroundColor="#FFFFFFFF" iconUri="/temp/IconCache/Software/32x32/shape_square.png" showIcon="false" fieldEditorValues="&lt;fields itemId=&quot;{D6141475-5D29-4C7C-86D2-2EB5EA5E7B9C}&quot;&gt;&#xD;&#xA;  &lt;field id=&quot;{B5E02AD9-D56F-4C41-A065-A133DB87BDEB}&quot; value=&quot;Evaluating Sitecore&quot; name=&quot;__Display name&quot; /&gt;&#xD;&#xA;&lt;/fields&gt;" />
+    <flowRenderedItemValues itemId="25ffb86b-b275-4e72-854c-705f99dc101b" x="17" y="3" width="12" height="6" zIndex="14" backgroundColor="#FF00344E" foregroundColor="#FFFFFFFF" iconUri="/temp/IconCache/Software/32x32/shape_square.png" showIcon="false" fieldEditorValues="&lt;fields itemId=&quot;{9D41094F-ABFD-4807-B42C-036C10BE6606}&quot;&gt;&#xD;&#xA;  &lt;field id=&quot;{B5E02AD9-D56F-4C41-A065-A133DB87BDEB}&quot; value=&quot;Qualified Users&quot; name=&quot;__Display name&quot; /&gt;&#xD;&#xA;&lt;/fields&gt;" />
+    <flowRenderedItemValues itemId="16adca47-991b-4c91-a96c-f43dab5fea29" x="18" y="12" width="10" height="6" zIndex="25" backgroundColor="#FF00767E" foregroundColor="#FFFFFFFF" iconUri="/temp/IconCache/Software/32x32/shape_rhomb.png" showIcon="false" fieldEditorValues="&lt;fields itemId=&quot;{946337F1-C397-497D-87C3-F43F6DB886BE}&quot;&gt;&#xD;&#xA;  &lt;field id=&quot;{06F2D72A-1924-4B9A-BA1E-186CE4E57EFD}&quot; name=&quot;Description&quot; value=&quot;&quot; /&gt;&#xD;&#xA;  &lt;field id=&quot;{E13DCD09-D9BB-43C9-8D7D-438C79D714CA}&quot; name=&quot;Evaluate&quot; value=&quot;{B81C1F4C-8B83-44D9-902F-448463DBCCBC}&quot; /&gt;&#xD;&#xA;  &lt;field id=&quot;{21F3482B-BB14-4555-BA5D-AF20D400D5B9}&quot; name=&quot;Rule&quot; value=&quot;&amp;lt;ruleset&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;rule uid=&amp;quot;{E9DF2224-7BBA-45A9-BD6D-E5FF986A179E}&amp;quot;&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;conditions&amp;gt;&amp;#xD;&amp;#xA;      &amp;lt;or uid=&amp;quot;C4632027B90A47CBBF5E7E418ADC29A4&amp;quot;&amp;gt;&amp;#xD;&amp;#xA;        &amp;lt;condition id=&amp;quot;{78CD5498-8723-4645-B88B-12C9388ED92F}&amp;quot; uid=&amp;quot;75EA599399B74E4092791ACC9C68ED1D&amp;quot; GoalId=&amp;quot;{8D8C357B-909D-47F6-BFE9-20C2CD89853B}&amp;quot; /&amp;gt;&amp;#xD;&amp;#xA;        &amp;lt;condition id=&amp;quot;{4640D86A-9B01-4B04-9BEB-03E06E5AC722}&amp;quot; uid=&amp;quot;477383D683174611BBC21CAB2F3F530A&amp;quot; operatorid=&amp;quot;{814EF7D0-1639-44FD-AEEF-735B5AC14425}&amp;quot; value=&amp;quot;30&amp;quot; /&amp;gt;&amp;#xD;&amp;#xA;      &amp;lt;/or&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;/conditions&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;/rule&amp;gt;&amp;#xD;&amp;#xA;&amp;lt;/ruleset&amp;gt;&quot; /&gt;&#xD;&#xA;  &lt;field id=&quot;{B5E02AD9-D56F-4C41-A065-A133DB87BDEB}&quot; name=&quot;__Display name&quot; value=&quot;Is User Engaged?&quot; /&gt;&#xD;&#xA;&lt;/fields&gt;" />
+    <flowRenderedItemValues itemId="0fa22bfe-5a55-4efa-b845-f033ce25111d" x="2" y="3" width="12" height="6" zIndex="23" backgroundColor="#FF00344E" foregroundColor="#FFFFFFFF" iconUri="/temp/IconCache/Software/32x32/shape_square.png" showIcon="false" fieldEditorValues="&lt;fields itemId=&quot;{C734DC56-D426-4AB9-8847-52D12DA463BA}&quot;&gt;&#xD;&#xA;  &lt;field id=&quot;{B5E02AD9-D56F-4C41-A065-A133DB87BDEB}&quot; value=&quot;Registered Users&quot; name=&quot;__Display name&quot; /&gt;&#xD;&#xA;&lt;/fields&gt;" />
+    <flowRenderedItemValues itemId="6e71938c-205a-4a7d-8d2d-3d9ef859b2c1" x="3" y="12" width="10" height="6" zIndex="24" backgroundColor="#FF00767E" foregroundColor="#FFFFFFFF" iconUri="/temp/IconCache/Software/32x32/shape_rhomb.png" showIcon="false" fieldEditorValues="&lt;fields itemId=&quot;{5865CF27-E0FB-4585-B284-CB5B7778A44C}&quot;&gt;&#xD;&#xA;  &lt;field id=&quot;{B5E02AD9-D56F-4C41-A065-A133DB87BDEB}&quot; value=&quot;Is User Qualified?&quot; name=&quot;__Display name&quot; /&gt;&#xD;&#xA;  &lt;field id=&quot;{06F2D72A-1924-4B9A-BA1E-186CE4E57EFD}&quot; value=&quot;&quot; name=&quot;Description&quot; /&gt;&#xD;&#xA;  &lt;field id=&quot;{E13DCD09-D9BB-43C9-8D7D-438C79D714CA}&quot; value=&quot;{B81C1F4C-8B83-44D9-902F-448463DBCCBC}&quot; name=&quot;Evaluate&quot; /&gt;&#xD;&#xA;  &lt;field id=&quot;{21F3482B-BB14-4555-BA5D-AF20D400D5B9}&quot; value=&quot;&amp;lt;ruleset&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;rule uid=&amp;quot;{25347086-E7F7-4789-9FC3-D8307B6146F0}&amp;quot;&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;conditions&amp;gt;&amp;#xD;&amp;#xA;      &amp;lt;condition id=&amp;quot;{4640D86A-9B01-4B04-9BEB-03E06E5AC722}&amp;quot; uid=&amp;quot;088A9F85CD4946B9BC0EE05A239AECB2&amp;quot; value=&amp;quot;7&amp;quot; operatorid=&amp;quot;{814EF7D0-1639-44FD-AEEF-735B5AC14425}&amp;quot; /&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;/conditions&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;/rule&amp;gt;&amp;#xD;&amp;#xA;&amp;lt;/ruleset&amp;gt;&quot; name=&quot;Rule&quot; /&gt;&#xD;&#xA;&lt;/fields&gt;" />
+    <flowRenderedItemValues itemId="0a562bab-2032-42c3-8432-6e6a1f8c7e51" x="10" y="10" width="10" height="10" zIndex="8" backgroundColor="#00FFFFFF" foregroundColor="#FFFFFFFF" iconUri="" showIcon="false" fieldEditorValues="" />
+    <flowRenderedItemValues itemId="05c271d0-1b96-483e-8ecd-d6ffc486a11d" x="15" y="17" width="10" height="10" zIndex="10" backgroundColor="#00FFFFFF" foregroundColor="#FFFFFFFF" iconUri="" showIcon="false" fieldEditorValues="" />
+    <flowRenderedItemValues itemId="7cf41f3f-6147-47be-b8a9-0dc5718e9dda" x="27" y="20" width="10" height="10" zIndex="13" backgroundColor="#00FFFFFF" foregroundColor="#FFFFFFFF" iconUri="" showIcon="false" fieldEditorValues="" />
+    <flowRenderedItemValues itemId="723bdc01-1fbd-432a-a67e-de45caafb6e8" x="32" y="27" width="10" height="10" zIndex="16" backgroundColor="#00FFFFFF" foregroundColor="#FFFFFFFF" iconUri="" showIcon="false" fieldEditorValues="" />
+  </flowRenderedItemsValues>
+</flowDesignerItems>
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{689E2994-4656-4C58-9112-7826CB46EE69}
+----version----
+language: en
+version: 1
+revision: a16f2a48-c5c2-469a-a42a-c9830889cf64
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131003T142933
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a16f2a48-c5c2-469a-a42a-c9830889cf64
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131126T214333:635210990135815131
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{EDCBB550-BED3-490F-82B8-7B2F14CCD26E}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

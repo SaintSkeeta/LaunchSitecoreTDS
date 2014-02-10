@@ -20,9 +20,9 @@ Treelist
 field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
 name: Source
 key: source
-content-length: 31
+content-length: 92
 
-/sitecore/content/home/articles
+Datasource=/sitecore/content/Home/About-Launch-Sitecore&IncludeTemplatesForSelection=Article
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -33,7 +33,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 8033fd64-27b5-41a2-a8d5-83b5c48df269
+revision: 52bfdec4-5530-4080-ae47-6decb5efba19
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -62,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8033fd64-27b5-41a2-a8d5-83b5c48df269
+52bfdec4-5530-4080-ae47-6decb5efba19
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20120806T173338:634798712187857525
+20131113T224106:635199792664836441
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,0 +1,213 @@
+----item----
+version: 1
+id: {C4E0EF5C-1DDF-4684-8CAD-EED50971237F}
+database: master
+path: /sitecore/content/Home/About-Launch-Sitecore/Getting-Started/The-Sitecore-UIs
+parent: {A5CDBC19-FFEA-4801-81A6-2B87F318B275}
+name: The-Sitecore-UIs
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 12
+
+<tracking />
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+-50
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{1B6A3702-5694-4FC4-8366-989ECDCD7F1B}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 964f9e6a-89eb-4ea2-a38f-d5983c04dbfb
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 28
+
+The Sitecore User Interfaces
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 93
+
+<p>Sitecore includes multiple interfaces designed for different types of users and tasks.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 7511
+
+<p>When working with any content management system, obviously one of the most important aspects is actually working with the content; editing, publishing, applying personalization or metadata, etc.</p>
+<p>Because Sitecore separates content from presentation, we provide a user interface that is optimized for each task - either content-centric, or presentation-centric. To access the various user interfaces, click <strong>Options</strong> at the login screen. (Note, this is where you can also access the User Interface Language options dropdown).</p>
+<p><img width="496" height="216" alt="Sitecore Login Options" src="~/media/6D870DCA691844AD8FCC543D4A9985AA.ashx"></p>
+<h3>Page Editor</h3>
+<p>The Page Editor is essentially a preview copy of your website. You can navigate directly to the content you wish to change, edit inline, do any other major tasks, save, and publish. This view is most useful to less technical individuals who are primarily responsible for making content changes or additions. Since the editing interface is essentially the website, it makes it very easy to navigate and understand.</p>
+<p>Here are a few tips for Page Editor navigation.</p>
+<h4>The Page Editor modes</h4>
+<p>There are a few Page Editor modes, the most common are Edit and Preview. Edit enables all in-line editing, adding/modifying of components, layout, etc. Preview simply shows the page as it would appear on your live site, with no editing functionality.</p>
+<p>In Edit mode, often your links are editable text fields, so if you actually want to follow the link, hold the <strong>Ctrl</strong> key while you click the link (otherwise swap to Preview mode to navigate). The mode buttons (and save) are common across all tab groups - so they are always easily accessible.</p>
+<h4>Home Tab</h4>
+<p>The Home Tab contains your common operations, including;</p>
+<ul>
+    <li>Adding page Components </li>
+    <li>Inserting new content </li>
+    <li>Publishing </li>
+    <li>Logging off </li>
+</ul>
+<h4>Experience Tab</h4>
+<p>The Experience Tab is entirely centered around viewing content in different contexts. </p>
+<ul>
+    <li>Date: you can view the page based on a different date, and all the page content, regardless of source in the repository, is displayed based on that date. </li>
+    <li>Language: View the page content in another language/locale </li>
+    <li>Device: View the page as it would be served to that device (i.e. Mobile or Print-Friendly)</li>
+</ul>
+<p>Of course, all these views are independent, so you can choose to view your page in a Mobile view, in French, from 2 years ago, for example.</p>
+<h4>View Tab</h4>
+<p>The view tab is entirely centered around customizing your editing environment. Through various checkboxes, you can enable/disable editing, designing, breadcrumb navigation, etc.</p>
+<p>Often on overly complex pages, individuals may choose to disable designing - making the editing controls solely around content editing, eliminating the controls to add/move/modify components.</p>
+<p>Also, it's a common implementation practice to customize the editing ribbon at the top of the screen - adding or removing tabs and functionality as appropriate to the users role.</p>
+<p> </p>
+<h3>Content Editor</h3>
+<p><img style="width: 640px; height: 443px;" alt="The Sitecore Content Editor" src="~/media/9BFB4DEB1928413188B7B4BE8C6AE48E.ashx"></p>
+<p>The Content Editor is a much more data-centric view of your website. It is a hierarchical view of all the content that makes up your site. This will include content that primary generates pages, as well as shared content and metadata.</p>
+<p>This view makes sense to information architects who need to understand the data in the context of the entire site, and makes certain tasks like cloning, site setup, metadata, content sharing easier than in the Page Editor. Notice the commands on the Home tab are designed to be operations that are content-centric in the context of the entire site. You can move, copy, delete, sort, etc. - all operations that would be harder to understand in the context of a single page.</p>
+<p>There are two major screens, the Content Tree on the left, and the Content editing tab on the right.</p>
+<h4>Content Tree</h4>
+<p>Since Sitecore is a content-centric CMS, everything in Sitecore resides in this hierarchy. That is all your content, metadata, media assets, system settings, templates, workflow, etc. etc.</p>
+<p>Your content obviously resides in the content node - and a Sitecore site can actually have multiple "Home" nodes - each potentially tied to a different domain.</p>
+<h4>Content Editing Tab</h4>
+<p>In the screenshot above, we are actually looking at the content for this exact article. Each content section can be expanded or collapsed. Every item has a Quick Info section, which includes information such as the Item ID, path (i.e. /sitecore/content/Home/Articles/CMS/Fundamental Articles/The Sitecore UIs for this article), whether the item was cloned, who created and modified it, etc. You may notice a big red bar next to the Abstract, which brings us to...</p>
+<h4>Validation and the "Gutter"</h4>
+<p>Validation is the ability to check content against rules and notify the user if there are issues. Validation can be applied on many rules (spelling, html validation, regex, custom, etc.) and displayed in four places; workflow, content editing tab, validation bar (on the right) and in the content "gutter".</p>
+<p>In this case, you'll see the validation errors displaying in the Content tab next to the Abstract field as well as in the validation bar on the right. This particular issue is signalling the absence of content that is required on this item.</p>
+<p>The gutter on the left of the Content Tree can be used to indicate a large number of status messages, including validation, broken links, locked items, etc. You can right click to enable/disable various options.</p>
+<p><img width="327" height="555" alt="Sitecore Gutter Commands" src="~/media/B023AD92E7E148EBA0E802ED7EBD03E4.ashx"></p>
+<p>(For more information on validation, see the advanced article <a href="~/link.aspx?_id=0C3C261523EF4E278D563D9521F6FFCA&amp;_z=z">How to create a Custom Validator</a>.)</p>
+<h3></h3>
+<h3>Sitecore Desktop</h3>
+<p>Of course, for people like System Administrators, Information Architects, Developers, etc. who need to access other aspects of the system, we provide the Sitecore Desktop - which allows easy access to both the Page Editor and the Content Editor, as well as many other tools necessary for advanced tasks, the most used being:</p>
+<ul>
+    <li>Marketing Center - For creating/editing goals, campaigns and Engagement Plans </li>
+    <li>Template Manager - For creating content data templates </li>
+    <li>Security Tools - There are a number of tools for creating users/roles and applying them to permissions </li>
+    <li>Engagement Analytics/Executive Dashboard - Both detailed and high-level reporting for your site activity</li>
+</ul>
+<p>The Sitecore desktop is designed to replicate the Windows "Start" experience, complete with Sitecore button and menu in the bottom left.</p>
+<p><img width="381" height="563" alt="Sitecore Desktop Start" src="~/media/DE1358AF9AFC4470B86CE37B16515F2F.ashx"> </p>
+<p>As with any of the interfaces, permissions to the various desktop applications can be enabled/disabled. As well, if additional Sitecore or Shared Source modules are installed and have an interface, they will appear in this list (or under the All Applications button) </p>
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 180
+
+<image mediaid="{6D8C64A3-D708-4A4E-9D48-92E9A0F375F7}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/a-b/browser" src="~/media/6d8c64a3d7084a4e9d4892e9a0f375f7.ashx" />
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{6FD8C855-7AA9-43CD-A06A-F06870E53D7C}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 16
+
+The Sitecore UIs
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 16
+
+The Sitecore UIs
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111220T124400
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\chc
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+964f9e6a-89eb-4ea2-a38f-d5983c04dbfb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131127T151030:635211618302882475
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
+name: __Semantics
+key: __semantics
+content-length: 116
+
+{96D23E84-12CF-4A1C-B8BB-A33D7E7FA16D}|{7F207663-6A32-4173-92DA-A15394B33776}|{459DBF7C-1A25-4EDF-86DA-32020B0AFC4B}
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

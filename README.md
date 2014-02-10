@@ -1,7 +1,8 @@
 # Launch Sitecore TDS #
 
 - Use Tag 1.0 with Sitecore 6.5 Service Pack 2 (rev. 121009) - Launch Sitecore Classic version
-- Use Tag 1.1 is from Sitecore 7.0 Update 3 (rev. 131127) - Launch Sitecore Classic version
+- Use Tag 1.1 with Sitecore 7.0 Update 3 (rev. 131127) - Launch Sitecore Classic version
+- Use Tag 2.0 with Sitecore 7.1 Update 1 (rev. 140130) - Launch Sitecore New Themed version
 
 Launch Sitecore is a site found at [www.launchsitecore.net](www.launchsitecore.net). It is a great, shared source site that shows the power of Sitecore through Page Editor and DMS. The site comes complete with content, components, engagement plans and much more. A Sitecore package for the complete site can be downloaded from the above link after registering.
 
@@ -34,4 +35,14 @@ This repository is that package converted to a Visual Studio solution with items
 - Right click on TDS.Core and select Deploy.
 - Right click on TDS.Master and select Deploy.
 
-Your site should now be completely setup.
+### Rebuild Search Indexes ###
+When using a Sitecore 7 version, you will need to rebuild the indexes for the site to work correctly. (Noticeable with the carousel on the homepage in the new themed version).<br />
+To rebuild the indexes:-
+
+ - Open the Sitecore Client, and login to *Desktop* mode.
+ - From the Sitecore Start menu, Open the *Control Panel*.
+ - Click on *Indexing*.
+ - Click on *Indexing Manager*
+ - Follow the Wizard, selecting all of the local instances and clicking on the *Rebuild* button.
+
+Once indexing is complete, your site should now be completely setup.

@@ -1,0 +1,150 @@
+----item----
+version: 1
+id: {411D23B5-2158-4C27-84B3-52214C52D99F}
+database: master
+path: /sitecore/media library/Launch Sitecore/Site Images/Backgrounds/Patterns/Charcoal Small Diamonds
+parent: {B23997A6-E9A5-44EA-A422-876B63DD3B1D}
+name: Charcoal Small Diamonds
+master: {00000000-0000-0000-0000-000000000000}
+template: {F1828A2C-7E5D-4BBD-98CA-320474871548}
+templatekey: Image
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 2868
+
+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
+----field----
+field: {22EAC599-F13B-4607-A89D-C091763A467D}
+name: Width
+key: width
+content-length: 2
+
+70
+----field----
+field: {DE2CA9E4-C117-4C8A-A139-1FF4B199D15A}
+name: Height
+key: height
+content-length: 2
+
+70
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 3
+
+png
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 9
+
+image/png
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 4
+
+2097
+----field----
+field: {CB09946F-3218-4823-87D2-D5007C199A96}
+name: Dimensions
+key: dimensions
+content-length: 7
+
+70 x 70
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+~/media/411D23B521584C2784B352214C52D99F.ashx?h=16&thn=1&w=16
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+100
+----version----
+language: en
+version: 1
+revision: 382f1dc1-dc28-4714-b601-17f225600130
+
+----field----
+field: {65885C44-8FCD-4A7F-94F1-EE63703FE193}
+name: Alt
+key: alt
+content-length: 23
+
+Charcoal Small Diamonds
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130627T164817
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+382f1dc1-dc28-4714-b601-17f225600130
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130627T171806:635079502866535788
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

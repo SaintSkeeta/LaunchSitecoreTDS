@@ -1,0 +1,166 @@
+----item----
+version: 1
+id: {AF69BB94-8E7D-423B-AA94-E7EAD1ADD3B6}
+database: master
+path: /sitecore/media library/Launch Sitecore/Page Editor Thumbnails/Controls/Navigation/Tertiary Navigation
+parent: {E07AAAA5-CDA9-4A35-9476-8CA93F7480FD}
+name: Tertiary Navigation
+master: {00000000-0000-0000-0000-000000000000}
+template: {DAF085E8-602E-43A6-8299-038FF171349F}
+templatekey: Jpeg
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 3566
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/4QEURXhpZgAATU0AKgAAAAgABwEaAAUAAAABAAAAYgEbAAUA
+AAABAAAAagEoAAMAAAABAAIAAAExAAIAAAASAAAAcgE7AAIAAAANAAAAhIdpAAQAAAABAAAAkpyd
+AAEAAAAaAAAA8gAAAAAAAABgAAAAAQAAAGAAAAABUGFpbnQuTkVUIHYzLjUuMTEAQ2hyaXMgQ2Fz
+dGxlAAAABJADAAIAAAAUAAAAyJAEAAIAAAAUAAAA3JKRAAIAAAADNTUAAJKSAAIAAAADNTUAAAAA
+AAAyMDEzOjEwOjA5IDE1OjE0OjQ0ADIwMTM6MTA6MDkgMTU6MTQ6NDQAAABDAGgAcgBpAHMAIABD
+AGEAcwB0AGwAZQAAAP/bAEMAAgEBAgEBAgICAgICAgIDBQMDAwMDBgQEAwUHBgcHBwYHBwgJCwkI
+CAoIBwcKDQoKCwwMDAwHCQ4PDQwOCwwMDP/bAEMBAgICAwMDBgMDBgwIBwgMDAwMDAwMDAwMDAwM
+DAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDP/AABEIACMArAMBIgACEQEDEQH/
+xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMA
+BBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVG
+R0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0
+tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+fr/xAAfAQADAQEBAQEB
+AQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2Fx
+EyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZ
+WmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TF
+xsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP33AUZpC2fT/CoZ
+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
+----field----
+field: {22EAC599-F13B-4607-A89D-C091763A467D}
+name: Width
+key: width
+content-length: 3
+
+172
+----field----
+field: {DE2CA9E4-C117-4C8A-A139-1FF4B199D15A}
+name: Height
+key: height
+content-length: 2
+
+35
+----field----
+field: {327878C4-28C8-4E71-8914-5DE34E00E716}
+name: Artist
+key: artist
+content-length: 12
+
+Chris Castle
+----field----
+field: {B0145335-8735-414B-9169-A1D4E4DC9641}
+name: Software
+key: software
+content-length: 17
+
+Paint.NET v3.5.11
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 3
+
+JPG
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 10
+
+image/jpeg
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 4
+
+2605
+----field----
+field: {CB09946F-3218-4823-87D2-D5007C199A96}
+name: Dimensions
+key: dimensions
+content-length: 8
+
+172 x 35
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+~/media/af69bb948e7d423baa94e7ead1add3b6.ashx?h=16&thn=1&w=16
+----version----
+language: en
+version: 1
+revision: a0722c75-55b7-4916-929f-c1c160e55aeb
+
+----field----
+field: {65885C44-8FCD-4A7F-94F1-EE63703FE193}
+name: Alt
+key: alt
+content-length: 19
+
+Tertiary Navigation
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131009T160601
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a0722c75-55b7-4916-929f-c1c160e55aeb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131009T160602:635169315620155564
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

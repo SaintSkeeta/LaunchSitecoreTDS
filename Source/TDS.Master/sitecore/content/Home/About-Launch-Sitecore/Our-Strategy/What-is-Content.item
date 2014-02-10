@@ -1,0 +1,195 @@
+----item----
+version: 1
+id: {07DAF0C2-1992-4C0A-BB7F-92A700E97FF4}
+database: master
+path: /sitecore/content/Home/About-Launch-Sitecore/Our-Strategy/What-is-Content
+parent: {15D0FCF2-7C81-4218-A5A0-7605084D1CBC}
+name: What-is-Content
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 530
+
+<tracking>
+  <profile id="{478859DC-EBE0-40A7-BD24-75D588FD3E09}" name="Information Type" presets="high level|100||">
+    <key name="Detailed" value="0" />
+    <key name="High Level" value="1" />
+  </profile>
+  <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment" presets="developer|100||">
+    <key name="Analytics" value="1" />
+    <key name="Campaigns and Targeting" value="1" />
+    <key name="Content Management" value="4" />
+    <key name="Technology" value="5" />
+  </profile>
+</tracking>
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+100
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{1B6A3702-5694-4FC4-8366-989ECDCD7F1B}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 74a0af3a-82a2-4d47-8b2e-cf9a9b376fa4
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 16
+
+What is Content?
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 192
+
+<p>A Content Management System by its name manages content, but it also must handle the presentation of that content. While these are related, it is important to look at them individually.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 4363
+
+<p>When discussing a Content Management System, it is important to understand the term content. This is especially true in Sitecore because of the separation of content and presentation elements within the product.</p>
+<p>The definition of content is substantive information or creative material viewed in contrast to its actual or potential manner of presentation. With this definition, we can discuss the text and related digital assets of a website separate from the look and feel of the presentation.</p>
+<h2>Content Terms</h2>
+<ul>
+    <li>Data Template: The data structure and framework around which content is created. </li>
+    <li>Fields: The individual components of a Data Template where data is entered into the system </li>
+    <li>Field Types: Determines the manner in which data is entered or selected. These include single-line text, multi-line text, rich text, numbers, checkbox, checkbox list, and many others. </li>
+    <li>Inheritance: Data Templates can inherit from other base templates to allow templates to share field definitions. </li>
+</ul>
+<h2>Data Templates</h2>
+<p>The starting point for adding content is through the creation of data templates. Let's use this article item as an example. As stated earlier, a template can inherit from other templates - making it easy to manage things like titles, icons, etc. in one location, rather than copying from template to template.</p>
+<p><img class="img-polaroid" alt="Content of the current article in Content Editor (with field sections collapsed)" src="~/media/FD0C719FA60145C4AC73FB7334A74B64.ashx"></p>
+<p>You'll note this article is made up of many fields, and those fields are sorted into field sections. The Quick Info is a system field section present on every item so developers/information architects/etc. can easily look up the item ID, path, template, owner, etc. </p>
+<p>If you click on the link to the template /sitecore/templates/Launch Sitecore/Article you'll launch the Template Editor and you will see that the template is actually quite small - there are only two fields. Adding new fields and sections is as simple as typing in the appropriate box, and selecting a field type.</p>
+<p><img class="img-polaroid" style="width: 697px; height: 207px;" alt="Template Manager view of an Article Template" src="~/media/B989DAF8442946FDA6AEB33916C477E7.ashx"> </p>
+<p>As for all the other fields and field sections such as general, menu display and the main text - these are actually inherited from other templates. If you click the Content Tab, you can see all of the inherited templates.</p>
+<p><img class="img-polaroid" alt="Inherited templates" src="~/media/4B2D82BC97C94A499839AA19522E552D.ashx"></p>
+<h2>Content Items</h2>
+<p>Once Data Templates are created, we use these to create content items. A content item is simply an instance of a template. By storing this content apart from the visual presentation, it can be reused across multiple pages, sites, or even on a mobile version of the current site. This results in less editing and more consistency, as well as better content.</p>
+<p>Everything in Sitecore is stored in the Content Tree as an item. This can be assets such as PDFs or images, content primarily used to make pages (such as this article page), metadata, and content used in components on pages. Even the Sitecore system settings such as templates and workflows are stored as items in the same way.</p>
+<p>Having everything in a single repository makes it easy to reuse data. For example, in this article template there is a field called Prerequisite Articles. The source associated with this field is specified as /sitecore/content/Home/about-launch-sitecore. This means that the moment someone adds a new article, it is automatically able to be used as a source for this field. You can get fairly complex filtering with the Source attribute. Full details on Data Templates can be found in the Data Definition Reference on SDN.</p>
+<p>Once you start to populate the content tree and define your Information Architecture you will want to make use of Insert Options. Insert Options restrict what type of content can be inserted in which folders in the content tree.. Insert Options are the rules that help maintain consistency in your information architecture and help keep your editors from inserting the wrong content types in the wrong folders.. </p>
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 192
+
+<image mediaid="{E8165CCD-5E40-4449-870B-ECC59FCB4B82}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/p-s/paragraph-justify-2" src="~/media/e8165ccd5e404449870becc59fcb4b82.ashx" />
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{EF5350C8-21BF-43A3-BCEF-71F29D91AEF0}
+----field----
+field: {EFC4A071-5574-404A-8206-FB502FCA909B}
+name: Prerequisite Articles
+key: prerequisite articles
+content-length: 38
+
+{C4E0EF5C-1DDF-4684-8CAD-EED50971237F}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 16
+
+What is Content?
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 15
+
+What is Content
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111026T114900
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\chc
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+74a0af3a-82a2-4d47-8b2e-cf9a9b376fa4
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T150412:635229758529140546
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
+name: __Semantics
+key: __semantics
+content-length: 77
+
+{96D23E84-12CF-4A1C-B8BB-A33D7E7FA16D}|{459DBF7C-1A25-4EDF-86DA-32020B0AFC4B}
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

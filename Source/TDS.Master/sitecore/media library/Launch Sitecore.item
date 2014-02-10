@@ -1,6 +1,6 @@
 ----item----
 version: 1
-id: {549A5FE0-5FF3-4492-B35C-793DA11DFEA2}
+id: {135D1DF3-D95C-479A-B83A-56E4CA7BFF26}
 database: master
 path: /sitecore/media library/Launch Sitecore
 parent: {3D6658D8-A0BF-4E75-B3E2-D050FABCF4E1}
@@ -12,22 +12,15 @@ templatekey: Media folder
 ----version----
 language: en
 version: 1
-revision: d83c2fca-4429-4f3e-8a30-35505ba7f3bb
+revision: 6b6ae900-f68a-41f7-bf00-2c4669c1d1d4
 
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 15
 
-20111214T174939
+20130905T201154
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d83c2fca-4429-4f3e-8a30-35505ba7f3bb
+6b6ae900-f68a-41f7-bf00-2c4669c1d1d4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20111214T174939:634594817797946297
+20130905T201154:635140087145482021
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

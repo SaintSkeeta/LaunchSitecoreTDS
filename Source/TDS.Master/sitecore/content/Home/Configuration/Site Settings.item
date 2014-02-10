@@ -10,6 +10,62 @@ template: {41E5285E-F5B2-4075-95CE-D3A993881C81}
 templatekey: Site Settings
 
 ----field----
+field: {285D2327-EB9F-4A9B-9BC7-5071EFA3C7BE}
+name: IP1
+key: ip1
+content-length: 2
+
+99
+----field----
+field: {0987481B-7AC1-4883-BF3F-5054D1EF52C7}
+name: IP2
+key: ip2
+content-length: 2
+
+45
+----field----
+field: {B93FDFD8-7AF7-4000-A79F-4018427C3A5D}
+name: IP3
+key: ip3
+content-length: 3
+
+148
+----field----
+field: {BC2D6090-8287-4AD7-8052-01D75F0EAC01}
+name: IP4
+key: ip4
+content-length: 2
+
+64
+----field----
+field: {E31D4BCB-AC93-4376-AD09-1BEA045C85A8}
+name: Title Comments
+key: title comments
+content-length: 411
+
+You can use whatever string you want. The page title control will replace {0} with the name of the current item and the {1} with the name of the site section. If you would like to store page titles as a field, just edit the meta\title control to pull that field. The first string is used for the home page and the site sections pages. The second string is for lower pages such as articles and team member pages.
+----field----
+field: {4998DAEF-314C-4AE0-AE9F-C811BE4028BE}
+name: Show Error Details on Error Page
+key: show error details on error page
+content-length: 1
+
+1
+----field----
+field: {AEDA6E3F-DC98-4E05-8D5F-6E54911419DE}
+name: Comments
+key: comments
+content-length: 84
+
+The current code doesn't support paging, but this will be added in a future release.
+----field----
+field: {B72E07BB-BBCE-4B1D-9A87-70988513E234}
+name: Allow Online Registration
+key: allow online registration
+content-length: 1
+
+1
+----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
@@ -47,43 +103,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: b2ddb456-7f35-4134-9884-9a9e9fbff394
+revision: 1931c6ef-0aae-4470-b166-7b2cc4371e42
 
 ----field----
-field: {1FE0B6C9-F642-4416-809F-EBB754241A6D}
-name: Page Size
-key: page size
-content-length: 1
+field: {962A3491-463F-4E23-9A43-84A293473724}
+name: Visible Profiles
+key: visible profiles
+content-length: 77
 
-7
-----field----
-field: {AEDA6E3F-DC98-4E05-8D5F-6E54911419DE}
-name: Comments
-key: comments
-content-length: 61
-
-Our search supports paging, so you supply the items per page.
-----field----
-field: {47D2853F-9423-4157-8E6C-833CA9708F1B}
-name: Profile Path
-key: profile path
-content-length: 38
-
-{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}
-----field----
-field: {B7066F9F-DA7E-4EC4-95F4-D2B1E87C0CAA}
-name: Copyright
-key: copyright
-content-length: 30
-
-Copyright © 1999-2012 Sitecore
-----field----
-field: {B72E07BB-BBCE-4B1D-9A87-70988513E234}
-name: Allow Online Registration
-key: allow online registration
-content-length: 1
-
-1
+{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}|{478859DC-EBE0-40A7-BD24-75D588FD3E09}
 ----field----
 field: {6A887010-7322-44B4-B05C-31697928B303}
 name: Page Title for Home and Site Sections
@@ -99,12 +127,19 @@ content-length: 27
 
 {0} - {1} | Launch Sitecore
 ----field----
-field: {E31D4BCB-AC93-4376-AD09-1BEA045C85A8}
-name: Title Comments
-key: title comments
-content-length: 411
+field: {B7066F9F-DA7E-4EC4-95F4-D2B1E87C0CAA}
+name: Copyright
+key: copyright
+content-length: 30
 
-You can use whatever string you want. The page title control will replace {0} with the name of the current item and the {1} with the name of the site section. If you would like to store page titles as a field, just edit the meta\title control to pull that field. The first string is used for the home page and the site sections pages. The second string is for lower pages such as articles and team member pages.
+Copyright © 1999-2013 Sitecore
+----field----
+field: {1FE0B6C9-F642-4416-809F-EBB754241A6D}
+name: Page Size
+key: page size
+content-length: 1
+
+6
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -132,14 +167,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b2ddb456-7f35-4134-9884-9a9e9fbff394
+1931c6ef-0aae-4470-b166-7b2cc4371e42
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130731T144904:635108789444841176
+20131218T142746:635229736663617393
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

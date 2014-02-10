@@ -1,0 +1,174 @@
+----item----
+version: 1
+id: {2D766141-8D12-43B8-9F08-A67A1E32F923}
+database: master
+path: /sitecore/content/Home/About-Launch-Sitecore/Optimizing-the-Experience/Creating-a-personalized-experience
+parent: {05B47C0F-7B67-47AD-9946-C02CBA12A195}
+name: Creating-a-personalized-experience
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
+templatekey: Article
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 335
+
+<tracking>
+  <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment" presets="digital marketer|100||">
+    <key name="Analytics" value="5" />
+    <key name="Campaigns and Targeting" value="5" />
+    <key name="Content Management" value="2" />
+    <key name="Technology" value="0" />
+  </profile>
+</tracking>
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+100
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{1B6A3702-5694-4FC4-8366-989ECDCD7F1B}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: c0f9f721-a70e-4dc6-85db-50227c66ec58
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 34
+
+Creating a personalized experience
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 125
+
+<p>This article describes setting up a simple personalization rule in the Page Editor user interface for Launch Sitecore.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 3273
+
+<p>Sitecore's Page Editor user interface provides inline personalization features focused on creating a custom experience for site visitors.  Through the Page Editor, a content owner can easily change a control's output based on any number of visitor conditions, for both authenticated and anonymous visitors.  These conditions range from GEOIP information to whether a visitor has achieved a defined goal for the site to "patterns" that watch for specific visitor trends.  With this simple to use interface, a marketing team can implement rules that show or hide content, drive different content into the control, or decide to show a different control in its place.  This article shows the steps to create a simple rule on the Launch Sitecore home page.</p>
+<p><strong>Personalization using the Page Editor</strong></p>
+<p>The Page Editor contains inline personalization functionality that allows you to specify the rules and conditions that must be met before personalized content is displayed.  It also lets you test this functionality before you publish it on your website.  Basically, the thought process involves identifying the conditions to watch for and the resulting actions to take if that condition exists.</p>
+<p>For this example, we'll change the "marketing spot" messaging on the home page if the visitor has already visited the site.</p>
+<p>To apply this personalization rule to a control using the Page Editor:</p>
+<p>1. Login to the Page Editor and enable designing mode</p>
+<p><img width="441" height="98" class="img-polaroid" alt="Design" src="~/media/88457AA9F56F468BADB7489889587A51.ashx" /></p>
+<p>2. Hover over the control you want to add a rule to and click once. Select the <em>Personalize the Component </em>button:</p>
+<p><img height="346" alt="marketing spot" width="416" src="~/media/0dbc62f8303f4ad5aa0721f6d5c8e4aa.ashx" /></p>
+<p>3. Click <em>New Condition</em> and specify a name for this personalization rule. Select which content will show when this rule condition is met in the <em>Personalize Content </em>box. You could also choose to hide the component if the rule is met, or switch in another control/rendering by checking the <em>Enable personalization of component design </em>checkbox.</p>
+<p><img width="563" height="449" class="img-polaroid" alt="New Component" src="~/media/9169FB6CF5C44BBDA775DA938DDFF350.ashx" /></p>
+<p>4. Click the <em>Edit </em>button to open the <em>Rule Set Editor</em></p>
+<p><img width="561" height="447" class="img-polaroid" alt="Rule set" src="~/media/AF9EB3F4E66A4635A6E2E678D347BC23.ashx" /></p>
+<p>5. Here you can define a set of rules to trigger the change in content for this component. Click a rule to add it to the rule description. Once a rule is added to the description, click an underlined value to edit it.</p>
+<p><img width="496" height="552" class="img-polaroid" alt="Create Rule" src="~/media/56F8E5CDFC684DD79D69083D9BD86A7D.ashx" /></p>
+<p>6. Click ok and add more conditions if necessary. When you are finished, you are able to switch between the personalization conditions created by selecting the drop down on the control itself:</p>
+<p><img width="278" height="265" class="img-polaroid" alt="Condition" src="~/media/2E5216785AAB4DC4A86693E5B77AEDCA.ashx" /></p>
+<p ><br />
+</p>
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 181
+
+<image mediaid="{286FCB06-13E7-4A1D-977A-172BE183CB15}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/c-f/contrast" src="~/media/286fcb0613e74a1d977a172be183cb15.ashx" />
+----field----
+field: {82D725ED-6707-4532-86A6-5444E34332FD}
+name: Contributors
+key: contributors
+content-length: 38
+
+{33879340-14B2-4BF2-93A2-FCC54C820BAD}
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 22
+
+Inline Personalization
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 34
+
+Creating a personalized experience
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111220T132100
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\chc
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c0f9f721-a70e-4dc6-85db-50227c66ec58
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T152159:635229769192443718
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

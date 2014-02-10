@@ -1,0 +1,224 @@
+----item----
+version: 1
+id: {B681BD6E-FDC3-4249-9F30-07148AFA0B5A}
+database: master
+path: /sitecore/layout/Placeholder Settings/Launch Sitecore/Main/footer-center
+parent: {E09C162F-930E-4D7E-AAA2-C3F70BBF7DEA}
+name: footer-center
+master: {00000000-0000-0000-0000-000000000000}
+template: {5C547D4E-7111-4995-95B0-6B561751BF2E}
+templatekey: Placeholder
+
+----field----
+field: {7256BDAB-1FD2-49DD-B205-CB4873D2917C}
+name: Placeholder Key
+key: placeholder key
+content-length: 13
+
+footer-center
+----field----
+field: {E391B526-D0C5-439D-803E-17512EAE6222}
+name: Allowed Controls
+key: allowed controls
+content-length: 155
+
+{EA4F1428-DF65-43D0-A8D6-E83BB540B80E}|{54B68FE5-83AE-4265-8DD2-3659A782DBE9}|{3350E555-010D-4BB4-976A-29442F461B00}|{6EDFF7B6-8582-4ECD-94D1-37CEADB999E9}
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 4
+
+1100
+----version----
+language: de-DE
+version: 1
+revision: be7b550f-c5ae-42e8-bb72-3ace285f9cad
+
+----field----
+field: {87871FF5-1965-46D6-884F-01D6A0B9C4C1}
+name: Description
+key: description
+content-length: 383
+
+<div>
+      <b>Content Platzhalter</b>
+      <div>
+
+<div style="padding:8px 8px 0px 8px;width:200px">
+<img height="32" width="32" alt="Sample Rendering" style="float:left;margin:0px 8px 0px 0px" src="~/icon/Business/32x32/table_selection_block.png?w=32&amp;h=32&amp;as=1" />
+<div>Der Content Platzhalter ist der Hauptplatzhalter.<div></div></div></div></div>
+<div></div></div>
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 6
+
+Inhalt
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20120622T122045:634759644451153734
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+be7b550f-c5ae-42e8-bb72-3ace285f9cad
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20120622T122045:634759644451466262
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: 14221cff-6d41-49f3-9801-ab710b7666df
+
+----field----
+field: {87871FF5-1965-46D6-884F-01D6A0B9C4C1}
+name: Description
+key: description
+content-length: 378
+
+
+		<div>
+ <b>Content Placeholder</b>
+ <div>
+
+<div style="padding:8px 8px 0px 8px;width:200px">
+<img height="32" width="32" alt="Sample Rendering" style="float:left;margin:0px 8px 0px 0px" src="~/icon/Business/32x32/table_selection_block.png?w=32&amp;h=32&amp;as=1" />
+<div>The content placeholder is the main placeholder.<div></div></div></div></div>
+<div></div></div>
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20080110T095900
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+14221cff-6d41-49f3-9801-ab710b7666df
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T213049:635229990496145608
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 5ca7f50e-ba06-42eb-b8e7-25f3400fc0f1
+
+----field----
+field: {87871FF5-1965-46D6-884F-01D6A0B9C4C1}
+name: Description
+key: description
+content-length: 387
+
+<div>
+      <b>コンテンツ (content) プレースホルダー</b>
+      <div>
+
+<div style="padding:8px 8px 0px 8px;width:200px">
+<img height="32" width="32" alt="コンテンツ (content) プレースホルダー" style="float:left;margin:0px 8px 0px 0px" src="~/icon/Business/32x32/table_selection_block.png?w=32&amp;h=32&amp;as=1" />
+<div>コンテンツ (content) プレースホルダーはメインのプレースホルダーです。<div></div></div></div></div>
+<div></div></div>
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 15
+
+コンテンツ (content)
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20120622T124132:634759656928395683
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5ca7f50e-ba06-42eb-b8e7-25f3400fc0f1
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20120622T124133:634759656931989364
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

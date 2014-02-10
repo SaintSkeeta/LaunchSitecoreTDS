@@ -10,17 +10,66 @@ template: {41E5285E-F5B2-4075-95CE-D3A993881C81}
 templatekey: Site Settings
 
 ----field----
+field: {285D2327-EB9F-4A9B-9BC7-5071EFA3C7BE}
+name: IP1
+key: ip1
+content-length: 2
+
+99
+----field----
+field: {0987481B-7AC1-4883-BF3F-5054D1EF52C7}
+name: IP2
+key: ip2
+content-length: 2
+
+45
+----field----
+field: {B93FDFD8-7AF7-4000-A79F-4018427C3A5D}
+name: IP3
+key: ip3
+content-length: 3
+
+148
+----field----
+field: {BC2D6090-8287-4AD7-8052-01D75F0EAC01}
+name: IP4
+key: ip4
+content-length: 2
+
+64
+----field----
+field: {4998DAEF-314C-4AE0-AE9F-C811BE4028BE}
+name: Show Error Details on Error Page
+key: show error details on error page
+content-length: 1
+
+1
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-650
+700
 ----version----
 language: en
 version: 1
-revision: 54d3a08e-c0dd-4ec6-9498-8fbc9a8d878e
+revision: c8d3d338-0168-44f6-902b-8f5692bfeaed
 
+----field----
+field: {6A887010-7322-44B4-B05C-31697928B303}
+name: Page Title for Home and Site Sections
+key: page title for home and site sections
+content-length: 21
+
+{0} | Launch Sitecore
+----field----
+field: {436B14EE-7226-4831-AE7B-06FF5C8FF0D2}
+name: Page Title for Lower Pages
+key: page title for lower pages
+content-length: 27
+
+{0} - {1} | Launch Sitecore
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -48,14 +97,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-54d3a08e-c0dd-4ec6-9498-8fbc9a8d878e
+c8d3d338-0168-44f6-902b-8f5692bfeaed
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20120920T175433:634837604737036124
+20131113T101111:635199342711662509
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,0 +1,44 @@
+----item----
+version: 1
+id: {ECF18498-5D2E-45C7-883D-E68E123AAE46}
+database: core
+path: /sitecore/content/Applications/WebEdit/Edit Frame Buttons/Carousel Items
+parent: {E77EEE1C-4F50-4A68-918C-47E9A8FC0957}
+name: Carousel Items
+master: {00000000-0000-0000-0000-000000000000}
+template: {B0666CFE-8C7B-4CC1-8E32-8253742EBFA9}
+templatekey: Edit Frame Button Folder
+
+----version----
+language: en
+version: 1
+revision: a348d119-00b6-4d97-8ef7-e5fad6fb7821
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130830T160833
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a348d119-00b6-4d97-8ef7-e5fad6fb7821
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130830T160833:635134757132260056
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

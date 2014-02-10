@@ -33,6 +33,7 @@ using Glass.Mapper.Sc.Configuration.Attributes;
 using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.Fields;
 using Sitecore.Globalization;
+using Sitecore.Data;
 
 <#
 // Calculate the top leve namespace as configured in the target project and
@@ -43,7 +44,7 @@ string fullNamespace = JoinNamespaces(DefaultNamespace, Model.BaseNamespace);
 namespace <#=fullNamespace #>
 {
 
-	public interface IGlassBase{
+	public partial interface IGlassBase{
 		
 		[SitecoreId]
 		Guid Id{ get; }
@@ -56,7 +57,7 @@ namespace <#=fullNamespace #>
 
 	}
 
-	public abstract class GlassBase : IGlassBase{
+	public abstract partial class GlassBase : IGlassBase{
 		
 		[SitecoreId]
 		public virtual Guid Id{ get; private set;}

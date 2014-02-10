@@ -10,6 +10,20 @@ template: {2DED4D56-04FD-4D55-84F5-59D4ECA70E83}
 templatekey: Promo Spot
 
 ----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
+----field----
+field: {C9283D9E-7C29-4419-9C28-5A5C8FF53E84}
+name: __Bucketable
+key: __bucketable
+content-length: 1
+
+1
+----field----
 field: {CA9B9F52-4FB0-4F87-A79F-24DEA62CDA65}
 name: __Default workflow
 key: __default workflow
@@ -19,8 +33,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 72a8af82-752b-4355-a7c9-04e257412c91
+revision: 8b5384af-c56d-4622-97f5-4a59f43d1e29
 
+----field----
+field: {DD45E0B2-E160-4291-8F50-1EBBC39AB445}
+name: Link Text
+key: link text
+content-length: 10
+
+Learn More
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -48,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-72a8af82-752b-4355-a7c9-04e257412c91
+8b5384af-c56d-4622-97f5-4a59f43d1e29
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20120921T154816:634838392969817447
+20130927T231915:635159207551569901
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

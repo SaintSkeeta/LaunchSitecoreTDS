@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {19E4B56F-2582-4660-97F1-B72051F553B6}
+database: master
+path: /sitecore/templates/Launch Sitecore/Article Group/__Standard Values
+parent: {1B6A3702-5694-4FC4-8366-989ECDCD7F1B}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {1B6A3702-5694-4FC4-8366-989ECDCD7F1B}
+templatekey: Article Group
+
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 77
+
+{826DC4A0-BEB8-4774-8FA7-791F1EC584B4}|{D9019E30-F954-46CC-AA70-3E928C40B5D0}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 1342
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{DEAB823F-8E62-48FF-8732-093FF05B17CC}"><p uid="{DBA94FB3-7999-4DB3-A449-466DF9C3964A}" key="content-primary" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Template Overrides/Article Group/article-group-content-primary" /><r id="{01998BAB-2A0D-4213-B7EB-5BCCDB47974B}" ph="main-content" uid="{19B71B9E-FDA5-48C9-94E2-1C4090D47ADC}" /><r id="{988796D9-5A35-4140-A05D-C94B3717C176}" ph="/main-content/content-secondary" uid="{377674D0-615F-4B8A-A8F5-AEE38E82BF36}" /><r id="{D5E313F3-4203-49D7-B954-DB03B8E52392}" ph="/main-content/content-primary" uid="{B8E2C5E1-92C4-46A4-A175-7B64807ECC42}" /><r id="{7AD663B9-9FE3-4BAB-8787-022C66C62F87}" ph="/main-content/content-primary" uid="{97CF86BC-404B-43DF-91E6-956517A025A1}" /><r ds="{9D181561-8B71-4577-BDFF-29CC95967FA5}" id="{6EDFF7B6-8582-4ECD-94D1-37CEADB999E9}" par="" ph="footer-left" uid="{29414DA0-5BCA-41AD-A524-0FA71686E42D}" /><r id="{3350E555-010D-4BB4-976A-29442F461B00}" ph="footer-center" uid="{19C91C16-F65B-46A3-B38A-001CD5E45A3F}" /><r id="{EA4F1428-DF65-43D0-A8D6-E83BB540B80E}" ph="footer-right" uid="{760C6D63-B752-44AB-8ED4-2C88B18F8A66}" /><r id="{654459D1-D541-42B3-899C-A5470C656335}" ph="visit-details" uid="{C032DB3C-9519-4560-B2D8-8E6DA317C44F}" /></d></r>
+----field----
+field: {CA9B9F52-4FB0-4F87-A79F-24DEA62CDA65}
+name: __Default workflow
+key: __default workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: c9cccbc9-93b0-4507-aa19-7b58c2f2aedf
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111213T134900
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c9cccbc9-93b0-4507-aa19-7b58c2f2aedf
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T165018:635229822188376165
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

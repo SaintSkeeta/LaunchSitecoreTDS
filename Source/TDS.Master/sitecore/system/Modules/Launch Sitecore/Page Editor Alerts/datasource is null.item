@@ -1,0 +1,59 @@
+----item----
+version: 1
+id: {D48D16BD-60D7-413F-BC89-AAF212411AA7}
+database: master
+path: /sitecore/system/Modules/Launch Sitecore/Page Editor Alerts/datasource is null
+parent: {4DB91077-997F-4324-A0EA-9692C033A6A0}
+name: datasource is null
+master: {00000000-0000-0000-0000-000000000000}
+template: {1D97AB9C-D9AB-4FCC-8713-CE2F279B85ED}
+templatekey: Page Editor Message
+
+----field----
+field: {81B83CAA-E7C3-4333-B54E-9E4670AA5383}
+name: Key
+key: key
+content-length: 18
+
+datasource is null
+----version----
+language: en
+version: 1
+revision: 01da72d3-64cf-493a-ae1a-3b9c306ffa58
+
+----field----
+field: {FA03EFA4-692E-456C-89C9-EBEE61BE1112}
+name: Alert
+key: alert
+content-length: 86
+
+<div class="alert alert-error">
+<h2>Oh Snap!</h2><p>The DataSource is null.</p></div>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130823T183623
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+01da72d3-64cf-493a-ae1a-3b9c306ffa58
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130905T215323:635140148032318993
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -24,6 +24,34 @@ content-length: 22
 
 /sitecore/content/home
 ----field----
+field: {337E20E1-999A-4EEA-85AD-B58A03AE75CC}
+name: Quick Action Bar
+key: quick action bar
+content-length: 38
+
+{59D4EE10-627C-4FD3-A964-61A88B092CBC}
+----field----
+field: {21828437-EA4B-40A1-8C61-4CE60EA41DB6}
+name: Validate Button
+key: validate button
+content-length: 38
+
+{59D4EE10-627C-4FD3-A964-61A88B092CBC}
+----field----
+field: {9C903E29-650D-4AF2-B9BD-526D5C14A1A5}
+name: Validator Bar
+key: validator bar
+content-length: 38
+
+{59D4EE10-627C-4FD3-A964-61A88B092CBC}
+----field----
+field: {53C432C4-7122-4E2D-8296-DB4184FD1735}
+name: Workflow
+key: workflow
+content-length: 38
+
+{59D4EE10-627C-4FD3-A964-61A88B092CBC}
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -33,7 +61,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 9eb5654d-4a6a-4221-bd25-b08060b109b2
+revision: 4f9f58a8-f39b-443d-a027-ba289f6a558a
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -62,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9eb5654d-4a6a-4221-bd25-b08060b109b2
+4f9f58a8-f39b-443d-a027-ba289f6a558a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20120315T172538:634674291381949834
+20130927T231841:635159207218358311
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

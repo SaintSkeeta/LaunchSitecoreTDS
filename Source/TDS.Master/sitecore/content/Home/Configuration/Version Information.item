@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 44c37020-5e97-4f61-ad2b-5625808d24c3
+revision: 444a8df0-b216-4767-864d-bdaa2311ac9d
 
 ----field----
 field: {EBE1742D-BC5B-46F0-B16D-499C12C98CDE}
@@ -55,29 +55,30 @@ name: Launch Sitecore Version
 key: launch sitecore version
 content-length: 23
 
-Launch Sitecore 7.0.2.5
-----field----
-field: {FADDFA40-F5E5-41C0-A615-52D542DFAB9F}
-name: Sitecore Version Image
-key: sitecore version image
-content-length: 161
-
-<image mediaid="{BB52A51F-7E32-41EC-96F9-430803F5E71D}" mediapath="/Launch Sitecore/General/70-round-sign" src="~/media/BB52A51F7E3241EC96F9430803F5E71D.ashx" />
+Launch Sitecore 7.0.3.6
 ----field----
 field: {74E81E2B-5DDA-4EBA-8ADE-A6EBE3CA31CF}
 name: Version Details
 key: version details
-content-length: 345
+content-length: 409
 
-<p>Launch Sitecore shows many of the features of Sitecore 7, and you have not only content about Sitecore but also a reference implementation.</p>
+<p>Launch Sitecore shows many of the features of Sitecore 7.0, and you have not only content about Sitecore but also a reference implementation.</p>
 <p>Major Features:</p>
 <ul>
- <li>Main and Mobile Sites</li>
- <li>DMS Profiling</li>
- <li>Page Editor Enhancements</li>
- <li>Full Workflow and Security</li>
- <li>Sitecore Search using Linq</li>
+    <li>Fully Responsive Site</li>
+    <li>DMS Profiling</li>
+    <li>Page Editor Enhancements</li>
+    <li>Full Workflow and Security</li>
+    <li>Item Buckets Examples</li>
+    <li>Facet Search and Search based Controls</li>
 </ul>
+----field----
+field: {472D92AB-0F80-4FF3-A9DA-64628EE0EA54}
+name: Sitecore Version Image
+key: sitecore version image
+content-length: 162
+
+<image mediaid="{8695BE6C-1E56-4BC4-BD91-EF13A0B06FCB}" mediapath="/Launch Sitecore/General/70-round-sign1" src="~/media/8695BE6C1E564BC4BD91EF13A0B06FCB.ashx" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -105,14 +106,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-44c37020-5e97-4f61-ad2b-5625808d24c3
+444a8df0-b216-4767-864d-bdaa2311ac9d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130816T134624:635122575845142117
+20140105T205627:635245521878728366
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
