@@ -56,16 +56,16 @@
     <SitecoreItem Include="sitecore\content.item">
       <Icon>/temp/IconCache/People/16x16/cubes_blue.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications.item">
       <Icon>/temp/IconCache/Software/16x16/application.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\Content Editor.item">
       <Icon>/temp/IconCache/People/16x16/cubes_blue.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\Content Editor\Gutters.item">
@@ -115,22 +115,22 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\Security.item">
       <Icon>/~/icon/applications/16x16/folder.png.aspx</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\Security\User Manager.item">
       <Icon>/~/icon/People/32x32/users1.png.aspx</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\Security\User Manager\Ribbon.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\Security\User Manager\Ribbon\Home.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\Security\User Manager\Ribbon\Home\Launch Sitecore.item">
@@ -145,12 +145,12 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\WebEdit.item">
       <Icon>/temp/IconCache/Network/16x16/Environment.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\WebEdit\Custom Experience Buttons.item">
       <Icon>/~/icon/Applications/16x16/folder.png.aspx</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\WebEdit\Custom Experience Buttons\Call to Action Link To.item">
@@ -180,7 +180,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\WebEdit\Edit Frame Buttons.item">
       <Icon>/~/icon/Applications/16x16/folder.png.aspx</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\WebEdit\Edit Frame Buttons\Carousel Items.item">
@@ -195,17 +195,17 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons.item">
       <Icon>/~/icon/Applications/16x16/folder.png.aspx</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit\Page Editor.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit\Page Editor\Additional Fields.item">
@@ -246,16 +246,16 @@
     <SitecoreItem Include="sitecore\system.item">
       <Icon>/temp/IconCache/People/16x16/workstation1.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings.item">
       <Icon>/temp/IconCache/Applications/16x16/preferences.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Html Editor Profiles.item">
       <Icon>/~/icon/Applications/16x16/folder.png.aspx</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Html Editor Profiles\Rich Text Body.item">
@@ -785,12 +785,12 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Security.item">
       <Icon>/~/icon/Applications/16x16/folder.png.aspx</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Security\Profiles.item">
       <Icon>/~/icon/Applications/16x16/folder.png.aspx</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Security\Profiles\LS User.item">
@@ -801,7 +801,7 @@
     <SitecoreItem Include="sitecore\templates.item">
       <Icon>/temp/IconCache/Software/16x16/component_yellow.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Launch Sitecore.item">
       <Icon>/~/icon/Applications/16x16/folder.png.aspx</Icon>

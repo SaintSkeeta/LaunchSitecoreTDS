@@ -667,7 +667,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Devices.item">
       <Icon>/temp/IconCache/People/16x16/pda.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Devices\Mobile.item">
@@ -677,7 +677,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Layouts.item">
       <Icon>/temp/IconCache/Applications/16x16/windows.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Layouts\LaunchSitecore.item">
@@ -702,7 +702,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Placeholder Settings.item">
       <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore.item">
@@ -952,7 +952,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Sublayouts.item">
       <Icon>/temp/IconCache/Software/16x16/elements_selection.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Sublayouts\LaunchSitecore.item">
@@ -4842,28 +4842,28 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Marketing Center\Goals\Launch Sitecore.item">
       <Icon>/temp/IconCache/Applications/32x32/folder_blue.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Marketing Center\Goals\Launch Sitecore\Add a Favorite.item">
       <Icon>/temp/IconCache/People/32x32/tractor_red.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Marketing Center\Goals\Launch Sitecore\Visited a Job Function Page.item">
       <Icon>/temp/IconCache/People/32x32/car_compact_green.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Marketing Center\Goals\Launch Sitecore\Visited Team Page.item">
       <Icon>/temp/IconCache/people/32x32/users2.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Marketing Center\Goals\Launch Sitecore\Visited the About Page.item">
       <Icon>/temp/IconCache/People/32x32/airplane.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Marketing Center\Goals\Login.item">
       <Icon>/~/icon/Network/16x16/key1.png.aspx</Icon>
@@ -5448,11 +5448,11 @@
     <SitecoreItem Include="sitecore\templates.item">
       <Icon>/temp/IconCache/Applications/16x16/form_blue.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Branches.item">
       <Icon>/~/icon/Software/16x16/component.png.aspx</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Branches\Launch Sitecore.item">
