@@ -1,4 +1,4 @@
-﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -6482,6 +6482,12 @@
       <IsFolder>True</IsFolder>
       <IsRelative>True</IsRelative>
     </Replacement>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LaunchSitecore.Client\LaunchSitecore.Client.csproj">
+      <Project>{a483a9bb-2d40-4fe0-890b-d66b4b366174}</Project>
+      <Name>LaunchSitecore.Client</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
 </Project>

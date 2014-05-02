@@ -55,15 +55,6 @@ namespace LaunchContent
 	}
 }
 
-
-
-
-
-
-
-
-
-
 namespace LaunchContent.LaunchSitecore.Settings_Templates
 {
 
@@ -101,15 +92,6 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 	
 	}
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -275,13 +257,6 @@ namespace LaunchContent.LaunchSitecore
 
 
 
-
-
-
-
-
-
-
 namespace LaunchContent.LaunchSitecore
 {
 
@@ -396,16 +371,6 @@ namespace LaunchContent.LaunchSitecore
 }
 
 
-
-
-
-
-
-
-
-
-
-
 namespace LaunchContent.LaunchSitecore.Settings_Templates
 {
 
@@ -471,14 +436,6 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 
 
 
-
-
-
-
-
-
-
-
 namespace LaunchContent.LaunchSitecore.Base_Templates
 {
 
@@ -540,18 +497,6 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
 	
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
 namespace LaunchContent.LaunchSitecore.Base_Templates
 {
 
@@ -661,10 +606,6 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
 	
 	}
 }
-
-
-
-
 
 
 
@@ -1028,12 +969,6 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 
 
 
-
-
-
-
-
-
 namespace LaunchContent.LaunchSitecore.Site_Sections
 {
 
@@ -1146,14 +1081,6 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 	
 	}
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -1271,17 +1198,6 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
 namespace LaunchContent.LaunchSitecore
 {
 
@@ -1394,8 +1310,6 @@ namespace LaunchContent.LaunchSitecore
 	
 	}
 }
-
-
 
 
 
@@ -1520,16 +1434,6 @@ namespace LaunchContent.LaunchSitecore
 }
 
 
-
-
-
-
-
-
-
-
-
-
 namespace LaunchContent.LaunchSitecore.Site_Sections
 {
 
@@ -1642,17 +1546,6 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 	
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
 
 namespace LaunchContent.LaunchSitecore.Settings_Templates
 {
@@ -1787,15 +1680,6 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 	
 	}
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1978,8 +1862,6 @@ namespace LaunchContent.LaunchSitecore
 
 
 
-
-
 namespace LaunchContent.LaunchSitecore
 {
 
@@ -2077,8 +1959,6 @@ namespace LaunchContent.LaunchSitecore
 	
 	}
 }
-
-
 
 
 
@@ -2237,18 +2117,6 @@ namespace LaunchContent.LaunchSitecore
 	
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
 namespace LaunchContent.LaunchSitecore.Settings_Templates
 {
 
@@ -2481,15 +2349,6 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 
 
 
-
-
-
-
-
-
-
-
-
 namespace LaunchContent.LaunchSitecore.Base_Templates
 {
 
@@ -2614,15 +2473,6 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
 
 
 
-
-
-
-
-
-
-
-
-
 namespace LaunchContent.LaunchSitecore
 {
 
@@ -2720,18 +2570,6 @@ namespace LaunchContent.LaunchSitecore
 	
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
 namespace LaunchContent.LaunchSitecore
 {
 
@@ -2878,17 +2716,6 @@ namespace LaunchContent.LaunchSitecore
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
 namespace LaunchContent.LaunchSitecore.Site_Sections
 {
 
@@ -3001,18 +2828,6 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 	
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
 namespace LaunchContent.LaunchSitecore
 {
 
@@ -3095,13 +2910,6 @@ namespace LaunchContent.LaunchSitecore
 	
 	}
 }
-
-
-
-
-
-
-
 
 
 
@@ -3204,4 +3012,12 @@ namespace LaunchContent.LaunchSitecore
 	
 	}
 }
+
+
+
+
+
+
+
+
 
