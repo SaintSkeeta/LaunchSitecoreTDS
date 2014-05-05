@@ -10,12 +10,26 @@ template: {0A98E368-CDB9-4E1E-927C-8E0C24A003FB}
 templatekey: Sublayout
 
 ----field----
+field: {E28F0784-53EC-4B5C-803E-638FDB1EC15D}
+name: Parameters Template
+key: parameters template
+content-length: 38
+
+{69C5B626-E7F9-4309-AD66-E74DB310A69E}
+----field----
 field: {E42081B6-8A95-4A11-89CE-DF70ED502F57}
 name: Path
 key: path
 content-length: 64
 
 /layouts/LaunchSitecore/Controls/Carousel/Enhanced Carousel.ascx
+----field----
+field: {308E88F5-CD6E-4F8F-BAFE-95A47DEDEFDC}
+name: Editable
+key: editable
+content-length: 1
+
+1
 ----field----
 field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
 name: Datasource Location
@@ -54,7 +68,7 @@ content-length: 198
 ----version----
 language: en
 version: 1
-revision: a2aa3126-63ea-4614-8791-53fe4231b044
+revision: 9880d50b-aa2b-4b55-b63c-5f1958397b2c
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -76,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a2aa3126-63ea-4614-8791-53fe4231b044
+9880d50b-aa2b-4b55-b63c-5f1958397b2c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20131009T180120:635169384807735897
+20140504T190533:635348271335132839
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

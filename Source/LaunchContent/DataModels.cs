@@ -371,6 +371,7 @@ namespace LaunchContent.LaunchSitecore
 }
 
 
+
 namespace LaunchContent.LaunchSitecore.Settings_Templates
 {
 
@@ -1084,6 +1085,91 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 
 
 
+namespace LaunchContent.LaunchSitecore
+{
+
+
+	/// <summary>
+	/// ICarousel_Settings Interface
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Carousel Settings</para>	
+	/// <para>ID: 69C5B626-E7F9-4309-AD66-E74DB310A69E</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ICarousel_SettingsConstants.TemplateIdString)]
+	public partial interface ICarousel_Settings : IGlassBase 
+	{
+					/// <summary>
+					/// The Auto Scroll field.
+					/// <para>Field Type: Checkbox</para>		
+					/// <para>Field ID: ae283b5c-2f0e-4681-afda-db86d8321141</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField("Auto Scroll")]
+					bool Auto_Scroll  {get; set;}
+			
+					/// <summary>
+					/// The Colour field.
+					/// <para>Field Type: Droplist</para>		
+					/// <para>Field ID: 1e363a3b-fe22-4424-87ca-9f011ce29878</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField] 
+					string Colour  {get; set;}
+			
+	}
+
+
+	public static partial class ICarousel_SettingsConstants{
+
+			public const string TemplateIdString = "69c5b626-e7f9-4309-ad66-e74db310a69e";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "Carousel Settings";
+
+					
+			public static readonly ID Auto_ScrollFieldId = new ID("ae283b5c-2f0e-4681-afda-db86d8321141");
+			public const string Auto_ScrollFieldName = "Auto Scroll";
+			
+					
+			public static readonly ID ColourFieldId = new ID("1e363a3b-fe22-4424-87ca-9f011ce29878");
+			public const string ColourFieldName = "Colour";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// Carousel_Settings
+	/// <para>Path: /sitecore/templates/Launch Sitecore/Carousel Settings</para>
+	/// <para>ID: 69C5B626-E7F9-4309-AD66-E74DB310A69E</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=ICarousel_SettingsConstants.TemplateIdString)]
+	public partial class Carousel_Settings  : GlassBase, ICarousel_Settings 
+	{
+				/// <summary>
+				/// The Auto Scroll field.
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: ae283b5c-2f0e-4681-afda-db86d8321141</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField("Auto Scroll")]
+				public virtual bool Auto_Scroll  {get; set;}
+
+					
+				/// <summary>
+				/// The Colour field.
+				/// <para>Field Type: Droplist</para>		
+				/// <para>Field ID: 1e363a3b-fe22-4424-87ca-9f011ce29878</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField] 
+				public virtual string Colour  {get; set;}
+
+					
+	
+	}
+}
 
 namespace LaunchContent.LaunchSitecore.Site_Sections
 {
@@ -1432,6 +1518,7 @@ namespace LaunchContent.LaunchSitecore
 	
 	}
 }
+
 
 
 namespace LaunchContent.LaunchSitecore.Site_Sections
@@ -1852,6 +1939,8 @@ namespace LaunchContent.LaunchSitecore
 	
 	}
 }
+
+
 
 
 
