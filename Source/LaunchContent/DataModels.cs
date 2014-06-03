@@ -282,6 +282,10 @@ namespace LaunchContent.LaunchSitecore
 			public const string ImageFieldName = "Image";
 			
 					
+			public static readonly ID AbstractFieldId = new ID("00e1d306-96bd-4b32-85b4-cd63c53cc6c1");
+			public const string AbstractFieldName = "Abstract";
+			
+					
 			public static readonly ID BodyFieldId = new ID("5a5684bb-8b54-44f6-abcc-2bada05ada5d");
 			public const string BodyFieldName = "Body";
 			
@@ -315,6 +319,17 @@ namespace LaunchContent.LaunchSitecore
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField] 
 				public virtual Image Image  {get; set;}
+
+					
+				/// <summary>
+				/// The Abstract field.
+				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field ID: 00e1d306-96bd-4b32-85b4-cd63c53cc6c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField] 
+				public virtual string Abstract  {get; set;}
 
 					
 				/// <summary>
@@ -805,6 +820,10 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 			public const string ImageFieldName = "Image";
 			
 					
+			public static readonly ID AbstractFieldId = new ID("00e1d306-96bd-4b32-85b4-cd63c53cc6c1");
+			public const string AbstractFieldName = "Abstract";
+			
+					
 			public static readonly ID BodyFieldId = new ID("5a5684bb-8b54-44f6-abcc-2bada05ada5d");
 			public const string BodyFieldName = "Body";
 			
@@ -838,6 +857,17 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField] 
 				public virtual Image Image  {get; set;}
+
+					
+				/// <summary>
+				/// The Abstract field.
+				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field ID: 00e1d306-96bd-4b32-85b4-cd63c53cc6c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField] 
+				public virtual string Abstract  {get; set;}
 
 					
 				/// <summary>
@@ -904,6 +934,10 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 			public const string ImageFieldName = "Image";
 			
 					
+			public static readonly ID AbstractFieldId = new ID("00e1d306-96bd-4b32-85b4-cd63c53cc6c1");
+			public const string AbstractFieldName = "Abstract";
+			
+					
 			public static readonly ID BodyFieldId = new ID("5a5684bb-8b54-44f6-abcc-2bada05ada5d");
 			public const string BodyFieldName = "Body";
 			
@@ -937,6 +971,17 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField] 
 				public virtual Image Image  {get; set;}
+
+					
+				/// <summary>
+				/// The Abstract field.
+				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field ID: 00e1d306-96bd-4b32-85b4-cd63c53cc6c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField] 
+				public virtual string Abstract  {get; set;}
 
 					
 				/// <summary>
@@ -1123,6 +1168,10 @@ namespace LaunchContent.LaunchSitecore
 			public const string ImageFieldName = "Image";
 			
 					
+			public static readonly ID AbstractFieldId = new ID("00e1d306-96bd-4b32-85b4-cd63c53cc6c1");
+			public const string AbstractFieldName = "Abstract";
+			
+					
 			public static readonly ID BodyFieldId = new ID("5a5684bb-8b54-44f6-abcc-2bada05ada5d");
 			public const string BodyFieldName = "Body";
 			
@@ -1156,6 +1205,17 @@ namespace LaunchContent.LaunchSitecore
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField] 
 				public virtual Image Image  {get; set;}
+
+					
+				/// <summary>
+				/// The Abstract field.
+				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field ID: 00e1d306-96bd-4b32-85b4-cd63c53cc6c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField] 
+				public virtual string Abstract  {get; set;}
 
 					
 				/// <summary>
@@ -1222,6 +1282,10 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 			public const string ImageFieldName = "Image";
 			
 					
+			public static readonly ID AbstractFieldId = new ID("00e1d306-96bd-4b32-85b4-cd63c53cc6c1");
+			public const string AbstractFieldName = "Abstract";
+			
+					
 			public static readonly ID BodyFieldId = new ID("5a5684bb-8b54-44f6-abcc-2bada05ada5d");
 			public const string BodyFieldName = "Body";
 			
@@ -1255,6 +1319,17 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField] 
 				public virtual Image Image  {get; set;}
+
+					
+				/// <summary>
+				/// The Abstract field.
+				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field ID: 00e1d306-96bd-4b32-85b4-cd63c53cc6c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField] 
+				public virtual string Abstract  {get; set;}
 
 					
 				/// <summary>
@@ -1491,6 +1566,10 @@ namespace LaunchContent.LaunchSitecore
 			public const string QuoteFieldName = "Quote";
 			
 					
+			public static readonly ID AbstractFieldId = new ID("00e1d306-96bd-4b32-85b4-cd63c53cc6c1");
+			public const string AbstractFieldName = "Abstract";
+			
+					
 			public static readonly ID BodyFieldId = new ID("5a5684bb-8b54-44f6-abcc-2bada05ada5d");
 			public const string BodyFieldName = "Body";
 			
@@ -1546,6 +1625,17 @@ namespace LaunchContent.LaunchSitecore
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField] 
 				public virtual string Quote  {get; set;}
+
+					
+				/// <summary>
+				/// The Abstract field.
+				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field ID: 00e1d306-96bd-4b32-85b4-cd63c53cc6c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField] 
+				public virtual string Abstract  {get; set;}
 
 					
 				/// <summary>
@@ -1615,6 +1705,10 @@ namespace LaunchContent.LaunchSitecore
 			public const string TemplateName = "Job Function";
 
 					
+			public static readonly ID AbstractFieldId = new ID("00e1d306-96bd-4b32-85b4-cd63c53cc6c1");
+			public const string AbstractFieldName = "Abstract";
+			
+					
 			public static readonly ID BodyFieldId = new ID("5a5684bb-8b54-44f6-abcc-2bada05ada5d");
 			public const string BodyFieldName = "Body";
 			
@@ -1639,6 +1733,17 @@ namespace LaunchContent.LaunchSitecore
 	[SitecoreType(TemplateId=IJob_FunctionConstants.TemplateIdString)]
 	public partial class Job_Function  : GlassBase, IJob_Function 
 	{
+				/// <summary>
+				/// The Abstract field.
+				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field ID: 00e1d306-96bd-4b32-85b4-cd63c53cc6c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField] 
+				public virtual string Abstract  {get; set;}
+
+					
 				/// <summary>
 				/// The Body field.
 				/// <para>Field Type: Rich Text</para>		
@@ -2090,6 +2195,10 @@ namespace LaunchContent.LaunchSitecore
 			public const string TemplateName = "Security Page";
 
 					
+			public static readonly ID AbstractFieldId = new ID("00e1d306-96bd-4b32-85b4-cd63c53cc6c1");
+			public const string AbstractFieldName = "Abstract";
+			
+					
 			public static readonly ID BodyFieldId = new ID("5a5684bb-8b54-44f6-abcc-2bada05ada5d");
 			public const string BodyFieldName = "Body";
 			
@@ -2114,6 +2223,17 @@ namespace LaunchContent.LaunchSitecore
 	[SitecoreType(TemplateId=ISecurity_PageConstants.TemplateIdString)]
 	public partial class Security_Page  : GlassBase, ISecurity_Page 
 	{
+				/// <summary>
+				/// The Abstract field.
+				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field ID: 00e1d306-96bd-4b32-85b4-cd63c53cc6c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField] 
+				public virtual string Abstract  {get; set;}
+
+					
 				/// <summary>
 				/// The Body field.
 				/// <para>Field Type: Rich Text</para>		
@@ -2198,6 +2318,10 @@ namespace LaunchContent.LaunchSitecore
 			public const string Prerequisite_ArticlesFieldName = "Prerequisite Articles";
 			
 					
+			public static readonly ID AbstractFieldId = new ID("00e1d306-96bd-4b32-85b4-cd63c53cc6c1");
+			public const string AbstractFieldName = "Abstract";
+			
+					
 			public static readonly ID BodyFieldId = new ID("5a5684bb-8b54-44f6-abcc-2bada05ada5d");
 			public const string BodyFieldName = "Body";
 			
@@ -2242,6 +2366,17 @@ namespace LaunchContent.LaunchSitecore
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField("Prerequisite Articles")]
 				public virtual IEnumerable<Guid> Prerequisite_Articles  {get; set;}
+
+					
+				/// <summary>
+				/// The Abstract field.
+				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field ID: 00e1d306-96bd-4b32-85b4-cd63c53cc6c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField] 
+				public virtual string Abstract  {get; set;}
 
 					
 				/// <summary>
@@ -2307,6 +2442,10 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 			public const string ImageFieldName = "Image";
 			
 					
+			public static readonly ID AbstractFieldId = new ID("00e1d306-96bd-4b32-85b4-cd63c53cc6c1");
+			public const string AbstractFieldName = "Abstract";
+			
+					
 			public static readonly ID BodyFieldId = new ID("5a5684bb-8b54-44f6-abcc-2bada05ada5d");
 			public const string BodyFieldName = "Body";
 			
@@ -2340,6 +2479,17 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField] 
 				public virtual Image Image  {get; set;}
+
+					
+				/// <summary>
+				/// The Abstract field.
+				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field ID: 00e1d306-96bd-4b32-85b4-cd63c53cc6c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField] 
+				public virtual string Abstract  {get; set;}
 
 					
 				/// <summary>
@@ -2400,6 +2550,10 @@ namespace LaunchContent.LaunchSitecore
 			public const string TemplateName = "General Page";
 
 					
+			public static readonly ID AbstractFieldId = new ID("00e1d306-96bd-4b32-85b4-cd63c53cc6c1");
+			public const string AbstractFieldName = "Abstract";
+			
+					
 			public static readonly ID BodyFieldId = new ID("5a5684bb-8b54-44f6-abcc-2bada05ada5d");
 			public const string BodyFieldName = "Body";
 			
@@ -2420,6 +2574,17 @@ namespace LaunchContent.LaunchSitecore
 	[SitecoreType(TemplateId=IGeneral_PageConstants.TemplateIdString)]
 	public partial class General_Page  : GlassBase, IGeneral_Page 
 	{
+				/// <summary>
+				/// The Abstract field.
+				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field ID: 00e1d306-96bd-4b32-85b4-cd63c53cc6c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField] 
+				public virtual string Abstract  {get; set;}
+
+					
 				/// <summary>
 				/// The Body field.
 				/// <para>Field Type: Rich Text</para>		
@@ -2471,6 +2636,10 @@ namespace LaunchContent.LaunchSitecore
 			public const string TemplateName = "Microsite Subpage";
 
 					
+			public static readonly ID AbstractFieldId = new ID("00e1d306-96bd-4b32-85b4-cd63c53cc6c1");
+			public const string AbstractFieldName = "Abstract";
+			
+					
 			public static readonly ID BodyFieldId = new ID("5a5684bb-8b54-44f6-abcc-2bada05ada5d");
 			public const string BodyFieldName = "Body";
 			
@@ -2495,6 +2664,17 @@ namespace LaunchContent.LaunchSitecore
 	[SitecoreType(TemplateId=IMicrosite_SubpageConstants.TemplateIdString)]
 	public partial class Microsite_Subpage  : GlassBase, IMicrosite_Subpage 
 	{
+				/// <summary>
+				/// The Abstract field.
+				/// <para>Field Type: Rich Text</para>		
+				/// <para>Field ID: 00e1d306-96bd-4b32-85b4-cd63c53cc6c1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField] 
+				public virtual string Abstract  {get; set;}
+
+					
 				/// <summary>
 				/// The Body field.
 				/// <para>Field Type: Rich Text</para>		
