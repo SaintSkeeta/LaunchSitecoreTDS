@@ -613,6 +613,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="sitecore\shell\Controls\Browser.js" />
+    <Content Include="sitecore\shell\Override\SelectRenderingDatasource.xml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
