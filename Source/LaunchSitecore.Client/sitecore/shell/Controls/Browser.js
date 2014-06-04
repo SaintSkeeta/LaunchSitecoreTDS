@@ -412,6 +412,7 @@ scBrowser.prototype.showPopup = function(data) {
       if (dimensions.width > 0) {
         switch (data.where) {
         case "contextmenu":
+        case "dialoguemenu":
           x = evt.pageX || evt.x;
           y = evt.pageY || evt.y;
           break;
@@ -441,9 +442,15 @@ scBrowser.prototype.showPopup = function(data) {
           y = dimensions.height;
         }
 
-        var vp = ctl.viewportOffset();
-        x += vp.left;
-        y += vp.top;
+        if (data.where != "dialoguemenu") {
+          var vp = ctl.viewportOffset();
+          x += vp.left;
+          y += vp.top;
+        }
+        else
+        {
+            alert("test");
+        }
       }
     }
   }

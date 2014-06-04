@@ -1,6 +1,6 @@
 # Launch Sitecore TDS #
 
-This branch runs from Tag 2.0 below, and is used for creating a Content Menu within the Page Editor, as demonstrated here [http://www.thescrewballdivision.com/page-editor-and-structuring-related-items](http://www.thescrewballdivision.com/page-editor-and-structuring-related-items).
+This branch runs from Tag 2.0 below, and is used for creating a Context Menu within the Page Editor, as demonstrated here [http://www.thescrewballdivision.com/page-editor-and-structuring-related-items](http://www.thescrewballdivision.com/page-editor-and-structuring-related-items).
 
 - Use Tag 1.0 with Sitecore 6.5 Service Pack 2 (rev. 121009) - Launch Sitecore Classic version
 - Use Tag 1.1 with Sitecore 7.0 Update 3 (rev. 131127) - Launch Sitecore Classic version

@@ -192,7 +192,7 @@
           <div class="section">
             <!--Select Section-->
             <Scrollbox ID="SelectSection" style="border-top:none;border-left:none;padding: 0px">
-              <TreeviewEx ID="Treeview" DataContext="DataContext" Click="Treeview_Click" ShowRoot="true" />
+              <TreeviewEx ID="Treeview" DataContext="DataContext" Click="Treeview_Click" ShowRoot="true"  ContextMenu='Treeview.GetContextMenu("dialoguemenu")'  />
             </Scrollbox>
             <!--Clone Section-->
             <Border ID="CloneSection" Height="100%" Visible="false">
