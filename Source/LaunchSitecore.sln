@@ -11,6 +11,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchContent", "LaunchCont
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "Extensions\Extensions.csproj", "{D29742AE-DCD9-4A34-AD67-E3F39FE4443C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tds", ".tds", "{DE8F7DC4-79DF-4E26-B8CF-D4B5F1BD1141}"
+	ProjectSection(SolutionItems) = preProject
+		TdsGlobal.config = TdsGlobal.config
+	EndProjectSection
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Base", "TDS.Base\TDS.Base.scproj", "{593E58CD-A64E-42C0-A5DB-AA592328CEF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +48,12 @@ Global
 		{D29742AE-DCD9-4A34-AD67-E3F39FE4443C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D29742AE-DCD9-4A34-AD67-E3F39FE4443C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D29742AE-DCD9-4A34-AD67-E3F39FE4443C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593E58CD-A64E-42C0-A5DB-AA592328CEF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593E58CD-A64E-42C0-A5DB-AA592328CEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593E58CD-A64E-42C0-A5DB-AA592328CEF5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{593E58CD-A64E-42C0-A5DB-AA592328CEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593E58CD-A64E-42C0-A5DB-AA592328CEF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593E58CD-A64E-42C0-A5DB-AA592328CEF5}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
