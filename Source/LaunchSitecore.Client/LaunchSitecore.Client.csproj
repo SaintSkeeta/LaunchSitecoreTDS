@@ -622,6 +622,10 @@
       <Project>{AB40808F-AAA0-491C-A220-C1C0C8905BDE}</Project>
       <Name>LaunchContent</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MultipleDataSourceLocationsWithQueries\MultipleDataSourceLocationsWithQueries.csproj">
+      <Project>{0e13bf74-9f28-4287-8fe6-33399c9bbfa2}</Project>
+      <Name>MultipleDataSourceLocationsWithQueries</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Glass.Mapper.Sc.Mvc.config" />
@@ -638,6 +642,9 @@
     <Content Include="assets\font\fontawesome-webfont.eot" />
     <Content Include="assets\font\fontawesome-webfont.ttf" />
     <Content Include="assets\font\fontawesome-webfont.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\MultipleDataSourceLocationsWithQueries.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
