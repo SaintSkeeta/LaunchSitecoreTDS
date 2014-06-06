@@ -1,3 +1,5 @@
+This branch runs from Tag 2.0 below, but the Web.config is updated to Sitecore 7.2 Update-2. The branch is used for creating Multiple Datasource Locations using Queries for sublayouts, as demonstrated here [http://www.seanholmesby.com/multiple-datasource-locations-using-queries-are-back-in-sitecore-7-2-update-2/](http://www.seanholmesby.com/multiple-datasource-locations-using-queries-are-back-in-sitecore-7-2-update-2/).
+
 # Launch Sitecore TDS #
 
 - Use Tag 1.0 with Sitecore 6.5 Service Pack 2 (rev. 121009) - Launch Sitecore Classic version
