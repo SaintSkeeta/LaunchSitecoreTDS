@@ -1,32 +1,25 @@
 ----item----
 version: 1
-id: {294E7FAB-F00D-46A5-9B19-58FD792B0AD6}
+id: {3B0D95AF-54C8-47EA-977D-B1487AD31C01}
 database: master
-path: /sitecore/content/Home/Configuration/Launch Sitecore Carousel Queries
-parent: {7EB259B1-1847-41DF-B04A-991102EFEAF1}
-name: Launch Sitecore Carousel Queries
+path: /sitecore/templates/Global/Settings Templates/Query Folder/__Standard Values
+parent: {40E17180-5B85-4855-A39D-7B6194D6FAD4}
+name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
 template: {40E17180-5B85-4855-A39D-7B6194D6FAD4}
 templatekey: Query Folder
 
 ----field----
-field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
-name: __Icon
-key: __icon
-content-length: 23
-
-Database/32x32/next.png
-----field----
 field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
 name: __Masters
 key: __masters
-content-length: 38
+content-length: 77
 
-{54B73064-57C5-4B33-B17A-7B8A407122EA}
+{54B73064-57C5-4B33-B17A-7B8A407122EA}|{40E17180-5B85-4855-A39D-7B6194D6FAD4}
 ----version----
 language: en
 version: 1
-revision: 7eae6598-f9f6-450f-b72e-c175133599b4
+revision: c42b64c1-ac20-4fb9-8746-555d84c81548
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,7 +27,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20131007T205829
+20140606T150547
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7eae6598-f9f6-450f-b72e-c175133599b4
+c42b64c1-ac20-4fb9-8746-555d84c81548
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140606T151217:635376643374911988
+20140606T150633:635376639934931451
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

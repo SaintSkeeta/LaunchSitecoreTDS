@@ -6,8 +6,8 @@ path: /sitecore/content/Developing-in-Sitecore/Configuration/Developing in Sitec
 parent: {B6AC9CA4-762C-41F8-A4C4-B3C1C2EC942A}
 name: Developing in Sitecore Carousel Queries
 master: {00000000-0000-0000-0000-000000000000}
-template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
-templatekey: Folder
+template: {40E17180-5B85-4855-A39D-7B6194D6FAD4}
+templatekey: Query Folder
 
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: e7012949-b8a9-4e96-9546-ba088930181a
+revision: ed3ae328-4a55-434d-8dad-e29a06b36df3
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e7012949-b8a9-4e96-9546-ba088930181a
+ed3ae328-4a55-434d-8dad-e29a06b36df3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140606T143958:635376623986961684
+20140606T151148:635376643083369089
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
