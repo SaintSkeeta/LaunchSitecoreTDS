@@ -2,6 +2,7 @@ You will need to add the appropriate Sitecore DLLs to this directory.
 
 DLLs are as follows:-
 
+Newtonsoft.Json
 Sitecore.Analytics
 Sitecore.Automation.MarketingAutomation
 Sitecore.Buckets
