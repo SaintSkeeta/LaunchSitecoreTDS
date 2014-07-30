@@ -9,7 +9,9 @@ Sitecore.Buckets
 Sitecore.Client
 Sitecore.ContentSearch
 Sitecore.ContentSearch.Linq
+Sitecore.ContentSearch.Linq.Lucene
 Sitecore.Kernel
 Sitecore.Logging
+Sitecore.Mvc
 Sitecore.Update
 Sitecore.Zip

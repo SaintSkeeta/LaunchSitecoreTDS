@@ -58,42 +58,42 @@
       <HintPath>..\..\Installers\Sitecore\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Analytics">
-      <HintPath>..\..\..\..\..\..\..\inetpub\wwwroot\ls7u1\Website\bin\Sitecore.Analytics.dll</HintPath>
+      <HintPath>..\..\Installers\Sitecore\Sitecore.Analytics.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Automation.MarketingAutomation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\inetpub\wwwroot\lsmvc\Website\bin\Sitecore.Automation.MarketingAutomation.dll</HintPath>
+      <HintPath>..\..\Installers\Sitecore\Sitecore.Automation.MarketingAutomation.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Buckets, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\LaunchSitecore7\bin\Sitecore.Buckets.dll</HintPath>
+      <HintPath>..\..\Installers\Sitecore\Sitecore.Buckets.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Client">
-      <HintPath>..\..\..\..\..\..\..\inetpub\wwwroot\lsmvc\Website\bin\Sitecore.Client.dll</HintPath>
+      <HintPath>..\..\Installers\Sitecore\Sitecore.Client.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.ContentSearch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\LaunchSitecore7\bin\Sitecore.ContentSearch.dll</HintPath>
+      <HintPath>..\..\Installers\Sitecore\Sitecore.ContentSearch.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.ContentSearch.Linq, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\LaunchSitecore7\bin\Sitecore.ContentSearch.Linq.dll</HintPath>
+      <HintPath>..\..\Installers\Sitecore\Sitecore.ContentSearch.Linq.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.ContentSearch.Linq.Lucene">
-      <HintPath>..\LaunchSitecore7\bin\Sitecore.ContentSearch.Linq.Lucene.dll</HintPath>
+      <HintPath>..\..\Installers\Sitecore\Sitecore.ContentSearch.Linq.Lucene.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel">
-      <HintPath>..\LaunchSitecore7\bin\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\..\Installers\Sitecore\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Mvc">
-      <HintPath>..\LaunchSitecore7\bin\Sitecore.Mvc.dll</HintPath>
+      <HintPath>..\..\Installers\Sitecore\Sitecore.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

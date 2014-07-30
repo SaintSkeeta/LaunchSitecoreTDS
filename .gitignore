@@ -25,9 +25,11 @@ Installers/Sitecore/Sitecore.Buckets.dll
 Installers/Sitecore/Sitecore.Client.dll
 Installers/Sitecore/Sitecore.ContentSearch.dll
 Installers/Sitecore/Sitecore.ContentSearch.Linq.dll
+Installers/Sitecore/Sitecore.ContentSearch.Linq.Lucene.dll
 Installers/Sitecore/Sitecore.Kernel.dll
 Installers/Sitecore/Sitecore.Automation.MarketingAutomation.dll
 Installers/Sitecore/Sitecore.Logging.dll
+Installers/Sitecore/Sitecore.Mvc.dll
 Installers/Sitecore/Sitecore.Update.dll
 Installers/Sitecore/Sitecore.Zip.dll
 Installers/Sitecore/Sitecore.Analytics.dll
