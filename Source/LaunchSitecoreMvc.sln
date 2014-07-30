@@ -14,8 +14,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tds", ".tds", "{DE8F7DC4-7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchSitecoreMvc", "LaunchSitecoreMvc\LaunchSitecoreMvc.csproj", "{834A2236-50DC-4E10-AF63-9057F5B6F84E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchSitecore.Mvc", "LaunchSitecore.Mvc\LaunchSitecore.Mvc.csproj", "{3543EA66-AA7B-4162-9DDA-4345BF610BCE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,10 +38,6 @@ Global
 		{834A2236-50DC-4E10-AF63-9057F5B6F84E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{834A2236-50DC-4E10-AF63-9057F5B6F84E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{834A2236-50DC-4E10-AF63-9057F5B6F84E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3543EA66-AA7B-4162-9DDA-4345BF610BCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3543EA66-AA7B-4162-9DDA-4345BF610BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3543EA66-AA7B-4162-9DDA-4345BF610BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3543EA66-AA7B-4162-9DDA-4345BF610BCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
