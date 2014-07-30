@@ -1,0 +1,11 @@
+﻿@model LaunchSitecore.Models.JumbotronItem
+<div class="jumbotron">
+ <div class="container">
+  <h1>@Html.Sitecore().Field("Title", Model.Item)</h1>
+  @Html.Sitecore().Field("Body", Model.Item)
+  @if (Model.HasLink)
+  {  
+   <p><a href="@Model.LinkToUrl"  class="btn btn-primary btn-lg">@Html.Sitecore().Field("Call to Action Text", Model.Item)</a></p>
+  }
+ </div>
+</div>

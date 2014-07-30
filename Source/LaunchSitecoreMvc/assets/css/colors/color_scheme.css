@@ -1,0 +1,320 @@
+/* Color of the very top line in reDesign Template
+---------------------------------------------------------------------- */
+
+.top_line {
+    background-color: #2773ae;
+}
+
+/* Color that link text will appear as
+---------------------------------------------------------------------- */
+
+a {
+    color: #2773ae;
+}
+
+/* Color that appears when user hovers over a link
+---------------------------------------------------------------------- */
+
+a:hover {
+    color: #2773ae;
+}
+
+/* Text color of the active link in a drop down menu
+---------------------------------------------------------------------- */
+
+.navbar .nav .open .dropdown-menu .active a {
+    color: #2773ae;
+}
+
+/* Text color of the active link in a drop down menu when you hover over it
+---------------------------------------------------------------------- */
+
+.navbar .nav .open .dropdown-menu .active a:hover {
+    color: #2773ae;
+}
+
+/* Text color of the active navbar item
+---------------------------------------------------------------------- */
+
+.navbar .nav .active > a, .navbar .nav .active > a:hover, .navbar .nav .active a > i, .navbar .nav .active a > i:hover {
+    color: #2773ae;
+}
+
+/* Primary menu text color when you hover over it (does not include the sub-menu text)
+---------------------------------------------------------------------- */
+
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    color: #2773ae;
+}
+
+/* Color of the stripe in a dropdown menu when you hover over vertical menu item
+---------------------------------------------------------------------- */
+
+.navbar .nav > li .dropdown-menu li a:hover {
+    background-color: #292929;
+    background-image: none !important;
+    filter: none;
+}
+
+/* Color of the text in a dropdown menu when you hover over it
+---------------------------------------------------------------------- */
+
+.navbar .nav > li .dropdown-menu li a:hover {
+    color: #2773ae;
+}
+
+/* Color of the menu bar's sub-menu text when you hover over it and the color of both the primary and sub-menu text that has no sub-nav when you hover over it
+---------------------------------------------------------------------- */
+
+.navbar .nav > li:hover a, .navbar .nav > li:hover a i {
+    color: #2773ae;
+}
+
+/* Color of bar above active menu item or menu item when you hover over it
+---------------------------------------------------------------------- */
+
+.navbar .nav .active > a, .navbar .nav li:hover > a {
+    border-top: 3px solid #2773ae;
+}
+
+/* Color of Twitter bar
+---------------------------------------------------------------------- */
+
+.recent-tweets {
+    background-color: #2773ae;
+}
+
+/* Color of First and Last Name on blog comments
+---------------------------------------------------------------------- */
+
+.comments .name {
+    color: #2773ae;
+}
+
+/* Headline that shows the number of comments on a blog post
+---------------------------------------------------------------------- */
+
+.comments  h2 {
+    color: #2773ae;
+}
+
+/* Theme colored dropcap (the standard dropcap is black)
+---------------------------------------------------------------------- */
+
+.dropcap-theme {
+    color: #2773ae;
+}
+
+/* Color of table headers in non-highlighted price tables
+---------------------------------------------------------------------- */
+
+.dif-table .title {
+    background-color: #2773ae;
+}
+
+/* Color of pricing/cost text in price tables
+---------------------------------------------------------------------- */
+
+.dif-table .cost {
+    color: #2773ae;
+}
+
+/* Color tab on text divider 5
+---------------------------------------------------------------------- */
+
+.text-divider5 span {
+    background-color: #2773ae;
+}
+
+/* Color tab on text divider 6
+---------------------------------------------------------------------- */
+
+.text-divider6 span {
+    background-color: #2773ae;
+}
+
+/* Highlight color of image slides when you hover them in portfolio items
+---------------------------------------------------------------------- */
+
+.portfolio-slider #carousel .slides li:hover {
+    border: 2px solid #2773ae;
+}
+
+/* Highlight color of the active image slide in portfolio items
+---------------------------------------------------------------------- */
+
+.portfolio-slider #carousel .slides li.flex-active-slide {
+    border: 2px solid #2773ae;
+}
+
+/* Background color of mobile dropdown nav
+---------------------------------------------------------------------- */
+
+.buttons-container {
+    background-color: #2773ae;
+}
+
+/* Color of active nav filter on portfolio and portfolio grid pages
+---------------------------------------------------------------------- */
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background-color: #2773ae;
+}
+
+/* Check icon color
+---------------------------------------------------------------------- */
+.icon-ok {
+    color: #333333;
+}
+
+/* Portfolio mode switches color theme
+---------------------------------------------------------------------- */
+
+.portfolio-switch li a {
+    display: block;
+    width: 42px;
+    height: 27px;
+    background: transparent url("../img/portfolio_toggles.png") top left no-repeat;
+    border-radius: 5px;
+}
+.portfolio-switch li.collapsed a {
+    background-position: 0 -31px;
+    background-color: #cccccc;
+}
+.portfolio-switch li.collapsed a:hover {
+    background-color: #2773ae;
+}
+.portfolio-switch li.collapsed a:hover, .portfolio-switch li.collapsed a.active  {
+    background-position: 0 -31px;
+}
+.portfolio-switch li.simple a {
+    background-position: 0 0;
+    background-color: #cccccc;
+}
+.portfolio-switch li.simple a:hover {
+    background-color: #2773ae;
+    background-position: 0 0;
+}
+.portfolio-switch li a.active {
+    background-color: #2773ae;
+}
+.fancy-wrapper .fancy {
+    /* background: url("../img/home_portfolio_hover_orange.png") no-repeat scroll center center transparent; */
+	background-color:#2773ae;
+	
+}
+.fancy-wrapper .fancy:after {
+	content: "\f067";
+	position:absolute;
+	top:0;
+	left:0;
+	width:300px;
+	height:200px;
+	line-height:212px;
+	text-align:center;
+	color:#fff;
+	font-size:60px;
+	font-family: FontAwesome;
+}
+.portfolio-grid-1 .hp-wrapper:hover .bottom-block-optional:after {
+	content:'';
+	width:11px;
+	height:3px;
+	position:absolute;
+	bottom:0;
+	left:50%;
+	margin-left:-5px;
+	background:#2773ae;
+}
+.portfolio-grid-1 .hp-wrapper:hover {
+    border-bottom: 1px solid #2773ae;
+}
+a.cs-logo {
+    background: url("../img/logo.png") no-repeat top left transparent;
+}
+/*Dark grey hero-unit background
+----------------------------------------------------------------------*/
+.dark-hero {
+    background: url("../img/dark_tissue.png") repeat scroll 0 0 transparent;
+}
+/*Dark grey hero-unit button styles
+----------------------------------------------------------------------*/
+.dark-hero .btn {
+    font-size: 24px;
+    padding: 10px 67px;
+    background-image: linear-gradient(bottom, #6DA8CF 10%, #0768AD 55%, #0064AC 78%);
+    background-image: -o-linear-gradient(bottom, #6DA8CF 10%, #0768AD 55%, #0064AC 78%);
+    background-image: -moz-linear-gradient(bottom, #6DA8CF 10%, #0768AD 55%, #0064AC 78%);
+    background-image: -webkit-linear-gradient(bottom, #6DA8CF 10%, #0768AD 55%, #0064AC 78%);
+    background-image: -ms-linear-gradient(bottom, #6DA8CF 10%, #0768AD 55%, #0064AC 78%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.1, #6DA8CF),
+        color-stop(0.55, #0768AD),
+        color-stop(0.78, #0064AC)
+        );
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.dark-hero .btn:hover {
+    background-image: linear-gradient(bottom, #6DA8CF 10%, #1E77B6 55%, #1E77B6 78%);
+    background-image: -o-linear-gradient(bottom, #6DA8CF 10%, #1E77B6 55%, #1E77B6 78%);
+    background-image: -moz-linear-gradient(bottom, #6DA8CF 10%, #1E77B6 55%, #1E77B6 78%);
+    background-image: -webkit-linear-gradient(bottom, #6DA8CF 10%, #1E77B6 55%, #1E77B6 78%);
+    background-image: -ms-linear-gradient(bottom, #6DA8CF 10%, #1E77B6 55%, #1E77B6 78%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.1, #6DA8CF),
+        color-stop(0.55, #1E77B6),
+        color-stop(0.78, #1E77B6)
+        );
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-position: 0 0;
+}
+
+/* Price Tables check-icon color
+---------------------------------------------------------------------- */
+
+.dif-table ul li i {
+    color: #37bf01;
+    padding-right: 1px;
+}
+
+/* Price Tables primary buttons color
+---------------------------------------------------------------------- */
+
+.price-table-object .btn-primary {
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #006DCC;
+    background-image: -moz-linear-gradient(top, #08C, #04C);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#08C), to(#04C));
+    background-image: -webkit-linear-gradient(top, #08C, #04C);
+    background-image: -o-linear-gradient(top, #08C, #04C);
+    background-image: linear-gradient(to bottom, #08C, #04C);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+    border-color: #04C #04C #002A80;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.price-table-object .btn:hover {
+    color: #333;
+    text-decoration: none;
+    background-color: #E6E6E6;
+    background-position: 0 -15px;
+    -webkit-transition: background-position 0.1s linear;
+    -moz-transition: background-position 0.1s linear;
+    -o-transition: background-position 0.1s linear;
+    transition: background-position 0.1s linear;
+}
+.price-table-object .btn-primary:hover, .price-table-object .btn-primary:active, .price-table-object .btn-primary.active, .price-table-object .btn-primary.disabled, .price-table-object .btn-primary[disabled] {
+    color: white;
+    background-color: #04C;
+}

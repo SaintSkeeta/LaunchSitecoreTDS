@@ -1,0 +1,7 @@
+﻿@model LaunchSitecore.Models.SimpleItem
+<div class="grey-box abstract-box">
+ <h2>@Html.Sitecore().Field("Title", Model.Item)</h2>
+ <p>@Html.Sitecore().Field("Icon", Model.Item, new { @maxWidth = "32", @maxHeight = "32" })</p>
+ @Html.Sitecore().Field("Abstract", Model.Item) 
+ <a href="@Model.Url" class="btn btn-primary">@UIHelpers.GetDictionaryText("Learn More")&nbsp;»</a>
+</div>

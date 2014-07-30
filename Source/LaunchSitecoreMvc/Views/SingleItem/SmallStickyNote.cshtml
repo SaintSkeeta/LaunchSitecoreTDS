@@ -1,0 +1,6 @@
+﻿@model LaunchSitecore.Models.StickyNoteItem
+<!--  pnlStickyNote.CssClass = String.Format("{0}-sidestick sidebar-stick", DataSourceItem.Fields["Note Type"]); -->
+<div class="@Model.SmallCssClass">
+ <h3>@Html.Sitecore().Field("Title", Model.Item)</h3>
+ @Html.Sitecore().Field("Message", Model.Item)
+</div>

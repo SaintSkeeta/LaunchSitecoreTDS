@@ -1,0 +1,9 @@
+﻿@model LaunchSitecore.Models.PromoItem
+<div class="thumbnail">
+ @Html.Sitecore().Field("Image", Model.Item, new { @maxWidth = "300" })
+ <div class="caption">
+  <h3>@Html.Sitecore().Field("Title", Model.Item)</h3>
+  @Html.Sitecore().Field("Text", Model.Item)
+  <p><a href="@Model.LinkToUrl" class="btn btn-primary">@Html.Sitecore().Field("Link Text", Model.Item)</a></p>
+ </div>
+</div>

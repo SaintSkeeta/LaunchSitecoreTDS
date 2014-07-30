@@ -1,0 +1,6 @@
+﻿<article>
+ <h1>@Html.Sitecore().Field("Title")</h1>
+ <div class="post-img pull-right img-polaroid bio-img">@Html.Sitecore().Field("Image", new { @maxWidth = "200" })</div>
+ @Html.Sitecore().Field("Body")
+</article>
+<div style="clear: both;"></div>

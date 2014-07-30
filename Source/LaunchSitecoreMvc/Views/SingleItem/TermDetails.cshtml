@@ -1,0 +1,10 @@
+﻿<div>
+ <article>
+  <h1>@Html.Sitecore().Field("Title")</h1>
+  <div class="post-img pull-right img-polaroid bio-img">@Html.Sitecore().Field("Image", new { @maxWidth = "350" })</div>
+  <h3>@UIHelpers.GetDictionaryText("Definition")</h3>
+  @Html.Sitecore().Field("Definition")
+  <h3>@UIHelpers.GetDictionaryText("Usage")</h3>
+  @Html.Sitecore().Field("Usage")
+ </article>
+</div>
