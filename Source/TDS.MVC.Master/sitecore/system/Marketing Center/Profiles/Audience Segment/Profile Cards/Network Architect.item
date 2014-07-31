@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {25518E1D-EC5A-40F7-933D-88E4BF095655}
+database: master
+path: /sitecore/system/Marketing Center/Profiles/Audience Segment/Profile Cards/Network Architect
+parent: {5FFA5E63-C49D-4D82-9BDD-9A9FC913AE9D}
+name: Network Architect
+master: {00000000-0000-0000-0000-000000000000}
+template: {448C4D57-F0F1-4278-8AB8-93DB46C94F1B}
+templatekey: Profile Card - Persona
+
+----field----
+field: {709B879B-7264-49C7-8864-E254D9129302}
+name: Image
+key: image
+content-length: 197
+
+<image mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/c-f/fork" mediaid="{6D0D8ED1-E5FC-4CC9-971B-750BF59AE328}" src="~/media/6d0d8ed1e5fc4cc9971b750bf59ae328.ashx?20131218T1424562129" />
+----field----
+field: {85970AB7-22EA-4206-BE86-C0167178860B}
+name: Profile Card Value
+key: profile card value
+content-length: 302
+
+<tracking>
+  <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment">
+    <key name="Analytics" value="4" />
+    <key name="Campaigns and Targeting" value="0" />
+    <key name="Content Management" value="0" />
+    <key name="Technology" value="5" />
+  </profile>
+</tracking>
+----version----
+language: en
+version: 1
+revision: ac38d532-670a-4a1d-9fd8-d32c1d1fbf30
+
+----field----
+field: {A26FC256-1DB0-44AA-BA3D-1C830BF882A2}
+name: Name
+key: name
+content-length: 17
+
+Network Architect
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131218T142433
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ac38d532-670a-4a1d-9fd8-d32c1d1fbf30
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T142507:635229735070628442
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
