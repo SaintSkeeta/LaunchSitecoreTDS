@@ -1,0 +1,58 @@
+----item----
+version: 1
+id: {56CB9EF1-BBAB-4DFA-8A0F-592845144AE6}
+database: master
+path: /sitecore/media library/Launch Sitecore/Site Images/Icons/Color
+parent: {F30F5689-A838-4E34-8F2A-EDF78610B59A}
+name: Color
+master: {00000000-0000-0000-0000-000000000000}
+template: {FE5DD826-48C6-436D-B87A-7C4210C7413B}
+templatekey: Media folder
+
+----version----
+language: en
+version: 1
+revision: 30a34dd1-8ce9-4860-b246-33e2d1ee6aeb
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 12
+
+sitecore\chc
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120316T140907
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 12
+
+sitecore\chc
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+30a34dd1-8ce9-4860-b246-33e2d1ee6aeb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130822T145743:635127802635636112
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
