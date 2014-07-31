@@ -1,0 +1,135 @@
+----item----
+version: 1
+id: {76CA87D4-D9DA-4EE2-AEEE-19F0D304F270}
+database: master
+path: /sitecore/content/Home/Team/Tim-Gardner
+parent: {8DABE12D-4D1B-40B5-BF62-7D2424253A15}
+name: Tim-Gardner
+master: {00000000-0000-0000-0000-000000000000}
+template: {97963D48-BD06-46CA-8279-CD2BA3C7AA36}
+templatekey: Team Member
+
+----field----
+field: {AD724ADB-4729-4C32-BF40-676579D587CF}
+name: Image
+key: image
+content-length: 176
+
+<image mediaid="{153CB3DA-6BA6-4AA7-8255-CCF22226B9EA}" mediapath="/Launch Sitecore/Site Images/Contributors/Tim Gardner" src="~/media/153cb3da6ba64aa78255ccf22226b9ea.ashx" />
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 51270113-bc0b-4095-959c-ae165334ed82
+
+----field----
+field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
+name: Title
+key: title
+content-length: 11
+
+Tim Gardner
+----field----
+field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
+name: Abstract
+key: abstract
+content-length: 123
+
+<p>Die hard New England sports fan who started at Sitecore in October of 2013, working out of the Manchester NH office.</p>
+----field----
+field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
+name: Body
+key: body
+content-length: 450
+
+<p>As Regional Sales Engineer Tim works with prospects, existing customers and partners in the local region to deliver targeted sales demonstrations, on-site presentations, proofs of concept, RFP submissions and more. The position is the interface between regional needs and the larger sales engineering team, strategically leveraging specialized product and technical knowledge and contributing to the overall team’s capabilities and offerings. </p>
+----field----
+field: {F9B6FFEF-1DC9-4C0E-A815-C62822E1CBDB}
+name: Quote
+key: quote
+content-length: 60
+
+"You miss 100% of the shots you don't take." - Wayne Gretzky
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 199
+
+<image mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/t-z/user-4" mediaid="{8A48C884-E903-4C0E-BA4E-5282934404BE}" src="~/media/8a48c884e9034c0eba4e5282934404be.ashx?20131126T1717429083" />
+----field----
+field: {D2E90283-29F2-4EAF-895E-E8DE8DAEEC69}
+name: Job Title
+key: job title
+content-length: 34
+
+Regional Sales Engineer, Northeast
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 11
+
+Tim Gardner
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 11
+
+Tim Gardner
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131112T105005
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+51270113-bc0b-4095-959c-ae165334ed82
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131127T072818:635211340985601892
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

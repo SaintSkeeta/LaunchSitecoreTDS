@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {94F817F2-27E6-4308-989D-5D0FD9FFE85F}
+database: master
+path: /sitecore/content/Global/Content/Text Widgets
+parent: {FC74C6B9-0FC6-46F8-B426-2A967E823259}
+name: Text Widgets
+master: {00000000-0000-0000-0000-000000000000}
+template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+templatekey: Folder
+
+----field----
+field: {A0CB3965-8884-4C7A-8815-B6B2E5CED162}
+name: __Editors
+key: __editors
+content-length: 38
+
+{A0C460F4-DBAE-4A5A-8F3A-C4ADFCDACEEA}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 36
+
+Applications/32x32/document_into.png
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{BE49B187-EE44-4850-8945-F32AFF1CF3FD}
+----field----
+field: {D312103C-B36C-4CA5-864A-C85F9ABDA503}
+name: __Is Bucket
+key: __is bucket
+content-length: 1
+
+0
+----field----
+field: {AC51462C-8A8D-493B-9492-34D1F26F20F1}
+name: __Default Bucket Query
+key: __default bucket query
+content-length: 98
+
++location:{94f817f2-27e6-4308-989d-5d0fd9ffe85f}&+template:{be49b187-ee44-4850-8945-f32aff1cf3fd}&
+----version----
+language: en
+version: 1
+revision: d82b8898-f74c-47c4-8d1b-51227fc5456c
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131118T100325
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d82b8898-f74c-47c4-8d1b-51227fc5456c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T130400:635229686405545994
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

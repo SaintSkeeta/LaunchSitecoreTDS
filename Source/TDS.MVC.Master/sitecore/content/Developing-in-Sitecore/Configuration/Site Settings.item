@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {BDB02F16-EF27-4662-83C9-A58385027FDF}
+database: master
+path: /sitecore/content/Developing-in-Sitecore/Configuration/Site Settings
+parent: {B6AC9CA4-762C-41F8-A4C4-B3C1C2EC942A}
+name: Site Settings
+master: {00000000-0000-0000-0000-000000000000}
+template: {41E5285E-F5B2-4075-95CE-D3A993881C81}
+templatekey: Site Settings
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: cdbaf5d0-6029-45f6-8cf2-64b6182e3b15
+
+----field----
+field: {962A3491-463F-4E23-9A43-84A293473724}
+name: Visible Profiles
+key: visible profiles
+content-length: 77
+
+{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}|{478859DC-EBE0-40A7-BD24-75D588FD3E09}
+----field----
+field: {B7066F9F-DA7E-4EC4-95F4-D2B1E87C0CAA}
+name: Copyright
+key: copyright
+content-length: 30
+
+Copyright © 1999-2013 Sitecore
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131115T221541
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+cdbaf5d0-6029-45f6-8cf2-64b6182e3b15
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T142735:635229736553787232
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
