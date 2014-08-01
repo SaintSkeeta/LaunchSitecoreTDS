@@ -1,0 +1,44 @@
+----item----
+version: 1
+id: {C55B822B-C437-4C29-A3F6-DDE0DA1BD495}
+database: master
+path: /sitecore/templates/Branches/Launch Sitecore/Microsite/$name/Configuration/Presentation Settings
+parent: {52E72A2E-FDDB-435A-9416-12316D053AD2}
+name: Presentation Settings
+master: {00000000-0000-0000-0000-000000000000}
+template: {C7294FF3-D0A5-4FD8-BD46-CD3A99EF6ED6}
+templatekey: Presentation Settings
+
+----version----
+language: en
+version: 1
+revision: e686f82f-11b8-4612-b36e-0e4f297d8798
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131113T100609
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e686f82f-11b8-4612-b36e-0e4f297d8798
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131113T100609:635199339698619845
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

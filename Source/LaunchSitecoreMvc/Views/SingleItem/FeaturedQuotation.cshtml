@@ -1,0 +1,5 @@
+﻿@model LaunchSitecore.Models.QuotationItem
+<blockquote>
+ <p>@Html.Sitecore().Field("Quotation", Model.Item)</p>
+ <p class="autor">@Html.Sitecore().Field("Author", Model.Item)</p>
+</blockquote>

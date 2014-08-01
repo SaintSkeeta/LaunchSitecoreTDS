@@ -1,0 +1,10 @@
+﻿@model IEnumerable<LaunchSitecore.Models.SimpleItem>
+<div class="side-nav sidebar-block">
+ <h2>@UIHelpers.GetDictionaryText("Articles")</h2>
+ <ul>
+  @foreach (var item in Model)
+  {
+   <li><a href="@item.Url">@Html.Sitecore().Field("Title", item.Item)</a></li> 
+  }
+ </ul>
+</div>

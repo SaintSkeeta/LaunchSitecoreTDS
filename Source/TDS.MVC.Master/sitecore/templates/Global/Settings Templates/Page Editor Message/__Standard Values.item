@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {28E86407-B186-4302-AC8C-E60B5D96DDAA}
+database: master
+path: /sitecore/templates/Global/Settings Templates/Page Editor Message/__Standard Values
+parent: {1D97AB9C-D9AB-4FCC-8713-CE2F279B85ED}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {1D97AB9C-D9AB-4FCC-8713-CE2F279B85ED}
+templatekey: Page Editor Message
+
+----field----
+field: {81B83CAA-E7C3-4333-B54E-9E4670AA5383}
+name: Key
+key: key
+content-length: 5
+
+$name
+----version----
+language: en
+version: 1
+revision: 97aeb5d7-b75d-40b7-bfbc-451102e65386
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130821T185859
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+97aeb5d7-b75d-40b7-bfbc-451102e65386
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130821T185905:635127083456426360
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

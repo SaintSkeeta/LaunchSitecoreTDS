@@ -1,0 +1,121 @@
+----item----
+version: 1
+id: {F3EC2E61-8E30-4ABE-A64A-CAB5FA0048BA}
+database: master
+path: /sitecore/content/Global/Content/Carousel Items/2013/08/30/12/52/Read the Articles
+parent: {BE63C8C9-FF27-408B-A673-1A38D7B5FECA}
+name: Read the Articles
+master: {00000000-0000-0000-0000-000000000000}
+template: {5365F694-C2AB-41AF-8A79-28FC6A35E384}
+templatekey: Carousel Item
+
+----field----
+field: {336E27E0-7F9C-437E-B179-653F427520CC}
+name: Link Item
+key: link item
+content-length: 38
+
+{63ABEE8A-4E38-4159-9193-D5F0A33AD666}
+----field----
+field: {DD876753-9D4B-4B70-8197-41A0EB302087}
+name: Image
+key: image
+content-length: 194
+
+<image mediapath="/Launch Sitecore/Site Images/Carousel Backgrounds/Abstract Images/piano" mediaid="{8CC4F982-B89D-44B5-B74E-46DAF1AE6148}" src="~/media/8cc4f982b89d44b5b74e46daf1ae6148.ashx" />
+----field----
+field: {B1F1502E-0B97-4152-92ED-6828FA25B947}
+name: Use Dark Text
+key: use dark text
+content-length: 0
+
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+200
+----field----
+field: {93D1B217-B8F4-462E-BABF-68298C9CE667}
+name: __Boost
+key: __boost
+content-length: 1
+
+2
+----field----
+field: {9DAFCA1D-D618-4616-86B8-A8ACD6B28A63}
+name: __Bucket Parent Reference
+key: __bucket parent reference
+content-length: 38
+
+{50DE289A-6273-4B6B-93E4-86BC27D03476}
+----version----
+language: en
+version: 1
+revision: b90c5611-1738-4a10-9183-7800e2137a86
+
+----field----
+field: {1FD34C98-05B1-4206-A48E-14D1E0C42F6F}
+name: Title
+key: title
+content-length: 21
+
+Learn About this Site
+----field----
+field: {9B14A853-F008-4145-878A-DD5A2ED7EC36}
+name: Caption
+key: caption
+content-length: 94
+
+<p>Launch Sitecore includes a collection of articles about how and why we built this site.</p>
+----field----
+field: {48152DDC-82D7-4E74-9B1D-EC816D278AB4}
+name: Link Text
+key: link text
+content-length: 17
+
+Read the Articles
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130830T125238
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b90c5611-1738-4a10-9183-7800e2137a86
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131121T165438:635206496783613817
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
+name: __Semantics
+key: __semantics
+content-length: 0
+
+
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

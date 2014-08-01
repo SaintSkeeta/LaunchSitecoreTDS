@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {FBCC96D8-4A66-497C-A375-E16C9C490609}
+database: master
+path: /sitecore/content/Global/Settings/Queries/All Network Admin Articles
+parent: {CFFDB67D-05A4-4B8E-8B11-2C8625F6C705}
+name: All Network Admin Articles
+master: {00000000-0000-0000-0000-000000000000}
+template: {54B73064-57C5-4B33-B17A-7B8A407122EA}
+templatekey: Query
+
+----field----
+field: {0EF83F9E-7381-482E-B31F-722763FE1982}
+name: Query
+key: query
+content-length: 103
+
++custom:profile_card|25518e1dec5a40f7933d88e4bf095655;+template:{d9019e30-f954-46cc-aa70-3e928c40b5d0};
+----field----
+field: {D0DD4432-E4A4-422A-8F88-A9F1CF7A95A0}
+name: Items
+key: items
+content-length: 3
+
+100
+----version----
+language: en
+version: 1
+revision: b14f4fb6-a770-4238-9451-ff4f98eed817
+
+----field----
+field: {5D7E80C6-B718-4B68-99B0-2A9E0524E6F7}
+name: Title
+key: title
+content-length: 26
+
+All Network Admin Articles
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131007T215549
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b14f4fb6-a770-4238-9451-ff4f98eed817
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T163747:635229814672528250
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

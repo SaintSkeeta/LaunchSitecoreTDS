@@ -1,0 +1,5 @@
+﻿@model bool
+<form method="post" id = "addtofavsForm">
+ <input type="hidden" value="@Sitecore.Context.Item.ID" id="itemId" /> 
+</form>
+<a href="javascript:document.getElementById('addtofavsForm').submit()">@UIHelpers.GetDictionaryText(Model ? "Add to Favorites" : "Remove from Favorites")</a>

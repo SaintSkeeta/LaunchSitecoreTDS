@@ -1,0 +1,29 @@
+﻿@model LaunchSitecore.Models.RegisterModel
+
+<div class="securityform">
+ <h1>@Html.Sitecore().Field("Title")</h1>
+ @Html.Sitecore().Field("Body")
+ 
+ @using (Html.BeginForm())
+ {
+  @Html.AntiForgeryToken()  
+  @Html.ValidationSummary()
+  <p>
+   @Html.LabelFor(m => m.FullName)
+   @Html.TextBoxFor(m => m.FullName)
+  </p>
+  <p>
+   @Html.LabelFor(m => m.Email)
+   @Html.TextBoxFor(m => m.Email)
+  </p>
+  <p>
+   @Html.LabelFor(m => m.Password)
+   @Html.PasswordFor(m => m.Password)
+  </p>
+  <p>
+   @Html.LabelFor(m => m.ConfirmPassword)
+   @Html.PasswordFor(m => m.ConfirmPassword)
+  </p>
+  <p><input type="submit" value="Register" class="btn btn-primary" /></p>
+ }
+</div>
