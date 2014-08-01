@@ -25,15 +25,17 @@ This repository is that package converted to a Visual Studio solution with items
 - Follow the steps in the {GitRootDirectory}/Installers/Sitecore/README.txt file, which tells you which Sitecore DLLs need to be referenced in code.
 
 ### Set your TDS Deployment Settings ###
-- Open the solution in Visual Studio, right click on TDS.Core and select 'Properties'.
-- On the Build tab, select 'Edit user specific configuration (.user file), and fill out Sitecore Web Url and Sitecore Deploy Folder with your settings.
-- Save the settings.
-- Follow the above steps for the TDS.Master project.
+- Open the solution in Visual Studio, Open the .tds/TdsGlobal.config file.
+- For your configuration (most likely Debug) uncomment the nodes `SitecoreWebUrl`, `SitecoreDeployFolder`, `InstallSitecoreConnector`, `SitecoreAccessGuid`.
+ - For each of these nodes, add in your unique website information. e.g:- <br />
+   `<SitecoreWebUrl>http://launch.local</SitecoreWebUrl>`<br />
+   `<SitecoreDeployFolder>D:\Sites\Launch\Website</SitecoreDeployFolder>`<br />
+   `<InstallSitecoreConnector>True</InstallSitecoreConnector>`<br />
+   `<SitecoreAccessGuid>900c37ae-5fe5-48c2-bccd-2eab2dafea31</SitecoreAccessGuid>`
+- Save the file. This will tell TDS to use these settings for all TDS projects.
 
 ### Build and Deploy ###
-- Build the entire solution.
-- Right click on TDS.Core and select Deploy.
-- Right click on TDS.Master and select Deploy.
+- Right click on the solution and select 'Deploy Solution'.
 
 ### Rebuild Search Indexes ###
 When using a Sitecore 7 version, you will need to rebuild the indexes for the site to work correctly. (Noticeable with the carousel on the homepage in the new themed version).<br />
@@ -45,4 +47,22 @@ To rebuild the indexes:-
  - Click on *Indexing Manager*
  - Follow the Wizard, selecting all of the local instances and clicking on the *Rebuild* button.
 
-Once indexing is complete, your site should now be completely setup.
+### Optional: Deploy the Example Campaign ###
+In order to push your campaigns to the Analytics database and be active on the site, you will need to re-deploy them.
+
+ - In the Sitecore Content Editor, turn on Standard Fields (`View -> View -> Standard Fields`)
+ - Navigate to the Example Campaign (`/sitecore/system/Marketing Center/Campaigns/Example Campaign`).
+ - Change the Workflow State to Draft. (`Worflow section -> Field: State` set to `Analytics Workflow -> Draft`). Save the item.
+ - Deploy the campaign. (`Review` ribbon -> `Workflow` chunk, `Deploy`)
+ 
+
+### Optional: Rebuild the Link Database ###
+For better navigation around the site, it is recommended that you rebuild the link database after the deployment.
+
+ - Open the Sitecore Client, and login to *Desktop* mode.
+ - From the Sitecore Start menu, Open the *Control Panel*.
+ - Click on *Database*.
+ - Click on *Rebuild the Link Database*
+ - Follow the Wizard, selecting *core* and *master* databases and clicking on the *Rebuild* button.
+
+Your site should now be completely setup.
