@@ -9,6 +9,7 @@ using Sitecore.ContentSearch.Utilities;
 using Sitecore.Buckets.Util;
 using System.Collections.Generic;
 using LaunchSitecore.Configuration.SiteUI.Search.Helper;
+using LaunchSitecore.Configuration.SiteUI.Search.Models;
 
 namespace LaunchSitecore.Configuration.SiteUI.Base
 {
@@ -165,8 +166,8 @@ namespace LaunchSitecore.Configuration.SiteUI.Base
           {
             using (IProviderSearchContext context = ContentSearchManager.CreateSearchContext((SitecoreIndexableItem)(Sitecore.Context.Item)))
             {
-              string languageCode = Sitecore.Context.Language.Name.ToLower(); 
-              IQueryable<Item> queryable = (from toItem in LinqHelper.CreateQuery(context, UIFilterHelpers.ParseDatasourceString(DataSourceItem.Fields["Query"].Value))
+              string languageCode = Sitecore.Context.Language.Name.ToLower();
+              IQueryable<Item> queryable = (from toItem in LinqHelper.CreateQuery<SitecoreItem>(context, SearchStringModel.ParseDatasourceString(DataSourceItem.Fields["Query"].Value))
                                             where toItem.Language == languageCode                                           
                                             select toItem.GetItem());
 
@@ -186,7 +187,7 @@ namespace LaunchSitecore.Configuration.SiteUI.Base
           using (IProviderSearchContext context = ContentSearchManager.CreateSearchContext((SitecoreIndexableItem)(Sitecore.Context.Item)))
           {
             string languageCode = Sitecore.Context.Language.CultureInfo.TwoLetterISOLanguageName.ToString();
-            IQueryable<Item> queryable = (from toItem in LinqHelper.CreateQuery(context, UIFilterHelpers.ParseDatasourceString(Attributes["sc_datasource"]))
+            IQueryable<Item> queryable = (from toItem in LinqHelper.CreateQuery<SitecoreItem>(context, SearchStringModel.ParseDatasourceString(Attributes["sc_datasource"]))
                                           where toItem.Language == languageCode 
                                           select toItem.GetItem());
 
@@ -215,7 +216,7 @@ namespace LaunchSitecore.Configuration.SiteUI.Base
         using (IProviderSearchContext context = ContentSearchManager.CreateSearchContext((SitecoreIndexableItem)(Sitecore.Context.Item)))
         {
           string languageCode = Sitecore.Context.Language.CultureInfo.TwoLetterISOLanguageName.ToString();
-          IQueryable<Item> queryable = (from toItem in LinqHelper.CreateQuery(context, UIFilterHelpers.ParseDatasourceString(query))
+          IQueryable<Item> queryable = (from toItem in LinqHelper.CreateQuery<SitecoreItem>(context, SearchStringModel.ParseDatasourceString(query))
                                         where toItem.Language == languageCode
                                         select toItem.GetItem());
 
