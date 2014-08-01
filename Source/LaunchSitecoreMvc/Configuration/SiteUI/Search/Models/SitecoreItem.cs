@@ -15,9 +15,6 @@ namespace LaunchSitecore.Configuration.SiteUI.Search.Models
     [IndexField("__smallcreateddate")]
     public DateTime PublishDate { get; set; }
 
-    [IndexField(BuiltinFields.DataSource)]
-    public string Datasource { get; set; }
-
     [IndexField("has_presentation")]
     public bool HasPresentation { get; set; }
 
