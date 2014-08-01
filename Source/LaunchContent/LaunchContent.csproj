@@ -60,6 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseModels.cs" />
     <Compile Include="DataModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

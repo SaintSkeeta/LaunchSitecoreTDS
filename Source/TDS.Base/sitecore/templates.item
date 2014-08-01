@@ -1,13 +1,20 @@
 ----item----
 version: 1
-id: {EB2E4FFD-2761-4653-B052-26A64D385227}
+id: {3C1715FE-6A13-4FCF-845F-DE308BA9741D}
 database: master
-path: /sitecore/layout
+path: /sitecore/templates
 parent: {11111111-1111-1111-1111-111111111111}
-name: layout
+name: templates
 master: {00000000-0000-0000-0000-000000000000}
 template: {E3E2D58C-DF95-4230-ADC9-279924CECE84}
 templatekey: Main section
+
+----field----
+field: {D85DB4EC-FF89-4F9C-9E7C-A9E0654797FC}
+name: __Editor
+key: __editor
+content-length: 0
+
 
 ----field----
 field: {A0CB3965-8884-4C7A-8815-B6B2E5CED162}
@@ -27,9 +34,9 @@ content-length: 1
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 30
+content-length: 32
 
-Applications/16x16/windows.png
+Applications/16x16/form_blue.png
 ----field----
 field: {9C6106EA-7A5A-48E2-8CAD-F0F693B1E2D4}
 name: __Read Only
@@ -38,52 +45,38 @@ content-length: 1
 
 1
 ----field----
-field: {F2DB8BA1-E477-41F5-8EF5-22EEFA8D2F6E}
-name: __Enabled Views
-key: __enabled views
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
 content-length: 77
 
-{4ADCA61B-10A6-4AAA-94FD-72DB877813D0}|{F50CD144-013F-4AD8-90BD-F01816E40CCC}
-----field----
-field: {3607F9C7-DDA3-43C3-9720-39A7A5B3A4C3}
-name: __Default View
-key: __default view
-content-length: 0
-
-
+{0437FEE2-44C9-46A6-ABE9-28858D9FEE8C}|{78CF88BA-6957-4366-8368-12F3CED0184F}
 ----field----
 field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
 name: __Security
 key: __security
-content-length: 0
+content-length: 158
 
-
+ar|sitecore\Designer|pd|+item:delete|+item:write|+item:create|+item:read|+item:rename|ar|sitecore\Sitecore Client Maintaining|pe|+item:create|pd|+item:create|
 ----version----
 language: da
 version: 1
-revision: 2b1d5cf3-bf5f-4a93-b0e0-e0808b1de214
+revision: 2ce1cd76-98eb-4143-8388-ad0439c7c46f
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
 key: __display name
-content-length: 6
+content-length: 10
 
-Layout
-----field----
-field: {577F1689-7DE4-4AD2-A15F-7FDC1759285F}
-name: __Long description
-key: __long description
-content-length: 66
-
-Denne sektion indeholder information til rendering af hjemmesiden.
+Skabeloner
 ----field----
 field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
 name: __Short description
 key: __short description
-content-length: 44
+content-length: 11
 
-Layout, underlayout, renderinger og enheder.
+Skabeloner.
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -97,7 +90,7 @@ name: __Created
 key: __created
 content-length: 34
 
-20140130T165347:635266976278540190
+20140130T170227:635266981470454670
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -111,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2b1d5cf3-bf5f-4a93-b0e0-e0808b1de214
+2ce1cd76-98eb-4143-8388-ad0439c7c46f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140130T165347:635266976279634080
+20140130T170227:635266981470767210
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -129,29 +122,22 @@ sitecore\admin
 ----version----
 language: de-DE
 version: 1
-revision: 96d83317-6b06-47f5-97a7-2c2a8aa9b422
+revision: 5917efc3-eaa5-4691-bc54-b8a5293dd0a2
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
 key: __display name
-content-length: 6
+content-length: 9
 
-Layout
-----field----
-field: {577F1689-7DE4-4AD2-A15F-7FDC1759285F}
-name: __Long description
-key: __long description
-content-length: 61
-
-Dieser Bereich enthält Informationen zum Rendern der Website.
+Templates
 ----field----
 field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
 name: __Short description
 key: __short description
-content-length: 43
+content-length: 10
 
-Layouts, Sublayouts, Renderings und Geräte.
+Templates.
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -165,7 +151,7 @@ name: __Created
 key: __created
 content-length: 34
 
-20140130T171631:635266989918410870
+20140130T172314:635266993940175590
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -179,14 +165,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-96d83317-6b06-47f5-97a7-2c2a8aa9b422
+5917efc3-eaa5-4691-bc54-b8a5293dd0a2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140130T171632:635266989921380000
+20140130T172314:635266993942519640
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -197,29 +183,22 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: 5179d9c7-1f84-4aab-998c-87efa0fde203
+revision: 7281fef1-1bd2-44bc-b525-dadbfa6f03dc
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
 key: __display name
-content-length: 6
+content-length: 9
 
-Layout
-----field----
-field: {577F1689-7DE4-4AD2-A15F-7FDC1759285F}
-name: __Long description
-key: __long description
-content-length: 61
-
-This section contains information for rendering the web site.
+Templates
 ----field----
 field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
 name: __Short description
 key: __short description
-content-length: 44
+content-length: 10
 
-Layouts, sublayouts, renderings and devices.
+Templates.
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -233,7 +212,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20120920T150400
+20080417T173400
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -247,14 +226,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5179d9c7-1f84-4aab-998c-87efa0fde203
+7281fef1-1bd2-44bc-b525-dadbfa6f03dc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20121114T161520:634885065208686527
+20121005T114435:634850342751701238
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -265,29 +244,22 @@ sitecore\admin
 ----version----
 language: ja-JP
 version: 1
-revision: a74cb365-244e-4cd0-9db0-e5ecd204c236
+revision: 8ab244d2-fdc0-406d-8944-fc8245fccc1c
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
 key: __display name
-content-length: 5
+content-length: 6
 
-レイアウト
-----field----
-field: {577F1689-7DE4-4AD2-A15F-7FDC1759285F}
-name: __Long description
-key: __long description
-content-length: 35
-
-このセクションには Web サイトを表示するための情報が含まれています
+テンプレート
 ----field----
 field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
 name: __Short description
 key: __short description
-content-length: 27
+content-length: 6
 
-レイアウト、サブレイアウト、レンダリングおよびデバイス
+テンプレート
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -301,7 +273,7 @@ name: __Created
 key: __created
 content-length: 34
 
-20140130T173717:635267002377817970
+20140130T174430:635267006707903400
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -315,14 +287,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a74cb365-244e-4cd0-9db0-e5ecd204c236
+8ab244d2-fdc0-406d-8944-fc8245fccc1c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140130T173718:635267002380943370
+20140130T174430:635267006708841020
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
