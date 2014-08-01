@@ -1,11 +1,11 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Castle.Windsor;
 using Glass.Mapper.Configuration;
 using Glass.Mapper.Sc.CastleWindsor;
 using Glass.Mapper.Sc.Configuration.Attributes;
 
 
-namespace LaunchSitecore.App_Start
+namespace $rootnamespace$.App_Start
 {
     public static  class GlassMapperScCustom
     {
