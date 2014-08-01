@@ -73,13 +73,6 @@ content-length: 0
 
 
 ----field----
-field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
-name: __Renderings
-key: __renderings
-content-length: 5317
-
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{31F7CB8F-2DD0-4239-ABD7-4A683D715768}" p:before="r[@uid='{C90B8FBE-F517-49BA-A4DF-AA21301AE2EC}']" s:ds="{9D181561-8B71-4577-BDFF-29CC95967FA5}" s:id="{6EDFF7B6-8582-4ECD-94D1-37CEADB999E9}" s:ph="footer-left" /><r uid="{BFFDD648-4331-4BDB-B046-06F7848D269A}" s:ds="{C722BA3C-060F-462B-A501-42ABEA6975AB}" /><r uid="{3EC360C9-708D-4E58-9DED-5D8FD4620ED5}"><rls><ruleset><rule uid="{CE1B45D1-2819-42CA-A64B-433DA52EF116}" s:name="Network Architect"><conditions><condition uid="E6A516DDB5A5454CB2E267B0BFD48C86" s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" s:ProfileName="Job Function" s:PatternName="Network Architect" /></conditions><actions><action uid="3EAD124989124CFB88E9C303EDCF523E" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{15D0FCF2-7C81-4218-A5A0-7605084D1CBC}" /></actions></rule><rule uid="{5BA3A134-ECC9-48ED-BCF2-34F806D62742}" s:name="Developer"><conditions><condition uid="380B38A33A51498CB6FFA1B374D87DA6" s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" s:ProfileName="Job Function" s:PatternName="Developer" /></conditions><actions><action uid="439D755DB699429BB9FC6C2C8BFAC0E5" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{EC38EBB3-F2E8-493D-B0E6-B8C68C9AFB85}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="8A766F40749E4FF8908CC92C73682F58" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{EE02BE24-30DE-4BB7-A52A-46693A78EF4F}"><rls><ruleset><rule uid="{39FCDAEC-8D32-4297-B8C1-0FA451415E36}" s:name="Marketers and Content Owners"><conditions><or uid="98A2590657DD47819639DF7AFE9038BD"><condition uid="4D7D580B34AD404A845C4AB1760C0C2F" s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" s:ProfileName="Job Function" s:PatternName="Digital Marketer" /><condition uid="0D9B760B6BEF4DD99B8EF4373B673B23" s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" s:ProfileName="Job Function" s:PatternName="Content Owner" /></or></conditions><actions><action uid="2E65A4835357411A8AC6BC2D242BD836" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{A5CDBC19-FFEA-4801-81A6-2B87F318B275}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="F5D9E0F7AEE840D3ADC156D74F400431" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{3829E486-2259-42FF-9385-33F26CF71A94}"><rls><ruleset><rule uid="{5E93ED2E-AEC7-4B66-9E08-61FF8C306099}" s:name="Content Owner"><conditions><condition uid="BFEAC1AA3A6E4ED7B774E82C59A60FC9" s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" s:ProfileName="Job Function" s:PatternName="Content Owner" /></conditions><actions><action uid="726CE250F02042EBA9C3E034D8266013" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{15D0FCF2-7C81-4218-A5A0-7605084D1CBC}" /></actions></rule><rule uid="{7E0E4C3D-BEF9-4424-8645-2D8B4194ED86}" s:name="Marketer"><conditions><condition uid="6C0BA78BA13E41B3B46777FE47DF41C1" s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" s:ProfileName="Job Function" s:PatternName="Digital Marketer" /></conditions><actions><action uid="370869CBE37648CDB929257F0E862CA2" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{05B47C0F-7B67-47AD-9946-C02CBA12A195}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="C7CB6039D37145498D88A15B20E742A8" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{8D4C2576-5760-433B-8AAE-6CCE62FF33AD}"><rls><ruleset><rule uid="{134B5DB9-8D39-4DE0-9FF4-0ED5364352ED}" s:name="In Evaluation Stage"><actions><action uid="4A3F03FAD64F46AC81C1AC7E3E12629F" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{4129BD83-68FE-4F49-9201-97643E59306D}" /></actions><conditions><condition uid="D7CA6850AFF24D3681A9D49109C216EF" s:id="{78168526-2783-4700-AD73-E78B9A056027}" s:automationstateid="{D6141475-5D29-4C7C-86D2-2EB5EA5E7B9C}" /></conditions></rule><rule uid="{E4F37C30-77B6-4DDA-9CFF-5DBCDCCC9263}" s:name="A Qualified User"><actions><action uid="CA5905C9C3FE4487A6B8E9F152364675" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{C01755E1-6263-490B-B8E3-EDEA18941141}" /></actions><conditions><condition uid="10E04F05F32F4581814BD15264ED7C39" s:id="{78168526-2783-4700-AD73-E78B9A056027}" s:automationstateid="{9D41094F-ABFD-4807-B42C-036C10BE6606}" /></conditions></rule><rule uid="{73271883-4F2E-4400-A47E-A4CBB7F40BC7}" s:name="Enrolled in Plan"><actions><action uid="9555142B5FC14EDFAE60978FE199E02A" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{0015FB05-D226-4BAC-BE34-C3AA1EA4E161}" /></actions><conditions><condition uid="3D0B0E7561774D8FB04287B1C950B9E2" s:id="{78168526-2783-4700-AD73-E78B9A056027}" s:automationstateid="{C734DC56-D426-4AB9-8847-52D12DA463BA}" /></conditions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="7C3B5C27F8024266B158941CCA8E559B" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{BECFC1B6-32A7-4641-9D1B-6AD53C2519A6}"><p:d /></r></d></r>
-----field----
 field: {86FE4F77-4D9A-4EC3-9ED9-263D03BD1965}
 name: __Publish
 key: __publish
@@ -145,7 +138,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 0aafb392-d3df-4c69-9a93-a68e3a6c670e
+revision: 2a0f597c-5d65-4111-ad62-96e9530074b5
 
 ----field----
 field: {AAEAC7F2-E33E-4B34-9023-AB6F59D3A427}
@@ -265,14 +258,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0aafb392-d3df-4c69-9a93-a68e3a6c670e
+2a0f597c-5d65-4111-ad62-96e9530074b5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20131218T231046:635230050461844167
+20140325T181446:635313680868429508
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
