@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tds", ".tds", "{DE8F7DC4-7
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Base", "TDS.Base\TDS.Base.scproj", "{593E58CD-A64E-42C0-A5DB-AA592328CEF5}"
 EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Master.Media", "TDS.Master.Media\TDS.Master.Media.scproj", "{4BD23342-7AF2-498A-8530-5DE0480C7CD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,12 @@ Global
 		{593E58CD-A64E-42C0-A5DB-AA592328CEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{593E58CD-A64E-42C0-A5DB-AA592328CEF5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{593E58CD-A64E-42C0-A5DB-AA592328CEF5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4BD23342-7AF2-498A-8530-5DE0480C7CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BD23342-7AF2-498A-8530-5DE0480C7CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BD23342-7AF2-498A-8530-5DE0480C7CD6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4BD23342-7AF2-498A-8530-5DE0480C7CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BD23342-7AF2-498A-8530-5DE0480C7CD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BD23342-7AF2-498A-8530-5DE0480C7CD6}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
