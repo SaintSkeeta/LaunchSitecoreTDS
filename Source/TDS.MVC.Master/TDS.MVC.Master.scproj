@@ -47,6 +47,30 @@
       <Value>$(AssemblyVersion)</Value>
     </AssemblyAttributes>
   </ItemGroup>
+  <ItemGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <Replacement Include="..\..\Assets\favicon.ico">
+      <TargetPath>.\favicon.ico</TargetPath>
+      <IsFolder>False</IsFolder>
+      <IsRelative>True</IsRelative>
+    </Replacement>
+    <Replacement Include="..\..\Assets\img\">
+      <TargetPath>.\assets\img\</TargetPath>
+      <IsFolder>True</IsFolder>
+      <IsRelative>True</IsRelative>
+    </Replacement>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(Configuration)' == 'Release' ">
+    <Replacement Include="..\..\Assets\favicon.ico">
+      <TargetPath>.\favicon.ico</TargetPath>
+      <IsFolder>False</IsFolder>
+      <IsRelative>True</IsRelative>
+    </Replacement>
+    <Replacement Include="..\..\Assets\img\">
+      <TargetPath>.\assets\img\</TargetPath>
+      <IsFolder>True</IsFolder>
+      <IsRelative>True</IsRelative>
+    </Replacement>
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LaunchSitecoreMvc\LaunchSitecoreMvc.csproj">
       <Project>{834a2236-50dc-4e10-af63-9057f5b6f84e}</Project>
