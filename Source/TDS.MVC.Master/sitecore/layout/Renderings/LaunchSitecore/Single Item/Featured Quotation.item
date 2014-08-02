@@ -59,6 +59,13 @@ content-length: 38
 
 {5A5DE9E1-0CEB-444C-9F6F-F23EF0069867}
 ----field----
+field: {F172B787-7B88-4BD5-AE4D-6308E102EF11}
+name: Enable Datasource Query
+key: enable datasource query
+content-length: 0
+
+
+----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
@@ -76,13 +83,6 @@ content-length: 58
 language: en
 version: 1
 revision: 33bc9f59-6e7f-4de5-9825-041bb7d0dcae
-
-----field----
-field: {F172B787-7B88-4BD5-AE4D-6308E102EF11}
-name: Enable Datasource Query
-key: enable datasource query
-content-length: 0
-
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}

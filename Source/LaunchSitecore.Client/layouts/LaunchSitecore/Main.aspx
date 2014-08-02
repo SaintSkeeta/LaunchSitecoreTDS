@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="c#" CodePage="65001" AutoEventWireup="true" Inherits="LaunchSitecore.layouts.LaunchSitecore.Default.Main" CodeBehind="Main.aspx.cs" %>
-<%@ Register TagPrefix="sc" Namespace="Sitecore.Web.UI.WebControls" Assembly="Sitecore.Kernel" %>
 <%@ Register Src="~/layouts/LaunchSitecore/Controls/Navigation/Tertiary Nav.ascx" TagPrefix="uc1" TagName="TertiaryNav" %>
+<%@ Register TagPrefix="sc" Namespace="Sitecore.Web.UI.WebControls" Assembly="Sitecore.Analytics" %>
 <!DOCTYPE html>
 <html>
 <head> 
@@ -17,7 +17,7 @@
  <link rel="stylesheet" href="/assets/css/custom_nav.css" />
  <link rel="stylesheet" href="/assets/css/custom_modules.css" />
  <sc:Sublayout ID="csstheme" runat="server" Path="/layouts/LaunchSitecore/Controls/Meta/CssTheme.ascx" />
- <sc:VisitorIdentification ID="Visitoridentification1" runat="server" />
+ <sc:VisitorIdentification runat="server" />
  <!--[if lte IE 8]>
  <link rel="stylesheet" type="text/css" href="/assets/css/IE-fix.css" />
  <![endif]-->
