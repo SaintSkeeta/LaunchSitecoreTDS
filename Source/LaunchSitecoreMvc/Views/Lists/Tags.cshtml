@@ -1,0 +1,10 @@
+﻿@model IEnumerable<LaunchSitecore.Models.SimpleItem>
+<div class="tags-widget sidebar-block">
+ <h2>@UIHelpers.GetDictionaryText("Tags")</h2>
+ <ul>
+  @foreach (var item in Model)
+  {
+   <li><p><i class="icon-tags"></i><a href="/search?tag=@item.ID.NormailzeId()">@item.DisplayName</a></p></li> 
+  }
+ </ul>
+</div>

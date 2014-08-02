@@ -1,0 +1,5 @@
+﻿@model LaunchSitecore.Models.StickyNoteItem
+<div class="@Model.RegularCssClass">
+ <h2>@Html.Sitecore().Field("Title", Model.Item)</h2>
+ @Html.Sitecore().Field("Message", Model.Item)
+</div>

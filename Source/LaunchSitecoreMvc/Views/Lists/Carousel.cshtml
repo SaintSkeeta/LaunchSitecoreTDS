@@ -1,0 +1,20 @@
+﻿@model IEnumerable<LaunchSitecore.Models.CarouselItem>
+<div id="enhanced-carousel" class="carousel slide">
+ <div class="carousel-inner">
+  @foreach (var item in Model)
+  { 
+   <div class="@(Model.IsFirst(item) ? "item active" : "item")">    
+    @Html.Sitecore().Field("Image", item.Item, new { @maxWidth = "950" })
+    <div class="container">
+     <div class="@(item.UseDarkText ? "carousel-caption darktext" : "carousel-caption")">
+      <h1>@Html.Sitecore().Field("Title", item.Item)</h1>
+      @Html.Sitecore().Field("Caption", item.Item)
+      <p class="btn-wrapper"><a href="@item.LinkItemUrl" class="btn btn-large btn-primary">@Html.Sitecore().Field("Link Text", item.Item) »</a></p>
+     </div>
+    </div>
+   </div>
+  }
+ </div>
+ <a class="carousel-control left" href="#enhanced-carousel" data-slide="prev">‹</a>
+ <a class="carousel-control right" href="#enhanced-carousel" data-slide="next">›</a>
+</div>

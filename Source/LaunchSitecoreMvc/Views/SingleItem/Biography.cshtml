@@ -1,0 +1,9 @@
+﻿<div>
+ <article>
+  <h1>@Html.Sitecore().Field("Title")<small>@Html.Sitecore().Field("Job Title")</small></h1>
+  <div class="post-img pull-right img-polaroid bio-img">@Html.Sitecore().Field("Image", new { @maxWidth = "200" })</div>
+  @Html.Sitecore().Field("Abstract")
+  <blockquote><p>@Html.Sitecore().Field("Quote")</p></blockquote>
+  @Html.Sitecore().Field("Body")
+ </article>
+</div>

@@ -1,0 +1,6 @@
+﻿<h1>@Html.Sitecore().Field("Title")</h1>
+@if (@Html.Sitecore().Field("Subtitle").ToString() != String.Empty)
+{
+<h2 id="subtitlewrapper">@Html.Sitecore().Field("Subtitle")</h2>
+}
+@Html.Sitecore().Field("Body")

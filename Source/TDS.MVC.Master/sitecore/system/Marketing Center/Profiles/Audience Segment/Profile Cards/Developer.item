@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {69E585D6-BAD7-4FB9-811C-86EA2232A105}
+database: master
+path: /sitecore/system/Marketing Center/Profiles/Audience Segment/Profile Cards/Developer
+parent: {5FFA5E63-C49D-4D82-9BDD-9A9FC913AE9D}
+name: Developer
+master: {00000000-0000-0000-0000-000000000000}
+template: {448C4D57-F0F1-4278-8AB8-93DB46C94F1B}
+templatekey: Profile Card - Persona
+
+----field----
+field: {709B879B-7264-49C7-8864-E254D9129302}
+name: Image
+key: image
+content-length: 197
+
+<image mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/c-f/code" mediaid="{7E099B18-F6B4-474E-B96C-14C9AF70AA50}" src="~/media/7e099b18f6b4474eb96c14c9af70aa50.ashx?20131218T1420293769" />
+----field----
+field: {85970AB7-22EA-4206-BE86-C0167178860B}
+name: Profile Card Value
+key: profile card value
+content-length: 302
+
+<tracking>
+  <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment">
+    <key name="Analytics" value="1" />
+    <key name="Campaigns and Targeting" value="1" />
+    <key name="Content Management" value="4" />
+    <key name="Technology" value="5" />
+  </profile>
+</tracking>
+----version----
+language: en
+version: 1
+revision: d0e5ec73-8c71-4856-aa10-17a604b2d5be
+
+----field----
+field: {A26FC256-1DB0-44AA-BA3D-1C830BF882A2}
+name: Name
+key: name
+content-length: 9
+
+Developer
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131218T142002
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d0e5ec73-8c71-4856-aa10-17a604b2d5be
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131218T142047:635229732470790411
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

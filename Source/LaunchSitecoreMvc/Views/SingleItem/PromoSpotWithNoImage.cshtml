@@ -1,0 +1,17 @@
+﻿@model LaunchSitecore.Models.PromoItem
+<div class="grey-box">
+ <div class="hero-block3">
+  <div class="row show-grid">
+   <div class="span9">
+    <div class="hero-content-3">
+     <h2>@Html.Sitecore().Field("Title", Model.Item)</h2>
+     @Html.Sitecore().Field("Text", Model.Item)
+    </div>
+   </div>
+   <div class="span3">     
+    <div class="tour-btn"><a href="@Model.LinkToUrl" class="btn btn-primary">@Html.Sitecore().Field("Link Text", Model.Item)</a></div>
+   </div>
+  </div>
+ </div>
+</div>
+

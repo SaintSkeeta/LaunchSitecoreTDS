@@ -1,0 +1,11 @@
+﻿@model IEnumerable<LaunchSitecore.Models.GenericLink>
+<li class="dropdown">
+ <a class="dropdown-toggle" data-toggle="dropdown" href="#">@UIHelpers.GetDictionaryText("favorites")
+  <b class="caret"></b></a>
+ <ul class="dropdown-menu pull-right">
+  @foreach (var link in Model)
+  {  
+   <li><a href="@link.Url" @if (link.OpenInBlankWindow) { <text>target="_blank"</text> }>@link.Title</a></li>      
+  }
+ </ul>
+</li>

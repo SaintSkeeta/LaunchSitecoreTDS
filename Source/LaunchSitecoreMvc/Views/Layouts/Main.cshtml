@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <title>@Html.Sitecore().Controller("Meta", "PageTitle")</title>
+ @Html.Sitecore().Controller("Meta", "MetaTags")
+ <meta name="robots" content="follow, index" />
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="stylesheet" href="/assets/css/bootstrap.css" />
+ <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css" />
+ <link rel="stylesheet" href="/assets/css/font-awesome.css" />
+ <link rel="stylesheet" href="/assets/css/font-awesome-ie7.css" />
+ <link rel="stylesheet" href="/assets/css/custom_base.css" />
+ <link rel="stylesheet" href="/assets/css/custom_nav.css" />
+ <link rel="stylesheet" href="/assets/css/custom_modules.css" />
+ <link rel="stylesheet" href="/assets/css/custom_mvc.css" />
+ @Html.Sitecore().Controller("Meta", "CssTheme")
+ <!--[if lte IE 8]>
+ <link rel="stylesheet" type="text/css" href="/assets/css/IE-fix.css" />
+ <![endif]-->
+</head>
+<body id="mainbody" class="@Html.Sitecore().Controller("Header", "BodyClass")" style="@Html.Sitecore().Controller("Header", "BodyStyle")">
+ 
+ <!-- SearchForm -->
+ <!-- /launchsitecore/mvc/search/SearchFormMini 
+ @Html.Sitecore().Rendering("{0F3283C7-9C7C-43DF-B993-079155299D19}", new { DataSource = "{ED2BEB41-F054-4D68-A99F-3FC333D76F3B}", Cacheable = false, CacheKey = "searchform_mini", Cache_VaryByData = true })
+
+-->
+ 
+  <div id="over">
+   <div id="out_container" class="@Html.Sitecore().Controller("Header", "PageLayoutClass")">
+    <!-- THE LINE AT THE VERY TOP OF THE PAGE -->
+    <div class="@Html.Sitecore().Controller("Header", "TopLineClass")"></div>
+    <!-- HEADER AREA -->
+    <header>
+     <div class="container">
+      <div class="row">@Html.Sitecore().Controller("Header", "Header")</div>
+     </div>
+     <!-- HEADER: PRIMARY SITE NAVIGATION -->
+     <div class="container">
+      <!-- The Navigation Bar - /sitecore/layout/Renderings/LaunchSitecore/Renderings/Navigation/Navigation Bar -->
+      @Html.Sitecore().Controller("Navigation", "NavigationBar")
+      
+     </div>
+    </header>
+    <!-- MAIN CONTENT AREA -->
+    <div class="main-content">
+     <div class="container">
+      @Html.Sitecore().Placeholder("main-content")
+     </div>
+    </div>
+    <footer id="footer">
+     <div class="footer-top"></div>
+     <div class="footer-wrapper">
+      <div class="container">
+       <div class="row show-grid">
+        <div class="span12">
+         <div class="row show-grid">
+          <div class="span4">
+           @Html.Sitecore().Placeholder("footer-left")
+          </div>
+          <div class="span4 footer-center">
+           @Html.Sitecore().Placeholder("footer-center")
+          </div>
+          <div class="span4 footer-right">
+           @Html.Sitecore().Placeholder("footer-right")
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="footer-bottom">
+      <div class="container">
+       <div class="row show-grid">
+        <div class="span12">
+         <p>@Html.Sitecore().Field("Copyright", LaunchSitecore.Configuration.SiteConfiguration.GetSiteSettingsItem())</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>   
+   <div id="mtp-toggle">
+    <i class="moon-droplet"></i>
+   </div>
+   <div id="mtp-wrapper">
+    <div id="mtp-content">
+     @Html.Sitecore().Placeholder("visit-details")
+    </div>
+   </div>
+  </div>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write("<script src='/assets/js/jquery-1.7.2.min.js'><\/script>")</script>
+  <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/assets/js/custom.js"></script>  
+  
+</body>
+</html>

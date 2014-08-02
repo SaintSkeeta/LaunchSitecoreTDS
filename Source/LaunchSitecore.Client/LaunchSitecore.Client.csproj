@@ -58,14 +58,17 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Castle.Windsor.3.2.1\lib\net45\Castle.Windsor.dll</HintPath>
     </Reference>
-    <Reference Include="Glass.Mapper">
-      <HintPath>..\packages\Glass.Mapper.3.0.5.17\lib\net40\Glass.Mapper.dll</HintPath>
+    <Reference Include="Glass.Mapper, Version=3.0.12.24, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Glass.Mapper.3.0.12.24\lib\net45\Glass.Mapper.dll</HintPath>
     </Reference>
-    <Reference Include="Glass.Mapper.Sc">
-      <HintPath>..\packages\Glass.Mapper.Sc.3.1.0.16\lib\net40\Glass.Mapper.Sc.dll</HintPath>
+    <Reference Include="Glass.Mapper.Sc, Version=3.2.1.41, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Glass.Mapper.Sc.3.2.1.41\lib\net45\Glass.Mapper.Sc.dll</HintPath>
     </Reference>
-    <Reference Include="Glass.Mapper.Sc.CastleWindsor">
-      <HintPath>..\packages\Glass.Mapper.Sc.CastleWindsor.3.1.0.9\lib\net40\Glass.Mapper.Sc.CastleWindsor.dll</HintPath>
+    <Reference Include="Glass.Mapper.Sc.CastleWindsor, Version=3.2.0.19, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Glass.Mapper.Sc.CastleWindsor.3.2.0.19\lib\net45\Glass.Mapper.Sc.CastleWindsor.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -622,9 +625,6 @@
       <Project>{AB40808F-AAA0-491C-A220-C1C0C8905BDE}</Project>
       <Name>LaunchContent</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_Config\Include\Glass.Mapper.Sc.Mvc.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />

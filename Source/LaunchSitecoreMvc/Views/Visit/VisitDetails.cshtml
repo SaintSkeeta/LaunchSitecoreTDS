@@ -1,0 +1,93 @@
+﻿@model LaunchSitecore.Models.VisitInformation
+<div id="pnlDetails">
+ <h3 class="center-title">
+  @UIHelpers.GetDictionaryText("Visit Details")
+  <span class="pagecounts">
+   <img src="/assets/img/page.png" alt="Pages" title="Pages Viewed" />@Model.PageCount
+   <img src="/assets/img/value.png" alt="Value" title=" Engagement Value" />@Model.EngagementValue
+  </span>
+ </h3>
+ <div style="clear: both"></div>
+ <div id="accordion" class="accordion in collapse">
+  <div class="accordion-group">
+   <div class="accordion-heading">
+    <a href="#collapseZero1" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle collapsed">
+     @UIHelpers.GetDictionaryText("Pattern")
+    </a>
+   </div>
+   <div class="accordion-body collapse" id="collapseZero1">
+    <div class="accordion-inner"> 
+     <div class="patternwrapper">    
+      @if (Model.PatternMatches.Count == 0)
+      {
+       <div>
+        <div class="image-wrapper"><img src="/assets/img/nope.png" alt="Unknown" /></div>
+        <h4>@UIHelpers.GetDictionaryText("No Match")</h4>
+        <h5>@UIHelpers.GetDictionaryText("DMS Session Info No Pattern Match Name")</h5>
+       </div>
+       <div style="clear: both"></div>
+      }
+      else
+      {
+       foreach (var item in Model.PatternMatches)
+       { 
+        <div>
+         <div class="image-wrapper"><img src="@item.Image" alt="@item.PatternName" /></div>
+         <h4>@item.Profile</h4>  
+         <h5>@item.PatternName</h5>
+        </div>
+        <div style="clear: both"></div>
+       }
+      }
+     </div>     
+    </div>
+   </div>
+  </div>
+  <div class="accordion-group">
+   <div class="accordion-heading">
+    <a href="#collapseOne1" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle collapsed">
+     @UIHelpers.GetDictionaryText("Campaign")
+    </a>
+   </div>
+   <div class="accordion-body collapse" id="collapseOne1">
+    <div class="accordion-inner">
+     <ul>
+      <li>@Model.Campaign</li>
+     </ul>
+    </div>
+   </div>
+  </div>
+  <div class="accordion-group">
+   <div class="accordion-heading">
+    <a href="#collapseTwo1" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle collapsed">
+     @UIHelpers.GetDictionaryText("GeoIp Location")
+    </a>
+   </div>
+   <div class="accordion-body collapse" id="collapseTwo1">
+    <div class="accordion-inner">
+     <ul>
+      <li>@UIHelpers.GetDictionaryText("GeoIp City"): @Model.City</li>
+      <li>@UIHelpers.GetDictionaryText("GeoIp Postal Code"): @Model.PostalCode</li>
+     </ul>
+    </div>
+   </div>
+  </div>
+  <div class="accordion-group">
+   <div class="accordion-heading">
+    <a href="#collapseThree1" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle e collapsed">
+     @UIHelpers.GetDictionaryText("Pages")
+    </a>
+   </div>
+   <div class="accordion-body collapse" id="collapseThree1">
+    <div class="accordion-inner">
+     <ul>
+      @foreach (var item in Model.PagesViewed)
+      { 
+       <li><a href="@item.Url">@item.Title</a></li> 
+      }
+     </ul>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

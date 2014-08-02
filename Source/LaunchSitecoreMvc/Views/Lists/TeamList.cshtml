@@ -1,0 +1,18 @@
+﻿@model IEnumerable<LaunchSitecore.Models.SimpleItem>
+<div>
+ @foreach (var item in Model)
+ { 
+  <div class="row show-grid team-member">
+   <div class="span2 photo">
+    <div class="bordered-img"><a href="@item.Url">@Html.Sitecore().Field("Image", item.Item, new { @maxWidth = "150", @maxHeight = "150" })</a></div>
+   </div>
+   <div class="span7">
+    <h2><a href="@item.Url">@Html.Sitecore().Field("Title", item.Item)</a></h2>
+    <h4>@Html.Sitecore().Field("Job Title", item.Item)</h4>
+    <p class="experience"><em>@Html.Sitecore().Field("Quote", item.Item)</em></p>
+    @Html.Sitecore().Field("Abstract", item.Item)
+   </div>
+  </div> 
+  if (!Model.IsLast(item)) {<div class="member-divider"></div> }
+ }
+</div>

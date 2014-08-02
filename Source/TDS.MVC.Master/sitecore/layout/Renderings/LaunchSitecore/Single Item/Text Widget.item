@@ -1,0 +1,93 @@
+----item----
+version: 1
+id: {791C2BD1-2D88-447F-9733-C655810A9E60}
+database: master
+path: /sitecore/layout/Renderings/LaunchSitecore/Single Item/Text Widget
+parent: {5C69B81A-4301-483D-B0A2-EC19A5B67471}
+name: Text Widget
+master: {00000000-0000-0000-0000-000000000000}
+template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
+templatekey: Controller rendering
+
+----field----
+field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
+name: Controller
+key: controller
+content-length: 63
+
+LaunchSitecore.Controllers.SingleItemController, LaunchSitecore
+----field----
+field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
+name: Controller Action
+key: controller action
+content-length: 10
+
+TextWidget
+----field----
+field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
+name: Datasource Location
+key: datasource location
+content-length: 45
+
+/sitecore/content/Global/Content/Text Widgets
+----field----
+field: {1A7C85E5-DC0B-490D-9187-BB1DBCB4C72F}
+name: Datasource Template
+key: datasource template
+content-length: 56
+
+/sitecore/templates/Global/Content Templates/Text Widget
+----field----
+field: {E441ABE7-2CA3-4640-AE26-3789967925D7}
+name: Compatible Renderings
+key: compatible renderings
+content-length: 38
+
+{1D074CFE-9A8A-45CE-86A7-89DD2372A7B0}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 38
+
+Applications/32x32/text_align_left.png
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 58
+
+<image mediaid="{305C04EA-E324-43FA-9F49-55C4945C4936}" />
+----version----
+language: en
+version: 1
+revision: 21269e04-08b5-4570-905c-53d02954a7d4
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131209T164538
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+21269e04-08b5-4570-905c-53d02954a7d4
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140227T191626:635291253860167966
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
