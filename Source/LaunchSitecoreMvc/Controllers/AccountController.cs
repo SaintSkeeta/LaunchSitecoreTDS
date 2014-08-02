@@ -9,6 +9,9 @@ using LaunchSitecore.Models;
 using LaunchSitecore.Configuration.SiteUI.Analytics;
 using Sitecore.Analytics;
 using LaunchSitecore.Configuration.SiteUI.Base;
+using Sitecore.Analytics.Model.Entities;
+using Sitecore.Analytics.Tracking;
+using Sitecore.Diagnostics;
 
 namespace LaunchSitecore.Controllers
 {
@@ -38,6 +41,9 @@ namespace LaunchSitecore.Controllers
         string domainUser = domain.Name + @"\" + model.UserName;
         if (Sitecore.Security.Authentication.AuthenticationManager.Login(domainUser, model.Password, model.RememberMe))
         {
+          // identify the user (Username is Email)
+          Tracker.Current.Session.Identify(model.UserName);
+
           // Register Goal & set a few values in the visit tags.
           Tracker.Current.CurrentPage.Register("Login", "[Login] Username: \"" + domainUser + "\"");
           AnalyticsHelper.SetVisitTagsOnLogin(domainUser);
@@ -56,8 +62,10 @@ namespace LaunchSitecore.Controllers
     [ValidateAntiForgeryToken]
     public ActionResult LogOff()
     {
-      //throw new Exception("Hello there");
       Sitecore.Security.Authentication.AuthenticationManager.Logout();
+      
+      // calling Session Abandon flushes the session data out to the xDB
+      Session.Abandon();
       Sitecore.Web.WebUtil.Redirect("/");
       return null;
     }
@@ -94,6 +102,38 @@ namespace LaunchSitecore.Controllers
             Sitecore.Context.User.Profile.FullName = model.FullName;
             Sitecore.Context.User.Profile.ProfileItemId = "{93B42F5F-17A9-441B-AB6D-444F714EF384}"; //LS User
             Sitecore.Context.User.Profile.Save();
+
+            // identify the user (which should add them)
+            Tracker.Current.Session.Identify(model.Email);
+
+            Contact contact = Sitecore.Analytics.Tracker.Current.Contact;
+            try
+            {
+                // set the personal information for the contact
+                IContactPersonalInfo personalInfo = contact.GetFacet<IContactPersonalInfo>("Personal");
+                personalInfo.FirstName = model.FullName.Split(' ')[0];
+                personalInfo.Surname = model.FullName.Split(' ')[1];
+            }
+            catch (Exception ex)
+            {
+                Log.Error("Error setting the User's Personal Info: " + ex.ToString(), this);
+            }
+
+            try
+            {
+                // set the email address
+                IContactEmailAddresses emailAddresses = contact.GetFacet<IContactEmailAddresses>("Emails");
+                emailAddresses.Preferred = model.Email;
+
+                if (!emailAddresses.Entries.Contains(model.Email))
+                {
+                    emailAddresses.Entries.Create(model.Email);
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.Error("Error assigning email address: " + ex.ToString(), this);
+            }
 
             Tracker.Current.CurrentPage.Register("Register", "[Register] Username: \"" + domainUser + "\"");
             AnalyticsHelper.SetVisitTagsOnLogin(domainUser);

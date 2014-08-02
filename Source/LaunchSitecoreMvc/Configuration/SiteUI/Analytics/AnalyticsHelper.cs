@@ -12,10 +12,10 @@ namespace LaunchSitecore.Configuration.SiteUI.Analytics
         {
             Tracker.Current.Contact.Identifiers.AuthenticationLevel = 
                 Sitecore.Analytics.Model.AuthenticationLevel.PasswordValidated;
-            Tracker.Current.Session.Identify(domainUser);   //sholmesby: should have email as unique id.
 
             string name = Sitecore.Context.User.Profile.FullName;
             if (name == String.Empty) name = Sitecore.Context.User.LocalName;
+
             Tracker.Current.Contact.Tags.Add("Full name", name);
             Tracker.Current.Contact.Tags.Add("Username", domainUser);
         }
