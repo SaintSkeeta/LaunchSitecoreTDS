@@ -21,6 +21,8 @@ BuiltFiles_*.txt
 # Launch Sitecore specific
 Data/license.xml
 Installers/Sitecore/Newtonsoft.Json.dll
+Installers/Sitecore/Sitecore.Analytics.Core.dll
+Installers/Sitecore/Sitecore.Analytics.Model.dll
 Installers/Sitecore/Sitecore.Buckets.dll
 Installers/Sitecore/Sitecore.Client.dll
 Installers/Sitecore/Sitecore.ContentSearch.dll
