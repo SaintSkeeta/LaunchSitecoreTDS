@@ -17,7 +17,7 @@ namespace LaunchSitecore.Configuration.SiteUI.Search.ComputedFields
     public object ComputeFieldValue(IIndexable indexable)
     {
       Item i = ((Item)(indexable as SitecoreIndexableItem));
-      if (i.Visualization.Layout != null) return true;
+      if (i != null && i.Visualization.Layout != null) return true;
       return null;
     }
   }
