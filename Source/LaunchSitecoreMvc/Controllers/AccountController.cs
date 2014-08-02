@@ -39,7 +39,7 @@ namespace LaunchSitecore.Controllers
         if (Sitecore.Security.Authentication.AuthenticationManager.Login(domainUser, model.Password, model.RememberMe))
         {
           // Register Goal & set a few values in the visit tags.
-          Tracker.CurrentPage.Register("Login", "[Login] Username: \"" + domainUser + "\"");
+          Tracker.Current.CurrentPage.Register("Login", "[Login] Username: \"" + domainUser + "\"");
           AnalyticsHelper.SetVisitTagsOnLogin(domainUser);
           return RedirectToLocal(returnUrl);
         }
@@ -95,7 +95,7 @@ namespace LaunchSitecore.Controllers
             Sitecore.Context.User.Profile.ProfileItemId = "{93B42F5F-17A9-441B-AB6D-444F714EF384}"; //LS User
             Sitecore.Context.User.Profile.Save();
 
-            Tracker.CurrentPage.Register("Register", "[Register] Username: \"" + domainUser + "\"");
+            Tracker.Current.CurrentPage.Register("Register", "[Register] Username: \"" + domainUser + "\"");
             AnalyticsHelper.SetVisitTagsOnLogin(domainUser);
             Sitecore.Web.WebUtil.Redirect("/");
           }
