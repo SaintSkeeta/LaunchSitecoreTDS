@@ -10,13 +10,14 @@ namespace LaunchSitecore.Configuration.SiteUI.Analytics
     {
         public static void SetVisitTagsOnLogin(string domainUser)
         {
-            Tracker.Visitor.AuthenticationLevel = Sitecore.Analytics.Data.DataAccess.AuthenticationLevel.PasswordValidated;
-            Tracker.Visitor.ExternalUser = domainUser;
+            Tracker.Current.Contact.Identifiers.AuthenticationLevel =
+                Sitecore.Analytics.Model.AuthenticationLevel.PasswordValidated;
+            Tracker.Current.Session.Identify(domainUser);
 
             string name = Sitecore.Context.User.Profile.FullName;
             if (name == String.Empty) name = Sitecore.Context.User.LocalName;
-            Tracker.Visitor.Tags.Add("Full name", name);
-            Tracker.Visitor.Tags.Add("Username", domainUser);                  
+            Tracker.Current.Contact.Tags.Add("Full name", name);
+            Tracker.Current.Contact.Tags.Add("Username", domainUser);
         }
     }
 }

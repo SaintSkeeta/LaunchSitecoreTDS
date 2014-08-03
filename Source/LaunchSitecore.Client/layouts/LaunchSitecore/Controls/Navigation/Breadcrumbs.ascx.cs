@@ -98,7 +98,7 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Navigation
         else { favorites = favorites + "|" + Sitecore.Context.Item.ID.ToString(); }
 
         // Capture the goal
-        Tracker.CurrentVisit.CurrentPage.Register("Add a Favorite", "[Add a Favorite] : \"" + Sitecore.Context.Item.Name + "\"");
+        Tracker.Current.CurrentPage.Register("Add a Favorite", "[Add a Favorite] : \"" + Sitecore.Context.Item.Name + "\"");
       }
 
       profile.SetCustomProperty("Favorites", favorites);

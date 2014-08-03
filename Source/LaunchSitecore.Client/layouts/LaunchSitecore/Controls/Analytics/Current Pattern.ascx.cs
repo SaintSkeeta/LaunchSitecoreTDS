@@ -12,6 +12,7 @@ using Sitecore.Analytics.Data.Items;
 using Sitecore.Data;
 using LaunchSitecore.Configuration.SiteUI.Base;
 using System.Collections.Generic;
+using Sitecore.Analytics.Tracking;
 
 namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Analytics
 {
@@ -42,20 +43,23 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Analytics
             DMSNoPatternMatchName.Text = GetDictionaryText("DMS Session Info No Pattern Match Name");
 
             // show the pattern match if there is one.
-            var personaProfile = Tracker.CurrentVisit.Profiles.Where(profile => profile.ProfileName == evaluatorTypeProfile.Name).FirstOrDefault();
-            if (personaProfile != null)
+            if (Tracker.Current.Interaction.Profiles.ContainsProfile(evaluatorTypeProfile.Name))
             {
-              // load the details about the matching pattern
-              Item i = Sitecore.Context.Database.GetItem(new ID(personaProfile.PatternId));
-              if (i != null)
-              {
-                // make sure the right panels are showing
-                PatternMatchPanel.Visible = true;
-                PatternMatchPanelNoMatch.Visible = false;
+                Profile personaProfile = Tracker.Current.Interaction.Profiles[evaluatorTypeProfile.Name];
+                if (personaProfile.PatternId.HasValue)
+                {
+                    // load the details about the matching pattern
+                    Item i = Sitecore.Context.Database.GetItem(new ID(personaProfile.PatternId.Value));
+                    if (i != null)
+                    {
+                        // make sure the right panels are showing
+                        PatternMatchPanel.Visible = true;
+                        PatternMatchPanelNoMatch.Visible = false;
 
-                Name.Item = i;
-                Image.Item = i;
-              }
+                        Name.Item = i;
+                        Image.Item = i;
+                    }
+                }
             }
           }
         }

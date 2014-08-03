@@ -43,7 +43,7 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Default.Controls.Secure
                     if (Sitecore.Security.Authentication.AuthenticationManager.Login(domainUser, txtPassword.Text, chkPersist.Checked)) 
                     {
                         // Register Goal & set a few values in the visit tags.
-                        Tracker.CurrentVisit.CurrentPage.Register("Login", "[Login] Username: \"" + domainUser + "\"");
+                        Tracker.Current.CurrentPage.Register("Login", "[Login] Username: \"" + domainUser + "\"");
                         AnalyticsHelper.SetVisitTagsOnLogin(domainUser);
                       if (!string.IsNullOrEmpty(Request.QueryString["item"]))
                       {

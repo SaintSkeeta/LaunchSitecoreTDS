@@ -12,12 +12,12 @@ using Sitecore.Analytics.Data.Items;
 using Sitecore.Data;
 using LaunchSitecore.Configuration.SiteUI.Base;
 using System.Collections.Generic;
-using Sitecore.Analytics.Data.DataAccess.DataSets;
 using System.Web.UI.WebControls;
 using Sitecore.Analytics.Lookups;
 using System.Net;
 using Sitecore.Data.Fields;
 using LaunchSitecore.Configuration;
+using Sitecore.Analytics.Model;
 
 namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Analytics
 {
@@ -38,8 +38,8 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Analytics
         InitializeLabels();
         FakeIPForLocalhost();
                 
-        PageCount.Text = Convert.ToString(Tracker.CurrentVisit.VisitPageCount);
-        EngagementValue.Text = Convert.ToString(Tracker.CurrentVisit.Value);
+        PageCount.Text = Convert.ToString(Tracker.Current.Interaction.PageCount);
+        EngagementValue.Text = Convert.ToString(Tracker.Current.Interaction.Value);
 
         // Populate the Patterns
         if (SiteConfiguration.GetSiteSettingsItem() != null)
@@ -52,15 +52,18 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Analytics
         // the call to Tracker.CurrentVisit.CampaignId will either work or throw
         try
         {
-          Item campaign = Sitecore.Context.Database.GetItem(new ID(Tracker.CurrentVisit.CampaignId));
+          Item campaign = Sitecore.Context.Database.GetItem(new ID(Tracker.Current.Interaction.CampaignId.Value));
           litCurrentCampaign.Text = campaign.Name;
         }
-        catch { litCurrentCampaign.Text = GetDictionaryText("Current Campaign Empty"); }
+        catch
+        { 
+            litCurrentCampaign.Text = GetDictionaryText("Current Campaign Empty");
+        }
 
-        if (Tracker.CurrentVisit.HasGeoIpData)
+        if (Tracker.Current.Interaction.HasGeoIpData)
         {
-          litCity.Text = Tracker.CurrentVisit.City;
-          litZip.Text = Tracker.CurrentVisit.PostalCode;
+          litCity.Text = Tracker.Current.Interaction.GeoData.City;
+          litZip.Text = Tracker.Current.Interaction.GeoData.PostalCode;
         }
         else
         {
@@ -68,15 +71,15 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Analytics
           litZip.Text = GetDictionaryText("Pending Lookup");
         }
 
-        PagesVisited.DataSource = Tracker.CurrentVisit.GetPages().Reverse();
+        PagesVisited.DataSource = Tracker.Current.Interaction.Pages.Reverse();
         PagesVisited.DataBind();
 
-        List<VisitorDataSet.PageEventsRow> Conversions = new List<VisitorDataSet.PageEventsRow>();
-        foreach (VisitorDataSet.PagesRow p in Tracker.CurrentVisit.GetPages())
+        List<PageEventData> Conversions = new List<PageEventData>();
+        foreach (Sitecore.Analytics.Core.Page p in Tracker.Current.Interaction.GetPages())
         {
-          foreach (VisitorDataSet.PageEventsRow a in p.PageEvents)
+          foreach (PageEventData a in p.PageEvents)
           {
-            if (a.PageEventDefinition.IsGoal) { Conversions.Add(a); }
+            if (a.IsGoal) { Conversions.Add(a); }
           }
         }
 
@@ -104,7 +107,7 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Analytics
 
     protected void FakeIPForLocalhost()
     {
-      VisitorDataSet.VisitsRow currentVisit = Tracker.Visitor.GetCurrentVisit();
+      Sitecore.Analytics.Tracking.CurrentInteraction currentVisit = Tracker.Current.Interaction;
       if (currentVisit != null)
       {        
         // if we are local host. our IP is 127 which will not resolve so I am using a 'fake' ip address
@@ -116,11 +119,11 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Analytics
           currentVisit.Ip[3] = Convert.ToByte(SiteConfiguration.GetSiteSettingsItem()["IP4"]);
 
           // Sitecore may have already tried to resolve the 127 and failed, so this will initiate a retry
-          currentVisit.HasGeoIpData = false;
+          //currentVisit.HasGeoIpData = false;
 
           // Save our changes and let DMS request the GeoIP data again.  
           currentVisit.UpdateGeoIpData(new TimeSpan(0, 0, 0, 0, 100));         
-          currentVisit.AcceptChanges();          
+          //currentVisit.AcceptChanges();          
         }       
       }
     }
@@ -129,13 +132,13 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Analytics
     {
       if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
       {
-        VisitorDataSet.PagesRow p = (VisitorDataSet.PagesRow)e.Item.DataItem;
+        Sitecore.Analytics.Core.Page p = (Sitecore.Analytics.Core.Page)e.Item.DataItem;
         {
           Literal litPage = (Literal)e.Item.FindControl("litPage");
 
           if (litPage != null)
           {
-            string pageName = p.Url.Replace("/en", "/").Replace("//", "/").Remove(0, 1).Replace(".aspx", "");
+            string pageName = p.Url.ToString().Replace("/en", "/").Replace("//", "/").Remove(0, 1).Replace(".aspx", "");
             if (pageName == String.Empty || pageName == "en") pageName = "home";
             if (pageName.IndexOf("/") != pageName.LastIndexOf("/"))
             {              
@@ -152,13 +155,13 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Analytics
     {
       if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
       {
-        VisitorDataSet.PageEventsRow c = (VisitorDataSet.PageEventsRow)e.Item.DataItem;
+        PageEventData c = (PageEventData)e.Item.DataItem;
         {
           Literal litConversion = (Literal)e.Item.FindControl("litConversion");
 
           if (litConversion != null)
           {
-            litConversion.Text = String.Format("{0} ({1})", c.PageEventDefinition.Name, c.PageEventDefinition.Points);            
+            litConversion.Text = String.Format("{0} ({1})", c.Name, c.Value);
           }
         }
       }

@@ -6,6 +6,7 @@ using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using System;
 using Sitecore.Analytics.Automation;
+using Sitecore.Analytics;
 
 namespace LaunchSitecore.Configuration.SiteUI.Analytics
 {
@@ -21,8 +22,8 @@ namespace LaunchSitecore.Configuration.SiteUI.Analytics
             Item state = Sitecore.Context.Database.GetItem(new ID(StateId));
             if (state != null && state.Template.Key == "engagement plan state")
             {
-                VisitorManager.AddVisitor(Sitecore.Context.User.Name, new ID(StateId));                
-            }            
+                AutomationContactManager.AddContact(Tracker.Current.Session.Contact.ContactId, new ID(StateId));
+            }
         }
     }
 }
