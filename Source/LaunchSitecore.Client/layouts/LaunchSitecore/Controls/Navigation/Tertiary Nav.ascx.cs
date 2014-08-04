@@ -78,6 +78,10 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Navigation
     protected void btnLogout_Click(object sender, EventArgs e)
     {
       Sitecore.Security.Authentication.AuthenticationManager.Logout();
+
+      // calling Session Abandon flushes the session data out to the xDB
+      Session.Abandon();
+
       Sitecore.Web.WebUtil.Redirect("/");
     }
 

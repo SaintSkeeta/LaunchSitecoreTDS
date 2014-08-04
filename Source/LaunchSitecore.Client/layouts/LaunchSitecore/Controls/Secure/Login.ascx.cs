@@ -42,6 +42,9 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Default.Controls.Secure
                     string domainUser = domain.Name + @"\" + txtUsername.Text; 
                     if (Sitecore.Security.Authentication.AuthenticationManager.Login(domainUser, txtPassword.Text, chkPersist.Checked)) 
                     {
+                        // identify the user (Username is Email)
+                        Tracker.Current.Session.Identify(txtUsername.Text);
+
                         // Register Goal & set a few values in the visit tags.
                         Tracker.Current.CurrentPage.Register("Login", "[Login] Username: \"" + domainUser + "\"");
                         AnalyticsHelper.SetVisitTagsOnLogin(domainUser);

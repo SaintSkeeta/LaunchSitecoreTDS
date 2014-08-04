@@ -12,7 +12,6 @@ namespace LaunchSitecore.Configuration.SiteUI.Analytics
         {
             Tracker.Current.Contact.Identifiers.AuthenticationLevel =
                 Sitecore.Analytics.Model.AuthenticationLevel.PasswordValidated;
-            Tracker.Current.Session.Identify(domainUser);
 
             string name = Sitecore.Context.User.Profile.FullName;
             if (name == String.Empty) name = Sitecore.Context.User.LocalName;
