@@ -19,7 +19,7 @@ namespace LaunchSitecore.Configuration.SiteUI.Search.ComputedFields
     public object ComputeFieldValue(IIndexable indexable)
     {
       Item i = ((Item)(indexable as SitecoreIndexableItem));
-      if (i["__Tracking"] != String.Empty)
+      if (i != null && i["__Tracking"] != String.Empty)
       {
         TrackingField field = new TrackingField(i.Fields["__Tracking"]);
         ContentProfile[] profiles = field.Profiles;
