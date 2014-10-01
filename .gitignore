@@ -23,6 +23,7 @@ Data/license.xml
 Installers/Sitecore/Newtonsoft.Json.dll
 Installers/Sitecore/Sitecore.Analytics.Automation.dll
 Installers/Sitecore/Sitecore.Analytics.Core.dll
+Installers/Sitecore/Sitecore.Analytics.DataAccess.dll
 Installers/Sitecore/Sitecore.Analytics.Model.dll
 Installers/Sitecore/Sitecore.Buckets.dll
 Installers/Sitecore/Sitecore.Client.dll

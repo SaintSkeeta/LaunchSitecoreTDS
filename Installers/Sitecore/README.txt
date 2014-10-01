@@ -6,6 +6,7 @@ Newtonsoft.Json
 Sitecore.Analytics
 Sitecore.Analytics.Automation
 Sitecore.Analytics.Core
+Sitecore.Analytics.DataAccess
 Sitecore.Analytics.Model
 Sitecore.Buckets
 Sitecore.Client
