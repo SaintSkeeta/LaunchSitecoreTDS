@@ -154,6 +154,7 @@
     <Compile Include="Configuration\SiteConfiguration.cs" />
     <Compile Include="Configuration\SiteUI\Analytics\AnalyticsHelper.cs" />
     <Compile Include="Configuration\SiteUI\Analytics\EnrollInAutomationState.cs" />
+    <Compile Include="Configuration\SiteUI\Analytics\ProfilePatternMatch.cs" />
     <Compile Include="Configuration\SiteUI\Base\SitecorePageLayoutBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
