@@ -1,75 +1,42 @@
 ﻿using System;
-using Sitecore.Data.Items;
-using System.Text;
-using System.Collections.Specialized;
-using System.Globalization;
-using Sitecore.Globalization;
-using System.Web.UI.HtmlControls;
-using Sitecore.Analytics;
-using Sitecore.Web.UI.WebControls;
-using System.Linq;
-using Sitecore.Analytics.Data.Items;
-using Sitecore.Data;
+using LaunchSitecore.Configuration.SiteUI.Analytics;
 using LaunchSitecore.Configuration.SiteUI.Base;
-using System.Collections.Generic;
-using Sitecore.Analytics.Tracking;
 
 namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Analytics
 {
-  public partial class Current_Pattern : SitecoreUserControlBase
+ public partial class Current_Pattern : SitecoreUserControlBase
+ {
+  private void Page_Load(object sender, EventArgs e)
   {
-    public string ProfileKey { get; set; }
+   var profileId = Attributes["sc_datasource"];
+   if (string.IsNullOrEmpty(profileId))
+   {
+    ShowError();
+   }
+   else
+   {
+    var ppm = new ProfilePatternMatch(profileId);
 
-    private void Page_Load(object sender, EventArgs e)
+    DMSTitle.Text = ppm.ProfileName;
+    DMSTitle2.Text = ppm.ProfileName;
+    if (ppm.HasMatch)
     {
-      if (Attributes["sc_datasource"] == null)
-      {
-        ShowError();
-      }
-
-      else
-      {
-        Item evaluatorTypeProfile = Sitecore.Context.Database.GetItem(Attributes["sc_datasource"]);
-        if (evaluatorTypeProfile == null)
-        {
-          ShowError();
-        }
-        else
-        {
-          if (Sitecore.Analytics.Tracker.IsActive)
-          {
-            DMSTitle.Text = evaluatorTypeProfile["Name"];
-            DMSTitle2.Text = evaluatorTypeProfile["Name"];
-            DMSNoPatternMatchName.Text = GetDictionaryText("DMS Session Info No Pattern Match Name");
-
-            // show the pattern match if there is one.
-            if (Tracker.Current.Interaction.Profiles.ContainsProfile(evaluatorTypeProfile.Name))
-            {
-                Profile personaProfile = Tracker.Current.Interaction.Profiles[evaluatorTypeProfile.Name];
-                if (personaProfile.PatternId.HasValue)
-                {
-                    // load the details about the matching pattern
-                    Item i = Sitecore.Context.Database.GetItem(new ID(personaProfile.PatternId.Value));
-                    if (i != null)
-                    {
-                        // make sure the right panels are showing
-                        PatternMatchPanel.Visible = true;
-                        PatternMatchPanelNoMatch.Visible = false;
-
-                        Name.Item = i;
-                        Image.Item = i;
-                    }
-                }
-            }
-          }
-        }
-      }
+     PatternMatchPanel.Visible = true;
+     PatternMatchPanelNoMatch.Visible = false;
+     Name.Text = ppm.PatternName;
+     Image.Item = ppm.PatternItem;
     }
-    private void ShowError()
+    else
     {
-      PatternMatchPanel.Visible = false;
-      PatternMatchPanelNoMatch.Visible = false;
-      WriteAlert("datasource is null");
+     DMSNoPatternMatchName.Text = ppm.NoPatternMatchMessage;
     }
+   }
   }
+  private void ShowError()
+  {
+   PatternMatchPanel.Visible = false;
+   PatternMatchPanelNoMatch.Visible = false;
+   WriteAlert("datasource is null");
+  }
+ }
 }

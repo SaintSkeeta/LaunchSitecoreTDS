@@ -5,8 +5,6 @@ using Sitecore.Analytics;
 using LaunchSitecore.Configuration.SiteUI.Analytics;
 using Sitecore.Diagnostics;
 using LaunchSitecore.Configuration.SiteUI.Base;
-using Sitecore.Analytics.Tracking;
-using Sitecore.Analytics.Model.Entities;
 
 namespace LaunchSitecore.layouts.LaunchSitecore.Default.Controls.Secure
 {
@@ -72,41 +70,8 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Default.Controls.Secure
                                 Sitecore.Context.User.Profile.ProfileItemId = "{93B42F5F-17A9-441B-AB6D-444F714EF384}"; //LS User
                                 Sitecore.Context.User.Profile.Save();
 
-                                string emailAddress = txtEmail.Text;
-                                // identify the user (which should add them)
-                                Tracker.Current.Session.Identify(emailAddress);
-
-                                Contact contact = Sitecore.Analytics.Tracker.Current.Contact;
-                                try
-                                {
-                                    // set the personal information for the contact
-                                    IContactPersonalInfo personalInfo = contact.GetFacet<IContactPersonalInfo>("Personal");
-                                    personalInfo.FirstName = txtName.Text.Split(' ')[0];
-                                    personalInfo.Surname = txtName.Text.Split(' ')[1];
-                                }
-                                catch (Exception ex)
-                                {
-                                    Log.Error("Error setting the User's Personal Info: " + ex.ToString(), this);
-                                }
-
-                                try
-                                {
-                                    // set the email address
-                                    IContactEmailAddresses emailAddresses = contact.GetFacet<IContactEmailAddresses>("Emails");
-                                    emailAddresses.Preferred = emailAddress;
-
-                                    if (!emailAddresses.Entries.Contains(emailAddress))
-                                    {
-                                        emailAddresses.Entries.Create(emailAddress);
-                                    }
-                                }
-                                catch (Exception ex)
-                                {
-                                    Log.Error("Error assigning email address: " + ex.ToString(), this);
-                                }
-
-                                Tracker.Current.CurrentPage.Register("Register", "[Register] Username: \"" + domainUser + "\"");
-                                AnalyticsHelper.SetVisitTagsOnLogin(domainUser);
+                                AnalyticsHelper.SetVisitTagsOnLogin(domainUser, true);
+                                AnalyticsHelper.RegisterGoalOnCurrentPage("Register", "[Register] Username: \"" + domainUser + "\"");
                                 Sitecore.Web.WebUtil.Redirect("/"); 
                             }                             
                         } 

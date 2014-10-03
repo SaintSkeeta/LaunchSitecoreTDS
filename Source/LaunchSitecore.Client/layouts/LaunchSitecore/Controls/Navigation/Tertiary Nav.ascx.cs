@@ -83,6 +83,10 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Navigation
       Session.Abandon();
 
       Sitecore.Web.WebUtil.Redirect("/");
+	  
+	  // By default in Launch Sitecore we return the user the home page on logout.  It is important to understand how the Session Provider works in 7.5+ though.
+      // The Sitecore session provider pushes the session data to the xDB on session end not logout.  
+      // If you want to force this is development environemnts, you can call Session.Abandon() instead of the redirect.
     }
 
     private void LoadSitesList()

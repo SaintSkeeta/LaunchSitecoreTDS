@@ -5,7 +5,7 @@
  <asp:Panel ID="PatternMatchPanel" runat="server" Visible="false">  
   <div class="image-wrapper"><sc:FieldRenderer ID="Image" runat="server" FieldName="Image" /></div>
   <h4><asp:Literal ID="DMSTitle" runat="server" /></h4>  
-  <h5><sc:FieldRenderer ID="Name" runat="server" FieldName="Name" /></h5>  
+  <h5><asp:Literal runat="server" ID="Name"/></h5>  
  </asp:Panel>
  <asp:Panel ID="PatternMatchPanelNoMatch" runat="server">
   <div class="image-wrapper"><img src="/assets/img/nope.png" alt="Unknown" /></div>

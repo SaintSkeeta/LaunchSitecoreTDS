@@ -55,7 +55,7 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Analytics {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Sitecore.Web.UI.WebControls.FieldRenderer Name;
+        protected global::System.Web.UI.WebControls.Literal Name;
         
         /// <summary>
         /// PatternMatchPanelNoMatch control.
