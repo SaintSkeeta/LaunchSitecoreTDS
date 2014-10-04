@@ -75,3 +75,22 @@ For better navigation around the site, it is recommended that you rebuild the li
  - Follow the Wizard, selecting *core* and *master* databases and clicking on the *Rebuild* button.
 
 Your site should now be completely setup.
+
+## Differences with LaunchSitecore.net package ##
+### Code differences ###
+Some custom code has been added to flush the contact data to the xDB. In each of the files below, we explicitly call Session.Abandon(), which will flush the data for us.
+
+ - TertiaryNav.ascx.cs 
+ - AccountController.cs
+
+### Item differences ###
+ - master: /sitecore/system/Settings/Rules/ConditionalRenderings/Tags/Default
+  - the TDS project has added tag on this item for 'Engagement Automation'. This tag existed in the 7.2 package but was removed from 7.5 package.
+
+ - master: /sitecore/templates/Launch Sitecore/Article Group
+  - in package it inherits from GeneralFields, but also SiteSection, which inherits from GeneralFields... so they creates a duplicate dependency and breaks code generation.
+
+ 
+
+
+
