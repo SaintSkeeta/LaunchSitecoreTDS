@@ -70,8 +70,8 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Default.Controls.Secure
                                 Sitecore.Context.User.Profile.ProfileItemId = "{93B42F5F-17A9-441B-AB6D-444F714EF384}"; //LS User
                                 Sitecore.Context.User.Profile.Save();
 
-                                Tracker.CurrentVisit.CurrentPage.Register("Register", "[Register] Username: \"" + domainUser + "\"");
-                                AnalyticsHelper.SetVisitTagsOnLogin(domainUser);
+                                AnalyticsHelper.SetVisitTagsOnLogin(domainUser, true);
+                                AnalyticsHelper.RegisterGoalOnCurrentPage("Register", "[Register] Username: \"" + domainUser + "\"");
                                 Sitecore.Web.WebUtil.Redirect("/"); 
                             }                             
                         } 

@@ -209,5 +209,21 @@ namespace LaunchSitecore.Configuration
 
         return false;
       }
+
+      //GeneralExtensions
+      public static T ValueOrDefault<T>(this T? source) where T : struct
+      {
+       return source ?? default(T);
+      }
+
+      public static Guid ToGuid(this Guid? source)
+      {
+       return source ?? Guid.Empty;
+      }
+
+      public static ID ToId(this Guid? source)
+      {
+       return source != Guid.Empty ? new ID(source.ToGuid()) : null;
+      }
     }
 }

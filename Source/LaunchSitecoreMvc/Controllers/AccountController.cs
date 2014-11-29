@@ -13,7 +13,6 @@ using LaunchSitecore.Configuration.SiteUI.Base;
 namespace LaunchSitecore.Controllers
 {
   [Authorize]
-  //[InitializeSimpleMembership]
   public class AccountController : LaunchSitecoreBaseController 
   {
     //
@@ -29,7 +28,6 @@ namespace LaunchSitecore.Controllers
     // POST: /Account/Login
     [HttpPost]
     [AllowAnonymous]
-    [ValidateAntiForgeryToken]
     public ActionResult Login(LoginModel model, string returnUrl)
     {
       if (ModelState.IsValid)
@@ -39,8 +37,8 @@ namespace LaunchSitecore.Controllers
         if (Sitecore.Security.Authentication.AuthenticationManager.Login(domainUser, model.Password, model.RememberMe))
         {
           // Register Goal & set a few values in the visit tags.
-          Tracker.CurrentPage.Register("Login", "[Login] Username: \"" + domainUser + "\"");
-          AnalyticsHelper.SetVisitTagsOnLogin(domainUser);
+          AnalyticsHelper.RegisterGoalOnCurrentPage("Login", "[Login] Username: \"" + domainUser + "\"");
+          AnalyticsHelper.SetVisitTagsOnLogin(domainUser, false);
           return RedirectToLocal(returnUrl);
         }
       }
@@ -53,13 +51,20 @@ namespace LaunchSitecore.Controllers
     //
     // POST: /Account/LogOff
     [HttpPost]
-    [ValidateAntiForgeryToken]
     public ActionResult LogOff()
     {
       //throw new Exception("Hello there");
       Sitecore.Security.Authentication.AuthenticationManager.Logout();
+	  
+	  // calling Session Abandon flushes the session data out to the xDB
+      Session.Abandon();
+	  
       Sitecore.Web.WebUtil.Redirect("/");
       return null;
+
+      // By default in Launch Sitecore we return the user the home page on logout.  It is important to understand how the Session Provider works in 7.5+ though.
+      // The Sitecore session provider pushes the session data to the xDB on session end not logout.  
+      // If you want to force this is development environemnts, you can call Session.Abandon() instead of the redirect.
     }
 
     //
@@ -74,7 +79,6 @@ namespace LaunchSitecore.Controllers
     // POST: /Account/Register
     [HttpPost]
     [AllowAnonymous]
-    [ValidateAntiForgeryToken]
     public ActionResult Register(RegisterModel model)
     {
       if (ModelState.IsValid)
@@ -95,8 +99,8 @@ namespace LaunchSitecore.Controllers
             Sitecore.Context.User.Profile.ProfileItemId = "{93B42F5F-17A9-441B-AB6D-444F714EF384}"; //LS User
             Sitecore.Context.User.Profile.Save();
 
-            Tracker.CurrentPage.Register("Register", "[Register] Username: \"" + domainUser + "\"");
-            AnalyticsHelper.SetVisitTagsOnLogin(domainUser);
+            AnalyticsHelper.RegisterGoalOnCurrentPage("Register", "[Register] Username: \"" + domainUser + "\"");
+            AnalyticsHelper.SetVisitTagsOnLogin(domainUser, true);
             Sitecore.Web.WebUtil.Redirect("/");
           }
         }

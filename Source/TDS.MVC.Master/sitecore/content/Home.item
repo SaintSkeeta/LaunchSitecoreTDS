@@ -76,9 +76,9 @@ content-length: 0
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 1368
+content-length: 1645
 
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{583C4A36-3A56-4FA1-A367-BB4FD2D7B020}"><p:d /></r><r uid="{3EC360C9-708D-4E58-9DED-5D8FD4620ED5}"><rls><ruleset><rule uid="{CE1B45D1-2819-42CA-A64B-433DA52EF116}"><conditions><condition uid="E6A516DDB5A5454CB2E267B0BFD48C86" s:ProfileName="Audience Segment" /></conditions></rule><rule uid="{5BA3A134-ECC9-48ED-BCF2-34F806D62742}"><conditions><condition uid="380B38A33A51498CB6FFA1B374D87DA6" s:ProfileName="Audience Segment" /></conditions></rule></ruleset></rls></r><r uid="{EE02BE24-30DE-4BB7-A52A-46693A78EF4F}"><rls><ruleset><rule uid="{39FCDAEC-8D32-4297-B8C1-0FA451415E36}"><conditions><or uid="98A2590657DD47819639DF7AFE9038BD"><condition uid="4D7D580B34AD404A845C4AB1760C0C2F" s:ProfileName="Audience Segment" /><condition uid="0D9B760B6BEF4DD99B8EF4373B673B23" s:ProfileName="Audience Segment" /></or></conditions></rule></ruleset></rls></r><r uid="{3829E486-2259-42FF-9385-33F26CF71A94}"><rls><ruleset><rule uid="{5E93ED2E-AEC7-4B66-9E08-61FF8C306099}"><conditions><condition uid="BFEAC1AA3A6E4ED7B774E82C59A60FC9" s:ProfileName="Audience Segment" /></conditions></rule><rule uid="{7E0E4C3D-BEF9-4424-8645-2D8B4194ED86}"><conditions><condition uid="6C0BA78BA13E41B3B46777FE47DF41C1" s:ProfileName="Audience Segment" /></conditions></rule></ruleset></rls></r></d></r>
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{583C4A36-3A56-4FA1-A367-BB4FD2D7B020}"><p:d /></r><r uid="{3EC360C9-708D-4E58-9DED-5D8FD4620ED5}"><rls><ruleset><rule uid="{CE1B45D1-2819-42CA-A64B-433DA52EF116}"><conditions><condition uid="E6A516DDB5A5454CB2E267B0BFD48C86" s:ProfileName="Audience Segment" /></conditions></rule><rule uid="{5BA3A134-ECC9-48ED-BCF2-34F806D62742}"><conditions><condition uid="380B38A33A51498CB6FFA1B374D87DA6" s:ProfileName="Audience Segment" /></conditions></rule></ruleset></rls></r><r uid="{EE02BE24-30DE-4BB7-A52A-46693A78EF4F}"><rls><ruleset><rule uid="{39FCDAEC-8D32-4297-B8C1-0FA451415E36}"><conditions><or uid="98A2590657DD47819639DF7AFE9038BD"><condition uid="4D7D580B34AD404A845C4AB1760C0C2F" s:ProfileName="Audience Segment" /><condition uid="0D9B760B6BEF4DD99B8EF4373B673B23" s:ProfileName="Audience Segment" /></or></conditions></rule></ruleset></rls></r><r uid="{3829E486-2259-42FF-9385-33F26CF71A94}"><rls><ruleset><rule uid="{5E93ED2E-AEC7-4B66-9E08-61FF8C306099}"><conditions><condition uid="BFEAC1AA3A6E4ED7B774E82C59A60FC9" s:ProfileName="Audience Segment" /></conditions></rule><rule uid="{7E0E4C3D-BEF9-4424-8645-2D8B4194ED86}"><conditions><condition uid="6C0BA78BA13E41B3B46777FE47DF41C1" s:ProfileName="Audience Segment" /></conditions></rule></ruleset></rls></r><r uid="{8D4C2576-5760-433B-8AAE-6CCE62FF33AD}"><rls><ruleset><rule uid="{134B5DB9-8D39-4DE0-9FF4-0ED5364352ED}"><p:d /></rule><rule uid="{E4F37C30-77B6-4DDA-9CFF-5DBCDCCC9263}"><p:d /></rule><rule uid="{73271883-4F2E-4400-A47E-A4CBB7F40BC7}"><p:d /></rule></ruleset></rls></r></d></r>
 ----field----
 field: {86FE4F77-4D9A-4EC3-9ED9-263D03BD1965}
 name: __Publish
@@ -145,7 +145,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 31efa073-e26c-4bb3-8a54-1ce808af8a04
+revision: 84eb54c9-f830-42f9-b57a-a91e17135625
 
 ----field----
 field: {AAEAC7F2-E33E-4B34-9023-AB6F59D3A427}
@@ -265,14 +265,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-31efa073-e26c-4bb3-8a54-1ce808af8a04
+84eb54c9-f830-42f9-b57a-a91e17135625
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140228T123559:635291877590405378
+20140819T173514:635440665145137351
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

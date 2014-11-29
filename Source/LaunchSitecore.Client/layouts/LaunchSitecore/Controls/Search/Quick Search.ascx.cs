@@ -12,6 +12,7 @@ using LaunchSitecore.Configuration.SiteUI.Base;
 using Sitecore.Data;
 using LaunchSitecore.Configuration.SiteUI.Search.Models;
 using LaunchSitecore.Configuration;
+using LaunchSitecore.Configuration.SiteUI.Analytics;
 
 namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Search
 {
@@ -98,11 +99,11 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Search
           litRefineResults.Visible = false;
           litSearchResultsFor.Visible = false;
                     
-          Tracker.CurrentPage.Register("No Search Hits Found", String.Format("No Search Results Found for ({0}) Type ({1}) Tags ({2})", searchStr, SelectedType, Tags));
+          AnalyticsHelper.RegisterGoalOnCurrentPage("No Search Hits Found", String.Format("No Search Results Found for ({0}) Type ({1}) Tags ({2})", searchStr, SelectedType, Tags));
         }
         else
         {
-          Tracker.CurrentPage.Register("Search", String.Format("Search for ({0}) Type ({1}) Tags ({2}) Results ({3})", searchStr, SelectedType, Tags, results.TotalSearchResults));
+         AnalyticsHelper.RegisterGoalOnCurrentPage("Search", String.Format("Search for ({0}) Type ({1}) Tags ({2}) Results ({3})", searchStr, SelectedType, Tags, results.TotalSearchResults));
         }
       }
     }

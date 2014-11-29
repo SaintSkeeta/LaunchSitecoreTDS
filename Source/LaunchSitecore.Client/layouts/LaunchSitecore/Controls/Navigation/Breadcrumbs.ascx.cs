@@ -1,4 +1,5 @@
 ﻿using LaunchSitecore.Configuration;
+using LaunchSitecore.Configuration.SiteUI.Analytics;
 using LaunchSitecore.Configuration.SiteUI.Base;
 using Sitecore.Analytics;
 using Sitecore.Data;
@@ -97,8 +98,9 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Navigation
         if (favorites == String.Empty) { favorites = Sitecore.Context.Item.ID.ToString(); }
         else { favorites = favorites + "|" + Sitecore.Context.Item.ID.ToString(); }
 
-        // Capture the goal
-        Tracker.CurrentVisit.CurrentPage.Register("Add a Favorite", "[Add a Favorite] : \"" + Sitecore.Context.Item.Name + "\"");
+        // Capture the goal using our helper method
+        AnalyticsHelper.RegisterGoalOnCurrentPage("Add a Favorite", "[Add a Favorite] : \"" + Sitecore.Context.Item.Name + "\"");
+        //Tracker.CurrentVisit.CurrentPage.Register("Add a Favorite", "[Add a Favorite] : \"" + Sitecore.Context.Item.Name + "\"");
       }
 
       profile.SetCustomProperty("Favorites", favorites);
