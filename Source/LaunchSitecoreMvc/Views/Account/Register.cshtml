@@ -5,8 +5,7 @@
  @Html.Sitecore().Field("Body")
  
  @using (Html.BeginForm())
- {
-  @Html.AntiForgeryToken()  
+ { 
   @Html.ValidationSummary()
   <p>
    @Html.LabelFor(m => m.FullName)

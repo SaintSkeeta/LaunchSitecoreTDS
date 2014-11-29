@@ -2157,15 +2157,25 @@
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Custom.item">
-      <Icon>/temp/IconCache/core2/32x32/flow_chart.png</Icon>
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Launch Sitecore.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Custom\Enroll In Automation State.item">
-      <Icon>/temp/IconCache/Software/32x32/shape_rectangle.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Launch Sitecore\Enroll In Automation State.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Launch Sitecore\Tags.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Launch Sitecore\Tags\Default.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Launch Sitecore\Visibility.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Rules\Page Events.item">
       <Icon>/temp/IconCache/software/32x32/elements_selection.png</Icon>

@@ -78,10 +78,17 @@
       <HintPath>..\..\Installers\Sitecore\Sitecore.Analytics.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Automation.MarketingAutomation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <Private>False</Private>
-      <HintPath>..\..\Installers\Sitecore\Sitecore.Automation.MarketingAutomation.dll</HintPath>
+    <Reference Include="Sitecore.Analytics.Automation">
+      <HintPath>..\..\Installers\Sitecore\Sitecore.Analytics.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Core">
+      <HintPath>..\..\Installers\Sitecore\Sitecore.Analytics.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.DataAccess">
+      <HintPath>..\..\Installers\Sitecore\Sitecore.Analytics.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Model">
+      <HintPath>..\..\Installers\Sitecore\Sitecore.Analytics.Model.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Buckets">
       <HintPath>..\..\Installers\Sitecore\Sitecore.Buckets.dll</HintPath>
@@ -95,6 +102,9 @@
     </Reference>
     <Reference Include="Sitecore.ContentSearch.Linq">
       <HintPath>..\..\Installers\Sitecore\Sitecore.ContentSearch.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq.Lucene">
+      <HintPath>..\..\Installers\Sitecore\Sitecore.ContentSearch.Linq.Lucene.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\..\Installers\Sitecore\Sitecore.Kernel.dll</HintPath>
@@ -144,6 +154,7 @@
     <Compile Include="Configuration\SiteConfiguration.cs" />
     <Compile Include="Configuration\SiteUI\Analytics\AnalyticsHelper.cs" />
     <Compile Include="Configuration\SiteUI\Analytics\EnrollInAutomationState.cs" />
+    <Compile Include="Configuration\SiteUI\Analytics\ProfilePatternMatch.cs" />
     <Compile Include="Configuration\SiteUI\Base\SitecorePageLayoutBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>

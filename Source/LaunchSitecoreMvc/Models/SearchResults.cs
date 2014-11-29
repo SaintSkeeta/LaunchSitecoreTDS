@@ -1,7 +1,6 @@
 ﻿using LaunchSitecore.Configuration;
 using LaunchSitecore.Configuration.SiteUI.Search.Models;
 using Sitecore.Analytics;
-using Sitecore.Analytics.Data.DataAccess.DataSets;
 using Sitecore.ContentSearch;
 using Sitecore.Data;
 using Sitecore.Data.Fields;

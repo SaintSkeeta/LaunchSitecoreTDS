@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: b7b53b7b-8584-4bbd-bb36-1eb262341cac
+revision: 2e015b89-1856-4a1c-9e9a-15b5c0067642
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -53,18 +53,16 @@ Chris Castle
 field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
 name: Abstract
 key: abstract
-content-length: 223
+content-length: 152
 
-<p>As Enterprise Sales Engineering Director, Chris works with clients to help them deliver great sites. His experience includes content management, custom software development, and integration with third party systems.</p>
-
+<p>As part of the Sales Engineering Team, Chris works with clients to help them understand Sitecore and how it can be utilized in their environment.</p>
 ----field----
 field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
 name: Body
 key: body
-content-length: 722
+content-length: 385
 
-<p>Chris began his career on the delivery side with ten years of consulting. During this time, he worked primarily with the Microsoft technologies and developed solutions across multiple industries. The constant in all of this was a focus on web based technologies and solutions.  Following this he spent seven years with a non-profit organization. During this time, he integrated Sitecore with a CRM and implemented multiple other custom projects replacing every existing system with Sitecore and the CRM as the foundation.</p>
-<p>In addition to leading the Launch Sitecore initiative, Chris has written multiple Shared Source modules and is passionate about maximizing the user experience in every Sitecore solution.</p>
+<p>With a background in consulting, he enjoys the challenges and topics related to managing large scale deployments. Throughout his career, he has worked primarily with the Microsoft technologies and developed solutions across multiple industries. The constant in all of this was a focus on web based technologies and solutions. Chris also helps to manage the Launch Sitecore site.</p>
 ----field----
 field: {F9B6FFEF-1DC9-4C0E-A815-C62822E1CBDB}
 name: Quote
@@ -83,9 +81,9 @@ content-length: 179
 field: {D2E90283-29F2-4EAF-895E-E8DE8DAEEC69}
 name: Job Title
 key: job title
-content-length: 37
+content-length: 31
 
-Enterprise Sales Engineering Director
+Director, Enterprise Architects
 ----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
@@ -113,14 +111,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b7b53b7b-8584-4bbd-bb36-1eb262341cac
+2e015b89-1856-4a1c-9e9a-15b5c0067642
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140325T185106:635313702662803542
+20140829T124330:635449130104999138
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 91d178c3-e95e-403e-ac88-cb5528f206bf
+revision: 603d8d19-5c1a-4f1e-af62-c77cc2303bd7
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -53,16 +53,16 @@ Mike Casey
 field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
 name: Abstract
 key: abstract
-content-length: 62
+content-length: 56
 
-<p>Mike is the Director of Sales Engineering for Sitecore.</p>
+<p>Mike is the VP of Sales Engineering for Sitecore.</p>
 ----field----
 field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
 name: Body
 key: body
-content-length: 634
+content-length: 548
 
-<p>Mike is a digital marketing technologist with a current focus on Sitecore's Customer Experience Platform.  In his role of Director of Sales Engineering, Mike consults with partners and clients, digital marketing strategists and technologist as they implement the Sitecore solution and push the limits of what their digital properties can accomplish.  Mike's career has spanned various senior roles in Sales and Professional Services Engineering, Web Development, Technical Support, Technical Marketing and Training, in industries ranging from content management software to telecommunications, consumer products and education. </p>
+<p>I get to support an amazing team of pre-sales product and technical professionals for Sitecore North America. Our collaborative team is always growing, learning and working to remain the top pre-sales engineering team in the industry. If you have the passion and ability to become an expert in Sitecore's impressive range of capabilities--Customer Experience, Digital Marketing, Analytics, Web Content Management, Digital Asset Management, Ecommerce, Web/Mobile Development, Microsoft development technologies and Azure, please get in touch!</p>
 ----field----
 field: {F9B6FFEF-1DC9-4C0E-A815-C62822E1CBDB}
 name: Quote
@@ -81,9 +81,9 @@ content-length: 199
 field: {D2E90283-29F2-4EAF-895E-E8DE8DAEEC69}
 name: Job Title
 key: job title
-content-length: 29
+content-length: 23
 
-Director of Sales Engineering
+VP of Sales Engineering
 ----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
@@ -125,14 +125,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-91d178c3-e95e-403e-ac88-cb5528f206bf
+603d8d19-5c1a-4f1e-af62-c77cc2303bd7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140218T113102:635283198624609808
+20140829T125203:635449135239305733
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

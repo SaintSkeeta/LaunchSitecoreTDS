@@ -4,7 +4,10 @@ DLLs are as follows:-
 
 Newtonsoft.Json
 Sitecore.Analytics
-Sitecore.Automation.MarketingAutomation
+Sitecore.Analytics.Automation
+Sitecore.Analytics.Core
+Sitecore.Analytics.DataAccess
+Sitecore.Analytics.Model
 Sitecore.Buckets
 Sitecore.Client
 Sitecore.ContentSearch

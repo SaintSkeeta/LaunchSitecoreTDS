@@ -35,8 +35,8 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <SitecoreDeployFolder>D:\Sites\Launch\Website</SitecoreDeployFolder>
-    <SitecoreWebUrl>http://launch.local</SitecoreWebUrl>
+    <SitecoreDeployFolder></SitecoreDeployFolder>
+    <SitecoreWebUrl></SitecoreWebUrl>
     <SitecoreAccessGuid>900c37ae-5fe5-48c2-bccd-2eab2dafea31</SitecoreAccessGuid>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
   </PropertyGroup>
