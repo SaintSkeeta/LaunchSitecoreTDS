@@ -52,12 +52,8 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Search
       List<string> SelectedTags = new List<string>();
       string Tags = String.Empty;
       if (initialTag != String.Empty) SelectedTags.Add(initialTag);
-      
 
-      string indexname = "sitecore_master_index";
-      if (Sitecore.Context.PageMode.IsNormal || Sitecore.Context.PageMode.IsDebugging) indexname = "sitecore_web_index";
-
-      using (var context = ContentSearchManager.GetIndex(indexname).CreateSearchContext())
+      using (var context = SiteConfiguration.GetSearchContext(Sitecore.Context.Item))
       {
         // only one can be selected because an item can be two types.
         foreach (ListItem l in TypeFacetCheckList.Items) { if (l.Selected) SelectedType = l.Value; }

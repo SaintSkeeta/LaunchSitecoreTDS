@@ -92,6 +92,10 @@ Some custom code has been added to flush the contact data to the xDB. In each of
  - TertiaryNav.ascx.cs 
  - AccountController.cs
 
+layouts/LaunchSitecore/Main.aspx.designer.cs in the package has a removed reference to the sc:VisitorIdentification control...yet the aspx still has it. In this solution, we keep it there to comply with WebForms standards.
+
+www.LaunchSitecore.config - changes with the SC8 package removed sections of config, but mention it's only for the Technical Preview of Sitecore 8. We've left these in, until we see any issues arise from it.
+
 ### Item differences ###
  - master: /sitecore/system/Settings/Rules/ConditionalRenderings/Tags/Default
   - the TDS project has added tag on this item for 'Engagement Automation'. This tag existed in the 7.2 package but was removed from 7.5 package.
