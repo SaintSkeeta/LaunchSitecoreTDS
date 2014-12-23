@@ -26,9 +26,6 @@ using Sitecore.Globalization;
 using Sitecore.Data;
 
 
-
-
-
 namespace LaunchContent.LaunchSitecore.Base_Templates
 {
 
@@ -199,13 +196,6 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
 	
 	}
 }
-
-
-
-
-
-
-
 namespace LaunchContent.LaunchSitecore.Base_Templates
 {
 
@@ -327,5 +317,3 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
 	
 	}
 }
-
-
