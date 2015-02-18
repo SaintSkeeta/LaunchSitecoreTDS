@@ -87,7 +87,7 @@ namespace LaunchSitecore.Configuration.SiteUI.Base
 
               if (DataSourceItem.Fields["Query"] != null)
               {
-                using (IProviderSearchContext context = ContentSearchManager.CreateSearchContext((SitecoreIndexableItem)(Sitecore.Context.Item)))
+                  using (IProviderSearchContext context = SiteConfiguration.GetSearchContext(Sitecore.Context.Item))
                 {
                   string languageCode = Sitecore.Context.Language.Name.ToLower();
                   IQueryable<Item> queryable = (from toItem in LinqHelper.CreateQuery<SitecoreItem>(context, SearchStringModel.ParseDatasourceString(DataSourceItem.Fields["Query"].Value))
@@ -107,7 +107,7 @@ namespace LaunchSitecore.Configuration.SiteUI.Base
             try
             {
               //Open search context based off the current item
-              using (IProviderSearchContext context = ContentSearchManager.CreateSearchContext((SitecoreIndexableItem)(Sitecore.Context.Item)))
+                using (IProviderSearchContext context = SiteConfiguration.GetSearchContext(Sitecore.Context.Item))
               {
                 string languageCode = Sitecore.Context.Language.CultureInfo.TwoLetterISOLanguageName.ToString();
                 IQueryable<Item> queryable = (from toItem in LinqHelper.CreateQuery<SitecoreItem>(context, SearchStringModel.ParseDatasourceString(RenderingContext.Current.Rendering.DataSource))

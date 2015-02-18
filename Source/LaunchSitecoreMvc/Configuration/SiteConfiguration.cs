@@ -8,6 +8,7 @@ using Sitecore.Globalization;
 using LaunchSitecore.Configuration.SiteUI.Search;
 using Sitecore.Links;
 using Sitecore.Data.Fields;
+using Sitecore.ContentSearch;
 
 namespace LaunchSitecore.Configuration
 {
@@ -249,6 +250,22 @@ namespace LaunchSitecore.Configuration
     public static string GetDictionaryText(string key)
     {
       return Sitecore.Globalization.Translate.Text(key);
+    }
+
+    /// <summary>
+    /// Returns a search context    
+    /// </summary>
+    /// <param name="key">The dictionary key you are requesting.</param>
+    /// <returns>A search context.</returns>
+    public static IProviderSearchContext GetSearchContext(Item item)
+    {
+        // UNDONE: This is broken in the Sitecore 8 Technical Preview, so I am getting the index by name.
+        // return ContentSearchManager.CreateSearchContext((SitecoreIndexableItem)(Sitecore.Context.Item))
+
+        if (Sitecore.Context.PageMode.IsNormal || Sitecore.Context.PageMode.IsDebugging)
+            return ContentSearchManager.GetIndex("sitecore_web_index").CreateSearchContext();
+
+        return ContentSearchManager.GetIndex("sitecore_master_index").CreateSearchContext();
     }
 
     //GeneralExtensions
