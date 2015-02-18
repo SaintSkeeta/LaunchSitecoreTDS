@@ -6,6 +6,7 @@
 - Use Tag 2.0.1.0 with Sitecore 7.1 Update 1 (rev. 140130) - Launch Sitecore - both WebForms and MVC versions
 - Use Tag 2.1.0.0 with Sitecore 7.2 Update 2 (rev. 140526) - Launch Sitecore - both WebForms and MVC versions
 - Use Tag 2.2.0.0 with Sitecore 7.5 Initial Release (rev. 141003) - Launch Sitecore - both WebForms and MVC versions.
+- Use Tag 2.3.0.0 with Sitecore 8.0 Initial Release (rev. 141212) - Launch Sitecore - both WebForms and MVC versions.
 
 Launch Sitecore is a site found at [www.launchsitecore.net](www.launchsitecore.net). It is a fantastic, shared source site that shows the power of Sitecore through Page Editor and DMS. The site comes complete with content, components, engagement plans and much more. A Sitecore package for the complete site can be downloaded from the above link after registering.
 
@@ -94,7 +95,7 @@ Some custom code has been added to flush the contact data to the xDB. In each of
 
 layouts/LaunchSitecore/Main.aspx.designer.cs in the package has a removed reference to the sc:VisitorIdentification control...yet the aspx still has it. In this solution, we keep it there to comply with WebForms standards.
 
-www.LaunchSitecore.config - changes with the SC8 package removed sections of config, but mention it's only for the Technical Preview of Sitecore 8. We've left these in, until we see any issues arise from it.
+www.LaunchSitecore.config - changes with the SC8 package removed sections of config for ribbon buttons (see item differences for ribbons below). The comment mentions it's only for the Technical Preview of Sitecore 8. We've left these in, until we see any issues arise from it.
 
 ### Item differences ###
  - master: /sitecore/system/Settings/Rules/ConditionalRenderings/Tags/Default
@@ -102,6 +103,9 @@ www.LaunchSitecore.config - changes with the SC8 package removed sections of con
 
  - master: /sitecore/templates/Launch Sitecore/Article Group
   - in package it inherits from GeneralFields, but also SiteSection, which inherits from GeneralFields... so they creates a duplicate dependency and breaks code generation.
+
+ - core: /sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Page Editor/Site Configuration
+  - both Site Presentation and Site Settings ribbon buttons were removed from the package, as these don't work with the SPEAK Experience Editor. They're left in for backwards reference.
 
  
 
