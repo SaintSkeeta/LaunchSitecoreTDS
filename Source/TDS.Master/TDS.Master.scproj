@@ -2179,21 +2179,6 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Page Events.item">
-      <Icon>/temp/IconCache/software/32x32/elements_selection.png</Icon>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Page Events\Tags.item">
-      <Icon>/temp/IconCache/applications/32x32/bookmarks.png</Icon>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Page Events\Tags\LaunchSitecore.item">
-      <Icon>/temp/IconCache/applications/32x32/bookmark_preferences.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-    </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Validation Rules.item">
       <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
