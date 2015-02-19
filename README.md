@@ -107,6 +107,12 @@ www.LaunchSitecore.config - changes with the SC8 package removed sections of con
  - core: /sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Page Editor/Site Configuration
   - both Site Presentation and Site Settings ribbon buttons were removed from the package, as these don't work with the SPEAK Experience Editor. They're left in for backwards reference.
 
+ - master: /sitecore/layout/Sublayouts/LaunchSitecore/Controls/Single Item
+  - (WebForms project) 3 renderings have the Page Editor Buttons field containing the 'Common' button. This is what the MVC project has, but the package doesn't contain it for WebForms.
+  - Article Title and Body
+  - Article Title Image and Body
+  - Biography
+
  
 
 
