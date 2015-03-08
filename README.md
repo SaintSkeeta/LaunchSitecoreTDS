@@ -6,7 +6,7 @@
 - Use Tag 2.0.1.0 with Sitecore 7.1 Update 1 (rev. 140130) - Launch Sitecore - both WebForms and MVC versions
 - Use Tag 2.1.0.0 with Sitecore 7.2 Update 2 (rev. 140526) - Launch Sitecore - both WebForms and MVC versions
 - Use Tag 2.2.0.0 with Sitecore 7.5 Initial Release (rev. 141003) - Launch Sitecore - both WebForms and MVC versions.
-- Use Tag 2.3.0.0 with Sitecore 8.0 Initial Release (rev. 141212) - Launch Sitecore - both WebForms and MVC versions.
+- Use Tag 2.3.0.0 with Sitecore 8.0 Update 2 (rev. 150223) - Launch Sitecore - both WebForms and MVC versions.
 
 Launch Sitecore is a site found at [www.launchsitecore.net](www.launchsitecore.net). It is a fantastic, shared source site that shows the power of Sitecore through Page Editor and DMS. The site comes complete with content, components, engagement plans and much more. A Sitecore package for the complete site can be downloaded from the above link after registering.
 
@@ -57,7 +57,7 @@ The two solutions share some projects, but can be built and deployed irrespectiv
 - Right click on the solution and select 'Deploy Solution'.
 
 #### Rebuild Search Indexes ####
-When using a Sitecore 7 version, you will need to rebuild the indexes for the site to work correctly. (Noticeable with the carousel on the homepage in the new themed version).<br />
+When using a Sitecore 7+ version, you will need to rebuild the indexes for the site to work correctly. (Noticeable with the carousel on the homepage in the new themed version).<br />
 To rebuild the indexes:-
 
  - Open the Sitecore Client, and login to *Desktop* mode.
@@ -108,7 +108,7 @@ www.LaunchSitecore.config - changes with the SC8 package removed sections of con
   - both Site Presentation and Site Settings ribbon buttons were removed from the package, as these don't work with the SPEAK Experience Editor. They're left in for backwards reference.
 
  - master: /sitecore/layout/Sublayouts/LaunchSitecore/Controls/Single Item
-  - (WebForms project) 3 renderings have the Page Editor Buttons field containing the 'Common' button. This is what the MVC project has, but the package doesn't contain it for WebForms.
+  - (WebForms project) 3 renderings have included the Page Editor Buttons field containing the 'Common' button. This is what the MVC project has, but the package doesn't contain it for WebForms.
   - Article Title and Body
   - Article Title Image and Body
   - Biography
