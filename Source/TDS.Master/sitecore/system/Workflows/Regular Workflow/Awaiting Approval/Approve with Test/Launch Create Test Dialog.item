@@ -1,47 +1,26 @@
 ----item----
 version: 1
-id: {AC05A040-9108-4420-82FF-EB2007ED64F9}
+id: {99112E91-BAD4-40FF-80C0-CF3A2480F131}
 database: master
-path: /sitecore/system/Workflows/Regular Workflow/Draft/Submit
-parent: {A84A3674-4317-49B7-847F-B3AF8506D04B}
-name: Submit
+path: /sitecore/system/Workflows/Regular Workflow/Awaiting Approval/Approve with Test/Launch Create Test Dialog
+parent: {4A09675A-CAFD-460D-AF95-8793EDD2438E}
+name: Launch Create Test Dialog
 master: {00000000-0000-0000-0000-000000000000}
-template: {CB01F9FC-C187-46B3-AB0B-97A8468D8303}
-templatekey: Command
+template: {DC773C4F-DF6C-4FF0-927D-BC4069003687}
+templatekey: Launch Create Test Dialog Action
 
-----field----
-field: {DCBEBC58-6124-4100-A248-FC717D6C78D5}
-name: Next state
-key: next state
-content-length: 38
-
-{2E31F779-A33F-4142-8D9A-E9C9C6F41D17}
-----field----
-field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
-name: __Icon
-key: __icon
-content-length: 23
-
-Office/32x32/submit.png
-----field----
-field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
-name: __Security
-key: __security
-content-length: 94
-
-ar|sitecore\Sitecore Client Authoring|pd|+workflowCommand:execute|pe|+workflowCommand:execute|
 ----version----
-language: de-DE
+language: da
 version: 1
-revision: de01a9a2-ebf4-4cdb-b3d0-dd10276180b7
+revision: fb08d108-af35-411b-8a0a-419ae5c04d11
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
 key: __display name
-content-length: 10
+content-length: 25
 
-Einreichen
+Start dialogen Opret test
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -53,9 +32,9 @@ sitecore\admin
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 34
+content-length: 35
 
-20120706T122052:634771740521960939
+20150223T132636:635602947967383603Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -69,14 +48,68 @@ name: __Revision
 key: __revision
 content-length: 36
 
-de01a9a2-ebf4-4cdb-b3d0-dd10276180b7
+fb08d108-af35-411b-8a0a-419ae5c04d11
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 35
 
-20120706T122052:634771740521960939
+20150223T132955:635602949955643916Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: 181b9f0f-35bd-4460-a668-30e4bcccc586
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 28
+
+Launch  Testdialog erstellen
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 35
+
+20150223T132754:635602948743785048Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+181b9f0f-35bd-4460-a668-30e4bcccc586
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150223T133035:635602950355793825Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -87,62 +120,8 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: 651f92d4-5f6d-4d73-bf81-620ea93cc4d4
+revision: fd8c29c8-c0bc-47b9-abf0-27281710f8e6
 
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
-content-length: 0
-
-
-----field----
-field: {25BED78C-4957-4165-998A-CA1B52F67497}
-name: __Created
-key: __created
-content-length: 15
-
-20120920T171900
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
-----field----
-field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
-name: __Revision
-key: __revision
-content-length: 36
-
-651f92d4-5f6d-4d73-bf81-620ea93cc4d4
-----field----
-field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
-name: __Updated
-key: __updated
-content-length: 35
-
-20150306T193924:635612675641521462Z
-----field----
-field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
-name: __Updated by
-key: __updated by
-content-length: 14
-
-sitecore\admin
-----version----
-language: ja-JP
-version: 1
-revision: 8c7b83d2-79a1-4dc3-ae8a-781e0abcb94b
-
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
-content-length: 2
-
-投稿
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -154,9 +133,9 @@ sitecore\admin
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 34
+content-length: 15
 
-20120706T123412:634771748522812462
+20140219T142805
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -170,14 +149,68 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8c7b83d2-79a1-4dc3-ae8a-781e0abcb94b
+fd8c29c8-c0bc-47b9-abf0-27281710f8e6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 35
 
-20120706T123412:634771748522812462
+20140909T025120:635458278801818908Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 780c54e6-63b5-47c8-987a-97745855d8b6
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 15
+
+テスト作成ダイアログを起動する
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 35
+
+20150223T132517:635602947176153840Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+780c54e6-63b5-47c8-987a-97745855d8b6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150223T133118:635602950787975991Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
