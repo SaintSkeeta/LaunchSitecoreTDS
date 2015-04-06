@@ -22,6 +22,13 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Search
     {
       string initialTag = String.Empty;
 
+      // the facets are disabled in experience editor
+      if (!Sitecore.Context.PageMode.IsNormal)
+      {
+        TypeFacetCheckList.Enabled = false;
+        TagsFacetCheckList.Enabled = false;
+      }
+
       if (!Page.IsPostBack && Session["tag"] != null && Convert.ToString(Session["tag"]) != string.Empty)
       {
         initialTag = (string)Session["tag"];
@@ -115,13 +122,16 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Search
 
           if (ItemLink != null && ItemDescription != null)
           {
-            Item i = item.Document.GetItem();
-            ItemLink.NavigateUrl = LinkManager.GetItemUrl(i);
-            if (i["menu title"] != string.Empty) ItemLink.Text = i["menu title"];
-            else if (i["title"] != string.Empty) ItemLink.Text = i["title"];
-            else ItemLink.Text = i.Name;
+              Item i = item.Document.GetItem();
+              if (i != null)
+              {
+                  ItemLink.NavigateUrl = LinkManager.GetItemUrl(i);
+                  if (i["menu title"] != string.Empty) ItemLink.Text = i["menu title"];
+                  else if (i["title"] != string.Empty) ItemLink.Text = i["title"];
+                  else ItemLink.Text = i.Name;
 
-            ItemDescription.Text = SiteConfiguration.GetPageDescripton(i);
+                  ItemDescription.Text = SiteConfiguration.GetPageDescripton(i);
+              }
           }
         }
       }
