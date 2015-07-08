@@ -20,9 +20,9 @@ Navigation Bar
 field: {0A16E874-57FE-42AA-A36F-898A3599C247}
 name: Show Top Line
 key: show top line
-content-length: 1
+content-length: 0
 
-1
+
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -54,22 +54,22 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: b2b0185f-4ae9-4a61-bec1-ad3d7b3a0777
+revision: 0da1e2d8-eae9-4138-a7dd-13806f2dcdba
 
 ----field----
 field: {D5230C73-CECF-484A-8C04-CEAD0E9FB005}
 name: Site Color
 key: site color
-content-length: 8
+content-length: 6
 
-Sitecore
+Purple
 ----field----
 field: {D7F0E179-3BC4-4EB3-B74E-8D4B5ADBDECA}
 name: Layout Style
 key: layout style
-content-length: 5
+content-length: 10
 
-Boxed
+Full Width
 ----field----
 field: {9A6B866C-6414-441D-9265-19FA6C4FCEAD}
 name: Main Menu Type
@@ -83,14 +83,14 @@ name: Site Logo
 key: site logo
 content-length: 240
 
-<image mediapath="/Launch Sitecore/Site Images/Logos/Logo with Transparent Background" src="~/media/3b8400df486848039a1f1fbf9560b68a.ashx" height="" mediaid="{3B8400DF-4868-4803-9A1F-1FBF9560B68A}" hspace="" width="" alt="Home" vspace="" />
+<image mediapath="/Launch Sitecore/Site Images/Logos/Logo with Transparent Background" src="~/media/3b8400df486848039a1f1fbf9560b68a.ashx" height="" mediaid="{A870FCC2-FD60-40CA-9EBB-A033CB5C5DA2}" hspace="" width="" alt="Home" vspace="" />
 ----field----
 field: {51D36071-6CBD-49D9-BFCB-1193B4B8BE7F}
 name: Background Color
 key: background color
-content-length: 7
+content-length: 0
 
-#ececec
+
 ----field----
 field: {8099773E-7043-4D4B-B7A9-0E8FE0A2A658}
 name: Background Image
@@ -132,14 +132,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b2b0185f-4ae9-4a61-bec1-ad3d7b3a0777
+0da1e2d8-eae9-4138-a7dd-13806f2dcdba
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 35
 
-20140227T192002:635291256029002563
+20150306T225457:635612792972370243Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
