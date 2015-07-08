@@ -97,6 +97,9 @@ layouts/LaunchSitecore/Main.aspx.designer.cs in the package has a removed refere
 
 www.LaunchSitecore.config - changes with the SC8 package removed sections of config for ribbon buttons (see item differences for ribbons below). The comment mentions it's only for the Technical Preview of Sitecore 8. We've left these in, until we see any issues arise from it.
 
+ - MVC: Configuration/AuthoringExperience/PageEditor
+  - code has been removed from the package because of the no longer used custom buttons on the site.
+
 ### Item differences ###
  - master: /sitecore/system/Settings/Rules/ConditionalRenderings/Tags/Default
   - the TDS project has added tag on this item for 'Engagement Automation'. This tag existed in the 7.2 package but was removed from 7.5 package.
@@ -112,6 +115,13 @@ www.LaunchSitecore.config - changes with the SC8 package removed sections of con
   - Article Title and Body
   - Article Title Image and Body
   - Biography
+
+ - master: /sitecore/content/Home/Team/Patrick-Wallace
+  - Job Title and Quote fields contained an invalid character in the package.
+
+ - master: /sitecore/layout/Sublayouts/LaunchSitecore/Controls/Single Item/Article Title and Body, Article Title Image and Body, Biography
+  - package had the 'Page Editor Buttons' field set to null. Not having the 'Common' button for fields.
+  - 
 
  
 
