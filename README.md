@@ -6,7 +6,7 @@
 - Use Tag 2.0.1.0 with Sitecore 7.1 Update 1 (rev. 140130) - Launch Sitecore - both WebForms and MVC versions
 - Use Tag 2.1.0.0 with Sitecore 7.2 Update 2 (rev. 140526) - Launch Sitecore - both WebForms and MVC versions
 - Use Tag 2.2.0.0 with Sitecore 7.5 Initial Release (rev. 141003) - Launch Sitecore - both WebForms and MVC versions.
-- Use Tag 2.3.0.0 with Sitecore 8.0 Update 2 (rev. 150223) - Launch Sitecore - both WebForms and MVC versions.
+- Use Tag 2.3.0.0 with Sitecore 8.0 Update 4 (rev. 150621) - Launch Sitecore - both WebForms and MVC versions.
 
 Launch Sitecore is a site found at [www.launchsitecore.net](www.launchsitecore.net). It is a fantastic, shared source site that shows the power of Sitecore through Page Editor and DMS. The site comes complete with content, components, engagement plans and much more. A Sitecore package for the complete site can be downloaded from the above link after registering.
 
@@ -16,7 +16,7 @@ This repository is that package converted to a Visual Studio solution with items
 ## To get up and running ##
 ### Quick Guide ###
 - Install a blank instance of Sitecore using SIM.
-- Update Include configs so your data folder points locally, and you're running in Live mode.
+- Update Include configs so you're running in Live mode.
 - Copy the required Sitecore DLLs to the `Installers\Sitecore` folder.
 - Within either the MVC or WebForms solution, setup your local TDS settings, either by changing the `TdsGlobal.config` file, or by duplicating it with the name `TdsGlobal.config.user`
 - Deploy the solution, so code and items are deployed to your local instance.
@@ -26,13 +26,11 @@ This repository is that package converted to a Visual Studio solution with items
 
 #### Install a blank Sitecore Instance ####
 - Install a blank instance of Sitecore using the Sitecore Instance Manager.
-- Ensure that you install Analytics from the second step. You must have the DMS version available to you.
+- (Pre 7.5) Ensure that you install Analytics from the second step. You must have the DMS version available to you.
 - Click Open folder when installation is complete.
 
-#### Update your local settings ####
+#### Update your local settings to run in Live Mode ####
 - Navigate to the App_Config/Include folder.
-- Change the name of DataFolder.config.example to DataFolder.config.
-- Open the file, and change the value to that used by your site. Save and Exit.
 - Copy the `zz_developer.config` file in {GitRootDirectory}/Installers over to In App_Config/Include. This config file will make your site run in live mode.
 
 #### Place Sitecore DLLs in the Installers folder ####
