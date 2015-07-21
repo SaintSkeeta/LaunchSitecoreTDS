@@ -42,13 +42,6 @@ content-length: 38
 
 {1B6A3702-5694-4FC4-8366-989ECDCD7F1B}
 ----field----
-field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
-name: __Renderings
-key: __renderings
-content-length: 37
-
-<r xmlns:p="p" xmlns:s="s" p:p="1" />
-----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
 key: __workflow
@@ -58,7 +51,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: d5e75c0c-b0c8-4485-9468-7222c9ae5efd
+revision: 1407b1e0-067f-495e-a20a-4c33c1c4f40d
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -132,14 +125,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d5e75c0c-b0c8-4485-9468-7222c9ae5efd
+1407b1e0-067f-495e-a20a-4c33c1c4f40d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 35
 
-20131218T150637:635229759976279568
+20140905T220237:635455513570683018Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

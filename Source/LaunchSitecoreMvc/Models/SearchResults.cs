@@ -35,10 +35,7 @@ namespace LaunchSitecore.Models
 
       List<Item> ResultsList = new List<Item>();
 
-      string indexname = "sitecore_master_index";
-      if (Sitecore.Context.PageMode.IsNormal || Sitecore.Context.PageMode.IsDebugging) indexname = "sitecore_web_index";
-
-      using (var context = ContentSearchManager.GetIndex(indexname).CreateSearchContext())
+      using (var context = SiteConfiguration.GetSearchContext(Sitecore.Context.Item))
       {
         // Start the search query building
         var query = context.GetQueryable<SitecoreItem>().Where(item => item.Path.StartsWith(Sitecore.Context.Site.StartPath));

@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: aad791c7-ea4a-4cbf-a954-5681c2fa7943
+revision: a6066cc7-455a-4632-977e-eb6e8824d915
 
 ----field----
 field: {EBE1742D-BC5B-46F0-B16D-499C12C98CDE}
@@ -55,14 +55,14 @@ name: Launch Sitecore Version
 key: launch sitecore version
 content-length: 27
 
-Launch Sitecore MVC 7.5.1.0
+Launch Sitecore MVC 8.0.1.3
 ----field----
 field: {74E81E2B-5DDA-4EBA-8ADE-A6EBE3CA31CF}
 name: Version Details
 key: version details
-content-length: 409
+content-length: 405
 
-<p>Launch Sitecore shows many of the features of Sitecore 7.0, and you have not only content about Sitecore but also a reference implementation.</p>
+<p>Launch Sitecore shows many of the features of Sitecore, and you have not only content about Sitecore but also a reference implementation.</p>
 <p>Major Features:</p>
 <ul>
     <li>Fully Responsive Site</li>
@@ -106,14 +106,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-aad791c7-ea4a-4cbf-a954-5681c2fa7943
+a6066cc7-455a-4632-977e-eb6e8824d915
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 35
 
-20140819T182640:635440696003371358
+20150306T224645:635612788053741141Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

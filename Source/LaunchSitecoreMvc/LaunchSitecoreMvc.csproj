@@ -116,6 +116,9 @@
       <HintPath>..\..\Installers\Sitecore\Sitecore.ContentSearch.Linq.Lucene.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.ExperienceEditor">
+      <HintPath>..\..\Installers\Sitecore\Sitecore.ExperienceEditor.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\..\Installers\Sitecore\Sitecore.Kernel.dll</HintPath>
     </Reference>

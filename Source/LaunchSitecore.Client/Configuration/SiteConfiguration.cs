@@ -6,6 +6,7 @@ using Sitecore.Data.Items;
 using Sitecore.Data;
 using Sitecore.Globalization;
 using LaunchSitecore.Configuration.SiteUI.Search;
+using Sitecore.ContentSearch;
 
 namespace LaunchSitecore.Configuration
 {
@@ -208,6 +209,22 @@ namespace LaunchSitecore.Configuration
         if (home != null && home.Template.Key == "microsite home") return true;
 
         return false;
+      }
+
+      /// <summary>
+      /// Returns a search context    
+      /// </summary>
+      /// <param name="key">The dictionary key you are requesting.</param>
+      /// <returns>A search context.</returns>
+      public static IProviderSearchContext GetSearchContext(Item item)
+      {
+          // UNDONE: This is broken in the Sitecore 8 Technical Preview, so I am getting the index by name.
+          // return ContentSearchManager.CreateSearchContext((SitecoreIndexableItem)(Sitecore.Context.Item))
+
+          if (Sitecore.Context.PageMode.IsNormal || Sitecore.Context.PageMode.IsDebugging)
+              return ContentSearchManager.GetIndex("sitecore_web_index").CreateSearchContext();
+
+          return ContentSearchManager.GetIndex("sitecore_master_index").CreateSearchContext();
       }
 
       //GeneralExtensions

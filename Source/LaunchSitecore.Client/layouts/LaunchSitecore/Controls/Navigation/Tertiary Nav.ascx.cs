@@ -56,16 +56,16 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Controls.Navigation
     private void LoadFavorites()
     {
       List<Item> items = new List<Item>();
-      Sitecore.Security.Accounts.User user = Sitecore.Context.User;
-      Sitecore.Security.UserProfile profile = user.Profile;
-      string ItemIds = profile.GetCustomProperty("Favorites");
+          Sitecore.Security.Accounts.User user = Sitecore.Context.User;
+          Sitecore.Security.UserProfile profile = user.Profile;
+          string ItemIds = profile.GetCustomProperty("Favorites");
 
-      foreach (string itemId in ItemIds.Split('|'))
-      {
-        Item item = Sitecore.Context.Database.GetItem(itemId);
-        if (item != null)
-          items.Add(item);
-      }
+          foreach (string itemId in ItemIds.Split('|'))
+          {
+              Item item = Sitecore.Context.Database.GetItem(itemId);
+              if (item != null)
+                  items.Add(item);
+          }
 
       if (items.Count > 0)
       {

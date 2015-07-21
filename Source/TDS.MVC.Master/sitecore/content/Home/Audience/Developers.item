@@ -13,17 +13,10 @@ templatekey: Job Function
 field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
 name: __Tracking
 key: __tracking
-content-length: 467
+content-length: 115
 
 <tracking>
   <event id="{E5815F1A-9114-46C8-8468-730AAB657634}" name="Visited a Job Function Page" />
-  <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function" presets="developer|100||">
-    <key name="Analytics" value="0" />
-    <key name="Copywriting" value="2" />
-    <key name="Personalization and Testing" value="2" />
-    <key name="Technology" value="5" />
-    <key name="Workflow and Publishing" value="1" />
-  </profile>
 </tracking>
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}

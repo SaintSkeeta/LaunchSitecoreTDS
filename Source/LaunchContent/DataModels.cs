@@ -103,21 +103,6 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
 
     }
 
-
-    /// <summary>
-    /// Configuration_Folder
-    /// <para></para>
-    /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Configuration Folder</para>
-    /// <para>ID: 045377d9-c7b7-4c51-a1f8-722502885239</para>
-    /// </summary>
-    [SitecoreType(TemplateId=IConfiguration_FolderConstants.TemplateIdString)] //, Cachable = true
-    public partial class Configuration_Folder  : GlassBase, IConfiguration_Folder 
-    {
-       
-        
-    }
-
-}
 namespace LaunchContent.LaunchSitecore
 {
 

@@ -29,6 +29,8 @@
     <CodeGenFile>DataModels.cs</CodeGenFile>
     <CodeGenTargetProject>LaunchContent</CodeGenTargetProject>
     <HeaderTransformFile>GlassHeader.tt</HeaderTransformFile>
+    <ManageRoles>False</ManageRoles>
+    <AssemblyStatus>Exclude</AssemblyStatus>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -1595,217 +1597,217 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel.item">
       <Icon>/temp/IconCache/People/32x32/megaphone.png</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Campaigns.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Campaigns.item">
       <Icon>/temp/IconCache/Business/32x32/money2.png</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Campaigns\Example Campaign.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Campaigns\Example Campaign.item">
       <Icon>/temp/IconCache/Business/32x32/money2.png</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Engagement Plans.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Engagement Plans.item">
       <Icon>/~/icon/Software/16x16/graph_edge_directed.png.aspx</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Engagement Plans\Evaluation Plan.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Engagement Plans\Evaluation Plan.item">
       <Icon>/~/icon/Software/16x16/graph_edge_directed.png.aspx</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Engagement Plans\Evaluation Plan\New item.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Engagement Plans\Evaluation Plan\New item.item">
       <Icon>/temp/IconCache/Software/32x32/shape_square.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Engagement Plans\Evaluation Plan\Qualified Users.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Engagement Plans\Evaluation Plan\Qualified Users.item">
       <Icon>/temp/IconCache/Software/32x32/shape_square.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Engagement Plans\Evaluation Plan\Qualified Users\New item.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Engagement Plans\Evaluation Plan\Qualified Users\New item.item">
       <Icon>/~/icon/Software/32x32/shape_rhomb.png.aspx</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Engagement Plans\Evaluation Plan\Registered Users.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Engagement Plans\Evaluation Plan\Registered Users.item">
       <Icon>/temp/IconCache/Software/32x32/shape_square.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Engagement Plans\Evaluation Plan\Registered Users\New item.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Engagement Plans\Evaluation Plan\Registered Users\New item.item">
       <Icon>/~/icon/Software/32x32/shape_rhomb.png.aspx</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Goals.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals.item">
       <Icon>/~/icon/People/32x32/flag_checkered.png.aspx</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Goals\Launch Sitecore.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Launch Sitecore.item">
       <Icon>/temp/IconCache/Applications/32x32/folder_blue.png</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Goals\Launch Sitecore\Add a Favorite.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Launch Sitecore\Add a Favorite.item">
       <Icon>/temp/IconCache/People/32x32/tractor_red.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Goals\Launch Sitecore\Visited a Job Function Page.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Launch Sitecore\Visited a Job Function Page.item">
       <Icon>/temp/IconCache/People/32x32/car_compact_green.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Goals\Launch Sitecore\Visited Team Page.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Launch Sitecore\Visited Team Page.item">
       <Icon>/temp/IconCache/people/32x32/users2.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Goals\Launch Sitecore\Visited the About Page.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Launch Sitecore\Visited the About Page.item">
       <Icon>/temp/IconCache/People/32x32/airplane.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Goals\Login.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Login.item">
       <Icon>/~/icon/Network/16x16/key1.png.aspx</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Goals\Register.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Register.item">
       <Icon>/~/icon/Business/16x16/address_book.png.aspx</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles.item">
       <Icon>/~/icon/business/32x32/radar-chart.png.aspx</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Audience Segment.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment.item">
       <Icon>/~/icon/Business/32x32/radar-chart.png.aspx</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Audience Segment\Analytics.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Analytics.item">
       <Icon>/~/icon/business/32x32/radar-chart.png.aspx</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Audience Segment\Campaigns and Targeting.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Campaigns and Targeting.item">
       <Icon>/~/icon/business/32x32/radar-chart.png.aspx</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Audience Segment\Content Management.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Content Management.item">
       <Icon>/~/icon/business/32x32/radar-chart.png.aspx</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Audience Segment\Pattern Cards.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Pattern Cards.item">
       <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Audience Segment\Pattern Cards\Content Owner.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Pattern Cards\Content Owner.item">
       <Icon>/sitecore/shell/themes/standard/Custom/32x32/pattern.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Audience Segment\Pattern Cards\Developer.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Pattern Cards\Developer.item">
       <Icon>/sitecore/shell/themes/standard/Custom/32x32/pattern.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Audience Segment\Pattern Cards\Digital Marketer.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Pattern Cards\Digital Marketer.item">
       <Icon>/sitecore/shell/themes/standard/Custom/32x32/pattern.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Audience Segment\Pattern Cards\Network Architect.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Pattern Cards\Network Architect.item">
       <Icon>/sitecore/shell/themes/standard/Custom/32x32/pattern.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Audience Segment\Profile Cards.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Profile Cards.item">
       <Icon>/temp/IconCache/Applications/32x32/folder_preferences.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Audience Segment\Profile Cards\Content Owner.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Profile Cards\Content Owner.item">
       <Icon>/sitecore/shell/themes/standard/custom/32x32/profile_personas.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Audience Segment\Profile Cards\Developer.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Profile Cards\Developer.item">
       <Icon>/sitecore/shell/themes/standard/custom/32x32/profile_personas.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Audience Segment\Profile Cards\Digital Marketer.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Profile Cards\Digital Marketer.item">
       <Icon>/sitecore/shell/themes/standard/custom/32x32/profile_personas.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Audience Segment\Profile Cards\Network Architect.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Profile Cards\Network Architect.item">
       <Icon>/sitecore/shell/themes/standard/custom/32x32/profile_personas.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Audience Segment\Technology.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Technology.item">
       <Icon>/~/icon/business/32x32/radar-chart.png.aspx</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Information Type.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type.item">
       <Icon>/~/icon/Business/32x32/radar-chart.png.aspx</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Information Type\Detailed.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Detailed.item">
       <Icon>/~/icon/business/32x32/radar-chart.png.aspx</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Information Type\High Level.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\High Level.item">
       <Icon>/~/icon/business/32x32/radar-chart.png.aspx</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Information Type\Pattern Cards.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Pattern Cards.item">
       <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Information Type\Pattern Cards\Detailed.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Pattern Cards\Detailed.item">
       <Icon>/sitecore/shell/themes/standard/Custom/32x32/pattern.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Information Type\Pattern Cards\High Level.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Pattern Cards\High Level.item">
       <Icon>/sitecore/shell/themes/standard/Custom/32x32/pattern.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Information Type\Profile Cards.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Profile Cards.item">
       <Icon>/temp/IconCache/Applications/32x32/folder_preferences.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Information Type\Profile Cards\Detailed.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Profile Cards\Detailed.item">
       <Icon>/sitecore/shell/themes/standard/Custom/32x32/profile.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Center\Profiles\Information Type\Profile Cards\High Level.item">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Profile Cards\High Level.item">
       <Icon>/sitecore/shell/themes/standard/Custom/32x32/profile.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
@@ -2177,21 +2179,6 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Page Events.item">
-      <Icon>/temp/IconCache/software/32x32/elements_selection.png</Icon>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Page Events\Tags.item">
-      <Icon>/temp/IconCache/applications/32x32/bookmarks.png</Icon>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Page Events\Tags\LaunchSitecore.item">
-      <Icon>/temp/IconCache/applications/32x32/bookmark_preferences.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-    </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Settings\Validation Rules.item">
       <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
@@ -2252,12 +2239,28 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve.item">
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve with Test.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve with Test\Launch Create Test Dialog.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve with Test\Validation Action.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve without Test.item">
       <Icon>/~/icon/applications/16x16/check.png.aspx</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve\Validation Action.item">
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve without Test\Remove Tests.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve without Test\Validation Action.item">
       <Icon>/~/icon/Network/16x16/mail.png.aspx</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -2269,6 +2272,14 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Draft.item">
       <Icon>/temp/IconCache/applications/16x16/document_edit.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Draft\__OnSave.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Draft\__OnSave\Auto Submit Action.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>

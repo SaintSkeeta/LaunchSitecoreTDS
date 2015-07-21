@@ -13,6 +13,7 @@ Sitecore.Client
 Sitecore.ContentSearch
 Sitecore.ContentSearch.Linq
 Sitecore.ContentSearch.Linq.Lucene
+Sitecore.ExperienceEditor
 Sitecore.Kernel
 Sitecore.Logging
 Sitecore.Mvc
