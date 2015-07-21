@@ -1,22 +1,11 @@
-﻿// Copyright 2004-2011 Castle Project - http://www.castleproject.org/
-// 
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-// 
-//     http://www.apache.org/licenses/LICENSE-2.0
-// 
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+<#@ import namespace="System" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Diagnostics" #>
+<#@ import namespace="System.Globalization" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Text.RegularExpressions" #>
 
-namespace HedgehogDevelopment.CodeGeneration.Extensions
-{
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Text.RegularExpressions;
+<#+
 
     /// <summary>
     /// The Inflector class transforms words from one 
@@ -124,7 +113,7 @@ namespace HedgehogDevelopment.CodeGeneration.Extensions
         /// </summary>
         /// <param name="word">The singular form</param>
         /// <returns>The plural form of <paramref name="word"/></returns>
-        public static string Pluralize(this string word)
+        public static string Pluralize(string word)
         {
             return ApplyRules(plurals, word);
         }
@@ -135,7 +124,7 @@ namespace HedgehogDevelopment.CodeGeneration.Extensions
         /// </summary>
         /// <param name="word">The plural form</param>
         /// <returns>The singular form of <paramref name="word"/></returns>
-        public static string Singularize(this string word)
+        public static string Singularize(string word)
         {
             return ApplyRules(singulars, word);
         }
@@ -145,7 +134,7 @@ namespace HedgehogDevelopment.CodeGeneration.Extensions
         /// </summary>
         /// <param name="word">The word to be capitalized.</param>
         /// <returns><paramref name="word"/> capitalized.</returns>
-        public static string Capitalize(this string word)
+        public static string Capitalize(string word)
         {
             return word.Substring(0, 1).ToUpper() + word.Substring(1).ToLower();
         }
@@ -171,7 +160,7 @@ namespace HedgehogDevelopment.CodeGeneration.Extensions
             singulars.Add(new Rule(rule, replacement));
         }
 
-        private static string ApplyRules(IList rules, string word)
+        private static string ApplyRules(IList<Rule> rules, string word)
         {
             string result = word;
 
@@ -191,4 +180,4 @@ namespace HedgehogDevelopment.CodeGeneration.Extensions
             return result ?? word; // worse case, return the original word
         }
     }
-}
+#>

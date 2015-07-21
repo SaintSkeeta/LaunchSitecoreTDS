@@ -1,7 +1,4 @@
-﻿<#@ import namespace="HedgehogDevelopment.CodeGeneration.Extensions" #>
-<#@ assembly name="HedgehogDevelopment.CodeGeneration.Extensions.dll" #>
-
-<#+	
+﻿<#+
 /// <summary>
 /// Gets the fuly qualified name of the object.
 /// </summary>
@@ -9,7 +6,7 @@
 /// <param name="template">The template.</param>
 public static string GetFullyQualifiedName(string defaultNamespace, SitecoreItem item)
 {
-	return GetFullyQualifiedName(defaultNamespace, item, HedgehogDevelopment.CodeGeneration.Extensions.StringExtensions.AsClassName);
+    return GetFullyQualifiedName(defaultNamespace, item, AsClassName);
 }
 
 /// <summary>
@@ -20,7 +17,7 @@ public static string GetFullyQualifiedName(string defaultNamespace, SitecoreItem
 /// <param name="nameFunc">The function to run the template name through.</param>
 public static string GetFullyQualifiedName(string defaultNamespace, SitecoreItem item, Func<string, string> nameFunc)
 {
-	return string.Concat(GetNamespace(defaultNamespace, item, true), ".", nameFunc(item.Name));
+    return string.Concat(GetNamespace(defaultNamespace, item, true), ".", nameFunc(item.Name));
 }
 
 /// <summary>
@@ -28,12 +25,12 @@ public static string GetFullyQualifiedName(string defaultNamespace, SitecoreItem
 /// </summary>
 public static string GetNamespace(string defaultNamespace, SitecoreItem item, bool includeGlobal = false)
 {
-	List<string> namespaceSegments = new List<string>();
-	namespaceSegments.Add(defaultNamespace);
-	namespaceSegments.Add(item.Namespace);
-	string @namespace = namespaceSegments.AsNamespace(); // use an extension method in the supporting assembly
+    List<string> namespaceSegments = new List<string>();
+    namespaceSegments.Add(defaultNamespace);
+    namespaceSegments.Add(item.Namespace);
+    string @namespace = AsNamespace(namespaceSegments); // use an extension method in the supporting assembly
 
-	return includeGlobal ? string.Concat("global::", @namespace) : @namespace;
+    return includeGlobal ? string.Concat("global::", @namespace) : @namespace;
 }
 
 /// <summary>
@@ -42,8 +39,8 @@ public static string GetNamespace(string defaultNamespace, SitecoreItem item, bo
 /// <param name="namespaces">The namespaces.</param>
 public static string JoinNamespaces(params string[] namespaces)
 {
-	// leverage an extension method in the support assembly
-	return namespaces.AsNamespace();
+    // leverage an extension method in the support assembly
+    return AsNamespace(namespaces);
 }
 
 /// <summary>
@@ -54,21 +51,21 @@ public static string JoinNamespaces(params string[] namespaces)
 /// <param name="includeBases">if set to <c>true</c> include base template's fields.</param>
 public static List<SitecoreField> GetFieldsForTemplate(SitecoreTemplate item, bool includeBases)
 {
-	List<SitecoreField> fields = new List<SitecoreField>();
-	
-	// Add direct fields that aren't ignored
-	fields.AddRange(item.Fields.Where(f=> GetCustomProperty(f.Data, "ignore") != "true"));
-	
-	if (includeBases)
-	{
-		// leverage an extenstion method to recursively select base templates, then flatten the fields down
-		IEnumerable<SitecoreField> baseFields = item.BaseTemplates.SelectRecursive(i=>i.BaseTemplates).SelectMany(t=>t.Fields);
-		
-		// only grab base fields who aren't ignored
-		fields.AddRange(baseFields.Where(f=> GetCustomProperty(f.Data, "ignore") != "true"));
-	}
-	
-	return fields;
+    List<SitecoreField> fields = new List<SitecoreField>();
+    
+    // Add direct fields that aren't ignored
+    fields.AddRange(item.Fields.Where(f=> GetCustomProperty(f.Data, "ignore") != "true"));
+    
+    if (includeBases)
+    {
+        // leverage an extenstion method to recursively select base templates, then flatten the fields down
+        IEnumerable<SitecoreField> baseFields = SelectRecursive(item.BaseTemplates, i=>i.BaseTemplates).SelectMany(t=>t.Fields);
+        
+        // only grab base fields who aren't ignored
+        fields.AddRange(baseFields.Where(f=> GetCustomProperty(f.Data, "ignore") != "true"));
+    }
+    
+    return fields;
 }
 
 /// <summary>
@@ -79,16 +76,16 @@ public static List<SitecoreField> GetFieldsForTemplate(SitecoreTemplate item, bo
 /// <returns>A string to use for a property representing the field</returns>
 public static string GetPropertyName(SitecoreField field)
 {
-	// has the field been configured in TDS with a custom name?
-	string customName = GetCustomProperty(field.Data, "name");
-	if (!string.IsNullOrEmpty(customName))
-	{
-		return customName;
-	}
-	
-	bool isFieldPlural = IsFieldPlural(field);
-	
-	return field.Name.AsPropertyName(isFieldPlural);
+    // has the field been configured in TDS with a custom name?
+    string customName = GetCustomProperty(field.Data, "name");
+    if (!string.IsNullOrEmpty(customName))
+    {
+        return customName;
+    }
+    
+    bool isFieldPlural = IsFieldPlural(field);
+    
+    return AsPropertyName(field.Name, isFieldPlural);
 }
 
 /// <summary>
@@ -100,16 +97,16 @@ public static string GetPropertyName(SitecoreField field)
 /// </returns>
 public static bool IsFieldPlural(SitecoreField field)
 {
-	string[] multipleValueFields = new string[]
-	{
-			"treelist",
-			"treelistex",
-			"treelist descriptive",
-			"checklist",
-			"multilist"
-	};
-	
-	return multipleValueFields.Contains(field.Type.ToLower());
+    string[] multipleValueFields = new string[]
+    {
+            "treelist",
+            "treelistex",
+            "treelist descriptive",
+            "checklist",
+            "multilist"
+    };
+    
+    return multipleValueFields.Contains(field.Type.ToLower());
 }
 
 /// <summary>
@@ -120,10 +117,10 @@ public static bool IsFieldPlural(SitecoreField field)
 /// <returns>The value, or an empty string</returns>
 public static string GetCustomProperty(string data, string key)
 {
-	if (string.IsNullOrEmpty(data))
-		return "";
-	
-	string[] strArray = data.Split(new char[] { '&' });
+    if (string.IsNullOrEmpty(data))
+        return "";
+    
+    string[] strArray = data.Split(new char[] { '&' });
     string keyEquals = key + "=";
     int length = keyEquals.Length;
     foreach (string keyValuePair in strArray)
@@ -135,5 +132,4 @@ public static string GetCustomProperty(string data, string key)
     }
     return "";
 }
-
 #>
