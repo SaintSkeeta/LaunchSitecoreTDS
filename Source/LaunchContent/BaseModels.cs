@@ -4,23 +4,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #pragma warning disable 1591
 #pragma warning disable 0108
 //------------------------------------------------------------------------------
@@ -57,8 +40,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
     [SitecoreType(TemplateId=IGeneral_FieldsConstants.TemplateIdString )] //, Cachable = true
     public partial interface IGeneral_Fields : IGlassBase 
     {
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Icon field.
                     /// <para></para>
                     /// <para>Field Type: Image</para>
@@ -68,8 +50,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
                     [SitecoreField(IGeneral_FieldsConstants.IconFieldName)]
                     Image Icon  {get; set;}
             
-            
-    }
+                }
 
 
     public static partial class IGeneral_FieldsConstants{
@@ -78,15 +59,12 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
             public static readonly ID TemplateId = new ID(TemplateIdString);
             public const string TemplateName = "General Fields";
 
-        
-            
+                    
             public static readonly ID IconFieldId = new ID("2b60d8c1-81db-45a7-b1cb-654cdda96ae3");
             public const string IconFieldName = "Icon";
             
         
-
     }
-
 
     /// <summary>
     /// General_Fields
@@ -98,8 +76,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
     public partial class General_Fields  : GlassBase, IGeneral_Fields 
     {
        
-        
-                /// <summary>
+                        /// <summary>
                 /// The Icon field.
                 /// <para></para>
                 /// <para>Field Type: Image</para>
@@ -110,9 +87,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
                 [SitecoreField(IGeneral_FieldsConstants.IconFieldName)]
                 public virtual Image Icon  {get; set;}
                     
-        
-    }
-
+            }
 }
 namespace LaunchContent.LaunchSitecore.Base_Templates
 {
@@ -127,8 +102,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
     [SitecoreType(TemplateId=ITitle_Abstract_And_TextConstants.TemplateIdString )] //, Cachable = true
     public partial interface ITitle_Abstract_And_Text : IGlassBase 
     {
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Abstract field.
                     /// <para></para>
                     /// <para>Field Type: Rich Text</para>
@@ -138,8 +112,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
                     [SitecoreField(ITitle_Abstract_And_TextConstants.AbstractFieldName)]
                     string Abstract  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Body field.
                     /// <para></para>
                     /// <para>Field Type: Rich Text</para>
@@ -149,8 +122,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
                     [SitecoreField(ITitle_Abstract_And_TextConstants.BodyFieldName)]
                     string Body  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Title field.
                     /// <para></para>
                     /// <para>Field Type: Single-Line Text</para>
@@ -160,8 +132,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
                     [SitecoreField(ITitle_Abstract_And_TextConstants.TitleFieldName)]
                     string Title  {get; set;}
             
-            
-    }
+                }
 
 
     public static partial class ITitle_Abstract_And_TextConstants{
@@ -170,25 +141,20 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
             public static readonly ID TemplateId = new ID(TemplateIdString);
             public const string TemplateName = "Title Abstract and Text";
 
-        
-            
+                    
             public static readonly ID AbstractFieldId = new ID("00e1d306-96bd-4b32-85b4-cd63c53cc6c1");
             public const string AbstractFieldName = "Abstract";
             
-        
-            
+                    
             public static readonly ID BodyFieldId = new ID("5a5684bb-8b54-44f6-abcc-2bada05ada5d");
             public const string BodyFieldName = "Body";
             
-        
-            
+                    
             public static readonly ID TitleFieldId = new ID("234542dc-c610-4ca8-baa6-2592a8bcb1d7");
             public const string TitleFieldName = "Title";
             
         
-
     }
-
 
     /// <summary>
     /// Title_Abstract_And_Text
@@ -200,8 +166,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
     public partial class Title_Abstract_And_Text  : GlassBase, ITitle_Abstract_And_Text 
     {
        
-        
-                /// <summary>
+                        /// <summary>
                 /// The Abstract field.
                 /// <para></para>
                 /// <para>Field Type: Rich Text</para>
@@ -212,8 +177,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
                 [SitecoreField(ITitle_Abstract_And_TextConstants.AbstractFieldName)]
                 public virtual string Abstract  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Body field.
                 /// <para></para>
                 /// <para>Field Type: Rich Text</para>
@@ -224,8 +188,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
                 [SitecoreField(ITitle_Abstract_And_TextConstants.BodyFieldName)]
                 public virtual string Body  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Title field.
                 /// <para></para>
                 /// <para>Field Type: Single-Line Text</para>
@@ -236,9 +199,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
                 [SitecoreField(ITitle_Abstract_And_TextConstants.TitleFieldName)]
                 public virtual string Title  {get; set;}
                     
-        
-    }
-
+            }
 }
 namespace LaunchContent.LaunchSitecore.Base_Templates
 {
@@ -253,8 +214,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
     [SitecoreType(TemplateId=ISite_SectionConstants.TemplateIdString )] //, Cachable = true
     public partial interface ISite_Section : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ITitle_Abstract_And_Text, global::LaunchContent.LaunchSitecore.Base_Templates.IGeneral_Fields
     {
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Image field.
                     /// <para></para>
                     /// <para>Field Type: Image</para>
@@ -264,8 +224,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
                     [SitecoreField(ISite_SectionConstants.ImageFieldName)]
                     Image Image  {get; set;}
             
-            
-    }
+                }
 
 
     public static partial class ISite_SectionConstants{
@@ -274,35 +233,28 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
             public static readonly ID TemplateId = new ID(TemplateIdString);
             public const string TemplateName = "Site Section";
 
-        
-            
+                    
             public static readonly ID ImageFieldId = new ID("f9f7a706-72ce-4733-b930-9ff1d7b3efab");
             public const string ImageFieldName = "Image";
             
-        
-            
+                    
             public static readonly ID AbstractFieldId = new ID("00e1d306-96bd-4b32-85b4-cd63c53cc6c1");
             public const string AbstractFieldName = "Abstract";
             
-        
-            
+                    
             public static readonly ID BodyFieldId = new ID("5a5684bb-8b54-44f6-abcc-2bada05ada5d");
             public const string BodyFieldName = "Body";
             
-        
-            
+                    
             public static readonly ID TitleFieldId = new ID("234542dc-c610-4ca8-baa6-2592a8bcb1d7");
             public const string TitleFieldName = "Title";
             
-        
-            
+                    
             public static readonly ID IconFieldId = new ID("2b60d8c1-81db-45a7-b1cb-654cdda96ae3");
             public const string IconFieldName = "Icon";
             
         
-
     }
-
 
     /// <summary>
     /// Site_Section
@@ -314,8 +266,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
     public partial class Site_Section  : GlassBase, ISite_Section 
     {
        
-        
-                /// <summary>
+                        /// <summary>
                 /// The Image field.
                 /// <para></para>
                 /// <para>Field Type: Image</para>
@@ -326,8 +277,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
                 [SitecoreField(ISite_SectionConstants.ImageFieldName)]
                 public virtual Image Image  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Abstract field.
                 /// <para></para>
                 /// <para>Field Type: Rich Text</para>
@@ -338,8 +288,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
                 [SitecoreField(ISite_SectionConstants.AbstractFieldName)]
                 public virtual string Abstract  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Body field.
                 /// <para></para>
                 /// <para>Field Type: Rich Text</para>
@@ -350,8 +299,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
                 [SitecoreField(ISite_SectionConstants.BodyFieldName)]
                 public virtual string Body  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Title field.
                 /// <para></para>
                 /// <para>Field Type: Single-Line Text</para>
@@ -362,8 +310,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
                 [SitecoreField(ISite_SectionConstants.TitleFieldName)]
                 public virtual string Title  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Icon field.
                 /// <para></para>
                 /// <para>Field Type: Image</para>
@@ -374,7 +321,5 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
                 [SitecoreField(ISite_SectionConstants.IconFieldName)]
                 public virtual Image Icon  {get; set;}
                     
-        
-    }
-
+            }
 }

@@ -1,12 +1,12 @@
-﻿<#@ template language="C#" #>
-<#@ include file="Helpers.tt" #>
-<#@ assembly name="System.Core.dll" #>
+﻿<#@ template language="C#"  #>
+<#@ assembly name="System.Core" #>
 
-<#@ import namespace="HedgehogDevelopment.CodeGeneration.Extensions" #>
-<#@ assembly name="HedgehogDevelopment.CodeGeneration.Extensions.dll" #>
+<#@ include file="Helpers.tt" #>
+<#@ include file="StringExtensions.tt" #>
+<#@ include file="GeneralExtensions.tt" #>
+<#@ include file="Inflector.tt" #>
 
 <#@ import namespace="System" #>
-<#@ import namespace="System.Text" #>
 <#@ import namespace="System.Linq" #>
 <#@ import namespace="System.Collections.Generic" #>
 <#@ import namespace="HedgehogDevelopment.SitecoreProject.VSIP.CodeGeneration.Models" #>
@@ -35,6 +35,7 @@ using Glass.Mapper.Sc.Fields;
 using Sitecore.Globalization;
 using Sitecore.Data;
 
+
 <#
 // Calculate the top leve namespace as configured in the target project and
 // base namespace as defined in the TDS project
@@ -44,28 +45,31 @@ string fullNamespace = JoinNamespaces(DefaultNamespace, Model.BaseNamespace);
 namespace <#=fullNamespace #>
 {
 
-	public partial interface IGlassBase{
-		
-		[SitecoreId]
-		Guid Id{ get; }
+    public partial interface IGlassBase{
+        
+        [SitecoreId]
+        Guid Id{ get; }
 
-		[SitecoreInfo(SitecoreInfoType.Language)]
+        [SitecoreInfo(SitecoreInfoType.Language)]
         Language Language{ get; }
 
         [SitecoreInfo(SitecoreInfoType.Version)]
         int Version { get; }
 
-	}
+    }
 
-	public abstract partial class GlassBase : IGlassBase{
-		
-		[SitecoreId]
-		public virtual Guid Id{ get; private set;}
+    public abstract partial class GlassBase : IGlassBase{
+        
+        [SitecoreId]
+        public virtual Guid Id{ get; private set;}
 
-		[SitecoreInfo(SitecoreInfoType.Language)]
+        [SitecoreInfo(SitecoreInfoType.Language)]
         public virtual Language Language{ get; private set; }
 
         [SitecoreInfo(SitecoreInfoType.Version)]
         public virtual int Version { get; private set; }
-	}
+
+        [SitecoreInfo(SitecoreInfoType.Url)]
+        public virtual string Url { get; private set; }
+    }
 }
