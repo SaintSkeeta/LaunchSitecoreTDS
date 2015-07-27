@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Glass.Mapper.Sc.CastleWindsor</name>
+    </assembly>
+    <members>
+        <member name="T:Glass.Mapper.Sc.CastleWindsor.DependencyResolver">
+            <summary>
+            The dependency handler
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.CastleWindsor.DependencyResolver.CreateStandardResolver">
+            <summary>
+            Creates the standard resolver.
+            </summary>
+            <returns>IDependencyResolver.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.CastleWindsor.DependencyResolver.#ctor(Castle.Windsor.IWindsorContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Glass.Mapper.Sc.CastleWindsor.DependencyResolver"/> class.
+            </summary>
+            <param name="container">The container.</param>
+        </member>
+        <member name="P:Glass.Mapper.Sc.CastleWindsor.DependencyResolver.Container">
+            <summary>
+            Gets the container.
+            </summary>
+            <value>The container.</value>
+        </member>
+        <member name="T:Glass.Mapper.Sc.CastleWindsor.NoTrackLifestyleManager">
+            <summary>
+            This manager deliberately does not track
+            </summary>
+        </member>
+        <member name="T:Glass.Mapper.Sc.CastleWindsor.Pipelines.ObjectConstruction.LazyObjectInterceptor">
+            <summary>
+            Class LazyObjectInterceptor
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.CastleWindsor.Pipelines.ObjectConstruction.LazyObjectInterceptor.Intercept(Castle.DynamicProxy.IInvocation)">
+            <summary>
+            Intercepts the specified invocation.
+            </summary>
+            <param name="invocation">The invocation.</param>
+        </member>
+        <member name="T:Glass.Mapper.Sc.CastleWindsor.Pipelines.ObjectConstruction.WindsorConstruction">
+            <summary>
+            WindsorConstruction
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.CastleWindsor.Pipelines.ObjectConstruction.WindsorConstruction.#cctor">
+            <summary>
+            Initializes static members of the <see cref="!:CreateConcreteTask"/> class.
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.CastleWindsor.Pipelines.ObjectConstruction.WindsorConstruction.Execute(Glass.Mapper.Pipelines.ObjectConstruction.ObjectConstructionArgs)">
+            <summary>
+            Executes the specified args.
+            </summary>
+            <param name="args">The args.</param>
+        </member>
+        <member name="T:Glass.Mapper.Sc.CastleWindsor.WindsorSitecoreInstaller">
+            <summary>
+            The windsor specific Sitecore installer
+            </summary>
+        </member>
+    </members>
+</doc>
