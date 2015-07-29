@@ -37,7 +37,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
     /// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/General Fields</para>
     /// <para>ID: 2bc9e276-d594-4d97-9cf3-b229c52a6d1f</para>
     /// </summary>
-    [SitecoreType(TemplateId=IGeneral_FieldsConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=IGeneral_FieldsConstants.TemplateIdString)]
     public partial interface IGeneral_Fields : IGlassBase 
     {
                                 /// <summary>
@@ -72,7 +72,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
     /// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/General Fields</para>
     /// <para>ID: 2bc9e276-d594-4d97-9cf3-b229c52a6d1f</para>
     /// </summary>
-    [SitecoreType(TemplateId=IGeneral_FieldsConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=IGeneral_FieldsConstants.TemplateIdString)]
     public partial class General_Fields  : GlassBase, IGeneral_Fields 
     {
        
@@ -99,7 +99,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
     /// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/Title Abstract and Text</para>
     /// <para>ID: 2bdc8af6-c00e-44a9-a644-4946a252a02e</para>
     /// </summary>
-    [SitecoreType(TemplateId=ITitle_Abstract_And_TextConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=ITitle_Abstract_And_TextConstants.TemplateIdString)]
     public partial interface ITitle_Abstract_And_Text : IGlassBase 
     {
                                 /// <summary>
@@ -162,7 +162,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
     /// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/Title Abstract and Text</para>
     /// <para>ID: 2bdc8af6-c00e-44a9-a644-4946a252a02e</para>
     /// </summary>
-    [SitecoreType(TemplateId=ITitle_Abstract_And_TextConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=ITitle_Abstract_And_TextConstants.TemplateIdString)]
     public partial class Title_Abstract_And_Text  : GlassBase, ITitle_Abstract_And_Text 
     {
        
@@ -211,7 +211,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
     /// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/Site Section</para>
     /// <para>ID: d24c6488-4a2b-4de4-b033-ef3072aea6f3</para>
     /// </summary>
-    [SitecoreType(TemplateId=ISite_SectionConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=ISite_SectionConstants.TemplateIdString)]
     public partial interface ISite_Section : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ITitle_Abstract_And_Text, global::LaunchContent.LaunchSitecore.Base_Templates.IGeneral_Fields
     {
                                 /// <summary>
@@ -262,7 +262,7 @@ namespace LaunchContent.LaunchSitecore.Base_Templates
     /// <para>Path: /sitecore/templates/Launch Sitecore/Base Templates/Site Section</para>
     /// <para>ID: d24c6488-4a2b-4de4-b033-ef3072aea6f3</para>
     /// </summary>
-    [SitecoreType(TemplateId=ISite_SectionConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=ISite_SectionConstants.TemplateIdString)]
     public partial class Site_Section  : GlassBase, ISite_Section 
     {
        

@@ -35,7 +35,8 @@ type=[type]
     Sets the return type of the generated property
 generic=[type]
     In the event the type (either specificed or auto mapped) is a generic it will use this generic type. i.e. List<generic>
-        
+cachable=true
+    Sets a type to be cached by GlassV4
 */
 #>
 
@@ -61,7 +62,7 @@ namespace <#= GetNamespace(DefaultNamespace, template)#>
     /// <para>Path: <#= template.Path #></para>
     /// <para>ID: <#= template.ID.ToString() #></para>
     /// </summary>
-    [SitecoreType(TemplateId=<#= AsInterfaceName(template.Name) #>Constants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=<#= AsInterfaceName(template.Name) #>Constants.TemplateIdString<#= GetGlassCachable(template) #>)]
     public partial interface <#= AsInterfaceName(template.Name) #> : IGlassBase <#=GetObjectInheritanceDefinition(DefaultNamespace, template, true, (string s) => AsInterfaceName(s))#>
     {
             <#foreach(SitecoreField field in GetFieldsForTemplate(template, false)){#>
@@ -103,7 +104,7 @@ if (!IsInterfaceWord(template.Name)){ #>
     /// <para>Path: <#= template.Path #></para>
     /// <para>ID: <#= template.ID.ToString() #></para>
     /// </summary>
-    [SitecoreType(TemplateId=<#= AsInterfaceName(template.Name) #>Constants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=<#= AsInterfaceName(template.Name) #>Constants.TemplateIdString<#= GetGlassCachable(template) #>)]
     public partial class <#= AsClassName(template.Name) #>  : GlassBase, <#=AsInterfaceName(template.Name)#> 
     {
        
@@ -143,6 +144,19 @@ public static string GetObjectInheritanceDefinition(string defaultNamespace, Sit
                             );
     }
     return "";
+}
+
+public static string GetGlassCachable(SitecoreTemplate item)
+{
+    string cachable = GetCustomProperty(item.Data, "cachable");
+
+    bool isCachable;
+    if (!string.IsNullOrEmpty(cachable))
+    {
+        bool.TryParse(cachable, out isCachable);
+        return string.Format(", Cachable = {0}", isCachable.ToString().ToLower());
+    }
+    return string.Empty;
 }
 
 public static string GetGlassFieldType(SitecoreField field)
