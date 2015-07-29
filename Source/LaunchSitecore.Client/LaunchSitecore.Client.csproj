@@ -54,10 +54,6 @@
       <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Castle.Windsor, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Glass.Mapper, Version=4.0.1.8, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Glass.Mapper.Sc.4.0.1.8\lib\net45\Glass.Mapper.dll</HintPath>
       <Private>True</Private>
@@ -65,14 +61,6 @@
     <Reference Include="Glass.Mapper.Sc, Version=4.0.1.8, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Glass.Mapper.Sc.4.0.1.8\lib\80\Glass.Mapper.Sc.dll</HintPath>
-    </Reference>
-    <Reference Include="Glass.Mapper.Sc.CastleWindsor, Version=4.0.1.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Glass.Mapper.Sc.CastleWindsor.4.0.1.8\lib\Glass.Mapper.Sc.CastleWindsor.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Analytics">
       <HintPath>..\..\Installers\Sitecore\Sitecore.Analytics.dll</HintPath>
@@ -637,14 +625,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config">
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="assets\font\fontawesome-webfont.eot" />
     <Content Include="assets\font\fontawesome-webfont.ttf" />
     <Content Include="assets\font\fontawesome-webfont.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Glass.Mapper.Sc.Start.config" />

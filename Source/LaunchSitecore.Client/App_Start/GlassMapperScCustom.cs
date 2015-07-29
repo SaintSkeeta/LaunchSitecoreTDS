@@ -11,12 +11,7 @@ namespace LaunchSitecore.App_Start
         public static IDependencyResolver CreateResolver(){
             var config = new Glass.Mapper.Sc.Config();
 
-            var container = new Castle.Windsor.WindsorContainer();
-            container.Install(new Glass.Mapper.Sc.CastleWindsor.WindsorSitecoreInstaller(config));
-
-            var resolver = new Glass.Mapper.Sc.CastleWindsor.DependencyResolver(container);
-
-            return resolver;
+            return new DependencyResolver(config);
         }
 
         public static IConfigurationLoader[] GlassLoaders(){			

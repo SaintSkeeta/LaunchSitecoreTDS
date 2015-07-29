@@ -32,7 +32,7 @@ namespace LaunchSitecore.App_Start
             LoadConfigurationMaps(resolver, context);
 
             context.Load(      
-                GlassMapperScCustom.GlassLoaders()        				
+                GlassMapperScCustom.GlassLoaders()
                 );
 
             GlassMapperScCustom.PostLoad();
