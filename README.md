@@ -119,7 +119,6 @@ www.LaunchSitecore.config - changes with the SC8 package removed sections of con
 
  - master: /sitecore/layout/Sublayouts/LaunchSitecore/Controls/Single Item/Article Title and Body, Article Title Image and Body, Biography
   - package had the 'Page Editor Buttons' field set to null. Not having the 'Common' button for fields.
-  - 
 
  
 
