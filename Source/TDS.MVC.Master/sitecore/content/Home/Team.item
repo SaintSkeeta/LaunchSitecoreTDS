@@ -13,9 +13,11 @@ templatekey: Team Section
 field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
 name: __Tracking
 key: __tracking
-content-length: 99
+content-length: 105
 
-<tracking><event id="{0876D1BF-EDB8-40C6-9677-C4FCFA0BFFA2}" name="Visited Team Page" /></tracking>
+<tracking>
+  <event id="{0876D1BF-EDB8-40C6-9677-C4FCFA0BFFA2}" name="Visited Team Page" />
+</tracking>
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon

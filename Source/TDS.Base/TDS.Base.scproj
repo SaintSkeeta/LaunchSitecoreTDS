@@ -30,13 +30,16 @@
     <BaseNamespace>
     </BaseNamespace>
     <HeaderTransformFile>GlassHeader.tt</HeaderTransformFile>
+    <ManageRoles>False</ManageRoles>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <SitecoreDeployFolder></SitecoreDeployFolder>
-    <SitecoreWebUrl></SitecoreWebUrl>
+    <SitecoreDeployFolder>
+    </SitecoreDeployFolder>
+    <SitecoreWebUrl>
+    </SitecoreWebUrl>
     <SitecoreAccessGuid>900c37ae-5fe5-48c2-bccd-2eab2dafea31</SitecoreAccessGuid>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
   </PropertyGroup>
@@ -54,13 +57,13 @@
     </AssemblyAttributes>
   </ItemGroup>
   <ItemGroup>
-    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
-  </ItemGroup>
-  <ItemGroup>
+    <CodeGenTemplate Include="Code Generation Templates\GeneralExtensions.tt" />
     <CodeGenTemplate Include="Code Generation Templates\GlassHeader.tt" />
     <CodeGenTemplate Include="Code Generation Templates\GlassItem.tt" />
     <CodeGenTemplate Include="Code Generation Templates\Helpers.tt" />
+    <CodeGenTemplate Include="Code Generation Templates\Inflector.tt" />
     <CodeGenTemplate Include="Code Generation Templates\ItemPaths.tt" />
+    <CodeGenTemplate Include="Code Generation Templates\StringExtensions.tt" />
   </ItemGroup>
   <ItemGroup>
     <SitecoreItem Include="sitecore\templates.item">
@@ -129,6 +132,9 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+  </ItemGroup>
+  <ItemGroup>
+    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
 </Project>

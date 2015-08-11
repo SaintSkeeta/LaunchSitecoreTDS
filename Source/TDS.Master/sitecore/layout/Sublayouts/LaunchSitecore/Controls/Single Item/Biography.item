@@ -17,6 +17,13 @@ content-length: 59
 
 /layouts/LaunchSitecore/Controls/Single Item/Biography.ascx
 ----field----
+field: {A2F5D9DF-8CBA-4A1D-99EB-51ACB94CB057}
+name: Page Editor Buttons
+key: page editor buttons
+content-length: 38
+
+{008A3053-35B6-4C20-A978-A724CBEB750D}
+----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
@@ -33,7 +40,7 @@ content-length: 193
 ----version----
 language: en
 version: 1
-revision: 097601d4-0255-4ff2-a85c-3dd2bc9fafbe
+revision: 42df3fbf-3a5a-4c40-afab-7fdea9cbf06b
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-097601d4-0255-4ff2-a85c-3dd2bc9fafbe
+42df3fbf-3a5a-4c40-afab-7fdea9cbf06b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 35
 
-20131009T180844:635169389242812621
+20150218T235653:635599006132142802Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

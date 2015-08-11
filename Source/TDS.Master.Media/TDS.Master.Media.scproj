@@ -30,7 +30,7 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-	<SitecoreAccessGuid>900c37ae-5fe5-48c2-bccd-2eab2dafea31</SitecoreAccessGuid>
+    <SitecoreAccessGuid>900c37ae-5fe5-48c2-bccd-2eab2dafea31</SitecoreAccessGuid>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
     <EnableValidations>False</EnableValidations>
     <ValidationSettingsFilePath>.\TDS.Master.Media_Debug.xml</ValidationSettingsFilePath>

@@ -27,6 +27,9 @@
     <SccAuxPath>SAK</SccAuxPath>
     <SccLocalPath>SAK</SccLocalPath>
     <SitecoreDatabase>core</SitecoreDatabase>
+    <EnableCodeGeneration>false</EnableCodeGeneration>
+    <ManageRoles>False</ManageRoles>
+    <AssemblyStatus>Exclude</AssemblyStatus>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -158,8 +161,16 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Custom Experience Buttons\Common.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\WebEdit\Custom Experience Buttons\Link To.item">
       <Icon>/~/icon/Network/32x32/link.png.aspx</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Custom Experience Buttons\Menu.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
@@ -215,16 +226,6 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit\Page Editor\Additional Fields\Article.item">
       <Icon>/temp/IconCache/applications/16x16/form_green.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit\Page Editor\Additional Fields\Common.item">
-      <Icon>/temp/IconCache/Business/32x32/note_pinned.png</Icon>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit\Page Editor\Additional Fields\Menu.item">
-      <Icon>/temp/IconCache/people/32x32/wrench.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>

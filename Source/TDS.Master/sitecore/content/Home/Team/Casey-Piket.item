@@ -17,13 +17,6 @@ content-length: 228
 
 <image mediaid="{84399122-A896-4579-9832-3C8662EC9136}" src="~/media/84399122a896457998323c8662ec9136.ashx" height="200" hspace="" mediapath="/Launch Sitecore/Site Images/Contributors/Casey Piket" width="200" alt="" vspace="" />
 ----field----
-field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
-name: __Renderings
-key: __renderings
-content-length: 37
-
-<r xmlns:p="p" xmlns:s="s" p:p="1" />
-----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
 key: __workflow
@@ -33,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 05b6397d-e1a7-4016-811d-ef08e6b97eb1
+revision: 692d103e-5f87-4bae-9bed-24e1f1f58c73
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -111,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-05b6397d-e1a7-4016-811d-ef08e6b97eb1
+692d103e-5f87-4bae-9bed-24e1f1f58c73
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 35
 
-20131127T123935:635211527756699664
+20140905T220237:635455513574125466Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

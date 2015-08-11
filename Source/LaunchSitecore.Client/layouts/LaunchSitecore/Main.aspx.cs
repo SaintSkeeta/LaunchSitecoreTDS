@@ -14,6 +14,8 @@ namespace LaunchSitecore.layouts.LaunchSitecore.Default
     {
         private void Page_Load(object sender, System.EventArgs e)
         {
+         if (!Sitecore.Context.PageMode.IsNormal) Page.EnableViewState = false;
+
           // This page is setting a lot fo the presentation details.  This is due tot he flexible nature of this site.
           Item PresentationSettings = SiteConfiguration.GetPresentationSettingsItem();
 
