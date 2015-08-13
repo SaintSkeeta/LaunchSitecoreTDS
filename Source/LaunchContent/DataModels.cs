@@ -68,11 +68,10 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
     /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Configuration Folder</para>
     /// <para>ID: 045377d9-c7b7-4c51-a1f8-722502885239</para>
     /// </summary>
-    [SitecoreType(TemplateId=IConfiguration_FolderConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=IConfiguration_FolderConstants.TemplateIdString)]
     public partial interface IConfiguration_Folder : IGlassBase 
     {
-            
-    }
+                }
 
 
     public static partial class IConfiguration_FolderConstants{
@@ -82,9 +81,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
             public const string TemplateName = "Configuration Folder";
 
         
-
     }
-
 
     /// <summary>
     /// Configuration_Folder
@@ -92,13 +89,11 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
     /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Configuration Folder</para>
     /// <para>ID: 045377d9-c7b7-4c51-a1f8-722502885239</para>
     /// </summary>
-    [SitecoreType(TemplateId=IConfiguration_FolderConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=IConfiguration_FolderConstants.TemplateIdString)]
     public partial class Configuration_Folder  : GlassBase, IConfiguration_Folder 
     {
        
-        
-    }
-
+            }
 }
 namespace LaunchContent.LaunchSitecore
 {
@@ -110,7 +105,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Home</para>
     /// <para>ID: 0acd30d8-863e-4b1d-8612-719eefc1da4f</para>
     /// </summary>
-    [SitecoreType(TemplateId=IHomeConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=IHomeConstants.TemplateIdString)]
     public partial interface IHome : IGlassBase 
     {
                                 /// <summary>
@@ -201,7 +196,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Home</para>
     /// <para>ID: 0acd30d8-863e-4b1d-8612-719eefc1da4f</para>
     /// </summary>
-    [SitecoreType(TemplateId=IHomeConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=IHomeConstants.TemplateIdString)]
     public partial class Home  : GlassBase, IHome 
     {
        
@@ -272,7 +267,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Article Group</para>
     /// <para>ID: 1b6a3702-5694-4fc4-8366-989ecdcd7f1b</para>
     /// </summary>
-    [SitecoreType(TemplateId=IArticle_GroupConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=IArticle_GroupConstants.TemplateIdString)]
     public partial interface IArticle_Group : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ISite_Section
     {
                 }
@@ -313,7 +308,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Article Group</para>
     /// <para>ID: 1b6a3702-5694-4fc4-8366-989ecdcd7f1b</para>
     /// </summary>
-    [SitecoreType(TemplateId=IArticle_GroupConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=IArticle_GroupConstants.TemplateIdString)]
     public partial class Article_Group  : GlassBase, IArticle_Group 
     {
        
@@ -384,11 +379,10 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
     /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Footer Links Section</para>
     /// <para>ID: 21e0102f-ddbc-4da9-b9e6-32b78dd4b7a5</para>
     /// </summary>
-    [SitecoreType(TemplateId=IFooter_Links_SectionConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=IFooter_Links_SectionConstants.TemplateIdString)]
     public partial interface IFooter_Links_Section : IGlassBase 
     {
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Top Level Item field.
                     /// <para></para>
                     /// <para>Field Type: Droptree</para>
@@ -398,8 +392,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(IFooter_Links_SectionConstants.Top_Level_ItemFieldName)]
                     Guid Top_Level_Item  {get; set;}
             
-            
-    }
+                }
 
 
     public static partial class IFooter_Links_SectionConstants{
@@ -408,15 +401,12 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
             public static readonly ID TemplateId = new ID(TemplateIdString);
             public const string TemplateName = "Footer Links Section";
 
-        
-            
+                    
             public static readonly ID Top_Level_ItemFieldId = new ID("700b30d3-0809-4ba2-9532-a1d9637c2e24");
             public const string Top_Level_ItemFieldName = "Top Level Item";
             
         
-
     }
-
 
     /// <summary>
     /// Footer_Links_Section
@@ -424,12 +414,11 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
     /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Footer Links Section</para>
     /// <para>ID: 21e0102f-ddbc-4da9-b9e6-32b78dd4b7a5</para>
     /// </summary>
-    [SitecoreType(TemplateId=IFooter_Links_SectionConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=IFooter_Links_SectionConstants.TemplateIdString)]
     public partial class Footer_Links_Section  : GlassBase, IFooter_Links_Section 
     {
        
-        
-                /// <summary>
+                        /// <summary>
                 /// The Top Level Item field.
                 /// <para></para>
                 /// <para>Field Type: Droptree</para>
@@ -440,9 +429,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(IFooter_Links_SectionConstants.Top_Level_ItemFieldName)]
                 public virtual Guid Top_Level_Item  {get; set;}
                     
-        
-    }
-
+            }
 }
 namespace LaunchContent.LaunchSitecore.Settings_Templates
 {
@@ -454,11 +441,10 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
     /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Site Settings</para>
     /// <para>ID: 41e5285e-f5b2-4075-95ce-d3a993881c81</para>
     /// </summary>
-    [SitecoreType(TemplateId=ISite_SettingsConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=ISite_SettingsConstants.TemplateIdString)]
     public partial interface ISite_Settings : IGlassBase 
     {
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Copyright field.
                     /// <para></para>
                     /// <para>Field Type: Single-Line Text</para>
@@ -468,8 +454,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(ISite_SettingsConstants.CopyrightFieldName)]
                     string Copyright  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The IP1 field.
                     /// <para></para>
                     /// <para>Field Type: Integer</para>
@@ -479,8 +464,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(ISite_SettingsConstants.IP1FieldName)]
                     int IP1  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The IP2 field.
                     /// <para></para>
                     /// <para>Field Type: Integer</para>
@@ -490,8 +474,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(ISite_SettingsConstants.IP2FieldName)]
                     int IP2  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The IP3 field.
                     /// <para></para>
                     /// <para>Field Type: Integer</para>
@@ -501,8 +484,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(ISite_SettingsConstants.IP3FieldName)]
                     int IP3  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The IP4 field.
                     /// <para></para>
                     /// <para>Field Type: Integer</para>
@@ -512,8 +494,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(ISite_SettingsConstants.IP4FieldName)]
                     int IP4  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Show Error Details on Error Page field.
                     /// <para></para>
                     /// <para>Field Type: Checkbox</para>
@@ -523,8 +504,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(ISite_SettingsConstants.Show_Error_Details_On_Error_PageFieldName)]
                     bool Show_Error_Details_On_Error_Page  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Page Title for Home and Site Sections field.
                     /// <para></para>
                     /// <para>Field Type: Single-Line Text</para>
@@ -534,8 +514,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(ISite_SettingsConstants.Page_Title_For_Home_And_Site_SectionsFieldName)]
                     string Page_Title_For_Home_And_Site_Sections  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Page Title for Lower Pages field.
                     /// <para></para>
                     /// <para>Field Type: Single-Line Text</para>
@@ -545,8 +524,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(ISite_SettingsConstants.Page_Title_For_Lower_PagesFieldName)]
                     string Page_Title_For_Lower_Pages  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Title Comments field.
                     /// <para></para>
                     /// <para>Field Type: Multi-Line Text</para>
@@ -556,8 +534,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(ISite_SettingsConstants.Title_CommentsFieldName)]
                     string Title_Comments  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Visible Profiles field.
                     /// <para></para>
                     /// <para>Field Type: Treelist</para>
@@ -567,8 +544,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(ISite_SettingsConstants.Visible_ProfilesFieldName)]
                     IEnumerable<Guid> Visible_Profiles  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Comments field.
                     /// <para></para>
                     /// <para>Field Type: Multi-Line Text</para>
@@ -578,8 +554,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(ISite_SettingsConstants.CommentsFieldName)]
                     string Comments  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Page Size field.
                     /// <para></para>
                     /// <para>Field Type: Integer</para>
@@ -589,8 +564,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(ISite_SettingsConstants.Page_SizeFieldName)]
                     int Page_Size  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Allow Online Registration field.
                     /// <para></para>
                     /// <para>Field Type: Checkbox</para>
@@ -600,8 +574,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(ISite_SettingsConstants.Allow_Online_RegistrationFieldName)]
                     bool Allow_Online_Registration  {get; set;}
             
-            
-    }
+                }
 
 
     public static partial class ISite_SettingsConstants{
@@ -610,75 +583,60 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
             public static readonly ID TemplateId = new ID(TemplateIdString);
             public const string TemplateName = "Site Settings";
 
-        
-            
+                    
             public static readonly ID CopyrightFieldId = new ID("b7066f9f-da7e-4ec4-95f4-d2b1e87c0caa");
             public const string CopyrightFieldName = "Copyright";
             
-        
-            
+                    
             public static readonly ID IP1FieldId = new ID("285d2327-eb9f-4a9b-9bc7-5071efa3c7be");
             public const string IP1FieldName = "IP1";
             
-        
-            
+                    
             public static readonly ID IP2FieldId = new ID("0987481b-7ac1-4883-bf3f-5054d1ef52c7");
             public const string IP2FieldName = "IP2";
             
-        
-            
+                    
             public static readonly ID IP3FieldId = new ID("b93fdfd8-7af7-4000-a79f-4018427c3a5d");
             public const string IP3FieldName = "IP3";
             
-        
-            
+                    
             public static readonly ID IP4FieldId = new ID("bc2d6090-8287-4ad7-8052-01d75f0eac01");
             public const string IP4FieldName = "IP4";
             
-        
-            
+                    
             public static readonly ID Show_Error_Details_On_Error_PageFieldId = new ID("4998daef-314c-4ae0-ae9f-c811be4028be");
             public const string Show_Error_Details_On_Error_PageFieldName = "Show Error Details on Error Page";
             
-        
-            
+                    
             public static readonly ID Page_Title_For_Home_And_Site_SectionsFieldId = new ID("6a887010-7322-44b4-b05c-31697928b303");
             public const string Page_Title_For_Home_And_Site_SectionsFieldName = "Page Title for Home and Site Sections";
             
-        
-            
+                    
             public static readonly ID Page_Title_For_Lower_PagesFieldId = new ID("436b14ee-7226-4831-ae7b-06ff5c8ff0d2");
             public const string Page_Title_For_Lower_PagesFieldName = "Page Title for Lower Pages";
             
-        
-            
+                    
             public static readonly ID Title_CommentsFieldId = new ID("e31d4bcb-ac93-4376-ad09-1bea045c85a8");
             public const string Title_CommentsFieldName = "Title Comments";
             
-        
-            
+                    
             public static readonly ID Visible_ProfilesFieldId = new ID("962a3491-463f-4e23-9a43-84a293473724");
             public const string Visible_ProfilesFieldName = "Visible Profiles";
             
-        
-            
+                    
             public static readonly ID CommentsFieldId = new ID("aeda6e3f-dc98-4e05-8d5f-6e54911419de");
             public const string CommentsFieldName = "Comments";
             
-        
-            
+                    
             public static readonly ID Page_SizeFieldId = new ID("1fe0b6c9-f642-4416-809f-ebb754241a6d");
             public const string Page_SizeFieldName = "Page Size";
             
-        
-            
+                    
             public static readonly ID Allow_Online_RegistrationFieldId = new ID("b72e07bb-bbce-4b1d-9a87-70988513e234");
             public const string Allow_Online_RegistrationFieldName = "Allow Online Registration";
             
         
-
     }
-
 
     /// <summary>
     /// Site_Settings
@@ -686,12 +644,11 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
     /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Site Settings</para>
     /// <para>ID: 41e5285e-f5b2-4075-95ce-d3a993881c81</para>
     /// </summary>
-    [SitecoreType(TemplateId=ISite_SettingsConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=ISite_SettingsConstants.TemplateIdString)]
     public partial class Site_Settings  : GlassBase, ISite_Settings 
     {
        
-        
-                /// <summary>
+                        /// <summary>
                 /// The Copyright field.
                 /// <para></para>
                 /// <para>Field Type: Single-Line Text</para>
@@ -702,8 +659,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(ISite_SettingsConstants.CopyrightFieldName)]
                 public virtual string Copyright  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The IP1 field.
                 /// <para></para>
                 /// <para>Field Type: Integer</para>
@@ -714,8 +670,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(ISite_SettingsConstants.IP1FieldName)]
                 public virtual int IP1  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The IP2 field.
                 /// <para></para>
                 /// <para>Field Type: Integer</para>
@@ -726,8 +681,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(ISite_SettingsConstants.IP2FieldName)]
                 public virtual int IP2  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The IP3 field.
                 /// <para></para>
                 /// <para>Field Type: Integer</para>
@@ -738,8 +692,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(ISite_SettingsConstants.IP3FieldName)]
                 public virtual int IP3  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The IP4 field.
                 /// <para></para>
                 /// <para>Field Type: Integer</para>
@@ -750,8 +703,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(ISite_SettingsConstants.IP4FieldName)]
                 public virtual int IP4  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Show Error Details on Error Page field.
                 /// <para></para>
                 /// <para>Field Type: Checkbox</para>
@@ -762,8 +714,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(ISite_SettingsConstants.Show_Error_Details_On_Error_PageFieldName)]
                 public virtual bool Show_Error_Details_On_Error_Page  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Page Title for Home and Site Sections field.
                 /// <para></para>
                 /// <para>Field Type: Single-Line Text</para>
@@ -774,8 +725,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(ISite_SettingsConstants.Page_Title_For_Home_And_Site_SectionsFieldName)]
                 public virtual string Page_Title_For_Home_And_Site_Sections  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Page Title for Lower Pages field.
                 /// <para></para>
                 /// <para>Field Type: Single-Line Text</para>
@@ -786,8 +736,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(ISite_SettingsConstants.Page_Title_For_Lower_PagesFieldName)]
                 public virtual string Page_Title_For_Lower_Pages  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Title Comments field.
                 /// <para></para>
                 /// <para>Field Type: Multi-Line Text</para>
@@ -798,8 +747,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(ISite_SettingsConstants.Title_CommentsFieldName)]
                 public virtual string Title_Comments  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Visible Profiles field.
                 /// <para></para>
                 /// <para>Field Type: Treelist</para>
@@ -810,8 +758,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(ISite_SettingsConstants.Visible_ProfilesFieldName)]
                 public virtual IEnumerable<Guid> Visible_Profiles  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Comments field.
                 /// <para></para>
                 /// <para>Field Type: Multi-Line Text</para>
@@ -822,8 +769,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(ISite_SettingsConstants.CommentsFieldName)]
                 public virtual string Comments  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Page Size field.
                 /// <para></para>
                 /// <para>Field Type: Integer</para>
@@ -834,8 +780,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(ISite_SettingsConstants.Page_SizeFieldName)]
                 public virtual int Page_Size  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Allow Online Registration field.
                 /// <para></para>
                 /// <para>Field Type: Checkbox</para>
@@ -846,9 +791,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(ISite_SettingsConstants.Allow_Online_RegistrationFieldName)]
                 public virtual bool Allow_Online_Registration  {get; set;}
                     
-        
-    }
-
+            }
 }
 namespace LaunchContent.LaunchSitecore.Site_Sections
 {
@@ -860,7 +803,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
     /// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Articles Section</para>
     /// <para>ID: 53303aa5-8e78-4263-a476-c1e7ed791fde</para>
     /// </summary>
-    [SitecoreType(TemplateId=IArticles_SectionConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=IArticles_SectionConstants.TemplateIdString)]
     public partial interface IArticles_Section : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ISite_Section
     {
                 }
@@ -901,7 +844,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
     /// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Articles Section</para>
     /// <para>ID: 53303aa5-8e78-4263-a476-c1e7ed791fde</para>
     /// </summary>
-    [SitecoreType(TemplateId=IArticles_SectionConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=IArticles_SectionConstants.TemplateIdString)]
     public partial class Articles_Section  : GlassBase, IArticles_Section 
     {
        
@@ -972,7 +915,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
     /// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Team Section</para>
     /// <para>ID: 6e005e97-5435-4806-98e5-ca454b8218d1</para>
     /// </summary>
-    [SitecoreType(TemplateId=ITeam_SectionConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=ITeam_SectionConstants.TemplateIdString)]
     public partial interface ITeam_Section : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ISite_Section
     {
                 }
@@ -1013,7 +956,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
     /// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Team Section</para>
     /// <para>ID: 6e005e97-5435-4806-98e5-ca454b8218d1</para>
     /// </summary>
-    [SitecoreType(TemplateId=ITeam_SectionConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=ITeam_SectionConstants.TemplateIdString)]
     public partial class Team_Section  : GlassBase, ITeam_Section 
     {
        
@@ -1084,7 +1027,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Microsite Home</para>
     /// <para>ID: 7139a8b6-68d9-471f-96e4-b87ed703c185</para>
     /// </summary>
-    [SitecoreType(TemplateId=IMicrosite_HomeConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=IMicrosite_HomeConstants.TemplateIdString)]
     public partial interface IMicrosite_Home : IGlassBase , global::LaunchContent.LaunchSitecore.IHome
     {
                 }
@@ -1125,7 +1068,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Microsite Home</para>
     /// <para>ID: 7139a8b6-68d9-471f-96e4-b87ed703c185</para>
     /// </summary>
-    [SitecoreType(TemplateId=IMicrosite_HomeConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=IMicrosite_HomeConstants.TemplateIdString)]
     public partial class Microsite_Home  : GlassBase, IMicrosite_Home 
     {
        
@@ -1196,7 +1139,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Article Folder</para>
     /// <para>ID: 826dc4a0-beb8-4774-8fa7-791f1ec584b4</para>
     /// </summary>
-    [SitecoreType(TemplateId=IArticle_FolderConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=IArticle_FolderConstants.TemplateIdString)]
     public partial interface IArticle_Folder : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ISite_Section
     {
                 }
@@ -1237,7 +1180,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Article Folder</para>
     /// <para>ID: 826dc4a0-beb8-4774-8fa7-791f1ec584b4</para>
     /// </summary>
-    [SitecoreType(TemplateId=IArticle_FolderConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=IArticle_FolderConstants.TemplateIdString)]
     public partial class Article_Folder  : GlassBase, IArticle_Folder 
     {
        
@@ -1308,7 +1251,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
     /// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Job Function Section</para>
     /// <para>ID: 86cd0756-7b65-4cd5-865b-036f9f84498f</para>
     /// </summary>
-    [SitecoreType(TemplateId=IJob_Function_SectionConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=IJob_Function_SectionConstants.TemplateIdString)]
     public partial interface IJob_Function_Section : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ISite_Section
     {
                 }
@@ -1349,7 +1292,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
     /// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Job Function Section</para>
     /// <para>ID: 86cd0756-7b65-4cd5-865b-036f9f84498f</para>
     /// </summary>
-    [SitecoreType(TemplateId=IJob_Function_SectionConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=IJob_Function_SectionConstants.TemplateIdString)]
     public partial class Job_Function_Section  : GlassBase, IJob_Function_Section 
     {
        
@@ -1420,11 +1363,10 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
     /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Version Information</para>
     /// <para>ID: 8901041f-21f5-4a5b-be87-abbef0dbe41c</para>
     /// </summary>
-    [SitecoreType(TemplateId=IVersion_InformationConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=IVersion_InformationConstants.TemplateIdString)]
     public partial interface IVersion_Information : IGlassBase 
     {
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Launch Sitecore Version field.
                     /// <para></para>
                     /// <para>Field Type: Single-Line Text</para>
@@ -1434,8 +1376,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(IVersion_InformationConstants.Launch_Sitecore_VersionFieldName)]
                     string Launch_Sitecore_Version  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Sitecore Version Image field.
                     /// <para></para>
                     /// <para>Field Type: Image</para>
@@ -1445,8 +1386,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(IVersion_InformationConstants.Sitecore_Version_ImageFieldName)]
                     Image Sitecore_Version_Image  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Version Details field.
                     /// <para></para>
                     /// <para>Field Type: Rich Text</para>
@@ -1456,8 +1396,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(IVersion_InformationConstants.Version_DetailsFieldName)]
                     string Version_Details  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Version Title field.
                     /// <para></para>
                     /// <para>Field Type: Single-Line Text</para>
@@ -1467,8 +1406,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(IVersion_InformationConstants.Version_TitleFieldName)]
                     string Version_Title  {get; set;}
             
-            
-    }
+                }
 
 
     public static partial class IVersion_InformationConstants{
@@ -1477,30 +1415,24 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
             public static readonly ID TemplateId = new ID(TemplateIdString);
             public const string TemplateName = "Version Information";
 
-        
-            
+                    
             public static readonly ID Launch_Sitecore_VersionFieldId = new ID("821a2517-543d-4810-81f2-bbf4034cce8d");
             public const string Launch_Sitecore_VersionFieldName = "Launch Sitecore Version";
             
-        
-            
+                    
             public static readonly ID Sitecore_Version_ImageFieldId = new ID("472d92ab-0f80-4ff3-a9da-64628ee0ea54");
             public const string Sitecore_Version_ImageFieldName = "Sitecore Version Image";
             
-        
-            
+                    
             public static readonly ID Version_DetailsFieldId = new ID("74e81e2b-5dda-4eba-8ade-a6ebe3ca31cf");
             public const string Version_DetailsFieldName = "Version Details";
             
-        
-            
+                    
             public static readonly ID Version_TitleFieldId = new ID("ebe1742d-bc5b-46f0-b16d-499c12c98cde");
             public const string Version_TitleFieldName = "Version Title";
             
         
-
     }
-
 
     /// <summary>
     /// Version_Information
@@ -1508,12 +1440,11 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
     /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Version Information</para>
     /// <para>ID: 8901041f-21f5-4a5b-be87-abbef0dbe41c</para>
     /// </summary>
-    [SitecoreType(TemplateId=IVersion_InformationConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=IVersion_InformationConstants.TemplateIdString)]
     public partial class Version_Information  : GlassBase, IVersion_Information 
     {
        
-        
-                /// <summary>
+                        /// <summary>
                 /// The Launch Sitecore Version field.
                 /// <para></para>
                 /// <para>Field Type: Single-Line Text</para>
@@ -1524,8 +1455,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(IVersion_InformationConstants.Launch_Sitecore_VersionFieldName)]
                 public virtual string Launch_Sitecore_Version  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Sitecore Version Image field.
                 /// <para></para>
                 /// <para>Field Type: Image</para>
@@ -1536,8 +1466,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(IVersion_InformationConstants.Sitecore_Version_ImageFieldName)]
                 public virtual Image Sitecore_Version_Image  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Version Details field.
                 /// <para></para>
                 /// <para>Field Type: Rich Text</para>
@@ -1548,8 +1477,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(IVersion_InformationConstants.Version_DetailsFieldName)]
                 public virtual string Version_Details  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Version Title field.
                 /// <para></para>
                 /// <para>Field Type: Single-Line Text</para>
@@ -1560,9 +1488,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(IVersion_InformationConstants.Version_TitleFieldName)]
                 public virtual string Version_Title  {get; set;}
                     
-        
-    }
-
+            }
 }
 namespace LaunchContent.LaunchSitecore
 {
@@ -1574,7 +1500,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Team Member</para>
     /// <para>ID: 97963d48-bd06-46ca-8279-cd2ba3c7aa36</para>
     /// </summary>
-    [SitecoreType(TemplateId=ITeam_MemberConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=ITeam_MemberConstants.TemplateIdString)]
     public partial interface ITeam_Member : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ITitle_Abstract_And_Text, global::LaunchContent.LaunchSitecore.Base_Templates.IGeneral_Fields
     {
                                 /// <summary>
@@ -1653,7 +1579,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Team Member</para>
     /// <para>ID: 97963d48-bd06-46ca-8279-cd2ba3c7aa36</para>
     /// </summary>
-    [SitecoreType(TemplateId=ITeam_MemberConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=ITeam_MemberConstants.TemplateIdString)]
     public partial class Team_Member  : GlassBase, ITeam_Member 
     {
        
@@ -1746,7 +1672,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Job Function</para>
     /// <para>ID: b65cce04-bccb-4a58-b988-753d523c99a7</para>
     /// </summary>
-    [SitecoreType(TemplateId=IJob_FunctionConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=IJob_FunctionConstants.TemplateIdString)]
     public partial interface IJob_Function : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ITitle_Abstract_And_Text, global::LaunchContent.LaunchSitecore.Base_Templates.IGeneral_Fields
     {
                 }
@@ -1783,7 +1709,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Job Function</para>
     /// <para>ID: b65cce04-bccb-4a58-b988-753d523c99a7</para>
     /// </summary>
-    [SitecoreType(TemplateId=IJob_FunctionConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=IJob_FunctionConstants.TemplateIdString)]
     public partial class Job_Function  : GlassBase, IJob_Function 
     {
        
@@ -1843,7 +1769,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Term</para>
     /// <para>ID: c6dd3cef-22af-4468-b3b0-82abfcde0f24</para>
     /// </summary>
-    [SitecoreType(TemplateId=ITermConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=ITermConstants.TemplateIdString)]
     public partial interface ITerm : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.IGeneral_Fields
     {
                                 /// <summary>
@@ -1924,7 +1850,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Term</para>
     /// <para>ID: c6dd3cef-22af-4468-b3b0-82abfcde0f24</para>
     /// </summary>
-    [SitecoreType(TemplateId=ITermConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=ITermConstants.TemplateIdString)]
     public partial class Term  : GlassBase, ITerm 
     {
        
@@ -1995,11 +1921,10 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
     /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Presentation Settings</para>
     /// <para>ID: c7294ff3-d0a5-4fd8-bd46-cd3a99ef6ed6</para>
     /// </summary>
-    [SitecoreType(TemplateId=IPresentation_SettingsConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=IPresentation_SettingsConstants.TemplateIdString)]
     public partial interface IPresentation_Settings : IGlassBase 
     {
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Background Color field.
                     /// <para></para>
                     /// <para>Field Type: Single-Line Text</para>
@@ -2009,8 +1934,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(IPresentation_SettingsConstants.Background_ColorFieldName)]
                     string Background_Color  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Background Image field.
                     /// <para></para>
                     /// <para>Field Type: Image</para>
@@ -2020,8 +1944,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(IPresentation_SettingsConstants.Background_ImageFieldName)]
                     Image Background_Image  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Site Color field.
                     /// <para></para>
                     /// <para>Field Type: Droplist</para>
@@ -2031,8 +1954,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(IPresentation_SettingsConstants.Site_ColorFieldName)]
                     string Site_Color  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Site Logo field.
                     /// <para></para>
                     /// <para>Field Type: Image</para>
@@ -2042,8 +1964,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(IPresentation_SettingsConstants.Site_LogoFieldName)]
                     Image Site_Logo  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Layout Style field.
                     /// <para></para>
                     /// <para>Field Type: Droplist</para>
@@ -2053,8 +1974,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(IPresentation_SettingsConstants.Layout_StyleFieldName)]
                     string Layout_Style  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Logo Location field.
                     /// <para></para>
                     /// <para>Field Type: Droplist</para>
@@ -2064,8 +1984,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(IPresentation_SettingsConstants.Logo_LocationFieldName)]
                     string Logo_Location  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Main Menu Type field.
                     /// <para></para>
                     /// <para>Field Type: Droplist</para>
@@ -2075,8 +1994,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(IPresentation_SettingsConstants.Main_Menu_TypeFieldName)]
                     string Main_Menu_Type  {get; set;}
             
-            
-                    /// <summary>
+                                /// <summary>
                     /// The Show Top Line field.
                     /// <para></para>
                     /// <para>Field Type: Checkbox</para>
@@ -2086,8 +2004,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                     [SitecoreField(IPresentation_SettingsConstants.Show_Top_LineFieldName)]
                     bool Show_Top_Line  {get; set;}
             
-            
-    }
+                }
 
 
     public static partial class IPresentation_SettingsConstants{
@@ -2096,50 +2013,40 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
             public static readonly ID TemplateId = new ID(TemplateIdString);
             public const string TemplateName = "Presentation Settings";
 
-        
-            
+                    
             public static readonly ID Background_ColorFieldId = new ID("51d36071-6cbd-49d9-bfcb-1193b4b8be7f");
             public const string Background_ColorFieldName = "Background Color";
             
-        
-            
+                    
             public static readonly ID Background_ImageFieldId = new ID("8099773e-7043-4d4b-b7a9-0e8fe0a2a658");
             public const string Background_ImageFieldName = "Background Image";
             
-        
-            
+                    
             public static readonly ID Site_ColorFieldId = new ID("d5230c73-cecf-484a-8c04-cead0e9fb005");
             public const string Site_ColorFieldName = "Site Color";
             
-        
-            
+                    
             public static readonly ID Site_LogoFieldId = new ID("fe0fa952-c3ed-4966-9531-12f87cd023b6");
             public const string Site_LogoFieldName = "Site Logo";
             
-        
-            
+                    
             public static readonly ID Layout_StyleFieldId = new ID("d7f0e179-3bc4-4eb3-b74e-8d4b5adbdeca");
             public const string Layout_StyleFieldName = "Layout Style";
             
-        
-            
+                    
             public static readonly ID Logo_LocationFieldId = new ID("80361058-ae78-4f98-859b-7c57196e9d6c");
             public const string Logo_LocationFieldName = "Logo Location";
             
-        
-            
+                    
             public static readonly ID Main_Menu_TypeFieldId = new ID("9a6b866c-6414-441d-9265-19fa6c4fcead");
             public const string Main_Menu_TypeFieldName = "Main Menu Type";
             
-        
-            
+                    
             public static readonly ID Show_Top_LineFieldId = new ID("0a16e874-57fe-42aa-a36f-898a3599c247");
             public const string Show_Top_LineFieldName = "Show Top Line";
             
         
-
     }
-
 
     /// <summary>
     /// Presentation_Settings
@@ -2147,12 +2054,11 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
     /// <para>Path: /sitecore/templates/Launch Sitecore/Settings Templates/Presentation Settings</para>
     /// <para>ID: c7294ff3-d0a5-4fd8-bd46-cd3a99ef6ed6</para>
     /// </summary>
-    [SitecoreType(TemplateId=IPresentation_SettingsConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=IPresentation_SettingsConstants.TemplateIdString)]
     public partial class Presentation_Settings  : GlassBase, IPresentation_Settings 
     {
        
-        
-                /// <summary>
+                        /// <summary>
                 /// The Background Color field.
                 /// <para></para>
                 /// <para>Field Type: Single-Line Text</para>
@@ -2163,8 +2069,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(IPresentation_SettingsConstants.Background_ColorFieldName)]
                 public virtual string Background_Color  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Background Image field.
                 /// <para></para>
                 /// <para>Field Type: Image</para>
@@ -2175,8 +2080,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(IPresentation_SettingsConstants.Background_ImageFieldName)]
                 public virtual Image Background_Image  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Site Color field.
                 /// <para></para>
                 /// <para>Field Type: Droplist</para>
@@ -2187,8 +2091,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(IPresentation_SettingsConstants.Site_ColorFieldName)]
                 public virtual string Site_Color  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Site Logo field.
                 /// <para></para>
                 /// <para>Field Type: Image</para>
@@ -2199,8 +2102,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(IPresentation_SettingsConstants.Site_LogoFieldName)]
                 public virtual Image Site_Logo  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Layout Style field.
                 /// <para></para>
                 /// <para>Field Type: Droplist</para>
@@ -2211,8 +2113,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(IPresentation_SettingsConstants.Layout_StyleFieldName)]
                 public virtual string Layout_Style  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Logo Location field.
                 /// <para></para>
                 /// <para>Field Type: Droplist</para>
@@ -2223,8 +2124,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(IPresentation_SettingsConstants.Logo_LocationFieldName)]
                 public virtual string Logo_Location  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Main Menu Type field.
                 /// <para></para>
                 /// <para>Field Type: Droplist</para>
@@ -2235,8 +2135,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(IPresentation_SettingsConstants.Main_Menu_TypeFieldName)]
                 public virtual string Main_Menu_Type  {get; set;}
                     
-        
-                /// <summary>
+                        /// <summary>
                 /// The Show Top Line field.
                 /// <para></para>
                 /// <para>Field Type: Checkbox</para>
@@ -2247,9 +2146,7 @@ namespace LaunchContent.LaunchSitecore.Settings_Templates
                 [SitecoreField(IPresentation_SettingsConstants.Show_Top_LineFieldName)]
                 public virtual bool Show_Top_Line  {get; set;}
                     
-        
-    }
-
+            }
 }
 namespace LaunchContent.LaunchSitecore
 {
@@ -2261,7 +2158,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Security Page</para>
     /// <para>ID: d804da09-73f3-4bde-b9f7-86181aa7efa8</para>
     /// </summary>
-    [SitecoreType(TemplateId=ISecurity_PageConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=ISecurity_PageConstants.TemplateIdString)]
     public partial interface ISecurity_Page : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ITitle_Abstract_And_Text, global::LaunchContent.LaunchSitecore.Base_Templates.IGeneral_Fields
     {
                 }
@@ -2298,7 +2195,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Security Page</para>
     /// <para>ID: d804da09-73f3-4bde-b9f7-86181aa7efa8</para>
     /// </summary>
-    [SitecoreType(TemplateId=ISecurity_PageConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=ISecurity_PageConstants.TemplateIdString)]
     public partial class Security_Page  : GlassBase, ISecurity_Page 
     {
        
@@ -2358,7 +2255,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Article</para>
     /// <para>ID: d9019e30-f954-46cc-aa70-3e928c40b5d0</para>
     /// </summary>
-    [SitecoreType(TemplateId=IArticleConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=IArticleConstants.TemplateIdString)]
     public partial interface IArticle : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ITitle_Abstract_And_Text, global::LaunchContent.LaunchSitecore.Base_Templates.IGeneral_Fields
     {
                                 /// <summary>
@@ -2423,7 +2320,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Article</para>
     /// <para>ID: d9019e30-f954-46cc-aa70-3e928c40b5d0</para>
     /// </summary>
-    [SitecoreType(TemplateId=IArticleConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=IArticleConstants.TemplateIdString)]
     public partial class Article  : GlassBase, IArticle 
     {
        
@@ -2505,7 +2402,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
     /// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Glossary Section</para>
     /// <para>ID: e35c9d40-8d28-4944-ab30-18e2789e6ba7</para>
     /// </summary>
-    [SitecoreType(TemplateId=IGlossary_SectionConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=IGlossary_SectionConstants.TemplateIdString)]
     public partial interface IGlossary_Section : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ISite_Section
     {
                 }
@@ -2546,7 +2443,7 @@ namespace LaunchContent.LaunchSitecore.Site_Sections
     /// <para>Path: /sitecore/templates/Launch Sitecore/Site Sections/Glossary Section</para>
     /// <para>ID: e35c9d40-8d28-4944-ab30-18e2789e6ba7</para>
     /// </summary>
-    [SitecoreType(TemplateId=IGlossary_SectionConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=IGlossary_SectionConstants.TemplateIdString)]
     public partial class Glossary_Section  : GlassBase, IGlossary_Section 
     {
        
@@ -2617,7 +2514,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/General Page</para>
     /// <para>ID: e6964c3e-d415-40c8-91d9-2bf90f6566e9</para>
     /// </summary>
-    [SitecoreType(TemplateId=IGeneral_PageConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=IGeneral_PageConstants.TemplateIdString)]
     public partial interface IGeneral_Page : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ITitle_Abstract_And_Text
     {
                 }
@@ -2650,7 +2547,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/General Page</para>
     /// <para>ID: e6964c3e-d415-40c8-91d9-2bf90f6566e9</para>
     /// </summary>
-    [SitecoreType(TemplateId=IGeneral_PageConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=IGeneral_PageConstants.TemplateIdString)]
     public partial class General_Page  : GlassBase, IGeneral_Page 
     {
        
@@ -2699,7 +2596,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Microsite Subpage</para>
     /// <para>ID: f52f00e0-3f65-4c1a-9bf6-af03ce94e599</para>
     /// </summary>
-    [SitecoreType(TemplateId=IMicrosite_SubpageConstants.TemplateIdString )] //, Cachable = true
+    [SitecoreType(TemplateId=IMicrosite_SubpageConstants.TemplateIdString)]
     public partial interface IMicrosite_Subpage : IGlassBase , global::LaunchContent.LaunchSitecore.Base_Templates.ITitle_Abstract_And_Text, global::LaunchContent.LaunchSitecore.Base_Templates.IGeneral_Fields
     {
                 }
@@ -2736,7 +2633,7 @@ namespace LaunchContent.LaunchSitecore
     /// <para>Path: /sitecore/templates/Launch Sitecore/Microsite Subpage</para>
     /// <para>ID: f52f00e0-3f65-4c1a-9bf6-af03ce94e599</para>
     /// </summary>
-    [SitecoreType(TemplateId=IMicrosite_SubpageConstants.TemplateIdString)] //, Cachable = true
+    [SitecoreType(TemplateId=IMicrosite_SubpageConstants.TemplateIdString)]
     public partial class Microsite_Subpage  : GlassBase, IMicrosite_Subpage 
     {
        
