@@ -1,20 +1,35 @@
 ﻿@model IEnumerable<LaunchSitecore.Models.CarouselItem>
-<div id="enhanced-carousel" class="carousel slide">
- <div class="carousel-inner">
-  @foreach (var item in Model)
-  { 
-   <div class="@(Model.IsFirst(item) ? "item active" : "item")">    
-    @Html.Sitecore().Field("Image", item.Item, new { @maxWidth = "950" })
-    <div class="container">
-     <div class="@(item.UseDarkText ? "carousel-caption darktext" : "carousel-caption")">
-      <h1>@Html.Sitecore().Field("Title", item.Item)</h1>
-      @Html.Sitecore().Field("Caption", item.Item)
-      <p class="btn-wrapper"><a href="@item.LinkItemUrl" class="btn btn-large btn-primary">@Html.Sitecore().Field("Link Text", item.Item) »</a></p>
-     </div>
+@using LaunchSitecore.Configuration.Helpers
+<div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        @{
+            int i = 0;
+            foreach (var item in Model)
+            {
+                <li data-target="#myCarousel" data-slide-to="@i" class="@(Model.IsFirst(item) ? "active" : "")"></li>
+                i++;
+            }
+        }
+    </ol>
+    <div class="carousel-inner">
+        @foreach (var item in Model)
+        {
+            <div class="@(Model.IsFirst(item) ? "item active" : "item")">
+                @Html.Sitecore().Field("Image", item.Item, new { @maxWidth = "1920", @maxHeight = "320", style = "width:100%" })
+
+                <div class="container">
+                    <div class="@(item.UseDarkText ? "carousel-caption darktext" : "carousel-caption")">
+                        @using (Html.EditFrame(item.Item.Paths.FullPath, "/sitecore/content/Applications/WebEdit/Edit Frame Buttons/Carousel Items"))
+                        {<h1>@Html.Sitecore().Field("Title", item.Item)</h1>}
+                        @Html.Sitecore().Field("Caption", item.Item)
+                        <p class="btn-wrapper"><a href="@item.LinkItemUrl" class="btn btn-large btn-primary">@Html.Sitecore().Field("Link Text", item.Item)</a></p>
+                    </div>
+                </div>
+
+            </div>
+        }
     </div>
-   </div>
-  }
- </div>
- <a class="carousel-control left" href="#enhanced-carousel" data-slide="prev">‹</a>
- <a class="carousel-control right" href="#enhanced-carousel" data-slide="next">›</a>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="icon-prev"></span></a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="icon-next"></span></a>
 </div>

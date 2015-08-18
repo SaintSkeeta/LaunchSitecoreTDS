@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <title>@Html.Sitecore().Controller("Meta", "PageTitle")</title>
+ @Html.Sitecore().Controller("Meta", "MetaTags")
+ <meta name="robots" content="follow, index" />
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="stylesheet" href="/assets/css/bootstrap.css" />
+ <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css" />
+ <link rel="stylesheet" href="/assets/css/custom.css" />
+ <link rel="stylesheet" href="/assets/css/responsive.css" />
+ @Html.Sitecore().Controller("SiteConfiguration", "CssColor")
+</head>
+<body style="background-color:@Html.Sitecore().Controller("SiteConfiguration", "BackgroundColor")">
+    <div id="out_container" class="@Html.Sitecore().Controller("SiteConfiguration", "PageLayoutClass")">
+        <div class="container"></div>
+        <!-- HEADER AREA -->
+        @Html.Sitecore().Controller("Navigation", "Header")
+        <!-- MAIN CONTENT AREA -->
+        <div class="main-content">
+            @Html.Sitecore().Placeholder("main-content")
+        </div>
+        <!-- FOOTER STARTS HERE -->
+        <footer id="footer">
+            <div class="footer-wrapper" style="background-color:@Html.Sitecore().Controller("SiteConfiguration", "FooterColor")">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <div class="row">
+                                @Html.Sitecore().Controller("Navigation", "FooterNavigation")
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom" style="background-color:@Html.Sitecore().Controller("SiteConfiguration", "CopyrightBackgroundColor")">
+                <div class="container">
+                    <div class="row">
+                        <!-- FOOTER: COPYRIGHT TEXT -->
+                        <div class="col-sm-12 col-md-12">
+                            <p>@Html.Sitecore().Field("Copyright", LaunchSitecore.Configuration.SiteConfiguration.GetSiteConfigurationItem())</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+    </div>
+    <div id="mtp-toggle">
+        <i class="moon-droplet"></i>
+    </div>
+    <div id="mtp-wrapper">
+        <div id="mtp-content">
+            @Html.Sitecore().Rendering("{5DC72CF0-EDFF-4524-B2DB-81415CFF3434}") <!-- Visit Details -->
+        </div>
+    </div>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write("<script src='/assets/js/jquery-1.11.1.min.js'><\/script>")</script>
+    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/custom.js"></script>
+    <script src='/assets/js/scrollReveal.js'></script>
+    <script>window.sr = new scrollReveal();</script>
+</body>
+</html>

@@ -1,9 +1,0 @@
-﻿@using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
-{
- @Html.AntiForgeryToken()   
-}
-<ul class="nav nav-pills pull-right anav">
- <li><a href="javascript:document.getElementById('logoutForm').submit()">@UIHelpers.GetDictionaryText("logout")</a></li>
- @Html.Sitecore().Controller("Navigation", "FavoritesNavigation")
- @Html.Sitecore().Controller("Navigation", "SitesNavigation")
-</ul>

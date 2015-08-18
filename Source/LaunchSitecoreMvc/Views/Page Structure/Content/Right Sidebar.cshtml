@@ -1,0 +1,13 @@
+﻿@model RenderingModel
+<div class="container">
+    @Html.Sitecore().Controller("Navigation", "Breadcrumbs")
+    <div class="row clear-both">
+        <div class="col-md-9 main-column two-columns-right">
+            @Html.Sitecore().Placeholder("content-primary")
+        </div>
+        <div id="right-sidebar" class="col-md-3 sidebar">
+            @Html.Sitecore().Placeholder("content-secondary")
+            @Html.Sitecore().Placeholder("content-tertiary")
+        </div>
+    </div>
+</div>
