@@ -1,47 +1,54 @@
 ----item----
 version: 1
-id: {D7F983CA-BE35-4522-8CBA-C75D185FCC20}
+id: {CD6E3EE4-15E2-4D09-997E-1A17AF69055E}
 database: core
-path: /sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Page Editor/Site Configuration
-parent: {0642041B-6E6C-4B82-9648-BB6603E8DCE5}
-name: Site Configuration
+path: /sitecore/content/Applications/WebEdit/Custom Experience Buttons/Prerequisite Articles
+parent: {DB662EDF-5965-4848-AD14-BA6BF0D55D1E}
+name: Prerequisite Articles
 master: {00000000-0000-0000-0000-000000000000}
-template: {8F3D8F9B-2D76-4ACE-803F-35415D2B230A}
-templatekey: Chunk
+template: {1AB4F9AD-B004-413C-8924-3E07143A614B}
+templatekey: Field Editor Button
 
 ----field----
-field: {8BB9A5E3-CAE8-49C6-B830-258A51D970C9}
-name: ID
-key: id
-content-length: 9
+field: {4431914A-C40B-437C-8ADD-D2ED12CC8CC3}
+name: Icon
+key: icon
+content-length: 33
 
-EditChunk
+Applications/32x32/form_green.png
+----field----
+field: {CF738220-908D-4C3F-9482-32E625DAF13C}
+name: Fields
+key: fields
+content-length: 21
+
+Prerequisite Articles
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 33
+
+Applications/16x16/form_green.png
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
-content-length: 2
+content-length: 3
 
-46
-----field----
-field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
-name: __Security
-key: __security
-content-length: 0
-
-
+800
 ----version----
 language: da
 version: 1
-revision: 15782175-0169-4b06-a213-9989c0da1011
+revision: 03b43509-516c-43b2-9b28-99f4bbcedfb0
 
 ----field----
-field: {C95D21BD-66C3-444B-A37F-D346CBAF2B55}
+field: {108D3A63-BAAA-4560-86D8-3A112ED84717}
 name: Header
 key: header
-content-length: 7
+content-length: 15
 
-Rediger
+Rediger element
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -55,7 +62,7 @@ name: __Created
 key: __created
 content-length: 34
 
-20110602T011845:634425743251227805
+20110602T011843:634425743238883897
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -69,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-15782175-0169-4b06-a213-9989c0da1011
+03b43509-516c-43b2-9b28-99f4bbcedfb0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20110602T011845:634425743251227805
+20110602T011843:634425743238883897
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -87,15 +94,15 @@ sitecore\admin
 ----version----
 language: de-DE
 version: 1
-revision: 6e6ee7f2-9452-479b-a17c-1fd471ba7aaa
+revision: 5ecd5050-ae31-4706-a012-9c453fdb74b1
 
 ----field----
-field: {C95D21BD-66C3-444B-A37F-D346CBAF2B55}
+field: {108D3A63-BAAA-4560-86D8-3A112ED84717}
 name: Header
 key: header
-content-length: 10
+content-length: 15
 
-Bearbeiten
+Item bearbeiten
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -109,7 +116,7 @@ name: __Created
 key: __created
 content-length: 34
 
-20110602T012248:634425745687352737
+20110602T012247:634425745673758813
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -123,14 +130,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6e6ee7f2-9452-479b-a17c-1fd471ba7aaa
+5ecd5050-ae31-4706-a012-9c453fdb74b1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20110602T012248:634425745687352737
+20110602T012247:634425745673758813
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -141,22 +148,36 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: a74e40fd-a56b-4107-b96d-ac12d55bde8b
+revision: 01454e63-16d6-4697-a3fa-4bc28b44e801
 
 ----field----
-field: {C95D21BD-66C3-444B-A37F-D346CBAF2B55}
+field: {108D3A63-BAAA-4560-86D8-3A112ED84717}
 name: Header
 key: header
-content-length: 18
+content-length: 26
 
-Site Configuration
+Edit Prerequisite Articles
+----field----
+field: {5F0812AF-D370-4292-AFEE-F26A39B7406D}
+name: Tooltip
+key: tooltip
+content-length: 26
+
+Edit Prerequisite Articles
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 15
 
-20080215T101800
+20090528T094300
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -170,14 +191,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a74e40fd-a56b-4107-b96d-ac12d55bde8b
+01454e63-16d6-4697-a3fa-4bc28b44e801
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20130919T183801:635152126810998063
+20150715T234659Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -188,19 +209,12 @@ sitecore\admin
 ----version----
 language: ja-JP
 version: 1
-revision: 9ac7e805-3292-455d-ba80-cdfde7ce256d
+revision: b5452b11-63d1-43fe-999b-5d6b7753cc04
 
 ----field----
-field: {C95D21BD-66C3-444B-A37F-D346CBAF2B55}
+field: {108D3A63-BAAA-4560-86D8-3A112ED84717}
 name: Header
 key: header
-content-length: 2
-
-編集
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
 content-length: 2
 
 編集
@@ -217,7 +231,7 @@ name: __Created
 key: __created
 content-length: 34
 
-20110602T012523:634425747238310089
+20110602T012524:634425747247060201
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -231,14 +245,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9ac7e805-3292-455d-ba80-cdfde7ce256d
+b5452b11-63d1-43fe-999b-5d6b7753cc04
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20110602T012523:634425747238310089
+20110602T012524:634425747247060201
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

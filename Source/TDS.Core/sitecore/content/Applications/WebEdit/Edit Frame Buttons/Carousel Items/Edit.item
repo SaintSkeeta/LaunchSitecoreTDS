@@ -20,9 +20,9 @@ Business/32x32/pin_blue.png
 field: {CF738220-908D-4C3F-9482-32E625DAF13C}
 name: Fields
 key: fields
-content-length: 65
+content-length: 53
 
-Title|Caption|Link Text|Link Item|Image|Use Dark Text|__Semantics
+Title|Caption|Link Text|Link Item|Image|Use Dark Text
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
@@ -162,7 +162,7 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: 413f1f3e-d232-4bc4-a5ba-0cd9e4c85141
+revision: 2b960fc1-35a1-4b78-bf2a-82cfa5195a19
 
 ----field----
 field: {108D3A63-BAAA-4560-86D8-3A112ED84717}
@@ -205,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-413f1f3e-d232-4bc4-a5ba-0cd9e4c85141
+2b960fc1-35a1-4b78-bf2a-82cfa5195a19
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131120T084526:635205339261879719
+20150715T052524Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

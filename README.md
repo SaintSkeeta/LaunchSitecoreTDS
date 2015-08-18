@@ -93,20 +93,13 @@ Some custom code has been added to flush the contact data to the xDB. In each of
 
 layouts/LaunchSitecore/Main.aspx.designer.cs in the package has a removed reference to the sc:VisitorIdentification control...yet the aspx still has it. In this solution, we keep it there to comply with WebForms standards.
 
-www.LaunchSitecore.config - changes with the SC8 package removed sections of config for ribbon buttons (see item differences for ribbons below). The comment mentions it's only for the Technical Preview of Sitecore 8. We've left these in, until we see any issues arise from it.
-
- - MVC: Configuration/AuthoringExperience/PageEditor
-  - code has been removed from the package because of the no longer used custom buttons on the site.
-
 ### Item differences ###
+
  - master: /sitecore/system/Settings/Rules/ConditionalRenderings/Tags/Default
   - the TDS project has added tag on this item for 'Engagement Automation'. This tag existed in the 7.2 package but was removed from 7.5 package.
 
  - master: /sitecore/templates/Launch Sitecore/Article Group
   - in package it inherits from GeneralFields, but also SiteSection, which inherits from GeneralFields... so they creates a duplicate dependency and breaks code generation.
-
- - core: /sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Page Editor/Site Configuration
-  - both Site Presentation and Site Settings ribbon buttons were removed from the package, as these don't work with the SPEAK Experience Editor. They're left in for backwards reference.
 
  - master: /sitecore/layout/Sublayouts/LaunchSitecore/Controls/Single Item
   - (WebForms project) 3 renderings have included the Page Editor Buttons field containing the 'Common' button. This is what the MVC project has, but the package doesn't contain it for WebForms.

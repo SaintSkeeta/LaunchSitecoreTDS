@@ -2,9 +2,9 @@
 version: 1
 id: {E2D2866C-20A9-477F-8753-1E7864FF2AC9}
 database: core
-path: /sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Page Editor/Site Configuration/Site Presentation
+path: /sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Page Editor/Site Settings/Presentation
 parent: {D7F983CA-BE35-4522-8CBA-C75D185FCC20}
-name: Site Presentation
+name: Presentation
 master: {00000000-0000-0000-0000-000000000000}
 template: {9F62EBD5-2280-4A35-BE51-A210D831D687}
 templatekey: Small Button
@@ -20,9 +20,9 @@ people/32x32/palette.png
 field: {4C2DEDB4-40FB-4166-8221-C4DD3E914478}
 name: Click
 key: click
-content-length: 149
+content-length: 0
 
-launchsitecore:presentationsettingsforsite(flds=Site Color|Layout Style|Main Menu Type|Logo Location|Show Top Line|Background Color|Background Image)
+
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
@@ -36,11 +36,22 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-700
+600
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 350
+
+<r>
+  <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+    <r id="{6E177CB2-BBC1-486E-90E9-8C5E579A090B}" par="Id=SmallButton1&amp;Click=trigger%3abutton%3aclick&amp;Command=LaunchFieldEditor&amp;PageCodeScriptFileName=%2fassets%2fspeak%2fLaunchFieldEditor.js&amp;AccessKey=presentation" uid="{8A50DA07-BCED-405C-B1D5-E2C97A9E6EBF}" />
+  </d>
+</r>
 ----version----
 language: en
 version: 1
-revision: c0443963-be8b-4a4f-84b0-2ebde752940c
+revision: 3027b874-3f44-497f-83e9-50d1947ea422
 
 ----field----
 field: {C184F18B-B452-44D6-8376-FACD6CEF8A42}
@@ -53,9 +64,9 @@ Presentation
 field: {A47CD065-C361-4332-B22B-7E2148DE06F4}
 name: Tooltip
 key: tooltip
-content-length: 52
+content-length: 0
 
-Edit the presentation settings for the current site.
+
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -83,14 +94,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c0443963-be8b-4a4f-84b0-2ebde752940c
+3027b874-3f44-497f-83e9-50d1947ea422
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131107T132815:635194276956413421
+20150716T022501Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
