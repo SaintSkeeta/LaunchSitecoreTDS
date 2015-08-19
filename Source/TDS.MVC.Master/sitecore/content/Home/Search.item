@@ -10,6 +10,34 @@ template: {E6964C3E-D415-40C8-91D9-2BF90F6566E9}
 templatekey: General Page
 
 ----field----
+field: {7E003143-26F2-4A28-B70A-08548286F6BA}
+name: Show Item In Menu
+key: show item in menu
+content-length: 0
+
+
+----field----
+field: {D48AF62C-9C56-4E4C-BA29-94C3DABAD82E}
+name: Show Children In Menu
+key: show children in menu
+content-length: 0
+
+
+----field----
+field: {FD6DAC05-FEF8-4581-A329-6CEA310E839B}
+name: Show Item In Secondary Menu
+key: show item in secondary menu
+content-length: 0
+
+
+----field----
+field: {CE1BEB41-17E4-4934-9AE9-0C3C8D2B72FA}
+name: Show In Search Results
+key: show in search results
+content-length: 0
+
+
+----field----
 field: {F7D48A55-2158-4F02-9356-756654404F73}
 name: __Standard values
 key: __standard values
@@ -104,9 +132,9 @@ content-length: 0
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 624
+content-length: 324
 
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{F02BACF3-3490-4596-9803-B37C6B3EE2B9}"><p:d /></r><r uid="{B8E2C5E1-92C4-46A4-A175-7B64807ECC42}"><p:d /></r><r uid="{0730A43A-6DD1-401B-ADEC-E821A210BE15}" p:before="r[@uid='{4372BA99-DBCB-402F-9107-24DC9920C15E}']" s:ds="{41DF60B9-1F59-4C80-8F95-051755C181AD}" s:id="{9D786977-B494-495E-BF02-7A921302DD85}" s:ph="/main-content/content-tertiary" /><r uid="{4372BA99-DBCB-402F-9107-24DC9920C15E}" p:before="r[@uid='{36F17957-4A8C-4537-AF2A-906B6E78BD11}']" s:id="{57648B0D-9E4C-43BC-B2F6-24BD8DA4D3BB}" s:ph="main-content" /></d></r>
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{F02BACF3-3490-4596-9803-B37C6B3EE2B9}"><p:d /></r><r uid="{B8E2C5E1-92C4-46A4-A175-7B64807ECC42}"><p:d /></r><r uid="{4372BA99-DBCB-402F-9107-24DC9920C15E}" s:id="{57648B0D-9E4C-43BC-B2F6-24BD8DA4D3BB}" s:ph="main-content" /></d></r>
 ----field----
 field: {B03569B1-1534-43F2-8C83-BD064B7D782C}
 name: __Renderers
@@ -180,7 +208,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 7c4bf9ac-9b42-4dbb-b52d-93ce2ce3a9e2
+revision: 591c7e4b-3c2a-4607-9907-31590fee2616
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -210,41 +238,6 @@ key: menu title
 content-length: 14
 
 Search Results
-----field----
-field: {7E003143-26F2-4A28-B70A-08548286F6BA}
-name: Show Item In Menu
-key: show item in menu
-content-length: 0
-
-
-----field----
-field: {D48AF62C-9C56-4E4C-BA29-94C3DABAD82E}
-name: Show Children In Menu
-key: show children in menu
-content-length: 0
-
-
-----field----
-field: {FD6DAC05-FEF8-4581-A329-6CEA310E839B}
-name: Show Item In Secondary Menu
-key: show item in secondary menu
-content-length: 0
-
-
-----field----
-field: {CE1BEB41-17E4-4934-9AE9-0C3C8D2B72FA}
-name: Show In Search Results
-key: show in search results
-content-length: 0
-
-
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
-content-length: 6
-
-Search
 ----field----
 field: {577F1689-7DE4-4AD2-A15F-7FDC1759285F}
 name: __Long description
@@ -300,14 +293,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7c4bf9ac-9b42-4dbb-b52d-93ce2ce3a9e2
+591c7e4b-3c2a-4607-9907-31590fee2616
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140225T175646:635289478069912622
+20150713T200748Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

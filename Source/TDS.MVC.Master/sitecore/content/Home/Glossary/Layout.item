@@ -41,7 +41,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 4330d9ad-acdd-4905-bc21-5e3783d7aa58
+revision: cd89365a-314c-4be3-a4be-24120fcd4632
 
 ----field----
 field: {FBADE872-82BD-45AD-A2EC-DADC723249DA}
@@ -65,13 +65,6 @@ content-length: 510
 
 <p>All items which have presentation associated, must have a layout defined. Generally, a Layout is a template that is used as the base for many pages. For example, in this Launch Sitecore example, the Main template has the navigation statically bound (in that every page has it - not that the menu is static) and placeholders to allow flexibility for banners, side menus, different column <a href="%7E/link.aspx?_id=3FD0E7AD3B814875A77FA0F67BE47035&amp;_z=z">sublayouts</a>, component renderings, etc.<br></p>
 ----field----
-field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
-name: Image
-key: image
-content-length: 167
-
-<image mediaid="{CC5959D4-75C9-49FA-B6F8-C90AAF5FF243}" mediapath="/Launch Sitecore/Site Images/Glossary/Layout" src="~/media/cc5959d475c949fab6f8c90aaf5ff243.ashx" />
-----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
 key: icon
@@ -79,16 +72,16 @@ content-length: 139
 
 <image mediaid="{65EBF460-6082-4C6B-8283-8BEB3C871A84}" mediapath="/Images/Icons/windows" src="~/media/Images/Icons/windows.ashx" ></image>
 ----field----
+field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{CC5959D4-75C9-49FA-B6F8-C90AAF5FF243}" />
+----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
-content-length: 6
-
-Layout
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
 content-length: 6
 
 Layout
@@ -112,14 +105,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4330d9ad-acdd-4905-bc21-5e3783d7aa58
+cd89365a-314c-4be3-a4be-24120fcd4632
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131224T084933:635234717732054077
+20150708T214045Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

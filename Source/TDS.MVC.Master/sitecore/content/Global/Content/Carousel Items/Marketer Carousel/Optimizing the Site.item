@@ -1,0 +1,168 @@
+----item----
+version: 1
+id: {A51065BD-A32C-4E1C-A534-C4D2B4D59B7E}
+database: master
+path: /sitecore/content/Global/Content/Carousel Items/Marketer Carousel/Optimizing the Site
+parent: {85F0FFB1-B04F-498C-B033-A973FB4068E0}
+name: Optimizing the Site
+master: {00000000-0000-0000-0000-000000000000}
+template: {5365F694-C2AB-41AF-8A79-28FC6A35E384}
+templatekey: Carousel Item
+
+----field----
+field: {336E27E0-7F9C-437E-B179-653F427520CC}
+name: Link Item
+key: link item
+content-length: 38
+
+{05B47C0F-7B67-47AD-9946-C02CBA12A195}
+----field----
+field: {DD876753-9D4B-4B70-8197-41A0EB302087}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{EB394E2E-BFD3-4656-9449-1BED7CB036FB}" />
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 0fb95145-521c-40b6-8b5a-80f3cdd311fd
+
+----field----
+field: {1FD34C98-05B1-4206-A48E-14D1E0C42F6F}
+name: Title
+key: title
+content-length: 19
+
+Optimizing the Site
+----field----
+field: {9B14A853-F008-4145-878A-DD5A2ED7EC36}
+name: Caption
+key: caption
+content-length: 69
+
+<p>Learn more about optimizing the experience for your customers.</p>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150219T202242Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0fb95145-521c-40b6-8b5a-80f3cdd311fd
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150715T175605Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
+----version----
+language: ja
+version: 1
+revision: 1fd2269a-38a2-42ef-ad42-b6592c7afcf8
+
+----field----
+field: {1FD34C98-05B1-4206-A48E-14D1E0C42F6F}
+name: Title
+key: title
+content-length: 7
+
+サイトを最適化
+----field----
+field: {9B14A853-F008-4145-878A-DD5A2ED7EC36}
+name: Caption
+key: caption
+content-length: 37
+
+<p>あなたの顧客の経験を最適化については、こちらをご覧ください。</p>
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150219T202242Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1fd2269a-38a2-42ef-ad42-b6592c7afcf8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150219T204106:635599752667857947Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

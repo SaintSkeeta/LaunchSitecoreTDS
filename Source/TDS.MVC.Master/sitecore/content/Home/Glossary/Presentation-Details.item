@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 7525784e-4b3d-4434-aba4-ce469ed0399c
+revision: 4f397c52-eb2d-4f3d-acc3-dbb6718bbe76
 
 ----field----
 field: {FBADE872-82BD-45AD-A2EC-DADC723249DA}
@@ -64,13 +64,6 @@ content-length: 708
 
 <p>The screenshot above shows the Presentation Details for a page. In this case, you'll note that we are using the Main <a href="%7E/link.aspx?_id=431DD81B22CD4994B6220E2773818AC1&amp;_z=z">layout</a>, with various components for banners, menus, and display of terms.  An <a href="%7E/link.aspx?_id=B8FDADB4A041427DBB0E70C15ACA4379&amp;_z=z">item </a>can exist in Sitecore without having presentation details (examples include metadata, settings, content which flows into components). Presentation Details can also be applied to a template <a href="%7E/link.aspx?_id=2BF103381CFF4F9F890EE9F3078473F9&amp;_z=z">standard values</a>, meaning that any new item created, inherits those settings automatically.</p>
 ----field----
-field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
-name: Image
-key: image
-content-length: 181
-
-<image mediaid="{24C8F8DE-92EB-4CC0-AB5F-3FF28C6FA334}" mediapath="/Launch Sitecore/Site Images/Glossary/Presentation Details" src="~/media/24c8f8de92eb4cc0ab5f3ff28c6fa334.ashx" />
-----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
 key: icon
@@ -78,16 +71,16 @@ content-length: 147
 
 <image mediaid="{746BED8D-E023-48F6-BEED-AF060277D956}" mediapath="/Images/Icons/window_view" src="~/media/Images/Icons/window_view.ashx" ></image>
 ----field----
+field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{24C8F8DE-92EB-4CC0-AB5F-3FF28C6FA334}" />
+----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
-content-length: 20
-
-Presentation Details
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
 content-length: 20
 
 Presentation Details
@@ -111,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7525784e-4b3d-4434-aba4-ce469ed0399c
+4f397c52-eb2d-4f3d-acc3-dbb6718bbe76
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131224T084935:635234717759070720
+20150708T214142Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -103,9 +103,6 @@ layouts/LaunchSitecore/Main.aspx.designer.cs in the package has a removed refere
   - Article Title Image and Body
   - Biography
 
- - master: /sitecore/content/Home/Team/Patrick-Wallace
-  - Job Title and Quote fields contained an invalid character in the package.
-
  - master: /sitecore/layout/Sublayouts/LaunchSitecore/Controls/Single Item/Article Title and Body, Article Title Image and Body, Biography
   - package had the 'Page Editor Buttons' field set to null. Not having the 'Common' button for fields.
 

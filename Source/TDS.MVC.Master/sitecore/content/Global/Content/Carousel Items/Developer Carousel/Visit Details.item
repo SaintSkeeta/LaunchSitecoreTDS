@@ -1,0 +1,126 @@
+----item----
+version: 1
+id: {F52B9C24-5B75-447D-92DD-E07CCD3A02C8}
+database: master
+path: /sitecore/content/Global/Content/Carousel Items/Developer Carousel/Visit Details
+parent: {0720FC50-5617-4A67-9794-9B56BA3038BD}
+name: Visit Details
+master: {00000000-0000-0000-0000-000000000000}
+template: {5365F694-C2AB-41AF-8A79-28FC6A35E384}
+templatekey: Carousel Item
+
+----field----
+field: {DD876753-9D4B-4B70-8197-41A0EB302087}
+name: Image
+key: image
+content-length: 189
+
+<image src="~/media/48b4f35bbb7146c5a49f33c74e6a42cb.ashx" mediaid="{2D3D7D29-D8BA-4C6D-AFA8-C86D258EAD2C}" mediapath="/Launch Sitecore/Site Images/Carousel Backgrounds/dandeliion"></image>
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 455251b3-d9c0-4e2f-bbf5-98d31f992c73
+
+----field----
+field: {1B86697D-60CA-4D80-83FB-7555A2E6CE1C}
+name: __Source
+key: __source
+content-length: 70
+
+sitecore://master/{D6AC6DEC-58D2-4705-8106-12E3BF5FCC01}?lang=en&ver=1
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150219T184044Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+455251b3-d9c0-4e2f-bbf5-98d31f992c73
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150715T181251Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----version----
+language: ja
+version: 1
+revision: f716ad1b-8a96-49b7-abaa-704b8447bb9f
+
+----field----
+field: {1B86697D-60CA-4D80-83FB-7555A2E6CE1C}
+name: __Source
+key: __source
+content-length: 70
+
+sitecore://master/{D6AC6DEC-58D2-4705-8106-12E3BF5FCC01}?lang=ja&ver=1
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 35
+
+20150219T184045:635599680450813901Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f716ad1b-8a96-49b7-abaa-704b8447bb9f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150219T184045:635599680450813901Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}

@@ -1,21 +1,21 @@
 ----item----
 version: 1
-id: {ADBBE471-B612-4D9C-8F66-4AE62880935A}
+id: {CFEB8E8F-9943-435A-93BA-C238279DF70B}
 database: master
-path: /sitecore/content/Home/Team/James-Eaton
+path: /sitecore/content/Home/Team/Justin-West
 parent: {8DABE12D-4D1B-40B5-BF62-7D2424253A15}
-name: James-Eaton
+name: Justin-West
 master: {00000000-0000-0000-0000-000000000000}
 template: {97963D48-BD06-46CA-8279-CD2BA3C7AA36}
 templatekey: Team Member
 
 ----field----
-field: {AD724ADB-4729-4C32-BF40-676579D587CF}
-name: Image
-key: image
-content-length: 235
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
 
-<image mediaid="{234D0D9E-0351-4EAB-9812-14C662464BC6}" mediapath="/Launch Sitecore/Site Images/Contributors/DSC_2508-Edit" src="~/media/234d0d9e03514eab981214c662464bc6.ashx" alt="James Eaton" height="" width="" hspace="" vspace="" />
+100
 ----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 73354a85-6621-4881-a342-c666f559b3c8
+revision: 91bdb71c-dd1b-4cc7-a849-2c32fe33688d
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -34,63 +34,63 @@ name: Title
 key: title
 content-length: 11
 
-James Eaton
+Justin West
 ----field----
 field: {00E1D306-96BD-4B32-85B4-CD63C53CC6C1}
 name: Abstract
 key: abstract
-content-length: 136
+content-length: 292
 
-<p>James Eaton is a sales engineer that draws upon his upon his thirteen years of professional experience to drive customer success.</p>
+<p>Justin approaches his role as a Solutions Architect at Sitecore with the mindset that anything is possible on the .NET stack, that Sitecore is both the fastest and most flexible path for a developer to get there, and the most manageable option for content authors to take ownership of.</p>
 ----field----
 field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
 name: Body
 key: body
-content-length: 325
+content-length: 266
 
-<p>Through his role as a Regional Sales Engineer with Sitecore combined with past implementation based roles as a Regional Architect with Vignette/Open Text, an IT Specialist with IBM, and a Lead Developer with Resource Interactive, James has participated in virtually every aspect of the IT solution delivery life cycle.</p>
+<p>Justin comes to Sitecore with a career focused on Content Management. From his early days working on both front end implementation and within product development, he has been involved with the design and implementation of .NET CMS platforms for over 12 years.</p>
 ----field----
 field: {F9B6FFEF-1DC9-4C0E-A815-C62822E1CBDB}
 name: Quote
 key: quote
-content-length: 85
+content-length: 71
 
-"To win the game is good. To play the game is greater. To love the game is greatest."
+“You can’t build a reputation on what you’re going to do.” ~ Henry Ford
 ----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
 key: icon
-content-length: 179
+content-length: 137
 
-<image mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/t-z/user-4" mediaid="{8A48C884-E903-4C0E-BA4E-5282934404BE}" src="~/media/8a48c884e9034c0eba4e5282934404be.ashx" />
+<image mediaid="{8A48C884-E903-4C0E-BA4E-5282934404BE}" alt="Justin West - Solutions Architect" height="" width="" hspace="" vspace="" />
+----field----
+field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{C0096D65-7E21-475A-BFFD-98E71EC757DF}" />
 ----field----
 field: {D2E90283-29F2-4EAF-895E-E8DE8DAEEC69}
 name: Job Title
 key: job title
-content-length: 31
+content-length: 19
 
-Regional Sales Engineer, Canada
+Solutions Architect
 ----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
 content-length: 11
 
-James Eaton
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
-content-length: 11
-
-James Eaton
+Justin West
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20131112T112126
+20150130T213604Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -104,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-73354a85-6621-4881-a342-c666f559b3c8
+91bdb71c-dd1b-4cc7-a849-2c32fe33688d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131127T072813:635211340933815371
+20150716T025714Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

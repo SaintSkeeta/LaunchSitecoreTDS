@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: ef12ac92-368a-466c-a0e7-ccf443ef96d6
+revision: 92864d93-9fad-4f19-8dba-a37304be6be5
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -46,27 +46,20 @@ content-length: 131
 field: {5A5684BB-8B54-44F6-ABCC-2BADA05ADA5D}
 name: Body
 key: body
-content-length: 470
+content-length: 477
 
-Are we having 1 on 1 conversations with our visitors?  Have we defined the goals that are most important to our site's success and are we able to help our visitors achieve those goals?  What tests can we put in place so that we can best refine our messaging and calls to action?  Is our content creation and review strategy in line with the audiences we are trying to attract?  A great digital strategy is never complete...it is continually tested, analyzed and refined.
+<p>Are we having 1 on 1 conversations with our visitors?  Have we defined the goals that are most important to our site's success and are we able to help our visitors achieve those goals?  What tests can we put in place so that we can best refine our messaging and calls to action?  Is our content creation and review strategy in line with the audiences we are trying to attract?  A great digital strategy is never complete...it is continually tested, analyzed and refined.</p>
 ----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
 key: icon
-content-length: 177
+content-length: 184
 
-<image mediaid="{FCAAF89B-E9D0-4BFD-A5FD-498D41E9EF28}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/p-s/plus" src="~/media/fcaaf89be9d04bfda5fd498d41e9ef28.ashx" />
+<image mediaid="{FCAAF89B-E9D0-4BFD-A5FD-498D41E9EF28}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/p-s/plus" src="~/media/fcaaf89be9d04bfda5fd498d41e9ef28.ashx" ></image>
 ----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
-content-length: 25
-
-Optimizing the Experience
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
 content-length: 25
 
 Optimizing the Experience
@@ -90,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ef12ac92-368a-466c-a0e7-ccf443ef96d6
+92864d93-9fad-4f19-8dba-a37304be6be5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131224T085736:635234722561423405
+20150804T202127Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

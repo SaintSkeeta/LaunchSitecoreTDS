@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 729023df-236e-458d-b3ff-fee8f0d3eb2c
+revision: db266a57-af5e-472b-b0d9-db0e52c3f9ea
 
 ----field----
 field: {FBADE872-82BD-45AD-A2EC-DADC723249DA}
@@ -64,13 +64,6 @@ content-length: 234
 
 <p>All site assets (images, PDFs, etc.) are stored in the Media Library. Like other Sitecore items, media items can have permissions, versions, and are based on templates (which can be extended - for adding metadata, for example) </p>
 ----field----
-field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
-name: Image
-key: image
-content-length: 226
-
-<image mediaid="{F95A2C85-61FC-4DC2-80FD-7C20FAA6FAC7}" mediapath="/Launch Sitecore/Site Images/Glossary/Media Library" src="~/media/f95a2c8561fc4dc280fd7c20faa6fac7.ashx" alt="" height="633" width="620" hspace="" vspace="" />
-----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
 key: icon
@@ -78,16 +71,16 @@ content-length: 151
 
 <image mediaid="{9B84295D-99A3-44FB-BE99-6AA52C5E8295}" mediapath="/Images/Icons/photo_scenery" src="~/media/Images/Icons/photo_scenery.ashx" ></image>
 ----field----
+field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{F95A2C85-61FC-4DC2-80FD-7C20FAA6FAC7}" />
+----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
-content-length: 13
-
-Media Library
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
 content-length: 13
 
 Media Library
@@ -111,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-729023df-236e-458d-b3ff-fee8f0d3eb2c
+db266a57-af5e-472b-b0d9-db0e52c3f9ea
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131224T084933:635234717738634845
+20150708T214052Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

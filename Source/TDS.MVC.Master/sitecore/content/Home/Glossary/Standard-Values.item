@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: ebbb56ec-f45f-44d4-9eac-de6c3b189d0c
+revision: 9b92ad7b-52b5-4591-9d57-97c864cbafbe
 
 ----field----
 field: {FBADE872-82BD-45AD-A2EC-DADC723249DA}
@@ -71,13 +71,6 @@ content-length: 317
     <li>and more</li>
 </ul>
 ----field----
-field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
-name: Image
-key: image
-content-length: 176
-
-<image mediaid="{FCAF9154-7C0B-4640-8704-5899A25963B5}" mediapath="/Launch Sitecore/Site Images/Glossary/Standard Values" src="~/media/fcaf91547c0b464087045899a25963b5.ashx" />
-----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
 key: icon
@@ -85,16 +78,16 @@ content-length: 151
 
 <image mediaid="{A812EA8B-61D3-4FCC-975D-5EDAC66D7637}" mediapath="/Images/Icons/document_edit" src="~/media/Images/Icons/document_edit.ashx" ></image>
 ----field----
+field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{FCAF9154-7C0B-4640-8704-5899A25963B5}" />
+----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
-content-length: 15
-
-Standard Values
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
 content-length: 15
 
 Standard Values
@@ -118,14 +111,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ebbb56ec-f45f-44d4-9eac-de6c3b189d0c
+9b92ad7b-52b5-4591-9d57-97c864cbafbe
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131224T084938:635234717787504439
+20150708T214206Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
