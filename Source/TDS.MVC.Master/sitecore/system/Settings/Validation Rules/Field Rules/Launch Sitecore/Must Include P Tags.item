@@ -13,9 +13,9 @@ templatekey: Validation Rule
 field: {43A829D1-43DA-465C-B772-EBAA0D515E3E}
 name: Type
 key: type
-content-length: 88
+content-length: 71
 
-LaunchSitecore.Configuration.AuthoringExperience.General.MustIncludePTags,LaunchSitecore
+LaunchSitecore.Configuration.Validators.MustIncludePTags,LaunchSitecore
 ----field----
 field: {B3607D43-E523-494E-9AFF-102678D11670}
 name: Use Thread
@@ -162,7 +162,7 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: 35ba39ca-264c-4b99-b80e-0db74972eb0d
+revision: c7a0c776-d1a6-411a-a3e4-735549722ca2
 
 ----field----
 field: {DA43C533-CBAE-43D0-9019-65B1E346F984}
@@ -205,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-35ba39ca-264c-4b99-b80e-0db74972eb0d
+c7a0c776-d1a6-411a-a3e4-735549722ca2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131112T202032:635198844323986370
+20150715T031008Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

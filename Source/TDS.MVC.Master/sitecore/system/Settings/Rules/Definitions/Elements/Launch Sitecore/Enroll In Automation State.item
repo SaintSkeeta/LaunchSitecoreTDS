@@ -13,21 +13,21 @@ templatekey: Action
 field: {FF55D5A7-6D4B-4CD1-83E0-BAC268073F66}
 name: Type
 key: type
-content-length: 84
+content-length: 73
 
-LaunchSitecore.Configuration.SiteUI.Analytics.EnrollInAutomationState,LaunchSitecore
+LaunchSitecore.Configuration.Rules.EnrollInAutomationState,LaunchSitecore
 ----version----
 language: en
 version: 1
-revision: d97341e6-fbe1-4ebb-8992-0c4f72acd5e8
+revision: 7a67cb1c-421d-4e6e-aeb3-5c78a0c8b288
 
 ----field----
 field: {EEB36A3B-40D9-4AF5-862A-DE257B84DCA3}
 name: Text
 key: text
-content-length: 147
+content-length: 154
 
-Automatically enroll the authenticated user in the [stateid,tree,root=/sitecore/system/Marketing Center/Engagement Plans,specific] Automation State
+Automatically enroll the authenticated user in the [stateid,tree,root=/sitecore/system/Marketing Control Panel/Engagement Plans,specific] Automation State
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d97341e6-fbe1-4ebb-8992-0c4f72acd5e8
+7a67cb1c-421d-4e6e-aeb3-5c78a0c8b288
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140819T182423:635440694637545338
+20150716T045052Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

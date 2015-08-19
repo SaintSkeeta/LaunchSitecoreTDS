@@ -88,15 +88,11 @@ Your site should now be completely setup.
 ### Code differences ###
 Some custom code has been added to flush the contact data to the xDB. In each of the files below, we explicitly call Session.Abandon(), which will flush the data for us.
 
- - TertiaryNav.ascx.cs 
- - AccountController.cs
+ - TertiaryNav.ascx.cs
 
 layouts/LaunchSitecore/Main.aspx.designer.cs in the package has a removed reference to the sc:VisitorIdentification control...yet the aspx still has it. In this solution, we keep it there to comply with WebForms standards.
 
 ### Item differences ###
-
- - master: /sitecore/system/Settings/Rules/ConditionalRenderings/Tags/Default
-  - the TDS project has added tag on this item for 'Engagement Automation'. This tag existed in the 7.2 package but was removed from 7.5 package.
 
  - master: /sitecore/templates/Launch Sitecore/Article Group
   - in package it inherits from GeneralFields, but also SiteSection, which inherits from GeneralFields... so they creates a duplicate dependency and breaks code generation.

@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {536C475E-0B93-4ED3-A8FC-149DB0D809A0}
+id: {34A00D08-4CE1-46D9-9434-06D8F064AEB5}
 database: master
 path: /sitecore/system/Workflows/Regular Workflow/Awaiting Approval/Approve without Test/Validation Action
-parent: {2FF60E86-DD86-40E9-AA06-EA531B73FAEE}
+parent: {851ED52D-19C6-4BD3-91AD-595A3794A8F2}
 name: Validation Action
 master: {00000000-0000-0000-0000-000000000000}
 template: {419F8FFB-2713-4CEC-86A7-7585A727FE25}
@@ -45,9 +45,63 @@ content-length: 50
 
 You cannot approve an item with validation errors.
 ----version----
+language: da
+version: 1
+revision: 55a05ab8-d3f6-406b-998b-9a08454213e7
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 19
+
+Valideringshandling
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 35
+
+20150525T133021:635681574219317068Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+55a05ab8-d3f6-406b-998b-9a08454213e7
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150621T114004Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
 language: de-DE
 version: 1
-revision: ef7c747e-e193-4678-959f-df657fa48591
+revision: 1eb38990-4d5a-4a06-a454-c97d7874fa97
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -67,9 +121,9 @@ sitecore\admin
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 34
+content-length: 35
 
-20120706T122244:634771741645802157
+20150525T134833:635681585131445791Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -83,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ef7c747e-e193-4678-959f-df657fa48591
+1eb38990-4d5a-4a06-a454-c97d7874fa97
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20120706T122244:634771741645802157
+20150621T114318Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -103,6 +157,13 @@ language: en
 version: 1
 revision: e900ca14-2235-44ea-b465-1b95dcaf6343
 
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -141,7 +202,7 @@ sitecore\admin
 ----version----
 language: ja-JP
 version: 1
-revision: 4957b9a7-818a-4b05-a8e3-9b9b19a3ccfd
+revision: 93761c44-2f76-4d88-9266-381352c6dddd
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -161,9 +222,9 @@ sitecore\admin
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 34
+content-length: 35
 
-20120706T123607:634771749670656509
+20150525T133952:635681579929532775Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -177,14 +238,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4957b9a7-818a-4b05-a8e3-9b9b19a3ccfd
+93761c44-2f76-4d88-9266-381352c6dddd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20120706T123607:634771749670656509
+20150621T114638Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

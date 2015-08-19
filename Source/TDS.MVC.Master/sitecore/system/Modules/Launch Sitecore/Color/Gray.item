@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {0122A0D6-10C6-42E1-AA9D-D79FB619B9C1}
+id: {37CCB1DC-8004-4FCF-BD9E-B4EB322A4345}
 database: master
-path: /sitecore/system/Modules/Launch Sitecore/Color/Pink
+path: /sitecore/system/Modules/Launch Sitecore/Color/Gray
 parent: {C2AA6F49-943C-4ABD-9F2A-730BCCDE2980}
-name: Pink
+name: Gray
 master: {00000000-0000-0000-0000-000000000000}
 template: {20ADA2D2-CABD-41B7-93CA-73F17423E4C7}
 templatekey: Color
@@ -13,13 +13,20 @@ templatekey: Color
 field: {3F2DAFD8-E704-422E-86F6-185DC7B85A98}
 name: Color Value
 key: color value
-content-length: 7
+content-length: 8
 
-#e93760
+#9FA4A6 
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+600
 ----version----
 language: en
 version: 1
-revision: c8a22eb2-802c-4ad1-8735-9b436e777d2b
+revision: 33ef5de6-8d72-4f0a-a3b7-1b17d8671a9d
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -32,9 +39,9 @@ sitecore\admin
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20130627T102147
+20150708T174721Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c8a22eb2-802c-4ad1-8735-9b436e777d2b
+33ef5de6-8d72-4f0a-a3b7-1b17d8671a9d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20130627T112017:635079288177208755
+20150708T174731Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
