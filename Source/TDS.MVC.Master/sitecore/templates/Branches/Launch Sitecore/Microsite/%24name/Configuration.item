@@ -7,7 +7,22 @@ parent: {39FFFE3E-5581-4CE0-BA9F-E155142DFD72}
 name: Configuration
 master: {00000000-0000-0000-0000-000000000000}
 template: {045377D9-C7B7-4C51-A1F8-722502885239}
-templatekey: Configuration Folder
+templatekey: Configuration
+
+----field----
+field: {962A3491-463F-4E23-9A43-84A293473724}
+name: Visible Profiles
+key: visible profiles
+content-length: 77
+
+{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}|{478859DC-EBE0-40A7-BD24-75D588FD3E09}
+----field----
+field: {E31D4BCB-AC93-4376-AD09-1BEA045C85A8}
+name: Title Comments
+key: title comments
+content-length: 413
+
+You can use whatever string you want. The page title control will replace {0} with the name of the current item and the {1} with the name of the site section. If you would like to store page titles as a field, just edit the meta\title control to pull that field. The first string is used for the home page and the site sections pages. The second string is for lower pages such as articles and team member pages.
 
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
@@ -19,8 +34,50 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 1c0f6009-ae04-46fb-9a2f-f8aba6da8294
+revision: 13bbcd30-fa71-4f11-929b-c4ecb7917f0f
 
+----field----
+field: {FE0FA952-C3ED-4966-9531-12F87CD023B6}
+name: Site Logo
+key: site logo
+content-length: 58
+
+<image mediaid="{A870FCC2-FD60-40CA-9EBB-A033CB5C5DA2}" />
+----field----
+field: {D7F0E179-3BC4-4EB3-B74E-8D4B5ADBDECA}
+name: Layout Style
+key: layout style
+content-length: 10
+
+Full Width
+----field----
+field: {D5230C73-CECF-484A-8C04-CEAD0E9FB005}
+name: Site Color
+key: site color
+content-length: 6
+
+Orange
+----field----
+field: {6A887010-7322-44B4-B05C-31697928B303}
+name: Page Title for Home and Site Sections
+key: page title for home and site sections
+content-length: 21
+
+{0} | Launch Sitecore
+----field----
+field: {436B14EE-7226-4831-AE7B-06FF5C8FF0D2}
+name: Page Title for Lower Pages
+key: page title for lower pages
+content-length: 27
+
+{0} - {1} | Launch Sitecore
+----field----
+field: {B7066F9F-DA7E-4EC4-95F4-D2B1E87C0CAA}
+name: Copyright
+key: copyright
+content-length: 30
+
+Copyright © 1999-2013 Sitecore
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -41,14 +98,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1c0f6009-ae04-46fb-9a2f-f8aba6da8294
+13bbcd30-fa71-4f11-929b-c4ecb7917f0f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20131115T222500:635201511007025748
+20140917T232355:635465930359428543
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
