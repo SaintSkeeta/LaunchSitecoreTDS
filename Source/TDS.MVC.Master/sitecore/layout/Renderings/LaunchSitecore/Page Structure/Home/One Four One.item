@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {0472C9AA-0C01-4BCA-960A-EB9F4C3A904F}
+id: {53058CCE-54D1-426C-A6F3-E64B54F24EBA}
 database: master
-path: /sitecore/layout/Renderings/LaunchSitecore/Single Item/Article Title and Body
-parent: {5C69B81A-4301-483D-B0A2-EC19A5B67471}
-name: Article Title and Body
+path: /sitecore/layout/Renderings/LaunchSitecore/Page Structure/Home/One Four One
+parent: {54F8C2C3-FDED-46BD-A6C1-3C09BCD86419}
+name: One Four One
 master: {00000000-0000-0000-0000-000000000000}
 template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
 templatekey: View rendering
@@ -13,34 +13,34 @@ templatekey: View rendering
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
 name: Path
 key: path
-content-length: 44
+content-length: 46
 
-/Views/SingleItem/ArticleTitleAndBody.cshtml
+/Views/Page Structure/Home/One Four One.cshtml
 ----field----
 field: {E441ABE7-2CA3-4640-AE26-3789967925D7}
 name: Compatible Renderings
 key: compatible renderings
-content-length: 38
+content-length: 155
 
-{8E185D7A-2D66-4D71-8B0C-59E2A4633B48}
+{3A87ABAE-56F8-4323-81E4-B69D894160B4}|{12BAB317-E759-442F-805C-7126EF07FD8F}|{27BEF7F8-9A59-4584-9CBF-A2E899F6CA14}|{B638D292-8A0F-48BD-AFD5-1C1D436B9719}
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 39
+content-length: 36
 
-applications/32x32/text_rich_marked.png
+Software/32x32/layout_horizontal.png
 ----field----
 field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
 name: __Thumbnail
 key: __thumbnail
 content-length: 58
 
-<image mediaid="{E3270D65-7A8F-44C4-B171-EFA5C1C97F1A}" />
+<image mediaid="{42FCBF65-920E-49CF-A3C8-59C9B3631BC7}" />
 ----version----
 language: en
 version: 1
-revision: b75bb5ba-773c-409e-9320-637ef6079156
+revision: adbf540f-d407-4dd0-a9a3-d34448373bf7
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,21 +48,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20131204T190245
+20131204T192427
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-b75bb5ba-773c-409e-9320-637ef6079156
+adbf540f-d407-4dd0-a9a3-d34448373bf7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131220T161016:635231526165085441
+20150715T005215Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

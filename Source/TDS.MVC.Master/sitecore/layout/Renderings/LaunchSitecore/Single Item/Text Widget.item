@@ -13,9 +13,9 @@ templatekey: Controller rendering
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
 name: Controller
 key: controller
-content-length: 63
+content-length: 10
 
-LaunchSitecore.Controllers.SingleItemController, LaunchSitecore
+SingleItem
 ----field----
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
@@ -23,6 +23,13 @@ key: controller action
 content-length: 10
 
 TextWidget
+----field----
+field: {94069F66-609C-48B0-8281-521C30FB269D}
+name: Open Properties after Add
+key: open properties after add
+content-length: 1
+
+-
 ----field----
 field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
 name: Datasource Location
@@ -61,7 +68,7 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: 21269e04-08b5-4570-905c-53d02954a7d4
+revision: 9bff0003-5a45-4f40-8bac-d0cdae4ddfd8
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -76,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-21269e04-08b5-4570-905c-53d02954a7d4
+9bff0003-5a45-4f40-8bac-d0cdae4ddfd8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140227T191626:635291253860167966
+20140922T131111:635469882716407689
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

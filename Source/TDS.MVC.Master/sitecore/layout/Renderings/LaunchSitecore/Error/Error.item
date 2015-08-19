@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {0472C9AA-0C01-4BCA-960A-EB9F4C3A904F}
+id: {8C8F320E-ABCA-480A-B506-E2326ADF13AC}
 database: master
-path: /sitecore/layout/Renderings/LaunchSitecore/Single Item/Article Title and Body
-parent: {5C69B81A-4301-483D-B0A2-EC19A5B67471}
-name: Article Title and Body
+path: /sitecore/layout/Renderings/LaunchSitecore/Error/Error
+parent: {1AD6E13E-981D-4CB0-B6B9-2AA4842369BF}
+name: Error
 master: {00000000-0000-0000-0000-000000000000}
 template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
 templatekey: View rendering
@@ -13,34 +13,27 @@ templatekey: View rendering
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
 name: Path
 key: path
-content-length: 44
+content-length: 33
 
-/Views/SingleItem/ArticleTitleAndBody.cshtml
+/Views/Shared/ErrorDetails.cshtml
 ----field----
-field: {E441ABE7-2CA3-4640-AE26-3789967925D7}
-name: Compatible Renderings
-key: compatible renderings
-content-length: 38
+field: {DDAB263E-B42E-419A-AA6F-081B7393CA38}
+name: Model
+key: model
+content-length: 29
 
-{8E185D7A-2D66-4D71-8B0C-59E2A4633B48}
+/sitecore/layout/Models/Error
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 39
+content-length: 32
 
-applications/32x32/text_rich_marked.png
-----field----
-field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
-name: __Thumbnail
-key: __thumbnail
-content-length: 58
-
-<image mediaid="{E3270D65-7A8F-44C4-B171-EFA5C1C97F1A}" />
+applications/32x32/forbidden.png
 ----version----
 language: en
 version: 1
-revision: b75bb5ba-773c-409e-9320-637ef6079156
+revision: 9d090e61-ab83-43f4-af21-88a3d854b9a8
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,21 +41,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20131204T190245
+20141201T202236
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-b75bb5ba-773c-409e-9320-637ef6079156
+9d090e61-ab83-43f4-af21-88a3d854b9a8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20131220T161016:635231526165085441
+20141201T212225:635530657459870288
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

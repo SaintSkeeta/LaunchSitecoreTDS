@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {0472C9AA-0C01-4BCA-960A-EB9F4C3A904F}
+id: {89DD3F62-4C38-40B7-B06B-6BA4BE28E7EE}
 database: master
-path: /sitecore/layout/Renderings/LaunchSitecore/Single Item/Article Title and Body
-parent: {5C69B81A-4301-483D-B0A2-EC19A5B67471}
-name: Article Title and Body
+path: /sitecore/layout/Renderings/LaunchSitecore/Page Structure/Content/No Sidebars
+parent: {99C616CE-B5FD-4ABB-B8F7-F16390FBA8F1}
+name: No Sidebars
 master: {00000000-0000-0000-0000-000000000000}
 template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
 templatekey: View rendering
@@ -13,34 +13,34 @@ templatekey: View rendering
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
 name: Path
 key: path
-content-length: 44
+content-length: 48
 
-/Views/SingleItem/ArticleTitleAndBody.cshtml
+/Views/Page Structure/Content/No Sidebars.cshtml
 ----field----
 field: {E441ABE7-2CA3-4640-AE26-3789967925D7}
 name: Compatible Renderings
 key: compatible renderings
-content-length: 38
+content-length: 116
 
-{8E185D7A-2D66-4D71-8B0C-59E2A4633B48}
+{DF3C8739-E710-4C73-BC23-F282E8068B5D}|{A11E3D01-0CF1-4214-8126-0C3750349EF5}|{9B933943-14AB-42D5-8F00-502FB5484F92}
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 39
+content-length: 34
 
-applications/32x32/text_rich_marked.png
+Software/32x32/layout_vertical.png
 ----field----
 field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
 name: __Thumbnail
 key: __thumbnail
 content-length: 58
 
-<image mediaid="{E3270D65-7A8F-44C4-B171-EFA5C1C97F1A}" />
+<image mediaid="{1F89080B-BE76-4D25-970B-7E58FE0FB6C7}" />
 ----version----
 language: en
 version: 1
-revision: b75bb5ba-773c-409e-9320-637ef6079156
+revision: 395224e0-61e8-4e3d-8751-4d2d153774c1
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,21 +48,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20131204T190245
+20131204T184202
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-b75bb5ba-773c-409e-9320-637ef6079156
+395224e0-61e8-4e3d-8751-4d2d153774c1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131220T161016:635231526165085441
+20150715T005404Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

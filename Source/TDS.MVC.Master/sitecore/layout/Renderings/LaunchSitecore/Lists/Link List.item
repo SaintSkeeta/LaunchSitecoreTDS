@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {5DC72CF0-EDFF-4524-B2DB-81415CFF3434}
+id: {0C4507A9-3016-46D2-92FE-846C15C95B81}
 database: master
-path: /sitecore/layout/Renderings/LaunchSitecore/Analytics/Visit Details
-parent: {679FFA3D-03A3-45BF-9565-70A59C777DB7}
-name: Visit Details
+path: /sitecore/layout/Renderings/LaunchSitecore/Lists/Link List
+parent: {6953003C-3417-4AE8-BBB9-D80D29815711}
+name: Link List
 master: {00000000-0000-0000-0000-000000000000}
 template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
 templatekey: Controller rendering
@@ -15,14 +15,14 @@ name: Controller
 key: controller
 content-length: 5
 
-Visit
+Lists
 ----field----
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
 key: controller action
-content-length: 12
+content-length: 8
 
-VisitDetails
+LinkList
 ----field----
 field: {94069F66-609C-48B0-8281-521C30FB269D}
 name: Open Properties after Add
@@ -48,20 +48,20 @@ content-length: 0
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 31
+content-length: 32
 
-business/32x32/column-chart.png
+WordProcessing/32x32/bullets.png
 ----field----
 field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
 name: __Thumbnail
 key: __thumbnail
-content-length: 0
+content-length: 58
 
-
+<image mediaid="{99798820-B45E-4246-A716-102053D7DE33}" />
 ----version----
 language: en
 version: 1
-revision: e15b9201-9440-455a-a383-b435f4ea902e
+revision: eaf09610-47cb-4700-860c-ac87de916ec4
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -76,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e15b9201-9440-455a-a383-b435f4ea902e
+eaf09610-47cb-4700-860c-ac87de916ec4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150715T214842Z
+20150715T000947Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

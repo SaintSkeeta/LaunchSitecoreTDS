@@ -24,13 +24,6 @@ content-length: 38
 
 {0472C9AA-0C01-4BCA-960A-EB9F4C3A904F}
 ----field----
-field: {A2F5D9DF-8CBA-4A1D-99EB-51ACB94CB057}
-name: Page Editor Buttons
-key: page editor buttons
-content-length: 38
-
-{008A3053-35B6-4C20-A978-A724CBEB750D}
-----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
@@ -47,7 +40,7 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: 2de063ab-75e7-42f3-aa10-2c8b623cca91
+revision: 55ec0e44-cc90-406f-9eec-a38000110e88
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -62,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2de063ab-75e7-42f3-aa10-2c8b623cca91
+55ec0e44-cc90-406f-9eec-a38000110e88
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 34
 
-20141219T232429:635546282692062815Z
+20131220T161034:635231526345752610
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
