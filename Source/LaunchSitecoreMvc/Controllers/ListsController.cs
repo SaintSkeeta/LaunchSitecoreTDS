@@ -1,5 +1,4 @@
 ﻿using LaunchSitecore.Configuration;
-using LaunchSitecore.Configuration.SiteUI.Base;
 using LaunchSitecore.Configuration.SiteUI;
 using LaunchSitecore.Models;
 using Sitecore.Data.Items;
@@ -25,22 +24,17 @@ namespace LaunchSitecore.Controllers
       string query = String.Format("+custom:contributors|{0};+template:d9019e30f95446ccaa703e928c40b5d0;+location:63ABEE8A4E3841599193D5F0A33AD666;", Sitecore.Context.Item.ID.ToString());
       List<SimpleItem> items = new List<SimpleItem>();
       foreach (Item i in GetDataSourceItemsFromQuery(query)) items.Add(new SimpleItem(i));
-      return !items.IsNullOrEmpty() ? View(items) : ShowListIsEmptyPageEditorAlert();
+      SimpleItemList results = new SimpleItemList(SiteConfiguration.GetDictionaryText("Articles"), items);
+      return !items.IsNullOrEmpty() ? View("LinkList", results) : ShowListIsEmptyPageEditorAlert();
     }
 
     public ActionResult Carousel()
     {
-      /* Use the base class to get the results of the query */
-      IEnumerable<CarouselItem> items = DataSourceItems.Select(x => new CarouselItem(x)).Where(x => SiteConfiguration.DoesItemExistInCurrentLanguage(x.Item));
-      return !items.IsNullOrEmpty() ? View(items) : ShowListIsEmptyPageEditorAlert();
-    }
+        /* Use the base class to get the results of the query */
+        if (IsDataSourceItemNull) return ShowListIsEmptyPageEditorAlert();
 
-    public ActionResult DatasourceList()
-    {
-      /* make sure the datasource or current has children in the current language and render accordingly */
-      IEnumerable<SimpleItem> items = new SimpleItem(DataSourceItemOrCurrentItem).ChildrenInCurrentLanguage;
-      SimpleItemList results = new SimpleItemList(DataSourceItem["Menu Title"], items);
-      return !items.IsNullOrEmpty() ? View(results) : ShowListIsEmptyPageEditorAlert();
+        IEnumerable<CarouselItem> items = new CarouselItem(DataSourceItem).ChildrenInCurrentLanguage;
+        return !items.IsNullOrEmpty() ? View(items) : ShowListIsEmptyPageEditorAlert();
     }
 
     public ActionResult IconAndTitleList()
@@ -50,20 +44,28 @@ namespace LaunchSitecore.Controllers
       return !items.IsNullOrEmpty() ? View(items) : ShowListIsEmptyPageEditorAlert();      
     }
 
+    public ActionResult LinkList()
+    {
+        /* make sure the datasource or current has children in the current language and render accordingly */
+        IEnumerable<SimpleItem> items = new SimpleItem(DataSourceItemOrCurrentItem).ChildrenInCurrentLanguage;
+        SimpleItemList results = new SimpleItemList(DataSourceItem["Menu Title"], items);
+        return !items.IsNullOrEmpty() ? View(results) : ShowListIsEmptyPageEditorAlert();
+    }
+
     public ActionResult IconAndTitleListForQuery()
     {
       /* Run the query and show the same view as IconAndTitleList */
       IEnumerable<SimpleItem> items = DataSourceItems.Select(x => new SimpleItem(x)).Where(x => SiteConfiguration.DoesItemExistInCurrentLanguage(x.Item));
       return !items.IsNullOrEmpty() ? View("IconAndTitleList", items) : ShowListIsEmptyPageEditorAlert();
     }
-
+      
     public ActionResult QueriedList()
     {
       if (IsDataSourceItemNull) return null;
 
       IEnumerable<SimpleItem> items = DataSourceItems.Select(x => new SimpleItem(x)).Where(x => SiteConfiguration.DoesItemExistInCurrentLanguage(x.Item));
       SimpleItemList results = new SimpleItemList(DataSourceItem["Title"], items);
-      return !items.IsNullOrEmpty() ? View(results) : ShowListIsEmptyPageEditorAlert();
+      return !items.IsNullOrEmpty() ? View("LinkList", results) : ShowListIsEmptyPageEditorAlert();
     }
 
     public ActionResult RelatedArticles()
@@ -82,8 +84,8 @@ namespace LaunchSitecore.Controllers
         if (SiteConfiguration.DoesItemExistInCurrentLanguage(i)) items.Add(new SimpleItem(i));
       }
 
-      // items.Sort(); // TODO: need to implement Comparer
-      return !items.IsNullOrEmpty() ? View(items) : ShowListIsEmptyPageEditorAlert();
+      SimpleItemList results = new SimpleItemList(SiteConfiguration.GetDictionaryText("Related Articles"), items);
+      return !items.IsNullOrEmpty() ? View("LinkList", results) : ShowListIsEmptyPageEditorAlert();
     }
 
     public ActionResult Tags()

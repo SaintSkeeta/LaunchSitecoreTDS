@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Transactions;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
+using LaunchSitecore.Configuration.SiteUI;
 using LaunchSitecore.Models;
 using LaunchSitecore.Configuration.SiteUI.Analytics;
 using Sitecore.Analytics;
-using LaunchSitecore.Configuration.SiteUI.Base;
 
 namespace LaunchSitecore.Controllers
 {
@@ -53,12 +52,7 @@ namespace LaunchSitecore.Controllers
     [HttpPost]
     public ActionResult LogOff()
     {
-      //throw new Exception("Hello there");
       Sitecore.Security.Authentication.AuthenticationManager.Logout();
-	  
-	  // calling Session Abandon flushes the session data out to the xDB
-      Session.Abandon();
-	  
       Sitecore.Web.WebUtil.Redirect("/");
       return null;
 
