@@ -53,7 +53,8 @@ namespace LaunchSitecore.Controllers
     public ActionResult LogOff()
     {
       Sitecore.Security.Authentication.AuthenticationManager.Logout();
-      Sitecore.Web.WebUtil.Redirect("/");
+
+      Session.Abandon();
       return null;
 
       // By default in Launch Sitecore we return the user the home page on logout.  It is important to understand how the Session Provider works in 7.5+ though.
