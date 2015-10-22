@@ -4,7 +4,7 @@
  <ul>
   @foreach (var item in Model)
   {
-   <li><p><i class="icon-tags"></i><a href="/search?tag=@item.ID.NormailzeId()">@item.DisplayName</a></p></li> 
+   <li><p><a href="/search?tag=@item.ID.NormailzeId()">@item.DisplayName</a></p></li> 
   }
  </ul>
 </div>

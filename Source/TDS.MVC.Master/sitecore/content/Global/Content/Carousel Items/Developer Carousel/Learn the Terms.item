@@ -1,0 +1,182 @@
+----item----
+version: 1
+id: {1246DCB8-1464-4213-B2CD-54B9020CE695}
+database: master
+path: /sitecore/content/Global/Content/Carousel Items/Developer Carousel/Learn the Terms
+parent: {0720FC50-5617-4A67-9794-9B56BA3038BD}
+name: Learn the Terms
+master: {00000000-0000-0000-0000-000000000000}
+template: {5365F694-C2AB-41AF-8A79-28FC6A35E384}
+templatekey: Carousel Item
+
+----field----
+field: {336E27E0-7F9C-437E-B179-653F427520CC}
+name: Link Item
+key: link item
+content-length: 38
+
+{2D75C97D-5981-4482-8631-208B2DEB1F54}
+----field----
+field: {DD876753-9D4B-4B70-8197-41A0EB302087}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{554F82C3-5C10-4C52-B6CF-99D44D05D661}" />
+----field----
+field: {B1F1502E-0B97-4152-92ED-6828FA25B947}
+name: Use Dark Text
+key: use dark text
+content-length: 0
+
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+250
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 7e0693e6-8717-4843-874a-c916e9f96aac
+
+----field----
+field: {1FD34C98-05B1-4206-A48E-14D1E0C42F6F}
+name: Title
+key: title
+content-length: 15
+
+Learn the Terms
+----field----
+field: {9B14A853-F008-4145-878A-DD5A2ED7EC36}
+name: Caption
+key: caption
+content-length: 57
+
+<p>Learn the Sitecore terminology using our glossary.</p>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150219T202413Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7e0693e6-8717-4843-874a-c916e9f96aac
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150715T190036Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
+----version----
+language: ja
+version: 1
+revision: 9d68cc83-a294-4d6c-bb85-029b7d2f4845
+
+----field----
+field: {1FD34C98-05B1-4206-A48E-14D1E0C42F6F}
+name: Title
+key: title
+content-length: 5
+
+用語を学ぶ
+----field----
+field: {9B14A853-F008-4145-878A-DD5A2ED7EC36}
+name: Caption
+key: caption
+content-length: 41
+
+<p>我々 の用語集を使用して Sitecore 用語について説明します。</p>
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150219T202413Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9d68cc83-a294-4d6c-bb85-029b7d2f4845
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150715T055130Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

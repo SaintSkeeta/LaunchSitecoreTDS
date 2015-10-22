@@ -22,7 +22,7 @@ name: Source
 key: source
 content-length: 61
 
-/sitecore/system/Settings/Html Editor Profiles/Rich Text Body
+/sitecore/system/Settings/Html Editor Profiles/Rich Text Full
 ----field----
 field: {8730C4C0-F843-425B-844B-F016CA132255}
 name: Page Editor Buttons
@@ -68,7 +68,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 44ccef54-fddd-497b-a894-d2d13b029f7b
+revision: 43e65278-345a-44a2-a8fd-84267af6e8f9
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -97,14 +97,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-44ccef54-fddd-497b-a894-d2d13b029f7b
+43e65278-345a-44a2-a8fd-84267af6e8f9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131112T202620:635198847802881722
+20150714T231125Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

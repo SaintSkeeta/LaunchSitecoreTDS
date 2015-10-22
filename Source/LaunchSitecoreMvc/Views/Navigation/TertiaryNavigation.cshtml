@@ -1,0 +1,20 @@
+﻿@using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+{
+ @Html.AntiForgeryToken()   
+}
+<ul class="nav nav-pills pull-right">
+    @if (!LaunchSitecore.Configuration.SiteConfiguration.IsMicrosite())
+    {
+        if (Sitecore.Context.IsLoggedIn && Sitecore.Context.Domain.Name.ToLower() == "extranet")
+        {
+            <li><a href="javascript:document.getElementById('logoutForm').submit()">@UIHelpers.GetDictionaryText("logout")</a></li>
+            @Html.Sitecore().Controller("Navigation", "FavoritesNavigation")
+        }
+        else
+        {
+        <li><a href="/login">@UIHelpers.GetDictionaryText("Login")</a></li>
+        <li><a href="/register">@UIHelpers.GetDictionaryText("Register")</a></li>
+        }
+    }
+    @Html.Sitecore().Controller("Navigation", "SitesNavigation")
+</ul>

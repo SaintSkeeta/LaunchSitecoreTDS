@@ -10,16 +10,37 @@ template: {5365F694-C2AB-41AF-8A79-28FC6A35E384}
 templatekey: Carousel Item
 
 ----field----
+field: {DD876753-9D4B-4B70-8197-41A0EB302087}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{950CAEC9-DC22-402A-B975-A835B1271486}" />
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 26
+
+multimedia/32x32/image.png
+----field----
 field: {C9283D9E-7C29-4419-9C28-5A5C8FF53E84}
 name: __Bucketable
 key: __bucketable
 content-length: 1
 
 1
+----field----
+field: {CA9B9F52-4FB0-4F87-A79F-24DEA62CDA65}
+name: __Default workflow
+key: __default workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
 ----version----
 language: en
 version: 1
-revision: df05fbdc-ec78-4b9c-afaa-7d820c1be8fa
+revision: 3da9324d-89f5-48e6-9a63-9c66df1adfdb
 
 ----field----
 field: {1FD34C98-05B1-4206-A48E-14D1E0C42F6F}
@@ -28,6 +49,20 @@ key: title
 content-length: 5
 
 $name
+----field----
+field: {9B14A853-F008-4145-878A-DD5A2ED7EC36}
+name: Caption
+key: caption
+content-length: 33
+
+<p>Enter your caption here...</p>
+----field----
+field: {48152DDC-82D7-4E74-9B1D-EC816D278AB4}
+name: Link Text
+key: link text
+content-length: 10
+
+Learn More
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -39,9 +74,9 @@ sitecore\admin
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20130830T125152
+20130830T175152Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-df05fbdc-ec78-4b9c-afaa-7d820c1be8fa
+3da9324d-89f5-48e6-9a63-9c66df1adfdb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20130903T133208:635138119284543088
+20150715T170619Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

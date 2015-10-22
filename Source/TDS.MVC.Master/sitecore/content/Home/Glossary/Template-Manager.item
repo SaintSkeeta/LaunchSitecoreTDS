@@ -44,7 +44,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 6520b070-ad46-4e19-b79f-dbdfc43276ef
+revision: edee11c9-ee3c-4648-a655-0fe033976dbb
 
 ----field----
 field: {FBADE872-82BD-45AD-A2EC-DADC723249DA}
@@ -68,13 +68,6 @@ content-length: 160
 
 <p>The template manager is used to create data templates as well as configure standard values. You also configure data template inheritance using this tool.</p>
 ----field----
-field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
-name: Image
-key: image
-content-length: 177
-
-<image mediaid="{120FD25C-FB7F-4449-8A80-4787C1C39BB5}" mediapath="/Launch Sitecore/Site Images/Glossary/Template Manager" src="~/media/120fd25cfb7f44498a804787c1c39bb5.ashx" />
-----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
 key: icon
@@ -82,16 +75,16 @@ content-length: 143
 
 <image mediaid="{D42DBCFF-5533-4529-B592-5A5183318847}" mediapath="/Images/Icons/form_blue" src="~/media/Images/Icons/form_blue.ashx" ></image>
 ----field----
+field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{120FD25C-FB7F-4449-8A80-4787C1C39BB5}" />
+----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
-content-length: 16
-
-Template Manager
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
 content-length: 16
 
 Template Manager
@@ -115,14 +108,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6520b070-ad46-4e19-b79f-dbdfc43276ef
+edee11c9-ee3c-4648-a655-0fe033976dbb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131224T084940:635234717804771741
+20150708T214221Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

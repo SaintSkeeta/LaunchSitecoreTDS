@@ -44,7 +44,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: c4784622-8534-4067-9d63-a41588eb37ae
+revision: 94ca6fe5-e9fe-4074-beab-946abae8fe41
 
 ----field----
 field: {FBADE872-82BD-45AD-A2EC-DADC723249DA}
@@ -68,13 +68,6 @@ content-length: 306
 
 <p>The Page Editor is where most non-technical users edit content and apply presentation (in addition to, or instead of defaults). It consists of an edit and various preview modes, and within editing consists of editing (inline text/image changes) and design (add/move/change components) functionality.</p>
 ----field----
-field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
-name: Image
-key: image
-content-length: 192
-
-<image mediapath="/Launch Sitecore/Site Images/Glossary/Page Editor" mediaid="{0F48DCFE-F867-4958-A5D4-3BC27E0D8E57}" src="~/media/0f48dcfef8674958a5d43bc27e0d8e57.ashx?20131121T1204174723" />
-----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
 key: icon
@@ -82,16 +75,16 @@ content-length: 151
 
 <image mediaid="{A812EA8B-61D3-4FCC-975D-5EDAC66D7637}" mediapath="/Images/Icons/document_edit" src="~/media/Images/Icons/document_edit.ashx" ></image>
 ----field----
+field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{0F48DCFE-F867-4958-A5D4-3BC27E0D8E57}" />
+----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
-content-length: 11
-
-Page Editor
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
 content-length: 11
 
 Page Editor
@@ -115,14 +108,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c4784622-8534-4067-9d63-a41588eb37ae
+94ca6fe5-e9fe-4074-beab-946abae8fe41
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131224T084934:635234717745317155
+20150708T214103Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -7,6 +7,7 @@
 - Use Tag 2.1.0.0 with Sitecore 7.2 Update 2 (rev. 140526) - Launch Sitecore - both WebForms and MVC versions
 - Use Tag 2.2.0.0 with Sitecore 7.5 Initial Release (rev. 141003) - Launch Sitecore - both WebForms and MVC versions.
 - Use Tag 2.3.0.0 with Sitecore 8.0 Update 4 (rev. 150621) - Launch Sitecore - both WebForms and MVC versions.
+- Use Tag 3.0.0.0 with Sitecore 8.0 Update 5 (rev. 150812) - Launch Sitecore - MVC Bootstrap3 version.
 
 Launch Sitecore is a site found at [www.launchsitecore.net](www.launchsitecore.net). It is a fantastic, shared source site that shows the power of Sitecore through Page Editor and DMS. The site comes complete with content, components, engagement plans and much more. A Sitecore package for the complete site can be downloaded from the above link after registering.
 
@@ -37,11 +38,7 @@ This repository is that package converted to a Visual Studio solution with items
 - Follow the steps in the {GitRootDirectory}/Installers/Sitecore/README.txt file, which tells you which Sitecore DLLs need to be referenced in code.
 
 #### Open the solution you wish to use ####
-Open `LaunchSitecore.sln` for the WebForms version of the site.<br />
-Open `LaunchSitecoreMvc.sln` for the MVC version of the site.
-
-The two solutions share some projects, but can be built and deployed irrespective of each other.
-*Note:* You should only use one solution per Sitecore Instance. You cannot deploy both solutions to the same Sitecore instance.
+Open `LaunchSitecoreMvc.sln` for the MVC source code.
 
 #### Set your TDS Deployment Settings ####
 - In the root directory of the solution, duplicate the `TdsGlobal.config` file, naming it `TdsGlobal.config.user`.
@@ -86,40 +83,14 @@ Your site should now be completely setup.
 
 ## Differences with LaunchSitecore.net package ##
 ### Code differences ###
-Some custom code has been added to flush the contact data to the xDB. In each of the files below, we explicitly call Session.Abandon(), which will flush the data for us.
+Some custom code has been added to flush the contact data to the xDB. We do this in the following file:-
 
- - TertiaryNav.ascx.cs 
  - AccountController.cs
 
-layouts/LaunchSitecore/Main.aspx.designer.cs in the package has a removed reference to the sc:VisitorIdentification control...yet the aspx still has it. In this solution, we keep it there to comply with WebForms standards.
-
-www.LaunchSitecore.config - changes with the SC8 package removed sections of config for ribbon buttons (see item differences for ribbons below). The comment mentions it's only for the Technical Preview of Sitecore 8. We've left these in, until we see any issues arise from it.
-
- - MVC: Configuration/AuthoringExperience/PageEditor
-  - code has been removed from the package because of the no longer used custom buttons on the site.
-
 ### Item differences ###
- - master: /sitecore/system/Settings/Rules/ConditionalRenderings/Tags/Default
-  - the TDS project has added tag on this item for 'Engagement Automation'. This tag existed in the 7.2 package but was removed from 7.5 package.
 
  - master: /sitecore/templates/Launch Sitecore/Article Group
   - in package it inherits from GeneralFields, but also SiteSection, which inherits from GeneralFields... so they creates a duplicate dependency and breaks code generation.
-
- - core: /sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Page Editor/Site Configuration
-  - both Site Presentation and Site Settings ribbon buttons were removed from the package, as these don't work with the SPEAK Experience Editor. They're left in for backwards reference.
-
- - master: /sitecore/layout/Sublayouts/LaunchSitecore/Controls/Single Item
-  - (WebForms project) 3 renderings have included the Page Editor Buttons field containing the 'Common' button. This is what the MVC project has, but the package doesn't contain it for WebForms.
-  - Article Title and Body
-  - Article Title Image and Body
-  - Biography
-
- - master: /sitecore/content/Home/Team/Patrick-Wallace
-  - Job Title and Quote fields contained an invalid character in the package.
-
- - master: /sitecore/layout/Sublayouts/LaunchSitecore/Controls/Single Item/Article Title and Body, Article Title Image and Body, Biography
-  - package had the 'Page Editor Buttons' field set to null. Not having the 'Common' button for fields.
-
  
 
 

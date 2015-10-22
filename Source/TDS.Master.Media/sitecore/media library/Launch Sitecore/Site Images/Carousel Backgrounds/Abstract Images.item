@@ -9,10 +9,17 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {FE5DD826-48C6-436D-B87A-7C4210C7413B}
 templatekey: Media folder
 
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 1
+
+0
 ----version----
 language: en
 version: 1
-revision: 44a1c6db-bb45-4603-bb74-8a98314ed6fb
+revision: cbc796f3-9e82-4c0c-b934-18a3fc803e24
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-44a1c6db-bb45-4603-bb74-8a98314ed6fb
+cbc796f3-9e82-4c0c-b934-18a3fc803e24
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131007T093609:635167353694392459
+20150715T165957Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

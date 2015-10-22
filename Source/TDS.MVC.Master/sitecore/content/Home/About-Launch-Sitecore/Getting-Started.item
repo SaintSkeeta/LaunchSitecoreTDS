@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: f729d3ba-4468-4623-b562-5683aaa4ab33
+revision: 688cc873-d787-4116-a296-84de57f31667
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -53,20 +53,13 @@ content-length: 578
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
 key: icon
-content-length: 184
+content-length: 191
 
-<image mediaid="{5F1AFA0F-CCDF-4194-B26C-E8E82FF99E68}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/a-b/alarm-clock" src="~/media/5f1afa0fccdf4194b26ce8e82ff99e68.ashx" />
+<image mediaid="{5F1AFA0F-CCDF-4194-B26C-E8E82FF99E68}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/a-b/alarm-clock" src="~/media/5f1afa0fccdf4194b26ce8e82ff99e68.ashx" ></image>
 ----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
-content-length: 15
-
-Getting Started
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
 content-length: 15
 
 Getting Started
@@ -90,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f729d3ba-4468-4623-b562-5683aaa4ab33
+688cc873-d787-4116-a296-84de57f31667
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131203T234058:635217108583064727
+20150804T202127Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

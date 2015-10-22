@@ -45,7 +45,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: e017bb17-1876-410e-b672-b315a4c8f08c
+revision: e60ea2a0-015f-4fc3-a496-303daeb806b0
 
 ----field----
 field: {FBADE872-82BD-45AD-A2EC-DADC723249DA}
@@ -69,13 +69,6 @@ content-length: 493
 
 <p>Although many aspects of the Sitecore repository are predefined for system settings, <a href="%7E/link.aspx?_id=E3C0C693CB774EE29B22F121CA7E4B99&amp;_z=z">templates</a>, <a href="%7E/link.aspx?_id=0F1DB744F9A344CAA4C9EAA037FD7CAF&amp;_z=z">media library</a>, etc. the content tree information architecture under sitecore/content is entirely flexible to be built around your site and business goals.  In the screenshot, you can see the content tree defined for this Launch Sitecore site.</p>
 ----field----
-field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
-name: Image
-key: image
-content-length: 173
-
-<image mediaid="{4D04AE42-9804-49A4-BC21-CAEAA34A33A7}" mediapath="/Launch Sitecore/Site Images/Glossary/Content Tree" src="~/media/4d04ae42980449a4bc21caeaa34a33a7.ashx" />
-----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
 key: icon
@@ -83,16 +76,16 @@ content-length: 145
 
 <image mediaid="{39755EA0-8CE4-4332-A2D8-54A160D70310}" mediapath="/Images/Icons/cubes_blue" src="~/media/Images/Icons/cubes_blue.ashx" ></image>
 ----field----
+field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{4D04AE42-9804-49A4-BC21-CAEAA34A33A7}" />
+----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
-content-length: 12
-
-Content Tree
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
 content-length: 12
 
 Content Tree
@@ -116,14 +109,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e017bb17-1876-410e-b672-b315a4c8f08c
+e60ea2a0-015f-4fc3-a496-303daeb806b0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131224T084929:635234717691906971
+20150708T214003Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

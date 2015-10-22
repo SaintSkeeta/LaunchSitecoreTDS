@@ -8,7 +8,7 @@
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{834A2236-50DC-4E10-AF63-9057F5B6F84E}</ProjectGuid>
-    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LaunchSitecore</RootNamespace>
@@ -50,26 +50,22 @@
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Glass.Mapper, Version=4.0.1.8, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Glass.Mapper.Sc.4.0.1.8\lib\net45\Glass.Mapper.dll</HintPath>
+    <Reference Include="Glass.Mapper, Version=4.0.3.51, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Glass.Mapper.Sc.4.0.3.51\lib\net45\Glass.Mapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Glass.Mapper.Sc, Version=4.0.1.8, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Glass.Mapper.Sc, Version=4.0.3.51, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Glass.Mapper.Sc.4.0.1.8\lib\80\Glass.Mapper.Sc.dll</HintPath>
+      <HintPath>..\packages\Glass.Mapper.Sc.4.0.3.51\lib\80\Glass.Mapper.Sc.dll</HintPath>
     </Reference>
-    <Reference Include="Glass.Mapper.Sc.Mvc, Version=4.0.1.8, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Glass.Mapper.Sc.Mvc, Version=4.0.3.51, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Glass.Mapper.Sc.4.0.1.8\lib\Mvc5\Glass.Mapper.Sc.Mvc.dll</HintPath>
+      <HintPath>..\packages\Glass.Mapper.Sc.4.0.3.51\lib\Mvc5\Glass.Mapper.Sc.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Installers\Sitecore\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Analytics">
       <HintPath>..\..\Installers\Sitecore\Sitecore.Analytics.dll</HintPath>
@@ -81,16 +77,8 @@
     <Reference Include="Sitecore.Analytics.Core">
       <HintPath>..\..\Installers\Sitecore\Sitecore.Analytics.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Analytics.DataAccess">
-      <HintPath>..\..\Installers\Sitecore\Sitecore.Analytics.DataAccess.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.Analytics.Model">
       <HintPath>..\..\Installers\Sitecore\Sitecore.Analytics.Model.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Buckets, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Installers\Sitecore\Sitecore.Buckets.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Client">
       <HintPath>..\..\Installers\Sitecore\Sitecore.Client.dll</HintPath>
@@ -106,12 +94,9 @@
       <HintPath>..\..\Installers\Sitecore\Sitecore.ContentSearch.Linq.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.ContentSearch.Linq.Lucene">
-      <HintPath>..\..\Installers\Sitecore\Sitecore.ContentSearch.Linq.Lucene.dll</HintPath>
+    <Reference Include="Sitecore.ExperienceEditor.Speak">
+      <HintPath>..\..\Installers\Sitecore\Sitecore.ExperienceEditor.Speak.dll</HintPath>
       <Private>False</Private>
-    </Reference>
-    <Reference Include="Sitecore.ExperienceEditor">
-      <HintPath>..\..\Installers\Sitecore\Sitecore.ExperienceEditor.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\..\Installers\Sitecore\Sitecore.Kernel.dll</HintPath>
@@ -184,54 +169,52 @@
   <ItemGroup>
     <Compile Include="App_Start\GlassMapperSc.cs" />
     <Compile Include="App_Start\GlassMapperScCustom.cs" />
-    <Compile Include="Configuration\Administration\Install\LaunchSitecorePostPackageStep.cs" />
-    <Compile Include="Configuration\Administration\Security\CreateSecurityAccounts.cs" />
     <Compile Include="Configuration\AuthoringExperience\ContentEditor\NoVersionInCurrentLanguageGutter.cs" />
-    <Compile Include="Configuration\AuthoringExperience\General\MustIncludePTags.cs" />
-    <Compile Include="Configuration\AuthoringExperience\ItemNaming\ContentEditorItemNamingNotification.cs" />
-    <Compile Include="Configuration\AuthoringExperience\ItemNaming\ItemNameHyphenHandler.cs" />
-    <Compile Include="Configuration\AuthoringExperience\ItemNaming\ItemNameUniqueHandler.cs" />
-    <Compile Include="Configuration\AuthoringExperience\ItemNaming\ItemNamingHelper.cs" />
-    <Compile Include="Configuration\AuthoringExperience\ItemNaming\UpdateItemNamesCommand.cs" />
     <Compile Include="Configuration\AuthoringExperience\PageEditor\AlertDictionary.cs" />
-    <Compile Include="Configuration\AuthoringExperience\PageEditor\Base\FieldEditorButtonForSingleField.cs" />
-    <Compile Include="Configuration\AuthoringExperience\PageEditor\Base\FieldEditorButtonForTemplate.cs" />
-    <Compile Include="Configuration\AuthoringExperience\PageEditor\FieldEditorButton.cs" />
-    <Compile Include="Configuration\AuthoringExperience\PageEditor\FieldEditorButtonForAbstractField.cs" />
-    <Compile Include="Configuration\AuthoringExperience\PageEditor\FieldEditorButtonForArticleTemplate.cs" />
-    <Compile Include="Configuration\AuthoringExperience\PageEditor\FieldEditorButtonForPresentationSettings.cs" />
-    <Compile Include="Configuration\AuthoringExperience\PageEditor\FieldEditorButtonForSiteSettings.cs" />
-    <Compile Include="Configuration\AuthoringExperience\Processors\RemoveNonBreakingSpacesSaveProcessor.cs" />
+    <Compile Include="Configuration\AuthoringExperience\PageEditor\GenerateFieldEditorUrl.cs" />
+    <Compile Include="Configuration\Commands\UpdateItemNamesCommand.cs" />
+    <Compile Include="Configuration\Comparers\ItemIDComparer.cs" />
+    <Compile Include="Configuration\Comparers\ItemSorterByTitle.cs" />
+    <Compile Include="Configuration\Events\ItemSaving\ItemNameHyphenHandler.cs" />
+    <Compile Include="Configuration\Events\ItemSaving\ItemNameUniqueHandler.cs" />
+    <Compile Include="Configuration\Events\mvc.exception\ShowPocErrorMessage.cs" />
+    <Compile Include="Configuration\Helpers\AnalyticsHelper.cs" />
+    <Compile Include="Configuration\Helpers\EditFrameHelper.cs" />
+    <Compile Include="Configuration\Helpers\HtmlRemoval.cs" />
+    <Compile Include="Configuration\Helpers\ItemNamingHelper.cs" />
+    <Compile Include="Configuration\Helpers\UIHelpers.cs" />
+    <Compile Include="Configuration\Installer\LaunchSitecorePostPackageStep.cs" />
+    <Compile Include="Configuration\Pipelines\GetContentEditorWarnings\ContentEditorItemNamingNotification.cs" />
+    <Compile Include="Configuration\Pipelines\StartTracking\GeoIpSpoofForLocalhost.cs" />
+    <Compile Include="Configuration\Processors\saveUI\RemoveNonBreakingSpacesSaveProcessor.cs" />
+    <Compile Include="Configuration\Rules\EnrollInAutomationState.cs" />
+    <Compile Include="Configuration\Search\ComputedFields\HasPresentationComputedField.cs" />
+    <Compile Include="Configuration\Search\ComputedFields\ProfileCardComputedField.cs" />
+    <Compile Include="Configuration\Search\ComputedFields\SiteAreaComputedField.cs" />
+    <Compile Include="Configuration\Search\Models\SitecoreItem.cs" />
+    <Compile Include="Configuration\Security\CreateSecurityAccounts.cs" />
     <Compile Include="Configuration\SiteConfiguration.cs" />
-    <Compile Include="Configuration\SiteUI\Analytics\AnalyticsHelper.cs" />
-    <Compile Include="Configuration\SiteUI\Analytics\EnrollInAutomationState.cs" />
-    <Compile Include="Configuration\SiteUI\Base\LaunchSitecoreBaseController.cs" />
-    <Compile Include="Configuration\SiteUI\Presentation\ItemSorterByTitle.cs" />
-    <Compile Include="Configuration\SiteUI\Search\ComputedFields\HasPresentationComputedField.cs" />
-    <Compile Include="Configuration\SiteUI\Search\ComputedFields\ProfileCardComputedField.cs" />
-    <Compile Include="Configuration\SiteUI\Search\Helper\ItemIDComparer.cs" />
-    <Compile Include="Configuration\SiteUI\Search\HtmlRemoval.cs" />
-    <Compile Include="Configuration\SiteUI\Search\Models\SitecoreItem.cs" />
-    <Compile Include="Configuration\SiteUI\UIHelpers.cs" />
+    <Compile Include="Configuration\SiteUI\LaunchSitecoreBaseController.cs" />
+    <Compile Include="Configuration\Validators\MustIncludePTags.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\FavoritesController.cs" />
     <Compile Include="Controllers\SearchController.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Controllers\SiteConfigurationController.cs" />
     <Compile Include="Controllers\VisitController.cs" />
     <Compile Include="Controllers\NavigationController.cs" />
-    <Compile Include="Controllers\HeaderController.cs" />
     <Compile Include="Controllers\ListsController.cs" />
     <Compile Include="Controllers\MetaController.cs" />
     <Compile Include="Controllers\SingleItemController.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\CarouselItem.cs" />
+    <Compile Include="Models\Error.cs" />
     <Compile Include="Models\SearchResults.cs" />
     <Compile Include="Models\SimpleItemList.cs" />
     <Compile Include="Models\VisitInformation.cs" />
     <Compile Include="Models\GenericLink.cs" />
     <Compile Include="Models\SimpleNavigationItem.cs" />
-    <Compile Include="Models\StickyNoteItem.cs" />
     <Compile Include="Models\QuotationItem.cs" />
     <Compile Include="Models\JumbotronItem.cs" />
     <Compile Include="Models\TextWidgetItem.cs" />
@@ -245,201 +228,93 @@
   <ItemGroup>
     <Content Include="assets\css\bootstrap.css" />
     <Content Include="assets\css\bootstrap.min.css" />
-    <Content Include="assets\css\colors\color_scheme.css" />
-    <Content Include="assets\css\colors\color_scheme_blue.css" />
-    <Content Include="assets\css\colors\color_scheme_burgandy.css" />
-    <Content Include="assets\css\colors\color_scheme_mustard.css" />
-    <Content Include="assets\css\colors\color_scheme_ocean.css" />
-    <Content Include="assets\css\colors\color_scheme_orange.css" />
-    <Content Include="assets\css\colors\color_scheme_pink.css" />
-    <Content Include="assets\css\colors\color_scheme_purple.css" />
-    <Content Include="assets\css\colors\color_scheme_red.css" />
-    <Content Include="assets\css\colors\color_scheme_sitecore.css" />
-    <Content Include="assets\css\colors\color_scheme_teal.css" />
-    <Content Include="assets\css\custom_base.css" />
-    <Content Include="assets\css\custom_delete.css" />
-    <Content Include="assets\css\custom_modules.css" />
-    <Content Include="assets\css\custom_mvc.css" />
-    <Content Include="assets\css\custom_nav.css" />
-    <Content Include="assets\css\font-awesome-ie7.css" />
-    <Content Include="assets\css\font-awesome.css" />
-    <Content Include="assets\css\IE-fix.css" />
-    <Content Include="assets\css\richtexteditor.css" />
-    <Content Include="assets\font\fontawesome-webfont.svg" />
+    <Content Include="assets\css\color.css" />
+    <Content Include="assets\css\custom.css" />
+    <Content Include="assets\css\responsive.css" />
     <Content Include="assets\js\bootstrap.js" />
     <Content Include="assets\js\bootstrap.min.js" />
     <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\jquery-1.11.1.min.js" />
     <Content Include="assets\js\jquery-1.7.2.min.js" />
     <Content Include="assets\js\jquery-ui.min.js" />
-    <Content Include="assets\js\jquery.cookie.js" />
+    <Content Include="assets\js\scrollReveal.js" />
+    <Content Include="assets\speak\LaunchFieldEditor.js" />
     <Content Include="favicon.ico" />
     <Content Include="license.txt" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Meta\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\ShowPageEditorAlert.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\SingleItem\PromoSpotWithNoImage.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Layouts\Main.cshtml" />
-    <Content Include="Views\Navigation\MainNavigation.cshtml" />
-    <Content Include="Views\SingleItem\ArticleTitleAndBody.cshtml" />
-    <Content Include="Views\SingleItem\TitleAndBody.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\SingleItem\AbstractSpot.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Header\HeaderWithLogo.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Header\HeaderWithoutLogo.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\SingleItem\AbstractBox.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\PartialLayouts\Content with Sidebar\Both Sidebars.cshtml" />
-    <Content Include="Views\PartialLayouts\Content with Sidebar\Left Sidebar.cshtml" />
-    <Content Include="Views\PartialLayouts\Content with Sidebar\Right Sidebar.cshtml" />
-    <Content Include="Views\PartialLayouts\Full Width\One Four Three.cshtml" />
-    <Content Include="Views\PartialLayouts\Full Width\One Four Two.cshtml" />
-    <Content Include="Views\PartialLayouts\Full Width\One Three Four.cshtml" />
-    <Content Include="Views\PartialLayouts\Full Width\One Three One.cshtml" />
-    <Content Include="Views\PartialLayouts\Full Width\One Three Three.cshtml" />
-    <Content Include="Views\PartialLayouts\Full Width\One Two Four One.cshtml" />
-    <Content Include="Views\PartialLayouts\Full Width\One Two Four.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Lists\IconAndTitleList.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\SingleItem\PromoSpotWithThumbnailImage.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\SingleItem\PromoSpotWithImage.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Navigation\SecondaryNavigation.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Navigation\SecondaryNavigationSection.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\SingleItem\ArticleTitleImageAndBody.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\SingleItem\TermDetails.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\SingleItem\TextWidget.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\SingleItem\Jumbotron.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\SingleItem\Biography.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\SingleItem\FeaturedQuotation.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\SingleItem\StickyNote.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\SingleItem\SmallStickyNote.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Navigation\TertiaryNavigationAnonymous.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Navigation\TertiaryNavigationAuthenticated.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Navigation\TertiaryNavigationPartialSites.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Navigation\TertiaryNavigationPartialFavorites.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Navigation\TertiaryNavigationMicrosite.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Navigation\FooterNavigation.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Lists\Carousel.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Lists\TeamList.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Lists\DatasourceList.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Navigation\NavigationBar.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Visit\VisitDetails.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Navigation\Breadcrumbs.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Lists\ArticlesByContributor.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Lists\RelatedArticles.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Lists\QueriedList.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Lists\Tags.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Favorites\AddToFavorites.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Search\Search.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Search\SearchBox.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="assets\font\fontawesome-webfont.eot" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="assets\font\fontawesome-webfont.ttf" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="assets\font\fontawesome-webfont.woff" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="App_Config\Include\www.LaunchSitecore.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Web.config" />
+    <Content Include="App_Config\Include\www.LaunchSitecore.ContentSearch.config" />
+    <Content Include="App_Config\Include\www.LaunchSitecore.GeoIpSpoofForLocalhost.config" />
+    <Content Include="App_Config\Include\www.LaunchSitecore.ItemNaming.config" />
+    <Content Include="App_Config\Include\www.LaunchSitecore.LinkManager.config" />
+    <Content Include="App_Config\Include\www.LaunchSitecore.PageEditor.config" />
+    <Content Include="App_Config\Include\www.LaunchSitecore.Registration.config" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.Start.config" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.config" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
     <None Include="packages.config" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Manage.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\_RemoveExternalLoginsPartial.cshtml" />
+    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
+    <Content Include="Views\Favorites\AddToFavorites.cshtml" />
+    <Content Include="Views\Lists\Carousel.cshtml" />
+    <Content Include="Views\Lists\IconAndTitleList.cshtml" />
+    <Content Include="Views\Lists\LinkList.cshtml" />
+    <Content Include="Views\Lists\Tags.cshtml" />
+    <Content Include="Views\Lists\TeamList.cshtml" />
+    <Content Include="Views\Navigation\Breadcrumbs.cshtml" />
+    <Content Include="Views\Navigation\FooterNavigation.cshtml" />
+    <Content Include="Views\Navigation\Header.cshtml" />
+    <Content Include="Views\Navigation\MainNavigation.cshtml" />
+    <Content Include="Views\Navigation\SecondaryNavigation.cshtml" />
+    <Content Include="Views\Navigation\SecondaryNavigationSection.cshtml" />
+    <Content Include="Views\Navigation\TertiaryNavigation.cshtml" />
+    <Content Include="Views\Navigation\TertiaryNavigationPartialFavorites.cshtml" />
+    <Content Include="Views\Navigation\TertiaryNavigationPartialSites.cshtml" />
+    <Content Include="Views\Page Structure\Content\Both Sidebars.cshtml" />
+    <Content Include="Views\Page Structure\Content\Left Sidebar.cshtml" />
+    <Content Include="Views\Page Structure\Content\No Sidebars.cshtml" />
+    <Content Include="Views\Page Structure\Content\Right Sidebar.cshtml" />
+    <Content Include="Views\Page Structure\Home\One Four One.cshtml" />
+    <Content Include="Views\Page Structure\Home\One Three One.cshtml" />
+    <Content Include="Views\Page Structure\Home\One Three Three.cshtml" />
+    <Content Include="Views\Page Structure\Home\One Two Four One.cshtml" />
+    <Content Include="Views\Page Structure\Home\One Two Four.cshtml" />
+    <Content Include="Views\Search\Search.cshtml" />
+    <Content Include="Views\Search\SearchBox.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\ErrorDetails.cshtml" />
+    <Content Include="Views\Shared\Main.cshtml" />
+    <Content Include="Views\Shared\ShowPageEditorAlert.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\SingleItem\AbstractBox.cshtml" />
+    <Content Include="Views\SingleItem\AbstractSpot.cshtml" />
+    <Content Include="Views\SingleItem\ArticleTitleAndBody.cshtml" />
+    <Content Include="Views\SingleItem\ArticleTitleImageAndBody.cshtml" />
+    <Content Include="Views\SingleItem\Biography.cshtml" />
+    <Content Include="Views\SingleItem\FeaturedQuotation.cshtml" />
+    <Content Include="Views\SingleItem\Jumbotron.cshtml" />
+    <Content Include="Views\SingleItem\PromoSpotWithImage.cshtml" />
+    <Content Include="Views\SingleItem\PromoSpotWithNoImage.cshtml" />
+    <Content Include="Views\SingleItem\PromoSpotWithThumbnailImage.cshtml" />
+    <Content Include="Views\SingleItem\TermDetails.cshtml" />
+    <Content Include="Views\SingleItem\TextWidget.cshtml" />
+    <Content Include="Views\SingleItem\TitleAndBody.cshtml" />
+    <Content Include="Views\Visit\VisitDetails.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

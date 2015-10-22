@@ -10,12 +10,12 @@ template: {97963D48-BD06-46CA-8279-CD2BA3C7AA36}
 templatekey: Team Member
 
 ----field----
-field: {AD724ADB-4729-4C32-BF40-676579D587CF}
-name: Image
-key: image
-content-length: 176
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
 
-<image mediaid="{153CB3DA-6BA6-4AA7-8255-CCF22226B9EA}" mediapath="/Launch Sitecore/Site Images/Contributors/Tim Gardner" src="~/media/153cb3da6ba64aa78255ccf22226b9ea.ashx" />
+100
 ----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 51270113-bc0b-4095-959c-ae165334ed82
+revision: 90ce09c8-0284-4091-a197-e899eef12185
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -64,6 +64,13 @@ content-length: 199
 
 <image mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/t-z/user-4" mediaid="{8A48C884-E903-4C0E-BA4E-5282934404BE}" src="~/media/8a48c884e9034c0eba4e5282934404be.ashx?20131126T1717429083" />
 ----field----
+field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{153CB3DA-6BA6-4AA7-8255-CCF22226B9EA}" />
+----field----
 field: {D2E90283-29F2-4EAF-895E-E8DE8DAEEC69}
 name: Job Title
 key: job title
@@ -74,13 +81,6 @@ Regional Sales Engineer, Northeast
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
-content-length: 11
-
-Tim Gardner
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
 content-length: 11
 
 Tim Gardner
@@ -104,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-51270113-bc0b-4095-959c-ae165334ed82
+90ce09c8-0284-4091-a197-e899eef12185
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131127T072818:635211340985601892
+20150716T025842Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

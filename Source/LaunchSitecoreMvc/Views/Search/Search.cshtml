@@ -1,36 +1,39 @@
 ﻿@model LaunchSitecore.Models.SearchResults
-<div class="row show-grid">
- <div class="span12">
-  <div class="row show-grid clear-both">
-   <div id="left-sidebar" class="span3 sidebar">
-    <div class="side-nav sidebar-block">
-     <h2>@UIHelpers.GetDictionaryText("Refine Results")</h2>
-     <form action="/Search" method="post" id="filterSearch">
-      @foreach (var facet in Model.Facets)
-      {    
-       <h3>@facet.FacetName</h3>
-       <ul class="css-checkboxes">
-       @foreach (var entry in facet.Items)
-       {  
-        <li><input type="checkbox" id="@facet.FacetName|@entry.Id" name="facets" value="@facet.FacetName|@entry.Id" checked="@entry.Selected" onchange="javascript:document.getElementById('filterSearch').submit()" /><label for="@facet.FacetName|@entry.Id">@entry.Name</label></li>
-       }   
-       </ul>
-      }
-      <input type="hidden" value="@Model.SearchString" id="searchStr" name="searchStr" />
-     </form>
-     @Html.Sitecore().Placeholder("content-tertiary")
-    </div>
-   </div>
-   <div class="span9 main-column two-columns-left">
-    <h1>@UIHelpers.GetDictionaryText("Search Results for") @Model.SearchString</h1>
-    @foreach (var item in Model.Results)
-    {    <div>
-     <h3><a href="@item.Url">@Html.Sitecore().Field("Title", item.Item)</a></h3>
-     <p>@item.SearchDescription</p>
-    </div> 
-     if (!Model.Results.IsLast(item)) { <div class="text-divider3"></div> }
-    }
-   </div>
-  </div>
- </div>
+           <div class="container">
+    <div class="row">
+            <div class="row clear-both">
+                <div id="left-sidebar" class="col-md-3 sidebar">
+                    <div class="side-nav sidebar-block">
+                        <h2>@UIHelpers.GetDictionaryText("Refine Results")</h2>
+                        <form action="/Search" method="post" id="filterSearch">
+                            @foreach (var facet in Model.Facets)
+                            {
+                                <h3>@facet.FacetName</h3>
+                                <ul class="css-checkboxes">
+                                    @foreach (var entry in facet.Items)
+                                    {
+                                        <li><input type="checkbox" id="@facet.FacetName|@entry.Id" name="facets" value="@facet.FacetName|@entry.Id" checked="@entry.Selected" onchange="javascript:document.getElementById('filterSearch').submit()" /><label for="@facet.FacetName|@entry.Id">@entry.Name</label></li>
+                                    }
+                                </ul>
+                            }
+                            <input type="hidden" value="@Model.SearchString" id="searchStr" name="searchStr" />
+                        </form>
+                        @Html.Sitecore().Placeholder("content-tertiary")
+                    </div>
+                </div>
+                <div class="col-md-9 main-column two-columns-left">
+                    <h1>@UIHelpers.GetDictionaryText("Search Results for") @Model.SearchString</h1>
+                    @foreach (var item in Model.Results)
+                    {    
+                    <div>
+                        <a href="@item.Url" class="float-left">@Html.Sitecore().Field("Icon", item.Item, new { @maxWidth = "48", @maxHeight = "48" })</a>     
+                        <h3><a href="@item.Url">@Html.Sitecore().Field("Title", item.Item)</a></h3>
+                        <p>@item.SearchDescription</p>
+                    </div>
+                        if (!Model.Results.IsLast(item))
+                        { <div class="text-divider3"></div> }
+                    }
+                </div>
+            </div>
+        </div>
 </div>

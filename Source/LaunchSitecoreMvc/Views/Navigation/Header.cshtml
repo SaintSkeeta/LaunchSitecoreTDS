@@ -1,0 +1,43 @@
+﻿@model Sitecore.Data.Items.Item
+<header>
+    <div class="row" style="background-color:@Html.Sitecore().Controller("SiteConfiguration", "HeaderColor")">
+        <div class="col-md-12"><div class="container">
+            <!-- HEADER: LOGO AREA -->
+            <div class="col-sm-4 col-md-4 logo">
+                <a class="logo" href="/">
+                    @Html.Sitecore().Field("Site Logo", Model, new { @maxWidth = "250", @maxHeight = "72" })
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-4 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+                @Html.Sitecore().Rendering("{FEAB758C-DB47-44D0-861C-4E962988C6C2}") <!-- Tertiary Nav -->
+            </div>
+        </div></div>
+    </div>
+    <!-- HEADER: PRIMARY SITE NAVIGATION -->
+    <div class="row" style="background-color:@Html.Sitecore().Controller("SiteConfiguration", "MenuColor")">
+        <div class="container">
+            <div class="col-sm-12 col-md-12">
+                <div class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">@UIHelpers.GetDictionaryText("navigate")</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <!-- The Main Nav - /sitecore/layout/Renderings/LaunchSitecore/Renderings/Navigation/Main Navigation -->
+                            @Html.Sitecore().Rendering("{39FBB73D-522C-4B62-8E01-7CE3912E5085}", new { Cacheable = true, CacheKey = "mainnav", Cache_VaryByUser = true })
+                            @Html.Sitecore().Rendering("{4E4C8D75-5D59-4591-8B57-8402DBD28DF0}") <!-- Search Box -->
+                        </div><!-- /.navbar-collapse -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

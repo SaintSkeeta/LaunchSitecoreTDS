@@ -24,13 +24,6 @@ content-length: 36
 
 /sitecore/layout/Models/MenuItemList
 ----field----
-field: {A2F5D9DF-8CBA-4A1D-99EB-51ACB94CB057}
-name: Page Editor Buttons
-key: page editor buttons
-content-length: 0
-
-
-----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
@@ -40,7 +33,7 @@ software/32x32/step.png
 ----version----
 language: en
 version: 1
-revision: 3513f1aa-26db-4b5a-9185-f9b649146ac1
+revision: f372799f-4305-49b3-8b05-0b3b371cb45b
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -55,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3513f1aa-26db-4b5a-9185-f9b649146ac1
+f372799f-4305-49b3-8b05-0b3b371cb45b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 34
 
-20141219T232139:635546280995329745Z
+20140129T153441:635266064815525470
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

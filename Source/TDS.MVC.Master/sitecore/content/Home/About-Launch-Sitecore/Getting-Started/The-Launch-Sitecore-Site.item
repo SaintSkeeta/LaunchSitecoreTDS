@@ -24,13 +24,6 @@ content-length: 38
 
 {1B6A3702-5694-4FC4-8366-989ECDCD7F1B}
 ----field----
-field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
-name: __Renderings
-key: __renderings
-content-length: 329
-
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{AE08C6E1-4172-49A5-A870-E0AE1B839A8F}" p:before="r[@uid='{10F779BE-924F-4CDD-8510-C69D92D0A8E7}']" s:ds="{63ABEE8A-4E38-4159-9193-D5F0A33AD666}" s:id="{764D79DB-86BC-4058-89B5-B42BB41D2290}" s:ph="/main-content/content-primary" /></d></r>
-----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
 key: __workflow
@@ -40,7 +33,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 8458ce2f-35cc-4862-9f31-b39ae08b0953
+revision: 672a7ebc-136d-4df7-b962-a2893f3191cc
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -67,9 +60,9 @@ content-length: 536
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
 key: icon
-content-length: 177
+content-length: 184
 
-<image mediaid="{76DFC588-5949-4933-BCC7-6C26CF83BEF9}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/g-o/home" src="~/media/76dfc58859494933bcc76c26cf83bef9.ashx" />
+<image mediaid="{76DFC588-5949-4933-BCC7-6C26CF83BEF9}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/g-o/home" src="~/media/76dfc58859494933bcc76c26cf83bef9.ashx" ></image>
 ----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
@@ -78,12 +71,12 @@ content-length: 24
 
 The Launch Sitecore Site
 ----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
-content-length: 24
+field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
+name: __Final Renderings
+key: __final renderings
+content-length: 329
 
-The Launch Sitecore Site
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{BB634C7D-7A1E-44C2-BA9B-9B2CD4087B7E}" p:before="r[@uid='{10F779BE-924F-4CDD-8510-C69D92D0A8E7}']" s:ds="{63ABEE8A-4E38-4159-9193-D5F0A33AD666}" s:id="{764D79DB-86BC-4058-89B5-B42BB41D2290}" s:ph="/main-content/content-primary" /></d></r>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -104,14 +97,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8458ce2f-35cc-4862-9f31-b39ae08b0953
+672a7ebc-136d-4df7-b962-a2893f3191cc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140218T112726:635283196464391879
+20150804T202127Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

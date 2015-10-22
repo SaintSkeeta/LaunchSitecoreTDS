@@ -13,9 +13,9 @@ templatekey: Controller rendering
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
 name: Controller
 key: controller
-content-length: 63
+content-length: 10
 
-LaunchSitecore.Controllers.SingleItemController, LaunchSitecore
+SingleItem
 ----field----
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
@@ -23,6 +23,13 @@ key: controller action
 content-length: 18
 
 PromoSpotWithImage
+----field----
+field: {94069F66-609C-48B0-8281-521C30FB269D}
+name: Open Properties after Add
+key: open properties after add
+content-length: 0
+
+
 ----field----
 field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
 name: Datasource Location
@@ -45,6 +52,13 @@ content-length: 38
 
 {F551E1DE-6D6E-4B06-B85F-AA0B3697B8DF}
 ----field----
+field: {A2F5D9DF-8CBA-4A1D-99EB-51ACB94CB057}
+name: Page Editor Buttons
+key: page editor buttons
+content-length: 38
+
+{0F41D30E-1AE5-439A-BA4B-B9027F19EAA0}
+----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
@@ -61,7 +75,7 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: facae1eb-d983-485a-817b-328d8abe25df
+revision: 78b708b0-804b-4b37-9ed6-1db49d4a3825
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -76,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-facae1eb-d983-485a-817b-328d8abe25df
+78b708b0-804b-4b37-9ed6-1db49d4a3825
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140227T191549:635291253493934651
+20150716T160901Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

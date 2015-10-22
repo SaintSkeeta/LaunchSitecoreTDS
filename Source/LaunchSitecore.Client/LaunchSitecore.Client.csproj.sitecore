@@ -1,5 +1,0 @@
-﻿<Project>
-  <PropertyGroup>
-    <Site Server="launch.local" UserName="sitecore\admin" IsRemoteSitecore="True" />
-  </PropertyGroup>
-</Project>

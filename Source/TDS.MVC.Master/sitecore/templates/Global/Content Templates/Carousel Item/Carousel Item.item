@@ -13,13 +13,13 @@ templatekey: Template section
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 36
+content-length: 26
 
-Applications/16x16/photo_scenery.png
+multimedia/32x32/image.png
 ----version----
 language: en
 version: 1
-revision: 0a9bd767-c9f6-465a-8dba-e32b814422f3
+revision: 46ec328b-46ea-4765-8740-ef5f9555a923
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0a9bd767-c9f6-465a-8dba-e32b814422f3
+46ec328b-46ea-4765-8740-ef5f9555a923
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130830T131919:635134655597837341
+20141117T180820:635518445003811198
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

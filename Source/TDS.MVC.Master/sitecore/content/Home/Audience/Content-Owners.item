@@ -7,16 +7,23 @@ parent: {4D719602-744A-49DA-8A98-7E4E976333B8}
 name: Content-Owners
 master: {00000000-0000-0000-0000-000000000000}
 template: {B65CCE04-BCCB-4A58-B988-753D523C99A7}
-templatekey: Job Function
+templatekey: Audience Segment
 
 ----field----
 field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
 name: __Tracking
 key: __tracking
-content-length: 115
+content-length: 471
 
 <tracking>
   <event id="{E5815F1A-9114-46C8-8468-730AAB657634}" name="Visited a Job Function Page" />
+  <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function" presets="content owner|100||">
+    <key name="Analytics" value="1" />
+    <key name="Copywriting" value="5" />
+    <key name="Personalization and Testing" value="3" />
+    <key name="Technology" value="0" />
+    <key name="Workflow and Publishing" value="1" />
+  </profile>
 </tracking>
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}

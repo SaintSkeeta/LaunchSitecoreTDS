@@ -4,4 +4,5 @@
  <p>@Html.Sitecore().Field("Icon", Model.Item, new { @maxWidth = "64", @maxHeight = "64" })</p>
  @Html.Sitecore().Field("Text", Model.Item)
  <a href="@Model.LinkToUrl" class="btn btn-primary">@Html.Sitecore().Field("Link Text", Model.Item)</a>
+    <span class="text-error">@ViewBag.ItemName</span>
 </div>

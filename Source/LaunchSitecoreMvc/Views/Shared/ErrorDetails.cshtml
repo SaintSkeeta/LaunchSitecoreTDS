@@ -1,0 +1,19 @@
+﻿@model LaunchSitecore.Models.Error
+<h2>@UIHelpers.GetDictionaryText("Server Error in Application")</h2>
+
+<h3>@UIHelpers.GetDictionaryText("Message")</h3>
+<p>@Model.Message</p>
+
+<h3>@UIHelpers.GetDictionaryText("Stack Trace")</h3>
+<p>@Model.StackTrace</p>
+
+@if (@Model.HasInnerException)
+{
+    <h3>@UIHelpers.GetDictionaryText("Inner Exception")</h3>
+
+    <h4>@UIHelpers.GetDictionaryText("Message")</h4>
+    <p>@Model.InnerMessage</p>
+
+    <h4>@UIHelpers.GetDictionaryText("Stack Trace")</h4>
+    <p>@Model.InnerStackTrace</p>
+}

@@ -45,7 +45,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 1262c19b-f371-4089-b037-2fa16659e3e6
+revision: eb5da0cd-028c-4a92-8f7f-8b05bfcbabc6
 
 ----field----
 field: {FBADE872-82BD-45AD-A2EC-DADC723249DA}
@@ -77,13 +77,6 @@ content-length: 605
  <li>Can (optionally) have <a href="%7E/link.aspx?_id=C30D7330C99349BF9BCCB5FF1235DD16&amp;_z=z">presentation details</a> applied to it</li>
 </ul>
 ----field----
-field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
-name: Image
-key: image
-content-length: 165
-
-<image mediaid="{938BE2F0-ED32-4554-A457-466E3D664B14}" mediapath="/Launch Sitecore/Site Images/Glossary/Item" src="~/media/938be2f0ed324554a457466e3d664b14.ashx" />
-----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
 key: icon
@@ -91,16 +84,16 @@ content-length: 192
 
 <image mediaid="{BD39004C-3B06-4B61-A180-4FC6FA0FAF92}" mediapath="/Images/Icons/cube_blue" src="~/media/Images/Icons/cube_blue.ashx" alt="Item" height="" width="" hspace="" vspace=""></image>
 ----field----
+field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{938BE2F0-ED32-4554-A457-466E3D664B14}" />
+----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
-content-length: 4
-
-Item
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
 content-length: 4
 
 Item
@@ -124,14 +117,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1262c19b-f371-4089-b037-2fa16659e3e6
+eb5da0cd-028c-4a92-8f7f-8b05bfcbabc6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131224T084932:635234717723727680
+20150708T214037Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

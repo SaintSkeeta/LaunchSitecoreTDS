@@ -22,7 +22,7 @@ name: __Icon
 key: __icon
 content-length: 23
 
-Office/32x32/delete.png
+office/16x16/delete.png
 ----field----
 field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
 name: __Security
@@ -87,7 +87,7 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: bb10acb0-469f-45f0-99d1-8474aca416ba
+revision: ca43f297-6353-454f-9478-93366b0258e5
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -109,14 +109,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bb10acb0-469f-45f0-99d1-8474aca416ba
+ca43f297-6353-454f-9478-93366b0258e5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150306T224918:635612789585881552Z
+20150715T235034Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

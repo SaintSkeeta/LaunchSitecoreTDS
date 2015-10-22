@@ -12,4 +12,3 @@ Obviously, if this were a proper client project, we would not want the Home item
  - master:/sitecore/system/Market Control Panel/Goals/Login
  - master:/sitecore/system/Market Control Panel/Goals/Register
 
-eof

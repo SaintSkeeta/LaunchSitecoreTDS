@@ -45,7 +45,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: e75aa13d-1cd3-487d-a210-deae81364395
+revision: 5e335af5-6f91-4182-a4ac-b5f6379eed5a
 
 ----field----
 field: {FBADE872-82BD-45AD-A2EC-DADC723249DA}
@@ -69,13 +69,6 @@ content-length: 387
 
 <p>The Content Editor is primarily used by those defining the information architecture of the site, developers, and advanced users who prefer to work with the content directly. Often content is used in many contexts (different presentation layers, or shared via clones or references) and data-centric publishing tasks such as product catalogs are often easier to author in this view.</p>
 ----field----
-field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
-name: Image
-key: image
-content-length: 195
-
-<image mediapath="/Launch Sitecore/Site Images/Glossary/Content Editor" mediaid="{C6EF98CD-E31D-41F1-A0B7-C85C498D85C4}" src="~/media/c6ef98cde31d41f1a0b7c85c498d85c4.ashx?20131121T1127246581" />
-----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
 key: icon
@@ -83,16 +76,16 @@ content-length: 143
 
 <image mediaid="{BD39004C-3B06-4B61-A180-4FC6FA0FAF92}" mediapath="/Images/Icons/cube_blue" src="~/media/Images/Icons/cube_blue.ashx" ></image>
 ----field----
+field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{C6EF98CD-E31D-41F1-A0B7-C85C498D85C4}" />
+----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
-content-length: 14
-
-Content Editor
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
 content-length: 14
 
 Content Editor
@@ -116,14 +109,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e75aa13d-1cd3-487d-a210-deae81364395
+5e335af5-6f91-4182-a4ac-b5f6379eed5a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131224T084907:635234717474142768
+20150708T213952Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

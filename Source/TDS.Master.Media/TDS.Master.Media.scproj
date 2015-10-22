@@ -68,39 +68,11 @@
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Analytics.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Analytics\Current Pattern.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Analytics\Current Visit Info.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Carousel.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Carousel\Alternate Base Carousel.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Carousel\Base Carousel.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Carousel\Enhanced Carousel.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
     <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Lists.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Lists\Datasource List.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Lists\Carousel.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
@@ -108,11 +80,11 @@
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Lists\Queried List.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Lists\Link List.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Lists\Related Articles.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Lists\Secondary Navigation.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
@@ -121,42 +93,6 @@
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Lists\Team List.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Meta.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Navigation.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Navigation\Breadcrumbs.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Navigation\Footer Navigation.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Navigation\Main Navigation.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Navigation\Secondary Navigation.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Navigation\Tertiary Navigation.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Search.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Search\Quick Search.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
@@ -216,23 +152,11 @@
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Single Item\Small Sticky Note.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Single Item\Sticky Note.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
     <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Single Item\Term Details.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Single Item\Text Widget.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Controls\Single Item\Title and Body for Footer.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
@@ -244,51 +168,47 @@
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Content with Sidebar.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Content.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Content with Sidebar\both sidebars.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Content\both sidebars.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Content with Sidebar\left sidebar.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Content\left sidebar.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Content with Sidebar\right sidebar.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Content\no sidebars.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Full Width.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Content\right sidebar.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Full Width\one four three.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Home.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Full Width\one four two.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Home\one four one.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Full Width\one three four.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Home\one three one.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Full Width\one three one.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Home\one three three.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Full Width\one three three.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Home\one two four one.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Full Width\one two four one.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Full Width\one two four.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Page Editor Thumbnails\Views\Home\one two four.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
@@ -592,98 +512,6 @@
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Images.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Images\Buildings.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Images\Grand Central.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Images\Lake.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Images\Lightbulbs.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Images\Mountains.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Images\Rockets.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Images\Skyline.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Images\Vancouver.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Patterns.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Patterns\Charcoal Diamonds.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Patterns\Charcoal Grid.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Patterns\Charcoal Small Diamonds.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Patterns\Charcoal Woodgrain.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Patterns\Gray Bricks.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Patterns\Gray Canvas.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Patterns\Gray Denim.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Patterns\Gray Diagonal Lines.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Patterns\Gray Diamonds and Dots.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Patterns\Gray Diamonds.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Patterns\Gray Geometric.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Backgrounds\Patterns\Gray Small Diamonds.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
     <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
@@ -696,7 +524,27 @@
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\bridge.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\chain.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\chili peppers.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\clover.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\clownfish.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\coffee beans.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
@@ -704,7 +552,11 @@
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\esc button.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\fall leaves.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\grapes.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
@@ -716,7 +568,7 @@
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\lightening.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\lightning.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
@@ -724,7 +576,7 @@
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\oranges.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\mountian.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
@@ -736,11 +588,7 @@
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\puzzle pieces.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\puzzle.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\river.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
@@ -756,7 +604,19 @@
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\water drops.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\tree line.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\van.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\walkway 2.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Abstract Images\walkway.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
@@ -768,63 +628,27 @@
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Sitecore Branding\blue 1.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Sitecore Branding\blue.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Sitecore Branding\blue 2.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Sitecore Branding\gray.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Sitecore Branding\gray 1.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Sitecore Branding\red.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Sitecore Branding\gray 2.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Sitecore Branding\gray 3.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Sitecore Branding\gray 4.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Sitecore Branding\gray 5.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Sitecore Branding\green 1.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Sitecore Branding\green 2.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Sitecore Branding\red 1.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Sitecore Branding\red 2.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Sitecore Branding\red 3.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Sitecore Branding\red 4.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Sitecore Branding\red 5.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Carousel Backgrounds\Sitecore Branding\teal.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Contributors.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Contributors\Brad Christie.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
@@ -844,11 +668,15 @@
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Contributors\James Eaton.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Contributors\Justin West.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Contributors\Kevin DiTroia.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Contributors\Matthew Goodman.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
@@ -868,7 +696,23 @@
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\General Use\70-round-sign1.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\General Use\Buildings.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\General Use\Grand Central.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\General Use\Lake.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\General Use\Lightbulbs.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\General Use\Mountains.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
@@ -885,6 +729,14 @@
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\General Use\sitecorelogo.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\General Use\Skyline.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\General Use\Vancouver.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
@@ -2588,15 +2440,15 @@
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Logos\Logo with Transparent Background.item">
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Logos\Inverse Logo.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Logos\Inverse Monochrome Logo.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Logos\Logo.item">
-      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <ItemDeployment>DeployOnce</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\media library\Launch Sitecore\Site Images\Logos\Monochrome Logo with Transparent Background.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>

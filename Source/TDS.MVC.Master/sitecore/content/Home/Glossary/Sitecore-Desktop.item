@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: cf0cc6ee-4e2d-48e2-b787-0102c7bf4e48
+revision: 7ca25021-df38-4ee3-8129-ed65938a1990
 
 ----field----
 field: {FBADE872-82BD-45AD-A2EC-DADC723249DA}
@@ -60,13 +60,6 @@ content-length: 1211
     <li>Control Panel</li>
 </ul>
 ----field----
-field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
-name: Image
-key: image
-content-length: 229
-
-<image mediaid="{4E237733-2E37-4EC3-B063-24F89685C96A}" mediapath="/Launch Sitecore/Site Images/Glossary/Sitecore Desktop" src="~/media/4e2377332e374ec3b06324f89685c96a.ashx" alt="" height="505" width="620" hspace="" vspace="" />
-----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
 key: icon
@@ -74,16 +67,16 @@ content-length: 139
 
 <image mediaid="{8C0951A1-5976-4EB8-AB07-9AED145EFB6F}" mediapath="/Images/Icons/monitor" src="~/media/Images/Icons/monitor.ashx" ></image>
 ----field----
+field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{4E237733-2E37-4EC3-B063-24F89685C96A}" />
+----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
-content-length: 16
-
-Sitecore Desktop
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
 content-length: 16
 
 Sitecore Desktop
@@ -107,14 +100,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cf0cc6ee-4e2d-48e2-b787-0102c7bf4e48
+7ca25021-df38-4ee3-8129-ed65938a1990
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131224T084938:635234717780243906
+20150708T214158Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

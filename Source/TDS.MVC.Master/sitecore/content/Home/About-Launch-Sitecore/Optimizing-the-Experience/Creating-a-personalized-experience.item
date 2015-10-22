@@ -47,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: bee2cbf0-b09d-41df-bc7a-5398e681b84a
+revision: a6a8c049-c55b-4da6-a36a-f036b1a155d6
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -110,13 +110,6 @@ content-length: 22
 
 Inline Personalization
 ----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
-content-length: 34
-
-Creating a personalized experience
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -136,14 +129,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bee2cbf0-b09d-41df-bc7a-5398e681b84a
+a6a8c049-c55b-4da6-a36a-f036b1a155d6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140218T112727:635283196477331661
+20150804T201934Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -151,6 +144,13 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
+name: __Semantics
+key: __semantics
+content-length: 77
+
+{7F207663-6A32-4173-92DA-A15394B33776}|{E0EDA7F7-4313-4596-99C4-07185950E19E}
 ----field----
 field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
 name: __Workflow state

@@ -44,7 +44,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 4f3291fa-a6d6-4e15-931e-ae01ec261d19
+revision: 0a74b3d6-ec75-40ba-8248-d856fae7381a
 
 ----field----
 field: {FBADE872-82BD-45AD-A2EC-DADC723249DA}
@@ -73,13 +73,6 @@ content-length: 1295
 </ol>
 <p>Note: Even if you use placeholders, it doesn't mean that users have to manually select components and sublayouts for each newly created page. You can use <a href="%7E/link.aspx?_id=2BF103381CFF4F9F890EE9F3078473F9&amp;_z=z">Standard Values</a> to build a presentation automatically on an item, complete with components in placeholders, but then your users (if you give them permission) can override these defaults.</p>
 ----field----
-field: {B8FC9DF5-CED1-40D8-B506-E09F30FD26F1}
-name: Image
-key: image
-content-length: 192
-
-<image mediapath="/Launch Sitecore/Site Images/Glossary/Placeholder" mediaid="{4BB3516F-CECD-40A0-8A47-9AFF23C457D9}" src="~/media/4bb3516fcecd40a08a479aff23c457d9.ashx?20131121T1201453290" />
-----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
 key: icon
@@ -87,16 +80,16 @@ content-length: 167
 
 <image mediaid="{F396E729-901B-42C5-ACE7-8CA8D9096A92}" mediapath="/Images/Icons/table_selection_block" src="~/media/Images/Icons/table_selection_block.ashx" ></image>
 ----field----
+field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{4BB3516F-CECD-40A0-8A47-9AFF23C457D9}" />
+----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
-content-length: 11
-
-Placeholder
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
 content-length: 11
 
 Placeholder
@@ -120,14 +113,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4f3291fa-a6d6-4e15-931e-ae01ec261d19
+0a74b3d6-ec75-40ba-8248-d856fae7381a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131224T084935:635234717752518334
+20150708T214134Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
