@@ -2,9 +2,9 @@
 version: 1
 id: {D1AE0DFD-42F5-4FED-AFBD-2700CCB5F065}
 database: master
-path: /sitecore/content/Global/Settings/External Sites/SDN
+path: /sitecore/content/Global/Settings/External Sites/Documentation
 parent: {8D282968-4F4E-495C-A551-C33745B68517}
-name: SDN
+name: Documentation
 master: {00000000-0000-0000-0000-000000000000}
 template: {B7D7034D-61EC-4514-B8B3-58707A31EA72}
 templatekey: External Site
@@ -12,15 +12,15 @@ templatekey: External Site
 ----version----
 language: en
 version: 1
-revision: 0d52e345-b58c-49fa-94a9-a046b00fa673
+revision: 8e579580-d8b3-410b-9aa9-c0b3c8f5f5d8
 
 ----field----
 field: {A04A9589-87CD-41F2-847F-900242C70EF3}
 name: Site Link
 key: site link
-content-length: 109
+content-length: 110
 
-<link text="Developer Network" linktype="external" url="http://sdn.sitecore.net" anchor="" target="_blank" />
+<link text="Documentation Site" linktype="external" url="http://doc.sitecore.net" anchor="" target="_blank" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0d52e345-b58c-49fa-94a9-a046b00fa673
+8e579580-d8b3-410b-9aa9-c0b3c8f5f5d8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131025T202113:635183292735291305
+20151015T171519Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
