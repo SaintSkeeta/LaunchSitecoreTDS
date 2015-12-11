@@ -20,13 +20,13 @@ content-length: 38
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 1187
+content-length: 578
 
-<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{DF82BBBD-B499-4C99-AD03-77A8C2D45B17}"><p uid="{806E131A-BE95-4058-8843-67D6130796C4}" key="main-content" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Template Overrides/Home/home-main-content" /><p uid="{59B8A387-762A-45BD-8F70-E9A5C02B7C46}" key="footer-left" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Microsite/microsite-footer-left" /><p uid="{B1085973-7C66-4797-88B5-C9DE8CEB0F15}" key="footer-center" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Microsite/microsite-footer-center" /><p uid="{92985A41-BB42-449A-9E09-D88AF92073EF}" key="footer-right" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Microsite/microsite-footer-right" /><r ds="" id="{3A87ABAE-56F8-4323-81E4-B69D894160B4}" par="" ph="main-content" uid="{7E94C7AF-EF8B-4D61-B09B-A947BB7C44C3}" /><r ds="" id="{48A4CC58-05B6-47E1-9EF2-175D33229331}" par="" ph="/main-content/full-row1" uid="{52D796F3-ABC1-48CA-B1F6-CE901C71888B}" /><r ds="" id="{5DC72CF0-EDFF-4524-B2DB-81415CFF3434}" par="" ph="visit-details" uid="{9954C820-CE50-4954-A06D-DD8ADEB99F31}" /></d></r>
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{DF82BBBD-B499-4C99-AD03-77A8C2D45B17}"><p uid="{806E131A-BE95-4058-8843-67D6130796C4}" key="main-content" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Template Overrides/Home/home-main-content" /><r ds="" id="{3A87ABAE-56F8-4323-81E4-B69D894160B4}" par="" ph="main-content" uid="{7E94C7AF-EF8B-4D61-B09B-A947BB7C44C3}" /><r ds="" id="{48A4CC58-05B6-47E1-9EF2-175D33229331}" par="" ph="/main-content/full-row1" uid="{52D796F3-ABC1-48CA-B1F6-CE901C71888B}" /></d></r>
 ----version----
 language: en
 version: 1
-revision: d566b80b-3a71-448f-834d-c76ed64a5ea7
+revision: 1c5e39b9-6810-4d68-a336-eb23477d271d
 
 ----field----
 field: {AAEAC7F2-E33E-4B34-9023-AB6F59D3A427}
@@ -76,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d566b80b-3a71-448f-834d-c76ed64a5ea7
+1c5e39b9-6810-4d68-a336-eb23477d271d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140218T112932:635283197724685785
+20150713T202913Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -34,7 +34,7 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-	<SitecoreAccessGuid>900c37ae-5fe5-48c2-bccd-2eab2dafea31</SitecoreAccessGuid>
+    <SitecoreAccessGuid>900c37ae-5fe5-48c2-bccd-2eab2dafea31</SitecoreAccessGuid>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
@@ -54,10 +54,13 @@
     <ExcludedAssemblies Include="Sitecore.%2a.dll" />
   </ItemGroup>
   <ItemGroup>
+    <CodeGenTemplate Include="Code Generation Templates\GeneralExtensions.tt" />
     <CodeGenTemplate Include="Code Generation Templates\GlassHeader.tt" />
     <CodeGenTemplate Include="Code Generation Templates\GlassItem.tt" />
     <CodeGenTemplate Include="Code Generation Templates\Helpers.tt" />
+    <CodeGenTemplate Include="Code Generation Templates\Inflector.tt" />
     <CodeGenTemplate Include="Code Generation Templates\ItemPaths.tt" />
+    <CodeGenTemplate Include="Code Generation Templates\StringExtensions.tt" />
   </ItemGroup>
   <ItemGroup>
     <SitecoreItem Include="sitecore\templates.item">
@@ -86,6 +89,10 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Base Templates\General Fields\General\Image.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Launch Sitecore\Base Templates\Site Section.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -95,10 +102,6 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Launch Sitecore\Base Templates\Site Section\Site Section.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Base Templates\Site Section\Site Section\Image.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>

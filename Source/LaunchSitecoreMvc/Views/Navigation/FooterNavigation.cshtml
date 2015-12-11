@@ -1,6 +1,5 @@
 ﻿@model List<LaunchSitecore.Models.SimpleNavigationItem>
-<h4 class="center-title">@UIHelpers.GetDictionaryText("Navigate")</h4>
-<ul class="footer-navigate">
+<ul class="list-inline">
  @foreach (var item in Model)
  {
   <li><a href="@item.Url">@Html.Sitecore().Field("Menu Title", item.Item)</a></li>

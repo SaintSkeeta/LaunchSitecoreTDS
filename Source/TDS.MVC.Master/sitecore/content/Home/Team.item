@@ -10,6 +10,20 @@ template: {6E005E97-5435-4806-98E5-CA454B8218D1}
 templatekey: Team Section
 
 ----field----
+field: {D48AF62C-9C56-4E4C-BA29-94C3DABAD82E}
+name: Show Children In Menu
+key: show children in menu
+content-length: 0
+
+
+----field----
+field: {1E2AAB62-E924-421E-B766-BF8422CCBE44}
+name: Show Item In Footer Menu
+key: show item in footer menu
+content-length: 1
+
+1
+----field----
 field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
 name: __Tracking
 key: __tracking
@@ -54,7 +68,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: f805c379-e5a7-49c2-b6e3-d5470f852055
+revision: f3da7454-4bbb-443e-ac81-ab9ef99330d5
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -99,20 +113,6 @@ content-length: 4
 
 Team
 ----field----
-field: {D48AF62C-9C56-4E4C-BA29-94C3DABAD82E}
-name: Show Children In Menu
-key: show children in menu
-content-length: 0
-
-
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
-content-length: 4
-
-Team
-----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -139,14 +139,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f805c379-e5a7-49c2-b6e3-d5470f852055
+f3da7454-4bbb-443e-ac81-ab9ef99330d5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140218T130601:635283255618301028
+20150709T134948Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

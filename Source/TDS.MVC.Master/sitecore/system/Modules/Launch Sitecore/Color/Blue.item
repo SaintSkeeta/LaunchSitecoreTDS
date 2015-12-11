@@ -15,11 +15,18 @@ name: Color Value
 key: color value
 content-length: 7
 
-#2773ae
+#125687
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+100
 ----version----
 language: en
 version: 1
-revision: ffb408e4-5304-4152-bde5-98527767b5bc
+revision: 79b7811f-63b2-406c-8d74-cd67144caa6d
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ffb408e4-5304-4152-bde5-98527767b5bc
+79b7811f-63b2-406c-8d74-cd67144caa6d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20130627T111808:635079286885824097
+20150708T174609Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

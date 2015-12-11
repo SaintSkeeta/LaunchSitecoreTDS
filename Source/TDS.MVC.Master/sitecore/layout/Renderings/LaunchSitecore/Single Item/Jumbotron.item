@@ -13,9 +13,9 @@ templatekey: Controller rendering
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
 name: Controller
 key: controller
-content-length: 63
+content-length: 10
 
-LaunchSitecore.Controllers.SingleItemController, LaunchSitecore
+SingleItem
 ----field----
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
@@ -24,19 +24,26 @@ content-length: 9
 
 Jumbotron
 ----field----
+field: {94069F66-609C-48B0-8281-521C30FB269D}
+name: Open Properties after Add
+key: open properties after add
+content-length: 0
+
+
+----field----
 field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
 name: Datasource Location
 key: datasource location
-content-length: 44
+content-length: 0
 
-/sitecore/content/Global/Content/Promo Spots
+
 ----field----
 field: {1A7C85E5-DC0B-490D-9187-BB1DBCB4C72F}
 name: Datasource Template
 key: datasource template
-content-length: 55
+content-length: 0
 
-/sitecore/templates/Global/Content Templates/Promo Spot
+
 ----field----
 field: {E441ABE7-2CA3-4640-AE26-3789967925D7}
 name: Compatible Renderings
@@ -68,7 +75,7 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: 9997fbd7-9139-48b8-8e07-fae8e1ea8813
+revision: cba7c8ed-ae77-4fb3-b92c-5d42a9006bcb
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -83,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9997fbd7-9139-48b8-8e07-fae8e1ea8813
+cba7c8ed-ae77-4fb3-b92c-5d42a9006bcb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140227T191542:635291253424081423
+20150713T191251Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

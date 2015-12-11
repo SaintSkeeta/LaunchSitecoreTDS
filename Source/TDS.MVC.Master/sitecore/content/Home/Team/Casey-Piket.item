@@ -10,19 +10,12 @@ template: {97963D48-BD06-46CA-8279-CD2BA3C7AA36}
 templatekey: Team Member
 
 ----field----
-field: {AD724ADB-4729-4C32-BF40-676579D587CF}
-name: Image
-key: image
-content-length: 228
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
 
-<image mediaid="{84399122-A896-4579-9832-3C8662EC9136}" src="~/media/84399122a896457998323c8662ec9136.ashx" height="200" hspace="" mediapath="/Launch Sitecore/Site Images/Contributors/Casey Piket" width="200" alt="" vspace="" />
-----field----
-field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
-name: __Renderings
-key: __renderings
-content-length: 37
-
-<r xmlns:p="p" xmlns:s="s" p:p="1" />
+100
 ----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
@@ -33,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 811990a7-7528-491e-aa2a-24ab9fe8e12f
+revision: 922d1e2b-70d6-4e83-8240-bf6ad2cd9ead
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -71,23 +64,23 @@ content-length: 179
 
 <image mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/t-z/user-4" mediaid="{8A48C884-E903-4C0E-BA4E-5282934404BE}" src="~/media/8a48c884e9034c0eba4e5282934404be.ashx" />
 ----field----
+field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{84399122-A896-4579-9832-3C8662EC9136}" />
+----field----
 field: {D2E90283-29F2-4EAF-895E-E8DE8DAEEC69}
 name: Job Title
 key: job title
-content-length: 34
+content-length: 41
 
-Regional Sales Engineer, SouthEast
+Senior Regional Sales Engineer, SouthEast
 ----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
-content-length: 11
-
-Casey Piket
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
 content-length: 11
 
 Casey Piket
@@ -111,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-811990a7-7528-491e-aa2a-24ab9fe8e12f
+922d1e2b-70d6-4e83-8240-bf6ad2cd9ead
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131224T093703:635234746230116490
+20150716T030813Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

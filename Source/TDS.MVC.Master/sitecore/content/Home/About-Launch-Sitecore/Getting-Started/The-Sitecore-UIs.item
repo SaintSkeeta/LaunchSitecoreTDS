@@ -39,13 +39,6 @@ content-length: 38
 
 {1B6A3702-5694-4FC4-8366-989ECDCD7F1B}
 ----field----
-field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
-name: __Renderings
-key: __renderings
-content-length: 37
-
-<r xmlns:p="p" xmlns:s="s" p:p="1" />
-----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
 key: __workflow
@@ -55,7 +48,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 04543c3f-7747-45a8-bc81-e77f29e4d568
+revision: 3327d34c-5e71-49ca-b017-4154cf3fe8c1
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -139,9 +132,9 @@ content-length: 7511
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
 key: icon
-content-length: 180
+content-length: 187
 
-<image mediaid="{6D8C64A3-D708-4A4E-9D48-92E9A0F375F7}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/a-b/browser" src="~/media/6d8c64a3d7084a4e9d4892e9a0f375f7.ashx" />
+<image mediaid="{6D8C64A3-D708-4A4E-9D48-92E9A0F375F7}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/a-b/browser" src="~/media/6d8c64a3d7084a4e9d4892e9a0f375f7.ashx" ></image>
 ----field----
 field: {82D725ED-6707-4532-86A6-5444E34332FD}
 name: Contributors
@@ -153,13 +146,6 @@ content-length: 38
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
 key: menu title
-content-length: 16
-
-The Sitecore UIs
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
 content-length: 16
 
 The Sitecore UIs
@@ -183,14 +169,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-04543c3f-7747-45a8-bc81-e77f29e4d568
+3327d34c-5e71-49ca-b017-4154cf3fe8c1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140218T112727:635283196479782513
+20150804T202127Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -6,6 +6,8 @@
 - Use Tag 2.0.1.0 with Sitecore 7.1 Update 1 (rev. 140130) - Launch Sitecore - both WebForms and MVC versions
 - Use Tag 2.1.0.0 with Sitecore 7.2 Update 2 (rev. 140526) - Launch Sitecore - both WebForms and MVC versions
 - Use Tag 2.2.0.0 with Sitecore 7.5 Initial Release (rev. 141003) - Launch Sitecore - both WebForms and MVC versions.
+- Use Tag 2.3.0.0 with Sitecore 8.0 Update 4 (rev. 150621) - Launch Sitecore - both WebForms and MVC versions.
+- Use Tag 3.0.0.0 with Sitecore 8.0 Update 5 (rev. 150812) - Launch Sitecore - MVC Bootstrap3 version.
 
 Launch Sitecore is a site found at [www.launchsitecore.net](www.launchsitecore.net). It is a fantastic, shared source site that shows the power of Sitecore through Page Editor and DMS. The site comes complete with content, components, engagement plans and much more. A Sitecore package for the complete site can be downloaded from the above link after registering.
 
@@ -15,7 +17,7 @@ This repository is that package converted to a Visual Studio solution with items
 ## To get up and running ##
 ### Quick Guide ###
 - Install a blank instance of Sitecore using SIM.
-- Update Include configs so your data folder points locally, and you're running in Live mode.
+- Update Include configs so you're running in Live mode.
 - Copy the required Sitecore DLLs to the `Installers\Sitecore` folder.
 - Within either the MVC or WebForms solution, setup your local TDS settings, either by changing the `TdsGlobal.config` file, or by duplicating it with the name `TdsGlobal.config.user`
 - Deploy the solution, so code and items are deployed to your local instance.
@@ -25,24 +27,18 @@ This repository is that package converted to a Visual Studio solution with items
 
 #### Install a blank Sitecore Instance ####
 - Install a blank instance of Sitecore using the Sitecore Instance Manager.
-- Ensure that you install Analytics from the second step. You must have the DMS version available to you.
+- (Pre 7.5) Ensure that you install Analytics from the second step. You must have the DMS version available to you.
 - Click Open folder when installation is complete.
 
-#### Update your local settings ####
+#### Update your local settings to run in Live Mode ####
 - Navigate to the App_Config/Include folder.
-- Change the name of DataFolder.config.example to DataFolder.config.
-- Open the file, and change the value to that used by your site. Save and Exit.
 - Copy the `zz_developer.config` file in {GitRootDirectory}/Installers over to In App_Config/Include. This config file will make your site run in live mode.
 
 #### Place Sitecore DLLs in the Installers folder ####
 - Follow the steps in the {GitRootDirectory}/Installers/Sitecore/README.txt file, which tells you which Sitecore DLLs need to be referenced in code.
 
 #### Open the solution you wish to use ####
-Open `LaunchSitecore.sln` for the WebForms version of the site.<br />
-Open `LaunchSitecoreMvc.sln` for the MVC version of the site.
-
-The two solutions share some projects, but can be built and deployed irrespective of each other.
-*Note:* You should only use one solution per Sitecore Instance. You cannot deploy both solutions to the same Sitecore instance.
+Open `LaunchSitecoreMvc.sln` for the MVC source code.
 
 #### Set your TDS Deployment Settings ####
 - In the root directory of the solution, duplicate the `TdsGlobal.config` file, naming it `TdsGlobal.config.user`.
@@ -56,7 +52,7 @@ The two solutions share some projects, but can be built and deployed irrespectiv
 - Right click on the solution and select 'Deploy Solution'.
 
 #### Rebuild Search Indexes ####
-When using a Sitecore 7 version, you will need to rebuild the indexes for the site to work correctly. (Noticeable with the carousel on the homepage in the new themed version).<br />
+When using a Sitecore 7+ version, you will need to rebuild the indexes for the site to work correctly. (Noticeable with the carousel on the homepage in the new themed version).<br />
 To rebuild the indexes:-
 
  - Open the Sitecore Client, and login to *Desktop* mode.
@@ -87,18 +83,14 @@ Your site should now be completely setup.
 
 ## Differences with LaunchSitecore.net package ##
 ### Code differences ###
-Some custom code has been added to flush the contact data to the xDB. In each of the files below, we explicitly call Session.Abandon(), which will flush the data for us.
+Some custom code has been added to flush the contact data to the xDB. We do this in the following file:-
 
- - TertiaryNav.ascx.cs 
  - AccountController.cs
 
 ### Item differences ###
- - master: /sitecore/system/Settings/Rules/ConditionalRenderings/Tags/Default
-  - the TDS project has added tag on this item for 'Engagement Automation'. This tag existed in the 7.2 package but was removed from 7.5 package.
 
  - master: /sitecore/templates/Launch Sitecore/Article Group
   - in package it inherits from GeneralFields, but also SiteSection, which inherits from GeneralFields... so they creates a duplicate dependency and breaks code generation.
-
  
 
 

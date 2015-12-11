@@ -1,5 +1,5 @@
 ﻿using LaunchSitecore.Configuration;
-using LaunchSitecore.Configuration.SiteUI.Base;
+using LaunchSitecore.Configuration.SiteUI;
 using Sitecore.Data.Items;
 using Sitecore.Mvc.Presentation;
 using System;
@@ -14,7 +14,7 @@ namespace LaunchSitecore.Controllers
   {
     public string CssTheme()
     {
-      Item pres = SiteConfiguration.GetPresentationSettingsItem();
+     Item pres = SiteConfiguration.GetSiteConfigurationItem();
       if (pres != null)
         return String.Format("<link rel=\"stylesheet\" href=\"/assets/css/colors/color_scheme_{0}.css\" />", pres.Fields["Site Color"].Value.ToLower());
       return null;
@@ -22,7 +22,7 @@ namespace LaunchSitecore.Controllers
 
     public string PageTitle()
     {
-      Item siteSettings = SiteConfiguration.GetSiteSettingsItem();
+     Item siteSettings = SiteConfiguration.GetSiteConfigurationItem();
       Item home = SiteConfiguration.GetHomeItem();
       Item currentItem = Sitecore.Context.Item;
 

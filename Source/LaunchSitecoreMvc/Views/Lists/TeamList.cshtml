@@ -2,11 +2,11 @@
 <div>
  @foreach (var item in Model)
  { 
-  <div class="row show-grid team-member">
-   <div class="span2 photo">
-    <div class="bordered-img"><a href="@item.Url">@Html.Sitecore().Field("Image", item.Item, new { @maxWidth = "150", @maxHeight = "150" })</a></div>
+  <div class="row team-member">
+   <div class="col-md-4 col-sm-4 photo">
+    <div class="bordered-img"><a href="@item.Url">@Html.Sitecore().Field("Image", item.Item, new { @maxWidth = "182", @maxHeight = "182", @class="img-responsive" })</a></div>
    </div>
-   <div class="span7">
+   <div class="col-md-8">
     <h2><a href="@item.Url">@Html.Sitecore().Field("Title", item.Item)</a></h2>
     <h4>@Html.Sitecore().Field("Job Title", item.Item)</h4>
     <p class="experience"><em>@Html.Sitecore().Field("Quote", item.Item)</em></p>

@@ -13,9 +13,9 @@ templatekey: Controller rendering
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
 name: Controller
 key: controller
-content-length: 63
+content-length: 10
 
-LaunchSitecore.Controllers.NavigationController, LaunchSitecore
+Navigation
 ----field----
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
@@ -23,6 +23,13 @@ key: controller action
 content-length: 19
 
 SecondaryNavigation
+----field----
+field: {94069F66-609C-48B0-8281-521C30FB269D}
+name: Open Properties after Add
+key: open properties after add
+content-length: 1
+
+-
 ----field----
 field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
 name: Datasource Location
@@ -54,7 +61,7 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: bae3341c-8ab2-4b11-abc3-f44e2aeac538
+revision: c1e2b9cf-4c93-4e40-8e5b-3513f3909e54
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -69,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bae3341c-8ab2-4b11-abc3-f44e2aeac538
+c1e2b9cf-4c93-4e40-8e5b-3513f3909e54
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140227T191418:635291252584057375
+20140922T130454:635469878948974086
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

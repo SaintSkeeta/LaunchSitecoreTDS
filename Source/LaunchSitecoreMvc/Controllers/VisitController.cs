@@ -1,5 +1,4 @@
 ﻿using LaunchSitecore.Configuration;
-using LaunchSitecore.Configuration.SiteUI.Base;
 using LaunchSitecore.Configuration.SiteUI;
 using LaunchSitecore.Models;
 using Sitecore.Data.Items;
@@ -22,7 +21,7 @@ namespace LaunchSitecore.Controllers
 
     private ActionResult ShowEditorAlert()
     {
-      return IsPageEditorEditing ? View("ShowPageEditorAlert", new PageEditorAlert(PageEditorAlert.Alerts.VisitDetailsNotAllowedInPageEditor)) : null;
+      return View("ShowPageEditorAlert", new PageEditorAlert(PageEditorAlert.Alerts.VisitDetailsNotAllowedInPageEditor));
     }
   }
 }

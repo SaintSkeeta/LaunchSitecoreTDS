@@ -2,11 +2,11 @@
 <#@ output encoding="utf-8"#>
 
 <#@ include file="Helpers.tt" #>
+<#@ include file="StringExtensions.tt" #>
+<#@ include file="GeneralExtensions.tt" #>
+<#@ include file="Inflector.tt" #>
 
 <#@ assembly name="System.Core.dll" #>
-
-<#@ import namespace="HedgehogDevelopment.CodeGeneration.Extensions" #>
-<#@ assembly name="HedgehogDevelopment.CodeGeneration.Extensions.dll" #>
 
 <#@ import namespace="System" #>
 <#@ import namespace="System.Text" #>
@@ -26,16 +26,17 @@ There are a few things you can put in the 'Custom Data' property of a field in T
 To use multiple settings put them in as a querystring (key1=value&key2=value)
 
 ignore=true
-	Sets a field to be skipped over for code gen
+    Sets a field to be skipped over for code gen
 name=[name]
-	Forces the name of the generated property. 
-	If not specified, then the generated property is the name of the Sitecore field. 
-	If the field stores multiple values, the property name is pluralized.
+    Forces the name of the generated property. 
+    If not specified, then the generated property is the name of the Sitecore field. 
+    If the field stores multiple values, the property name is pluralized.
 type=[type]
-	Sets the return type of the generated property
+    Sets the return type of the generated property
 generic=[type]
-	In the event the type (either specificed or auto mapped) is a generic it will use this generic type. i.e. List<generic>
-		
+    In the event the type (either specificed or auto mapped) is a generic it will use this generic type. i.e. List<generic>
+cachable=true
+    Sets a type to be cached by GlassV4
 */
 #>
 
@@ -44,122 +45,83 @@ generic=[type]
 SitecoreTemplate template = Model as SitecoreTemplate;
 if (template == null)
 {
-	return "";
+    return "";
 }
 
 string Tool = "Team Development for Sitecore - GlassItem.tt";
 string ToolVersion = "1.0";
 #>
 
-<# string templateShortDescription = template.SitecoreFields.GetValue("__Short description"); #>
-<# string templateLongDescription = template.SitecoreFields.GetValue("__Long description"); #>
-
 namespace <#= GetNamespace(DefaultNamespace, template)#>
 {
 
 
-	/// <summary>
-	/// <#= template.Name.AsInterfaceName() #> Interface
-<# if (!string.IsNullOrEmpty(templateShortDescription)){ 
-#>	/// <para><#= templateShortDescription #></para>
-<# } 
-#><# if (!string.IsNullOrEmpty(templateLongDescription)){ 
-#>	/// <para><#= templateLongDescription #></para>
-<# } 
-#>	/// <para>Path: <#= template.Path #></para>	
-	/// <para>ID: <#= template.ID.ToString().ToUpper() #></para>	
-	/// </summary>
-	[SitecoreType(TemplateId=<#= template.Name.AsInterfaceName() #>Constants.TemplateIdString)]
-	public partial interface <#= template.Name.AsInterfaceName() #> : IGlassBase <#=GetObjectInheritanceDefinition(DefaultNamespace, template, true, (string s) => s.AsInterfaceName())#>
-	{
-<#			foreach(SitecoreField field in GetFieldsForTemplate(template, false)){
-#>					/// <summary>
-					/// The <#=field.Name#> field.
-<#				string fieldShortDescription = field.SitecoreFields.GetValue("__Short description");
-					if (!string.IsNullOrEmpty(fieldShortDescription)){ 
-#>					/// <para><#= fieldShortDescription #></para>
-<# } 
-#><#			string fieldLongDescription = field.SitecoreFields.GetValue("__Long description");
-					if (!string.IsNullOrEmpty(fieldLongDescription)){ 
-#>					/// <para><#= fieldLongDescription #></para>
-<#					} 
-#>					/// <para>Field Type: <#=field.Type#></para>		
-					/// <para>Field ID: <#=field.ID.ToString()#></para>
-					/// <para>Custom Data: <#=field.Data#></para>
-					/// </summary>
-<# string glassFieldName = GetPropertyName(field);
-if (String.Compare(glassFieldName, field.Name) == 0)
-{#>					[SitecoreField] 
-<# }
-else
-{#>					[SitecoreField("<#=field.Name#>")]
-<# } 
- #>					<#=GetGlassFieldType(field)#> <#= GetPropertyName(field) #>  {get; set;}
-			
-<#			}#>
-	}
+    /// <summary>
+    /// <#= AsInterfaceName(template.Name) #> Interface
+    /// <para><#= GetValue(template.SitecoreFields, "__Short description")#></para>
+    /// <para>Path: <#= template.Path #></para>
+    /// <para>ID: <#= template.ID.ToString() #></para>
+    /// </summary>
+    [SitecoreType(TemplateId=<#= AsInterfaceName(template.Name) #>Constants.TemplateIdString<#= GetGlassCachable(template) #>)]
+    public partial interface <#= AsInterfaceName(template.Name) #> : IGlassBase <#=GetObjectInheritanceDefinition(DefaultNamespace, template, true, (string s) => AsInterfaceName(s))#>
+    {
+            <#foreach(SitecoreField field in GetFieldsForTemplate(template, false)){#>
+                    /// <summary>
+                    /// The <#=field.Name#> field.
+                    /// <para><#= GetValue(field.SitecoreFields, "__Short description")#></para>
+                    /// <para>Field Type: <#=field.Type#></para>
+                    /// <para>Field ID: <#=field.ID.ToString()#></para>
+                    /// <para>Custom Data: <#=field.Data#></para>
+                    /// </summary>
+                    [SitecoreField(<#= AsInterfaceName(template.Name) #>Constants.<#= GetPropertyName(field) #>FieldName)]
+                    <#=GetGlassFieldType(field)#> <#= GetPropertyName(field) #>  {get; set;}
+            
+            <#}#>
+    }
 
 
-	public static partial class <#= template.Name.AsInterfaceName() #>Constants{
+    public static partial class <#= AsInterfaceName(template.Name) #>Constants{
 
-			public const string TemplateIdString = "<#= template.ID.ToString() #>";
-			public static readonly ID TemplateId = new ID(TemplateIdString);
-			public const string TemplateName = "<#= template.Name #>";
+            public const string TemplateIdString = "<#= template.ID.ToString() #>";
+            public static readonly ID TemplateId = new ID(TemplateIdString);
+            public const string TemplateName = "<#= template.Name #>";
 
-		<#foreach(SitecoreField field in GetFieldsForTemplate(template, true)){#>
-			
-			public static readonly ID <#= GetPropertyName(field) #>FieldId = new ID("<#=field.ID.ToString()#>");
-			public const string <#= GetPropertyName(field) #>FieldName = "<#=field.Name#>";
-			
-		<#}#>	
+        <#foreach(SitecoreField field in GetFieldsForTemplate(template, true)){#>
+            
+            public static readonly ID <#= GetPropertyName(field) #>FieldId = new ID("<#=field.ID.ToString()#>");
+            public const string <#= GetPropertyName(field) #>FieldName = "<#=field.Name#>";
+            
+        <#}#>
 
-	}
+    }
 
 <#
 // If the name of the template looks like an Interface, then don't generate a class definition
-if (!template.Name.IsInterfaceWord()){ #>	
-	/// <summary>
-	/// <#= template.Name.AsClassName() #>
-<# if (!string.IsNullOrEmpty(templateShortDescription)){
-#>	/// <para><#= templateShortDescription #></para>
-<# }
-#><# if (!string.IsNullOrEmpty(templateLongDescription)){
-#>	/// <para><#= templateLongDescription #></para>
-<# }
-#>	/// <para>Path: <#= template.Path #></para>
-	/// <para>ID: <#= template.ID.ToString().ToUpper() #></para>	
-	/// </summary>
-	[SitecoreType(TemplateId=<#= template.Name.AsInterfaceName() #>Constants.TemplateIdString)]
-	public partial class <#= template.Name.AsClassName() #>  : GlassBase, <#=template.Name.AsInterfaceName()#> 
-	{
-<#			foreach(SitecoreField field in GetFieldsForTemplate(template, true)){
-#>				/// <summary>
-				/// The <#=field.Name#> field.
-<#				string fieldShortDescription = field.SitecoreFields.GetValue("__Short description");
-				if (!string.IsNullOrEmpty(fieldShortDescription)) {
-#>				/// <para><#= fieldShortDescription #></para>
-<# }
-#><#			string fieldLongDescription = field.SitecoreFields.GetValue("__Long description");
-				if (!string.IsNullOrEmpty(fieldLongDescription)){
-#>				/// <para><#= fieldLongDescription #></para>
-<# }
-#>				/// <para>Field Type: <#=field.Type#></para>		
-				/// <para>Field ID: <#=field.ID.ToString()#></para>
-				/// <para>Custom Data: <#=field.Data#></para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("<#=Tool#>", "<#=ToolVersion#>")]
-<# string glassFieldName = GetPropertyName(field);
-if (String.Compare(glassFieldName, field.Name) == 0)
-{#>				[SitecoreField] 
-<# }
-else
-{#>				[SitecoreField("<#=field.Name#>")]
-<# } #>
-				public virtual <#=GetGlassFieldType(field)#> <#= glassFieldName #>  {get; set;}
-
-					
-<#		}#>	
-	}
+if (!IsInterfaceWord(template.Name)){ #>
+    /// <summary>
+    /// <#= AsClassName(template.Name) #>
+    /// <para><#= GetValue(template.SitecoreFields, "__Short description")#></para>
+    /// <para>Path: <#= template.Path #></para>
+    /// <para>ID: <#= template.ID.ToString() #></para>
+    /// </summary>
+    [SitecoreType(TemplateId=<#= AsInterfaceName(template.Name) #>Constants.TemplateIdString<#= GetGlassCachable(template) #>)]
+    public partial class <#= AsClassName(template.Name) #>  : GlassBase, <#=AsInterfaceName(template.Name)#> 
+    {
+       
+        <#foreach(SitecoreField field in GetFieldsForTemplate(template, true)){#>
+                /// <summary>
+                /// The <#=field.Name#> field.
+                /// <para><#= GetValue(field.SitecoreFields, "__Short description")#></para>
+                /// <para>Field Type: <#=field.Type#></para>
+                /// <para>Field ID: <#=field.ID.ToString()#></para>
+                /// <para>Custom Data: <#=field.Data#></para>
+                /// </summary>
+                [global::System.CodeDom.Compiler.GeneratedCodeAttribute("<#=Tool#>", "<#=ToolVersion#>")]
+                [SitecoreField(<#= AsInterfaceName(template.Name) #>Constants.<#= GetPropertyName(field) #>FieldName)]
+                public virtual <#=GetGlassFieldType(field)#> <#= GetPropertyName(field) #>  {get; set;}
+                    
+        <#}#>
+    }
 <#}#>
 }
 
@@ -173,107 +135,120 @@ else
 /// <returns></returns>
 public static string GetObjectInheritanceDefinition(string defaultNamespace, SitecoreTemplate item, bool includeLeadingComma, Func<string, string> nameFunc)
 {
-	if (item.BaseTemplates.Count > 0)
-	{
-		return string.Concat(includeLeadingComma ? ", " : "",
-								item.BaseTemplates
-								.Select( bt => GetFullyQualifiedName(defaultNamespace, bt, nameFunc)) // select the name of the template with an 'I' prefix
-								.Aggregate( (total,next) => total + ", " + next) // basically a string.join(string[], '')
-							);
-	}
-	return "";
+    if (item.BaseTemplates.Count > 0)
+    {
+        return string.Concat(includeLeadingComma ? ", " : "",
+                                item.BaseTemplates
+                                .Select( bt => GetFullyQualifiedName(defaultNamespace, bt, nameFunc)) // select the name of the template with an 'I' prefix
+                                .Aggregate( (total,next) => total + ", " + next) // basically a string.join(string[], '')
+                            );
+    }
+    return "";
+}
+
+public static string GetGlassCachable(SitecoreTemplate item)
+{
+    string cachable = GetCustomProperty(item.Data, "cachable");
+
+    bool isCachable;
+    if (!string.IsNullOrEmpty(cachable))
+    {
+        bool.TryParse(cachable, out isCachable);
+        return string.Format(", Cachable = {0}", isCachable.ToString().ToLower());
+    }
+    return string.Empty;
 }
 
 public static string GetGlassFieldType(SitecoreField field)
 {
-	if (field != null && field.Type != null)
+    if (field != null && field.Type != null)
     {
-		// Pull out any 'type' param from the custom data field on the field in TDS
-		string customType = GetCustomProperty(field.Data, "type");
-		string generic = GetCustomProperty(field.Data, "generic");
-		
-		if (customType != "")
-		{
-			if (generic != "")
-			{
-				return string.Format("{0}<{1}>", customType, generic);
-			}
-			else
-			{
-				return customType;
-			}
-		}
+        // Pull out any 'type' param from the custom data field on the field in TDS
+        string customType = GetCustomProperty(field.Data, "type");
+        string generic = GetCustomProperty(field.Data, "generic");
+        
+        if (customType != "")
+        {
+            if (generic != "")
+            {
+                return string.Format("{0}<{1}>", customType, generic);
+            }
+            else
+            {
+                return customType;
+            }
+        }
 
-		switch(field.Type.ToLower())
-		{
-			case "tristate":
-				return "TriState";
-			case "checkbox":
-				return "bool";
+        switch(field.Type.ToLower())
+        {
+            case "tristate":
+                return "TriState";
+            case "checkbox":
+                return "bool";
 
-			case "date":
-			case "datetime":
-				return "DateTime";
+            case "date":
+            case "datetime":
+                return "DateTime";
 
-			case "number":
-				return "float";
+            case "number":
+                return "float";
 
-			case "integer":
-				return "int";
+            case "integer":
+                return "int";
 
-			case "treelist with search":
-			case "treelist":
-			case "treelistex":
-			case "treelist descriptive":
-			case "checklist":
-			case "multilist with search":
-			case "multilist":
-	            return string.Format("IEnumerable<{0}>", string.IsNullOrEmpty(generic) ? "Guid" : generic);
+            case "treelist with search":
+            case "treelist":
+            case "treelistex":
+            case "treelist descriptive":
+            case "checklist":
+            case "multilist with search":
+            case "multilist":
+                return string.Format("IEnumerable<{0}>", string.IsNullOrEmpty(generic) ? "Guid" : generic);
 
-			case "grouped droplink":
-			case "droplink":
-			case "lookup":
-			case "droptree":
-			case "reference":
-			case "tree":
-				return "Guid";
+            case "grouped droplink":
+            case "droplink":
+            case "lookup":
+            case "droptree":
+            case "reference":
+            case "tree":
+                return "Guid";
 
-			case "file":
-				return "File";
+            case "file":
+                return "File";
 
-			case "image":
-				return "Image";
+            case "image":
+                return "Image";
 
-			case "general link":
-			case "general link with search":
-				return "Link";
-			
-			case "password":
-			case "icon":
-			case "rich text":
-			case "html":
-			case "single-line text":
-			case "multi-line text":
-			case "frame":
-			case "text":
-			case "memo":
-			case "droplist":
-			case "grouped droplist":
-			case "valuelookup":
-				return "string";
-			case "attachment":
-			case "word document":
-				return "System.IO.Stream";	   
-			case "name lookup value list":
-			case "name value list":
-				return "System.Collections.Specialized.NameValueCollection";                                                                                                                         
-			default:
-				return "object /* UNKNOWN */";
-		}
-	}
-	else 
-	{
-	   throw new Exception("There is no 'Type' field on the " + field.Name + " field.");
-	}
+            case "general link":
+            case "general link with search":
+                return "Link";
+            
+            case "password":
+            case "icon":
+            case "rich text":
+            case "html":
+            case "single-line text":
+            case "multi-line text":
+            case "frame":
+            case "text":
+            case "memo":
+            case "droplist":
+            case "grouped droplist":
+            case "valuelookup":
+                return "string";
+            case "attachment":
+            case "word document":
+                return "System.IO.Stream";
+            case "name lookup value list":
+            case "name value list":
+                return "System.Collections.Specialized.NameValueCollection";
+            default:
+                return "object /* UNKNOWN */";
+        }
+    }
+    else 
+    {
+       throw new Exception("There is no 'Type' field on the " + field.Name + " field.");
+    }
 }
 #>

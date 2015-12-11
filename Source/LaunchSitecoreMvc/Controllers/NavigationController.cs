@@ -1,5 +1,4 @@
 ﻿using LaunchSitecore.Configuration;
-using LaunchSitecore.Configuration.SiteUI.Base;
 using LaunchSitecore.Configuration.SiteUI;
 using LaunchSitecore.Models;
 using System;
@@ -35,20 +34,33 @@ namespace LaunchSitecore.Controllers
 
     public ActionResult FooterNavigation()
     {
-      Item baseItem = SiteConfiguration.GetFooterLinksItem();
-      List<SimpleNavigationItem> items = new List<SimpleNavigationItem>();
-      foreach (Item footerLink in baseItem.Children)
-      {
-        Item i = Sitecore.Context.Database.GetItem(footerLink["Top Level Item"]);
-        if (i != null && SiteConfiguration.DoesItemExistInCurrentLanguage(i)) { items.Add(new SimpleNavigationItem(i)); }
-      }
+        List<SimpleNavigationItem> items = new List<SimpleNavigationItem>();
+        Item homeItem = SiteConfiguration.GetHomeItem();
+        if (homeItem != null)
+        {
+            if (homeItem["Show Item In Footer Menu"] == "1" && SiteConfiguration.DoesItemExistInCurrentLanguage(homeItem)) items.Add(new SimpleNavigationItem(homeItem));
+            foreach (Item i in homeItem.Axes.GetDescendants().Where(x => x["Show Item In Footer Menu"] == "1" && SiteConfiguration.DoesItemExistInCurrentLanguage(x)))
+            {
+                items.Add(new SimpleNavigationItem(i));
+            }
+        }
+        return items.Count > 0 ? View(items) : null;
+    }
 
-      return View(items);
+    public ActionResult Header()
+    {
+        // This page is setting a lot fo the presentation details.  This is due tot he flexible nature of this site.
+        Item presentationSettings = SiteConfiguration.GetSiteConfigurationItem();
+        if (presentationSettings != null)
+        {
+            return View("Header", presentationSettings);
+        }
+        return null;
     }
 
     public ActionResult NavigationBar()
-    {      
-      Item presentationSettings = SiteConfiguration.GetPresentationSettingsItem();
+    {
+     Item presentationSettings = SiteConfiguration.GetSiteConfigurationItem();
       return (presentationSettings != null) ? View(presentationSettings) : null;      
     }
 
@@ -64,19 +76,6 @@ namespace LaunchSitecore.Controllers
 
       MenuItem ds = new MenuItem(dataSource);
       return (dataSource != null && ds.HasChildrenToShowInSecondaryMenu) ? View(ds) : ShowListIsEmptyPageEditorAlert();
-    }
-
-    public ActionResult TertiaryNavigation()
-    {
-      // microsites are small so we are limiting the top area.
-      if (SiteConfiguration.IsMicrosite())
-      {
-        return View("TertiaryNavigationMicrosite");
-      }
-      else
-      {
-        return (Sitecore.Context.IsLoggedIn && Sitecore.Context.Domain.Name.ToLower() == "extranet") ? View("TertiaryNavigationAuthenticated") : View("TertiaryNavigationAnonymous");
-      }
     }
     
     public ActionResult SitesNavigation()

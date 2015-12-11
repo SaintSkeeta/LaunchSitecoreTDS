@@ -13,9 +13,9 @@ templatekey: Controller rendering
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
 name: Controller
 key: controller
-content-length: 58
+content-length: 5
 
-LaunchSitecore.Controllers.VisitController, LaunchSitecore
+Visit
 ----field----
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
@@ -23,6 +23,13 @@ key: controller action
 content-length: 12
 
 VisitDetails
+----field----
+field: {94069F66-609C-48B0-8281-521C30FB269D}
+name: Open Properties after Add
+key: open properties after add
+content-length: 0
+
+
 ----field----
 field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
 name: Datasource Location
@@ -48,13 +55,13 @@ business/32x32/column-chart.png
 field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
 name: __Thumbnail
 key: __thumbnail
-content-length: 58
+content-length: 0
 
-<image mediaid="{0151F148-51A1-435B-B29D-A38EA6E2E542}" />
+
 ----version----
 language: en
 version: 1
-revision: 7294158e-4e69-4964-a84c-48f2aeb09f30
+revision: e15b9201-9440-455a-a383-b435f4ea902e
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -69,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7294158e-4e69-4964-a84c-48f2aeb09f30
+e15b9201-9440-455a-a383-b435f4ea902e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140227T191257:635291251776613829
+20150715T214842Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

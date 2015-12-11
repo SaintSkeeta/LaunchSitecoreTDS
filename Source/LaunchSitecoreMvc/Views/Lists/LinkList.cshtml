@@ -1,0 +1,10 @@
+﻿@model LaunchSitecore.Models.SimpleItemList
+<div class="side-nav sidebar-block">
+ <h2>@Model.Title</h2>
+ <ul>
+  @foreach (var item in Model.Items)
+  {
+   <li><a href="@item.Url">@Html.Sitecore().Field("Title", item.Item)</a></li> 
+  } 
+ </ul>
+</div>

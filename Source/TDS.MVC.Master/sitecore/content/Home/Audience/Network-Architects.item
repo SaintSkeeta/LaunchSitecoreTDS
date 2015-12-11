@@ -7,7 +7,7 @@ parent: {4D719602-744A-49DA-8A98-7E4E976333B8}
 name: Network-Architects
 master: {00000000-0000-0000-0000-000000000000}
 template: {B65CCE04-BCCB-4A58-B988-753D523C99A7}
-templatekey: Job Function
+templatekey: Audience Segment
 
 ----field----
 field: {B0A67B2A-8B07-4E0B-8809-69F751709806}

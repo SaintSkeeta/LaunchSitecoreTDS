@@ -22,7 +22,7 @@ name: Icon
 key: icon
 content-length: 23
 
-People/32x32/users1.png
+Apps/32x32/user (1).png
 ----field----
 field: {C687AA26-A85D-4C42-B32E-11E5FAECDF05}
 name: Chrome
@@ -83,9 +83,9 @@ content-length: 1
 field: {56776EDF-261C-4ABC-9FE7-70C618795239}
 name: __Help link
 key: __help link
-content-length: 7
+content-length: 0
 
-<link/>
+
 ----field----
 field: {B03569B1-1534-43F2-8C83-BD064B7D782C}
 name: __Renderers
@@ -110,7 +110,7 @@ ar|sitecore\Sitecore Client Account Managing|pe|+item:read|pd|+item:read|
 ----version----
 language: da
 version: 1
-revision: ae96542f-3733-4da7-97cc-4509c8850743
+revision: 80d586e2-ec00-4f03-9079-ec0b72c9d089
 
 ----field----
 field: {67B6378B-C9F1-47C7-9CAC-BFA79B0727D9}
@@ -127,6 +127,13 @@ content-length: 21
 
 Administrerer brugere
 ----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 13
+
+Brugerstyring
+----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -137,9 +144,9 @@ sitecore\admin
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 34
+content-length: 35
 
-20140130T170502:635266983024716090
+20150427T173239:635657527592519303Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -153,14 +160,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ae96542f-3733-4da7-97cc-4509c8850743
+80d586e2-ec00-4f03-9079-ec0b72c9d089
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 35
 
-20140130T170502:635266983025184900
+20150427T180208:635657545287426946Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -171,7 +178,7 @@ sitecore\admin
 ----version----
 language: de-DE
 version: 1
-revision: e020f651-a0dc-483a-bdf1-256d986b33b0
+revision: 25c77e51-821c-41e9-8b2f-60d80d2141f5
 
 ----field----
 field: {67B6378B-C9F1-47C7-9CAC-BFA79B0727D9}
@@ -188,6 +195,13 @@ content-length: 18
 
 Verwaltet Benutzer
 ----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 16
+
+Benutzer Manager
+----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -198,9 +212,9 @@ sitecore\admin
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 34
+content-length: 35
 
-20140130T172505:635266995056255930
+20150427T174200:635657533202874675Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -214,14 +228,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e020f651-a0dc-483a-bdf1-256d986b33b0
+25c77e51-821c-41e9-8b2f-60d80d2141f5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 35
 
-20140130T172506:635266995064381970
+20150427T181000:635657550009182768Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -232,7 +246,7 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: 5ceef659-d906-42cf-ac89-2e9c7f4d6b88
+revision: 460c6b21-6074-45bc-93aa-5d4c4d2a113f
 
 ----field----
 field: {67B6378B-C9F1-47C7-9CAC-BFA79B0727D9}
@@ -256,6 +270,13 @@ content-length: 14
 
 sitecore\admin
 ----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20140903T112231Z
+----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
 key: __created by
@@ -268,14 +289,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5ceef659-d906-42cf-ac89-2e9c7f4d6b88
+460c6b21-6074-45bc-93aa-5d4c4d2a113f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 15
+content-length: 35
 
-20071106T130855
+20140903T112347:635453402278618133Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -286,7 +307,7 @@ sitecore\admin
 ----version----
 language: ja-JP
 version: 1
-revision: 2d9956bc-7aa0-4e9d-a4c5-2dbf297d50f0
+revision: ba7d9848-c6e6-4437-a8c5-36c1868bd1fb
 
 ----field----
 field: {67B6378B-C9F1-47C7-9CAC-BFA79B0727D9}
@@ -303,6 +324,13 @@ content-length: 7
 
 ユーザーの管理
 ----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 11
+
+ユーザー マネージャー
+----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -313,9 +341,9 @@ sitecore\admin
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 34
+content-length: 35
 
-20140130T174642:635267008020571400
+20150427T175102:635657538623062236Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -329,14 +357,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2d9956bc-7aa0-4e9d-a4c5-2dbf297d50f0
+ba7d9848-c6e6-4437-a8c5-36c1868bd1fb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 35
 
-20140130T174642:635267008027134740
+20150427T180614:635657547744152684Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

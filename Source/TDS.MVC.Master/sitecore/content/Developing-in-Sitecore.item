@@ -10,19 +10,19 @@ template: {7139A8B6-68D9-471F-96E4-B87ED703C185}
 templatekey: Microsite Home
 
 ----field----
+field: {7E003143-26F2-4A28-B70A-08548286F6BA}
+name: Show Item In Menu
+key: show item in menu
+content-length: 0
+
+
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
 content-length: 0
 
 
-----field----
-field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
-name: __Renderings
-key: __renderings
-content-length: 186
-
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{9954C820-CE50-4954-A06D-DD8ADEB99F31}" s:id="{CBEE22FA-D864-4CA9-94F9-99EBC3809305}" /></d></r>
 ----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
@@ -33,7 +33,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 07cdf6f5-c54b-407b-949f-65d4fefebf28
+revision: 83a46364-9b85-423b-b518-887f940f55a8
 
 ----field----
 field: {AAEAC7F2-E33E-4B34-9023-AB6F59D3A427}
@@ -64,13 +64,6 @@ content-length: 22
 
 Developing in Sitecore
 ----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
-content-length: 22
-
-Developing in Sitecore
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -83,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-07cdf6f5-c54b-407b-949f-65d4fefebf28
+83a46364-9b85-423b-b518-887f940f55a8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140211T193938:635277443780621297
+20150716T154111Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

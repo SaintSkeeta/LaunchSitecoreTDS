@@ -20,9 +20,9 @@ Business/32x32/note_pinned.png
 field: {DBBF9EE3-C30E-4456-A81F-ED8C2E8DF91B}
 name: Click
 key: click
-content-length: 72
+content-length: 0
 
-launchsitecore:abstractfieldeditorbutton(flds=Abstract|Icon|__Semantics)
+
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
@@ -37,6 +37,17 @@ key: __sortorder
 content-length: 1
 
 0
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 349
+
+<r>
+  <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+    <r id="{28D7AA23-A9A3-4ABC-9DE6-AA717F6177CD}" par="Id=CommonLargeButton&amp;Click=trigger%3abutton%3aclick&amp;Command=LaunchFieldEditor&amp;PageCodeScriptFileName=%2fassets%2fspeak%2fLaunchFieldEditor.js&amp;AccessKey=common" uid="{CE3DD7F4-C8E3-4C19-99EB-F62DDCA7EC91}" />
+  </d>
+</r>
 ----field----
 field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
 name: __Security
@@ -169,7 +180,7 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: 394b1a00-42b6-4f8b-91a4-3ba526c16835
+revision: 5d2c920c-54ae-4662-8aeb-beb06b3c1bee
 
 ----field----
 field: {4DF6DA21-E745-444C-956E-1D4A96AB8821}
@@ -182,9 +193,9 @@ Common
 field: {A1A31A93-C4A0-4396-B629-67C33001A3CF}
 name: Tooltip
 key: tooltip
-content-length: 44
+content-length: 0
 
-Edit the common fields for the current item.
+
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -212,14 +223,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-394b1a00-42b6-4f8b-91a4-3ba526c16835
+5d2c920c-54ae-4662-8aeb-beb06b3c1bee
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131122T165621:635207361815486001
+20150716T021134Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

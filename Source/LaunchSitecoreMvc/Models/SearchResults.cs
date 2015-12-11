@@ -1,5 +1,5 @@
 ﻿using LaunchSitecore.Configuration;
-using LaunchSitecore.Configuration.SiteUI.Search.Models;
+using LaunchSitecore.Configuration.Search.Models;
 using Sitecore.Analytics;
 using Sitecore.ContentSearch;
 using Sitecore.Data;

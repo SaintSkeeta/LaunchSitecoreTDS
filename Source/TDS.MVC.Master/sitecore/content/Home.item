@@ -10,6 +10,34 @@ template: {0ACD30D8-863E-4B1D-8612-719EEFC1DA4F}
 templatekey: Home
 
 ----field----
+field: {7E003143-26F2-4A28-B70A-08548286F6BA}
+name: Show Item In Menu
+key: show item in menu
+content-length: 0
+
+
+----field----
+field: {D48AF62C-9C56-4E4C-BA29-94C3DABAD82E}
+name: Show Children In Menu
+key: show children in menu
+content-length: 1
+
+1
+----field----
+field: {1E2AAB62-E924-421E-B766-BF8422CCBE44}
+name: Show Item In Footer Menu
+key: show item in footer menu
+content-length: 1
+
+1
+----field----
+field: {CE1BEB41-17E4-4934-9AE9-0C3C8D2B72FA}
+name: Show In Search Results
+key: show in search results
+content-length: 1
+
+1
+----field----
 field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
 name: __Tracking
 key: __tracking
@@ -72,13 +100,6 @@ key: __insert rules
 content-length: 0
 
 
-----field----
-field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
-name: __Renderings
-key: __renderings
-content-length: 1645
-
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{583C4A36-3A56-4FA1-A367-BB4FD2D7B020}"><p:d /></r><r uid="{3EC360C9-708D-4E58-9DED-5D8FD4620ED5}"><rls><ruleset><rule uid="{CE1B45D1-2819-42CA-A64B-433DA52EF116}"><conditions><condition uid="E6A516DDB5A5454CB2E267B0BFD48C86" s:ProfileName="Audience Segment" /></conditions></rule><rule uid="{5BA3A134-ECC9-48ED-BCF2-34F806D62742}"><conditions><condition uid="380B38A33A51498CB6FFA1B374D87DA6" s:ProfileName="Audience Segment" /></conditions></rule></ruleset></rls></r><r uid="{EE02BE24-30DE-4BB7-A52A-46693A78EF4F}"><rls><ruleset><rule uid="{39FCDAEC-8D32-4297-B8C1-0FA451415E36}"><conditions><or uid="98A2590657DD47819639DF7AFE9038BD"><condition uid="4D7D580B34AD404A845C4AB1760C0C2F" s:ProfileName="Audience Segment" /><condition uid="0D9B760B6BEF4DD99B8EF4373B673B23" s:ProfileName="Audience Segment" /></or></conditions></rule></ruleset></rls></r><r uid="{3829E486-2259-42FF-9385-33F26CF71A94}"><rls><ruleset><rule uid="{5E93ED2E-AEC7-4B66-9E08-61FF8C306099}"><conditions><condition uid="BFEAC1AA3A6E4ED7B774E82C59A60FC9" s:ProfileName="Audience Segment" /></conditions></rule><rule uid="{7E0E4C3D-BEF9-4424-8645-2D8B4194ED86}"><conditions><condition uid="6C0BA78BA13E41B3B46777FE47DF41C1" s:ProfileName="Audience Segment" /></conditions></rule></ruleset></rls></r><r uid="{8D4C2576-5760-433B-8AAE-6CCE62FF33AD}"><rls><ruleset><rule uid="{134B5DB9-8D39-4DE0-9FF4-0ED5364352ED}"><p:d /></rule><rule uid="{E4F37C30-77B6-4DDA-9CFF-5DBCDCCC9263}"><p:d /></rule><rule uid="{73271883-4F2E-4400-A47E-A4CBB7F40BC7}"><p:d /></rule></ruleset></rls></r></d></r>
 ----field----
 field: {86FE4F77-4D9A-4EC3-9ED9-263D03BD1965}
 name: __Publish
@@ -145,7 +166,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 84eb54c9-f830-42f9-b57a-a91e17135625
+revision: 354c652d-a7a5-40ea-9e1a-5f7521d19fa7
 
 ----field----
 field: {AAEAC7F2-E33E-4B34-9023-AB6F59D3A427}
@@ -165,9 +186,23 @@ Clean, modern & responsive
 field: {764646D1-347E-419D-8B86-67457C73D905}
 name: Body
 key: body
-content-length: 633
+content-length: 624
 
-<p>Welcome to Launch Sitecore. This site is dedicated to your successful evaluation of the Sitecore Customer Engagement Platform.  This site will help you investigate a simple yet powerful implementation of Sitecore, giving content owners, developers, marketers and network professionals a great starting point towards understanding the breadth of features this platform offers.  From authoring content to workflow and publishing to creating personalized experiences, testing and analytics, this site will allow you to understand the building blocks that will power your content-driven digital marketing strategy into the future.</p>
+<p>Welcome to Launch Sitecore. This site is dedicated to your successful evaluation of the Sitecore Experience Platform.  This site will help you investigate a simple yet powerful implementation of Sitecore, giving content owners, developers, marketers and network professionals a great starting point towards understanding the breadth of features this platform offers.  From authoring content to workflow and publishing to creating personalized experiences, testing and analytics, this site will allow you to understand the building blocks that will power your content-driven digital marketing strategy into the future.</p>
+----field----
+field: {918A64F3-3CE1-46FE-AFE0-7BDEAE9F6299}
+name: Call to Action Link
+key: call to action link
+content-length: 38
+
+{63ABEE8A-4E38-4159-9193-D5F0A33AD666}
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 58
+
+<image mediaid="{76DFC588-5949-4933-BCC7-6C26CF83BEF9}" />
 ----field----
 field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
 name: Menu Title
@@ -175,20 +210,6 @@ key: menu title
 content-length: 4
 
 Home
-----field----
-field: {7E003143-26F2-4A28-B70A-08548286F6BA}
-name: Show Item In Menu
-key: show item in menu
-content-length: 0
-
-
-----field----
-field: {D48AF62C-9C56-4E4C-BA29-94C3DABAD82E}
-name: Show Children In Menu
-key: show children in menu
-content-length: 1
-
-1
 ----field----
 field: {71DFEE6E-6AC9-4F83-9A15-748D42C4646E}
 name: Site Name
@@ -203,13 +224,6 @@ key: show in sites menu
 content-length: 1
 
 1
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
-content-length: 4
-
-Home
 ----field----
 field: {577F1689-7DE4-4AD2-A15F-7FDC1759285F}
 name: __Long description
@@ -265,14 +279,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-84eb54c9-f830-42f9-b57a-a91e17135625
+354c652d-a7a5-40ea-9e1a-5f7521d19fa7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140819T173514:635440665145137351
+20150716T223037Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
