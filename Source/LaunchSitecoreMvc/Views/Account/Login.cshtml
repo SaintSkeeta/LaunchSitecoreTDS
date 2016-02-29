@@ -1,11 +1,9 @@
 ﻿@model LaunchSitecore.Models.LoginModel
 <div class="securityform">
- <h1>@Html.Sitecore().Field("Title")
-  <asp:literal id="litHeading" runat="server" />
- </h1>
+ <h1>@Html.Sitecore().Field("Title")</h1>
  @Html.Sitecore().Field("Body")
  
- @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
+ @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, new { ReturnUrl = ViewBag.ReturnUrl }))
  {
   @Html.AntiForgeryToken()
   @Html.ValidationSummary(true)    
