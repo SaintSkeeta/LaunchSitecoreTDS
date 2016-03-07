@@ -71,42 +71,49 @@
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.Analytics">
-      <HintPath>..\..\Installers\Sitecore\Sitecore.Analytics.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Sitecore.Analytics, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Analytics.8.1.0.160302\lib\Sitecore.Analytics.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.Analytics.Automation">
-      <HintPath>..\..\Installers\Sitecore\Sitecore.Analytics.Automation.dll</HintPath>
+    <Reference Include="Sitecore.Analytics.Automation, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Analytics.Automation.8.1.0.160302\lib\Sitecore.Analytics.Automation.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.Analytics.Core">
-      <HintPath>..\..\Installers\Sitecore\Sitecore.Analytics.Core.dll</HintPath>
+    <Reference Include="Sitecore.Analytics.Core, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Analytics.Core.8.1.0.160302\lib\Sitecore.Analytics.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.Analytics.Model">
-      <HintPath>..\..\Installers\Sitecore\Sitecore.Analytics.Model.dll</HintPath>
+    <Reference Include="Sitecore.Analytics.Model, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Analytics.Model.8.1.0.160302\lib\Sitecore.Analytics.Model.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.Client">
-      <HintPath>..\..\Installers\Sitecore\Sitecore.Client.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Sitecore.Client, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Client.8.1.0.160302\lib\Sitecore.Client.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.ContentSearch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Installers\Sitecore\Sitecore.ContentSearch.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\packages\Sitecore.ContentSearch.8.1.0.160302\lib\Sitecore.ContentSearch.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.ContentSearch.Linq, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Installers\Sitecore\Sitecore.ContentSearch.Linq.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\packages\Sitecore.ContentSearch.Linq.8.1.0.160302\lib\Sitecore.ContentSearch.Linq.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.ExperienceEditor.Speak">
-      <HintPath>..\..\Installers\Sitecore\Sitecore.ExperienceEditor.Speak.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Sitecore.ExperienceEditor, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.ExperienceEditor.8.1.0.160302\lib\Sitecore.ExperienceEditor.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.Kernel">
-      <HintPath>..\..\Installers\Sitecore\Sitecore.Kernel.dll</HintPath>
+    <Reference Include="Sitecore.ExperienceEditor.Speak, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.ExperienceEditor.Speak.8.1.0.160302\lib\Sitecore.ExperienceEditor.Speak.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.Mvc">
-      <HintPath>..\..\Installers\Sitecore\Sitecore.Mvc.dll</HintPath>
+    <Reference Include="Sitecore.Kernel, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Kernel.8.1.0.160302\lib\Sitecore.Kernel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Mvc.8.1.0.160302\lib\Sitecore.Mvc.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
