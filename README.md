@@ -8,7 +8,7 @@
 - Use Tag 2.2.0.0 with Sitecore 7.5 Initial Release (rev. 141003) - Launch Sitecore - both WebForms and MVC versions.
 - Use Tag 2.3.0.0 with Sitecore 8.0 Update 4 (rev. 150621) - Launch Sitecore - both WebForms and MVC versions.
 - Use Tag 3.0.0.0 with Sitecore 8.0 Update 5 (rev. 150812) - Launch Sitecore - MVC Bootstrap3 version.
-- Use Tag 3.1.0.0 with Sitecore 8.1 Update 1 (rev. 151207) - Launch Sitecore - MVC Bootstrap3 version.
+- Use Tag 3.1.0.0 with Sitecore 8.1 Update 2 (rev. 160302) - Launch Sitecore - MVC Bootstrap3 version.
 
 Launch Sitecore is a site found at [www.launchsitecore.net](www.launchsitecore.net). It is a fantastic, shared source site that shows the power of Sitecore through Page Editor and DMS. The site comes complete with content, components, engagement plans and much more. A Sitecore package for the complete site can be downloaded from the above link after registering.
 
@@ -19,8 +19,8 @@ This repository is that package converted to a Visual Studio solution with items
 ### Quick Guide ###
 - Install a blank instance of Sitecore using SIM.
 - Update Include configs so you're running in Live mode.
-- Copy the required Sitecore DLLs to the `Installers\Sitecore` folder.
-- Within either the MVC or WebForms solution, setup your local TDS settings, either by changing the `TdsGlobal.config` file, or by duplicating it with the name `TdsGlobal.config.user`
+- Restore all Nuget packages (note: Sitecore Nuget packages should exist in your private Nuget repo).
+- Within the MVC solution, setup your local TDS settings, either by changing the `TdsGlobal.config` file, or by duplicating it with the name `TdsGlobal.config.user`
 - Deploy the solution, so code and items are deployed to your local instance.
 - Perform post-build steps: Rebuild Indexes, Deploy Campaigns and Goals, Rebuild the Links Database
 
@@ -28,15 +28,16 @@ This repository is that package converted to a Visual Studio solution with items
 
 #### Install a blank Sitecore Instance ####
 - Install a blank instance of Sitecore using the Sitecore Instance Manager.
-- (Pre 7.5) Ensure that you install Analytics from the second step. You must have the DMS version available to you.
 - Click Open folder when installation is complete.
 
 #### Update your local settings to run in Live Mode ####
 - Navigate to the App_Config/Include folder.
 - Copy the `zz_developer.config` file in {GitRootDirectory}/Installers over to In App_Config/Include. This config file will make your site run in live mode.
 
-#### Place Sitecore DLLs in the Installers folder ####
-- Follow the steps in the {GitRootDirectory}/Installers/Sitecore/README.txt file, which tells you which Sitecore DLLs need to be referenced in code.
+#### Restore all Nuget packages ####
+Sitecore Nuget Packages should be generated using the [Sitecore Nuget Package Generator](https://bitbucket.org/seanholmesby/sitecore-nuget-packages-generator) tool. Follow [these steps](https://bitbucket.org/sitecoresupport/sitecore-nuget-packages-generator/wiki/Home) to setup a local or private Nuget repostory, where these files should be placed.
+
+Either explicitly restore all of the Nuget packages, or [make Visual Studio will restore them during your build](http://www.codeproject.com/Articles/680678/Keep-Nuget-Packages-Out-of-Source-Control-with-Nug).
 
 #### Open the solution you wish to use ####
 Open `LaunchSitecoreMvc.sln` for the MVC source code.
