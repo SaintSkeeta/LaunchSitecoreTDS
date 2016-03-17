@@ -27,37 +27,6 @@ using Sitecore.Data;
 
 
 
-namespace LaunchContent
-{
-
-    public partial interface IGlassBase{
-        
-        [SitecoreId]
-        Guid Id{ get; }
-
-        [SitecoreInfo(SitecoreInfoType.Language)]
-        Language Language{ get; }
-
-        [SitecoreInfo(SitecoreInfoType.Version)]
-        int Version { get; }
-
-    }
-
-    public abstract partial class GlassBase : IGlassBase{
-        
-        [SitecoreId]
-        public virtual Guid Id{ get; private set;}
-
-        [SitecoreInfo(SitecoreInfoType.Language)]
-        public virtual Language Language{ get; private set; }
-
-        [SitecoreInfo(SitecoreInfoType.Version)]
-        public virtual int Version { get; private set; }
-
-        [SitecoreInfo(SitecoreInfoType.Url)]
-        public virtual string Url { get; private set; }
-    }
-}
 namespace LaunchContent.LaunchSitecore
 {
 
