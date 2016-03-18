@@ -55,13 +55,10 @@
     <ExcludedAssemblies Include="Sitecore.%2a.dll" />
   </ItemGroup>
   <ItemGroup>
-    <CodeGenTemplate Include="Code Generation Templates\GeneralExtensions.tt" />
     <CodeGenTemplate Include="Code Generation Templates\GlassHeader.tt" />
-    <CodeGenTemplate Include="Code Generation Templates\GlassItem.tt" />
-    <CodeGenTemplate Include="Code Generation Templates\Helpers.tt" />
-    <CodeGenTemplate Include="Code Generation Templates\Inflector.tt" />
-    <CodeGenTemplate Include="Code Generation Templates\ItemPaths.tt" />
-    <CodeGenTemplate Include="Code Generation Templates\StringExtensions.tt" />
+    <CodeGenTemplate Include="..\TDS.MVC.Master\Code Generation Templates\GlassItem.tt">
+      <Link>Code Generation Templates\GlassItem.tt</Link>
+    </CodeGenTemplate>
   </ItemGroup>
   <ItemGroup>
     <SitecoreItem Include="sitecore\templates.item">
@@ -71,8 +68,8 @@
     <SitecoreItem Include="sitecore\templates\Launch Sitecore.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
-      <CodeGenTemplate>GlassItem.tt</CodeGenTemplate>
       <CodeGenNamespace>LaunchSitecore</CodeGenNamespace>
+      <CodeGenTemplate>GlassItem.tt</CodeGenTemplate>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Launch Sitecore\Base Templates.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>

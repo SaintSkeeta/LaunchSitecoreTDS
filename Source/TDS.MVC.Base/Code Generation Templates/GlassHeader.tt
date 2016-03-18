@@ -1,10 +1,10 @@
 ﻿<#@ template language="C#"  #>
 <#@ assembly name="System.Core" #>
 
-<#@ include file="Helpers.tt" #>
-<#@ include file="StringExtensions.tt" #>
-<#@ include file="GeneralExtensions.tt" #>
-<#@ include file="Inflector.tt" #>
+<#@ include file="..\..\TDS.MVC.Master\Code Generation Templates\Helpers.tt" #>
+<#@ include file="..\..\TDS.MVC.Master\Code Generation Templates\StringExtensions.tt" #>
+<#@ include file="..\..\TDS.MVC.Master\Code Generation Templates\GeneralExtensions.tt" #>
+<#@ include file="..\..\TDS.MVC.Master\Code Generation Templates\Inflector.tt" #>
 
 <#@ import namespace="System" #>
 <#@ import namespace="System.Linq" #>
