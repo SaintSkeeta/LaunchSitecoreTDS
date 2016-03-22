@@ -10,6 +10,7 @@ x64/
 build/
 [Bb]in/
 [Oo]bj/
+Source/.vs
 
 # Nuget packages
 Source/packages*/
