@@ -59,13 +59,13 @@
     <DebugSymbols>false</DebugSymbols>
     <OutputPath>.\Release\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <PackageName>LaunchSitecoreTDS.Master</PackageName>
+    <PackageName>LaunchSitecoreTDS.Core</PackageName>
     <PackageAuthor>Hedgehog Development</PackageAuthor>
     <PackagePublisher>Hedgehog Development</PackagePublisher>
     <PackageVersion>3.1.0.0</PackageVersion>
     <PackageReadme />
     <SitecoreAssemblyPath />
-    <GeneratePackage>True</GeneratePackage>
+    <GeneratePackage>False</GeneratePackage>
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
     <PackageExcludeCode>False</PackageExcludeCode>
     <AddDateTimeToPackageName>True</AddDateTimeToPackageName>
@@ -305,15 +305,8 @@
     </SitecoreItem>
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <PostDeployAction Include="HedgehogDevelopment.TDS.CustomExtensions.PostBuildProcessors.RebuildLinkDatabase, HedgehogDevelopment.TDS.CustomExtensions">
-      <Parameter>core</Parameter>
-    </PostDeployAction>
-    <PostDeployAction Include="HedgehogDevelopment.TDS.CustomExtensions.PostBuildProcessors.RebuildContentSearchIndexes, HedgehogDevelopment.TDS.CustomExtensions">
-      <Parameter>sitecore_core_index</Parameter>
-    </PostDeployAction>
-  </ItemGroup>
-  <ItemGroup Condition=" '$(Configuration)' == 'Release' ">
     <PostDeployAction Include="HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor.BuiltIn.UpdateLinkDatabaseForDeployedItems, HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor" />
   </ItemGroup>
+  <ItemGroup Condition=" '$(Configuration)' == 'Release' " />
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>
