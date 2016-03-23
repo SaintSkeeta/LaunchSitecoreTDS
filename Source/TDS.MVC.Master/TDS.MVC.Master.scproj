@@ -2262,11 +2262,11 @@
     <PostDeployAction Include="HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor.BuiltIn.UpdateLinkDatabaseForDeployedItems, HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor" />
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <PostDeployAction Include="HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor.BuiltIn.TriggerSaveEventsForPublishedItems, HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor" />
+    <PostDeployAction Include="HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor.BuiltIn.UpdateLinkDatabaseForDeployedItems, HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor" />
     <PostDeployAction Include="HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor.BuiltIn.PublishDeployedItems, HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor">
       <Parameter>Internet</Parameter>
     </PostDeployAction>
-    <PostDeployAction Include="HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor.BuiltIn.TriggerSaveEventsForPublishedItems, HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor" />
-    <PostDeployAction Include="HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor.BuiltIn.UpdateLinkDatabaseForDeployedItems, HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
   <!--<Import Project="..\packages\HedgehogDevelopment.TDS.5.5.0.0\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\packages\HedgehogDevelopment.TDS.5.5.0.0\build\HedgehogDevelopment.TDS.targets')" />
