@@ -1,87 +1,61 @@
 # Launch Sitecore TDS #
 
-- Use Tag 1.0 with Sitecore 6.5 Service Pack 2 (rev. 121009) - Launch Sitecore Classic version
-- Use Tag 1.1 with Sitecore 7.0 Update 3 (rev. 131127) - Launch Sitecore Classic version
-- Use Tag 2.0.0.1 with Sitecore 7.1 Update 1 (rev. 140130) - Launch Sitecore New Themed version
-- Use Tag 2.0.1.0 with Sitecore 7.1 Update 1 (rev. 140130) - Launch Sitecore - both WebForms and MVC versions
-- Use Tag 2.1.0.0 with Sitecore 7.2 Update 2 (rev. 140526) - Launch Sitecore - both WebForms and MVC versions
-- Use Tag 2.2.0.0 with Sitecore 7.5 Initial Release (rev. 141003) - Launch Sitecore - both WebForms and MVC versions.
-- Use Tag 2.3.0.0 with Sitecore 8.0 Update 4 (rev. 150621) - Launch Sitecore - both WebForms and MVC versions.
-- Use Tag 3.0.0.0 with Sitecore 8.0 Update 5 (rev. 150812) - Launch Sitecore - MVC Bootstrap3 version.
 - Use Tag 3.1.0.0 with Sitecore 8.1 Update 2 (rev. 160302) - Launch Sitecore - MVC Bootstrap3 version.
+- Use Tag 3.0.0.0 with Sitecore 8.0 Update 5 (rev. 150812) - Launch Sitecore - MVC Bootstrap3 version.
+- Use Tag 2.3.0.0 with Sitecore 8.0 Update 4 (rev. 150621) - Launch Sitecore - both WebForms and MVC versions.
+- Use Tag 2.2.0.0 with Sitecore 7.5 Initial Release (rev. 141003) - Launch Sitecore - both WebForms and MVC versions.
+- Use Tag 2.1.0.0 with Sitecore 7.2 Update 2 (rev. 140526) - Launch Sitecore - both WebForms and MVC versions
+- Use Tag 2.0.1.0 with Sitecore 7.1 Update 1 (rev. 140130) - Launch Sitecore - both WebForms and MVC versions
+- Use Tag 2.0.0.1 with Sitecore 7.1 Update 1 (rev. 140130) - Launch Sitecore New Themed version
+- Use Tag 1.1 with Sitecore 7.0 Update 3 (rev. 131127) - Launch Sitecore Classic version
+- Use Tag 1.0 with Sitecore 6.5 Service Pack 2 (rev. 121009) - Launch Sitecore Classic version
+
 
 Launch Sitecore is a site found at [www.launchsitecore.net](www.launchsitecore.net). It is a fantastic, shared source site that shows the power of Sitecore through Page Editor and DMS. The site comes complete with content, components, engagement plans and much more. A Sitecore package for the complete site can be downloaded from the above link after registering.
 
-This repository is that package converted to a Visual Studio solution with items in Team Development for Sitecore. It's intended to serve as a platform for helping developers understand TDS, Glass Mapper, and Code Generation with TDS. It also allows developers to quickly setup a site with content, so that other additional features can be tested on a complete site.
+This repository is that package converted to a Visual Studio solution with items in Team Development for Sitecore. It's intended to serve as a platform for helping developers understand TDS, Glass Mapper, NuGet, and Code Generation with TDS. It also allows developers to quickly setup a site with content, so that other additional features can be tested on a complete site.
 
 
 ## To get up and running ##
 ### Quick Guide ###
 - Install a blank instance of Sitecore using SIM.
-- Update Include configs so you're running in Live mode.
-- Restore all Nuget packages (note: Sitecore Nuget packages should exist in your private Nuget repo).
+- Restore all NuGet packages (note: TDS and Sitecore NuGet packages should exist in your private NuGet repo).
 - Within the MVC solution, setup your local TDS settings, either by changing the `TdsGlobal.config` file, or by duplicating it with the name `TdsGlobal.config.user`
 - Deploy the solution, so code and items are deployed to your local instance.
-- Perform post-build steps: Rebuild Indexes, Deploy Campaigns and Goals, Rebuild the Links Database
 
 ### Detailed Guide ###
 
 #### Install a blank Sitecore Instance ####
 - Install a blank instance of Sitecore using the Sitecore Instance Manager.
-- Click Open folder when installation is complete.
+	- You can use whatever settings you like, however the Project Defaults for this repository are `Site Name: Launch` and `Host Name: launch.local`.
+	 
+- Ensure the version of Sitecore you install matches the version of the branch/tag you are using for this repository.
 
-#### Update your local settings to run in Live Mode ####
-- Navigate to the App_Config/Include folder.
-- Copy the `zz_developer.config` file in {GitRootDirectory}/Installers over to In App_Config/Include. This config file will make your site run in live mode.
+#### Restore all NuGet packages ####
+Sitecore NuGet Packages should be generated using the [Sitecore NuGet Package Generator](https://bitbucket.org/seanholmesby/sitecore-nuget-packages-generator) tool. Setup a custom NuGet Package Source, either by creating it as a local NuGet folder, or follow [these steps](http://blog.alen.pw/2014/10/internal-sitecore-nuget-server.html) to setup a private Proget NuGet repostory, where you can upload the generated Sitecore packages.
+Note: The updated generator tool creates single DLL NuGet paackages for only Sitecore.*.DLLs, as well as package groupings for easy consumtion.
 
-#### Restore all Nuget packages ####
-Sitecore Nuget Packages should be generated using the [Sitecore Nuget Package Generator](https://bitbucket.org/seanholmesby/sitecore-nuget-packages-generator) tool. Follow [these steps](https://bitbucket.org/sitecoresupport/sitecore-nuget-packages-generator/wiki/Home) to setup a local or private Nuget repostory, where these files should be placed.
+Either explicitly restore all of the NuGet packages, or [make Visual Studio will restore them during your build](http://www.codeproject.com/Articles/680678/Keep-Nuget-Packages-Out-of-Source-Control-with-Nug).
 
-Either explicitly restore all of the Nuget packages, or [make Visual Studio will restore them during your build](http://www.codeproject.com/Articles/680678/Keep-Nuget-Packages-Out-of-Source-Control-with-Nug).
-
-#### Open the solution you wish to use ####
-Open `LaunchSitecoreMvc.sln` for the MVC source code.
+Also the [HedgehogDevelopment.TDS NuGet package from your TDS install zip](http://hedgehogdevelopment.github.io/tds/chapter5.html#tds-builds-using-cloud-servers) should be added to your local repository as well. 
 
 #### Set your TDS Deployment Settings ####
+The default settings in the solution are to built to `D:\Sites\Launch\Website` and `http://launch.local`. You can choose something else for your site and easily configure the project by performing the following:-
+
 - In the root directory of the solution, duplicate the `TdsGlobal.config` file, naming it `TdsGlobal.config.user`.
 - Open the new file, and for your configuration (most likely Debug) uncomment the nodes `SitecoreWebUrl`, `SitecoreDeployFolder`.
  - For each of these nodes, add in your unique website information. e.g:- <br />
-   `<SitecoreWebUrl>http://launch.local</SitecoreWebUrl>`<br />
-   `<SitecoreDeployFolder>D:\Sites\Launch\Website</SitecoreDeployFolder>`<br />
+   `<SitecoreWebUrl>http://mysite.local</SitecoreWebUrl>`<br />
+   `<SitecoreDeployFolder>D:\Sites\MySite\Website</SitecoreDeployFolder>`<br />
 - Save the file. This will tell TDS to use these settings for all TDS projects.
 
 #### Build and Deploy ####
 - Right click on the solution and select 'Deploy Solution'.
 
-#### Rebuild Search Indexes ####
-When using a Sitecore 7+ version, you will need to rebuild the indexes for the site to work correctly. (Noticeable with the carousel on the homepage in the new themed version).<br />
-To rebuild the indexes:-
+This will build and deploy the code, deploy the items, and run the post-deploy steps to save, link, and publish the items.
 
- - Open the Sitecore Client, and login to *Desktop* mode.
- - From the Sitecore Start menu, Open the *Control Panel*.
- - Click on *Indexing*.
- - Click on *Indexing Manager*
- - Follow the Wizard, selecting all of the local instances and clicking on the *Rebuild* button.
+After this you will have a fully built, completely updated site.
 
-#### Optional: Deploy the Example Campaign ####
-In order to push your campaigns to the Analytics database and be active on the site, you will need to re-deploy them.
-
- - In the Sitecore Content Editor, turn on Standard Fields (`View -> View -> Standard Fields`)
- - Navigate to the Example Campaign (`/sitecore/system/Marketing Center/Campaigns/Example Campaign`).
- - Change the Workflow State to Draft. (`Worflow section -> Field: State` set to `Analytics Workflow -> Draft`). Save the item.
- - Deploy the campaign. (`Review` ribbon -> `Workflow` chunk, `Deploy`)
- 
-
-#### Optional: Rebuild the Link Database ####
-For better navigation around the site, it is recommended that you rebuild the link database after the deployment.
-
- - Open the Sitecore Client, and login to *Desktop* mode.
- - From the Sitecore Start menu, Open the *Control Panel*.
- - Click on *Database*.
- - Click on *Rebuild the Link Database*
- - Follow the Wizard, selecting *core* and *master* databases and clicking on the *Rebuild* button.
-
-Your site should now be completely setup.
 
 ## Differences with LaunchSitecore.net package ##
 ### Code differences ###
