@@ -67,6 +67,8 @@ Some custom code has been added to flush the contact data to the xDB. We do this
 
  - master: /sitecore/templates/Launch Sitecore/Article Group
   - in package it inherits from GeneralFields, but also SiteSection, which inherits from GeneralFields... so they creates a duplicate dependency and breaks code generation.
+ - master: /sitecore/system/Marketing Control Panel/Goals
+  - some items were originally PageEvents. These have been changed to Goals to allow for analytics aggregration to proceed.
  
 
 
