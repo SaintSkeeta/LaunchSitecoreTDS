@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Random Walk" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="UDV Global" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="global.host" elementType="Argument">
+            <stringProp name="Argument.name">global.host</stringProp>
+            <stringProp name="Argument.value">launch.local</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">host for target solution (no http needed)</stringProp>
+          </elementProp>
+          <elementProp name="global.visitors" elementType="Argument">
+            <stringProp name="Argument.name">global.visitors</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">number of unique visitors</stringProp>
+          </elementProp>
+          <elementProp name="sitecore.version" elementType="Argument">
+            <stringProp name="Argument.name">sitecore.version</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.desc">Set this value to 7.2 if you use SItecore 7.2 version or earlier. If you use Sitecore 7.5 version or higher, leave this field blank.</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="global.visits.min" elementType="Argument">
+            <stringProp name="Argument.name">global.visits.min</stringProp>
+            <stringProp name="Argument.value">2</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Minimum possible number of visits for each visitor</stringProp>
+          </elementProp>
+          <elementProp name="global.visits.max" elementType="Argument">
+            <stringProp name="Argument.name">global.visits.max</stringProp>
+            <stringProp name="Argument.value">5</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Maximum possible number of visits for each visitor</stringProp>
+          </elementProp>
+          <elementProp name="global.rampuptime" elementType="Argument">
+            <stringProp name="Argument.name">global.rampuptime</stringProp>
+            <stringProp name="Argument.value">300</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">(in seconds) JMeter&apos;s ramp up - time required to start all threads smoothly</stringProp>
+          </elementProp>
+          <elementProp name="global.landingpage" elementType="Argument">
+            <stringProp name="Argument.name">global.landingpage</stringProp>
+            <stringProp name="Argument.value">/</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">start page for all visits</stringProp>
+          </elementProp>
+          <elementProp name="global.pagepervisit.min" elementType="Argument">
+            <stringProp name="Argument.name">global.pagepervisit.min</stringProp>
+            <stringProp name="Argument.value">5</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Minimum possible number of pages for each visit</stringProp>
+          </elementProp>
+          <elementProp name="global.pagepervisit.max" elementType="Argument">
+            <stringProp name="Argument.name">global.pagepervisit.max</stringProp>
+            <stringProp name="Argument.value">10</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Maximum possible number of pages for each visit</stringProp>
+          </elementProp>
+          <elementProp name="global.referrers" elementType="Argument">
+            <stringProp name="Argument.name">global.referrers</stringProp>
+            <stringProp name="Argument.value">https://google.com?q=test keyword#http://bing.com/search?q=test bing keyword#http://sitecore.net</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">list of possible referrers separated with #</stringProp>
+          </elementProp>
+          <elementProp name="global.useragents" elementType="Argument">
+            <stringProp name="Argument.name">global.useragents</stringProp>
+            <stringProp name="Argument.value">Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0#Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36#Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+            <stringProp name="Argument.desc">list of possible user agents separated with #</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="file.path" elementType="Argument">
+            <stringProp name="Argument.name">file.path</stringProp>
+            <stringProp name="Argument.value">D:/Software/jmeter/randomwalk.csv</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">path to the file, where the request data will be written.</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="IP Adress configuration" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="global.IP.range.min.WW" elementType="Argument">
+            <stringProp name="Argument.name">global.IP.range.min.WW</stringProp>
+            <stringProp name="Argument.value">193</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">MinRange for numbers (WW) in IP like WW.XX.YY.ZZ</stringProp>
+          </elementProp>
+          <elementProp name="global.IP.range.max.WW" elementType="Argument">
+            <stringProp name="Argument.name">global.IP.range.max.WW</stringProp>
+            <stringProp name="Argument.value">194</stringProp>
+            <stringProp name="Argument.desc">MaxRange for numbers (WW) in IP like WW.XX.YY.ZZ</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="global.IP.range.min.XX" elementType="Argument">
+            <stringProp name="Argument.name">global.IP.range.min.XX</stringProp>
+            <stringProp name="Argument.value">199</stringProp>
+            <stringProp name="Argument.desc">MinRange for numbers (XX) in IP like WW.XX.YY.ZZ</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="global.IP.range.max.XX" elementType="Argument">
+            <stringProp name="Argument.name">global.IP.range.max.XX</stringProp>
+            <stringProp name="Argument.value">201</stringProp>
+            <stringProp name="Argument.desc">MaxRange for numbers (XX) in IP like WW.XX.YY.ZZ</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="global.IP.range.min.YY" elementType="Argument">
+            <stringProp name="Argument.name">global.IP.range.min.YY</stringProp>
+            <stringProp name="Argument.value">32</stringProp>
+            <stringProp name="Argument.desc">MinRange for numbers (YY) in IP like WW.XX.YY.ZZ</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="global.IP.range.max.YY" elementType="Argument">
+            <stringProp name="Argument.name">global.IP.range.max.YY</stringProp>
+            <stringProp name="Argument.value">33</stringProp>
+            <stringProp name="Argument.desc">MaxRange for numbers (YY) in IP like WW.XX.YY.ZZ</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="global.IP.range.min.ZZ" elementType="Argument">
+            <stringProp name="Argument.name">global.IP.range.min.ZZ</stringProp>
+            <stringProp name="Argument.value">51</stringProp>
+            <stringProp name="Argument.desc">MinRange for numbers (ZZ) in IP like WW.XX.YY.ZZ</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="global.IP.range.max.ZZ" elementType="Argument">
+            <stringProp name="Argument.name">global.IP.range.max.ZZ</stringProp>
+            <stringProp name="Argument.value">53</stringProp>
+            <stringProp name="Argument.desc">MaxRange for numbers (ZZ) in IP like WW.XX.YY.ZZ</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+        <stringProp name="TestPlan.comments">This section </stringProp>
+      </Arguments>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Delay configuration" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="delay.between.pages" elementType="Argument">
+            <stringProp name="Argument.name">delay.between.pages</stringProp>
+            <stringProp name="Argument.value">1000</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="delay.between.pages.deviation" elementType="Argument">
+            <stringProp name="Argument.name">delay.between.pages.deviation</stringProp>
+            <stringProp name="Argument.value">500</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="delay.between.visits" elementType="Argument">
+            <stringProp name="Argument.name">delay.between.visits</stringProp>
+            <stringProp name="Argument.value">3000</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="delay.between.visits.deviation" elementType="Argument">
+            <stringProp name="Argument.name">delay.between.visits.deviation</stringProp>
+            <stringProp name="Argument.value">300</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${global.visitors}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${global.rampuptime}</stringProp>
+        <longProp name="ThreadGroup.start_time">1324975186000</longProp>
+        <longProp name="ThreadGroup.end_time">1324975186000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="UDV Visitor" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="visitor.guid" elementType="Argument">
+              <stringProp name="Argument.name">visitor.guid</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="visitor.IPAddress" elementType="Argument">
+              <stringProp name="Argument.name">visitor.IPAddress</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="ANALYTICS_GLOBAL_COOKIE" elementType="Argument">
+              <stringProp name="Argument.name">ANALYTICS_GLOBAL_COOKIE</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Setting up visitor guid" enabled="true">
+          <stringProp name="BeanShellSampler.query">import java.util.*;
+
+var test = UUID.randomUUID().toString().replaceAll(&quot;-&quot;, &quot;&quot;);
+log.info(&quot;Visitor with the following guid is initiated : &quot; + test);
+
+vars.put(&quot;visitor.guid&quot;,test.toString());</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Generating IP Adress " enabled="true">
+          <stringProp name="TestPlan.comments">The IP Address is initiated here</stringProp>
+          <stringProp name="BeanShellSampler.query">import java.util.*;
+
+var rand = new Random();
+
+WWMinString = vars.get(&quot;global.IP.range.min.WW&quot;);
+WWMin = Integer.parseInt(WWMinString);
+WWMaxString = vars.get(&quot;global.IP.range.max.WW&quot;);
+WWMax = Integer.parseInt(WWMaxString);
+var WW = rand.nextInt((WWMax - WWMin) + 1) + WWMin;
+
+
+XXMinString = vars.get(&quot;global.IP.range.min.WW&quot;);
+XXMin = Integer.parseInt(XXMinString);
+XXMaxString = vars.get(&quot;global.IP.range.max.WW&quot;);
+XXMax = Integer.parseInt(XXMaxString);
+var XX = rand.nextInt((XXMax - XXMin) + 1) + XXMin;
+
+YYMinString = vars.get(&quot;global.IP.range.min.YY&quot;);
+YYMin = Integer.parseInt(YYMinString);
+YYMaxString = vars.get(&quot;global.IP.range.max.YY&quot;);
+YYMax = Integer.parseInt(YYMaxString);
+var YY = rand.nextInt((YYMax - YYMin) + 1) + YYMin;
+
+ZZMinString = vars.get(&quot;global.IP.range.min.ZZ&quot;);
+ZZMin = Integer.parseInt(ZZMinString);
+ZZMaxString = vars.get(&quot;global.IP.range.max.ZZ&quot;);
+ZZMax = Integer.parseInt(ZZMaxString);
+var ZZ = rand.nextInt((ZZMax - ZZMin) + 1) + ZZMin;
+
+vars.put(&quot;visitor.IPAddress&quot;, WW+&quot;.&quot;+XX+&quot;.&quot;+YY+&quot;.&quot;+ZZ);
+
+log.info(&quot;Visitor IP Address initiated: &quot; + WW+&quot;.&quot;+XX+&quot;.&quot;+YY+&quot;.&quot;+ZZ);</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Check Sitecore version" enabled="true">
+          <stringProp name="BeanShellSampler.query">import java.util.*;
+
+var version = vars.get(&quot;sitecore.version&quot;).toString();
+if (version.equals(&quot;7.2&quot;)) //if Sitecore 7.2 or earlier version is used
+{
+	vars.put(&quot;ANALYTICS_GLOBAL_COOKIE&quot;, vars.get(&quot;visitor.guid&quot;).toString());
+	log.info(&quot;Sitecore 7.2 or earlier is used&quot;);
+}
+else{
+	vars.put(&quot;ANALYTICS_GLOBAL_COOKIE&quot;, vars.get(&quot;visitor.guid&quot;).toString()+&quot;|True&quot;);
+	log.info(&quot;Sitecore 7.5 or higher is used&quot;);
+}
+</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="Adding SC_ANALYTICS_GLOBAL_COOKIE cookie" enabled="true">
+          <collectionProp name="CookieManager.cookies">
+            <elementProp name="SC_ANALYTICS_GLOBAL_COOKIE" elementType="Cookie" testname="SC_ANALYTICS_GLOBAL_COOKIE">
+              <stringProp name="Cookie.value">${ANALYTICS_GLOBAL_COOKIE}</stringProp>
+              <stringProp name="Cookie.domain">${global.host}</stringProp>
+              <stringProp name="Cookie.path"></stringProp>
+              <boolProp name="Cookie.secure">false</boolProp>
+              <longProp name="Cookie.expires">0</longProp>
+              <boolProp name="Cookie.path_specified">true</boolProp>
+              <boolProp name="Cookie.domain_specified">true</boolProp>
+            </elementProp>
+          </collectionProp>
+          <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+          <stringProp name="CookieManager.implementation">org.apache.jmeter.protocol.http.control.HC4CookieHandler</stringProp>
+        </CookieManager>
+        <hashTree/>
+        <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Generating Visits Count" enabled="true">
+          <stringProp name="variableName">global.visits</stringProp>
+          <stringProp name="outputFormat"></stringProp>
+          <stringProp name="minimumValue">${global.visits.min}</stringProp>
+          <stringProp name="maximumValue">${global.visits.max}</stringProp>
+          <stringProp name="randomSeed"></stringProp>
+          <boolProp name="perThread">false</boolProp>
+        </RandomVariableConfig>
+        <hashTree/>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Visitor Loop" enabled="true">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <stringProp name="LoopController.loops">${global.visits}</stringProp>
+        </LoopController>
+        <hashTree>
+          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="UDV Visit" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="current.link" elementType="Argument">
+                <stringProp name="Argument.name">current.link</stringProp>
+                <stringProp name="Argument.value">${global.landingpage}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="pages.visited" elementType="Argument">
+                <stringProp name="Argument.name">pages.visited</stringProp>
+                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="local.referer" elementType="Argument">
+                <stringProp name="Argument.name">local.referer</stringProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="available.links" elementType="Argument">
+                <stringProp name="Argument.name">available.links</stringProp>
+                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="local.useragent" elementType="Argument">
+                <stringProp name="Argument.name">local.useragent</stringProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="asp.sessionId.cookie" elementType="Argument">
+                <stringProp name="Argument.name">asp.sessionId.cookie</stringProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </Arguments>
+          <hashTree/>
+          <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Generating Path Depth" enabled="true">
+            <stringProp name="variableName">path.depth</stringProp>
+            <stringProp name="outputFormat"></stringProp>
+            <stringProp name="minimumValue">${global.pagepervisit.min}</stringProp>
+            <stringProp name="maximumValue">${global.pagepervisit.max}</stringProp>
+            <stringProp name="randomSeed"></stringProp>
+            <boolProp name="perThread">false</boolProp>
+          </RandomVariableConfig>
+          <hashTree/>
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Setting up referrer and user agent" enabled="true">
+            <stringProp name="BeanShellSampler.query">import java.util.*;
+
+vars.put(&quot;pages.visited&quot;,&quot;0&quot;);
+
+globalReferrers = vars.get(&quot;global.referrers&quot;).toString();
+String[] referrers = globalReferrers.split(&quot;#&quot;);
+
+userAgents = vars.get(&quot;global.useragents&quot;).toString();
+String[] agents = userAgents.split(&quot;#&quot;);
+
+rand = new Random();
+
+referrer = referrers[rand.nextInt(referrers.length)];
+userAgent = agents[rand.nextInt(agents.length)];
+
+log.info(&quot;Referrer initiated: &quot; + referrer);
+log.info(&quot;Local useragent: &quot; + userAgent);
+
+vars.put(&quot;local.referer&quot;, referrer);
+vars.put(&quot;local.useragent&quot;, userAgent);
+</stringProp>
+            <stringProp name="BeanShellSampler.filename"></stringProp>
+            <stringProp name="BeanShellSampler.parameters"></stringProp>
+            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+          </BeanShellSampler>
+          <hashTree/>
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Drop ASP.net sessionId cookie" enabled="true">
+            <stringProp name="BeanShellSampler.query">vars.put(&quot;asp.sessionId.cookie&quot;, &quot;&quot;);
+</stringProp>
+            <stringProp name="BeanShellSampler.filename"></stringProp>
+            <stringProp name="BeanShellSampler.parameters"></stringProp>
+            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+          </BeanShellSampler>
+          <hashTree/>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Delay Before Next Visit" enabled="true">
+            <stringProp name="ConstantTimer.delay">${delay.between.visits}</stringProp>
+            <stringProp name="RandomTimer.range">${delay.between.visits.deviation}</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Visit Loop" enabled="true">
+            <boolProp name="LoopController.continue_forever">true</boolProp>
+            <stringProp name="LoopController.loops">${path.depth}</stringProp>
+          </LoopController>
+          <hashTree>
+            <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Delay Between Pages" enabled="true">
+              <stringProp name="ConstantTimer.delay">${delay.between.pages}</stringProp>
+              <stringProp name="RandomTimer.range">${delay.between.pages.deviation}</stringProp>
+            </GaussianRandomTimer>
+            <hashTree/>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Setting up visit headers" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">X-Forwarded-For</stringProp>
+                  <stringProp name="Header.value">${visitor.IPAddress}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Referer</stringProp>
+                  <stringProp name="Header.value">${local.referer}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">User-Agent</stringProp>
+                  <stringProp name="Header.value">${local.useragent}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="${__V(current.link)}" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${global.host}</stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">${current.link}</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="Setting cookies" enabled="true">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">import org.apache.jmeter.protocol.http.control.CookieManager;
+import org.apache.jmeter.protocol.http.control.Cookie;
+
+try {
+	var aspSessionCookie = vars.get(&quot;asp.sessionId.cookie&quot;);
+	CookieManager cm = sampler.getCookieManager();
+	cm.getCookies().clear();
+	Cookie c = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;, vars.get(&quot;ANALYTICS_GLOBAL_COOKIE&quot;), vars.get(&quot;global.host&quot;), &quot;&quot;, false, 0);  
+	cm.add(c);
+	if (aspSessionCookie != &quot;&quot;) //if not the first page
+	{
+	  Cookie c2 = new Cookie(&quot;ASP.NET_SessionId&quot;, aspSessionCookie, vars.get(&quot;global.host&quot;), &quot;&quot;, false, 0);
+	  cm.add(c2);
+	  var version = vars.get(&quot;sitecore.version&quot;).toString();
+	  if (version.equals(&quot;7.2&quot;)) //if Sitecore 7.2 or earlier version is used
+	  {
+	  	Cookie c3 = new Cookie(&quot;SC_ANALYTICS_SESSION_COOKIE&quot;, vars.get(&quot;visitor.guid&quot;)+&quot;|0|&quot;+aspSessionCookie, vars.get(&quot;global.host&quot;), &quot;&quot;, false, 0);  
+	     cm.add(c3);
+	  }
+	}
+}
+catch (Exception e) {
+	log.error(&quot;Setting ASP.NET_SessionId cookie failed&quot; + e.getMessage());
+}</stringProp>
+              </BeanShellPreProcessor>
+              <hashTree/>
+              <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="Log the selected requested page url" enabled="true">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">var curPage = vars.get(&quot;current.link&quot;);
+log.info(&quot;The &quot;+curPage+&quot; is requested&quot;);</stringProp>
+              </BeanShellPreProcessor>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="Extracting links" enabled="true">
+                <stringProp name="XPathExtractor.default"></stringProp>
+                <stringProp name="XPathExtractor.refname">link</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">//a/@href</stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">true</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+              </XPathExtractor>
+              <hashTree/>
+              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="Selecting next link processor" enabled="true">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">import java.util.*;
+
+max_string = vars.get(&quot;link_matchNr&quot;);
+max = Integer.parseInt(max_string) ;
+String[] links = new String[max];
+int availableLinks=0;
+if (max!=0){
+	for (int i=0; i&lt;max; i++)
+	{
+		linkValue = vars.get(&quot;link_&quot;+(i+1));
+		//log.info(&quot;linkValue &quot;+linkValue);
+		if (!(linkValue.contains(&quot;http&quot;)||linkValue.contains(&quot;javascript&quot;))){
+			links[availableLinks] = linkValue;
+			availableLinks++;
+		}
+	}
+}
+
+if (availableLinks!=0){
+	r = new Random();
+     random_number = r.nextInt(availableLinks);
+	vars.put(&quot;current.link&quot;, links[random_number]);
+}
+vars.put(&quot;available.links&quot;, availableLinks.toString());
+</stringProp>
+              </BeanShellPostProcessor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract ASP.NET sessionId cookie" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">true</stringProp>
+                <stringProp name="RegexExtractor.refname">asp.sessionId.cookie</stringProp>
+                <stringProp name="RegexExtractor.regex">ASP.NET_SessionId=(.*?);</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default"></stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="IF First Page In Visit" enabled="true">
+              <stringProp name="IfController.condition">${pages.visited} &lt; 2</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/layouts/System/VisitorIdentification.aspx" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${global.host}</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/layouts/System/VisitorIdentification.aspx</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.implementation">Java</stringProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="IF No Links" enabled="true">
+              <stringProp name="IfController.condition">${available.links} == 0</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="Log no links" enabled="true">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">log.info(&quot;There is no internal links on the page&quot;);</stringProp>
+              </BeanShellPreProcessor>
+              <hashTree/>
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Stop Now" enabled="true">
+                <intProp name="ActionProcessor.action">2</intProp>
+                <intProp name="ActionProcessor.target">0</intProp>
+                <stringProp name="ActionProcessor.duration"></stringProp>
+              </TestAction>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Simple Data Writer" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <threadCounts>true</threadCounts>
+          </value>
+        </objProp>
+        <stringProp name="filename">${file.path}</stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
