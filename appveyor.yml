@@ -26,14 +26,14 @@ build_script:
 #---------------------------------#
 artifacts:
 
-  - path: TDS.MVC.Master\bin\Package_$(configuration)\.update
+  - path: TDS.MVC.Master\bin\Package_$(configuration)\*.update
   - path: LaunchSitecoreMvc\bin\Launch*
 
 #---------------------------------#
 #      deploy configuration    #
 #---------------------------------#
 deploy:
-  description: 'Placeholder Fallback'
+  description: 'LaunchSitecoreMvc'
   provider: GitHub
   auth_token:
     secure: ZU0V8xqgN1++PR7PjmsM9KWaGGTHebKDm0FHdPKvvzR5rpG60HctmNnM5/pvFDyk # your encrypted token from GitHub
