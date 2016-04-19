@@ -19,7 +19,7 @@ before_build:
   - ps: gitversion /l console /output buildserver /updateAssemblyInfo
 
 build_script:
-  - cmd: msbuild Source\LaunchSitecoreMvc.sln /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /verbosity:normal /p:PackageVersion=%GitVersion_SemVer%
+  - cmd: msbuild LaunchSitecoreMvc.sln /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /verbosity:normal /p:PackageVersion=%GitVersion_SemVer%
 
 #---------------------------------#
 #      artifacts configuration    #
@@ -32,13 +32,13 @@ artifacts:
 #---------------------------------#
 #      deploy configuration    #
 #---------------------------------#
-deploy:
-  description: 'LaunchSitecoreMvc'
-  provider: GitHub
-  auth_token:
-    secure: ZU0V8xqgN1++PR7PjmsM9KWaGGTHebKDm0FHdPKvvzR5rpG60HctmNnM5/pvFDyk # your encrypted token from GitHub
-  artifact: /.*\.update/
-  draft: false
-  prerelease: false
-  on:
-    appveyor_repo_tag: true        # deploy on tag push only
+# deploy:
+#   description: 'LaunchSitecoreMvc'
+#   provider: GitHub
+#   auth_token:
+#     secure: ZU0V8xqgN1++PR7PjmsM9KWaGGTHebKDm0FHdPKvvzR5rpG60HctmNnM5/pvFDyk # your encrypted token from GitHub
+#   artifact: /.*\.update/
+#   draft: false
+#   prerelease: false
+#   on:
+#     appveyor_repo_tag: true        # deploy on tag push only

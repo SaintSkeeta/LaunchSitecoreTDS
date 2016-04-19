@@ -3,35 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Core", "TDS.Core\TDS.Core.scproj", "{583A259D-AE10-414C-B84D-659E3CCE56E5}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Core", "Source\TDS.Core\TDS.Core.scproj", "{583A259D-AE10-414C-B84D-659E3CCE56E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchContent", "LaunchContent\LaunchContent.csproj", "{AB40808F-AAA0-491C-A220-C1C0C8905BDE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchContent", "Source\LaunchContent\LaunchContent.csproj", "{AB40808F-AAA0-491C-A220-C1C0C8905BDE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tds", ".tds", "{DE8F7DC4-79DF-4E26-B8CF-D4B5F1BD1141}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tds", "Source\.tds", "{DE8F7DC4-79DF-4E26-B8CF-D4B5F1BD1141}"
 	ProjectSection(SolutionItems) = preProject
-		TdsGlobal.config = TdsGlobal.config
+		Source\TdsGlobal.config = Source\TdsGlobal.config
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchSitecoreMvc", "LaunchSitecoreMvc\LaunchSitecoreMvc.csproj", "{834A2236-50DC-4E10-AF63-9057F5B6F84E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchSitecoreMvc", "Source\LaunchSitecoreMvc\LaunchSitecoreMvc.csproj", "{834A2236-50DC-4E10-AF63-9057F5B6F84E}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.MVC.Base", "TDS.MVC.Base\TDS.MVC.Base.scproj", "{5FEE21F7-334B-4D21-BDCF-CB7BE150B5F1}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.MVC.Base", "Source\TDS.MVC.Base\TDS.MVC.Base.scproj", "{5FEE21F7-334B-4D21-BDCF-CB7BE150B5F1}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.MVC.Master", "TDS.MVC.Master\TDS.MVC.Master.scproj", "{6769C297-978F-4D4F-A720-359EE9D541F1}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.MVC.Master", "Source\TDS.MVC.Master\TDS.MVC.Master.scproj", "{6769C297-978F-4D4F-A720-359EE9D541F1}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Master.Media", "TDS.Master.Media\TDS.Master.Media.scproj", "{4BD23342-7AF2-498A-8530-5DE0480C7CD6}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Master.Media", "Source\TDS.Master.Media\TDS.Master.Media.scproj", "{4BD23342-7AF2-498A-8530-5DE0480C7CD6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9BDFA183-07FD-47A7-800D-5B626EB03DA2}"
 	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
+		Source\.nuget\NuGet.Config = Source\.nuget\NuGet.Config
+		Source\.nuget\NuGet.exe = Source\.nuget\NuGet.exe
+		Source\.nuget\NuGet.targets = Source\.nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HedgehogDevelopment.TDS.CustomExtensions", "HedgehogDevelopment.TDS.CustomExtensions\HedgehogDevelopment.TDS.CustomExtensions.csproj", "{8D745602-D1D5-41C1-B880-8F50198E8AA4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HedgehogDevelopment.TDS.CustomExtensions", "Source\HedgehogDevelopment.TDS.CustomExtensions\HedgehogDevelopment.TDS.CustomExtensions.csproj", "{8D745602-D1D5-41C1-B880-8F50198E8AA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchSitecore.AutomatedAnalytics", "LaunchSitecore.AutomatedAnalytics\LaunchSitecore.AutomatedAnalytics.csproj", "{E6E1DEAF-4909-4FB0-8B41-181EF3FAF649}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchSitecore.AutomatedAnalytics", "Source\LaunchSitecore.AutomatedAnalytics\LaunchSitecore.AutomatedAnalytics.csproj", "{E6E1DEAF-4909-4FB0-8B41-181EF3FAF649}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.AutomatedAnalytics", "TDS.AutomatedAnalytics\TDS.AutomatedAnalytics.scproj", "{9E1D349A-B537-4E70-B735-085352C28C0F}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.AutomatedAnalytics", "Source\TDS.AutomatedAnalytics\TDS.AutomatedAnalytics.scproj", "{9E1D349A-B537-4E70-B735-085352C28C0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
