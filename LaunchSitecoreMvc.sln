@@ -7,7 +7,7 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Core", "Source\TDS.Core
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchContent", "Source\LaunchContent\LaunchContent.csproj", "{AB40808F-AAA0-491C-A220-C1C0C8905BDE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tds", "Source\.tds", "{DE8F7DC4-79DF-4E26-B8CF-D4B5F1BD1141}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tds", ".tds", "{DE8F7DC4-79DF-4E26-B8CF-D4B5F1BD1141}"
 	ProjectSection(SolutionItems) = preProject
 		Source\TdsGlobal.config = Source\TdsGlobal.config
 	EndProjectSection
@@ -77,11 +77,8 @@ Global
 		{8D745602-D1D5-41C1-B880-8F50198E8AA4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E6E1DEAF-4909-4FB0-8B41-181EF3FAF649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E6E1DEAF-4909-4FB0-8B41-181EF3FAF649}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E6E1DEAF-4909-4FB0-8B41-181EF3FAF649}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9E1D349A-B537-4E70-B735-085352C28C0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9E1D349A-B537-4E70-B735-085352C28C0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E1D349A-B537-4E70-B735-085352C28C0F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9E1D349A-B537-4E70-B735-085352C28C0F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
