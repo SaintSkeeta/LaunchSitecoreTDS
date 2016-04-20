@@ -15,7 +15,7 @@ platform: Any CPU
 configuration: Release
 
 before_build:
-  - nuget restore
+  - nuget restore Source\LaunchSitecoreMvc.sln
   - ps: gitversion /l console /output buildserver /updateAssemblyInfo
 
 build_script:
