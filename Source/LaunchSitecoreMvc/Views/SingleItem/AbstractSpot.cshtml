@@ -1,5 +1,7 @@
 ﻿@model LaunchSitecore.Models.SimpleItem
-<div class="image-wrapper">@Html.Sitecore().Field("Icon", Model.Item, new { @maxWidth = "64", @maxHeight = "64" })</div>
-<h2>@Html.Sitecore().Field("Title", Model.Item)</h2>
-@Html.Sitecore().Field("Abstract", Model.Item)
-<p><a href="@Model.Url">@UIHelpers.GetDictionaryText("Learn more")&nbsp;»</a></p>
+<div class="abstract-spot">
+    <div class="image-wrapper">@Html.Sitecore().Field("Icon", Model.Item, new { @maxWidth = "64", @maxHeight = "64" })</div>
+    <h2>@Html.Sitecore().Field("Title", Model.Item)</h2>
+    @Html.Sitecore().Field("Abstract", Model.Item)
+    <p><a href="@Model.Url">@UIHelpers.GetDictionaryText("Learn more")&nbsp;»</a></p>
+</div>

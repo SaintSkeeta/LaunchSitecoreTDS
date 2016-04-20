@@ -6,8 +6,8 @@ path: /sitecore/system/Marketing Control Panel/Goals/Login
 parent: {0CB97A9F-CAFB-42A0-8BE1-89AB9AE32BD9}
 name: Login
 master: {00000000-0000-0000-0000-000000000000}
-template: {059CFBDF-49FC-4F14-A4E5-B63E1E1AFB1E}
-templatekey: Page Event
+template: {475E9026-333F-432D-A4DC-52E03B75CB6B}
+templatekey: Goal
 
 ----field----
 field: {AC6BA888-4213-43BD-B787-D8DA2B6B881F}
@@ -30,6 +30,13 @@ key: isgoal
 content-length: 1
 
 1
+----field----
+field: {E4D0FAF3-61E7-44D4-A921-CE5C606A8DA8}
+name: IsSystem
+key: issystem
+content-length: 5
+
+false
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
@@ -76,7 +83,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150621T112458Z
+20081211T145438Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -97,7 +104,7 @@ name: __Updated
 key: __updated
 content-length: 16
 
-20150621T113950Z
+20160328T203244Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -144,7 +151,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150621T111748Z
+20081211T145438Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -165,7 +172,7 @@ name: __Updated
 key: __updated
 content-length: 16
 
-20150621T114304Z
+20160328T203244Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -183,7 +190,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 6f1f1c76-a14c-4744-91ce-f9fed1fd2814
+revision: 37d82c00-7648-40ec-b840-0724dc2e29dc
 
 ----field----
 field: {797466F5-763B-4299-B6AD-E4192BF21222}
@@ -192,6 +199,13 @@ key: description
 content-length: 18
 
 User has logged on
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 5
+
+Login
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -203,9 +217,9 @@ sitecore\admin
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20081211T095438
+20081211T145438Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -219,14 +233,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6f1f1c76-a14c-4744-91ce-f9fed1fd2814
+37d82c00-7648-40ec-b840-0724dc2e29dc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20110524T153103:634418478639522488
+20160328T203244Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -273,7 +287,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150621T113151Z
+20081211T145438Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -294,7 +308,7 @@ name: __Updated
 key: __updated
 content-length: 16
 
-20150621T114625Z
+20160328T203244Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

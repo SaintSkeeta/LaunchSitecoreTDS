@@ -11,6 +11,7 @@
  <link rel="stylesheet" href="/assets/css/custom.css" />
  <link rel="stylesheet" href="/assets/css/responsive.css" />
  @Html.Sitecore().Controller("SiteConfiguration", "CssColor")
+ @Html.Sitecore().VisitorIdentification()
 </head>
 <body style="background-color:@Html.Sitecore().Controller("SiteConfiguration", "BackgroundColor")">
     <div id="out_container" class="@Html.Sitecore().Controller("SiteConfiguration", "PageLayoutClass")">

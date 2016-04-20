@@ -25,7 +25,7 @@ namespace LaunchSitecore.Models
   public class RegisterExternalLoginModel
   {
     [Required]
-    [Display(Name = "User name")]
+    [Display(Name = "Email")]
     public string UserName { get; set; }
 
     public string ExternalLoginData { get; set; }
@@ -53,7 +53,7 @@ namespace LaunchSitecore.Models
   public class LoginModel
   {
     [Required]
-    [Display(Name = "User name")]
+    [Display(Name = "Email")]
     public string UserName { get; set; }
 
     [Required]

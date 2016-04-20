@@ -23,7 +23,7 @@ namespace LaunchSitecore.Configuration.Events.ItemSaving
         {
           while (ParentHasChildWithName(item))
           {
-            item.Name = String.Format("{0}-{1}", item.Name, 1);
+              item.Name = ItemUtil.ProposeValidItemName(String.Format("{0}-{1}", item.Name, 1));
           }          
         }
       }
