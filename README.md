@@ -1,5 +1,7 @@
 # Launch Sitecore TDS #
 
+[![Build status](https://ci.appveyor.com/api/projects/status/taxr71bl03mev0vc?svg=true)](https://ci.appveyor.com/project/SeanHolmesby/launchsitecoretds/branch/master)
+
 - Use Tag v3.1.0.0 with Sitecore 8.1 Update 2 (rev. 160302) - Launch Sitecore - MVC Bootstrap3 version.
 - Use Tag 3.0.0.0 with Sitecore 8.0 Update 5 (rev. 150812) - Launch Sitecore - MVC Bootstrap3 version.
 - Use Tag 2.3.0.0 with Sitecore 8.0 Update 4 (rev. 150621) - Launch Sitecore - both WebForms and MVC versions.
