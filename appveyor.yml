@@ -32,13 +32,13 @@ artifacts:
 #---------------------------------#
 #      deploy configuration    #
 #---------------------------------#
-# deploy:
-#   description: 'LaunchSitecoreMvc'
-#   provider: GitHub
-#   auth_token:
-#     secure: ZU0V8xqgN1++PR7PjmsM9KWaGGTHebKDm0FHdPKvvzR5rpG60HctmNnM5/pvFDyk # your encrypted token from GitHub
-#   artifact: /.*\.update/
-#   draft: false
-#   prerelease: false
-#   on:
-#     appveyor_repo_tag: true        # deploy on tag push only
+deploy:
+  description: 'LaunchSitecoreMvc'
+  provider: GitHub
+  auth_token:
+    secure: vMfLJBfd7tN7ijjHaiJ1DSbqJzKP7M0i0zJ4k2SSFPj/t+vl9Kp+jFPt/wExjXOa # your encrypted token from GitHub
+  artifact: /.*\.update/
+  draft: false
+  prerelease: false
+  on:
+    appveyor_repo_tag: true        # deploy on tag push only
