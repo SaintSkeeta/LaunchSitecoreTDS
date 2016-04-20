@@ -26,8 +26,8 @@ build_script:
 #---------------------------------#
 artifacts:
 
-  - path: TDS.MVC.Master\bin\Package_$(configuration)\*.update
-  - path: LaunchSitecoreMvc\bin\Launch*
+  - path: Source\TDS.MVC.Master\bin\Package_$(configuration)\*.update
+  - path: Source\LaunchSitecoreMvc\bin\Launch*
 
 #---------------------------------#
 #      deploy configuration    #
