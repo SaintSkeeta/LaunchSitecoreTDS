@@ -30,6 +30,8 @@
     <CodeGenTargetProject>LaunchContent</CodeGenTargetProject>
     <CodeGenFile>BaseModels.cs</CodeGenFile>
     <HeaderTransformFile>GlassHeader.tt</HeaderTransformFile>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -55,10 +57,10 @@
     <ExcludedAssemblies Include="Sitecore.%2a.dll" />
   </ItemGroup>
   <ItemGroup>
-    <CodeGenTemplate Include="Code Generation Templates\GlassHeader.tt" />
     <CodeGenTemplate Include="..\TDS.MVC.Master\Code Generation Templates\GlassItem.tt">
       <Link>Code Generation Templates\GlassItem.tt</Link>
     </CodeGenTemplate>
+    <CodeGenTemplate Include="Code Generation Templates\GlassHeader.tt" />
   </ItemGroup>
   <ItemGroup>
     <SitecoreItem Include="sitecore\templates.item">
@@ -128,5 +130,15 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="D:\Github\LaunchSitecoreTDS\Source\TDS.MVC.Base\packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
+  <Import Project="..\packages\HedgehogDevelopment.TDS.5.5.0.9\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\packages\HedgehogDevelopment.TDS.5.5.0.9\build\HedgehogDevelopment.TDS.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\HedgehogDevelopment.TDS.5.5.0.9\build\HedgehogDevelopment.TDS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\HedgehogDevelopment.TDS.5.5.0.9\build\HedgehogDevelopment.TDS.targets'))" />
+  </Target>
 </Project>
