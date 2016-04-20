@@ -1,0 +1,44 @@
+install:
+  - choco install gitversion.portable -pre -y
+
+nuget:
+  account_feed: true
+
+#---------------------------------#
+#       build configuration       #
+#---------------------------------#
+
+# build platform, i.e. x86, x64, Any CPU. This setting is optional.
+platform: Any CPU
+
+# build Configuration, i.e. Debug, Release, etc.
+configuration: Release
+
+before_build:
+  - nuget restore Source\LaunchSitecoreMvc.sln
+  - ps: gitversion /l console /output buildserver /updateAssemblyInfo
+
+build_script:
+  - cmd: msbuild Source\LaunchSitecoreMvc.sln /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /verbosity:normal /p:PackageVersion=%GitVersion_SemVer%
+
+#---------------------------------#
+#      artifacts configuration    #
+#---------------------------------#
+artifacts:
+
+  - path: Source\TDS.MVC.Master\bin\Package_$(configuration)\*.update
+  - path: Source\LaunchSitecoreMvc\bin\Launch*
+
+#---------------------------------#
+#      deploy configuration    #
+#---------------------------------#
+deploy:
+  description: 'LaunchSitecoreMvc'
+  provider: GitHub
+  auth_token:
+    secure: vMfLJBfd7tN7ijjHaiJ1DSbqJzKP7M0i0zJ4k2SSFPj/t+vl9Kp+jFPt/wExjXOa # your encrypted token from GitHub
+  artifact: /.*\.update/
+  draft: false
+  prerelease: false
+  on:
+    appveyor_repo_tag: true        # deploy on tag push only
