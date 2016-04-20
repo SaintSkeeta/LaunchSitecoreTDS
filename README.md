@@ -1,6 +1,6 @@
 # Launch Sitecore TDS #
 
-- Use Tag 3.1.0.0 with Sitecore 8.1 Update 2 (rev. 160302) - Launch Sitecore - MVC Bootstrap3 version.
+- Use Tag v3.1.0.0 with Sitecore 8.1 Update 2 (rev. 160302) - Launch Sitecore - MVC Bootstrap3 version.
 - Use Tag 3.0.0.0 with Sitecore 8.0 Update 5 (rev. 150812) - Launch Sitecore - MVC Bootstrap3 version.
 - Use Tag 2.3.0.0 with Sitecore 8.0 Update 4 (rev. 150621) - Launch Sitecore - both WebForms and MVC versions.
 - Use Tag 2.2.0.0 with Sitecore 7.5 Initial Release (rev. 141003) - Launch Sitecore - both WebForms and MVC versions.
@@ -19,8 +19,8 @@ This repository is that package converted to a Visual Studio solution with items
 ## To get up and running ##
 ### Quick Guide ###
 - Install a blank instance of Sitecore using SIM.
+- Within the folder that the MVC sln file exists, setup your local TDS settings, either by changing the `TdsGlobal.config` file, or by duplicating it with the name `TdsGlobal.config.user`
 - Restore all NuGet packages (note: TDS and Sitecore NuGet packages should exist in your private NuGet repo).
-- Within the MVC solution, setup your local TDS settings, either by changing the `TdsGlobal.config` file, or by duplicating it with the name `TdsGlobal.config.user`
 - Deploy the solution, so code and items are deployed to your local instance.
 
 ### Detailed Guide ###
@@ -31,14 +31,6 @@ This repository is that package converted to a Visual Studio solution with items
 	 
 - Ensure the version of Sitecore you install matches the version of the branch/tag you are using for this repository.
 
-#### Restore all NuGet packages ####
-Sitecore NuGet Packages should be generated using the [Sitecore NuGet Package Generator](https://bitbucket.org/seanholmesby/sitecore-nuget-packages-generator) tool. Setup a custom NuGet Package Source, either by creating it as a local NuGet folder, or follow [these steps](http://blog.alen.pw/2014/10/internal-sitecore-nuget-server.html) to setup a private Proget NuGet repostory, where you can upload the generated Sitecore packages.
-Note: The updated generator tool creates single DLL NuGet paackages for only Sitecore.*.DLLs, as well as package groupings for easy consumtion.
-
-Either explicitly restore all of the NuGet packages, or [make Visual Studio will restore them during your build](http://www.codeproject.com/Articles/680678/Keep-Nuget-Packages-Out-of-Source-Control-with-Nug).
-
-Also the [HedgehogDevelopment.TDS NuGet package from your TDS install zip](http://hedgehogdevelopment.github.io/tds/chapter5.html#tds-builds-using-cloud-servers) should be added to your local repository as well. 
-
 #### Set your TDS Deployment Settings ####
 The default settings in the solution are to built to `D:\Sites\Launch\Website` and `http://launch.local`. You can choose something else for your site and easily configure the project by performing the following:-
 
@@ -48,6 +40,14 @@ The default settings in the solution are to built to `D:\Sites\Launch\Website` a
    `<SitecoreWebUrl>http://mysite.local</SitecoreWebUrl>`<br />
    `<SitecoreDeployFolder>D:\Sites\MySite\Website</SitecoreDeployFolder>`<br />
 - Save the file. This will tell TDS to use these settings for all TDS projects.
+
+#### Restore all NuGet packages ####
+Sitecore NuGet Packages should be generated using the [Sitecore NuGet Package Generator](https://bitbucket.org/seanholmesby/sitecore-nuget-packages-generator) tool. Setup a custom NuGet Package Source, either by creating it as a local NuGet folder, or follow [these steps](http://blog.alen.pw/2014/10/internal-sitecore-nuget-server.html) to setup a private Proget NuGet repostory, where you can upload the generated Sitecore packages.
+Note: The updated generator tool creates single DLL NuGet paackages for only Sitecore.*.DLLs, as well as package groupings for easy consumption.
+
+Either explicitly restore all of the NuGet packages, or [make Visual Studio will restore them during your build](http://www.codeproject.com/Articles/680678/Keep-Nuget-Packages-Out-of-Source-Control-with-Nug).
+
+Also the [HedgehogDevelopment.TDS NuGet package from your TDS install zip](http://hedgehogdevelopment.github.io/tds/chapter5.html#tds-builds-using-cloud-servers) should be added to your local repository as well. 
 
 #### Build and Deploy ####
 - Right click on the solution and select 'Deploy Solution'.
