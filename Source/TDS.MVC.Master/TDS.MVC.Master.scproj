@@ -43,8 +43,6 @@
     <PackageAuthor>
     </PackageAuthor>
     <PackagePublisher />
-    <PackageVersion>
-    </PackageVersion>
     <PackageReadme />
     <SitecoreAssemblyPath />
     <GeneratePackage>False</GeneratePackage>
@@ -59,7 +57,6 @@
     <PackageName>LaunchSitecoreTDS</PackageName>
     <PackageAuthor>Hedgehog Development</PackageAuthor>
     <PackagePublisher>Hedgehog Development</PackagePublisher>
-    <PackageVersion>3.1.0.0</PackageVersion>
     <PackageReadme />
     <SitecoreAssemblyPath />
     <GeneratePackage>True</GeneratePackage>
