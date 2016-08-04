@@ -62,7 +62,7 @@
   <ItemGroup>
     <Compile Include="PostBuildProcessors\RebuildContentSearchIndexes.cs" />
     <Compile Include="PostBuildProcessors\RebuildLinkDatabase.cs" />
-    <Compile Include="PostBuildProcessors\SmartPublishMasterToWeb.cs" />
+    <Compile Include="PostBuildProcessors\SmartPublishMasterToTargetDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
