@@ -1,6 +1,7 @@
 ﻿using HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor.Contracts;
 using HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor.Utils;
 using Sitecore.ContentSearch;
+using Sitecore.ContentSearch.Maintenance;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Data.Managers;
@@ -20,16 +21,16 @@ namespace HedgehogDevelopment.TDS.CustomExtensions.PostBuildProcessors
             string[] indexNames = this.GetContentSearchIndexes(parameter);
             foreach (var indexName in indexNames)
             {
-                if (!ContentSearchManager.Indexes.Any(x => x.Name == indexName))
+                var index = ContentSearchManager.GetIndex(indexName.Trim());
+
+                if (index == null)
                 {
                     host.LogMessage("The Content Search Index with name {0} supplied does not exist.", indexName);
                     continue;
                 }
 
                 host.LogMessage("Rebuilding index {0}...", indexName);
-                var Index = ContentSearchManager.GetIndex(indexName);
-
-                Index.Rebuild();
+                IndexCustodian.FullRebuild(index, true);
                 host.LogMessage("Rebuild of index {0} complete", indexName);
             }
         }

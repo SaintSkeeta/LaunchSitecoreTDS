@@ -16,7 +16,7 @@ namespace HedgehogDevelopment.TDS.CustomExtensions.PostBuildProcessors
             var databases = this.GetDatabases(parameter);
             foreach (string databaseName in databases)
             {
-                Database database = Sitecore.Data.Database.GetDatabase(databaseName);
+                Database database = Sitecore.Data.Database.GetDatabase(databaseName.Trim());
                 if (database == null)
                 {
                     host.LogMessage("Database with the name '{0}' in null", databaseName);
