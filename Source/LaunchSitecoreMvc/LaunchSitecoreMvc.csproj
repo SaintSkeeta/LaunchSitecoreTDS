@@ -278,7 +278,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <None Include="Web.config" />
     <Content Include="App_Config\Include\www.LaunchSitecore.ContentSearch.config" />
     <Content Include="App_Config\Include\www.LaunchSitecore.GeoIpSpoofForLocalhost.config" />
     <Content Include="App_Config\Include\www.LaunchSitecore.ItemNaming.config" />
