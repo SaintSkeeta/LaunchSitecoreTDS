@@ -2258,20 +2258,22 @@
     <CodeGenReferencedProject Include="{5fee21f7-334b-4d21-bdcf-cb7be150b5f1}" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeployAction Include="HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor.BuiltIn.PublishDeployedItems, HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor">
-      <Parameter>Internet</Parameter>
-      <Order>30</Order>
-    </PostDeployAction>
-    <PostDeployAction Include="HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor.BuiltIn.TriggerSaveEventsForPublishedItems, HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor">
-      <Order>10</Order>
-    </PostDeployAction>
-    <PostDeployAction Include="HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor.BuiltIn.UpdateLinkDatabaseForDeployedItems, HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor">
-      <Order>20</Order>
-    </PostDeployAction>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
+  <!--<ItemGroup>
+    <PostDeployAction Include="HedgehogDevelopment.TDS.CustomExtensions.PostBuildProcessors.RebuildContentSearchIndexes, HedgehogDevelopment.TDS.CustomExtensions">
+      <Parameter>sitecore_master_index, sitecore_web_index</Parameter>
+      <Order>40</Order>
+    </PostDeployAction>
+    <PostDeployAction Include="HedgehogDevelopment.TDS.CustomExtensions.PostBuildProcessors.RebuildLinkDatabase, HedgehogDevelopment.TDS.CustomExtensions">
+      <Parameter>master, web</Parameter>
+      <Order>50</Order>
+    </PostDeployAction>
+    <PostDeployAction Include="HedgehogDevelopment.TDS.CustomExtensions.PostBuildProcessors.SmartPublishMasterToTargetDB, HedgehogDevelopment.TDS.CustomExtensions">
+      <Parameter>web</Parameter>
+      <Order>60</Order>
+    </PostDeployAction>
+  </ItemGroup>-->
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
   <Import Project="..\packages\HedgehogDevelopment.TDS.5.5.0.15\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\packages\HedgehogDevelopment.TDS.5.5.0.15\build\HedgehogDevelopment.TDS.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
