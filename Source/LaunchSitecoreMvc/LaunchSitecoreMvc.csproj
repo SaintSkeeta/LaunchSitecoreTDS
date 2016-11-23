@@ -287,6 +287,15 @@
     <Content Include="App_Config\Include\Glass.Mapper.Sc.Start.config" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.config" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
+    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.ContentSearch.config" />
+    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.ItemNaming.config" />
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Website.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.PageEditor.config" />
     <None Include="Web.config" />
     <Content Include="App_Config\Include\www.LaunchSitecore.ContentSearch.config" />
     <Content Include="App_Config\Include\www.LaunchSitecore.GeoIpSpoofForLocalhost.config" />
