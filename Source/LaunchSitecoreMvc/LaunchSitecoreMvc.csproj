@@ -221,6 +221,7 @@
     <Compile Include="Configuration\Pipelines\StartTracking\GeoIpSpoofForLocalhost.cs" />
     <Compile Include="Configuration\Processors\saveUI\RemoveNonBreakingSpacesSaveProcessor.cs" />
     <Compile Include="Configuration\Rules\EnrollInAutomationState.cs" />
+    <Compile Include="Configuration\Rules\QueryStringCondition.cs" />
     <Compile Include="Configuration\Search\ComputedFields\HasPresentationComputedField.cs" />
     <Compile Include="Configuration\Search\ComputedFields\ProfileCardComputedField.cs" />
     <Compile Include="Configuration\Search\ComputedFields\SiteAreaComputedField.cs" />
