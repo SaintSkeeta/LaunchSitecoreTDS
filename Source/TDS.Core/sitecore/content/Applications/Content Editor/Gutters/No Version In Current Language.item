@@ -8,14 +8,15 @@ name: No Version In Current Language
 master: {00000000-0000-0000-0000-000000000000}
 template: {F5D247E0-80E6-4F31-9921-D30D00B61B3C}
 templatekey: Gutter Renderer
+created: 20161115T183737:636148318573770000
 
 ----field----
 field: {7A108204-DC61-4D25-A138-FD6F53F48ABF}
 name: Type
 key: type
-content-length: 111
+content-length: 95
 
-LaunchSitecore.Configuration.AuthoringExperience.ContentEditor.NoVersionInCurrentLanguageGutter, LaunchSitecore
+LaunchSitecore.Configuration.AuthoringExperience.ContentEditor.NoVersionInCurrentLanguageGutter
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -134,7 +135,7 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: 6d3fda2b-ec61-47a6-85a7-dbbd36a45d70
+revision: 30890062-2e43-4378-a07f-81e4bbb1fc0e
 
 ----field----
 field: {5024402F-0B92-4C13-A7D2-86ED85FF3560}
@@ -170,14 +171,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6d3fda2b-ec61-47a6-85a7-dbbd36a45d70
+30890062-2e43-4378-a07f-81e4bbb1fc0e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131113T215613:635199765734003969
+20161128T224110Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
