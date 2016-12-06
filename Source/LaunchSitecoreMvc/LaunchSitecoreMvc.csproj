@@ -130,6 +130,10 @@
       <HintPath>..\packages\Sitecore.Mvc.NoReferences.8.2.161115\lib\NET452\Sitecore.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Sitecore.Mvc.Analytics, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Mvc.Analytics.NoReferences.8.2.161115\lib\NET452\Sitecore.Mvc.Analytics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Sitecore.Update, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.Update.NoReferences.8.2.161115\lib\NET452\Sitecore.Update.dll</HintPath>
       <Private>True</Private>
@@ -285,9 +289,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\z.Glass.Mapper.Sc.ViewRender.config.exclude" />
-    <Content Include="App_Config\Include\Glass.Mapper.Sc.Start.config" />
-    <Content Include="App_Config\Include\Glass.Mapper.Sc.config" />
+    <None Include="App_Config\Include\Glass.Mapper.Sc.Start.config.disabled" />
+    <None Include="App_Config\Include\Glass.Mapper.Sc.config.disabled" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
+    <Content Include="App_Config\Include\zzz\Precompilation.config" />
     <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.ContentSearch.config" />
     <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.config">
       <SubType>Designer</SubType>
@@ -305,15 +310,15 @@
     <Content Include="App_Config\Include\www.LaunchSitecore.PageEditor.config" />
     <Content Include="App_Config\Include\www.LaunchSitecore.Registration.config" />
     <None Include="packages.config" />
-    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <None Include="Views\Account\ExternalLoginConfirmation.cshtml.dis" />
     <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Manage.cshtml" />
+    <None Include="Views\Account\Manage.cshtml.dis" />
     <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
-    <Content Include="Views\Account\_RemoveExternalLoginsPartial.cshtml" />
-    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
+    <None Include="Views\Account\_ChangePasswordPartial.cshtml.dis" />
+    <None Include="Views\Account\_ExternalLoginsListPartial.cshtml.dis" />
+    <None Include="Views\Account\_RemoveExternalLoginsPartial.cshtml.dis" />
+    <None Include="Views\Account\_SetPasswordPartial.cshtml.dis" />
     <Content Include="Views\Favorites\AddToFavorites.cshtml" />
     <Content Include="Views\Lists\Carousel.cshtml" />
     <Content Include="Views\Lists\IconAndTitleList.cshtml" />
@@ -419,7 +424,9 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.5\build\Hedgehog.ZeroDeploy.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.5\build\Hedgehog.ZeroDeploy.Build.targets'))" />
+    <Error Condition="!Exists('..\packages\RazorGenerator.MsBuild.2.4.7\build\RazorGenerator.MsBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\RazorGenerator.MsBuild.2.4.7\build\RazorGenerator.MsBuild.targets'))" />
   </Target>
+  <Import Project="..\packages\RazorGenerator.MsBuild.2.4.7\build\RazorGenerator.MsBuild.targets" Condition="Exists('..\packages\RazorGenerator.MsBuild.2.4.7\build\RazorGenerator.MsBuild.targets')" />
   <!--<Import Project="..\packages\HedgehogDevelopment.TDS.5.5.0.6\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\packages\HedgehogDevelopment.TDS.5.5.0.2\build\HedgehogDevelopment.TDS.targets')" />-->
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
