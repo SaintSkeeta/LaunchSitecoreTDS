@@ -3,6 +3,8 @@ using Glass.Mapper.Configuration;
 using Glass.Mapper.IoC;
 using Glass.Mapper.Maps;
 using Glass.Mapper.Sc.IoC;
+using Glass.Mapper.Sc.Pipelines.Response;
+using LaunchSitecore.Configuration.Pipelines.GlassInit;
 using IDependencyResolver = Glass.Mapper.Sc.IoC.IDependencyResolver;
 
 namespace LaunchSitecore.App_Start
@@ -28,8 +30,8 @@ namespace LaunchSitecore.App_Start
 			return new IConfigurationLoader[]{};
 		}
 		public static void PostLoad(){
-			//Remove the comments to activate CodeFist
-			/* CODE FIRST START
+            //Remove the comments to activate CodeFist
+            /* CODE FIRST START
             var dbs = Sitecore.Configuration.Factory.GetDatabases();
             foreach (var db in dbs)
             {
@@ -44,7 +46,11 @@ namespace LaunchSitecore.App_Start
             }
              * CODE FIRST END
              */
-		}
+            GetModelFromView.ViewTypeResolver = new ChainedViewTypeResolver(
+               new IViewTypeResolver[] {
+                    new CompileViewTypeFinder(),
+                    new RegexViewTypeResolver() });
+        }
 		public static void AddMaps(IConfigFactory<IGlassMap> mapsConfigFactory)
         {
 			// Add maps here

@@ -82,6 +82,10 @@
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="RazorGenerator.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\RazorGenerator.Mvc.2.4.8\lib\net40\RazorGenerator.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Sitecore.Analytics, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.Analytics.NoReferences.8.2.161115\lib\NET452\Sitecore.Analytics.dll</HintPath>
       <Private>True</Private>
@@ -222,6 +226,7 @@
     <Compile Include="Configuration\Helpers\UIHelpers.cs" />
     <Compile Include="Configuration\Installer\LaunchSitecorePostPackageStep.cs" />
     <Compile Include="Configuration\Pipelines\GetContentEditorWarnings\ContentEditorItemNamingNotification.cs" />
+    <Compile Include="Configuration\Pipelines\GlassInit\CompileViewTypeFinder.cs" />
     <Compile Include="Configuration\Pipelines\StartTracking\GeoIpSpoofForLocalhost.cs" />
     <Compile Include="Configuration\Processors\saveUI\RemoveNonBreakingSpacesSaveProcessor.cs" />
     <Compile Include="Configuration\Rules\EnrollInAutomationState.cs" />
