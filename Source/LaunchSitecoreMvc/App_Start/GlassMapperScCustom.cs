@@ -46,10 +46,10 @@ namespace LaunchSitecore.App_Start
             }
              * CODE FIRST END
              */
-            //GetModelFromView.ViewTypeResolver = new ChainedViewTypeResolver(
-            //   new IViewTypeResolver[] {
-            //        new CompileViewTypeFinder(),
-            //        new RegexViewTypeResolver() }); 
+            GetModelFromView.ViewTypeResolver = new ChainedViewTypeResolver(
+               new IViewTypeResolver[] {
+                    new CompileViewTypeFinder(),
+                    new RegexViewTypeResolver() });
         }
 		public static void AddMaps(IConfigFactory<IGlassMap> mapsConfigFactory)
         {
