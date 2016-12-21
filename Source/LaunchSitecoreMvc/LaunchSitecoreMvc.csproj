@@ -69,8 +69,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Glass.Mapper.Sc.Core.4.3.2.195\lib\Mvc52\Glass.Mapper.Sc.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Hedgehog.ZeroDeploy.Client, Version=1.0.0.7, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Hedgehog.ZeroDeploy.Client.1.0.0.7\lib\Hedgehog.ZeroDeploy.Client.dll</HintPath>
+    <Reference Include="Hedgehog.ZeroDeploy.Client, Version=1.0.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Hedgehog.ZeroDeploy.Client.1.0.0.8\lib\Hedgehog.ZeroDeploy.Client.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
@@ -423,14 +423,14 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Import Project="..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.7\build\Hedgehog.ZeroDeploy.Build.targets" Condition="Exists('..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.7\build\Hedgehog.ZeroDeploy.Build.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.7\build\Hedgehog.ZeroDeploy.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.7\build\Hedgehog.ZeroDeploy.Build.targets'))" />
     <Error Condition="!Exists('..\packages\RazorGenerator.MsBuild.2.4.7\build\RazorGenerator.MsBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\RazorGenerator.MsBuild.2.4.7\build\RazorGenerator.MsBuild.targets'))" />
+    <Error Condition="!Exists('..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.8\build\Hedgehog.ZeroDeploy.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.8\build\Hedgehog.ZeroDeploy.Build.targets'))" />
   </Target>
+  <Import Project="..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.8\build\Hedgehog.ZeroDeploy.Build.targets" Condition="Exists('..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.8\build\Hedgehog.ZeroDeploy.Build.targets')" />
   <!--<Import Project="..\packages\RazorGenerator.MsBuild.2.4.7\build\RazorGenerator.MsBuild.targets" Condition="Exists('..\packages\RazorGenerator.MsBuild.2.4.7\build\RazorGenerator.MsBuild.targets')" />-->
   <!--<Import Project="..\packages\HedgehogDevelopment.TDS.5.5.0.6\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\packages\HedgehogDevelopment.TDS.5.5.0.2\build\HedgehogDevelopment.TDS.targets')" />-->
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
