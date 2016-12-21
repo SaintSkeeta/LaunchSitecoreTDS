@@ -1,11 +1,6 @@
 ﻿using Hedgehog.ZeroDeploy.Client;
-using Hedgehog.ZeroDeploy.Glass;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Hedgehog.ZeroDeploySupport.Glass;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LaunchContent.Initialize
 {

@@ -25,7 +25,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;GLASS_4_3</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
@@ -55,12 +55,16 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Glass.Mapper.Sc.Core.4.3.0.280-beta\lib\100\Glass.Mapper.Sc.dll</HintPath>
     </Reference>
-    <Reference Include="Hedgehog.ZeroDeploy.Client, Version=1.0.0.7, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Hedgehog.ZeroDeploy.Client.1.0.0.7\lib\Hedgehog.ZeroDeploy.Client.dll</HintPath>
+    <Reference Include="Hedgehog.ZeroDeploy.Client, Version=1.0.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Hedgehog.ZeroDeploy.Client.1.0.0.8\lib\Hedgehog.ZeroDeploy.Client.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Hedgehog.ZeroDeploy.Glass, Version=1.0.0.7, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Hedgehog.ZeroDeploy.Glass.1.0.0.7\lib\Hedgehog.ZeroDeploy.Glass.dll</HintPath>
+    <Reference Include="Hedgehog.ZeroDeploy.Contracts, Version=1.0.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Hedgehog.ZeroDeploy.Contracts.1.0.0.8\lib\Hedgehog.ZeroDeploy.Contracts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -80,6 +84,10 @@
     <Compile Include="DataModels.cs" />
     <Compile Include="Initialize\ZeroDeployInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ZeroDeploySupport\Glass\Pipelines\ConfigurationResolver\ZeroDeployTemplateInferredTypeTask.cs" />
+    <Compile Include="ZeroDeploySupport\Glass\Pipelines\ObjectConstructionFactory\ZeroDeployCreateConcreteTask.cs" />
+    <Compile Include="ZeroDeploySupport\Glass\ZeroDeployAttributeConfigurationLoader.cs" />
+    <Compile Include="ZeroDeploySupport\Glass\ZeroDeployGlassHelpers.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
