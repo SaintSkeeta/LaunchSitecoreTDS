@@ -11,6 +11,7 @@ using Sitecore.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 using Glass.Mapper.Pipelines.ObjectConstruction.Tasks.CreateConcrete;
 using Hedgehog.ZeroDeploySupport.Glass.Pipelines.ObjectConstructionFactory;
+using Glass.Mapper.Sc.Pipelines.Response;
 
 namespace Hedgehog.ZeroDeploySupport.Glass
 {
@@ -54,7 +55,7 @@ namespace Hedgehog.ZeroDeploySupport.Glass
             ctx.Config.UseGlassHtmlLambdaCache = false;
 
             if ((from t in ctx.GlassContext.DependencyResolver.ConfigurationResolverFactory.GetItems()
-                 where t is TemplateInferredTypeTask
+                 where t.GetType() == typeof(TemplateInferredTypeTask)
                  select t).Any())
             {
                 ctx.GlassContext.DependencyResolver.ConfigurationResolverFactory.Replace<TemplateInferredTypeTask, ZeroDeployTemplateInferredTypeTask>(() => new ZeroDeployTemplateInferredTypeTask(eventManager));
@@ -65,6 +66,13 @@ namespace Hedgehog.ZeroDeploySupport.Glass
                  select t).Any())
             {
                 ctx.GlassContext.DependencyResolver.ObjectConstructionFactory.Replace<CreateConcreteTask, ZeroDeployCreateConcreteTask>(() => new ZeroDeployCreateConcreteTask(typeCache));
+            }
+
+
+            //Swap back to build model resolver. Not as fast, but works with ZeroDeploy
+            if (GetModelFromView.ViewTypeResolver is RegexViewTypeResolver)
+            {
+                GetModelFromView.ViewTypeResolver = new BuildManagerViewTypeResolver();
             }
         }
     }

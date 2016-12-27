@@ -27,6 +27,9 @@ namespace Hedgehog.ZeroDeploySupport.Glass.Pipelines.ConfigurationResolver
 
         public ZeroDeployTemplateInferredTypeTask(IEventManager eventManager)
         {
+#if GLASS_4_3
+            Name = "ZeroDeployTemplateInferredTypeTask";
+#endif
             if (_eventManager == null)
             {
                 _eventManager = eventManager;
@@ -40,21 +43,15 @@ namespace Hedgehog.ZeroDeploySupport.Glass.Pipelines.ConfigurationResolver
             _inferredCache.Clear();
         }
 
-        #region IPipelineTask<ConfigurationResolverArgs> Members
+#region IPipelineTask<ConfigurationResolverArgs> Members
 
         /// <summary>
-        /// Executes the specified args.
+        /// The execute method is lifted right out of the Glass source code. 
+        /// This is needed because Glass doesn't expose the _inferredCache objec, so we can't clear it when assemblies are re-loaded.
         /// </summary>
         /// <param name="args">The args.</param>
 #if GLASS_4_2
         public void Execute(ConfigurationResolverArgs args)
-#else
-#if GLASS_4_3
-        public override void Execute(ConfigurationResolverArgs args)
-#else
-        public void Execute(ConfigurationResolverArgs args)
-#endif
-#endif
         {
             if (args.Result == null && args.AbstractTypeCreationContext.InferType)
             {
@@ -85,6 +82,47 @@ namespace Hedgehog.ZeroDeploySupport.Glass.Pipelines.ConfigurationResolver
                 }
             }
         }
+#else
+#if GLASS_4_3
+        public override void Execute(ConfigurationResolverArgs args)
+        {
+            if (args.Result == null && args.AbstractTypeCreationContext.InferType)
+            {
+                var scContext = args.AbstractTypeCreationContext as SitecoreTypeCreationContext;
+
+                var requestedType = scContext.RequestedType;
+                var item = scContext.Item;
+                var templateId = item != null ? item.TemplateID : scContext.TemplateId;
+
+                var key = new Tuple<Context, Type, ID>(args.Context, requestedType, templateId);
+                if (_inferredCache.ContainsKey(key))
+                {
+                    args.Result = _inferredCache[key];
+                }
+                else
+                {
+                    var configs = args.Context.TypeConfigurations.Select(x => x.Value as SitecoreTypeConfiguration);
+
+                    var types = configs.Where(x => x.TemplateId == templateId);
+                    if (types.Any())
+                    {
+                        args.Result = types.FirstOrDefault(x => requestedType.IsAssignableFrom(x.Type));
+                        if (!_inferredCache.TryAdd(key, args.Result as SitecoreTypeConfiguration))
+                        {
+                            //TODO: some logging
+                        }
+                    }
+                }
+            }
+
+            base.Execute(args);
+        }
+#else
+        public void Execute(ConfigurationResolverArgs args)
+        {
+        }
+#endif
+#endif
 
 #endregion
 
