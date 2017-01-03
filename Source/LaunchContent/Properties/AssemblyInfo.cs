@@ -32,5 +32,12 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
+#if ZERODEPLOY
+[assembly: AssemblyVersion("1.0.*")]
+[assembly: Hedgehog.ZeroDeploy.Client.Attributes.ZeroDeployAssembly]
+#else
 [assembly: AssemblyVersion("1.0.0.0")]
+#endif
+
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyInformationalVersion("1.0.0.0")]
