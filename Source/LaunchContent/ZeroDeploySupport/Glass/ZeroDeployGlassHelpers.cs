@@ -11,6 +11,9 @@ using Sitecore.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 using Glass.Mapper.Pipelines.ObjectConstruction.Tasks.CreateConcrete;
 using Hedgehog.ZeroDeploySupport.Glass.Pipelines.ObjectConstructionFactory;
+#if GLASS_4_3
+using Glass.Mapper.Sc.Pipelines.Response;
+#endif 
 
 namespace Hedgehog.ZeroDeploySupport.Glass
 {
