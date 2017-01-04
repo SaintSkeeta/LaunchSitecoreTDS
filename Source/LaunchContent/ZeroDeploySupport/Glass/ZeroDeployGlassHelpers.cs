@@ -68,12 +68,14 @@ namespace Hedgehog.ZeroDeploySupport.Glass
                 ctx.GlassContext.DependencyResolver.ObjectConstructionFactory.Replace<CreateConcreteTask, ZeroDeployCreateConcreteTask>(() => new ZeroDeployCreateConcreteTask(typeCache));
             }
 
-
+#if GLASS_4_3
             //Swap back to build model resolver. Not as fast, but works with ZeroDeploy
+            //You must have a reference to Glass.Mapper.sc.Mvc.dll for this to compile.
             if (GetModelFromView.ViewTypeResolver is RegexViewTypeResolver)
             {
                 GetModelFromView.ViewTypeResolver = new BuildManagerViewTypeResolver();
             }
+#endif
         }
     }
 }
