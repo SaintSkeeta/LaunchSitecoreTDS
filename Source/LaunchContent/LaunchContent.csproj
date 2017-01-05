@@ -54,6 +54,9 @@
     <Reference Include="Glass.Mapper.Sc">
       <HintPath>..\packages\Glass.Mapper.Sc.Core.4.3.4.196\lib\100\Glass.Mapper.Sc.dll</HintPath>
     </Reference>
+    <Reference Include="Glass.Mapper.Sc.Mvc">
+      <HintPath>..\packages\Glass.Mapper.Sc.Core.4.3.4.196\lib\Mvc52\Glass.Mapper.Sc.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="Hedgehog.ZeroDeploy.Client, Version=1.0.0.10, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Hedgehog.ZeroDeploy.Client.1.0.0.12\lib\Hedgehog.ZeroDeploy.Client.dll</HintPath>
       <Private>True</Private>
