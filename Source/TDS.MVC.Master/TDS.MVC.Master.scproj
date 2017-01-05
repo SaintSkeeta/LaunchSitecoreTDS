@@ -40,17 +40,16 @@
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
     <EnableValidations>False</EnableValidations>
     <ValidationSettingsFilePath>.\TDS.MVC.Master_Debug.xml</ValidationSettingsFilePath>
-    <PackageName>
-    </PackageName>
-    <PackageAuthor>
-    </PackageAuthor>
-    <PackagePublisher />
+    <PackageName>TDS.MVC.Master</PackageName>
+    <PackageAuthor>Hedgehog</PackageAuthor>
+    <PackagePublisher>Hedgehog</PackagePublisher>
     <PackageReadme />
     <SitecoreAssemblyPath />
-    <GeneratePackage>False</GeneratePackage>
+    <GeneratePackage>True</GeneratePackage>
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
     <PackageExcludeCode>False</PackageExcludeCode>
-    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
+    <AddDateTimeToPackageName>True</AddDateTimeToPackageName>
+    <PackageVersion>1.0.0.1</PackageVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
