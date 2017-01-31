@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Core", "TDS.Core\TDS.Core.scproj", "{583A259D-AE10-414C-B84D-659E3CCE56E5}"
 EndProject
@@ -22,9 +22,7 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Master.Media", "TDS.Mas
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9BDFA183-07FD-47A7-800D-5B626EB03DA2}"
 	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
+		nuget.config = nuget.config
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HedgehogDevelopment.TDS.CustomExtensions", "HedgehogDevelopment.TDS.CustomExtensions\HedgehogDevelopment.TDS.CustomExtensions.csproj", "{8D745602-D1D5-41C1-B880-8F50198E8AA4}"
