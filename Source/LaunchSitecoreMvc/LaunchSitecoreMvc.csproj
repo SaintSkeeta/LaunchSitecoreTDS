@@ -66,6 +66,14 @@
     <Reference Include="Glass.Mapper.Sc.Mvc">
       <HintPath>..\packages\Glass.Mapper.Sc.Core.4.3.4.196\lib\Mvc52\Glass.Mapper.Sc.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Hedgehog.Feydra, Version=1.0.0.14, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Hedgehog.Feydra.1.0.0.14\lib\Net45\Hedgehog.Feydra.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Hedgehog.Feydra.SC, Version=1.0.0.14, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Hedgehog.Feydra.Sitecore.1.0.0.14\lib\Net45\Hedgehog.Feydra.SC.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -280,6 +288,7 @@
     <Content Include="App_Config\Include\Glass.Mapper.Sc.Start.config" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.config" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
+    <Content Include="App_Config\Include\Z_Feydra.config" />
     <None Include="Web.config" />
     <Content Include="App_Config\Include\www.LaunchSitecore.ContentSearch.config" />
     <Content Include="App_Config\Include\www.LaunchSitecore.GeoIpSpoofForLocalhost.config" />
