@@ -101,6 +101,15 @@
       <Project>{834a2236-50dc-4e10-af63-9057f5b6f84e}</Project>
       <Name>LaunchSitecoreMvc</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TDS.Core\TDS.Core.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\TDS.Master.Media\TDS.Master.Media.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\TDS.MVC.Base\TDS.MVC.Base.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <ExcludedAssemblies Include="Sitecore.%2a.dll" />
@@ -2249,26 +2258,28 @@
     <CodeGenReferencedProject Include="{5fee21f7-334b-4d21-bdcf-cb7be150b5f1}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="D:\Github\LaunchSitecoreTDS\Source\TDS.MVC.Master\packages.config" />
+    <Content Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <PostDeployAction Include="HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor.BuiltIn.PublishDeployedItems, HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor">
-      <Parameter>Internet</Parameter>
-      <Order>30</Order>
+  <!--<ItemGroup>
+    <PostDeployAction Include="HedgehogDevelopment.TDS.CustomExtensions.PostBuildProcessors.RebuildContentSearchIndexes, HedgehogDevelopment.TDS.CustomExtensions">
+      <Parameter>sitecore_master_index, sitecore_web_index</Parameter>
+      <Order>40</Order>
     </PostDeployAction>
-    <PostDeployAction Include="HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor.BuiltIn.TriggerSaveEventsForPublishedItems, HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor">
-      <Order>10</Order>
+    <PostDeployAction Include="HedgehogDevelopment.TDS.CustomExtensions.PostBuildProcessors.RebuildLinkDatabase, HedgehogDevelopment.TDS.CustomExtensions">
+      <Parameter>master, web</Parameter>
+      <Order>50</Order>
     </PostDeployAction>
-    <PostDeployAction Include="HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor.BuiltIn.UpdateLinkDatabaseForDeployedItems, HedgehogDevelopment.SitecoreProject.PackageInstallPostProcessor">
-      <Order>20</Order>
+    <PostDeployAction Include="HedgehogDevelopment.TDS.CustomExtensions.PostBuildProcessors.SmartPublishMasterToTargetDB, HedgehogDevelopment.TDS.CustomExtensions">
+      <Parameter>web</Parameter>
+      <Order>60</Order>
     </PostDeployAction>
-  </ItemGroup>
+  </ItemGroup>-->
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
-  <Import Project="..\packages\HedgehogDevelopment.TDS.5.5.0.9\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\packages\HedgehogDevelopment.TDS.5.5.0.9\build\HedgehogDevelopment.TDS.targets')" />
+  <Import Project="..\packages\HedgehogDevelopment.TDS.5.6.0.12\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\packages\HedgehogDevelopment.TDS.5.6.0.12\build\HedgehogDevelopment.TDS.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\HedgehogDevelopment.TDS.5.5.0.9\build\HedgehogDevelopment.TDS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\HedgehogDevelopment.TDS.5.5.0.9\build\HedgehogDevelopment.TDS.targets'))" />
+    <Error Condition="!Exists('..\packages\HedgehogDevelopment.TDS.5.6.0.12\build\HedgehogDevelopment.TDS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\HedgehogDevelopment.TDS.5.6.0.12\build\HedgehogDevelopment.TDS.targets'))" />
   </Target>
 </Project>

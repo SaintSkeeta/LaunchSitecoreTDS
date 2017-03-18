@@ -2,6 +2,7 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/taxr71bl03mev0vc?svg=true)](https://ci.appveyor.com/project/SeanHolmesby/launchsitecoretds/branch/master)
 
+- Use Tag v3.2.0.0 with Sitecore 8.2 Update 2 (rev. 161221) - Launch Sitecore - MVC Bootstrap3 version.
 - Use Tag v3.1.0.0 with Sitecore 8.1 Update 2 (rev. 160302) - Launch Sitecore - MVC Bootstrap3 version.
 - Use Tag 3.0.0.0 with Sitecore 8.0 Update 5 (rev. 150812) - Launch Sitecore - MVC Bootstrap3 version.
 - Use Tag 2.3.0.0 with Sitecore 8.0 Update 4 (rev. 150621) - Launch Sitecore - both WebForms and MVC versions.
@@ -22,7 +23,7 @@ This repository is that package converted to a Visual Studio solution with items
 ### Quick Guide ###
 - Install a blank instance of Sitecore using SIM.
 - Within the folder that the MVC sln file exists, setup your local TDS settings, either by changing the `TdsGlobal.config` file, or by duplicating it with the name `TdsGlobal.config.user`
-- Restore all NuGet packages (note: TDS and Sitecore NuGet packages should exist in your private NuGet repo).
+- Restore all NuGet packages (note: the TDS packages should exist in your private NuGet repo).
 - Deploy the solution, so code and items are deployed to your local instance.
 
 ### Detailed Guide ###
@@ -44,8 +45,7 @@ The default settings in the solution are to built to `D:\Sites\Launch\Website` a
 - Save the file. This will tell TDS to use these settings for all TDS projects.
 
 #### Restore all NuGet packages ####
-Sitecore NuGet Packages should be generated using the [Sitecore NuGet Package Generator](https://bitbucket.org/seanholmesby/sitecore-nuget-packages-generator) tool. Setup a custom NuGet Package Source, either by creating it as a local NuGet folder, or follow [these steps](http://blog.alen.pw/2014/10/internal-sitecore-nuget-server.html) to setup a private Proget NuGet repostory, where you can upload the generated Sitecore packages.
-Note: The updated generator tool creates single DLL NuGet paackages for only Sitecore.*.DLLs, as well as package groupings for easy consumption.
+Sitecore NuGet Packages come from the official [Sitecore NuGet repository](https://doc.sitecore.net/sitecore_experience_platform/developing/developing_with_sitecore/sitecore_public_nuget_packages_faq).
 
 Either explicitly restore all of the NuGet packages, or [make Visual Studio will restore them during your build](http://www.codeproject.com/Articles/680678/Keep-Nuget-Packages-Out-of-Source-Control-with-Nug).
 
