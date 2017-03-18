@@ -159,7 +159,7 @@ namespace LaunchSitecore.Configuration.SiteUI
         /// </summary>
         protected bool IsPageEditorEditing
         {
-          get { return Sitecore.Context.PageMode.IsPageEditorEditing; }
+          get { return Sitecore.Context.PageMode.IsExperienceEditorEditing; }
         }
               
         /// <summary>
