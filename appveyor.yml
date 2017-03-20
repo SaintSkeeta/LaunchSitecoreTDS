@@ -3,7 +3,7 @@ install:
   - nuget sources add -Name MyAccountFeed -Source https://ci.appveyor.com/nuget/seanholmesby-a4t5wrp1ias0 -UserName %nuget_user% -Password %nuget_password%
 
 nuget:
-  account_feed: true
+  account_feed: false
 
 #---------------------------------#
 #       build configuration       #
