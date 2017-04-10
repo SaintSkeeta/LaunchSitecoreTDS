@@ -1,5 +1,5 @@
 module.exports = function () {
-  var instanceRoot = "D:\\Sites\\Launch";
+  var instanceRoot = "D:\\Sites\\Launch.QA";
   var config = {
     websiteRoot: instanceRoot + "\\Website",
     FeydraUser: "FED_Queen",
