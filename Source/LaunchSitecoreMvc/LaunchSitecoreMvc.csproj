@@ -84,59 +84,59 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Analytics.Noreferences.8.2.160729\lib\NET452\Sitecore.Analytics.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Analytics.NoReferences.8.2.161221\lib\NET452\Sitecore.Analytics.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics.Automation, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Analytics.Automation.Noreferences.8.2.160729\lib\NET452\Sitecore.Analytics.Automation.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Analytics.Automation.NoReferences.8.2.161221\lib\NET452\Sitecore.Analytics.Automation.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics.Core, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Analytics.Core.Noreferences.8.2.160729\lib\NET452\Sitecore.Analytics.Core.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Analytics.Core.NoReferences.8.2.161221\lib\NET452\Sitecore.Analytics.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics.Model, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Analytics.Model.Noreferences.8.2.160729\lib\NET452\Sitecore.Analytics.Model.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Analytics.Model.NoReferences.8.2.161221\lib\NET452\Sitecore.Analytics.Model.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Client, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Client.Noreferences.8.2.160729\lib\NET452\Sitecore.Client.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Client.NoReferences.8.2.161221\lib\NET452\Sitecore.Client.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.ContentSearch, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.ContentSearch.Noreferences.8.2.160729\lib\NET452\Sitecore.ContentSearch.dll</HintPath>
+      <HintPath>..\packages\Sitecore.ContentSearch.NoReferences.8.2.161221\lib\NET452\Sitecore.ContentSearch.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.ContentSearch.Linq, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.ContentSearch.Linq.Noreferences.8.2.160729\lib\NET452\Sitecore.ContentSearch.Linq.dll</HintPath>
+      <HintPath>..\packages\Sitecore.ContentSearch.Linq.NoReferences.8.2.161221\lib\NET452\Sitecore.ContentSearch.Linq.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.ExperienceEditor, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.ExperienceEditor.Noreferences.8.2.160729\lib\NET452\Sitecore.ExperienceEditor.dll</HintPath>
+      <HintPath>..\packages\Sitecore.ExperienceEditor.NoReferences.8.2.161221\lib\NET452\Sitecore.ExperienceEditor.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.ExperienceEditor.Speak, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.ExperienceEditor.Speak.Noreferences.8.2.160729\lib\NET452\Sitecore.ExperienceEditor.Speak.dll</HintPath>
+      <HintPath>..\packages\Sitecore.ExperienceEditor.Speak.NoReferences.8.2.161221\lib\NET452\Sitecore.ExperienceEditor.Speak.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Kernel.Noreferences.8.2.160729\lib\NET452\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Kernel.NoReferences.8.2.161221\lib\NET452\Sitecore.Kernel.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Logging, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Logging.Noreferences.8.2.160729\lib\NET452\Sitecore.Logging.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Logging.NoReferences.8.2.161221\lib\NET452\Sitecore.Logging.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Mvc, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Mvc.Noreferences.8.2.160729\lib\NET452\Sitecore.Mvc.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Mvc.NoReferences.8.2.161221\lib\NET452\Sitecore.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.Update, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Update.Noreferences.8.2.160729\lib\NET452\Sitecore.Update.dll</HintPath>
+    <Reference Include="Sitecore.Update, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Update.NoReferences.8.2.161221\lib\NET452\Sitecore.Update.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Zip, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Zip.Noreferences.8.2.160729\lib\NET452\Sitecore.Zip.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Zip.NoReferences.8.2.161221\lib\NET452\Sitecore.Zip.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
