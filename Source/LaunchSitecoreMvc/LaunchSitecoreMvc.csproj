@@ -66,13 +66,11 @@
     <Reference Include="Glass.Mapper.Sc.Mvc">
       <HintPath>..\packages\Glass.Mapper.Sc.Core.4.3.4.196\lib\Mvc52\Glass.Mapper.Sc.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Hedgehog.Feydra, Version=1.0.0.14, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Hedgehog.Feydra.1.0.0.18\lib\Net45\Hedgehog.Feydra.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Hedgehog.Feydra, Version=1.0.0.20, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Hedgehog.Feydra.1.0.0.20\lib\Net45\Hedgehog.Feydra.dll</HintPath>
     </Reference>
-    <Reference Include="Hedgehog.Feydra.SC, Version=1.0.0.18, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Hedgehog.Feydra.Sitecore.1.0.0.18\lib\Net45\Hedgehog.Feydra.SC.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Hedgehog.Feydra.SC, Version=1.0.0.20, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Hedgehog.Feydra.Sitecore.1.0.0.20\lib\Net45\Hedgehog.Feydra.SC.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
