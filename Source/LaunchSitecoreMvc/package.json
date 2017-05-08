@@ -9,7 +9,9 @@
     "gulp-exec": "^2.1.2",
     "gulp-foreach": "^0.1.0",
     "gulp-newer": "^1.0.0",
-    "gulp-watch": "^4.3.5"
+    "gulp-watch": "^4.3.5",
+    "gulp-ftp": "^1.1.0",
+    "gulp-util": "^3.0.8"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +21,7 @@
     "url": "git+https://github.com/SaintSkeeta/LaunchSitecoreTDS.git"
   },
   "author": "Sean Holmesby",
-  "homepage": "https://github.com/SaintSkeeta/LaunchSitecoreTDS#readme"
+  "homepage": "https://github.com/SaintSkeeta/LaunchSitecoreTDS#readme",
+  "devDependencies": {
+  }
 }
