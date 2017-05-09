@@ -9,6 +9,14 @@ using System.Linq;
 using Hedgehog.ZeroDeploy.Contracts.Server;
 using Glass.Mapper.Sc.Pipelines.ConfigurationResolver;
 
+/********************************************************************\
+* DISCLAIMER:                                                        *
+*                                                                    *
+* The code in this module is provided as-is and is an example of how *
+* to make an ORM like Glass Mapper work with ZeroDeploy Developer.   *
+*                                                                    *   
+\********************************************************************/
+
 namespace Hedgehog.ZeroDeploySupport.Glass.Pipelines.ConfigurationResolver
 {
 #if GLASS_4_2
@@ -25,6 +33,10 @@ namespace Hedgehog.ZeroDeploySupport.Glass.Pipelines.ConfigurationResolver
         static ConcurrentDictionary<Tuple<Context, Type, ID>, SitecoreTypeConfiguration> _inferredCache = new ConcurrentDictionary<Tuple<Context, Type, ID>, SitecoreTypeConfiguration>();
         static IEventManager _eventManager;
 
+        /// <summary>
+        /// New constructor that takes an ZeroDeploy Event manager so it can subscribe to assembly reload events
+        /// </summary>
+        /// <param name="eventManager"></param>
         public ZeroDeployTemplateInferredTypeTask(IEventManager eventManager)
         {
 #if GLASS_4_3
@@ -38,6 +50,11 @@ namespace Hedgehog.ZeroDeploySupport.Glass.Pipelines.ConfigurationResolver
             }
         }
 
+        /// <summary>
+        /// Clears internal caches when the assembly is reloaded
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void EventManager_OnAssemblyReloaded(object sender, AssemblyReloadedEventArgs e)
         {
             _inferredCache.Clear();
