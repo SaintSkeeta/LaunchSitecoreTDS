@@ -56,11 +56,13 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Glass.Mapper.Sc.Core.4.3.4.197\lib\Mvc52\Glass.Mapper.Sc.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Hedgehog.ZeroDeploy.Client, Version=1.0.0.15, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Hedgehog.ZeroDeploy.Client.1.0.0.15\lib\Hedgehog.ZeroDeploy.Client.dll</HintPath>
+    <Reference Include="Hedgehog.ZeroDeploy.Client, Version=1.0.0.16, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Hedgehog.ZeroDeploy.Client.1.0.0.16\lib\Hedgehog.ZeroDeploy.Client.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Hedgehog.ZeroDeploy.Contracts, Version=1.0.0.15, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Hedgehog.ZeroDeploy.Contracts.1.0.0.15\lib\Hedgehog.ZeroDeploy.Contracts.dll</HintPath>
+    <Reference Include="Hedgehog.ZeroDeploy.Contracts, Version=1.0.0.16, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Hedgehog.ZeroDeploy.Contracts.1.0.0.16\lib\Hedgehog.ZeroDeploy.Contracts.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
