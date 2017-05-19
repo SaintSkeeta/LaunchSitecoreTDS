@@ -15,6 +15,14 @@ using Hedgehog.ZeroDeploySupport.Glass.Pipelines.ObjectConstructionFactory;
 using Glass.Mapper.Sc.Pipelines.Response;
 #endif 
 
+/********************************************************************\
+* DISCLAIMER:                                                        *
+*                                                                    *
+* The code in this module is provided as-is and is an example of how *
+* to make an ORM like Glass Mapper work with ZeroDeploy Developer.   *
+*                                                                    *   
+\********************************************************************/
+
 namespace Hedgehog.ZeroDeploySupport.Glass
 {
 #if !GLASS_4_2 && !GLASS_4_3
@@ -22,12 +30,19 @@ namespace Hedgehog.ZeroDeploySupport.Glass
 #endif
     public static class ZeroDeployGlassHelpers
     {
+        /// <summary>
+        /// Registers the specified assembly with Glass. This would usually be performed in an application start function,
+        /// but since the assembly needs to be re-registered every time ZeroDeploy re-loads the assembly, it needs to remove
+        /// old type mappings and replace them with new ones.
+        /// </summary>
+        /// <param name="assembly"></param>
         public static void RegisterAssemblyWithGlass(Assembly assembly)
         {
             string assemblyName = assembly.GetName().Name;
 
             SitecoreContext ctx = new SitecoreContext();
 
+            //Finsd all type mappings from previous versions of the assembly
             List<Type> typesToRemove = new List<Type>(from t in ctx.GlassContext.TypeConfigurations.Keys
                                                       where t.Assembly.GetName().Name == assemblyName
                                                       select t);
@@ -40,12 +55,17 @@ namespace Hedgehog.ZeroDeploySupport.Glass
                 ctx.GlassContext.TypeConfigurations.TryRemove(typeToRemove, out cfg);
             }
 
+            //Call Glass to re-load the assembly into the internal map
             ctx.GlassContext.Load(new IConfigurationLoader[] {
                 new ZeroDeployAttributeConfigurationLoader(assembly),
             });
 
         }
 
+        /// <summary>
+        /// Glass Mapper maintains a number of internal caches to improve the performance of the ORM. These
+        /// caches could potentially return old versions of classes from previous versions of the assembly
+        /// </summary>
         public static void GlassZeroDeployInitialization()
         {
             IEventManager eventManager = ServiceLocator.ServiceProvider.GetService<IEventManager>();
@@ -53,9 +73,10 @@ namespace Hedgehog.ZeroDeploySupport.Glass
 
             SitecoreContext ctx = new SitecoreContext();
 
-            //Disable lambda caching on pages
+            //Disable lambda caching on pages to prevent lambda caches from returning obsolete classes
             ctx.Config.UseGlassHtmlLambdaCache = false;
 
+            //See if the default configuration resolver is installed and replace it with a ZeroDeploy aware resolver
             if ((from t in ctx.GlassContext.DependencyResolver.ConfigurationResolverFactory.GetItems()
                  where t.GetType() == typeof(TemplateInferredTypeTask)
                  select t).Any())
@@ -63,6 +84,7 @@ namespace Hedgehog.ZeroDeploySupport.Glass
                 ctx.GlassContext.DependencyResolver.ConfigurationResolverFactory.Replace<TemplateInferredTypeTask, ZeroDeployTemplateInferredTypeTask>(() => new ZeroDeployTemplateInferredTypeTask(eventManager));
             }
 
+            //See if the default object construction factory is present and replace it with the ZeroDeploy aware one
             if ((from t in ctx.GlassContext.DependencyResolver.ObjectConstructionFactory.GetItems()
                  where t.GetType() == typeof(CreateConcreteTask)
                  select t).Any())

@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Import Project="..\ZeroDeploy.props" />
   <PropertyGroup>
@@ -69,8 +71,11 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Glass.Mapper.Sc.Core.4.3.4.197\lib\Mvc52\Glass.Mapper.Sc.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Hedgehog.ZeroDeploy.Client, Version=1.0.0.10, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Hedgehog.ZeroDeploy.Client.1.0.0.12\lib\Hedgehog.ZeroDeploy.Client.dll</HintPath>
+    <Reference Include="Hedgehog.ZeroDeploy.Client, Version=1.0.0.15, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Hedgehog.ZeroDeploy.Client.1.0.0.15\lib\Hedgehog.ZeroDeploy.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
@@ -285,26 +290,99 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\z.Glass.Mapper.Sc.ViewRender.config.exclude" />
-    <Content Include="App_Config\Include\Glass.Mapper.Sc.Start.config" />
+    <Content Include="App_Config\Include\Glass.Mapper.Sc.Start.config">
+      <TransformOnBuild>true</TransformOnBuild>
+    </Content>
     <Content Include="App_Config\Include\Glass.Mapper.Sc.config" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
-    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.ContentSearch.config" />
-    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.config">
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Website.Debug.config">
+      <DependentUpon>ZeroDeploy.Website.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Website.Release.config">
+      <DependentUpon>ZeroDeploy.Website.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.Website.ZeroDeploy.config">
+      <DependentUpon>ZeroDeploy.Website.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <Content Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.ContentSearch.config">
+      <TransformOnBuild>true</TransformOnBuild>
+    </Content>
+    <Content Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.config">
+      <SubType>Designer</SubType>
+      <TransformOnBuild>true</TransformOnBuild>
+    </Content>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.ContentSearch.Debug.config">
+      <DependentUpon>ZeroDeploy.www.LaunchSitecore.ContentSearch.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.ContentSearch.Release.config">
+      <DependentUpon>ZeroDeploy.www.LaunchSitecore.ContentSearch.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.ContentSearch.ZeroDeploy.config">
+      <DependentUpon>ZeroDeploy.www.LaunchSitecore.ContentSearch.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.Debug.config">
+      <DependentUpon>ZeroDeploy.www.LaunchSitecore.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <Content Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.ItemNaming.config">
+      <TransformOnBuild>true</TransformOnBuild>
+    </Content>
+    <Content Include="App_Config\Include\zzz\ZeroDeploy.Website.config">
+      <TransformOnBuild>true</TransformOnBuild>
+    </Content>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.ItemNaming.Debug.config">
+      <DependentUpon>ZeroDeploy.www.LaunchSitecore.ItemNaming.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.ItemNaming.Release.config">
+      <DependentUpon>ZeroDeploy.www.LaunchSitecore.ItemNaming.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.ItemNaming.ZeroDeploy.config">
+      <DependentUpon>ZeroDeploy.www.LaunchSitecore.ItemNaming.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <Content Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.PageEditor.config">
+      <TransformOnBuild>true</TransformOnBuild>
+    </Content>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.PageEditor.Debug.config">
+      <DependentUpon>ZeroDeploy.www.LaunchSitecore.PageEditor.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.PageEditor.Release.config">
+      <DependentUpon>ZeroDeploy.www.LaunchSitecore.PageEditor.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.PageEditor.ZeroDeploy.config">
+      <DependentUpon>ZeroDeploy.www.LaunchSitecore.PageEditor.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.Release.config">
+      <DependentUpon>ZeroDeploy.www.LaunchSitecore.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.ZeroDeploy.config">
+      <DependentUpon>ZeroDeploy.www.LaunchSitecore.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Web.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.ItemNaming.config" />
-    <None Include="App_Config\Include\zzz\ZeroDeploy.Website.config">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="App_Config\Include\zzz\ZeroDeploy.www.LaunchSitecore.PageEditor.config" />
-    <None Include="Web.config" />
     <Content Include="App_Config\Include\www.LaunchSitecore.ContentSearch.config" />
     <Content Include="App_Config\Include\www.LaunchSitecore.GeoIpSpoofForLocalhost.config" />
     <Content Include="App_Config\Include\www.LaunchSitecore.ItemNaming.config" />
     <Content Include="App_Config\Include\www.LaunchSitecore.LinkManager.config" />
     <Content Include="App_Config\Include\www.LaunchSitecore.PageEditor.config" />
     <Content Include="App_Config\Include\www.LaunchSitecore.Registration.config" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
     <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
@@ -413,13 +491,15 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Import Project="..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.12\build\Hedgehog.ZeroDeploy.Build.targets" Condition="Exists('..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.12\build\Hedgehog.ZeroDeploy.Build.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.12\build\Hedgehog.ZeroDeploy.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.12\build\Hedgehog.ZeroDeploy.Build.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.15\build\Hedgehog.ZeroDeploy.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.15\build\Hedgehog.ZeroDeploy.Build.targets'))" />
   </Target>
+  <Import Project="..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.15\build\Hedgehog.ZeroDeploy.Build.targets" Condition="Exists('..\packages\Hedgehog.ZeroDeploy.Build.1.0.0.15\build\Hedgehog.ZeroDeploy.Build.targets')" />
   <!--<Import Project="..\packages\HedgehogDevelopment.TDS.5.5.0.6\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\packages\HedgehogDevelopment.TDS.5.5.0.2\build\HedgehogDevelopment.TDS.targets')" />-->
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

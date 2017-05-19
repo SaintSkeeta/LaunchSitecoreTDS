@@ -7,6 +7,14 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
+/********************************************************************\
+* DISCLAIMER:                                                        *
+*                                                                    *
+* The code in this module is provided as-is and is an example of how *
+* to make an ORM like Glass Mapper work with ZeroDeploy Developer.   *
+*                                                                    *   
+\********************************************************************/
+
 namespace Hedgehog.ZeroDeploySupport.Glass
 {
     internal class ZeroDeployAttributeConfigurationLoader : AttributeConfigurationLoader, IConfigurationLoader

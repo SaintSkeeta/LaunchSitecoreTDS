@@ -43,6 +43,10 @@
     <OutputPath>.\bin\Release\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'ZeroDeploy' ">
+    <OutputPath>.\bin\ZeroDeploy\</OutputPath>
+    <DisableFileDeployment>False</DisableFileDeployment>
+  </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
       <Value>$(AssemblyFileVersion)</Value>
