@@ -268,6 +268,7 @@
     <Content Include="App_Config\Include\Glass.Mapper.Sc.Start.config" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.config" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
+    <None Include="Properties\PublishProfiles\WebDeployPackageProfile.pubxml" />
     <None Include="Web.config" />
     <Content Include="App_Config\Include\www.LaunchSitecore.ContentSearch.config" />
     <Content Include="App_Config\Include\www.LaunchSitecore.GeoIpSpoofForLocalhost.config" />
