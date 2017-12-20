@@ -8,6 +8,7 @@ name: Home
 master: {00000000-0000-0000-0000-000000000000}
 template: {0ACD30D8-863E-4B1D-8612-719EEFC1DA4F}
 templatekey: Home
+created: 20170614T101653Z
 
 ----field----
 field: {7E003143-26F2-4A28-B70A-08548286F6BA}
@@ -166,15 +167,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 354c652d-a7a5-40ea-9e1a-5f7521d19fa7
+revision: 43c48060-d1a4-4e6a-a357-9aea87ec91ee
 
 ----field----
 field: {AAEAC7F2-E33E-4B34-9023-AB6F59D3A427}
 name: Title
 key: title
-content-length: 29
+content-length: 39
 
-Getting Started with Sitecore
+Continuing on with Sitecore (Launch v2)
 ----field----
 field: {2FB9AEBD-D6E1-4EA5-8A04-7B6AD0EC3132}
 name: Subtitle
@@ -279,14 +280,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-354c652d-a7a5-40ea-9e1a-5f7521d19fa7
+43c48060-d1a4-4e6a-a357-9aea87ec91ee
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150716T223037Z
+20171220T173236Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
