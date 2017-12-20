@@ -60,9 +60,10 @@
     <PackageReadme />
     <SitecoreAssemblyPath />
     <GeneratePackage>True</GeneratePackage>
-    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <SeperateFilesAndItems>True</SeperateFilesAndItems>
     <PackageExcludeCode>False</PackageExcludeCode>
     <AddDateTimeToPackageName>True</AddDateTimeToPackageName>
+    <PackageVersion>1.0.0.0</PackageVersion>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
