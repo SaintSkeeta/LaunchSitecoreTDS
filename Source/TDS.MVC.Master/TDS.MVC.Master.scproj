@@ -63,7 +63,7 @@
     <SeperateFilesAndItems>True</SeperateFilesAndItems>
     <PackageExcludeCode>False</PackageExcludeCode>
     <AddDateTimeToPackageName>True</AddDateTimeToPackageName>
-    <PackageVersion>1.0.0.0</PackageVersion>
+    <PackageVersion>2.0.0.0</PackageVersion>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
