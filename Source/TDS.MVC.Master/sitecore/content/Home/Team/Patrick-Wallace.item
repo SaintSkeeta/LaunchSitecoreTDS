@@ -8,6 +8,7 @@ name: Patrick-Wallace
 master: {00000000-0000-0000-0000-000000000000}
 template: {97963D48-BD06-46CA-8279-CD2BA3C7AA36}
 templatekey: Team Member
+created: 20171220T154854Z
 
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
@@ -33,7 +34,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 5d2957a6-6019-42b5-9219-ba6c1d336361
+revision: 73620dac-98b3-4d14-99e1-6a003a614158
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -57,12 +58,12 @@ content-length: 319
 
 <P>Prior to joining Sitecore, Patrick developed, managed, and implemented CMS systems and web based applications for numerous companies including Level 3 Communications and Aspen Skiing Company. Patrick is a Certified Sitecore Solutions Developer and has over 10 years of experience developing on the .Net platform.</P>
 ----field----
-field: {F9B6FFEF-1DC9-4C0E-A815-C62822E1CBDB}
-name: Quote
-key: quote
-content-length: 84
+field: {CCBDE214-8845-4A80-9ADD-A7A329B4B5C2}
+name: Favorite Food
+key: favorite food
+content-length: 7
 
-"Everything must be made as simple as possible. But not simpler."  - Albert Einstein
+Cookies
 ----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
@@ -111,14 +112,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5d2957a6-6019-42b5-9219-ba6c1d336361
+73620dac-98b3-4d14-99e1-6a003a614158
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150716T030719Z
+20171220T173500Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

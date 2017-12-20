@@ -8,6 +8,7 @@ name: Brandon-Royal
 master: {00000000-0000-0000-0000-000000000000}
 template: {97963D48-BD06-46CA-8279-CD2BA3C7AA36}
 templatekey: Team Member
+created: 20171220T154854Z
 
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
@@ -33,7 +34,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 7b31d596-bf10-4e5d-afb3-1af1fa3b5fac
+revision: 4e155cad-be5a-4d90-a3bf-703ff58334f4
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -57,12 +58,12 @@ content-length: 133
 
 <p>Brandon's background includes .NET development, infrastructure architecture design and deployment and technical marketing.<br></p>
 ----field----
-field: {F9B6FFEF-1DC9-4C0E-A815-C62822E1CBDB}
-name: Quote
-key: quote
-content-length: 104
+field: {CCBDE214-8845-4A80-9ADD-A7A329B4B5C2}
+name: Favorite Food
+key: favorite food
+content-length: 8
 
-“Knowing how to think empowers you far beyond those who know only what to think.”  ― Neil deGrasse Tyson
+Hot Dogs
 ----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
@@ -111,14 +112,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7b31d596-bf10-4e5d-afb3-1af1fa3b5fac
+4e155cad-be5a-4d90-a3bf-703ff58334f4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150716T031250Z
+20171220T173400Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
