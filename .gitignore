@@ -12,6 +12,9 @@ build/
 [Oo]bj/
 Source/.vs
 
+# NPM Modules
+Source/LaunchSitecoreMvc/node_modules
+
 # Nuget packages
 Source/packages*/
 
