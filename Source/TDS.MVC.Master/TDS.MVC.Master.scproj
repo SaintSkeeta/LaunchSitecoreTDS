@@ -2198,7 +2198,7 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Team Member\Team Member Details\Favorite Food.item">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Team Member\Team Member Details\Quote.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>

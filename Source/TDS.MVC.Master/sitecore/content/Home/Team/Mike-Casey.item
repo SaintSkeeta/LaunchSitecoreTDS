@@ -8,7 +8,6 @@ name: Mike-Casey
 master: {00000000-0000-0000-0000-000000000000}
 template: {97963D48-BD06-46CA-8279-CD2BA3C7AA36}
 templatekey: Team Member
-created: 20171220T154854Z
 
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
@@ -41,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: af5310c8-3f3f-4e66-b031-315cdfde62a7
+revision: b3e69242-48c4-4382-9545-ebdca7f60d7c
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -65,12 +64,12 @@ content-length: 548
 
 <p>I get to support an amazing team of pre-sales product and technical professionals for Sitecore North America. Our collaborative team is always growing, learning and working to remain the top pre-sales engineering team in the industry. If you have the passion and ability to become an expert in Sitecore's impressive range of capabilities--Customer Experience, Digital Marketing, Analytics, Web Content Management, Digital Asset Management, Ecommerce, Web/Mobile Development, Microsoft development technologies and Azure, please get in touch!</p>
 ----field----
-field: {CCBDE214-8845-4A80-9ADD-A7A329B4B5C2}
-name: Favorite Food
-key: favorite food
-content-length: 4
+field: {F9B6FFEF-1DC9-4C0E-A815-C62822E1CBDB}
+name: Quote
+key: quote
+content-length: 58
 
-Nuts
+The secret of getting ahead is getting started--Mark Twain
 ----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
@@ -126,14 +125,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-af5310c8-3f3f-4e66-b031-315cdfde62a7
+b3e69242-48c4-4382-9545-ebdca7f60d7c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20171220T173456Z
+20150716T025901Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
