@@ -260,6 +260,7 @@
     <Content Include="assets\js\scrollReveal.js" />
     <Content Include="assets\speak\LaunchFieldEditor.js" />
     <Content Include="favicon.ico" />
+    <Content Include="FeydraRoot\readme.txt" />
     <Content Include="license.txt" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
@@ -275,6 +276,7 @@
     <Content Include="App_Config\Include\Glass.Mapper.Sc.config" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
     <Content Include="App_Config\Include\Z_Feydra.config" />
+    <Content Include="Areas\Feydra\Views\web.config" />
     <None Include="Properties\PublishProfiles\WebDeployPackageProfile.pubxml" />
     <None Include="Web.config" />
     <Content Include="App_Config\Include\www.LaunchSitecore.ContentSearch.config" />

@@ -1,0 +1,1 @@
+This folder is created for Feydra Users. This is where each Feydra user's drop folder will be created for their virtual sandbox.
