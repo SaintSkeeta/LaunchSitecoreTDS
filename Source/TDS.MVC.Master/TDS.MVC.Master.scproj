@@ -55,7 +55,7 @@
     <DebugSymbols>false</DebugSymbols>
     <OutputPath>.\bin\Release\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <PackageName>LaunchSitecoreTDS</PackageName>
+    <PackageName>LaunchSitecoreTDSFeydra</PackageName>
     <PackageAuthor>Hedgehog Development</PackageAuthor>
     <PackagePublisher>Hedgehog Development</PackagePublisher>
     <PackageReadme />
