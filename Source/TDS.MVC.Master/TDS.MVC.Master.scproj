@@ -7,9 +7,6 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6769c297-978f-4d4f-a720-359ee9d541f1</ProjectGuid>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
-    <SourceWebPhysicalPath>..\LaunchSitecoreMvc</SourceWebPhysicalPath>
-    <SourceWebProject>{834a2236-50dc-4e10-af63-9057f5b6f84e}|LaunchSitecoreMvc\LaunchSitecoreMvc.csproj</SourceWebProject>
-    <SourceWebVirtualPath>/LaunchSitecoreMvc.csproj</SourceWebVirtualPath>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <EnableUpdateable>true</EnableUpdateable>
     <UseMerge>true</UseMerge>
@@ -29,6 +26,10 @@
     <HeaderTransformFile>GlassHeader.tt</HeaderTransformFile>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <ManageRoles>False</ManageRoles>
+    <SourceWebVirtualPath>/LaunchSitecoreMvc.csproj</SourceWebVirtualPath>
+    <SourceWebProject>{834a2236-50dc-4e10-af63-9057f5b6f84e}|LaunchSitecoreMvc\LaunchSitecoreMvc.csproj</SourceWebProject>
+    <SourceWebPhysicalPath>..\LaunchSitecoreMvc</SourceWebPhysicalPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -96,24 +97,6 @@
       <IsFolder>True</IsFolder>
       <IsRelative>True</IsRelative>
     </Replacement>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\LaunchSitecoreMvc\LaunchSitecoreMvc.csproj">
-      <Project>{834a2236-50dc-4e10-af63-9057f5b6f84e}</Project>
-      <Name>LaunchSitecoreMvc</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TDS.Core\TDS.Core.scproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\TDS.Master.Media\TDS.Master.Media.scproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\TDS.MVC.Base\TDS.MVC.Base.scproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
   </ItemGroup>
   <ItemGroup>
     <CodeGenTemplate Include="Code Generation Templates\GeneralExtensions.tt" />
@@ -2257,6 +2240,26 @@
   </ItemGroup>
   <ItemGroup>
     <CodeGenReferencedProject Include="{5fee21f7-334b-4d21-bdcf-cb7be150b5f1}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LaunchSitecoreMvc\LaunchSitecoreMvc.csproj">
+      <Project>{834a2236-50dc-4e10-af63-9057f5b6f84e}</Project>
+      <Name>LaunchSitecoreMvc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TDS.Core\TDS.Core.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\TDS.Master.Media\TDS.Master.Media.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\TDS.MVC.Base\TDS.MVC.Base.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ExcludedAssemblies Include="Newtonsoft.Json.dll" />
+    <ExcludedAssemblies Include="Sitecore.%2a.dll" />
+    <ExcludedAssemblies Include="System.%2a.dll" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
