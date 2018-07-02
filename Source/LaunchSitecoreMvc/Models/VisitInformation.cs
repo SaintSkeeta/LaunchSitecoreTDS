@@ -52,7 +52,7 @@ namespace LaunchSitecore.Models
 
         public List<string> GoalsList { get { return LoadGoals(); } }
 
-        public List<string> EngagementStates { get { return LoadEngagementStates(); } }
+        //public List<string> EngagementStates { get { return LoadEngagementStates(); } }
 
         public List<PatternMatch> LoadPatterns()
         {
@@ -133,34 +133,34 @@ namespace LaunchSitecore.Models
             return goals;
         }
 
-        public List<string> LoadEngagementStates()
-        {
-            List<string> states = new List<string>();
+        //public List<string> LoadEngagementStates()
+        //{
+        //    List<string> states = new List<string>();
 
-            try
-            {
-                var engagementstates = AutomationStateManager.Create(Tracker.Current.Contact).GetAutomationStates();
+        //    try
+        //    {
+        //        var engagementstates = AutomationStateManager.Create(Tracker.Current.Contact).GetAutomationStates();
 
-                if (engagementstates.Any())
-                {
-                    foreach (
-                        AutomationStateContext context in
-                            AutomationStateManager.Create(Tracker.Current.Contact).GetAutomationStates())
-                    {
-                        states.Add(String.Format("{0}: {1}", context.PlanItem.DisplayName, context.StateItem.DisplayName));
-                    }
-                }
-                else
-                {
-                    states.Add(SiteConfiguration.GetDictionaryText("No Engagement States"));
-                }
-            }
-            catch (Exception)
-            {
-                states.Add(SiteConfiguration.GetDictionaryText("Unable to load Engagement States"));
-            }
-            return states;
-        }
+        //        if (engagementstates.Any())
+        //        {
+        //            foreach (
+        //                AutomationStateContext context in
+        //                    AutomationStateManager.Create(Tracker.Current.Contact).GetAutomationStates())
+        //            {
+        //                states.Add(String.Format("{0}: {1}", context.PlanItem.DisplayName, context.StateItem.DisplayName));
+        //            }
+        //        }
+        //        else
+        //        {
+        //            states.Add(SiteConfiguration.GetDictionaryText("No Engagement States"));
+        //        }
+        //    }
+        //    catch (Exception)
+        //    {
+        //        states.Add(SiteConfiguration.GetDictionaryText("Unable to load Engagement States"));
+        //    }
+        //    return states;
+        //}
 
         private string CleanPageName(IPageContext p)
         {
