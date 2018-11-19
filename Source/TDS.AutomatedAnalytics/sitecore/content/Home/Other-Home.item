@@ -1,0 +1,164 @@
+----item----
+version: 1
+id: {4B1E07B2-05FD-49EE-AB88-00CAAC1E2B27}
+database: master
+path: /sitecore/content/Home/Other-Home
+parent: {110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
+name: Other-Home
+master: {00000000-0000-0000-0000-000000000000}
+template: {0ACD30D8-863E-4B1D-8612-719EEFC1DA4F}
+templatekey: Home
+created: 20180704T021414Z
+
+----field----
+field: {7E003143-26F2-4A28-B70A-08548286F6BA}
+name: Show Item In Menu
+key: show item in menu
+content-length: 0
+
+
+----field----
+field: {1E2AAB62-E924-421E-B766-BF8422CCBE44}
+name: Show Item In Footer Menu
+key: show item in footer menu
+content-length: 1
+
+1
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 2879
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{52D796F3-ABC1-48CA-B1F6-CE901C71888B}"><rls><ruleset><rule uid="{BA9DC88E-FBC4-4736-B330-ECD27B9CE007}"><conditions><condition uid="4C15C4D553424C429B89DD0BD7DCEC5A"><p:d /></condition><condition uid="FB3DCA6561EA43888BC931ED55EC3B4A" s:id="{44E41635-EFE2-4066-B740-FEA9D3AA8480}" s:QueryStringName="first" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:QueryStringValue="c" /></conditions></rule><rule uid="{AE5F6CC5-9BBF-42F9-AB28-66DEA1C746DC}"><conditions><condition uid="1C1600AEA5E749C4858DBED97082A8CB"><p:d /></condition><condition uid="9A039F2ED94E416995388BD0006BB92D" s:id="{44E41635-EFE2-4066-B740-FEA9D3AA8480}" s:QueryStringName="first" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:QueryStringValue="b" /></conditions></rule></ruleset></rls></r><r uid="{3EC360C9-708D-4E58-9DED-5D8FD4620ED5}"><rls><ruleset><rule uid="{CE1B45D1-2819-42CA-A64B-433DA52EF116}"><conditions><condition uid="E6A516DDB5A5454CB2E267B0BFD48C86"><p:d /></condition><condition uid="2A0060FE961340098A869D3167BFE4A2" s:id="{44E41635-EFE2-4066-B740-FEA9D3AA8480}" s:QueryStringName="second" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:QueryStringValue="c" /></conditions></rule><rule uid="{5BA3A134-ECC9-48ED-BCF2-34F806D62742}"><conditions><condition uid="380B38A33A51498CB6FFA1B374D87DA6"><p:d /></condition><condition uid="F3A4B51AFD8B46B5BA1322D246A33CF0" s:id="{44E41635-EFE2-4066-B740-FEA9D3AA8480}" s:QueryStringName="second" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:QueryStringValue="b" /></conditions></rule></ruleset></rls></r><r uid="{EE02BE24-30DE-4BB7-A52A-46693A78EF4F}"><rls><ruleset><rule uid="{39FCDAEC-8D32-4297-B8C1-0FA451415E36}"><conditions><or uid="98A2590657DD47819639DF7AFE9038BD"><p:d /></or><condition uid="D8AD3D92A7224237948A4EE3AA6E3626" s:id="{44E41635-EFE2-4066-B740-FEA9D3AA8480}" s:QueryStringName="third" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:QueryStringValue="b" /></conditions></rule></ruleset></rls></r><r uid="{3829E486-2259-42FF-9385-33F26CF71A94}"><rls><ruleset><rule uid="{5E93ED2E-AEC7-4B66-9E08-61FF8C306099}"><conditions><condition uid="BFEAC1AA3A6E4ED7B774E82C59A60FC9"><p:d /></condition><condition uid="5B25D78BF836463F829EEE6ABC1988D6" s:id="{44E41635-EFE2-4066-B740-FEA9D3AA8480}" s:QueryStringName="fourth" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:QueryStringValue="c" /></conditions></rule><rule uid="{7E0E4C3D-BEF9-4424-8645-2D8B4194ED86}"><conditions><condition uid="6C0BA78BA13E41B3B46777FE47DF41C1"><p:d /></condition><condition uid="55075270D6334916B0C1B0FE49B47B0E" s:id="{44E41635-EFE2-4066-B740-FEA9D3AA8480}" s:QueryStringName="fourth" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:QueryStringValue="b" /></conditions></rule></ruleset></rls></r></d></r>
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 70414d87-0fc2-4097-83aa-f548427160bd
+
+----field----
+field: {AAEAC7F2-E33E-4B34-9023-AB6F59D3A427}
+name: Title
+key: title
+content-length: 29
+
+Getting Started with Sitecore
+----field----
+field: {2FB9AEBD-D6E1-4EA5-8A04-7B6AD0EC3132}
+name: Subtitle
+key: subtitle
+content-length: 26
+
+Clean, modern & responsive
+----field----
+field: {764646D1-347E-419D-8B86-67457C73D905}
+name: Body
+key: body
+content-length: 624
+
+<p>Welcome to Launch Sitecore. This site is dedicated to your successful evaluation of the Sitecore Experience Platform.  This site will help you investigate a simple yet powerful implementation of Sitecore, giving content owners, developers, marketers and network professionals a great starting point towards understanding the breadth of features this platform offers.  From authoring content to workflow and publishing to creating personalized experiences, testing and analytics, this site will allow you to understand the building blocks that will power your content-driven digital marketing strategy into the future.</p>
+----field----
+field: {918A64F3-3CE1-46FE-AFE0-7BDEAE9F6299}
+name: Call to Action Link
+key: call to action link
+content-length: 38
+
+{63ABEE8A-4E38-4159-9193-D5F0A33AD666}
+----field----
+field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
+name: Icon
+key: icon
+content-length: 58
+
+<image mediaid="{76DFC588-5949-4933-BCC7-6C26CF83BEF9}" />
+----field----
+field: {D7229DBA-B952-4D82-A5A0-459C69618D45}
+name: Menu Title
+key: menu title
+content-length: 10
+
+Other Home
+----field----
+field: {71DFEE6E-6AC9-4F83-9A15-748D42C4646E}
+name: Site Name
+key: site name
+content-length: 15
+
+Launch Sitecore
+----field----
+field: {299EFAE9-69FF-48CA-B408-65A8BF05A92F}
+name: Show in Sites Menu
+key: show in sites menu
+content-length: 0
+
+
+----field----
+field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
+name: __Final Renderings
+key: __final renderings
+content-length: 1334
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{52D796F3-ABC1-48CA-B1F6-CE901C71888B}"><rls><ruleset><rule uid="{C0C50B3E-B747-46AE-A9B7-433128427636}" p:before="*" s:name="Remove Carousel"><conditions><condition uid="9CCAF11D460F4290964BAD62AD4B2EA2" s:id="{44E41635-EFE2-4066-B740-FEA9D3AA8480}" s:QueryStringName="first" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:QueryStringValue="d" /></conditions><actions><action uid="65A1CCC1368C45B884D12B0A3A0B953F" s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" /></actions></rule></ruleset></rls></r><r uid="{3EC360C9-708D-4E58-9DED-5D8FD4620ED5}"><rls><ruleset><rule uid="{766450AD-64F4-48A8-AB82-67383CB7C40B}" p:before="*" s:name="Change Rendering"><conditions><condition uid="22A3736360CD4F13BC0B2DEE8F6B7022" s:id="{44E41635-EFE2-4066-B740-FEA9D3AA8480}" s:QueryStringName="second" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:QueryStringValue="d" /></conditions><actions><action uid="D7397837AA5D4C5EBD56102C5516D652" s:id="{7B578B65-BD2F-4C7C-9A24-DAE3E98B4F23}" s:RenderingItem="{D6206AE3-D009-44E8-856C-6EFF9DADF3F9}" /><action uid="06EE5CB230E941C8B7D838A9CB8EC496" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{D87DEB97-AE7F-4720-AFEA-1E4CA81236EB}" /></actions></rule></ruleset></rls></r></d></r>
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180704T021414Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+70414d87-0fc2-4097-83aa-f548427160bd
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180709T185534Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
