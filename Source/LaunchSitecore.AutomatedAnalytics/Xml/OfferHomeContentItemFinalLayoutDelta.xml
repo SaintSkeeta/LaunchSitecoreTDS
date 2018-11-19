@@ -1,0 +1,33 @@
+﻿<r xmlns:p="p" xmlns:s="s" p:p="1">
+  <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+    <r uid="{52D796F3-ABC1-48CA-B1F6-CE901C71888B}">
+      <rls>
+        <ruleset>
+          <rule uid="{C0C50B3E-B747-46AE-A9B7-433128427636}" p:before="*" s:name="Remove Carousel">
+            <conditions>
+              <condition uid="9CCAF11D460F4290964BAD62AD4B2EA2" s:id="{44E41635-EFE2-4066-B740-FEA9D3AA8480}" s:QueryStringName="first" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:QueryStringValue="d" />
+            </conditions>
+            <actions>
+              <action uid="65A1CCC1368C45B884D12B0A3A0B953F" s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
+            </actions>
+          </rule>
+        </ruleset>
+      </rls>
+    </r>
+    <r uid="{3EC360C9-708D-4E58-9DED-5D8FD4620ED5}">
+      <rls>
+        <ruleset>
+          <rule uid="{766450AD-64F4-48A8-AB82-67383CB7C40B}" p:before="*" s:name="Change Rendering">
+            <conditions>
+              <condition uid="22A3736360CD4F13BC0B2DEE8F6B7022" s:id="{44E41635-EFE2-4066-B740-FEA9D3AA8480}" s:QueryStringName="second" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:QueryStringValue="d" />
+            </conditions>
+            <actions>
+              <action uid="D7397837AA5D4C5EBD56102C5516D652" s:id="{7B578B65-BD2F-4C7C-9A24-DAE3E98B4F23}" s:RenderingItem="{D6206AE3-D009-44E8-856C-6EFF9DADF3F9}" />
+              <action uid="06EE5CB230E941C8B7D838A9CB8EC496" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{D87DEB97-AE7F-4720-AFEA-1E4CA81236EB}" />
+            </actions>
+          </rule>
+        </ruleset>
+      </rls>
+    </r>
+  </d>
+</r>

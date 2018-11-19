@@ -1,0 +1,84 @@
+﻿<r xmlns:p="p" xmlns:s="s" p:p="1">
+  <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+    <r uid="{52D796F3-ABC1-48CA-B1F6-CE901C71888B}">
+      <rls>
+        <ruleset>
+          <rule uid="{BA9DC88E-FBC4-4736-B330-ECD27B9CE007}">
+            <conditions>
+              <condition uid="4C15C4D553424C429B89DD0BD7DCEC5A">
+                <p:d />
+              </condition>
+              <condition uid="FB3DCA6561EA43888BC931ED55EC3B4A" s:id="{44E41635-EFE2-4066-B740-FEA9D3AA8480}" s:QueryStringName="first" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:QueryStringValue="c" />
+            </conditions>
+          </rule>
+          <rule uid="{AE5F6CC5-9BBF-42F9-AB28-66DEA1C746DC}">
+            <conditions>
+              <condition uid="1C1600AEA5E749C4858DBED97082A8CB">
+                <p:d />
+              </condition>
+              <condition uid="9A039F2ED94E416995388BD0006BB92D" s:id="{44E41635-EFE2-4066-B740-FEA9D3AA8480}" s:QueryStringName="first" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:QueryStringValue="b" />
+            </conditions>
+          </rule>
+        </ruleset>
+      </rls>
+    </r>
+    <r uid="{3EC360C9-708D-4E58-9DED-5D8FD4620ED5}">
+      <rls>
+        <ruleset>
+          <rule uid="{CE1B45D1-2819-42CA-A64B-433DA52EF116}">
+            <conditions>
+              <condition uid="E6A516DDB5A5454CB2E267B0BFD48C86">
+                <p:d />
+              </condition>
+              <condition uid="2A0060FE961340098A869D3167BFE4A2" s:id="{44E41635-EFE2-4066-B740-FEA9D3AA8480}" s:QueryStringName="second" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:QueryStringValue="c" />
+            </conditions>
+          </rule>
+          <rule uid="{5BA3A134-ECC9-48ED-BCF2-34F806D62742}">
+            <conditions>
+              <condition uid="380B38A33A51498CB6FFA1B374D87DA6">
+                <p:d />
+              </condition>
+              <condition uid="F3A4B51AFD8B46B5BA1322D246A33CF0" s:id="{44E41635-EFE2-4066-B740-FEA9D3AA8480}" s:QueryStringName="second" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:QueryStringValue="b" />
+            </conditions>
+          </rule>
+        </ruleset>
+      </rls>
+    </r>
+    <r uid="{EE02BE24-30DE-4BB7-A52A-46693A78EF4F}">
+      <rls>
+        <ruleset>
+          <rule uid="{39FCDAEC-8D32-4297-B8C1-0FA451415E36}">
+            <conditions>
+              <or uid="98A2590657DD47819639DF7AFE9038BD">
+                <p:d />
+              </or>
+              <condition uid="D8AD3D92A7224237948A4EE3AA6E3626" s:id="{44E41635-EFE2-4066-B740-FEA9D3AA8480}" s:QueryStringName="third" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:QueryStringValue="b" />
+            </conditions>
+          </rule>
+        </ruleset>
+      </rls>
+    </r>
+    <r uid="{3829E486-2259-42FF-9385-33F26CF71A94}">
+      <rls>
+        <ruleset>
+          <rule uid="{5E93ED2E-AEC7-4B66-9E08-61FF8C306099}">
+            <conditions>
+              <condition uid="BFEAC1AA3A6E4ED7B774E82C59A60FC9">
+                <p:d />
+              </condition>
+              <condition uid="5B25D78BF836463F829EEE6ABC1988D6" s:id="{44E41635-EFE2-4066-B740-FEA9D3AA8480}" s:QueryStringName="fourth" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:QueryStringValue="c" />
+            </conditions>
+          </rule>
+          <rule uid="{7E0E4C3D-BEF9-4424-8645-2D8B4194ED86}">
+            <conditions>
+              <condition uid="6C0BA78BA13E41B3B46777FE47DF41C1">
+                <p:d />
+              </condition>
+              <condition uid="55075270D6334916B0C1B0FE49B47B0E" s:id="{44E41635-EFE2-4066-B740-FEA9D3AA8480}" s:QueryStringName="fourth" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:QueryStringValue="b" />
+            </conditions>
+          </rule>
+        </ruleset>
+      </rls>
+    </r>
+  </d>
+</r>
