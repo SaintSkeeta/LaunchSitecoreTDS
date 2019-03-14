@@ -8,6 +8,7 @@ name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
 template: {0ACD30D8-863E-4B1D-8612-719EEFC1DA4F}
 templatekey: Home
+created: 20190314T201809Z
 
 ----field----
 field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
@@ -20,9 +21,9 @@ content-length: 155
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 5968
+content-length: 5759
 
-<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{DF82BBBD-B499-4C99-AD03-77A8C2D45B17}"><p uid="{806E131A-BE95-4058-8843-67D6130796C4}" key="main-content" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Template Overrides/Home/home-main-content" /><r ds="" id="{53058CCE-54D1-426C-A6F3-E64B54F24EBA}" par="" ph="main-content" uid="{C90B8FBE-F517-49BA-A4DF-AA21301AE2EC}" /><r ds="{C8231E47-89A9-448B-9019-8CCCF8750728}" id="{7EF53D69-9CF1-41A6-AA24-6A0E430FB677}" par="" ph="/main-content/full-row1" uid="{52D796F3-ABC1-48CA-B1F6-CE901C71888B}"><rls><ruleset><rule name="Developer" uid="{BA9DC88E-FBC4-4736-B330-ECD27B9CE007}"><conditions><condition id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" uid="4C15C4D553424C429B89DD0BD7DCEC5A" ProfileName="Audience Segment" PatternName="Developer" /></conditions><actions><action id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" uid="DEF736CC070E4EFAA14EBBB880E1E5E0" DataSource="{0720FC50-5617-4A67-9794-9B56BA3038BD}" /></actions></rule><rule name="Marketer" uid="{AE5F6CC5-9BBF-42F9-AB28-66DEA1C746DC}"><conditions><condition id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" uid="1C1600AEA5E749C4858DBED97082A8CB" ProfileName="Audience Segment" PatternName="Digital Marketer" /></conditions><actions><action id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" uid="A93EC9ED080041818801C8231E3E0351" DataSource="{85F0FFB1-B04F-498C-B033-A973FB4068E0}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" name="Default"><conditions><condition id="{4888ABBB-F17D-4485-B14B-842413F88732}" uid="5CF4774CD34B412184967910ACFA8503" /></conditions><actions /></rule></ruleset></rls></r><r id="{48A4CC58-05B6-47E1-9EF2-175D33229331}" ph="/main-content/full-row1" uid="{F3C61456-F405-4356-AF7B-B2C7ECEDAA64}" /><r ds="{30A5F43C-DF80-4FCD-BFA0-ED846F041384}" id="{5A5DE9E1-0CEB-444C-9F6F-F23EF0069867}" par="" ph="/main-content/full-row2a" uid="{3EC360C9-708D-4E58-9DED-5D8FD4620ED5}"><rls><ruleset><rule uid="{CE1B45D1-2819-42CA-A64B-433DA52EF116}" name="Network Architect"><conditions><condition uid="E6A516DDB5A5454CB2E267B0BFD48C86" id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" ProfileName="Audience Segment" PatternName="Network Architect" /></conditions><actions><action uid="3EAD124989124CFB88E9C303EDCF523E" id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" DataSource="{AB5CA3C3-2D22-47D6-A414-2C9120547C26}" /></actions></rule><rule uid="{5BA3A134-ECC9-48ED-BCF2-34F806D62742}" name="Developer"><conditions><condition uid="380B38A33A51498CB6FFA1B374D87DA6" id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" ProfileName="Audience Segment" PatternName="Developer" /></conditions><actions><action uid="439D755DB699429BB9FC6C2C8BFAC0E5" id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" DataSource="{EC38EBB3-F2E8-493D-B0E6-B8C68C9AFB85}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" name="Default"><conditions><condition uid="8A766F40749E4FF8908CC92C73682F58" id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r ds="{DE7AC998-B699-47CE-9C51-22762F5A0B83}" id="{5A5DE9E1-0CEB-444C-9F6F-F23EF0069867}" par="" ph="/main-content/full-row2b" uid="{348B6EEA-B101-4312-AFC2-313212D2350C}" /><r ds="{D87DEB97-AE7F-4720-AFEA-1E4CA81236EB}" id="{5A5DE9E1-0CEB-444C-9F6F-F23EF0069867}" par="" ph="/main-content/full-row2c" uid="{EE02BE24-30DE-4BB7-A52A-46693A78EF4F}"><rls><ruleset><rule uid="{39FCDAEC-8D32-4297-B8C1-0FA451415E36}" name="Marketers and Content Owners"><conditions><or uid="98A2590657DD47819639DF7AFE9038BD"><condition uid="4D7D580B34AD404A845C4AB1760C0C2F" id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" ProfileName="Audience Segment" PatternName="Digital Marketer" /><condition uid="0D9B760B6BEF4DD99B8EF4373B673B23" id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" ProfileName="Audience Segment" PatternName="Content Owner" /></or></conditions><actions><action uid="2E65A4835357411A8AC6BC2D242BD836" id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" DataSource="{A5CDBC19-FFEA-4801-81A6-2B87F318B275}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" name="Default"><conditions><condition uid="F5D9E0F7AEE840D3ADC156D74F400431" id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r ds="{4E56028B-65AA-4DCF-B26E-9857CF9ED6D3}" id="{5A5DE9E1-0CEB-444C-9F6F-F23EF0069867}" par="" ph="/main-content/full-row2d" uid="{3829E486-2259-42FF-9385-33F26CF71A94}"><rls><ruleset><rule uid="{5E93ED2E-AEC7-4B66-9E08-61FF8C306099}" name="Content Owner"><conditions><condition uid="BFEAC1AA3A6E4ED7B774E82C59A60FC9" id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" ProfileName="Audience Segment" PatternName="Content Owner" /></conditions><actions><action uid="726CE250F02042EBA9C3E034D8266013" id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" DataSource="{15D0FCF2-7C81-4218-A5A0-7605084D1CBC}" /></actions></rule><rule uid="{7E0E4C3D-BEF9-4424-8645-2D8B4194ED86}" name="Marketer"><conditions><condition uid="6C0BA78BA13E41B3B46777FE47DF41C1" id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" ProfileName="Audience Segment" PatternName="Digital Marketer" /></conditions><actions><action uid="370869CBE37648CDB929257F0E862CA2" id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" DataSource="{05B47C0F-7B67-47AD-9946-C02CBA12A195}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" name="Default"><conditions><condition uid="C7CB6039D37145498D88A15B20E742A8" id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r ds="{E4684940-196D-4314-8E53-12C0B05BD311}" id="{22A8BB23-0725-4297-9BFC-97702C64F69F}" par="" ph="/main-content/full-row3" uid="{8D4C2576-5760-433B-8AAE-6CCE62FF33AD}"><rls><ruleset><rule uid="{00000000-0000-0000-0000-000000000000}" name="Default"><conditions><condition uid="7C3B5C27F8024266B158941CCA8E559B" id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r></d></r>
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{DF82BBBD-B499-4C99-AD03-77A8C2D45B17}"><p uid="{806E131A-BE95-4058-8843-67D6130796C4}" key="main-content" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Template Overrides/Home/home-main-content" /><r ds="" id="{53058CCE-54D1-426C-A6F3-E64B54F24EBA}" par="" ph="main-content" uid="{C90B8FBE-F517-49BA-A4DF-AA21301AE2EC}" /><r ds="{C8231E47-89A9-448B-9019-8CCCF8750728}" id="{7EF53D69-9CF1-41A6-AA24-6A0E430FB677}" par="" ph="/main-content/full-row1" uid="{52D796F3-ABC1-48CA-B1F6-CE901C71888B}"><rls><ruleset><rule name="Developer" uid="{BA9DC88E-FBC4-4736-B330-ECD27B9CE007}"><conditions><condition id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" uid="4C15C4D553424C429B89DD0BD7DCEC5A" ProfileName="Audience Segment" PatternName="Developer" /></conditions><actions><action id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" uid="DEF736CC070E4EFAA14EBBB880E1E5E0" DataSource="{0720FC50-5617-4A67-9794-9B56BA3038BD}" /></actions></rule><rule name="Marketer" uid="{AE5F6CC5-9BBF-42F9-AB28-66DEA1C746DC}"><conditions><condition id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" uid="1C1600AEA5E749C4858DBED97082A8CB" ProfileName="Audience Segment" PatternName="Digital Marketer" /></conditions><actions><action id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" uid="A93EC9ED080041818801C8231E3E0351" DataSource="{85F0FFB1-B04F-498C-B033-A973FB4068E0}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" name="Default"><conditions><condition id="{4888ABBB-F17D-4485-B14B-842413F88732}" uid="5CF4774CD34B412184967910ACFA8503" /></conditions><actions /></rule></ruleset></rls></r><r cac="1" ds="" id="{48A4CC58-05B6-47E1-9EF2-175D33229331}" par="" ph="/main-content/full-row1" uid="{F3C61456-F405-4356-AF7B-B2C7ECEDAA64}" vbd="1" vbl="1" /><r ds="{30A5F43C-DF80-4FCD-BFA0-ED846F041384}" id="{5A5DE9E1-0CEB-444C-9F6F-F23EF0069867}" par="" ph="/main-content/full-row2a" uid="{3EC360C9-708D-4E58-9DED-5D8FD4620ED5}"><rls><ruleset><rule uid="{CE1B45D1-2819-42CA-A64B-433DA52EF116}" name="Network Architect"><conditions><condition uid="E6A516DDB5A5454CB2E267B0BFD48C86" id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" ProfileName="Audience Segment" PatternName="Network Architect" /></conditions><actions><action uid="3EAD124989124CFB88E9C303EDCF523E" id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" DataSource="{AB5CA3C3-2D22-47D6-A414-2C9120547C26}" /></actions></rule><rule uid="{5BA3A134-ECC9-48ED-BCF2-34F806D62742}" name="Developer"><conditions><condition uid="380B38A33A51498CB6FFA1B374D87DA6" id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" ProfileName="Audience Segment" PatternName="Developer" /></conditions><actions><action uid="439D755DB699429BB9FC6C2C8BFAC0E5" id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" DataSource="{68DAE74D-1B6D-4411-967B-CD80321355D3}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" name="Default"><conditions><condition uid="8A766F40749E4FF8908CC92C73682F58" id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r ds="{DE7AC998-B699-47CE-9C51-22762F5A0B83}" id="{5A5DE9E1-0CEB-444C-9F6F-F23EF0069867}" par="" ph="/main-content/full-row2b" uid="{348B6EEA-B101-4312-AFC2-313212D2350C}" /><r ds="{D87DEB97-AE7F-4720-AFEA-1E4CA81236EB}" id="{5A5DE9E1-0CEB-444C-9F6F-F23EF0069867}" par="" ph="/main-content/full-row2c" uid="{EE02BE24-30DE-4BB7-A52A-46693A78EF4F}"><rls><ruleset><rule uid="{39FCDAEC-8D32-4297-B8C1-0FA451415E36}" name="Marketers and Content Owners"><conditions><or uid="98A2590657DD47819639DF7AFE9038BD"><condition uid="4D7D580B34AD404A845C4AB1760C0C2F" id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" ProfileName="Audience Segment" PatternName="Digital Marketer" /><condition uid="0D9B760B6BEF4DD99B8EF4373B673B23" id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" ProfileName="Audience Segment" PatternName="Content Owner" /></or></conditions><actions><action uid="2E65A4835357411A8AC6BC2D242BD836" id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" DataSource="{A5CDBC19-FFEA-4801-81A6-2B87F318B275}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" name="Default"><conditions><condition uid="F5D9E0F7AEE840D3ADC156D74F400431" id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r ds="{4E56028B-65AA-4DCF-B26E-9857CF9ED6D3}" id="{5A5DE9E1-0CEB-444C-9F6F-F23EF0069867}" par="" ph="/main-content/full-row2d" uid="{3829E486-2259-42FF-9385-33F26CF71A94}"><rls><ruleset><rule uid="{5E93ED2E-AEC7-4B66-9E08-61FF8C306099}" name="Content Owner"><conditions><condition uid="BFEAC1AA3A6E4ED7B774E82C59A60FC9" id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" ProfileName="Audience Segment" PatternName="Content Owner" /></conditions><actions><action uid="726CE250F02042EBA9C3E034D8266013" id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" DataSource="{15D0FCF2-7C81-4218-A5A0-7605084D1CBC}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" name="Default"><conditions><condition uid="C7CB6039D37145498D88A15B20E742A8" id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r ds="{E4684940-196D-4314-8E53-12C0B05BD311}" id="{22A8BB23-0725-4297-9BFC-97702C64F69F}" par="" ph="/main-content/full-row3" uid="{8D4C2576-5760-433B-8AAE-6CCE62FF33AD}"><rls><ruleset><rule uid="{00000000-0000-0000-0000-000000000000}" name="Default"><conditions><condition uid="7C3B5C27F8024266B158941CCA8E559B" id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r ds="{A5CDBC19-FFEA-4801-81A6-2B87F318B275}" id="{5A5DE9E1-0CEB-444C-9F6F-F23EF0069867}" par="" ph="/main-content/full-row4a" uid="{1ADB0492-1235-4A5D-8554-BBBB543CE835}" /></d></r>
 ----field----
 field: {CA9B9F52-4FB0-4F87-A79F-24DEA62CDA65}
 name: __Default workflow
@@ -33,8 +34,22 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: e5c132a4-7f79-4d04-9080-23ecd5700d0b
+revision: 0f6b23d1-4ba8-462d-950b-8fceb83335aa
 
+----field----
+field: {AAEAC7F2-E33E-4B34-9023-AB6F59D3A427}
+name: Title
+key: title
+content-length: 26
+
+Welcome to Launch Sitecore
+----field----
+field: {2FB9AEBD-D6E1-4EA5-8A04-7B6AD0EC3132}
+name: Subtitle
+key: subtitle
+content-length: 47
+
+Welcome to the Launch Sitecore TDS Demo website
 ----field----
 field: {4B8CFF92-ABB0-4D0A-A396-CD2AD4B5A99B}
 name: Call to Action Text
@@ -42,6 +57,20 @@ key: call to action text
 content-length: 10
 
 Learn More
+----field----
+field: {918A64F3-3CE1-46FE-AFE0-7BDEAE9F6299}
+name: Call to Action Link
+key: call to action link
+content-length: 38
+
+{63ABEE8A-4E38-4159-9193-D5F0A33AD666}
+----field----
+field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{3B8400DF-4868-4803-9A1F-1FBF9560B68A}" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -69,18 +98,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e5c132a4-7f79-4d04-9080-23ecd5700d0b
+0f6b23d1-4ba8-462d-950b-8fceb83335aa
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150716T223030Z
+20190314T214856Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
 content-length: 14
 
-sitecore\admin
+sitecore\Admin
