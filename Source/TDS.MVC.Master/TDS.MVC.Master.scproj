@@ -2260,7 +2260,7 @@
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
-  <!--<ItemGroup>
+  <!--<ItemGroup Condition="'$(Configuration)' == 'Debug'">
     <PostDeployAction Include="HedgehogDevelopment.TDS.CustomExtensions.PostBuildProcessors.RebuildContentSearchIndexes, HedgehogDevelopment.TDS.CustomExtensions">
       <Parameter>sitecore_master_index, sitecore_web_index</Parameter>
       <Order>40</Order>
@@ -2272,6 +2272,10 @@
     <PostDeployAction Include="HedgehogDevelopment.TDS.CustomExtensions.PostBuildProcessors.SmartPublishMasterToTargetDB, HedgehogDevelopment.TDS.CustomExtensions">
       <Parameter>web</Parameter>
       <Order>60</Order>
+    </PostDeployAction>
+    <PostDeployAction Include="HedgehogDevelopment.TDS.CustomExtensions.PostBuildProcessors.DeploySegmentToReportingDB, HedgehogDevelopment.TDS.CustomExtensions">
+      <Parameter>{A117A41B-F1DA-4A06-BE45-324363AD9A5F}|{30E96368-A604-4B0B-A333-66765B84EA17}|{F3003073-5C3B-450D-B4C4-C65EC6AA4631}|{B98269A4-5781-4B5C-B109-A9092D7BA657}|{5F934885-C4C4-4CD3-842D-D56E23ABD167}|{65F65441-1D21-479A-B65B-A2FBDF90E74C}|{D65A2A25-CCF0-4875-9050-1217E61079C4}|{EEB04D5A-2E34-43E8-A59E-8C0B92C8422C}|{3D7D3908-B97B-413A-9BD5-9197FE431D61}</Parameter>
+      <Order>70</Order>
     </PostDeployAction>
   </ItemGroup>-->
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
