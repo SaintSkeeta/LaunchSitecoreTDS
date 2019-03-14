@@ -8,6 +8,7 @@ name: What-is-Content
 master: {00000000-0000-0000-0000-000000000000}
 template: {D9019E30-F954-46CC-AA70-3E928C40B5D0}
 templatekey: Article
+created: 20190314T201814Z
 
 ----field----
 field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
@@ -52,7 +53,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 65803e80-3fc0-4ac1-8291-38954ca957b2
+revision: df3fbdd2-08d4-4477-86a0-7952142d4789
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -107,9 +108,9 @@ content-length: 192
 field: {82D725ED-6707-4532-86A6-5444E34332FD}
 name: Contributors
 key: contributors
-content-length: 38
+content-length: 77
 
-{EF5350C8-21BF-43A3-BCEF-71F29D91AEF0}
+{2661A42D-C32A-447C-88D7-18E03BD24314}|{EF5350C8-21BF-43A3-BCEF-71F29D91AEF0}
 ----field----
 field: {EFC4A071-5574-404A-8206-FB502FCA909B}
 name: Prerequisite Articles
@@ -125,19 +126,12 @@ content-length: 16
 
 What is Content?
 ----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
-content-length: 15
-
-What is Content
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20111026T114900
+20111026T154900Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -151,21 +145,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-65803e80-3fc0-4ac1-8291-38954ca957b2
+df3fbdd2-08d4-4477-86a0-7952142d4789
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140218T112727:635283196471050831
+20190314T222811Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
 content-length: 14
 
-sitecore\admin
+sitecore\Admin
 ----field----
 field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
 name: __Semantics
