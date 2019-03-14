@@ -7,6 +7,6 @@
   @Html.Sitecore().Field("Abstract")
   <blockquote><p>@Html.Sitecore().Field("Quote")</p></blockquote>
   @Html.Sitecore().Field("Body")
-     <strong>Favorite Food:</strong> @Html.Glass.Editable(m => m.FavFood)
+     <strong>Favorite Food:</strong> @Html.Glass().Editable(m => m.FavFood)
  </article>
 </div>
