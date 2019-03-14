@@ -8,6 +8,7 @@ name: Quote
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
+created: 20190314T201810Z
 
 ----field----
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
@@ -54,7 +55,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: ac811181-3b44-4d96-9f74-9df5cb0d9fe7
+revision: 2e974c1e-692c-4b08-b494-e1c895be176b
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -83,18 +84,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ac811181-3b44-4d96-9f74-9df5cb0d9fe7
+2e974c1e-692c-4b08-b494-e1c895be176b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131218T161534:635229801343955503
+20190314T220200Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
 content-length: 14
 
-sitecore\admin
+sitecore\Admin

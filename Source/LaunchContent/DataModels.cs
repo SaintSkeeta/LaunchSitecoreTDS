@@ -945,6 +945,16 @@ namespace LaunchContent.LaunchSitecore
                     string Job_Title  {get; set;}
             
                                 /// <summary>
+                    /// The FavSport field.
+                    /// <para></para>
+                    /// <para>Field Type: Single-Line Text</para>
+                    /// <para>Field ID: 8575bab0-9edc-40f6-a003-f33aa123a8c4</para>
+                    /// <para>Custom Data: </para>
+                    /// </summary>
+                    [SitecoreField(ITeam_MemberConstants.FavSportFieldName)]
+                    string FavSport  {get; set;}
+            
+                                /// <summary>
                     /// The Quote field.
                     /// <para></para>
                     /// <para>Field Type: Single-Line Text</para>
@@ -966,6 +976,10 @@ namespace LaunchContent.LaunchSitecore
                     
             public static readonly ID Job_TitleFieldId = new ID("d2e90283-29f2-4eaf-895e-e8de8daeec69");
             public const string Job_TitleFieldName = "Job Title";
+            
+                    
+            public static readonly ID FavSportFieldId = new ID("8575bab0-9edc-40f6-a003-f33aa123a8c4");
+            public const string FavSportFieldName = "FavSport";
             
                     
             public static readonly ID QuoteFieldId = new ID("f9b6ffef-1dc9-4c0e-a815-c62822e1cbdb");
@@ -1014,6 +1028,17 @@ namespace LaunchContent.LaunchSitecore
                 [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
                 [SitecoreField(ITeam_MemberConstants.Job_TitleFieldName)]
                 public virtual string Job_Title  {get; set;}
+                    
+                        /// <summary>
+                /// The FavSport field.
+                /// <para></para>
+                /// <para>Field Type: Single-Line Text</para>
+                /// <para>Field ID: 8575bab0-9edc-40f6-a003-f33aa123a8c4</para>
+                /// <para>Custom Data: </para>
+                /// </summary>
+                [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+                [SitecoreField(ITeam_MemberConstants.FavSportFieldName)]
+                public virtual string FavSport  {get; set;}
                     
                         /// <summary>
                 /// The Quote field.

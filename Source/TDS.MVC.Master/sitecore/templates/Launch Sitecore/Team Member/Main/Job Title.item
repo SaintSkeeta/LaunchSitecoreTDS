@@ -8,6 +8,7 @@ name: Job Title
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
+created: 20190314T201810Z
 
 ----field----
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
@@ -54,7 +55,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: fd260416-b047-49c3-839a-840b1836cbec
+revision: c43caea5-57cf-49e2-9ee7-4b462a53d334
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -83,18 +84,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fd260416-b047-49c3-839a-840b1836cbec
+c43caea5-57cf-49e2-9ee7-4b462a53d334
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131122T081906:635207051468837778
+20190314T220200Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
 content-length: 14
 
-sitecore\admin
+sitecore\Admin

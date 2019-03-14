@@ -8,6 +8,7 @@ name: Kevin-DiTroia
 master: {00000000-0000-0000-0000-000000000000}
 template: {97963D48-BD06-46CA-8279-CD2BA3C7AA36}
 templatekey: Team Member
+created: 20190314T201815Z
 
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
@@ -33,7 +34,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: e541ccba-fb45-461d-bf21-fb23ceb1d1ca
+revision: e17466fd-07b9-4471-90f6-331f7e739d99
 
 ----field----
 field: {234542DC-C610-4CA8-BAA6-2592A8BCB1D7}
@@ -63,6 +64,13 @@ key: quote
 content-length: 245
 
 "The first rule of any technology used in a business is that automation applied to an efficient operation will magnify the efficiency. The second is that automation applied to an inefficient operation will magnify the inefficiency." - Bill Gates
+----field----
+field: {8575BAB0-9EDC-40F6-A003-F33AA123A8C4}
+name: FavSport
+key: favsport
+content-length: 8
+
+Baseball
 ----field----
 field: {2B60D8C1-81DB-45A7-B1CB-654CDDA96AE3}
 name: Icon
@@ -111,21 +119,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e541ccba-fb45-461d-bf21-fb23ceb1d1ca
+e17466fd-07b9-4471-90f6-331f7e739d99
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150716T031313Z
+20190314T220235Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
 content-length: 14
 
-sitecore\admin
+sitecore\Admin
 ----field----
 field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
 name: __Workflow state
