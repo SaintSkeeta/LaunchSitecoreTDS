@@ -1,0 +1,80 @@
+----item----
+version: 1
+id: {AF18DCC7-9A03-4FB8-A848-D259654EA4BE}
+database: master
+path: /sitecore/system/Marketing Control Panel/Outcomes/LaunchSitecoreAutomatedAnalytics/Justin West Contact
+parent: {40DEC1EF-134A-4ED3-8472-BC2E310D1755}
+name: Justin West Contact
+master: {00000000-0000-0000-0000-000000000000}
+template: {EE43C2F0-6277-4144-B144-8CA2CEFCCF12}
+templatekey: Outcome Definition
+created: 20181121T162905Z
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{689E2994-4656-4C58-9112-7826CB46EE69}
+----version----
+language: en
+version: 1
+revision: 188b0d5a-0c1d-4f34-a7a0-42955ebc7ec0
+
+----field----
+field: {2A8D9AB0-B1C1-4DA3-B17D-1610AD23D697}
+name: Name
+key: name
+content-length: 19
+
+Justin West Contact
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20181121T162905Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+188b0d5a-0c1d-4f34-a7a0-42955ebc7ec0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20181121T162906Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{39156DC0-21C6-4F64-B641-31E85C8F5DFE}
