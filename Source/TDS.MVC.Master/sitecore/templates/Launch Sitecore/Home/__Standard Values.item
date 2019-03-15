@@ -34,7 +34,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 82a59a11-10c8-45b9-8fb5-a21559c217cd
+revision: 9ef3eafe-657d-4327-b862-46ded84b585e
 
 ----field----
 field: {AAEAC7F2-E33E-4B34-9023-AB6F59D3A427}
@@ -50,6 +50,20 @@ key: call to action text
 content-length: 10
 
 Learn More
+----field----
+field: {918A64F3-3CE1-46FE-AFE0-7BDEAE9F6299}
+name: Call to Action Link
+key: call to action link
+content-length: 38
+
+{6FEA8C36-369E-41A5-8350-1E59535FDD70}
+----field----
+field: {F9F7A706-72CE-4733-B930-9FF1D7B3EFAB}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{A870FCC2-FD60-40CA-9EBB-A033CB5C5DA2}" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -77,14 +91,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-82a59a11-10c8-45b9-8fb5-a21559c217cd
+9ef3eafe-657d-4327-b862-46ded84b585e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190314T223326Z
+20190315T144838Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
