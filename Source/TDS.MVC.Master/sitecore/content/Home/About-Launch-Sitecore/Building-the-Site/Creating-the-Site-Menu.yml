@@ -1,0 +1,96 @@
+---
+ID: "473c5b07-2496-4519-a824-fb78eeeca47c"
+Parent: "ec38ebb3-f2e8-493d-b0e6-b8c68c9afb85"
+Template: "d9019e30-f954-46cc-aa70-3e928c40b5d0"
+Path: "/sitecore/content/Home/About-Launch-Sitecore/Building-the-Site/Creating-the-Site-Menu"
+DB: master
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Value: |
+    <tracking>
+      <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function" presets="developer|100||">
+        <key name="Analytics" value="0" />
+        <key name="Copywriting" value="2" />
+        <key name="Personalization and Testing" value="2" />
+        <key name="Technology" value="5" />
+        <key name="Workflow and Publishing" value="1" />
+      </profile>
+      <profile id="{478859DC-EBE0-40A7-BD24-75D588FD3E09}" name="Information Type" presets="detailed|100||">
+        <key name="Detailed" value="1" />
+        <key name="High Level" value="0" />
+      </profile>
+    </tracking>
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{1B6A3702-5694-4FC4-8366-989ECDCD7F1B}"
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "234542dc-c610-4ca8-baa6-2592a8bcb1d7"
+      Hint: Title
+      Value: Creating the Site Menu
+    - ID: "00e1d306-96bd-4b32-85b4-cd63c53cc6c1"
+      Hint: Abstract
+      Value: <p>Sitecore makes building dynamic menus based on your content easy. You can easily query the content repository to determine the items to include. This along with a base data template for the menu fields can help you quickly complete these controls.</p>
+    - ID: "5a5684bb-8b54-44f6-abcc-2bada05ada5d"
+      Hint: Body
+      Value: |
+        <p>When you create a site in Sitecore, it is very common to use the content tree to derive the menu. This is the way Launch Sitecore is designed which results in our navigation matching our Information Architecture. If you want to use an alternate menu structure you can also use Sitecore. In fact, Launch Sitecore shows that approach in the footer menu. </p>
+        <p>The top navigation uses the lists to render a standard menu. Below is an example of the menu from this site.</p>
+        <p>
+        <img alt="" src="~/media/d23fccc949994d049452407c77c3eb94.ashx" class="img-polaroid" style="width: 517px; height: 123px;" /></p>
+        <p>First we need to look at the data template which we called Menu Item. All items that can are rendered as pages in this site are based on a template that inherits the Menu Item template. This provides the fields Menu Text as well as options to show this item and its children in the menu. To see how these look on an item, you can use the Content Editor or the Menu button in the ribbon of the Page Editor.</p>
+        <p>Now we need to take a look at the markup. You see it is simply a repeater. We are using a placeholder to make this a two level menu.</p>
+        <pre class="prettyprint linenums"><ol class="linenums"><li>&lt;ul class="nav"&gt;</li><li> &lt;asp:Repeater ID="rptDropDownMenu" runat="server" OnItemDataBound="rptDropDownMenu_ItemDataBound"&gt;</li><li> &lt;ItemTemplate&gt;</li><li> &lt;li id="MenuLi" runat="server"&gt;</li><li> &lt;asp:HyperLink ID="MenuLink" runat="server"&gt;</li><li> &lt;asp:Literal ID="MenuText" runat="server" /&gt;</li><li> &lt;/asp:HyperLink&gt;</li><li> &lt;asp:PlaceHolder ID="phSubMenu" runat="server" /&gt;</li><li> &lt;/li&gt;</li><li> &lt;/ItemTemplate&gt;</li><li> &lt;/asp:Repeater&gt;</li><li>&lt;/ul&gt;</li></ol></pre>
+        <p>This is pretty standard code for a .Net site. The Sitecore code comes more into play when you see how we bind the repeater to the content. The codebehind file takes care of this.</p>
+        <pre class="prettyprint linenums"><ol class="linenums"><li>HomeItem = SiteConfiguration.GetHomeItem();</li><li>List&lt;item&gt; nodes = new List&lt;item&gt;();</li><li>if (HomeItem["Show Item In Menu"] == "1") nodes.Add(HomeItem);</li><li>foreach (Item i in HomeItem.Children)</li><li>{</li><li> if (SiteConfiguration.DoesItemExistInCurrentLanguage(i) &amp;&amp; i["Show Item In Menu"] == "1")</li><li> {</li><li> nodes.Add(i);</li><li> }</li><li>}</li><li></li><li>rptDropDownMenu.DataSource = nodes;</li><li>rptDropDownMenu.DataBind();</li></ol></pre>
+        <p>This code uses the Children of the home node to get the child items of the home item and then binds the results to the repeater. It then uses the ItemDataBound event to load the child items.</p>
+        <p>This high level overview along with the code examples included with Launch Sitecore should provide a nice start for your site navigation.</p>
+    - ID: "2b60d8c1-81db-45a7-b1cb-654cdda96ae3"
+      Hint: Icon
+      Value: |
+        <image mediaid="{C33E433F-84F8-4654-9FA9-7AA84372FB59}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/g-o/menu-pull-down" src="~/media/c33e433f84f846549fa97aa84372fb59.ashx" />
+    - ID: "82d725ed-6707-4532-86a6-5444e34332fd"
+      Hint: Contributors
+      Value: "{EF5350C8-21BF-43A3-BCEF-71F29D91AEF0}"
+    - ID: "d7229dba-b952-4d82-a5a0-459c69618d45"
+      Hint: Menu Title
+      Value: Creating the Site Menu
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Creating the Site Menu
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20111027T105300
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mic
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "26a71a3c-495a-44f0-a2b2-7a7b248dcc54"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20140218T112728:635283196481242979"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "a14f1b0c-4384-49ec-8790-28a440f3670c"
+      Hint: __Semantics
+      Value: 
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}"
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />

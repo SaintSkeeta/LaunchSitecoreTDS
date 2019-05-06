@@ -1,0 +1,30 @@
+---
+ID: "1df19920-c9ed-424d-aa18-4a736f453f23"
+Parent: "e439b4e9-620e-4e1c-963f-b122a892b6ed"
+Template: "bb5f90b5-6efc-4ff0-ba65-35d0c325afae"
+Path: /sitecore/content/Global/Content/Quotations/Sitecore is Awesome
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "60b57a34-140a-4e04-b576-e390d08e3231"
+      Hint: Quotation
+      Value: "Is Sitecore an awesome platform to develop on? Absolutely!!"
+    - ID: "07edebcf-ee2c-4f64-a5fd-1df221df0014"
+      Hint: Author
+      Value: Chris Castle
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20130817T092521
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cdca41b5-7fd3-406d-ab31-86f177e3bd59"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20130817T092614:635123283748448509"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

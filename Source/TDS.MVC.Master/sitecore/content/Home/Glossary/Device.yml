@@ -1,0 +1,82 @@
+---
+ID: "2777eab7-ce66-4a5a-bebd-db37d38bcca3"
+Parent: "2d75c97d-5981-4482-8631-208b2deb1f54"
+Template: "c6dd3cef-22af-4468-b3b0-82abfcde0f24"
+Path: /sitecore/content/Home/Glossary/Device
+DB: master
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Value: |
+    <tracking>
+      <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function" presets="developer|100||">
+        <key name="Analytics" value="0" />
+        <key name="Copywriting" value="2" />
+        <key name="Personalization and Testing" value="2" />
+        <key name="Technology" value="5" />
+        <key name="Workflow and Publishing" value="1" />
+      </profile>
+      <profile id="{478859DC-EBE0-40A7-BD24-75D588FD3E09}" name="Information Type" presets="detailed|100||">
+        <key name="Detailed" value="1" />
+        <key name="High Level" value="0" />
+      </profile>
+    </tracking>
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{C6DD3CEF-22AF-4468-B3B0-82ABFCDE0F24}"
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "fbade872-82bd-45ad-a2ec-dadc723249da"
+      Hint: Title
+      Value: Device
+    - ID: "b636170c-2681-469a-a642-a6549c12d1e6"
+      Hint: Definition
+      Value: "<p>A definition item to map requests to layouts and components on an item. A typical device is something like an mobile device (done via user-agent matching) or a print device (done through querystring matching)</p>"
+    - ID: "aa7ce48d-746c-42c7-bd64-9a51f7f10b7c"
+      Hint: Usage
+      Value: |
+        <p>Sitecore uses devices to properly route requests. The actual presentation layer loaded depends on the item and template standard values, which use devices as starting points for applying presentation details (<a href="~/link.aspx?_id=431DD81B22CD4994B6220E2773818AC1&amp;_z=z">layouts</a>, <a href="~/link.aspx?_id=3FD0E7AD3B814875A77FA0F67BE47035&amp;_z=z">sublayouts</a>, renderings).</p>
+        <p>Although Sitecore typically uses user-agent "contains" matching (i.e. "iPhone"), or querystring parameters (i.e. "print=true" to load the correct presentation layer, you can also install the <a title="Mobile Device Detector - Shared Source page" href="http://trac.sitecore.net/MobileDeviceDetector" target="_blank">Mobile Device Detector</a> Shared Source module to allow WURFL capabilities-based matching.</p><p>Since Launch Sitecore uses responsive web design techniques, we do need an additional device.</p>
+    - ID: "2b60d8c1-81db-45a7-b1cb-654cdda96ae3"
+      Hint: Icon
+      Value: |
+        <image mediaid="{416DD175-5A26-4EE8-9362-75098DC71A2B}" mediapath="/Images/Icons/pda" src="~/media/Images/Icons/pda.ashx" ></image>
+    - ID: "f9f7a706-72ce-4733-b930-9ff1d7b3efab"
+      Hint: Image
+      Value: |
+        <image mediaid="{945BEFCA-862E-471E-A6FE-3C68EBB99935}" />
+    - ID: "d7229dba-b952-4d82-a5a0-459c69618d45"
+      Hint: Menu Title
+      Value: Device
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20111220T125700
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\chc
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0241a33f-690d-4a77-9b54-233f31db10d5"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150708T214011Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "a14f1b0c-4384-49ec-8790-28a440f3670c"
+      Hint: __Semantics
+      Value: "{96D23E84-12CF-4A1C-B8BB-A33D7E7FA16D}"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}"
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />

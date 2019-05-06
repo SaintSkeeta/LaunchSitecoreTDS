@@ -1,0 +1,128 @@
+---
+ID: "8ae1c245-a4fa-46ae-9b35-4fbc15f63169"
+Parent: "201936f7-3457-4441-b5d5-6acc3a6e0ba2"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: "/sitecore/layout/Placeholder Settings/Launch Sitecore/Content/main-content"
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "main-content"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Value: "{9B933943-14AB-42D5-8F00-502FB5484F92}|{DF3C8739-E710-4C73-BC23-F282E8068B5D}|{A11E3D01-0CF1-4214-8126-0C3750349EF5}|{89DD3F62-4C38-40B7-B06B-6BA4BE28E7EE}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1100
+Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "87871ff5-1965-46d6-884f-01d6a0b9c4c1"
+      Hint: Description
+      Value: |
+        <div>
+              <b>Content Platzhalter</b>
+              <div>
+        
+        <div style="padding:8px 8px 0px 8px;width:200px">
+        <img height="32" width="32" alt="Sample Rendering" style="float:left;margin:0px 8px 0px 0px" src="~/icon/Business/32x32/table_selection_block.png?w=32&amp;h=32&amp;as=1" />
+        <div>Der Content Platzhalter ist der Hauptplatzhalter.<div></div></div></div></div>
+        <div></div></div>
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Inhalt
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20120622T122045:634759644451153734"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6735673e-cc2c-4b31-89a7-e5b85bdf6744"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20131204T185532:635217801321547807"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "87871ff5-1965-46d6-884f-01d6a0b9c4c1"
+      Hint: Description
+      Value: |
+        
+        		<div>
+         <b>Content Placeholder</b>
+         <div>
+        
+        <div style="padding:8px 8px 0px 8px;width:200px">
+        <img height="32" width="32" alt="Sample Rendering" style="float:left;margin:0px 8px 0px 0px" src="~/icon/Business/32x32/table_selection_block.png?w=32&amp;h=32&amp;as=1" />
+        <div>The content placeholder is the main placeholder.<div></div></div></div></div>
+        <div></div></div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20080110T095900
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "949b94fc-e89c-4734-baa7-574a97c561cf"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150715T005937Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "87871ff5-1965-46d6-884f-01d6a0b9c4c1"
+      Hint: Description
+      Value: |
+        <div>
+              <b>コンテンツ (content) プレースホルダー</b>
+              <div>
+        
+        <div style="padding:8px 8px 0px 8px;width:200px">
+        <img height="32" width="32" alt="コンテンツ (content) プレースホルダー" style="float:left;margin:0px 8px 0px 0px" src="~/icon/Business/32x32/table_selection_block.png?w=32&amp;h=32&amp;as=1" />
+        <div>コンテンツ (content) プレースホルダーはメインのプレースホルダーです。<div></div></div></div></div>
+        <div></div></div>
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: コンテンツ (content)
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20120622T124132:634759656928395683"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9e3341aa-0141-460d-932b-bb1fca00a3db"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20131204T185532:635217801321347768"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

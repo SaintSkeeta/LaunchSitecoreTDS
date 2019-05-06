@@ -1,0 +1,47 @@
+---
+ID: "7c561412-ca45-4964-a9cf-5d4f2af014eb"
+Parent: "c7e1c014-93c9-42d5-b4c8-a307ac30e929"
+Template: "f52f00e0-3f65-4c1a-9bf6-af03ce94e599"
+Path: "/sitecore/content/Developing-in-Sitecore/Step-1"
+DB: master
+SharedFields:
+- ID: "1e2aab62-e924-421e-b766-bf8422ccbe44"
+  Hint: Show Item In Footer Menu
+  Value: 1
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "234542dc-c610-4ca8-baa6-2592a8bcb1d7"
+      Hint: Title
+      Value: Step 1
+    - ID: "d7229dba-b952-4d82-a5a0-459c69618d45"
+      Hint: Menu Title
+      Value: Step 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131115T222430
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "349ffc8c-ad7a-4ad1-b8ac-37070b4fbbd7"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150713T190637Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{A84A3674-4317-49B7-847F-B3AF8506D04B}"
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />

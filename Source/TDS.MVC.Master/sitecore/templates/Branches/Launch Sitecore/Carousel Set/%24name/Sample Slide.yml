@@ -1,0 +1,27 @@
+---
+ID: "d5fb201d-d71c-4262-92d0-5673efa43927"
+Parent: "d57acdff-e765-4f13-8306-7f21c455371d"
+Template: "5365f694-c2ab-41af-8a79-28fc6a35e384"
+Path: /sitecore/templates/Branches/Launch Sitecore/Carousel Set/$name/Sample Slide
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1fd34c98-05b1-4206-a48e-14d1e0c42f6f"
+      Hint: Title
+      Value: Sample Slide
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20141118T110724
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8d09f197-d65c-4d85-a123-86286de4a77a"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20141118T110724:635519056447972750"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

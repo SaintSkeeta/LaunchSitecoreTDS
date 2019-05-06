@@ -1,0 +1,84 @@
+---
+ID: "a51065bd-a32c-4e1c-a534-c4d2b4d59b7e"
+Parent: "85f0ffb1-b04f-498c-b033-a973fb4068e0"
+Template: "5365f694-c2ab-41af-8a79-28fc6a35e384"
+Path: /sitecore/content/Global/Content/Carousel Items/Marketer Carousel/Optimizing the Site
+DB: master
+SharedFields:
+- ID: "336e27e0-7f9c-437e-b179-653f427520cc"
+  Hint: Link Item
+  Value: "{05B47C0F-7B67-47AD-9946-C02CBA12A195}"
+- ID: "dd876753-9d4b-4b70-8197-41a0eb302087"
+  Hint: Image
+  Value: |
+    <image mediaid="{EB394E2E-BFD3-4656-9449-1BED7CB036FB}" />
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1fd34c98-05b1-4206-a48e-14d1e0c42f6f"
+      Hint: Title
+      Value: Optimizing the Site
+    - ID: "9b14a853-f008-4145-878a-dd5a2ed7ec36"
+      Hint: Caption
+      Value: <p>Learn more about optimizing the experience for your customers.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150219T202242Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0fb95145-521c-40b6-8b5a-80f3cdd311fd"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150715T175605Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}"
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+- Language: ja
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1fd34c98-05b1-4206-a48e-14d1e0c42f6f"
+      Hint: Title
+      Value: サイトを最適化
+    - ID: "9b14a853-f008-4145-878a-dd5a2ed7ec36"
+      Hint: Caption
+      Value: <p>あなたの顧客の経験を最適化については、こちらをご覧ください。</p>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150219T202242Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1fd2269a-38a2-42ef-ad42-b6592c7afcf8"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20150219T204106:635599752667857947Z"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}"
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />

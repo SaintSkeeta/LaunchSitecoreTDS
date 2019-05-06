@@ -1,0 +1,105 @@
+---
+ID: "f3ec2e61-8e30-4abe-a64a-cab5fa0048ba"
+Parent: "c8231e47-89a9-448b-9019-8cccf8750728"
+Template: "5365f694-c2ab-41af-8a79-28fc6a35e384"
+Path: /sitecore/content/Global/Content/Carousel Items/Default Carousel/Read the Articles
+DB: master
+SharedFields:
+- ID: "336e27e0-7f9c-437e-b179-653f427520cc"
+  Hint: Link Item
+  Value: "{63ABEE8A-4E38-4159-9193-D5F0A33AD666}"
+- ID: "dd876753-9d4b-4b70-8197-41a0eb302087"
+  Hint: Image
+  Value: |
+    <image src="~/media/8cc4f982b89d44b5b74e46daf1ae6148.ashx" mediaid="{D112C5C5-AC79-48E3-91AE-9E257ADE79FD}" mediapath="/Launch Sitecore/Site Images/Carousel Backgrounds/Abstract Images/piano" />
+- ID: "b1f1502e-0b97-4152-92ed-6828fa25b947"
+  Hint: Use Dark Text
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "93d1b217-b8f4-462e-babf-68298c9ce667"
+  Hint: __Boost
+  Value: 2
+- ID: "9dafca1d-d618-4616-86b8-a8acd6b28a63"
+  Hint: __Bucket Parent Reference
+  Value: 
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1fd34c98-05b1-4206-a48e-14d1e0c42f6f"
+      Hint: Title
+      Value: Learn About this Site
+    - ID: "9b14a853-f008-4145-878a-dd5a2ed7ec36"
+      Hint: Caption
+      Value: <p>Launch Sitecore includes a collection of articles about how and why we built this site.</p>
+    - ID: "48152ddc-82d7-4e74-9b1d-ec816d278ab4"
+      Hint: Link Text
+      Value: Read the Articles
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20130830T175238Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "77477c86-e879-496d-b014-f76fd0b42f53"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150715T180948Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "a14f1b0c-4384-49ec-8790-28a440f3670c"
+      Hint: __Semantics
+      Value: 
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}"
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+- Language: ja
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1fd34c98-05b1-4206-a48e-14d1e0c42f6f"
+      Hint: Title
+      Value: このサイトについて学ぶ
+    - ID: "9b14a853-f008-4145-878a-dd5a2ed7ec36"
+      Hint: Caption
+      Value: <p>打ち上げ Sitecore にはこのサイトを作った方法と理由についての記事のコレクションが含まれます。</p>
+    - ID: "48152ddc-82d7-4e74-9b1d-ec816d278ab4"
+      Hint: Link Text
+      Value: 記事を読む
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20130830T175238Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ec8065eb-8cf6-42da-a8fe-d7aee85af66e"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20150219T041804:635599162843704271Z"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}"
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />

@@ -1,0 +1,46 @@
+---
+ID: "ef861af2-34e8-402e-9e9b-c51a7c96c0ca"
+Parent: "c2aa6f49-943c-4abd-9f2a-730bccde2980"
+Template: "20ada2d2-cabd-41b7-93ca-73f17423e4c7"
+Path: /sitecore/system/Modules/Launch Sitecore/Color/Red
+DB: master
+SharedFields:
+- ID: "3f2dafd8-e704-422e-86f6-185dc7b85a98"
+  Hint: Color Value
+  Value: #DC291E
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120919T131831
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "487f39a0-6340-4d01-81c5-dd50ec0a8701"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20130627T111942:635079287822911074"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+  - Version: 2
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120919T131831
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dc4ead93-f075-425c-a114-4943251de29b"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150708T174713Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

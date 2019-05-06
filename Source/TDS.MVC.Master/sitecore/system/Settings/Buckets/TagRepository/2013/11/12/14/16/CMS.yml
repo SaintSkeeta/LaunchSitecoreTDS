@@ -1,0 +1,28 @@
+---
+ID: "96d23e84-12cf-4a1c-b8bb-a33d7e7fa16d"
+Parent: "2c9ef313-255b-426d-8845-049146a8a7e0"
+Template: "68ba23fd-8270-4675-97ea-4fafc7cf3ab9"
+Path: /sitecore/system/Settings/Buckets/TagRepository/2013/11/12/14/16/CMS
+DB: master
+SharedFields:
+- ID: "9dafca1d-d618-4616-86b8-a8acd6b28a63"
+  Hint: __Bucket Parent Reference
+  Value: "{154D56CC-0DE2-43C7-BBC0-A25BD7FFD901}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131112T141649
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cfb26864-6a3e-45e8-ac40-43c9f93ab493"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20131112T141809:635198626892302552"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Anonymous

@@ -1,0 +1,31 @@
+---
+ID: "cee47ebd-fa89-499b-b5ed-c5148ff0d6be"
+Parent: "85e0b34e-3dbd-4991-882a-fac8445712f3"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: "/sitecore/layout/Placeholder Settings/Launch Sitecore/Template Overrides/Home/home-main-content"
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "home-main-content"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Value: "{53058CCE-54D1-426C-A6F3-E64B54F24EBA}|{3A87ABAE-56F8-4323-81E4-B69D894160B4}|{12BAB317-E759-442F-805C-7126EF07FD8F}|{27BEF7F8-9A59-4584-9CBF-A2E899F6CA14}|{B638D292-8A0F-48BD-AFD5-1C1D436B9719}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20130903T164346
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b0f06e4a-f312-4c09-bc4f-9a03290cf276"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150715T003213Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,130 @@
+---
+ID: "2656b0f4-d2c4-439d-8af4-265d05aee903"
+Parent: "05b47c0f-7b67-47ad-9946-c02cba12a195"
+Template: "d9019e30-f954-46cc-aa70-3e928c40b5d0"
+Path: "/sitecore/content/Home/About-Launch-Sitecore/Optimizing-the-Experience/Tag-Content-for-Each-Profile"
+DB: master
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Value: |
+    <tracking>
+      <profile id="{478859DC-EBE0-40A7-BD24-75D588FD3E09}" name="Information Type" presets="detailed|100||">
+        <key name="Detailed" value="1" />
+        <key name="High Level" value="0" />
+      </profile>
+      <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment" presets="content owner|50||digital marketer|50||">
+        <key name="Analytics" value="3" />
+        <key name="Campaigns and Targeting" value="4" />
+        <key name="Content Management" value="3.5" />
+        <key name="Technology" value="0" />
+      </profile>
+    </tracking>
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{1B6A3702-5694-4FC4-8366-989ECDCD7F1B}"
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "234542dc-c610-4ca8-baa6-2592a8bcb1d7"
+      Hint: Title
+      Value: Tag Content for Each Profile
+    - ID: "00e1d306-96bd-4b32-85b4-cd63c53cc6c1"
+      Hint: Abstract
+      Value: <p>By assigning content profile values to items that make up your site you are able to gain a better understanding of the behavior, actions, and interests of your website visitors. The values you assign to each page accumulate as a visitor navigates through the site. This allows you to build a profile for an individual site visitor, which can then be used along with other DMS tools such as campaigns, personalization, and engagement plans.</p>
+    - ID: "5a5684bb-8b54-44f6-abcc-2bada05ada5d"
+      Hint: Body
+      Value: |
+        <p>
+        <strong>Tag Content for Each Profile</strong>
+        </p>
+        <p style="margin: 0in 0in 10pt;">In Sitecore, you can assign content profile values to a page on your website. By assigning content profile values to items that make up your site you are able to gain a better understanding of the behavior, actions, and interests of your website visitors. The values you assign to each page accumulate as a visitor navigates through the site. This allows you to build a profile for an individual site visitor, which can then be used along with other DMS tools such as campaigns, personalization, and engagement plans.</p>
+        <p style="margin: 0in 0in 10pt;"><em>Profiles</em></p>
+        <p style="margin: 0in 0in 10pt;"><img width="280" height="518" alt="Profiles" src="~/media/6751DA7C00FB4049AB1189DEEFFFEC88.ashx"></p>
+        <p style="margin: 0in 0in 10pt;"> </p>
+        <p style="margin: 0in 0in 10pt;">The Marketing Center (accessed using the Sitecore Desktop interface) contains a node entitled “Profiles”. The Profiles section is where you can create, edit, and manage profile settings which will then be applied to pages on your site. Profile settings consist of:</p>
+        <p style="margin: 0in 0in 10pt;"><strong>Profile </strong> - a group of related profile keys. The Profile item’s child items will be the collection of related profile keys. The “type” field on the Profile item defines the relationship between the profile keys</p>
+        <p style="margin: 0in 0in 10pt;"><em>Examples:</em> Age, Gender, Budget, Evaluator Type</p>
+        <p style="margin: 0in 0in 10pt;"><img width="779" height="411" style="width: 595px; height: 282px;" alt="Prof Content" src="~/media/B40929DE9ED04AF6813D7B9BFCB95134.ashx"></p>
+        <p style="margin: 0in 0in 10pt;"> </p>
+        <p style="margin: 0in 0in 10pt;"><strong>Profile key - </strong>an attribute of the parent profile item.  The Profile Key contains a min, max, and default value. </p>
+        <p style="margin: 0in 0in 10pt;"><em>Example 1:</em> A “Male” <em>Profile Key </em>is given a min value of 0 and a max value of 5 under the “Gender” <em>Profile</em>. A page can then be tagged with a score of 3 points on the “Male” <em>Profile Key.</em> This means when a site visitor hits this page, the visitor will accumulate 3 points towards being a male.</p>
+        <p style="margin: 0in 0in 10pt;"><em>Example 2: </em>The Launch Sitecore demo site groups site visitors into an “Evaluator Type” profile. The four profile keys include:</p>
+        <ul>
+          <li><em>Content Author</em> </li>
+          <li><em>Developer</em> </li>
+          <li><em>IT Professional</em> </li>
+          <li><em>Marketer</em> </li>
+        </ul>
+        <p><img width="778" height="484" style="width: 599px; height: 325px;" alt="Prof Key Content" src="~/media/8EF384E4B2E04202A509DB01826DC872.ashx"></p>
+        <p style="margin: 0in 0in 10pt;"> </p>
+        <p style="margin: 0in 0in 10pt;"><strong>Profile Card - </strong>The use of profile cards simplifies content profiling by grouping percentages of Profile Keys together. Profile Cards are placed on content items and represent a predefined set of Profile Key values. You can also create Persona Cards, which have extra fields to describe the life, habits, background, interests, and profession of a fictional character who contains aspects of the parent Profile. </p>
+        <p style="margin: 0in 0in 10pt;"><em>Example: </em>Connie the Content Author scores the full 5 points for the Content Author Profile Key. This Profile Card will be placed on articles for Content Authors only.</p>
+        <p style="margin: 0in 0in 10pt;"> </p>
+        <p style="margin: 0in 0in 10pt;"> <img src="~/media/E0087664F046418BA14125FEEF5CC048.ashx" alt="Connie" style="width: 640px; height: 452px;"></p>
+        <p style="margin: 0in 0in 10pt;"><strong>Pattern Card – </strong>a Pattern Card is used by the personalization rules engine to determine what profile attributes the current site visitor looks most like.</p>
+        <p style="margin: 0in 0in 10pt;"><em>Example:</em> If a site visitor is hitting mostly Content Author tagged pages, but visits a few Marketer tagged pages, we are still going to say they <em>look like Connie</em></p>
+        <p style="margin: 0in 0in 10pt;"><em><img src="~/media/BDF02EDB690A453CBCE2141DEE69EC19.ashx" alt="Looks like Connie" style="width: 640px; height: 338px;"></em></p>
+        <p style="margin: 0in 0in 10pt;"> </p>
+        <p style="margin: 0in 0in 10pt;">A personalization rule can then be created against this Pattern Card:</p>
+        <p style="margin: 0in 0in 10pt;"> </p>
+        <p style="margin: 0in 0in 10pt;"><em> <img width="497" height="101" alt="Connie Rule" src="~/media/2928D6626FB5420DB82EC98814F2DD57.ashx"></em></p>
+        <p style="margin: 0in 0in 10pt;"><strong>What is the difference between Profile Cards and Pattern Cards?</strong></p>
+        <ul>
+          <li>Profile Cards are applied to items, tagging the page with values for specific profile keys </li>
+          <li>A visitor’s profile is matched to Profile Patterns to determine who they look most like </li>
+        </ul>
+        <p style="margin: 0in 0in 10pt;"><strong>Applying Profile Cards to Items</strong></p>
+        <p style="margin: 0in 0in 10pt;">After you have created the Profile Cards and assigned Profile Key values to them, you can start assigning the Profile Cards to the content items that make up your website. Assigning profile cards to content items makes it easier for you to implement profile values consistently across your website. The alternative is setting values for individual profile keys on each content item. </p>
+        <p style="margin: 0in 0in 10pt;"><em>Example: </em>Below shows tagging a content authoring article with the “Connie” profile card. When a site visitor reads this article, they will get points towards a “Connie the Content Author” profile/persona.</p>
+        <p style="margin: 0in 0in 10pt;">   <img src="~/media/F4F1E78FA8D6439A8E7FA1610BECF731.ashx" alt="Profile Card" style="width: 640px; height: 408px;"></p>
+        <p style="margin: 0in 0in 10pt;"> </p>
+        <p style="margin: 0in 0in 10pt;"> </p>
+        <p style="margin: 0in 0in 10pt;">For more information on Profiles, Profile Keys, Profile Cards, and Pattern Cards see Chapter 2 of the <a href="http://sdn.sitecore.net/reference/sitecore%206/marketing%20operations%20cookbook.aspx">Marketing Operations Cookbook</a>.  </p>
+    - ID: "2b60d8c1-81db-45a7-b1cb-654cdda96ae3"
+      Hint: Icon
+      Value: |
+        <image mediaid="{535FFB78-D6DC-4B0E-924F-04BA450827D1}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/t-z/tag" src="~/media/535ffb78d6dc4b0e924f04ba450827d1.ashx" />
+    - ID: "82d725ed-6707-4532-86a6-5444e34332fd"
+      Hint: Contributors
+      Value: "{33879340-14B2-4BF2-93A2-FCC54C820BAD}"
+    - ID: "efc4a071-5574-404a-8206-fb502fca909b"
+      Hint: Prerequisite Articles
+      Value: 
+    - ID: "d7229dba-b952-4d82-a5a0-459c69618d45"
+      Hint: Menu Title
+      Value: Tag Content for each Profile
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Tag Content for Each Profile
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120223T173200
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\chc
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "59523047-959a-4634-a99c-c36b0b9d5a1a"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20131218T152258:635229769788307002"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}"
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />

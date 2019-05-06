@@ -1,0 +1,96 @@
+---
+ID: "2d766141-8d12-43b8-9f08-a67a1e32f923"
+Parent: "05b47c0f-7b67-47ad-9946-c02cba12a195"
+Template: "d9019e30-f954-46cc-aa70-3e928c40b5d0"
+Path: "/sitecore/content/Home/About-Launch-Sitecore/Optimizing-the-Experience/Creating-a-personalized-experience"
+DB: master
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Value: |
+    <tracking>
+      <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment" presets="digital marketer|100||">
+        <key name="Analytics" value="5" />
+        <key name="Campaigns and Targeting" value="5" />
+        <key name="Content Management" value="2" />
+        <key name="Technology" value="0" />
+      </profile>
+    </tracking>
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{1B6A3702-5694-4FC4-8366-989ECDCD7F1B}"
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "234542dc-c610-4ca8-baa6-2592a8bcb1d7"
+      Hint: Title
+      Value: Creating a personalized experience
+    - ID: "00e1d306-96bd-4b32-85b4-cd63c53cc6c1"
+      Hint: Abstract
+      Value: <p>This article describes setting up a simple personalization rule in the Page Editor user interface for Launch Sitecore.</p>
+    - ID: "5a5684bb-8b54-44f6-abcc-2bada05ada5d"
+      Hint: Body
+      Value: |
+        <p>Sitecore's Page Editor user interface provides inline personalization features focused on creating a custom experience for site visitors.  Through the Page Editor, a content owner can easily change a control's output based on any number of visitor conditions, for both authenticated and anonymous visitors.  These conditions range from GEOIP information to whether a visitor has achieved a defined goal for the site to "patterns" that watch for specific visitor trends.  With this simple to use interface, a marketing team can implement rules that show or hide content, drive different content into the control, or decide to show a different control in its place.  This article shows the steps to create a simple rule on the Launch Sitecore home page.</p>
+        <p><strong>Personalization using the Page Editor</strong></p>
+        <p>The Page Editor contains inline personalization functionality that allows you to specify the rules and conditions that must be met before personalized content is displayed.  It also lets you test this functionality before you publish it on your website.  Basically, the thought process involves identifying the conditions to watch for and the resulting actions to take if that condition exists.</p>
+        <p>For this example, we'll change the "marketing spot" messaging on the home page if the visitor has already visited the site.</p>
+        <p>To apply this personalization rule to a control using the Page Editor:</p>
+        <p>1. Login to the Page Editor and enable designing mode</p>
+        <p><img width="441" height="98" class="img-polaroid" alt="Design" src="~/media/88457AA9F56F468BADB7489889587A51.ashx" /></p>
+        <p>2. Hover over the control you want to add a rule to and click once. Select the <em>Personalize the Component </em>button:</p>
+        <p><img height="346" alt="marketing spot" width="416" src="~/media/0dbc62f8303f4ad5aa0721f6d5c8e4aa.ashx" /></p>
+        <p>3. Click <em>New Condition</em> and specify a name for this personalization rule. Select which content will show when this rule condition is met in the <em>Personalize Content </em>box. You could also choose to hide the component if the rule is met, or switch in another control/rendering by checking the <em>Enable personalization of component design </em>checkbox.</p>
+        <p><img width="563" height="449" class="img-polaroid" alt="New Component" src="~/media/9169FB6CF5C44BBDA775DA938DDFF350.ashx" /></p>
+        <p>4. Click the <em>Edit </em>button to open the <em>Rule Set Editor</em></p>
+        <p><img width="561" height="447" class="img-polaroid" alt="Rule set" src="~/media/AF9EB3F4E66A4635A6E2E678D347BC23.ashx" /></p>
+        <p>5. Here you can define a set of rules to trigger the change in content for this component. Click a rule to add it to the rule description. Once a rule is added to the description, click an underlined value to edit it.</p>
+        <p><img width="496" height="552" class="img-polaroid" alt="Create Rule" src="~/media/56F8E5CDFC684DD79D69083D9BD86A7D.ashx" /></p>
+        <p>6. Click ok and add more conditions if necessary. When you are finished, you are able to switch between the personalization conditions created by selecting the drop down on the control itself:</p>
+        <p><img width="278" height="265" class="img-polaroid" alt="Condition" src="~/media/2E5216785AAB4DC4A86693E5B77AEDCA.ashx" /></p>
+        <p ><br />
+        </p>
+    - ID: "2b60d8c1-81db-45a7-b1cb-654cdda96ae3"
+      Hint: Icon
+      Value: |
+        <image mediaid="{286FCB06-13E7-4A1D-977A-172BE183CB15}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/c-f/contrast" src="~/media/286fcb0613e74a1d977a172be183cb15.ashx" />
+    - ID: "82d725ed-6707-4532-86a6-5444e34332fd"
+      Hint: Contributors
+      Value: "{33879340-14B2-4BF2-93A2-FCC54C820BAD}"
+    - ID: "d7229dba-b952-4d82-a5a0-459c69618d45"
+      Hint: Menu Title
+      Value: Inline Personalization
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20111220T132100
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\chc
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a6a8c049-c55b-4da6-a36a-f036b1a155d6"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150804T201934Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "a14f1b0c-4384-49ec-8790-28a440f3670c"
+      Hint: __Semantics
+      Value: "{7F207663-6A32-4173-92DA-A15394B33776}|{E0EDA7F7-4313-4596-99C4-07185950E19E}"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}"
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />

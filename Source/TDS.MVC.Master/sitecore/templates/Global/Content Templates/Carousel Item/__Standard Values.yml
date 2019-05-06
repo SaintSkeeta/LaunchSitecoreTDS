@@ -1,0 +1,55 @@
+---
+ID: "968d93fa-1398-436c-87ab-ac332f196748"
+Parent: "5365f694-c2ab-41af-8a79-28fc6a35e384"
+Template: "5365f694-c2ab-41af-8a79-28fc6a35e384"
+Path: /sitecore/templates/Global/Content Templates/Carousel Item/__Standard Values
+DB: master
+SharedFields:
+- ID: "dd876753-9d4b-4b70-8197-41a0eb302087"
+  Hint: Image
+  Value: |
+    <image mediaid="{950CAEC9-DC22-402A-B975-A835B1271486}" />
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: multimedia/32x32/image.png
+- ID: "c9283d9e-7c29-4419-9c28-5a5c8ff53e84"
+  Hint: __Bucketable
+  Value: 1
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1fd34c98-05b1-4206-a48e-14d1e0c42f6f"
+      Hint: Title
+      Value: $name
+    - ID: "9b14a853-f008-4145-878a-dd5a2ed7ec36"
+      Hint: Caption
+      Value: <p>Enter your caption here...</p>
+    - ID: "48152ddc-82d7-4e74-9b1d-ec816d278ab4"
+      Hint: Link Text
+      Value: Learn More
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20130830T175152Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3da9324d-89f5-48e6-9a63-9c66df1adfdb"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150715T170619Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

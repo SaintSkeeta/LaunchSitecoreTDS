@@ -1,0 +1,61 @@
+---
+ID: "a812ea8b-61d3-4fcc-975d-5edac66d7637"
+Parent: "56cb9ef1-bbab-4dfa-8a0f-592845144ae6"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: /sitecore/media library/Launch Sitecore/Site Images/Icons/Color/document edit
+DB: master
+SharedFields:
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "00000000-0000-0000-0000-000000000000"
+  Value: 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
+- ID: "22eac599-f13b-4607-a89d-c091763a467d"
+  Hint: Width
+  Value: 32
+- ID: "de2ca9e4-c117-4c8a-a139-1ff4b199d15a"
+  Hint: Height
+  Value: 32
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: png
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/png
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 1867
+- ID: "cb09946f-3218-4823-87d2-d5007c199a96"
+  Hint: Dimensions
+  Value: 32 x 32
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "~/media/A812EA8B61D34FCC975D5EDAC66D7637.ashx?h=16&thn=1&w=16"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: Page Editor
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\mde
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120404T143303
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mde
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c8438205-d6f7-42b2-8a2d-0c882d92c9aa"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20120412T091532:634698189325109854"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\chc

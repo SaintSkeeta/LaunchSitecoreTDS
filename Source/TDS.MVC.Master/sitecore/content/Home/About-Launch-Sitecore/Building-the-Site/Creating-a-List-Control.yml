@@ -1,0 +1,102 @@
+---
+ID: "21e1eade-0e0b-418f-a020-981eb6cbdd8c"
+Parent: "ec38ebb3-f2e8-493d-b0e6-b8c68c9afb85"
+Template: "d9019e30-f954-46cc-aa70-3e928c40b5d0"
+Path: "/sitecore/content/Home/About-Launch-Sitecore/Building-the-Site/Creating-a-List-Control"
+DB: master
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Value: |
+    <tracking>
+      <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function" presets="devon the developer|100||">
+        <key name="Analytics" value="1" />
+        <key name="Copywriting" value="1" />
+        <key name="Personalization and Testing" value="2" />
+        <key name="Technology" value="5" />
+        <key name="Workflow and Publishing" value="3" />
+      </profile>
+    </tracking>
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{1B6A3702-5694-4FC4-8366-989ECDCD7F1B}"
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "234542dc-c610-4ca8-baa6-2592a8bcb1d7"
+      Hint: Title
+      Value: Creating a List Control
+    - ID: "00e1d306-96bd-4b32-85b4-cd63c53cc6c1"
+      Hint: Abstract
+      Value: <p>This article will describe how to create a list control that can be used on this site to display a set of articles or other content based on various criteria.</p>
+    - ID: "5a5684bb-8b54-44f6-abcc-2bada05ada5d"
+      Hint: Body
+      Value: |
+        <p>There are a few things to consider when creating a control to display a list of items. The code you see in the following example can be found in the list controls of this site. </p>
+        <h2>Define the items that will be in the list</h2>
+        <p>First, we need to determine which items will be displayed in the list.  These items can come from various data sources.</p>
+        <h4>Children of the Current Item</h4>
+        <p> The About Launch Sitecore page shows the article sections in a list that is generated from the child items.  The glossary page also shows an example of this technique.</p>
+        <h4>Children of a Selected Item</h4>
+        <p>The Datasource List control in this site can take a datasource item.  It will then display the children of the selected item.  A similar technique is used on the footer navigation and the sites drop down.</p>
+        <h4>Items From a Field on the Current Item</h4>
+        <p>On each article page, there is a list of related articles.  The background articles are shown from prerequisites articles field on each article.  The tags for each article shown in the footer also uses this approach.</p>
+        <h4>The Results of a Query</h4>
+        <p>The job function pages include lists of articles based on the results of a search query.  The carousel on the home page and the article list on each contributor also show this technique.</p>
+        <h2>Example from Launch Sitecore</h2>
+        <p>The Datasource List control from this site provides a good example to show the details of creating a list control.</p>
+        <p><img height="205" alt="Datasource List" width="220" src="~/media/b184b9f72365439aa2bfbb4907141999.ashx" /></p>
+        <h2>Creating the Markup</h2>
+        <p>The markup of this control is simply a repeater to show each item in the list.</p>
+        <pre class="prettyprint linenums"><ol class="linenums"><li>&lt;asp:Repeater ID="rptList" runat="server" OnItemDataBound="rptList_ItemDataBound"&gt;</li><li> &lt;HeaderTemplate&gt;</li><li>  &lt;div class="side-nav sidebar-block"&gt;</li><li>  &lt;h2&gt;&lt;asp:Literal ID="SectionTitle" runat="server" /&gt;&lt;/h2&gt;&lt;ul&gt;</li><li> &lt;/HeaderTemplate&gt;</li><li> &lt;ItemTemplate&gt;</li><li>  &lt;li&gt;&lt;asp:Hyperlink ID="LinkTo" runat="server"&gt;&lt;sc:FieldRenderer ID="Title" runat="server" FieldName="Title" /&gt;&lt;/asp:Hyperlink&gt;&lt;/li&gt;</li><li> &lt;/ItemTemplate&gt;</li><li> &lt;FooterTemplate&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/FooterTemplate&gt;</li><li>&lt;/asp:Repeater&gt;</li></ol></pre>
+        <h2>Supplying the Data</h2>
+        <p>With the markup complete, we need to bind the child items to the repeater.  We can also use the Item.Children property or one of the properties in our base class to retrieve the items.</p>
+        <pre class="prettyprint linenums"><ol class="linenums"><li>rptList.DataSource = items;</li><li>rptList.DataBind();</li></ol></pre>
+    - ID: "2b60d8c1-81db-45a7-b1cb-654cdda96ae3"
+      Hint: Icon
+      Value: |
+        <image mediaid="{71487535-8BA7-482D-88DF-B3D4BB0C0B04}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/g-o/list" src="~/media/714875358ba7482d88dfb3d4bb0c0b04.ashx" />
+    - ID: "82d725ed-6707-4532-86a6-5444e34332fd"
+      Hint: Contributors
+      Value: "{EF5350C8-21BF-43A3-BCEF-71F29D91AEF0}"
+    - ID: "efc4a071-5574-404a-8206-fb502fca909b"
+      Hint: Prerequisite Articles
+      Value: 
+    - ID: "d7229dba-b952-4d82-a5a0-459c69618d45"
+      Hint: Menu Title
+      Value: Creating a List Control
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20110713T082800
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c6d800c1-614a-4cf1-8416-c8e011ed67dc"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150716T152955Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "a14f1b0c-4384-49ec-8790-28a440f3670c"
+      Hint: __Semantics
+      Value: "{96D23E84-12CF-4A1C-B8BB-A33D7E7FA16D}|{E0EDA7F7-4313-4596-99C4-07185950E19E}|{459DBF7C-1A25-4EDF-86DA-32020B0AFC4B}"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}"
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />

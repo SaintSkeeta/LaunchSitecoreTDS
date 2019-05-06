@@ -1,0 +1,89 @@
+---
+ID: "2d58f800-f15a-4a42-8b01-9f095a7e5315"
+Parent: "ec38ebb3-f2e8-493d-b0e6-b8c68c9afb85"
+Template: "d9019e30-f954-46cc-aa70-3e928c40b5d0"
+Path: "/sitecore/content/Home/About-Launch-Sitecore/Building-the-Site/Information-Architecture"
+DB: master
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Value: |
+    <tracking>
+      <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function" presets="developer|50||content owner|50||">
+        <key name="Analytics" value="0.5" />
+        <key name="Copywriting" value="3.5" />
+        <key name="Personalization and Testing" value="2.5" />
+        <key name="Technology" value="2.5" />
+        <key name="Workflow and Publishing" value="1" />
+      </profile>
+      <profile id="{478859DC-EBE0-40A7-BD24-75D588FD3E09}" name="Information Type" presets="high level|100||">
+        <key name="Detailed" value="0" />
+        <key name="High Level" value="1" />
+      </profile>
+    </tracking>
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{1B6A3702-5694-4FC4-8366-989ECDCD7F1B}"
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "234542dc-c610-4ca8-baa6-2592a8bcb1d7"
+      Hint: Title
+      Value: Information Architecture
+    - ID: "00e1d306-96bd-4b32-85b4-cd63c53cc6c1"
+      Hint: Abstract
+      Value: <p>A description on why the Launch Sitecore information architecture is the way it is.</p>
+    - ID: "5a5684bb-8b54-44f6-abcc-2bada05ada5d"
+      Hint: Body
+      Value: |
+        <p>As Launch Sitecore was to be used as a reference site and would be expected to be the base solution for future projects, the project needed to have a flexible information architecture. Fortunately, Sitecore's data templating infrastructure was already flexible so implementation of the data structures was fairly simple. A set of base data templates were created to allow for broad changes, if needed in the future.</p>
+        <p><img alt="" src="~/media/d747a11de38244939512a97b5648ccce.ashx" class="img-polaroid" style="width: 257px; height: 491px;"></p>
+        <p>One design aspect that was contemplated in detail was whether or not to use the content hierarchy as the URL structure or to abstract the URL structure from the content hierarchy. One advantage of abstracting the URL structure from the content hierarchy is that content authors are free to place content items anywhere in the content tree and not be concerned with impacting navigation. The advantage of having the URL structure and the content hierarchy to be one of the same is the simplicity and usability for content authors. In the end, the design opted for simplicity with the idea that the Launch Sitecore solution can introduce URL abstraction in later releases.</p>
+        <p><img alt="" src="~/media/096ea1e0415946ad923eb06dd14e6439.ashx" class="img-polaroid" style="width: 439px; height: 505px;"></p>
+    - ID: "2b60d8c1-81db-45a7-b1cb-654cdda96ae3"
+      Hint: Icon
+      Value: |
+        <image mediaid="{C16AA8A8-7676-441B-9581-3A2B57818B69}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/p-s/paper-ripped" src="~/media/c16aa8a87676441b95813a2b57818b69.ashx" />
+    - ID: "82d725ed-6707-4532-86a6-5444e34332fd"
+      Hint: Contributors
+      Value: "{EF5350C8-21BF-43A3-BCEF-71F29D91AEF0}"
+    - ID: "d7229dba-b952-4d82-a5a0-459c69618d45"
+      Hint: Menu Title
+      Value: Information Architecture
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Information Architecture
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20111118T122000
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mic
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6495504f-c95b-4614-8e58-52a25862dbbd"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20140218T112727:635283196472760061"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "a14f1b0c-4384-49ec-8790-28a440f3670c"
+      Hint: __Semantics
+      Value: "{96D23E84-12CF-4A1C-B8BB-A33D7E7FA16D}|{E0EDA7F7-4313-4596-99C4-07185950E19E}"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}"
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />

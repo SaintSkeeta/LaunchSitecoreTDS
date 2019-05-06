@@ -1,0 +1,41 @@
+---
+ID: "0dcb55d3-e8ba-45fa-ada8-99579a8da436"
+Parent: "f662040d-5281-440a-8c99-48af986681c2"
+Template: "4a6a7e36-2481-438f-a9ba-0453ecc638fa"
+Path: /sitecore/system/Marketing Control Panel/Profiles/Information Type/Pattern Cards/High Level
+DB: master
+SharedFields:
+- ID: "fe732790-2ddb-4657-a882-c2fce1fbf0c9"
+  Hint: Name
+  Value: High Level
+- ID: "98535f26-6c9d-4fd7-a7e2-392c7cb82d65"
+  Hint: Image
+  Value: |
+    <image mediaid="{9AAFC603-4139-4C5A-9EC3-0588899C31D5}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/c-f/compass" src="~/media/9aafc60341394c5a9ec30588899c31d5.ashx" />
+- ID: "6da71ad3-5849-4482-9317-d21390e5a348"
+  Hint: Pattern
+  Value: |
+    <tracking>
+      <profile id="{478859DC-EBE0-40A7-BD24-75D588FD3E09}" name="Information Type">
+        <key name="Detailed" value="0" />
+        <key name="High Level" value="1" />
+      </profile>
+    </tracking>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131003T132012
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a208e7ea-d6e6-4b71-8aed-0d01ec7661e4"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20131113T051553:635199165532619185"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

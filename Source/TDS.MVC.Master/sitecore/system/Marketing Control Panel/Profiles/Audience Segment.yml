@@ -1,0 +1,31 @@
+---
+ID: "3cea9a30-cfa9-42f4-ba09-9100bfb1fac5"
+Parent: "12bd7e35-437b-449c-b931-23cfa12c03d8"
+Template: "8e0c1738-3591-4c60-8151-54abcc9807d1"
+Path: /sitecore/system/Marketing Control Panel/Profiles/Audience Segment
+DB: master
+SharedFields:
+- ID: "5d9fe5d7-4c45-4a98-a1f5-4796a6da428b"
+  Hint: Name
+  Value: Audience Segment
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131218T141342
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fddffab3-009b-4a66-ad76-525ce97c7d4a"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20131218T141342:635229728223500171"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

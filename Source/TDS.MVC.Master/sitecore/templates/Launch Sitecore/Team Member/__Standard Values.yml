@@ -1,0 +1,46 @@
+---
+ID: "bb6263bf-7741-484a-b8b1-6399bfd6f3ca"
+Parent: "97963d48-bd06-46ca-8279-cd2ba3c7aa36"
+Template: "97963d48-bd06-46ca-8279-cd2ba3c7aa36"
+Path: /sitecore/templates/Launch Sitecore/Team Member/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{DF82BBBD-B499-4C99-AD03-77A8C2D45B17}"><p uid="{3AEE14FC-2304-4296-87E2-BB558FDE88F6}" key="content-primary" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Template Overrides/Contributor/contributor-content-primary" /><p uid="{299D9F0B-EED7-402D-84E6-8351699A8A54}" key="content-secondary" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Template Overrides/Contributor/contributor-content-secondary" /><p uid="{FDC31D55-9D72-4DC3-96D7-22CE081490AE}" key="content-tertiary" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Template Overrides/Contributor/contributor-content-tertiary" /><r id="{DF3C8739-E710-4C73-BC23-F282E8068B5D}" ph="main-content" uid="{19B71B9E-FDA5-48C9-94E2-1C4090D47ADC}" /><r id="{2034F876-578D-4051-A593-E6B564C61E50}" ph="/main-content/content-primary" uid="{B8E2C5E1-92C4-46A4-A175-7B64807ECC42}" /><r ds="" id="{BE74B3AB-BA94-4636-A359-CBE7A3AE20A1}" par="" ph="/main-content/content-secondary" uid="{377674D0-615F-4B8A-A8F5-AEE38E82BF36}" /><r ds="" id="{694C5E59-562E-463C-B308-CB91399E3CAB}" par="" ph="/main-content/content-tertiary" uid="{C3F40D17-DC2B-4098-85E4-AF4CC3920C64}" /><r ds="" id="{BFA807C4-4494-49CC-9ABC-5A04414767F2}" par="" ph="/main-content/content-tertiary" uid="{905C28E5-19AF-4B09-9BB0-C5695071E4E4}" /></d></r>
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "234542dc-c610-4ca8-baa6-2592a8bcb1d7"
+      Hint: Title
+      Value: $name
+    - ID: "d2e90283-29f2-4eaf-895e-e8de8daeec69"
+      Hint: Job Title
+      Value: 
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\mic
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20110824T065111
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mic
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2f62cc1c-ca7d-4c14-95f8-d72da354f752"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150713T215136Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

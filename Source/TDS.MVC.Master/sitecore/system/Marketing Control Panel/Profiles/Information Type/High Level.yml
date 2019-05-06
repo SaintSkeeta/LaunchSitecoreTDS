@@ -1,0 +1,31 @@
+---
+ID: "bf343f0c-1b91-4c48-984a-4691416a8242"
+Parent: "478859dc-ebe0-40a7-bd24-75d588fd3e09"
+Template: "44ab5107-3c73-42f0-a427-bec549f944b9"
+Path: /sitecore/system/Marketing Control Panel/Profiles/Information Type/High Level
+DB: master
+SharedFields:
+- ID: "2e1a9aab-f7c1-49ee-b032-28b98d3688d6"
+  Hint: Name
+  Value: High Level
+- ID: "12e2c64a-5f08-4948-86c8-55ae06afeef8"
+  Hint: MaxValue
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131003T132130
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c2e973bf-bde9-4ada-bd26-d9af1a4155da"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20131003T132145:635164033051688717"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

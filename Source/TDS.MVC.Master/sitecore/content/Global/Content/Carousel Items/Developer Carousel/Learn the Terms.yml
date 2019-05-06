@@ -1,0 +1,90 @@
+---
+ID: "1246dcb8-1464-4213-b2cd-54b9020ce695"
+Parent: "0720fc50-5617-4a67-9794-9b56ba3038bd"
+Template: "5365f694-c2ab-41af-8a79-28fc6a35e384"
+Path: /sitecore/content/Global/Content/Carousel Items/Developer Carousel/Learn the Terms
+DB: master
+SharedFields:
+- ID: "336e27e0-7f9c-437e-b179-653f427520cc"
+  Hint: Link Item
+  Value: "{2D75C97D-5981-4482-8631-208B2DEB1F54}"
+- ID: "dd876753-9d4b-4b70-8197-41a0eb302087"
+  Hint: Image
+  Value: |
+    <image mediaid="{554F82C3-5C10-4C52-B6CF-99D44D05D661}" />
+- ID: "b1f1502e-0b97-4152-92ed-6828fa25b947"
+  Hint: Use Dark Text
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 250
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1fd34c98-05b1-4206-a48e-14d1e0c42f6f"
+      Hint: Title
+      Value: Learn the Terms
+    - ID: "9b14a853-f008-4145-878a-dd5a2ed7ec36"
+      Hint: Caption
+      Value: <p>Learn the Sitecore terminology using our glossary.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150219T202413Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7e0693e6-8717-4843-874a-c916e9f96aac"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150715T190036Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}"
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+- Language: ja
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1fd34c98-05b1-4206-a48e-14d1e0c42f6f"
+      Hint: Title
+      Value: 用語を学ぶ
+    - ID: "9b14a853-f008-4145-878a-dd5a2ed7ec36"
+      Hint: Caption
+      Value: <p>我々 の用語集を使用して Sitecore 用語について説明します。</p>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150219T202413Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9d68cc83-a294-4d6c-bb85-029b7d2f4845"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150715T055130Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}"
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />

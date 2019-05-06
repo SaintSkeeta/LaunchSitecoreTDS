@@ -1,0 +1,108 @@
+---
+ID: "5ea97f1d-0685-4637-9d3d-d4f289ba7950"
+Parent: "ec38ebb3-f2e8-493d-b0e6-b8c68c9afb85"
+Template: "d9019e30-f954-46cc-aa70-3e928c40b5d0"
+Path: "/sitecore/content/Home/About-Launch-Sitecore/Building-the-Site/What-is-Presentation"
+DB: master
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Value: |
+    <tracking>
+      <profile id="{478859DC-EBE0-40A7-BD24-75D588FD3E09}" name="Information Type" presets="high level|100||">
+        <key name="Detailed" value="0" />
+        <key name="High Level" value="1" />
+      </profile>
+      <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment" presets="content owner|50||developer|50||">
+        <key name="Analytics" value="1" />
+        <key name="Campaigns and Targeting" value="2" />
+        <key name="Content Management" value="4.5" />
+        <key name="Technology" value="2.5" />
+      </profile>
+    </tracking>
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{1B6A3702-5694-4FC4-8366-989ECDCD7F1B}"
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "234542dc-c610-4ca8-baa6-2592a8bcb1d7"
+      Hint: Title
+      Value: "What is Presentation?"
+    - ID: "00e1d306-96bd-4b32-85b4-cd63c53cc6c1"
+      Hint: Abstract
+      Value: <p>With a better understanding of content, presentation is much easier to explain. It is simply taking the content and showing in a meaningful way. It doesn't add to the content, but instead simply presents it.</p>
+    - ID: "5a5684bb-8b54-44f6-abcc-2bada05ada5d"
+      Hint: Body
+      Value: |
+        <p>Sitecore is built 100% on the .NET framework so anything you can do it .NET you can do in Sitecore. This includes custom .NET security providers or .NET data providers. You can also reuse ASP.NET controls from your existing solution or other code. </p>
+        <p>Sitecore handles the content, workflow, languages, device views, URL building, personalization, etc. - but you have full control of the presentation layer.</p>
+        <p>To understand how presentation works, a few definitions will help.</p>
+        <ul>
+            <li>Device: A method within Sitecore for categorizing HTTP requests to the site (e.g. a web, print or mobile view) and displaying the correct layout and components for that device. </li>
+            <li>Layout: Defines the overall appearance of a page (written as a .aspx file) </li>
+            <li>Component: A generic term for a display component using either .Net or XSLT to display content.
+            <ul>
+                <li>Sublayout: Defines the appearance of an area of a page (written as an .ascx web control) </li>
+                <li>MVC Rendering:  We support View and Controller Renderings in MVC solutions.</li>
+                <li>XSLT Renderings: Transforms content to presentation using XSL Templates (.xslt file) </li>
+            </ul>
+            </li>
+            <li>Placeholder: A named location on a layout, sublayout, or view rendering. Placeholders are used to associate controls to a given location for a given item. This allows controls to be bound dynamically. </li>
+        </ul>
+        <h3>Dynamic Binding of Components</h3>
+        <p>When loading a URL, Sitecore will determine the item associated with that URL, look at the presentation details (layouts and components placed into placeholders) to present the correct content with the presentation applied. The purpose of placeholders is twofold:</p>
+        <ul>
+            <li>Minimize code duplication (i.e. you don't need to make a 2 column layout and a 3 column layout - you can just make one layout and drop a 2 or 3 column sublayout into that). </li>
+            <li>Give page authors and editors the flexibility to add or move components between various placeholders. In this case, I used my discretion to use a 2 column sublayout and move the right-hand components (Related Articles, etc.) to the left in order to give me room to show larger images.</li>
+        </ul>
+    - ID: "2b60d8c1-81db-45a7-b1cb-654cdda96ae3"
+      Hint: Icon
+      Value: |
+        <image mediaid="{F4ED2EED-CA67-4161-9F80-22FB4D1162D7}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/a-b/browser-2" src="~/media/f4ed2eedca6741619f8022fb4d1162d7.ashx" />
+    - ID: "82d725ed-6707-4532-86a6-5444e34332fd"
+      Hint: Contributors
+      Value: "{EF5350C8-21BF-43A3-BCEF-71F29D91AEF0}"
+    - ID: "efc4a071-5574-404a-8206-fb502fca909b"
+      Hint: Prerequisite Articles
+      Value: "{07DAF0C2-1992-4C0A-BB7F-92A700E97FF4}|{C4E0EF5C-1DDF-4684-8CAD-EED50971237F}"
+    - ID: "d7229dba-b952-4d82-a5a0-459c69618d45"
+      Hint: Menu Title
+      Value: "What is Presentation?"
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: What is Presentation
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20111026T114900
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\chc
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4f2a7b1c-6bb0-4d55-a374-7c22c7c16ecb"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20131218T214217:635229997377066135"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "a14f1b0c-4384-49ec-8790-28a440f3670c"
+      Hint: __Semantics
+      Value: 
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}"
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />

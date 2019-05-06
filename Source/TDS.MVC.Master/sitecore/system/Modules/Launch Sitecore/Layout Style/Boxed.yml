@@ -1,0 +1,32 @@
+---
+ID: "e66444a9-e7a3-42c3-8a04-be0303f93e87"
+Parent: "9444ea02-5b4e-41c3-a38b-b7f02c4a26a5"
+Template: "aaba5c50-b64c-4f51-a776-4bf6e7d9244f"
+Path: /sitecore/system/Modules/Launch Sitecore/Layout Style/Boxed
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20130627T110257
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "169e3670-8cd9-4276-8756-df5bae42b6d3"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20130627T110257:635079277771330182"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

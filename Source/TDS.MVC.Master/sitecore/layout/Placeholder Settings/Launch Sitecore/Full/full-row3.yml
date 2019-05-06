@@ -1,0 +1,31 @@
+---
+ID: "76f69848-865a-4944-a8b5-8d9e94456e58"
+Parent: "6b255e06-f0a0-4d46-896a-f42307abe887"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: "/sitecore/layout/Placeholder Settings/Launch Sitecore/Full/full-row3"
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "full-row3"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Value: "{22A8BB23-0725-4297-9BFC-97702C64F69F}|{48A4CC58-05B6-47E1-9EF2-175D33229331}|{791C2BD1-2D88-447F-9733-C655810A9E60}|{7EF53D69-9CF1-41A6-AA24-6A0E430FB677}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20130620T163531
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "545cf868-c58b-4b4e-bb14-f79367fa005c"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20140128T142824:635265161049138047"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

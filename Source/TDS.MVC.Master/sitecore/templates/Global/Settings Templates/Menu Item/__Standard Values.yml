@@ -1,0 +1,51 @@
+---
+ID: "4f36b373-a64a-4cf8-b71c-f230a95b766f"
+Parent: "8c888e27-49af-43df-a028-629a2e06d0a9"
+Template: "8c888e27-49af-43df-a028-629a2e06d0a9"
+Path: /sitecore/templates/Global/Settings Templates/Menu Item/__Standard Values
+DB: master
+SharedFields:
+- ID: "7e003143-26f2-4a28-b70a-08548286f6ba"
+  Hint: Show Item In Menu
+  Value: 1
+- ID: "d48af62c-9c56-4e4c-ba29-94c3dabad82e"
+  Hint: Show Children In Menu
+  Value: 1
+- ID: "fd6dac05-fef8-4581-a329-6cea310e839b"
+  Hint: Show Item In Secondary Menu
+  Value: 1
+- ID: "ce1beb41-17e4-4934-9ae9-0c3c8d2b72fa"
+  Hint: Show In Search Results
+  Value: 1
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "d7229dba-b952-4d82-a5a0-459c69618d45"
+      Hint: Menu Title
+      Value: $name
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20111213T093200
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ae2658c5-b20b-45b6-8ea7-c8a060f62814"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20131007T192823:635167709038144843"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
