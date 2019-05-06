@@ -1,0 +1,107 @@
+----item----
+version: 1
+id: {968D93FA-1398-436C-87AB-AC332F196748}
+database: master
+path: /sitecore/templates/Global/Content Templates/Carousel Item/__Standard Values
+parent: {5365F694-C2AB-41AF-8A79-28FC6A35E384}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {5365F694-C2AB-41AF-8A79-28FC6A35E384}
+templatekey: Carousel Item
+
+----field----
+field: {DD876753-9D4B-4B70-8197-41A0EB302087}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{950CAEC9-DC22-402A-B975-A835B1271486}" />
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 26
+
+multimedia/32x32/image.png
+----field----
+field: {C9283D9E-7C29-4419-9C28-5A5C8FF53E84}
+name: __Bucketable
+key: __bucketable
+content-length: 1
+
+1
+----field----
+field: {CA9B9F52-4FB0-4F87-A79F-24DEA62CDA65}
+name: __Default workflow
+key: __default workflow
+content-length: 38
+
+{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}
+----version----
+language: en
+version: 1
+revision: 3da9324d-89f5-48e6-9a63-9c66df1adfdb
+
+----field----
+field: {1FD34C98-05B1-4206-A48E-14D1E0C42F6F}
+name: Title
+key: title
+content-length: 5
+
+$name
+----field----
+field: {9B14A853-F008-4145-878A-DD5A2ED7EC36}
+name: Caption
+key: caption
+content-length: 33
+
+<p>Enter your caption here...</p>
+----field----
+field: {48152DDC-82D7-4E74-9B1D-EC816D278AB4}
+name: Link Text
+key: link text
+content-length: 10
+
+Learn More
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20130830T175152Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3da9324d-89f5-48e6-9a63-9c66df1adfdb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150715T170619Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

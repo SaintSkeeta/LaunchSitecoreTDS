@@ -1,0 +1,107 @@
+----item----
+version: 1
+id: {C7E1C014-93C9-42D5-B4C8-A307AC30E929}
+database: master
+path: /sitecore/content/Developing-in-Sitecore
+parent: {0DE95AE4-41AB-4D01-9EB0-67441B7C2450}
+name: Developing-in-Sitecore
+master: {00000000-0000-0000-0000-000000000000}
+template: {7139A8B6-68D9-471F-96E4-B87ED703C185}
+templatekey: Microsite Home
+
+----field----
+field: {7E003143-26F2-4A28-B70A-08548286F6BA}
+name: Show Item In Menu
+key: show item in menu
+content-length: 0
+
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 83a46364-9b85-423b-b518-887f940f55a8
+
+----field----
+field: {AAEAC7F2-E33E-4B34-9023-AB6F59D3A427}
+name: Title
+key: title
+content-length: 22
+
+Developing in Sitecore
+----field----
+field: {764646D1-347E-419D-8B86-67457C73D905}
+name: Body
+key: body
+content-length: 258
+
+<p>If you are interested in developing with Sitecore, we have articles and examples to get you started in the right direction.  Start with the articles to get an understanding then dig into the code to see how it all works together as a unified platform.</p>
+----field----
+field: {918A64F3-3CE1-46FE-AFE0-7BDEAE9F6299}
+name: Call to Action Link
+key: call to action link
+content-length: 38
+
+{D87DEB97-AE7F-4720-AFEA-1E4CA81236EB}
+----field----
+field: {71DFEE6E-6AC9-4F83-9A15-748D42C4646E}
+name: Site Name
+key: site name
+content-length: 22
+
+Developing in Sitecore
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131115T221541
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+83a46364-9b85-423b-b518-887f940f55a8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150716T154111Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

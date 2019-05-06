@@ -1,0 +1,79 @@
+----item----
+version: 1
+id: {6903989B-AC51-4BB8-9BDE-66F036D01C76}
+database: master
+path: /sitecore/templates/Global/Settings Templates/Query/__Standard Values
+parent: {54B73064-57C5-4B33-B17A-7B8A407122EA}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {54B73064-57C5-4B33-B17A-7B8A407122EA}
+templatekey: Query
+
+----field----
+field: {0EF83F9E-7381-482E-B31F-722763FE1982}
+name: Query
+key: query
+content-length: 8
+
++text:*;
+----field----
+field: {D0DD4432-E4A4-422A-8F88-A9F1CF7A95A0}
+name: Items
+key: items
+content-length: 2
+
+10
+----version----
+language: en
+version: 1
+revision: aa6417bd-5f3c-4a5f-9172-7a6160361d04
+
+----field----
+field: {5D7E80C6-B718-4B68-99B0-2A9E0524E6F7}
+name: Title
+key: title
+content-length: 5
+
+$name
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20131001T164617
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+aa6417bd-5f3c-4a5f-9172-7a6160361d04
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131001T164654:635162428140407459
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

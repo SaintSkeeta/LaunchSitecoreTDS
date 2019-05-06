@@ -124,2048 +124,2093 @@
     <CodeGenTemplate Include="Code Generation Templates\StringExtensions.tt" />
   </ItemGroup>
   <ItemGroup>
-    <SitecoreItem Include="sitecore\content.yml">
+    <SitecoreItem Include="sitecore\content.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Developing-in-Sitecore.yml">
+    <SitecoreItem Include="sitecore\content\Developing-in-Sitecore.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Developing-in-Sitecore\Configuration.yml">
+    <SitecoreItem Include="sitecore\content\Developing-in-Sitecore\Configuration.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Developing-in-Sitecore\Step-1.yml">
+    <SitecoreItem Include="sitecore\content\Developing-in-Sitecore\Step-1.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Developing-in-Sitecore\Step-2.yml">
+    <SitecoreItem Include="sitecore\content\Developing-in-Sitecore\Step-2.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global.yml">
+    <SitecoreItem Include="sitecore\content\Global.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Default Carousel.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Default Carousel.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Default Carousel\Meet the Team.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Default Carousel\Meet the Team.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Default Carousel\Read the Articles.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Default Carousel\Read the Articles.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Default Carousel\Visit Details.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Default Carousel\Visit Details.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Developer Carousel.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Developer Carousel.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Developer Carousel\Building a Site.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Developer Carousel\Building a Site.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Developer Carousel\Learn the Terms.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Developer Carousel\Learn the Terms.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Developer Carousel\Visit Details.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Developer Carousel\Visit Details.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Marketer Carousel.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Marketer Carousel.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Marketer Carousel\Digital Marketers.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Marketer Carousel\Digital Marketers.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Marketer Carousel\Optimizing the Site.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Marketer Carousel\Optimizing the Site.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Marketer Carousel\Visit Details.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Carousel Items\Marketer Carousel\Visit Details.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Promo Spots.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Promo Spots.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Promo Spots\About Launch Sitecore.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Promo Spots\About Launch Sitecore.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Promo Spots\Favorite Articles.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Promo Spots\Favorite Articles.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Promo Spots\Getting Started with Launch Sitecore.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Promo Spots\Getting Started with Launch Sitecore.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Promo Spots\Thank You.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Promo Spots\Thank You.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Promo Spots\What is Your Job Function.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Promo Spots\What is Your Job Function.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Quotations.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Quotations.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Quotations\Sitecore is Awesome.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Quotations\Sitecore is Awesome.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Quotations\TDS Makes a Developers Life Easier.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Quotations\TDS Makes a Developers Life Easier.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Text Widgets.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Text Widgets.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Text Widgets\About Launch Sitecore.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Text Widgets\About Launch Sitecore.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Content\Text Widgets\Getting Started as a Developer.yml">
+    <SitecoreItem Include="sitecore\content\Global\Content\Text Widgets\Getting Started as a Developer.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Settings.yml">
+    <SitecoreItem Include="sitecore\content\Global\Settings.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Settings\External Sites.yml">
+    <SitecoreItem Include="sitecore\content\Global\Settings\External Sites.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Settings\External Sites\Documentation.yml">
+    <SitecoreItem Include="sitecore\content\Global\Settings\External Sites\Documentation.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Settings\External Sites\Sitecore.yml">
+    <SitecoreItem Include="sitecore\content\Global\Settings\External Sites\Sitecore.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Settings\Queries.yml">
+    <SitecoreItem Include="sitecore\content\Global\Settings\Queries.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Settings\Queries\All Content Owner Articles.yml">
+    <SitecoreItem Include="sitecore\content\Global\Settings\Queries\All Content Owner Articles.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Settings\Queries\All Developer Articles.yml">
+    <SitecoreItem Include="sitecore\content\Global\Settings\Queries\All Developer Articles.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Settings\Queries\All Marketing Articles.yml">
+    <SitecoreItem Include="sitecore\content\Global\Settings\Queries\All Marketing Articles.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Global\Settings\Queries\All Network Admin Articles.yml">
+    <SitecoreItem Include="sitecore\content\Global\Settings\Queries\All Network Admin Articles.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home.yml">
+    <SitecoreItem Include="sitecore\content\Home.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Building-the-Site.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Building-the-Site.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Building-the-Site\Accessing-Current-Visitor-Information.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Building-the-Site\Accessing-Current-Visitor-Information.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Building-the-Site\Binding-Content-and-Presentation.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Building-the-Site\Binding-Content-and-Presentation.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Building-the-Site\Create-a-custom-sorting-routine-for-content.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Building-the-Site\Create-a-custom-sorting-routine-for-content.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Building-the-Site\Create-a-Custom-Validator.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Building-the-Site\Create-a-Custom-Validator.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Building-the-Site\Creating-a-List-Control.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Building-the-Site\Creating-a-List-Control.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Building-the-Site\Creating-the-Site-Menu.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Building-the-Site\Creating-the-Site-Menu.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Building-the-Site\Information-Architecture.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Building-the-Site\Information-Architecture.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Building-the-Site\What-is-Presentation.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Building-the-Site\What-is-Presentation.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Getting-Started.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Getting-Started.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Getting-Started\The-Launch-Sitecore-Site.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Getting-Started\The-Launch-Sitecore-Site.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Getting-Started\The-Sitecore-UIs.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Getting-Started\The-Sitecore-UIs.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Optimizing-the-Experience.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Optimizing-the-Experience.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Optimizing-the-Experience\Create-a-Goal.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Optimizing-the-Experience\Create-a-Goal.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Optimizing-the-Experience\Create-an-AB-Test.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Optimizing-the-Experience\Create-an-AB-Test.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Optimizing-the-Experience\Creating-a-personalized-experience.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Optimizing-the-Experience\Creating-a-personalized-experience.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Optimizing-the-Experience\Tag-Content-for-Each-Profile.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Optimizing-the-Experience\Tag-Content-for-Each-Profile.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Our-Strategy.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Our-Strategy.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Our-Strategy\Basic-Presentation-Explanation.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Our-Strategy\Basic-Presentation-Explanation.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Our-Strategy\Building-a-large-multinational-multilingual-site.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Our-Strategy\Building-a-large-multinational-multilingual-site.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Our-Strategy\Enable-multiple-languages.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Our-Strategy\Enable-multiple-languages.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Our-Strategy\Minimizing-Downtime-During-Deployment.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Our-Strategy\Minimizing-Downtime-During-Deployment.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Our-Strategy\Security-Authentication-and-Authorization.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Our-Strategy\Security-Authentication-and-Authorization.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Our-Strategy\What-is-Content.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Our-Strategy\What-is-Content.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Our-Strategy\Workflow.yml">
+    <SitecoreItem Include="sitecore\content\Home\About-Launch-Sitecore\Our-Strategy\Workflow.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Audience.yml">
+    <SitecoreItem Include="sitecore\content\Home\Audience.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Audience\Content-Owners.yml">
+    <SitecoreItem Include="sitecore\content\Home\Audience\Content-Owners.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Audience\Developers.yml">
+    <SitecoreItem Include="sitecore\content\Home\Audience\Developers.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Audience\Digital-Marketers.yml">
+    <SitecoreItem Include="sitecore\content\Home\Audience\Digital-Marketers.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Audience\Network-Architects.yml">
+    <SitecoreItem Include="sitecore\content\Home\Audience\Network-Architects.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Configuration.yml">
+    <SitecoreItem Include="sitecore\content\Home\Configuration.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Error.yml">
+    <SitecoreItem Include="sitecore\content\Home\Error.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Glossary.yml">
+    <SitecoreItem Include="sitecore\content\Home\Glossary.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Glossary\Content-Editor.yml">
+    <SitecoreItem Include="sitecore\content\Home\Glossary\Content-Editor.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Glossary\Content-Tree.yml">
+    <SitecoreItem Include="sitecore\content\Home\Glossary\Content-Tree.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Glossary\Device.yml">
+    <SitecoreItem Include="sitecore\content\Home\Glossary\Device.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Glossary\Insert-Options.yml">
+    <SitecoreItem Include="sitecore\content\Home\Glossary\Insert-Options.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Glossary\Item.yml">
+    <SitecoreItem Include="sitecore\content\Home\Glossary\Item.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Glossary\Layout.yml">
+    <SitecoreItem Include="sitecore\content\Home\Glossary\Layout.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Glossary\Media-Library.yml">
+    <SitecoreItem Include="sitecore\content\Home\Glossary\Media-Library.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Glossary\Page-Editor.yml">
+    <SitecoreItem Include="sitecore\content\Home\Glossary\Page-Editor.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Glossary\Placeholder.yml">
+    <SitecoreItem Include="sitecore\content\Home\Glossary\Placeholder.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Glossary\Presentation-Details.yml">
+    <SitecoreItem Include="sitecore\content\Home\Glossary\Presentation-Details.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Glossary\Rendering.yml">
+    <SitecoreItem Include="sitecore\content\Home\Glossary\Rendering.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Glossary\Sitecore-Desktop.yml">
+    <SitecoreItem Include="sitecore\content\Home\Glossary\Sitecore-Desktop.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Glossary\Standard-Values.yml">
+    <SitecoreItem Include="sitecore\content\Home\Glossary\Standard-Values.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Glossary\Sublayout.yml">
+    <SitecoreItem Include="sitecore\content\Home\Glossary\Sublayout.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Glossary\Template-Manager.yml">
+    <SitecoreItem Include="sitecore\content\Home\Glossary\Template-Manager.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Glossary\Workbox.yml">
+    <SitecoreItem Include="sitecore\content\Home\Glossary\Workbox.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Login.yml">
+    <SitecoreItem Include="sitecore\content\Home\Login.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Register.yml">
+    <SitecoreItem Include="sitecore\content\Home\Register.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Search.yml">
+    <SitecoreItem Include="sitecore\content\Home\Search.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Team.yml">
+    <SitecoreItem Include="sitecore\content\Home\Team.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Team\Brad-Christie.yml">
+    <SitecoreItem Include="sitecore\content\Home\Team\Brad-Christie.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Team\Brandon-Royal.yml">
+    <SitecoreItem Include="sitecore\content\Home\Team\Brandon-Royal.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Team\Casey-Piket.yml">
+    <SitecoreItem Include="sitecore\content\Home\Team\Casey-Piket.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Team\Chris-Castle.yml">
+    <SitecoreItem Include="sitecore\content\Home\Team\Chris-Castle.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Team\Justin-West.yml">
+    <SitecoreItem Include="sitecore\content\Home\Team\Justin-West.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Team\Kevin-DiTroia.yml">
+    <SitecoreItem Include="sitecore\content\Home\Team\Kevin-DiTroia.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Team\Matt-Goodman.yml">
+    <SitecoreItem Include="sitecore\content\Home\Team\Matt-Goodman.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Team\Mike-Casey.yml">
+    <SitecoreItem Include="sitecore\content\Home\Team\Mike-Casey.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Team\Patrick-Wallace.yml">
+    <SitecoreItem Include="sitecore\content\Home\Team\Patrick-Wallace.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Home\Team\Tim-Gardner.yml">
+    <SitecoreItem Include="sitecore\content\Home\Team\Tim-Gardner.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout.yml">
+    <SitecoreItem Include="sitecore\layout.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Devices.yml">
+    <SitecoreItem Include="sitecore\layout\Devices.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Devices\Default.yml">
+    <SitecoreItem Include="sitecore\layout\Devices\Default.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Layouts.yml">
+    <SitecoreItem Include="sitecore\layout\Layouts.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Layouts\LaunchSitecore.yml">
+    <SitecoreItem Include="sitecore\layout\Layouts\LaunchSitecore.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Layouts\LaunchSitecore\Main.yml">
+    <SitecoreItem Include="sitecore\layout\Layouts\LaunchSitecore\Main.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Models.yml">
+    <SitecoreItem Include="sitecore\layout\Models.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Models\Error.yml">
+    <SitecoreItem Include="sitecore\layout\Models\Error.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Models\MenuItemList.yml">
+    <SitecoreItem Include="sitecore\layout\Models\MenuItemList.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Content.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Content.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Content\content-primary.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Content\content-primary.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Content\content-secondary.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Content\content-secondary.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Content\content-tertiary.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Content\content-tertiary.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Content\main-content.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Content\main-content.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row1.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row1.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row2a.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row2a.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row2b.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row2b.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row2c.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row2c.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row2d.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row2d.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row3.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row3.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row3a.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row3a.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row3b.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row3b.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row3c.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row3c.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row3d.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row3d.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row4.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Full\full-row4.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Microsite.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Microsite.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Microsite\microsite-content-tertiary.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Microsite\microsite-content-tertiary.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Contributor.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Contributor.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Contributor\contributor-content-primary.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Contributor\contributor-content-primary.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Contributor\contributor-content-secondary.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Contributor\contributor-content-secondary.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Contributor\contributor-content-tertiary.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Contributor\contributor-content-tertiary.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Home.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Home.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Home\home-main-content.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Home\home-main-content.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Team Section.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Team Section.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Team Section\team-section-content-primary.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Team Section\team-section-content-primary.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Term.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Term.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Term\term-content-primary.yml">
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Launch Sitecore\Template Overrides\Term\term-content-primary.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Analytics.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Analytics.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Analytics\Visit Details.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Analytics\Visit Details.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Carousel.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Carousel.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Carousel\Carousel.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Carousel\Carousel.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Error.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Error.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Error\Error.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Error\Error.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Lists.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Lists.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Lists\Articles By Contributor.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Lists\Articles By Contributor.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Lists\Icon and Title List for Query.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Lists\Icon and Title List for Query.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Lists\Icon and Title List.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Lists\Icon and Title List.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Lists\Link List.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Lists\Link List.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Lists\Queried List.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Lists\Queried List.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Lists\Related Articles.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Lists\Related Articles.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Lists\Tags.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Lists\Tags.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Lists\Team List.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Lists\Team List.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Navigation.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Navigation.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Navigation\Footer Navigation.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Navigation\Footer Navigation.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Navigation\Main Navigation.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Navigation\Main Navigation.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Navigation\Navigation Bar.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Navigation\Navigation Bar.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Navigation\Secondary Navigation.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Navigation\Secondary Navigation.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Navigation\Tertiary Navigation.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Navigation\Tertiary Navigation.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Content.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Content.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Content\Both Sidebars.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Content\Both Sidebars.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Content\Left Sidebar.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Content\Left Sidebar.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Content\No Sidebars.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Content\No Sidebars.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Content\Right Sidebar.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Content\Right Sidebar.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Home.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Home.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Home\One Four One.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Home\One Four One.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Home\One Three One.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Home\One Three One.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Home\One Three Three.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Home\One Three Three.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Home\One Two Four One.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Home\One Two Four One.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Home\One Two Four.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Page Structure\Home\One Two Four.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Search.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Search.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Search\Search Box.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Search\Search Box.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Search\Search Results.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Search\Search Results.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Secure.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Secure.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Secure\Login.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Secure\Login.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Secure\Register.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Secure\Register.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Abstract Box.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Abstract Box.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Abstract Spot.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Abstract Spot.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Article Title and Body.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Article Title and Body.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Article Title Image and Body.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Article Title Image and Body.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Biography.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Biography.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Featured Quotation.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Featured Quotation.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Jumbotron.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Jumbotron.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Promo with Image.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Promo with Image.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Promo with No Image.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Promo with No Image.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Promo with Thumbnail.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Promo with Thumbnail.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Term Details.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Term Details.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Text Widget.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Text Widget.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Title and Body.yml">
+    <SitecoreItem Include="sitecore\layout\Renderings\LaunchSitecore\Single Item\Title and Body.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system.yml">
+    <SitecoreItem Include="sitecore\system.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit\Campaign.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit\Campaign.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit\Current Campaign Empty.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit\Current Campaign Empty.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit\GeoIp City.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit\GeoIp City.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit\GeoIp Location.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit\GeoIp Location.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit\GeoIp Postal Code.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit\GeoIp Postal Code.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit\Goals.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit\Goals.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit\Pages.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit\Pages.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit\Pending Lookup.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit\Pending Lookup.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit\Visit Details.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Current Visit\Visit Details.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Articles.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Articles.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Background Articles.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Background Articles.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Biography.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Biography.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Definition.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Definition.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\DMS Session Info Title.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\DMS Session Info Title.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Favorites.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Favorites.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Featured Articles.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Featured Articles.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Further Reading.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Further Reading.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Image.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Image.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Login Heading.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Login Heading.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Register Heading.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Register Heading.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Usage.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Headings\Usage.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Labels.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Labels.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Labels\Confirm Password.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Labels\Confirm Password.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Labels\Email.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Labels\Email.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Labels\Location.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Labels\Location.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Labels\Login Button.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Labels\Login Button.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Labels\Name.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Labels\Name.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Labels\Password.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Labels\Password.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Labels\Persist Login.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Labels\Persist Login.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Labels\Register Button.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Labels\Register Button.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links\Add to Favorites.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links\Add to Favorites.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links\Learn More.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links\Learn More.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links\Login.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links\Login.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links\Logout.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links\Logout.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links\My Favorites.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links\My Favorites.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links\Read More.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links\Read More.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links\Register.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links\Register.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links\Remove from Favorites.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links\Remove from Favorites.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links\Sites.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Links\Sites.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\Already registered.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\Already registered.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\DMS Session Info Instructions.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\DMS Session Info Instructions.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\DMS Session Info No Pattern Match Name.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\DMS Session Info No Pattern Match Name.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\DMS Session Info No Pattern Match.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\DMS Session Info No Pattern Match.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\DMS Session Info No Profile Key Values.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\DMS Session Info No Profile Key Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\Email is Not Valid.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\Email is Not Valid.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\Invalid username or password.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\Invalid username or password.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\No Favorites.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\No Favorites.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\Passwords do not match.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\Passwords do not match.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\Required.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\Required.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\Unable to login.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\Unable to login.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\Unable to register.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Messages\Unable to register.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Search.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Search.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Search\Refine Results.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Search\Refine Results.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Search\Search Results for.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Search\Search Results for.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Search\Search Results.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Search\Search Results.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Search\Tags.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Search\Tags.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Search\Type.yml">
+    <SitecoreItem Include="sitecore\system\Dictionary\Launch Sitecore\Search\Type.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Campaigns.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Campaigns.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Campaigns\Example Campaign.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Campaigns\Example Campaign.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Experience Explorer.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Experience Explorer.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Experience Explorer\Presets.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Experience Explorer\Presets.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Experience Explorer\Presets\Developer.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Experience Explorer\Presets\Developer.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Experience Explorer\Presets\Marketer.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Experience Explorer\Presets\Marketer.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Launch Sitecore.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Launch Sitecore.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Launch Sitecore\Add a Favorite.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Launch Sitecore\Add a Favorite.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Launch Sitecore\Visited a Job Function Page.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Launch Sitecore\Visited a Job Function Page.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Launch Sitecore\Visited Team Page.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Launch Sitecore\Visited Team Page.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Launch Sitecore\Visited the About Page.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Launch Sitecore\Visited the About Page.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Login.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Login.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Register.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Goals\Register.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Analytics.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Analytics.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Campaigns and Targeting.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Campaigns and Targeting.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Content Management.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Content Management.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Pattern Cards.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Pattern Cards.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Pattern Cards\Content Owner.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Pattern Cards\Content Owner.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Pattern Cards\Developer.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Pattern Cards\Developer.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Pattern Cards\Digital Marketer.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Pattern Cards\Digital Marketer.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Pattern Cards\Network Architect.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Pattern Cards\Network Architect.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Profile Cards.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Profile Cards.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Profile Cards\Content Owner.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Profile Cards\Content Owner.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Profile Cards\Developer.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Profile Cards\Developer.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Profile Cards\Digital Marketer.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Profile Cards\Digital Marketer.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Profile Cards\Network Architect.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Profile Cards\Network Architect.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Technology.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Audience Segment\Technology.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Detailed.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Detailed.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\High Level.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\High Level.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Pattern Cards.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Pattern Cards.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Pattern Cards\Detailed.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Pattern Cards\Detailed.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Pattern Cards\High Level.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Pattern Cards\High Level.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Profile Cards.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Profile Cards.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Profile Cards\Detailed.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Profile Cards\Detailed.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Profile Cards\High Level.yml">
+    <SitecoreItem Include="sitecore\system\Marketing Control Panel\Profiles\Information Type\Profile Cards\High Level.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules.yml">
+    <SitecoreItem Include="sitecore\system\Modules.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore.yml">
+    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Color.yml">
+    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Color.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Color\Black.yml">
+    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Color\Black.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Color\Blue Black.yml">
+    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Color\Blue Black.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Color\Blue.yml">
+    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Color\Blue.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Color\Gray.yml">
+    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Color\Gray.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Color\Orange.yml">
+    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Color\Orange.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Color\Purple.yml">
+    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Color\Purple.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Color\Red.yml">
+    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Color\Red.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Color\Teal.yml">
+    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Color\Teal.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Layout Style.yml">
+    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Layout Style.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Layout Style\Boxed.yml">
+    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Layout Style\Boxed.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Layout Style\Full Width.yml">
+    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Layout Style\Full Width.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Page Editor Alerts.yml">
+    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Page Editor Alerts.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Page Editor Alerts\datasource is null.yml">
+    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Page Editor Alerts\datasource is null.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Page Editor Alerts\item is not tagged.yml">
+    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Page Editor Alerts\item is not tagged.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Page Editor Alerts\list is empty.yml">
+    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Page Editor Alerts\list is empty.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Page Editor Alerts\no version in current language.yml">
+    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Page Editor Alerts\no version in current language.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Page Editor Alerts\visit details are not available in page editor.yml">
+    <SitecoreItem Include="sitecore\system\Modules\Launch Sitecore\Page Editor Alerts\visit details are not available in page editor.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings.yml">
+    <SitecoreItem Include="sitecore\system\Settings.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\17.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\17.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\17\00.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\17\00.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\17\00\08.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\17\00\08.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\17\00\08\Beginner.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\17\00\08\Beginner.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\20.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\20.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\20\12.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\20\12.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\20\12\20.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\20\12\20.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\20\12\20\Advanced.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\20\12\20\Advanced.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\20\12\20\DMS.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\20\12\20\DMS.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\20\12\21.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\20\12\21.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\20\12\21\How-to.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\08\20\12\21\How-to.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\11.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\11.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\11\12.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\11\12.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\11\12\14.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\11\12\14.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\11\12\14\16.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\11\12\14\16.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\11\12\14\16\CMS.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Buckets\TagRepository\2013\11\12\14\16\CMS.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Rules.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Launch Sitecore.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Launch Sitecore.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Launch Sitecore\Enroll In Automation State.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Launch Sitecore\Enroll In Automation State.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Launch Sitecore\Tags.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Launch Sitecore\Tags.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Launch Sitecore\Tags\Default.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Launch Sitecore\Tags\Default.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Launch Sitecore\Visibility.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Rules\Definitions\Elements\Launch Sitecore\Visibility.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Validation Rules.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Validation Rules.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Validation Rules\Field Rules.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Validation Rules\Field Rules.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Validation Rules\Field Rules\Launch Sitecore.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Validation Rules\Field Rules\Launch Sitecore.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Validation Rules\Field Rules\Launch Sitecore\Must Include P Tags.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Validation Rules\Field Rules\Launch Sitecore\Must Include P Tags.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Validation Rules\Field Types.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Validation Rules\Field Types.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Validation Rules\Field Types\Rich Text.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Validation Rules\Field Types\Rich Text.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Validation Rules\Global Rules.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Validation Rules\Global Rules.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Workflows.yml">
+    <SitecoreItem Include="sitecore\system\Workflows.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow.yml">
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Approved.yml">
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Approved.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Approved\Auto Publish.yml">
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Approved\Auto Publish.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval.yml">
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve with Test.yml">
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve with Test.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve with Test\Launch Create Test Dialog.yml">
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve with Test\Launch Create Test Dialog.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve with Test\Validation Action.yml">
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve with Test\Validation Action.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve without Test.yml">
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve without Test.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve without Test\Remove Tests.yml">
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve without Test\Remove Tests.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve without Test\Validation Action.yml">
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Approve without Test\Validation Action.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Reject.yml">
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Awaiting Approval\Reject.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Draft.yml">
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Draft.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Draft\Submit.yml">
+    <SitecoreItem Include="sitecore\system\Workflows\Regular Workflow\Draft\Submit.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates.yml">
+    <SitecoreItem Include="sitecore\templates.item">
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Branches.yml">
+    <SitecoreItem Include="sitecore\templates\Branches.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Branches\Launch Sitecore.yml">
+    <SitecoreItem Include="sitecore\templates\Branches\Launch Sitecore.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Branches\Launch Sitecore\Carousel Set.yml">
+    <SitecoreItem Include="sitecore\templates\Branches\Launch Sitecore\Carousel Set.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Branches\Launch Sitecore\Carousel Set\%2524name.yml">
+    <SitecoreItem Include="sitecore\templates\Branches\Launch Sitecore\Carousel Set\%2524name.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Branches\Launch Sitecore\Carousel Set\%2524name\Sample Slide.yml">
+    <SitecoreItem Include="sitecore\templates\Branches\Launch Sitecore\Carousel Set\%2524name\Sample Slide.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Branches\Launch Sitecore\Microsite.yml">
+    <SitecoreItem Include="sitecore\templates\Branches\Launch Sitecore\Microsite.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Branches\Launch Sitecore\Microsite\%2524name.yml">
+    <SitecoreItem Include="sitecore\templates\Branches\Launch Sitecore\Microsite\%2524name.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Branches\Launch Sitecore\Microsite\%2524name\Configuration.yml">
+    <SitecoreItem Include="sitecore\templates\Branches\Launch Sitecore\Microsite\%2524name\Configuration.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global.yml">
+    <SitecoreItem Include="sitecore\templates\Global.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Item.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Item.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Item\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Item\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Item\Carousel Item.yml" />
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Item\Carousel Item\Caption.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Item\Carousel Item.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Item\Carousel Item\Image.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Item\Carousel Item\Caption.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Item\Carousel Item\Link Item.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Item\Carousel Item\Image.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Item\Carousel Item\Link Text.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Item\Carousel Item\Link Item.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Item\Carousel Item\Title.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Item\Carousel Item\Link Text.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Item\Carousel Item\Use Dark Text.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Item\Carousel Item\Title.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Set.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Item\Carousel Item\Use Dark Text.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Set\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Set.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Promo Spot.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Carousel Set\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Promo Spot\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Promo Spot.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Promo Spot\General.yml" />
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Promo Spot\General\Image.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Promo Spot\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Promo Spot\Promo Spot.yml" />
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Promo Spot\Promo Spot\Link Text.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Promo Spot\General.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Promo Spot\Promo Spot\Link To.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Promo Spot\General\Image.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Promo Spot\Promo Spot\Text.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Promo Spot\Promo Spot.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Promo Spot\Promo Spot\Title.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Promo Spot\Promo Spot\Link Text.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Quotation.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Promo Spot\Promo Spot\Link To.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Quotation\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Promo Spot\Promo Spot\Text.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Quotation\Quotation Details.yml" />
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Quotation\Quotation Details\Author.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Promo Spot\Promo Spot\Title.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Quotation\Quotation Details\Quotation.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Quotation.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Text Widget.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Quotation\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Text Widget\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Quotation\Quotation Details.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Text Widget\Text Widget.yml" />
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Text Widget\Text Widget\Text.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Quotation\Quotation Details\Author.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Text Widget\Text Widget\Title.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Quotation\Quotation Details\Quotation.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Text Widget.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Color.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Text Widget\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Color\Settings.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Text Widget\Text Widget.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Color\Settings\Color Value.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Text Widget\Text Widget\Text.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Content Templates\Text Widget\Text Widget\Title.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Colors.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Colors\Background Color.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Color.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Colors\Copyright Background Color.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Color\Settings.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Colors\Footer Color.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Color\Settings\Color Value.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Colors\Header Color.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Colors\Menu Color.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Colors.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Colors\Site Color.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Colors\Background Color.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Copyright.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Colors\Copyright Background Color.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Copyright\Copyright.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Colors\Footer Color.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Meta.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Colors\Header Color.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Meta\Page Title for Home and Site Sections.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Colors\Menu Color.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Meta\Page Title for Lower Pages.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Colors\Site Color.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Meta\Title Comments.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Copyright.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Presentation.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Copyright\Copyright.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Presentation\Layout Style.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Meta.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Presentation\Site Logo.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Meta\Page Title for Home and Site Sections.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Profiling.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Meta\Page Title for Lower Pages.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Profiling\Visible Profiles.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Meta\Title Comments.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\External Site.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Presentation.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\External Site\External Site.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Presentation\Layout Style.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\External Site\External Site\Site Link.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Presentation\Site Logo.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Layout Style.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Profiling.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Configuration\Profiling\Visible Profiles.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\External Site.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item\Menu Item.yml" />
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item\Menu Item\Menu Title.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\External Site\External Site.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item\Menu Item\Show Children In Menu.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\External Site\External Site\Site Link.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item\Menu Item\Show Item In Footer Menu.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Layout Style.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item\Menu Item\Show Item In Menu.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item\Menu Item\Show Item In Secondary Menu.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item\Site Search.yml" />
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item\Site Search\Show In Search Results.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item\Menu Item.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Type.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item\Menu Item\Menu Title.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Page Editor Message.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item\Menu Item\Show Children In Menu.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Page Editor Message\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item\Menu Item\Show Item In Footer Menu.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Page Editor Message\Data.yml" />
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Page Editor Message\Data\Alert.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item\Menu Item\Show Item In Menu.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Page Editor Message\Data\Key.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item\Menu Item\Show Item In Secondary Menu.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Query.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item\Site Search.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Query\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Item\Site Search\Show In Search Results.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Query\Query.yml" />
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Query\Query\Comment.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Menu Type.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Query\Query\Items.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Page Editor Message.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Query\Query\Query.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Page Editor Message\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Query\Query\Title.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Page Editor Message\Data.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Site Root.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Page Editor Message\Data\Alert.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Site Root\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Page Editor Message\Data\Key.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Site Root\Site Root.yml" />
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Site Root\Site Root\Show in Sites Menu.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Query.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Site Root\Site Root\Site Name.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Query\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore.yml">
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Query\Query.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Query\Query\Comment.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Query\Query\Items.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Query\Query\Query.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Query\Query\Title.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Site Root.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Site Root\__Standard Values.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Site Root\Site Root.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Site Root\Site Root\Show in Sites Menu.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Global\Settings Templates\Site Root\Site Root\Site Name.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <CodeGenTemplate>GlassItem.tt</CodeGenTemplate>
       <CodeGenNamespace>LaunchSitecore</CodeGenNamespace>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Article Group.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Article Group.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Article Group\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Article Group\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Article Group\Article Group.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Article Group\Article Group.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Article.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Article.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Article\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Article\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Article\Article.yml" />
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Article\Article\Contributors.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Article\Article.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Article\Article\Prerequisite Articles.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Article\Article\Contributors.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Audience Segment.yml">
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Audience Segment\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Article\Article\Prerequisite Articles.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Error Page.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Audience Segment.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Error Page\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Audience Segment\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\General Page.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Error Page.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\General Page\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Error Page\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Home.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\General Page.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Home\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\General Page\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Home\Home.yml" />
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Home\Home\Body.yml">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Home\Home\Call to Action Link.yml">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Home\Home\Call to Action Text.yml">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Home\Home\Subtitle.yml">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Home\Home\Title.yml">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Microsite Home.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Home.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Microsite Home\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Home\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Microsite Subpage.yml">
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Microsite Subpage\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Home\Home.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Security Page.yml">
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Security Page\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Home\Home\Body.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Site Sections.yml">
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Site Sections\Articles Section.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Home\Home\Call to Action Link.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Site Sections\Articles Section\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Home\Home\Call to Action Text.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Site Sections\Audience Section.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Home\Home\Subtitle.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Site Sections\Audience Section\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Home\Home\Title.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Site Sections\Glossary Section.yml">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Site Sections\Glossary Section\__Standard Values.yml">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Site Sections\Team Section.yml">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Site Sections\Team Section\__Standard Values.yml">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Team Member.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Microsite Home.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Team Member\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Microsite Home\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Team Member\Main.yml" />
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Team Member\Main\Job Title.yml">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Team Member\Team Member Details.yml" />
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Team Member\Team Member Details\Quote.yml">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Term.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Microsite Subpage.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Term\__Standard Values.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Microsite Subpage\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Term\Term.yml" />
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Term\Term\Definition.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Security Page.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Security Page\__Standard Values.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Term\Term\Title.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Site Sections.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Site Sections\Articles Section.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Term\Term\Usage.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Site Sections\Articles Section\__Standard Values.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Site Sections\Audience Section.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Site Sections\Audience Section\__Standard Values.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Site Sections\Glossary Section.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Site Sections\Glossary Section\__Standard Values.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Site Sections\Team Section.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Site Sections\Team Section\__Standard Values.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Team Member.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Team Member\__Standard Values.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Team Member\Main.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Team Member\Main\Job Title.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Team Member\Team Member Details.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Team Member\Team Member Details\Quote.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Term.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Term\__Standard Values.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Term\Term.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Term\Term\Definition.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Term\Term\Title.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\Term\Term\Usage.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>

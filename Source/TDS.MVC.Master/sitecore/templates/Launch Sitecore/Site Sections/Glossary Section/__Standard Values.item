@@ -1,0 +1,58 @@
+----item----
+version: 1
+id: {A8C41EE8-D936-4BC4-B942-A28633295ED0}
+database: master
+path: /sitecore/templates/Launch Sitecore/Site Sections/Glossary Section/__Standard Values
+parent: {E35C9D40-8D28-4944-AB30-18E2789E6BA7}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {E35C9D40-8D28-4944-AB30-18E2789E6BA7}
+templatekey: Glossary Section
+
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{C6DD3CEF-22AF-4468-B3B0-82ABFCDE0F24}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 791
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{DF82BBBD-B499-4C99-AD03-77A8C2D45B17}"><r id="{DF3C8739-E710-4C73-BC23-F282E8068B5D}" ph="main-content" uid="{19B71B9E-FDA5-48C9-94E2-1C4090D47ADC}" /><r id="{0472C9AA-0C01-4BCA-960A-EB9F4C3A904F}" ph="/main-content/content-primary" uid="{B8E2C5E1-92C4-46A4-A175-7B64807ECC42}" /><r id="{764D79DB-86BC-4058-89B5-B42BB41D2290}" ph="/main-content/content-primary" uid="{E89DF332-F548-4FF1-A6E8-FD207BB995A7}" /><r id="{BE74B3AB-BA94-4636-A359-CBE7A3AE20A1}" ph="/main-content/content-secondary" uid="{377674D0-615F-4B8A-A8F5-AEE38E82BF36}" /><r ds="" id="{BFA807C4-4494-49CC-9ABC-5A04414767F2}" par="" ph="/main-content/content-tertiary" uid="{19C91C16-F65B-46A3-B38A-001CD5E45A3F}" /></d></r>
+----version----
+language: en
+version: 1
+revision: f80e82a2-cacb-4c01-8a24-944bbe841ea9
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20111214T234400
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f80e82a2-cacb-4c01-8a24-944bbe841ea9
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150713T220011Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

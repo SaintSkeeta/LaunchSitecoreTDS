@@ -83,226 +83,226 @@
     </AssemblyAttributes>
   </ItemGroup>
   <ItemGroup>
-    <SitecoreItem Include="sitecore\content.yml">
+    <SitecoreItem Include="sitecore\content.item">
       <Icon>/temp/IconCache/People/16x16/cubes_blue.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications.yml">
+    <SitecoreItem Include="sitecore\content\Applications.item">
       <Icon>/temp/IconCache/Software/16x16/application.png</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\Content Editor.yml">
+    <SitecoreItem Include="sitecore\content\Applications\Content Editor.item">
       <Icon>/temp/IconCache/People/16x16/cubes_blue.png</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Gutters.yml">
+    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Gutters.item">
       <Icon>/~/icon/Applications/16x16/folder.png.aspx</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Gutters\No Version In Current Language.yml">
+    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Gutters\No Version In Current Language.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons.yml">
+    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons.item">
       <Icon>/temp/IconCache/Control/16x16/menu_b.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Chunks.yml">
+    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Chunks.item">
       <Icon>/~/icon/Applications/16x16/folder.png.aspx</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Chunks\Launch Sitecore.yml">
+    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Chunks\Launch Sitecore.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Chunks\Launch Sitecore\UpdateItemNames.yml">
+    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Chunks\Launch Sitecore\UpdateItemNames.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Strips.yml">
+    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Strips.item">
       <Icon>/~/icon/Applications/16x16/folder.png.aspx</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Strips\Developer.yml">
+    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Strips\Developer.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Strips\Developer\Launch Sitecoore.yml">
+    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Strips\Developer\Launch Sitecoore.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\Security.yml">
+    <SitecoreItem Include="sitecore\content\Applications\Security.item">
       <Icon>/~/icon/applications/16x16/folder.png.aspx</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\Security\User Manager.yml">
+    <SitecoreItem Include="sitecore\content\Applications\Security\User Manager.item">
       <Icon>/~/icon/People/32x32/users1.png.aspx</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\Security\User Manager\Ribbon.yml">
+    <SitecoreItem Include="sitecore\content\Applications\Security\User Manager\Ribbon.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\Security\User Manager\Ribbon\Home.yml">
+    <SitecoreItem Include="sitecore\content\Applications\Security\User Manager\Ribbon\Home.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\Security\User Manager\Ribbon\Home\Launch Sitecore.yml">
+    <SitecoreItem Include="sitecore\content\Applications\Security\User Manager\Ribbon\Home\Launch Sitecore.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\Security\User Manager\Ribbon\Home\Launch Sitecore\Create Users.yml">
+    <SitecoreItem Include="sitecore\content\Applications\Security\User Manager\Ribbon\Home\Launch Sitecore\Create Users.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit.yml">
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit.item">
       <Icon>/temp/IconCache/Network/16x16/Environment.png</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Custom Experience Buttons.yml">
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Custom Experience Buttons.item">
       <Icon>/~/icon/Applications/16x16/folder.png.aspx</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Custom Experience Buttons\Call to Action Link To.yml">
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Custom Experience Buttons\Call to Action Link To.item">
       <Icon>/~/icon/Network/32x32/link.png.aspx</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Custom Experience Buttons\Link To.yml">
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Custom Experience Buttons\Link To.item">
       <Icon>/~/icon/Network/32x32/link.png.aspx</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Custom Experience Buttons\Prerequisite Articles.yml">
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Custom Experience Buttons\Prerequisite Articles.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Custom Experience Buttons\Tags.yml">
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Custom Experience Buttons\Tags.item">
       <Icon>/temp/IconCache/Applications/32x32/bookmark.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Edit Frame Buttons.yml">
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Edit Frame Buttons.item">
       <Icon>/~/icon/Applications/16x16/folder.png.aspx</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Edit Frame Buttons\Carousel Items.yml">
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Edit Frame Buttons\Carousel Items.item">
       <Icon>/~/icon/Applications/16x16/folder.png.aspx</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Edit Frame Buttons\Carousel Items\Edit.yml">
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Edit Frame Buttons\Carousel Items\Edit.item">
       <Icon>/temp/IconCache/Business/32x32/pin_blue.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons.yml">
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons.item">
       <Icon>/~/icon/Applications/16x16/folder.png.aspx</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit.yml">
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit\Page Editor.yml">
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit\Page Editor.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit\Page Editor\Additional Fields.yml">
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit\Page Editor\Additional Fields.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit\Page Editor\Additional Fields\Common.yml">
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit\Page Editor\Additional Fields\Common.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit\Page Editor\Additional Fields\Menu.yml">
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit\Page Editor\Additional Fields\Menu.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit\Page Editor\Site Settings.yml">
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit\Page Editor\Site Settings.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit\Page Editor\Site Settings\Configuration.yml">
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit\Page Editor\Site Settings\Configuration.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit\Page Editor\Site Settings\Presentation.yml">
+    <SitecoreItem Include="sitecore\content\Applications\WebEdit\Ribbons\WebEdit\Page Editor\Site Settings\Presentation.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system.yml">
+    <SitecoreItem Include="sitecore\system.item">
       <Icon>/temp/IconCache/People/16x16/workstation1.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings.yml">
+    <SitecoreItem Include="sitecore\system\Settings.item">
       <Icon>/temp/IconCache/Applications/16x16/preferences.png</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Security.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Security.item">
       <Icon>/~/icon/Applications/16x16/folder.png.aspx</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Security\Profiles.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Security\Profiles.item">
       <Icon>/~/icon/Applications/16x16/folder.png.aspx</Icon>
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Settings\Security\Profiles\LS User.yml">
+    <SitecoreItem Include="sitecore\system\Settings\Security\Profiles\LS User.item">
       <Icon>/temp/IconCache/People/16x16/user1.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates.yml">
+    <SitecoreItem Include="sitecore\templates.item">
       <Icon>/temp/IconCache/Software/16x16/component_yellow.png</Icon>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore.item">
       <Icon>/~/icon/Applications/16x16/folder.png.aspx</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\LS User.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\LS User.item">
       <Icon>/temp/IconCache/People/16x16/user1.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\LS User\Data.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\LS User\Data.item">
       <Icon>/~/icon/People/32x32/user1.png.aspx</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Launch Sitecore\LS User\Data\Favorites.yml">
+    <SitecoreItem Include="sitecore\templates\Launch Sitecore\LS User\Data\Favorites.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
