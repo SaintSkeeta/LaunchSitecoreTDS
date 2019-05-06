@@ -1,0 +1,64 @@
+---
+ID: "2661a42d-c32a-447c-88d7-18e03bd24314"
+Parent: "8dabe12d-4d1b-40b5-bf62-7d2424253a15"
+Template: "97963d48-bd06-46ca-8279-cd2ba3c7aa36"
+Path: "/sitecore/content/Home/Team/Brad-Christie"
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "234542dc-c610-4ca8-baa6-2592a8bcb1d7"
+      Hint: Title
+      Value: Brad Christie
+    - ID: "00e1d306-96bd-4b32-85b4-cd63c53cc6c1"
+      Hint: Abstract
+      Value: <p>Developer with a passion for pushing the proverbial envelope.</p>
+    - ID: "5a5684bb-8b54-44f6-abcc-2bada05ada5d"
+      Hint: Body
+      Value: <p>Hello, world.</p>
+    - ID: "f9b6ffef-1dc9-4c0e-a815-c62822e1cbdb"
+      Hint: Quote
+      Value: Works as written, sometimes as intended.
+    - ID: "2b60d8c1-81db-45a7-b1cb-654cdda96ae3"
+      Hint: Icon
+      Value: |
+        <image mediaid="{8053DA33-BE4E-43F5-BA5D-6428818DC630}" />
+    - ID: "f9f7a706-72ce-4733-b930-9ff1d7b3efab"
+      Hint: Image
+      Value: |
+        <image mediaid="{B62C3F55-0726-43CC-B1EA-DD3A99830B78}" />
+    - ID: "d2e90283-29f2-4eaf-895e-e8de8daeec69"
+      Hint: Job Title
+      Value: Web Application Developer
+    - ID: "d7229dba-b952-4d82-a5a0-459c69618d45"
+      Hint: Menu Title
+      Value: Brad Christie
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150130T190746Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d439dd99-b8c0-4585-a525-adf8aac7ee73"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150716T025634Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{A84A3674-4317-49B7-847F-B3AF8506D04B}"

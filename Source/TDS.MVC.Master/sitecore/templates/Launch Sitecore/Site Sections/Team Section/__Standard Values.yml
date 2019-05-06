@@ -1,0 +1,32 @@
+---
+ID: "ebb04da5-0e16-43d7-98f8-9ffd14386137"
+Parent: "6e005e97-5435-4806-98e5-ca454b8218d1"
+Template: "6e005e97-5435-4806-98e5-ca454b8218d1"
+Path: /sitecore/templates/Launch Sitecore/Site Sections/Team Section/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{97963D48-BD06-46CA-8279-CD2BA3C7AA36}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{DF82BBBD-B499-4C99-AD03-77A8C2D45B17}"><p uid="{23267A94-24A5-469B-A139-BC93DF17086B}" key="content-primary" md="/sitecore/layout/Placeholder Settings/Launch Sitecore/Template Overrides/Team Section/team-section-content-primary" /><r id="{DF3C8739-E710-4C73-BC23-F282E8068B5D}" ph="main-content" uid="{19B71B9E-FDA5-48C9-94E2-1C4090D47ADC}" /><r id="{0472C9AA-0C01-4BCA-960A-EB9F4C3A904F}" ph="/main-content/content-primary" uid="{B8E2C5E1-92C4-46A4-A175-7B64807ECC42}" /><r ds="" id="{846A0557-7A9D-4627-A316-9EBA6F9907AE}" par="" ph="/main-content/content-primary" uid="{1F3B7D22-612C-4B43-A256-EB3550FB0CF8}" /><r id="{BE74B3AB-BA94-4636-A359-CBE7A3AE20A1}" ph="/main-content/content-secondary" uid="{377674D0-615F-4B8A-A8F5-AEE38E82BF36}" /><r ds="" id="{BFA807C4-4494-49CC-9ABC-5A04414767F2}" par="" ph="/main-content/content-tertiary" uid="{19C91C16-F65B-46A3-B38A-001CD5E45A3F}" /></d></r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20111214T234400
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6c876e4a-e992-48fa-8750-c2e5ed470363"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150713T215446Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,52 @@
+---
+ID: "c7e1c014-93c9-42d5-b4c8-a307ac30e929"
+Parent: "0de95ae4-41ab-4d01-9eb0-67441b7c2450"
+Template: "7139a8b6-68d9-471f-96e4-b87ed703c185"
+Path: "/sitecore/content/Developing-in-Sitecore"
+DB: master
+SharedFields:
+- ID: "7e003143-26f2-4a28-b70a-08548286f6ba"
+  Hint: Show Item In Menu
+  Value: 
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: 
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "aaeac7f2-e33e-4b34-9023-ab6f59d3a427"
+      Hint: Title
+      Value: Developing in Sitecore
+    - ID: "764646d1-347e-419d-8b86-67457c73d905"
+      Hint: Body
+      Value: <p>If you are interested in developing with Sitecore, we have articles and examples to get you started in the right direction.  Start with the articles to get an understanding then dig into the code to see how it all works together as a unified platform.</p>
+    - ID: "918a64f3-3ce1-46fe-afe0-7bdeae9f6299"
+      Hint: Call to Action Link
+      Value: "{D87DEB97-AE7F-4720-AFEA-1E4CA81236EB}"
+    - ID: "71dfee6e-6ac9-4f83-9a15-748d42c4646e"
+      Hint: Site Name
+      Value: Developing in Sitecore
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131115T221541
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "83a46364-9b85-423b-b518-887f940f55a8"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150716T154111Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}"
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />

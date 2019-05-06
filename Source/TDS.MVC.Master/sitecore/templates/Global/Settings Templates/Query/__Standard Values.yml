@@ -1,0 +1,42 @@
+---
+ID: "6903989b-ac51-4bb8-9bde-66f036d01c76"
+Parent: "54b73064-57c5-4b33-b17a-7b8a407122ea"
+Template: "54b73064-57c5-4b33-b17a-7b8a407122ea"
+Path: /sitecore/templates/Global/Settings Templates/Query/__Standard Values
+DB: master
+SharedFields:
+- ID: "0ef83f9e-7381-482e-b31f-722763fe1982"
+  Hint: Query
+  Value: "+text:*;"
+- ID: "d0dd4432-e4a4-422a-8f88-a9f1cf7a95a0"
+  Hint: Items
+  Value: 10
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "5d7e80c6-b718-4b68-99b0-2a9e0524e6f7"
+      Hint: Title
+      Value: $name
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131001T164617
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "aa6417bd-5f3c-4a5f-9172-7a6160361d04"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20131001T164654:635162428140407459"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

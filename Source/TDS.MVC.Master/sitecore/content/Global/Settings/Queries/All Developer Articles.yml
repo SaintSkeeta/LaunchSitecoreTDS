@@ -1,0 +1,34 @@
+---
+ID: "c362fea0-38b7-40c4-a624-dc8e562105fd"
+Parent: "cffdb67d-05a4-4b8e-8b11-2c8625f6c705"
+Template: "54b73064-57c5-4b33-b17a-7b8a407122ea"
+Path: /sitecore/content/Global/Settings/Queries/All Developer Articles
+DB: master
+SharedFields:
+- ID: "0ef83f9e-7381-482e-b31f-722763fe1982"
+  Hint: Query
+  Value: "+custom:profile_card|69e585d6bad74fb9811c86ea2232a105;+template:{d9019e30-f954-46cc-aa70-3e928c40b5d0};"
+- ID: "d0dd4432-e4a4-422a-8f88-a9f1cf7a95a0"
+  Hint: Items
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "5d7e80c6-b718-4b68-99b0-2a9e0524e6f7"
+      Hint: Title
+      Value: All Developer Articles
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131007T215549
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7e9dfa78-fcb9-4914-86f6-d954e5dc131d"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20131218T163701:635229814213439124"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,89 @@
+---
+ID: "b8fdadb4-a041-427d-bb0e-70c15aca4379"
+Parent: "2d75c97d-5981-4482-8631-208b2deb1f54"
+Template: "c6dd3cef-22af-4468-b3b0-82abfcde0f24"
+Path: /sitecore/content/Home/Glossary/Item
+DB: master
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Value: |
+    <tracking>
+      <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function" presets="content owner|50||developer|50||">
+        <key name="Analytics" value="0.5" />
+        <key name="Copywriting" value="3.5" />
+        <key name="Personalization and Testing" value="2.5" />
+        <key name="Technology" value="2.5" />
+        <key name="Workflow and Publishing" value="1" />
+      </profile>
+      <profile id="{478859DC-EBE0-40A7-BD24-75D588FD3E09}" name="Information Type" presets="high level|100||">
+        <key name="Detailed" value="0" />
+        <key name="High Level" value="1" />
+      </profile>
+    </tracking>
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{C6DD3CEF-22AF-4468-B3B0-82ABFCDE0F24}"
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "fbade872-82bd-45ad-a2ec-dadc723249da"
+      Hint: Title
+      Value: Item
+    - ID: "b636170c-2681-469a-a642-a6549c12d1e6"
+      Hint: Definition
+      Value: <p>An addressable unit of content made up of fields that contain information.</p>
+    - ID: "aa7ce48d-746c-42c7-bd64-9a51f7f10b7c"
+      Hint: Usage
+      Value: |
+        <p>An item in Sitecore exists in the repository and has a number of characteristics:</p>
+        <ul>
+         <li>Made up of fields </li>
+         <li>Based on a <a href="%7E/link.aspx?_id=E3C0C693CB774EE29B22F121CA7E4B99&amp;_z=z">template</a></li>
+         <li>Referencable by path, or by ID </li>
+         <li>Has versions</li>
+         <li>Can (optionally) have content auto-populated from either <a href="%7E/link.aspx?_id=2BF103381CFF4F9F890EE9F3078473F9&amp;_z=z">Standard Values</a> or Clones</li>
+         <li>Can (optionally) have <a href="%7E/link.aspx?_id=C30D7330C99349BF9BCCB5FF1235DD16&amp;_z=z">presentation details</a> applied to it</li>
+        </ul>
+    - ID: "2b60d8c1-81db-45a7-b1cb-654cdda96ae3"
+      Hint: Icon
+      Value: |
+        <image mediaid="{BD39004C-3B06-4B61-A180-4FC6FA0FAF92}" mediapath="/Images/Icons/cube_blue" src="~/media/Images/Icons/cube_blue.ashx" alt="Item" height="" width="" hspace="" vspace=""></image>
+    - ID: "f9f7a706-72ce-4733-b930-9ff1d7b3efab"
+      Hint: Image
+      Value: |
+        <image mediaid="{938BE2F0-ED32-4554-A457-466E3D664B14}" />
+    - ID: "d7229dba-b952-4d82-a5a0-459c69618d45"
+      Hint: Menu Title
+      Value: Item
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120402T105500
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mde
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "eb5da0cd-028c-4a92-8f7f-8b05bfcbabc6"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150708T214037Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "a14f1b0c-4384-49ec-8790-28a440f3670c"
+      Hint: __Semantics
+      Value: "{96D23E84-12CF-4A1C-B8BB-A33D7E7FA16D}|{459DBF7C-1A25-4EDF-86DA-32020B0AFC4B}"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}"
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />

@@ -1,0 +1,36 @@
+---
+ID: "d1ae0dfd-42f5-4fed-afbd-2700ccb5f065"
+Parent: "8d282968-4f4e-495c-a551-c33745b68517"
+Template: "b7d7034d-61ec-4514-b8b3-58707a31ea72"
+Path: /sitecore/content/Global/Settings/External Sites/Documentation
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "a04a9589-87cd-41f2-847f-900242c70ef3"
+      Hint: Site Link
+      Value: |
+        <link text="Documentation Site" linktype="external" url="http://doc.sitecore.net" anchor="" target="_blank" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20121105T163600
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8e579580-d8b3-410b-9aa9-c0b3c8f5f5d8"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20151015T171519Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

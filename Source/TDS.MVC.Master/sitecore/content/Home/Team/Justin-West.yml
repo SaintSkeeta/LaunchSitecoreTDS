@@ -1,0 +1,67 @@
+---
+ID: "cfeb8e8f-9943-435a-93ba-c238279df70b"
+Parent: "8dabe12d-4d1b-40b5-bf62-7d2424253a15"
+Template: "97963d48-bd06-46ca-8279-cd2ba3c7aa36"
+Path: "/sitecore/content/Home/Team/Justin-West"
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "234542dc-c610-4ca8-baa6-2592a8bcb1d7"
+      Hint: Title
+      Value: Justin West
+    - ID: "00e1d306-96bd-4b32-85b4-cd63c53cc6c1"
+      Hint: Abstract
+      Value: <p>Justin approaches his role as a Solutions Architect at Sitecore with the mindset that anything is possible on the .NET stack, that Sitecore is both the fastest and most flexible path for a developer to get there, and the most manageable option for content authors to take ownership of.</p>
+    - ID: "5a5684bb-8b54-44f6-abcc-2bada05ada5d"
+      Hint: Body
+      Value: <p>Justin comes to Sitecore with a career focused on Content Management. From his early days working on both front end implementation and within product development, he has been involved with the design and implementation of .NET CMS platforms for over 12 years.</p>
+    - ID: "f9b6ffef-1dc9-4c0e-a815-c62822e1cbdb"
+      Hint: Quote
+      Value: “You can’t build a reputation on what you’re going to do.” ~ Henry Ford
+    - ID: "2b60d8c1-81db-45a7-b1cb-654cdda96ae3"
+      Hint: Icon
+      Value: |
+        <image mediaid="{8A48C884-E903-4C0E-BA4E-5282934404BE}" alt="Justin West - Solutions Architect" height="" width="" hspace="" vspace="" />
+    - ID: "f9f7a706-72ce-4733-b930-9ff1d7b3efab"
+      Hint: Image
+      Value: |
+        <image mediaid="{C0096D65-7E21-475A-BFFD-98E71EC757DF}" />
+    - ID: "d2e90283-29f2-4eaf-895e-e8de8daeec69"
+      Hint: Job Title
+      Value: Solutions Architect
+    - ID: "d7229dba-b952-4d82-a5a0-459c69618d45"
+      Hint: Menu Title
+      Value: Justin West
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150130T213604Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "91bdb71c-dd1b-4cc7-a849-2c32fe33688d"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150716T025714Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}"
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />

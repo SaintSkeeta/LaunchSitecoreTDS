@@ -1,0 +1,38 @@
+---
+ID: "b638d292-8a0f-48bd-afd5-1c1d436b9719"
+Parent: "54f8c2c3-fded-46bd-a6c1-3c09bcd86419"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/LaunchSitecore/Page Structure/Home/One Two Four One
+DB: master
+SharedFields:
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: /Views/Page Structure/Home/One Two Four One.cshtml
+- ID: "e441abe7-2ca3-4640-ae26-3789967925d7"
+  Hint: Compatible Renderings
+  Value: "{3A87ABAE-56F8-4323-81E4-B69D894160B4}|{53058CCE-54D1-426C-A6F3-E64B54F24EBA}|{12BAB317-E759-442F-805C-7126EF07FD8F}|{27BEF7F8-9A59-4584-9CBF-A2E899F6CA14}"
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Software/32x32/layout_horizontal.png
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{6352B906-4F82-4ADB-8217-F185DD0BC446}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131204T192626
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "28c9f4e9-4301-471d-8183-d057d2ba4728"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150715T005237Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

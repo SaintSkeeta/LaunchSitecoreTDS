@@ -1,0 +1,80 @@
+---
+ID: "de7ac998-b699-47ce-9c51-22762f5a0b83"
+Parent: "4d719602-744a-49da-8a98-7e4e976333b8"
+Template: "b65cce04-bccb-4a58-b988-753d523c99a7"
+Path: "/sitecore/content/Home/Audience/Content-Owners"
+DB: master
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Value: |
+    <tracking>
+      <event id="{E5815F1A-9114-46C8-8468-730AAB657634}" name="Visited a Job Function Page" />
+      <profile id="{62A90F30-9BAB-425B-8A6D-4AE5A28371D6}" name="Job Function" presets="content owner|100||">
+        <key name="Analytics" value="1" />
+        <key name="Copywriting" value="5" />
+        <key name="Personalization and Testing" value="3" />
+        <key name="Technology" value="0" />
+        <key name="Workflow and Publishing" value="1" />
+      </profile>
+    </tracking>
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: 
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{B65CCE04-BCCB-4A58-B988-753D523C99A7}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{CB6BACD5-349A-477D-8941-835C1EBA7783}" s:ds="{164881FE-0249-4D6E-9532-60B71E0D3874}" /></d></r>
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "234542dc-c610-4ca8-baa6-2592a8bcb1d7"
+      Hint: Title
+      Value: Content Owners
+    - ID: "00e1d306-96bd-4b32-85b4-cd63c53cc6c1"
+      Hint: Abstract
+      Value: <p>Our customers accomplish their content management goals faster and better due to our best in the industry tools.</p>
+    - ID: "5a5684bb-8b54-44f6-abcc-2bada05ada5d"
+      Hint: Body
+      Value: <p>You want more people coming to your website to engage, become informed, and convert. Sitecore customers accomplish these goals faster and better due to our best in the industry editing tools.</p>
+    - ID: "2b60d8c1-81db-45a7-b1cb-654cdda96ae3"
+      Hint: Icon
+      Value: |
+        <image src="~/media/5d7a1be8959b4547a60cfa3d19aa547c.ashx" mediaid="{5D7A1BE8-959B-4547-A60C-FA3D19AA547C}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/p-s/quill" />
+    - ID: "d7229dba-b952-4d82-a5a0-459c69618d45"
+      Hint: Menu Title
+      Value: Content Owners
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Content Owners
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120604T163900
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f57adafd-4f9f-4040-a4ff-219969b61be4"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20131224T093527:635234745274604933"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}"
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />

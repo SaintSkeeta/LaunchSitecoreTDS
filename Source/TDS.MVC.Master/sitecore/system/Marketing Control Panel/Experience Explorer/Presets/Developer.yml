@@ -1,0 +1,43 @@
+---
+ID: "a493dbe3-d44f-4b1d-86a5-c45d1d987719"
+Parent: "d012a738-7871-40df-ab6e-ea71f7137bed"
+Template: "656218df-c490-45fc-90c4-b58fb38838f7"
+Path: /sitecore/system/Marketing Control Panel/Experience Explorer/Presets/Developer
+DB: master
+SharedFields:
+- ID: "efa537ec-d9d1-4a38-bfa4-323713813045"
+  Hint: Image
+  Value: |
+    <image mediaid="{7E099B18-F6B4-474E-B96C-14C9AF70AA50}" />
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Value: |
+    <tracking>
+      <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment" presets="developer|100||">
+        <key name="Analytics" value="1" />
+        <key name="Campaigns and Targeting" value="1" />
+        <key name="Content Management" value="4" />
+        <key name="Technology" value="5" />
+      </profile>
+    </tracking>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "a874ab53-08df-412e-8885-edba38feb0b9"
+      Hint: Name
+      Value: Developer
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150716T143538Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4c5a1a59-dad2-478a-ab36-b36fbbcdfab2"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20150716T143715Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,33 @@
+---
+ID: "6a258c65-3949-4e0f-a1c4-17f9304f5177"
+Parent: "4db91077-997f-4324-a0ea-9692c033a6a0"
+Template: "1d97ab9c-d9ab-4fcc-8713-ce2f279b85ed"
+Path: /sitecore/system/Modules/Launch Sitecore/Page Editor Alerts/no version in current language
+DB: master
+SharedFields:
+- ID: "81b83caa-e7c3-4333-b54e-9e4670aa5383"
+  Hint: Key
+  Value: no version in current language
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "fa03efa4-692e-456c-89c9-ebee61be1112"
+      Hint: Alert
+      Value: |
+        <div class="alert alert-attention">
+        <h2>Warning!</h2><p>This item has no version in this language.</p></div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20130823T183623
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d065e26b-7dbd-48d7-9aed-7098c51fe231"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20131025T172904:635183189447743872"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

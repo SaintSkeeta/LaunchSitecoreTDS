@@ -1,0 +1,43 @@
+---
+ID: "ff173410-5b1d-4fe3-b651-0ef72ee7b6b9"
+Parent: "5ffa5e63-c49d-4d82-9bdd-9a9fc913ae9d"
+Template: "448c4d57-f0f1-4278-8ab8-93db46c94f1b"
+Path: /sitecore/system/Marketing Control Panel/Profiles/Audience Segment/Profile Cards/Content Owner
+DB: master
+SharedFields:
+- ID: "709b879b-7264-49c7-8864-e254d9129302"
+  Hint: Image
+  Value: |
+    <image mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/p-s/quill" mediaid="{5D7A1BE8-959B-4547-A60C-FA3D19AA547C}" src="~/media/5d7a1be8959b4547a60cfa3d19aa547c.ashx?20131218T1417438891" />
+- ID: "85970ab7-22ea-4206-be86-c0167178860b"
+  Hint: Profile Card Value
+  Value: |
+    <tracking>
+      <profile id="{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}" name="Audience Segment">
+        <key name="Analytics" value="1" />
+        <key name="Campaigns and Targeting" value="3" />
+        <key name="Content Management" value="5" />
+        <key name="Technology" value="0" />
+      </profile>
+    </tracking>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "a26fc256-1db0-44aa-ba3d-1c830bf882a2"
+      Hint: Name
+      Value: Content Owner
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131218T141733
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3562e51f-fa10-4fae-a8ec-585bd0d5ae0f"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20131218T141823:635229731032312924"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

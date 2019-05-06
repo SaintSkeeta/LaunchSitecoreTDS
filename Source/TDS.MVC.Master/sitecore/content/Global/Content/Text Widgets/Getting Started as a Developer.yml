@@ -1,0 +1,40 @@
+---
+ID: "f8901ef0-2ff6-46a3-a6c9-225418535510"
+Parent: "94f817f2-27e6-4308-989d-5d0fd9ffe85f"
+Template: "be49b187-ee44-4850-8945-f32aff1cf3fd"
+Path: /sitecore/content/Global/Content/Text Widgets/Getting Started as a Developer
+DB: master
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "c917546a-3267-4ff5-890e-9d96ef88c2af"
+      Hint: Title
+      Value: Get Started as a Developer
+    - ID: "6634b489-5f9b-4a80-897d-6e683bd88aac"
+      Hint: Text
+      Value: <p>This is the copy that needs to be edited.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131118T125908
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "77cc4458-08ca-47c7-a395-919025bf8d75"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20131218T130354:635229686342013524"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}"
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />

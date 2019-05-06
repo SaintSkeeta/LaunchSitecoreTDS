@@ -1,0 +1,31 @@
+---
+ID: "c8231e47-89a9-448b-9019-8cccf8750728"
+Parent: "50de289a-6273-4b6b-93e4-86bc27d03476"
+Template: "ff9867ee-0b7f-4e0e-b604-6329a923a4b4"
+Path: /sitecore/content/Global/Content/Carousel Items/Default Carousel
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20141117T180843
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "df1f04c7-3111-4364-926c-a3bc23ed3299"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20141117T182954:635518457949100180"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

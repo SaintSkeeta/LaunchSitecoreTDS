@@ -1,0 +1,61 @@
+---
+ID: "65ebf460-6082-4c6b-8283-8beb3c871a84"
+Parent: "56cb9ef1-bbab-4dfa-8a0f-592845144ae6"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: /sitecore/media library/Launch Sitecore/Site Images/Icons/Color/windows
+DB: master
+SharedFields:
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "00000000-0000-0000-0000-000000000000"
+  Value: iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAK3RFWHRDcmVhdGlvbiBUaW1lAERvIDEzIEZlYiAyMDAzIDE2OjQ2OjM4ICswMTAwTRMw3wAAAAd0SU1FB9MKBhQTKHjQYZgAAAAJcEhZcwAACvAAAArwAUKsNJgAAAAEZ0FNQQAAsY8L/GEFAAACdElEQVR42sVXv09UQRD+3mVBTw71IJdoQUGFLYGQWBALG/wDaPgbCKEkFBQWxoLKhBB6ExPpQUsxFiQmZ4gWiokhMRES5YdCw8GdM+/d3A379u3dRd+7Sb7dud3bnW9nd2bfBlitTCFnNpGmfHo1g2ePNkj7Q6jqLkNYXBtLz/bzPeDt4PA8qfuE93USikDOTO6eAsvvfqbDoFAA7oxMkDZK2I0TIPl2RkU+nw4BY0S7y1Zi3Vxs/qCiry8dAk3pJeQIAaF2hUB58ktbM9Ro2MUFcHkZ6VwLqtUIuo9/9/fncX9nCHXDcQdxUSqVUCwW2yIhE7MRrpmQGNftovMOPL0OLETDhUTDCwHWarXD6aMGgdffgamNlDdDhaWx+56UgSzDMkZgiw7kxM3swtK4/pNlWDoJZBmWTgJZhqWRibR0EpZCQIydnzd13S6Eenpo0E5zPGemsKNbYmQVlQqxyXWJgOxRNyRcs06vXSMgJDoVJq2RKQHbuBCwdfu/MQL6BtODWhm3x/jg9UD59BoCdVu38oR95UrtM57sgYPPS9PbNzCwDqx8jRolLLm2we0CSULSZycgISbZ0HXQDZburVD9kTBOHw0F+j6Yk0FB4F69TKKznG9LfF7lPPCbsIUoQXKinJNJfQQErq+gpO1xe4C8R/hFOJRGcWM7BLRBDb1q2ys2gcbcqN9QrQjoSV1bYHvG9kQSgdgp94m9et92dEIg7OawfDjgNy7CFxh7ig2ILh5ynYEPZ1dtxT0QhuXIY2wjPXkx+xLRE63ieizw2h8QxsFhmfCg+AfhldNrNHyovnFNzl65RbiNhDPyH4Qj75hw8hdLOiqq+fvX6QAAAABJRU5ErkJggg==
+- ID: "22eac599-f13b-4607-a89d-c091763a467d"
+  Hint: Width
+  Value: 32
+- ID: "de2ca9e4-c117-4c8a-a139-1ff4b199d15a"
+  Hint: Height
+  Value: 32
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: png
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/png
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 796
+- ID: "cb09946f-3218-4823-87d2-d5007c199a96"
+  Hint: Dimensions
+  Value: 32 x 32
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "~/media/65EBF46060824C6B82838BEB3C871A84.ashx?h=16&thn=1&w=16"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: Layouts
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\mde
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120404T143302
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mde
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6b965e32-78f3-4d5e-87ae-5e6ec69205cd"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20120404T143303:634691467830357835"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\mde

@@ -1,0 +1,58 @@
+---
+ID: "52e72a2e-fddb-435a-9416-12316d053ad2"
+Parent: "39fffe3e-5581-4ce0-ba9f-e155142dfd72"
+Template: "045377d9-c7b7-4c51-a1f8-722502885239"
+Path: /sitecore/templates/Branches/Launch Sitecore/Microsite/$name/Configuration
+DB: master
+SharedFields:
+- ID: "962a3491-463f-4e23-9a43-84a293473724"
+  Hint: Visible Profiles
+  Value: "{3CEA9A30-CFA9-42F4-BA09-9100BFB1FAC5}|{478859DC-EBE0-40A7-BD24-75D588FD3E09}"
+- ID: "e31d4bcb-ac93-4376-ad09-1bea045c85a8"
+  Hint: Title Comments
+  Value: |
+    You can use whatever string you want. The page title control will replace {0} with the name of the current item and the {1} with the name of the site section. If you would like to store page titles as a field, just edit the meta\title control to pull that field. The first string is used for the home page and the site sections pages. The second string is for lower pages such as articles and team member pages.
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 900
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "fe0fa952-c3ed-4966-9531-12f87cd023b6"
+      Hint: Site Logo
+      Value: |
+        <image mediaid="{A870FCC2-FD60-40CA-9EBB-A033CB5C5DA2}" />
+    - ID: "d7f0e179-3bc4-4eb3-b74e-8d4b5adbdeca"
+      Hint: Layout Style
+      Value: Full Width
+    - ID: "d5230c73-cecf-484a-8c04-cead0e9fb005"
+      Hint: Site Color
+      Value: Orange
+    - ID: "6a887010-7322-44b4-b05c-31697928b303"
+      Hint: Page Title for Home and Site Sections
+      Value: "{0} | Launch Sitecore"
+    - ID: "436b14ee-7226-4831-ae7b-06ff5c8ff0d2"
+      Hint: Page Title for Lower Pages
+      Value: "{0} - {1} | Launch Sitecore"
+    - ID: "b7066f9f-da7e-4ec4-95f4-d2b1e87c0caa"
+      Hint: Copyright
+      Value: "Copyright © 1999-2013 Sitecore"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131113T100600
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "13bbcd30-fa71-4f11-929b-c4ecb7917f0f"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20140917T232355:635465930359428543"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

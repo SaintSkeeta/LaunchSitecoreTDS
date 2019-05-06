@@ -1,0 +1,24 @@
+---
+ID: "fb3a8e92-270d-46aa-8dd6-a4188f903add"
+Parent: "0cb97a9f-cafb-42a0-8be1-89ab9ae32bd9"
+Template: "db6e13b8-786c-4dd6-acf2-3e5e6a959905"
+Path: /sitecore/system/Marketing Control Panel/Goals/Launch Sitecore
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131119T120753
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dd974841-88a4-4146-8408-03306999346f"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: "20131119T120753:635204596732375126"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

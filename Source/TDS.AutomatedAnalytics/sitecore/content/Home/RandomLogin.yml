@@ -1,0 +1,77 @@
+---
+ID: "736240c2-124c-4e3c-ad83-afb0787ca829"
+Parent: "110d559f-dea5-42ea-9c1c-8a5df7e70ef9"
+Template: "d804da09-73f3-4bde-b9f7-86181aa7efa8"
+Path: /sitecore/content/Home/RandomLogin
+DB: master
+SharedFields:
+- ID: "7e003143-26f2-4a28-b70a-08548286f6ba"
+  Hint: Show Item In Menu
+  Value: 
+- ID: "d48af62c-9c56-4e4c-ba29-94c3dabad82e"
+  Hint: Show Children In Menu
+  Value: 
+- ID: "fd6dac05-fef8-4581-a329-6cea310e839b"
+  Hint: Show Item In Secondary Menu
+  Value: 
+- ID: "1e2aab62-e924-421e-b766-bf8422ccbe44"
+  Hint: Show Item In Footer Menu
+  Value: 1
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Network/16x16/key1.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{19B71B9E-FDA5-48C9-94E2-1C4090D47ADC}"><p:d /></r><r uid="{377674D0-615F-4B8A-A8F5-AEE38E82BF36}"><p:d /></r><r uid="{B8E2C5E1-92C4-46A4-A175-7B64807ECC42}"><p:d /></r><r uid="{2EC399D7-1D79-481F-8EC6-40FC72DDDA78}"><p:d /></r><r uid="{E7211AA0-57A4-40BB-A301-1FB9E3709565}" p:before="*" s:ds="{0E90E98A-5BEB-481B-8EF2-979DCF2CC25A}" s:id="{D6206AE3-D009-44E8-856C-6EFF9DADF3F9}" s:ph="/main-content/content-secondary" /><r uid="{40C25EEC-4BD5-40CE-B044-56435ECD2473}" p:after="r[@uid='{E7211AA0-57A4-40BB-A301-1FB9E3709565}']" s:id="{DF3C8739-E710-4C73-BC23-F282E8068B5D}" s:ph="main-content" /><r uid="{890984E5-06EA-476D-907E-9D6415194337}" p:after="r[@uid='{40C25EEC-4BD5-40CE-B044-56435ECD2473}']" s:ds="" s:id="{161E40A1-6008-4A9F-B540-EC50BF588490}" s:par="" s:ph="/main-content/content-primary" /><r uid="{5172B4E3-E87B-46AF-AC84-C613AE383CE2}" p:after="r[@uid='{890984E5-06EA-476D-907E-9D6415194337}']" s:ds="{9D181561-8B71-4577-BDFF-29CC95967FA5}" s:id="{791C2BD1-2D88-447F-9733-C655810A9E60}" s:ph="footer-left" /><r uid="{2E56B819-33D9-4BB6-8FB7-12F150E417FD}" p:after="*[1=2]" s:id="{BFA807C4-4494-49CC-9ABC-5A04414767F2}" s:ph="footer-center" /></d></r>
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Author|pd|+item:read|+item:write|!*|pe|+item:read|+item:write|!*|
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{E3FBD307-EC4A-4377-BFEB-F732CD5CAF5A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "234542dc-c610-4ca8-baa6-2592a8bcb1d7"
+      Hint: Title
+      Value: Login
+    - ID: "00e1d306-96bd-4b32-85b4-cd63c53cc6c1"
+      Hint: Abstract
+      Value: <p>Launch Sitecore utilizes a login to demonstrate how to secure items as well as other analytics functionality.</p>
+    - ID: "5a5684bb-8b54-44f6-abcc-2bada05ada5d"
+      Hint: Body
+      Value: <p>Launch Sitecore utilizes a login to show certain features within the product.</p>
+    - ID: "2b60d8c1-81db-45a7-b1cb-654cdda96ae3"
+      Hint: Icon
+      Value: |
+        <image mediaid="{8A7F38B4-D65A-42CF-A32E-9215B61C06DE}" mediapath="/Launch Sitecore/Site Images/Icons/Monochrome/g-o/key" src="~/media/8A7F38B4D65A42CFA32E9215B61C06DE.ashx" />
+    - ID: "d7229dba-b952-4d82-a5a0-459c69618d45"
+      Hint: Menu Title
+      Value: Login
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120725T092200
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a6f45259-4b27-4164-8f95-0448908f4e32"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20160328T190710Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{3E42AE7F-CB44-415C-91D2-B16E9E1ECB5A}"
