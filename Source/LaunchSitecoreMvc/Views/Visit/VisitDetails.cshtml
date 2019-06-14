@@ -116,12 +116,19 @@
             </div>
             <div class="panel-collapse collapse" id="collapseSix">
                 <div class="panel-body">
+                    @if (Model.EngagementStates.Any())
+                    {
                     <ul>
                         @foreach (var item in Model.EngagementStates)
-                                {
-                                <li>@item</li>
-                                }
+                        {
+                                <li>Engagment Plan Title: @item.EngagementPlanTitle , Title: @item.Title , Date: @item.Date</li>
+                        }
                     </ul>
+                    }
+                    else
+                    {
+                        <ul><li>Unable to load Engagement States</li></ul>
+                    }
                 </div>
             </div>
         </div>

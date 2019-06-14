@@ -1,12 +1,20 @@
 ﻿using LaunchSitecore.Configuration;
 using Sitecore.Analytics;
-using Sitecore.Analytics.Automation.Data;
+using Sitecore.Marketing.Automation.Data;
+using Sitecore.Marketing.Definitions;
+using Sitecore.Marketing.Definitions.AutomationPlans.Model;
 using Sitecore.Analytics.Tracking;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
+using Sitecore.XConnect.Collection.Model;
+using Sitecore.Xdb.MarketingAutomation.Tracking.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Globalization;
+using Sitecore.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
+using Sitecore;
 
 namespace LaunchSitecore.Models
 {
@@ -14,12 +22,12 @@ namespace LaunchSitecore.Models
     {
         public string PageCount
         {
-            get { return Convert.ToString(Tracker.Current.Interaction.PageCount); }
+            get { return System.Convert.ToString(Tracker.Current.Interaction.PageCount); }
         }
 
         public string EngagementValue
         {
-            get { return Convert.ToString(Tracker.Current.Interaction.Value); }
+            get { return System.Convert.ToString(Tracker.Current.Interaction.Value); }
         }
 
         public string Campaign
@@ -52,7 +60,7 @@ namespace LaunchSitecore.Models
 
         public List<string> GoalsList { get { return LoadGoals(); } }
 
-        public List<string> EngagementStates { get { return LoadEngagementStates(); } }
+        public List<EngagementPlanState> EngagementStates { get { return LoadEngagementStates().ToList(); } }
 
         public List<PatternMatch> LoadPatterns()
         {
@@ -133,33 +141,28 @@ namespace LaunchSitecore.Models
             return goals;
         }
 
-        public List<string> LoadEngagementStates()
+        public IEnumerable<EngagementPlanState> LoadEngagementStates()
         {
-            List<string> states = new List<string>();
+            var plans = Tracker.Current?.Contact?.GetPlanEnrollmentCache();
+            var enrollments = plans?.ActivityEnrollments;
 
-            try
-            {
-                var engagementstates = AutomationStateManager.Create(Tracker.Current.Contact).GetAutomationStates();
+            return enrollments?.Select(this.CreateEngagementPlanState).ToArray() ?? Enumerable.Empty<EngagementPlanState>();
+        }
 
-                if (engagementstates.Any())
-                {
-                    foreach (
-                        AutomationStateContext context in
-                            AutomationStateManager.Create(Tracker.Current.Contact).GetAutomationStates())
-                    {
-                        states.Add(String.Format("{0}: {1}", context.PlanItem.DisplayName, context.StateItem.DisplayName));
-                    }
-                }
-                else
-                {
-                    states.Add(SiteConfiguration.GetDictionaryText("No Engagement States"));
-                }
-            }
-            catch (Exception)
+        private EngagementPlanState CreateEngagementPlanState(AutomationPlanActivityEnrollmentCacheEntry enrollment)
+        {
+            var automationPlanDefinitionManager = ServiceLocator.ServiceProvider.GetService<IDefinitionManager<IAutomationPlanDefinition>>();
+            //var automationPlanDefinitionManager = definitionManagerFactory.GetDefinitionManager<IAutomationPlanDefinition>();
+
+            var definition = automationPlanDefinitionManager.Get(enrollment.AutomationPlanDefinitionId, Context.Language.CultureInfo) ?? automationPlanDefinitionManager.Get(enrollment.AutomationPlanDefinitionId, CultureInfo.InvariantCulture);
+            var activity = definition?.GetActivity(enrollment.ActivityId);
+
+            return new EngagementPlanState
             {
-                states.Add(SiteConfiguration.GetDictionaryText("Unable to load Engagement States"));
-            }
-            return states;
+                EngagementPlanTitle = definition?.Name,
+                Title = activity?.Parameters["Name"]?.ToString() ?? string.Empty,
+                Date = enrollment.ActivityEntryDate
+            };
         }
 
         private string CleanPageName(IPageContext p)
