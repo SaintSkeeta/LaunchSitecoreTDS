@@ -50,17 +50,17 @@
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Analytics, Version=12.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Analytics.9.1.1\lib\net471\Sitecore.Analytics.dll</HintPath>
+    <Reference Include="Sitecore.Analytics, Version=13.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Analytics.9.2.0-r002893\lib\net471\Sitecore.Analytics.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Analytics.Core, Version=12.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Analytics.Core.9.1.1\lib\net471\Sitecore.Analytics.Core.dll</HintPath>
+    <Reference Include="Sitecore.Analytics.Core, Version=13.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Analytics.Core.9.2.0-r002893\lib\net471\Sitecore.Analytics.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Kernel, Version=12.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Kernel.9.1.1\lib\net471\Sitecore.Kernel.dll</HintPath>
+    <Reference Include="Sitecore.Kernel, Version=13.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Kernel.9.2.0-r002893\lib\net471\Sitecore.Kernel.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Marketing, Version=13.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Marketing.9.1.1\lib\net471\Sitecore.Marketing.dll</HintPath>
+    <Reference Include="Sitecore.Marketing, Version=13.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Marketing.9.2.0-r002893\lib\net471\Sitecore.Marketing.dll</HintPath>
     </Reference>
     <Reference Include="sysglobl" />
     <Reference Include="System" />
