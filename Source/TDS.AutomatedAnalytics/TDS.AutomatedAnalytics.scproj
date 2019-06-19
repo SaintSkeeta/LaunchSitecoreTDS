@@ -25,6 +25,8 @@
     <AssemblyStatus>Exclude</AssemblyStatus>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <EnableAssemblyValidation>True</EnableAssemblyValidation>
+    <EnablePackageValidation>False</EnablePackageValidation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
