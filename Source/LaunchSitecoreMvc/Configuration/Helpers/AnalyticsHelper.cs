@@ -17,8 +17,8 @@ namespace LaunchSitecore.Configuration.SiteUI.Analytics
          Tracker.Current.Contact.Tags.Add("Username", domainUser);
          Tracker.Current.Contact.Tags.Add("Full name", name);
 
-         Tracker.Current.Contact.Identifiers.AuthenticationLevel = AuthenticationLevel.PasswordValidated;
-         Tracker.Current.Session.Identify(domainUser);
+         //Tracker.Current.Contact.Identifiers.AuthenticationLevel = AuthenticationLevel.PasswordValidated;
+         Tracker.Current.Session.IdentifyAs(Sitecore.Context.Site.Name, domainUser);
 
          if (IsNewUser)
          {
