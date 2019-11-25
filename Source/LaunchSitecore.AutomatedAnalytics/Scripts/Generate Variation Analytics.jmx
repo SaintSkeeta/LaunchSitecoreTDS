@@ -15,7 +15,7 @@
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
           <collectionProp name="Arguments.arguments"/>
         </elementProp>
-        <stringProp name="HTTPSampler.domain">launchtest.local</stringProp>
+        <stringProp name="HTTPSampler.domain">launch.local</stringProp>
         <stringProp name="HTTPSampler.port">80</stringProp>
         <stringProp name="HTTPSampler.connect_timeout"></stringProp>
         <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -142,19 +142,12 @@
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
  
 var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
  
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
+JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
+ 
+print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));</stringProp>
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
@@ -318,16 +311,19 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
             <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
 import org.apache.jmeter.protocol.http.control.CookieManager;
 import org.apache.jmeter.protocol.http.control.Cookie;
- 
+
+// uncomment the code below to reuse the cookie from the previous thread group
+// note cookie reuse is only good for one thread (user) per thread group. 
 var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
+
+var host = ctx.getCurrentSampler().getUrl().getHost();
+// print(&quot;Host is &quot; + host);
 
 var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
 // Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
+var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;, analyticsCookieLocal, host, &quot;/&quot;, false, 0);
 manager.add(cookie);
  
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
 print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           </BeanShellPostProcessor>
           <hashTree/>
