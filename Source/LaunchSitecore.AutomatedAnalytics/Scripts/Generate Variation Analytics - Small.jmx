@@ -142,19 +142,12 @@
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
  
 var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
  
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
+JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
+ 
+print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));</stringProp>
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
@@ -301,35 +294,28 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+          <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
             <boolProp name="resetInterpreter">false</boolProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
 import org.apache.jmeter.protocol.http.control.CookieManager;
 import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
+
+// uncomment the code below to reuse the cookie from the previous thread group
+// note cookie reuse is only good for one thread (user) per thread group. 
+var analyticsCookieLocal = JMeterUtils.getProperty(&quot;analyticsCookie&quot;);
+
+var host = ctx.getCurrentSampler().getUrl().getHost();
+// print(&quot;Host is &quot; + host);
 
 var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
 // Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
+var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;, analyticsCookieLocal, host, &quot;/&quot;, false, 0);
 manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
+
+// print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
+          </BeanShellPreProcessor>
           <hashTree/>
         </hashTree>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
