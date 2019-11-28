@@ -15,7 +15,7 @@
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
           <collectionProp name="Arguments.arguments"/>
         </elementProp>
-        <stringProp name="HTTPSampler.domain">launchtest.local</stringProp>
+        <stringProp name="HTTPSampler.domain">launch.local</stringProp>
         <stringProp name="HTTPSampler.port">80</stringProp>
         <stringProp name="HTTPSampler.connect_timeout"></stringProp>
         <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -477,38 +477,7 @@ manager.add(cookie);
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -732,38 +701,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -906,38 +844,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -1106,38 +1013,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -1297,38 +1173,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -1552,38 +1397,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -1726,38 +1540,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -1917,38 +1700,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -2163,38 +1915,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -2418,38 +2139,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -2609,38 +2299,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -2864,38 +2523,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -3055,38 +2683,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -3310,38 +2907,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -3501,38 +3067,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -3756,38 +3291,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -3947,38 +3451,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -4202,38 +3675,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -4402,38 +3844,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -4593,38 +4004,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -4848,38 +4228,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -5013,38 +4362,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -5268,38 +4586,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -5442,38 +4729,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -5633,38 +4889,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -5888,38 +5113,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -6079,38 +5273,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -6334,38 +5497,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -6534,38 +5666,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -6725,38 +5826,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -6980,38 +6050,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
@@ -7171,38 +6210,7 @@ print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">analyticscookie</stringProp>
-            <stringProp name="RegexExtractor.regex">SC_ANALYTICS_GLOBAL_COOKIE=(.+?);</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">FALSE</stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
-import org.apache.jmeter.protocol.http.control.CookieManager;
-import org.apache.jmeter.protocol.http.control.Cookie;
- 
-var analyticsCookieLocal = vars.get(&quot;analyticscookie&quot;);
-
-var manager = cm=ctx.getCurrentSampler().getCookieManager(); 
-// Create new cookie, retrieve global variable and set as value
-var cookie = new Cookie(&quot;SC_ANALYTICS_GLOBAL_COOKIE&quot;,analyticsCookieLocal,&quot;launch.local&quot;,&quot;/&quot;,false,0);
-manager.add(cookie);
- 
-//JMeterUtils.setProperty(&quot;analyticsCookie&quot;, analyticsCookieLocal);
-//print(&quot;Cookie set: &quot; + JMeterUtils.getProperty(&quot;analyticsCookie&quot;));
-print(&quot;RE-USING THIS COOKIE: &quot; + analyticsCookieLocal);</stringProp>
-          </BeanShellPostProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Pause" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
