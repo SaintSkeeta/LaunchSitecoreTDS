@@ -66,6 +66,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Home\Different-Home.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Home\LogOff.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
