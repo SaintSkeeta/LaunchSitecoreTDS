@@ -1,5 +1,5 @@
-﻿using Sitecore.Analytics.Outcome;
-using Sitecore.Analytics.Outcome.Model;
+﻿using Sitecore.Analytics;
+using Sitecore.Analytics.Data;
 using Sitecore.Configuration;
 using Sitecore.Data;
 using System;
@@ -23,15 +23,19 @@ namespace LaunchSitecore.AutomatedAnalytics.Controllers
                 ID interactionId = Sitecore.Data.ID.NewID;
                 ID contactId = Sitecore.Data.ID.NewID;
 
-                var outcome = new ContactOutcome(id, _justinWestContactOutcomeId, contactId)
-                {
-                    DateTime = DateTime.UtcNow.Date,
-                    MonetaryValue = 10,
-                    InteractionId = interactionId
-                };
+                https://doc.sitecore.com/developers/90/sitecore-experience-platform/en/triggering-custom-events.html
+                var ev = Sitecore.Analytics.Tracker.MarketingDefinitions.Outcomes[_justinWestContactOutcomeId];
 
-                var manager = Factory.CreateObject("outcome/outcomeManager", true) as OutcomeManager;
-                manager.Save(outcome);
+                if (ev != null)
+                {
+                    var outcomeData = new Sitecore.Analytics.Data.OutcomeData(ev, "USD", 100.00m);
+
+                    outcomeData.CustomValues.Add("DateTime", DateTime.UtcNow.Date.ToString()); // Never saved to xConnect, must be converted into a property on a custom model
+
+                    Sitecore.Analytics.Tracker.Current.CurrentPage.RegisterOutcome(outcomeData);
+                }
+
+                //TODO: (if we need the DateTime property https://doc.sitecore.com/developers/90/sitecore-experience-platform/en/convert-an-outcome.html
             }
 
             return "Triggered";
