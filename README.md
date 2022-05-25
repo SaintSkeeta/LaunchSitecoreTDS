@@ -2,6 +2,10 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/taxr71bl03mev0vc?svg=true)](https://ci.appveyor.com/project/SeanHolmesby/launchsitecoretds/branch/master)
 
+- Use Tag v3.6.0.0 with Sitecore 10.2 Initial Release - Launch Sitecore - MVC Bootstrap3 version.
+- Use Tag v3.5.0.0 with Sitecore 9.3 Initial Release - Launch Sitecore - MVC Bootstrap3 version.
+- Use Tag v3.4.0.0 with Sitecore 9.2 Initial Release - Launch Sitecore - MVC Bootstrap3 version.
+- Use Tag v3.3.0.0 with Sitecore 9.1 Update 1 - Launch Sitecore - MVC Bootstrap3 version.
 - Use Tag v3.2.0.0 with Sitecore 8.2 Update 2 (rev. 161221) - Launch Sitecore - MVC Bootstrap3 version.
 - Use Tag v3.1.0.0 with Sitecore 8.1 Update 2 (rev. 160302) - Launch Sitecore - MVC Bootstrap3 version.
 - Use Tag 3.0.0.0 with Sitecore 8.0 Update 5 (rev. 150812) - Launch Sitecore - MVC Bootstrap3 version.
@@ -14,7 +18,7 @@
 - Use Tag 1.0 with Sitecore 6.5 Service Pack 2 (rev. 121009) - Launch Sitecore Classic version
 
 
-Launch Sitecore is a site found at [www.launchsitecore.net](www.launchsitecore.net). It is a fantastic, shared source site that shows the power of Sitecore through Page Editor and DMS. The site comes complete with content, components, engagement plans and much more. A Sitecore package for the complete site can be downloaded from the above link after registering.
+Launch Sitecore was a site found at [www.launchsitecore.net](www.launchsitecore.net). It is a fantastic, shared source site that shows the power of Sitecore through Page Editor and DMS. The site comes complete with content, components, engagement plans and much more. A Sitecore package for the complete site can be downloaded from the above link after registering.
 
 This repository is that package converted to a Visual Studio solution with items in Team Development for Sitecore. It's intended to serve as a platform for helping developers understand TDS, Glass Mapper, NuGet, and Code Generation with TDS. It also allows developers to quickly setup a site with content, so that other additional features can be tested on a complete site.
 
