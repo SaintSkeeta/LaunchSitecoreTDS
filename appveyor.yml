@@ -1,12 +1,28 @@
+# branches to build
+branches:
+  # whitelist
+  only:
+    - /release*/
+    - develop
+    - master
+
 install:
   - choco install gitversion.portable -pre -y
+  - nuget sources add -Name MyAccountFeed -Source https://ci.appveyor.com/nuget/seanholmesby-a4t5wrp1ias0 -UserName %nuget_user% -Password %nuget_password%
 
 nuget:
-  account_feed: true
+  account_feed: false
+  project_feed: false
 
 #---------------------------------#
 #       build configuration       #
 #---------------------------------#
+
+#branches:
+#  only:
+#    - master
+
+image: Visual Studio 2017
 
 # build platform, i.e. x86, x64, Any CPU. This setting is optional.
 platform: Any CPU
