@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Analytics;
 using Sitecore.Analytics.Model;
 using Sitecore.Analytics.Model.Entities;
@@ -17,8 +18,11 @@ namespace LaunchSitecore.Configuration.SiteUI.Analytics
          Tracker.Current.Contact.Tags.Add("Username", domainUser);
          Tracker.Current.Contact.Tags.Add("Full name", name);
 
+         var identificationManager = Sitecore.DependencyInjection.ServiceLocator.ServiceProvider.GetRequiredService<Sitecore.Analytics.Tracking.Identification.IContactIdentificationManager>();
+
          //Tracker.Current.Contact.Identifiers.AuthenticationLevel = AuthenticationLevel.PasswordValidated;
-         Tracker.Current.Session.IdentifyAs(Sitecore.Context.Site.Name, domainUser);
+         Sitecore.Analytics.Tracking.Identification.IdentificationResult result = 
+                identificationManager.IdentifyAs(new Sitecore.Analytics.Tracking.Identification.KnownContactIdentifier(Sitecore.Context.Site.Name, domainUser));
 
          if (IsNewUser)
          {

@@ -16,7 +16,7 @@ namespace LaunchSitecore.Configuration.Rules
     {
         public string StateId { get; set; }        
 
-        public override void Apply([NotNull] T ruleContext)
+        public override void Apply(T ruleContext)
         {
             // Execute action
         //    Item state = Sitecore.Context.Database.GetItem(new ID(StateId));
