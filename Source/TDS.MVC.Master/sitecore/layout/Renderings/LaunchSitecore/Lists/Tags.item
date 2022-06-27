@@ -27,9 +27,9 @@ Tags
 field: {94069F66-609C-48B0-8281-521C30FB269D}
 name: Open Properties after Add
 key: open properties after add
-content-length: 1
+content-length: 0
 
--
+
 ----field----
 field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
 name: Datasource Location
@@ -52,6 +52,13 @@ content-length: 38
 
 {EB59D87B-6930-4342-B3FA-959D10B11822}
 ----field----
+field: {BBB8A1E0-F966-4710-B4F4-42F267598127}
+name: Render as HTML
+key: render as html
+content-length: 1
+
+1
+----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
@@ -68,7 +75,7 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: 8a0fb095-f909-4cd7-a908-fc64cdcffb04
+revision: 755a5a4c-dd6e-4588-b72f-90977977e06e
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -83,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8a0fb095-f909-4cd7-a908-fc64cdcffb04
+755a5a4c-dd6e-4588-b72f-90977977e06e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140922T125942:635469875821302212
+20220627T115609Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

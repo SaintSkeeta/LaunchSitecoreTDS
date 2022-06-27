@@ -17,6 +17,13 @@ content-length: 37
 
 /Views/SingleItem/TitleAndBody.cshtml
 ----field----
+field: {BBB8A1E0-F966-4710-B4F4-42F267598127}
+name: Render as HTML
+key: render as html
+content-length: 1
+
+1
+----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
@@ -33,7 +40,7 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: 47299bcc-3441-4504-bf65-4555a970aacd
+revision: 1340b758-4a5b-4c9d-a8c8-80f319e27b39
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-47299bcc-3441-4504-bf65-4555a970aacd
+1340b758-4a5b-4c9d-a8c8-80f319e27b39
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20131220T161101:635231526616896059
+20220627T115800Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -27,9 +27,9 @@ TextWidget
 field: {94069F66-609C-48B0-8281-521C30FB269D}
 name: Open Properties after Add
 key: open properties after add
-content-length: 1
+content-length: 0
 
--
+
 ----field----
 field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
 name: Datasource Location
@@ -52,6 +52,13 @@ content-length: 38
 
 {1D074CFE-9A8A-45CE-86A7-89DD2372A7B0}
 ----field----
+field: {BBB8A1E0-F966-4710-B4F4-42F267598127}
+name: Render as HTML
+key: render as html
+content-length: 1
+
+1
+----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
@@ -68,7 +75,7 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: 9bff0003-5a45-4f40-8bac-d0cdae4ddfd8
+revision: 49e5149c-dea4-4888-a7a4-31295f578a66
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -83,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9bff0003-5a45-4f40-8bac-d0cdae4ddfd8
+49e5149c-dea4-4888-a7a4-31295f578a66
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140922T131111:635469882716407689
+20220627T115757Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -34,9 +34,9 @@ content-length: 0
 field: {94069F66-609C-48B0-8281-521C30FB269D}
 name: Open Properties after Add
 key: open properties after add
-content-length: 1
+content-length: 0
 
--
+
 ----field----
 field: {308E88F5-CD6E-4F8F-BAFE-95A47DEDEFDC}
 name: Editable
@@ -73,6 +73,13 @@ content-length: 0
 
 
 ----field----
+field: {BBB8A1E0-F966-4710-B4F4-42F267598127}
+name: Render as HTML
+key: render as html
+content-length: 1
+
+1
+----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
@@ -89,7 +96,7 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: d92a77b5-a217-40ba-a7e3-68ddff8dbab9
+revision: a68c845b-38bd-4817-a04d-db1100b3362e
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -104,14 +111,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d92a77b5-a217-40ba-a7e3-68ddff8dbab9
+a68c845b-38bd-4817-a04d-db1100b3362e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140922T130645:635469880050148318
+20220627T115740Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

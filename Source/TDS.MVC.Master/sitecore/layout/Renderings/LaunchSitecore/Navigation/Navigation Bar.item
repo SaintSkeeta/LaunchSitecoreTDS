@@ -17,6 +17,13 @@ content-length: 38
 
 /Views/Navigation/NavigationBar.cshtml
 ----field----
+field: {BBB8A1E0-F966-4710-B4F4-42F267598127}
+name: Render as HTML
+key: render as html
+content-length: 1
+
+1
+----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
@@ -26,7 +33,7 @@ software/32x32/step.png
 ----version----
 language: en
 version: 1
-revision: eafa5db8-9950-4e1c-bbfe-daefcbecb0e0
+revision: a9b42725-ccd5-4c90-a0ca-bf921a2a60d8
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-eafa5db8-9950-4e1c-bbfe-daefcbecb0e0
+a9b42725-ccd5-4c90-a0ca-bf921a2a60d8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20140129T153716:635266066360590497
+20220627T115637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
