@@ -1,0 +1,12 @@
+a, a:hover { color: #008998; }
+.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:hover { background-color: #008998; border-color: #008998; }
+header .nav > li > a:hover,  header .nav > li > a:focus { color: #008998; }
+header .nav > .open > a,  header .nav > .open > a:hover,  header .nav > .open > a:focus { color: #008998 !important; }
+.navbar .nav .open .dropdown-menu .active a { color: #008998; }
+.navbar .nav .open .dropdown-menu .active a:hover { color: #008998; }
+.navbar .nav .active > a, .navbar .nav .active > a:hover, .navbar .nav .active a > i, .navbar .nav .active a > i:hover { color: #008998; }
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus  { color: #008998; }
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle { color: #008998; }
+.navbar .nav > li .dropdown-menu li a:hover { color: #008998; }
+.navbar .nav > li:hover a, .navbar .nav > li:hover a i { color: #008998; }
+.text-divider5 span, .text-divider6 span { background-color: #008998; }
