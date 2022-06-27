@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2043
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Core", "TDS.Core\TDS.Core.scproj", "{583A259D-AE10-414C-B84D-659E3CCE56E5}"
 EndProject
