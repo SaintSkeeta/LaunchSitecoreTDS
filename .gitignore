@@ -13,7 +13,7 @@ build/
 Source/.vs
 
 # Nuget packages
-Source/packages*/
+Source/packages/
 
 # Hedgehog Team Development for Sitecore
 *.scproj.user
