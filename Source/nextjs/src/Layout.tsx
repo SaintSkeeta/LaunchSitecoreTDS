@@ -35,9 +35,43 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
       */}
       <VisitorIdentification />
 
-      <Navigation />
-      {/* root placeholder for the app, which we add components to using route data */}
-      <div className="container">{route && <Placeholder name="jss-main" rendering={route} />}</div>
+      {
+        /*
+        TODO: Implement the static rendering calls, like Navigation from Main.cshtml, here.
+        */
+      }
+
+{
+  /*
+  TODO: This combines multiple renderings.
+  Instead, make this work with the nested container renderings (One Four One.cshtml)
+  https://doc.sitecore.com/xp/en/developers/hd/200/sitecore-headless-development/convert-components-from-mvc--c--razor--to-next-js--javascript-react--incrementally.html
+  */
+
+}
+
+      <div className="main-content">
+        <div className="row topmargin" data-sr>
+            <div className="col-md-12 no-padding"><Placeholder name="/main-content/full-row1" rendering={route} /></div>
+        </div>
+
+        <div className="container">
+            <div className="row" data-sr>
+                <div className="col-md-12">
+                    <div className="row hero-list">
+                        <div className="col-md-3"><Placeholder name="/main-content/full-row2a" rendering={route} /></div>
+                        <div className="col-md-3"><Placeholder name="/main-content/full-row2b" rendering={route} /></div>
+                        <div className="col-md-3"><Placeholder name="/main-content/full-row2c" rendering={route} /></div>
+                        <div className="col-md-3"><Placeholder name="/main-content/full-row2d" rendering={route} /></div>
+                    </div>
+                </div>
+            </div>
+            <div className="row" data-sr>
+                <div className="col-md-12"><Placeholder name="/main-content/full-row3" rendering={route} /></div>
+            </div>
+        </div>
+      </div>
+
     </>
   );
 };
