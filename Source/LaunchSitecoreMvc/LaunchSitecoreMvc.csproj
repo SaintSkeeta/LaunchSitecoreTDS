@@ -276,7 +276,7 @@
     </Compile>
     <Compile Include="Controllers\SiteConfigurationController.cs" />
     <Compile Include="Controllers\VisitController.cs" />
-    <Compile Include="Controllers\NavigationController.cs" />
+    <Compile Include="Controllers\LaunchNavigationController.cs" />
     <Compile Include="Controllers\ListsController.cs" />
     <Compile Include="Controllers\MetaController.cs" />
     <Compile Include="Controllers\SingleItemController.cs" />
@@ -350,15 +350,15 @@
     <Content Include="Views\Lists\LinkList.cshtml" />
     <Content Include="Views\Lists\Tags.cshtml" />
     <Content Include="Views\Lists\TeamList.cshtml" />
-    <Content Include="Views\Navigation\Breadcrumbs.cshtml" />
-    <Content Include="Views\Navigation\FooterNavigation.cshtml" />
-    <Content Include="Views\Navigation\Header.cshtml" />
-    <Content Include="Views\Navigation\MainNavigation.cshtml" />
-    <Content Include="Views\Navigation\SecondaryNavigation.cshtml" />
-    <Content Include="Views\Navigation\SecondaryNavigationSection.cshtml" />
-    <Content Include="Views\Navigation\TertiaryNavigation.cshtml" />
-    <Content Include="Views\Navigation\TertiaryNavigationPartialFavorites.cshtml" />
-    <Content Include="Views\Navigation\TertiaryNavigationPartialSites.cshtml" />
+    <Content Include="Views\LaunchNavigation\Breadcrumbs.cshtml" />
+    <Content Include="Views\LaunchNavigation\FooterNavigation.cshtml" />
+    <Content Include="Views\LaunchNavigation\Header.cshtml" />
+    <Content Include="Views\LaunchNavigation\MainNavigation.cshtml" />
+    <Content Include="Views\LaunchNavigation\SecondaryNavigation.cshtml" />
+    <Content Include="Views\LaunchNavigation\SecondaryNavigationSection.cshtml" />
+    <Content Include="Views\LaunchNavigation\TertiaryNavigation.cshtml" />
+    <Content Include="Views\LaunchNavigation\TertiaryNavigationPartialFavorites.cshtml" />
+    <Content Include="Views\LaunchNavigation\TertiaryNavigationPartialSites.cshtml" />
     <Content Include="Views\Page Structure\Content\Both Sidebars.cshtml" />
     <Content Include="Views\Page Structure\Content\Left Sidebar.cshtml" />
     <Content Include="Views\Page Structure\Content\No Sidebars.cshtml" />

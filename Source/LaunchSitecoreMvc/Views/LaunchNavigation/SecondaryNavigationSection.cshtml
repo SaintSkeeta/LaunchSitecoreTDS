@@ -1,0 +1,13 @@
+﻿@model LaunchSitecore.Models.MenuItem
+<ul>
+  @foreach (var item in Model.ChildrenInSecondaryMenu)
+  {
+   <li>
+    <a href="@item.Url" @if (item.IsActive) { <text>class="active"</text> }>@Html.Sitecore().Field("Menu Title", item.Item)</a>        
+    @if (item.ShowChildrenInMenu && item.IsActiveADescendant && item.HasChildrenToShowInSecondaryMenu)
+    {     
+     @Html.Partial("SecondaryNavigationSection",item)
+    }
+   </li>
+  }
+</ul>

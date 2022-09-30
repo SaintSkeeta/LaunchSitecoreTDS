@@ -1,0 +1,7 @@
+﻿@model List<LaunchSitecore.Models.SimpleNavigationItem>
+<ul class="list-inline">
+ @foreach (var item in Model)
+ {
+  <li><a href="@item.Url">@Html.Sitecore().Field("Menu Title", item.Item)</a></li>
+ }
+</ul>

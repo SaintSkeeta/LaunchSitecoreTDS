@@ -31,6 +31,8 @@
     </NuGetPackageImportStamp>
     <EnableAssemblyValidation>True</EnableAssemblyValidation>
     <EnablePackageValidation>False</EnablePackageValidation>
+    <AssembliesExcludedFromValidation>
+    </AssembliesExcludedFromValidation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>

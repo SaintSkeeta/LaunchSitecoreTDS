@@ -17,7 +17,7 @@
     <div id="out_container" class="@Html.Sitecore().Controller("SiteConfiguration", "PageLayoutClass")">
         <div class="container"></div>
         <!-- HEADER AREA -->
-        @Html.Sitecore().Controller("Navigation", "Header")
+        @Html.Sitecore().Controller("LaunchNavigation", "Header")
         <!-- MAIN CONTENT AREA -->
         <div class="main-content">
             @Html.Sitecore().Placeholder("main-content")
@@ -29,7 +29,7 @@
                     <div class="row">
                         <div class="col-sm-12 col-md-12">
                             <div class="row">
-                                @Html.Sitecore().Controller("Navigation", "FooterNavigation")
+                                @Html.Sitecore().Controller("LaunchNavigation", "FooterNavigation")
                             </div>
                         </div>
                     </div>
