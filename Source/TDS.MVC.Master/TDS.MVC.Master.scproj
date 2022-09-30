@@ -30,7 +30,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <EnableAssemblyValidation>True</EnableAssemblyValidation>
-    <EnablePackageValidation>False</EnablePackageValidation>
+    <EnablePackageValidation>True</EnablePackageValidation>
     <AssembliesExcludedFromValidation>
     </AssembliesExcludedFromValidation>
   </PropertyGroup>
@@ -53,6 +53,7 @@
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
     <PackageExcludeCode>False</PackageExcludeCode>
     <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
+    <InstallPackageIfMissing>true</InstallPackageIfMissing>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
@@ -2235,6 +2236,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <SitecorePackage Include="..\packages_Sitecore\Sitecore Headless Services Server XP 20.0.0 rev. 00539.zip" />
   </ItemGroup>
   <!--<ItemGroup>
     <PostDeployAction Include="HedgehogDevelopment.TDS.CustomExtensions.PostBuildProcessors.RebuildContentSearchIndexes, HedgehogDevelopment.TDS.CustomExtensions">
