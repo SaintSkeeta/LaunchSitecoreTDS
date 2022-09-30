@@ -13,9 +13,9 @@ templatekey: View rendering
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
 name: Path
 key: path
-content-length: 43
+content-length: 49
 
-/Views/Navigation/TertiaryNavigation.cshtml
+/Views/LaunchNavigation/TertiaryNavigation.cshtml
 ----field----
 field: {DDAB263E-B42E-419A-AA6F-081B7393CA38}
 name: Model
@@ -69,4 +69,4 @@ name: __Updated by
 key: __updated by
 content-length: 14
 
-sitecore\admin
+sitecore\Admin

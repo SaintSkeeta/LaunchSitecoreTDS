@@ -1,0 +1,25 @@
+﻿@model LaunchSitecore.Models.MenuItemList
+<ul class="nav navbar-nav">
+    @foreach (var menuItem in Model.menuItems)
+    {
+        if (menuItem.ShowChildrenInMenu && menuItem.HasChildrenToShowInMenu)
+        {
+            <li class="dropdown">
+                <a href="@menuItem.Url" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    @Html.Sitecore().Field("Menu Title", menuItem.Item)<b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    @foreach (var subItem in menuItem.ChildrenInCurrentLanguage)
+                    {
+                        <li><a href="@subItem.Url">@Html.Sitecore().Field("Menu Title", subItem.Item)</a></li>
+                    }
+                </ul>
+            </li>
+        }
+        else
+        {
+            <li><a href="@menuItem.Url">@Html.Sitecore().Field("Menu Title", menuItem.Item)</a></li>
+        }
+    }
+</ul>
+

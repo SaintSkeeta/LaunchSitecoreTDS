@@ -1,0 +1,5 @@
+﻿@model LaunchSitecore.Models.MenuItem
+<div class="side-nav sidebar-block">
+ <h2>@Html.Sitecore().Field("Menu Title", Model.Item)</h2>
+ @Html.Partial("SecondaryNavigationSection", Model)
+</div>

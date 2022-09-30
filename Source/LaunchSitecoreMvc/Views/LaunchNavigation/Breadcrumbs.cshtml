@@ -1,0 +1,12 @@
+﻿@model IEnumerable<LaunchSitecore.Models.SimpleItem>
+<div id="breadcrumb">
+ <ul>
+  @foreach (var item in Model)
+  {
+   if (!@Model.IsLast(item)) 
+   { <li class="@(Model.IsFirst(item) ? "home" : "")"><a href="@item.Url">@Html.Sitecore().Field("Menu Title", item.Item)</a></li> }
+   else {<li>@Html.Sitecore().Field("Menu Title", item.Item)</li> }
+  }
+ </ul>
+ <div class="pull-right addtofavsbutton">@Html.Sitecore().Controller("Favorites", "AddToFavorites")</div> 
+</div>

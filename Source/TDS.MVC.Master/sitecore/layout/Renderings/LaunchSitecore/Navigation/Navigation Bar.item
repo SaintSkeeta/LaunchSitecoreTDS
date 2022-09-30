@@ -13,9 +13,9 @@ templatekey: View rendering
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
 name: Path
 key: path
-content-length: 38
+content-length: 44
 
-/Views/Navigation/NavigationBar.cshtml
+/Views/LaunchNavigation/NavigationBar.cshtml
 ----field----
 field: {BBB8A1E0-F966-4710-B4F4-42F267598127}
 name: Render as HTML
@@ -62,4 +62,4 @@ name: __Updated by
 key: __updated by
 content-length: 14
 
-sitecore\admin
+sitecore\Admin
