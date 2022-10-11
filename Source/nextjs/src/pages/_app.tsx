@@ -2,10 +2,10 @@ import type { AppProps } from 'next/app';
 import { I18nProvider } from 'next-localization';
 
 import 'assets/app.css';
-import 'assets/css/bootstrap.css'
-import 'assets/css/color.css'
-import 'assets/css/custom.css'
-import 'assets/css/responsive.css'
+import 'assets/css/bootstrap.css';
+import 'assets/css/color.css';
+import 'assets/css/custom.css';
+import 'assets/css/responsive.css';
 
 function App({ Component, pageProps }: AppProps): JSX.Element {
   const { dictionary, ...rest } = pageProps;
