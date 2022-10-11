@@ -6,7 +6,6 @@ import {
   getPublicUrl,
   LayoutServiceData,
 } from '@sitecore-jss/sitecore-jss-nextjs';
-import Navigation from 'src/Navigation';
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
 // If you're not supporting the Experience Editor, you can remove this.
@@ -52,22 +51,22 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
 
       <div className="main-content">
         <div className="row topmargin" data-sr>
-            <div className="col-md-12 no-padding"><Placeholder name="/main-content/full-row1" rendering={route} /></div>
+            <div className="col-md-12 no-padding">{route && <Placeholder name="/main-content/full-row1" rendering={route} />}</div>
         </div>
 
         <div className="container">
             <div className="row" data-sr>
                 <div className="col-md-12">
                     <div className="row hero-list">
-                        <div className="col-md-3"><Placeholder name="/main-content/full-row2a" rendering={route} /></div>
-                        <div className="col-md-3"><Placeholder name="/main-content/full-row2b" rendering={route} /></div>
-                        <div className="col-md-3"><Placeholder name="/main-content/full-row2c" rendering={route} /></div>
-                        <div className="col-md-3"><Placeholder name="/main-content/full-row2d" rendering={route} /></div>
+                        <div className="col-md-3">{route && <Placeholder name="/main-content/full-row2a" rendering={route} />}</div>
+                        <div className="col-md-3">{route && <Placeholder name="/main-content/full-row2b" rendering={route} />}</div>
+                        <div className="col-md-3">{route && <Placeholder name="/main-content/full-row2c" rendering={route} />}</div>
+                        <div className="col-md-3">{route && <Placeholder name="/main-content/full-row2d" rendering={route} />}</div>
                     </div>
                 </div>
             </div>
             <div className="row" data-sr>
-                <div className="col-md-12"><Placeholder name="/main-content/full-row3" rendering={route} /></div>
+                <div className="col-md-12">{route && <Placeholder name="/main-content/full-row3" rendering={route} />}</div>
             </div>
         </div>
       </div>
