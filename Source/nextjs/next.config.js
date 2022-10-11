@@ -17,7 +17,7 @@ const nextConfig = {
     PUBLIC_URL: publicUrl,
   },
 
-  i18n: {
+  i18n: !process.env.EXPORT_MODE && {
     // These are all the locales you want to support in your application.
     // These should generally match (or at least be a subset of) those in Sitecore.
     locales: ['en'],
@@ -29,7 +29,7 @@ const nextConfig = {
   // Enable React Strict Mode
   reactStrictMode: true,
 
-  async rewrites() {
+  rewrites: !process.env.EXPORT_MODE && (async () => {
     // When in connected mode we want to proxy Sitecore paths off to Sitecore
     return [
       // API endpoints
@@ -48,7 +48,7 @@ const nextConfig = {
         destination: `${jssConfig.sitecoreApiHost}/layouts/system/:path*`,
       },
     ];
-  },
+  }),
 };
 
 module.exports = () => {
